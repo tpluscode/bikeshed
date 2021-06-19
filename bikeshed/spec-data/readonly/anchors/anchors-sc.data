@@ -706,8 +706,8 @@ RTCRtpCodecCapability
 -
 scalar
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#scalar
@@ -716,8 +716,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#scalar
 -
 scalar
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#scalar
@@ -2401,8 +2401,8 @@ https://html.spec.whatwg.org/multipage/origin.html#scheme-and-host
 -
 scheme-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-scheme-part
@@ -2411,8 +2411,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-scheme-part
 -
 scheme-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-scheme-part
@@ -2421,8 +2421,8 @@ https://www.w3.org/TR/CSP3/#grammardef-scheme-part
 -
 scheme-part match
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#scheme-part-match
@@ -2431,8 +2431,8 @@ https://w3c.github.io/webappsec-csp/#scheme-part-match
 -
 scheme-part match
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#scheme-part-match
@@ -2471,8 +2471,8 @@ https://url.spec.whatwg.org/#scheme-relative-url-string
 -
 scheme-source
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-scheme-source
@@ -2481,8 +2481,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-scheme-source
 -
 scheme-source
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-scheme-source
@@ -2567,8 +2567,8 @@ manifest
 -
 scope
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#scope%E2%91%A0
@@ -2577,8 +2577,8 @@ https://drafts.csswg.org/css2/#scope%E2%91%A0
 -
 scope
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#scope%E2%91%A0
@@ -2587,8 +2587,8 @@ https://drafts.csswg.org/css2/#scope%E2%91%A0
 -
 scope
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-scope
@@ -2598,8 +2598,8 @@ transaction
 -
 scope
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-scope
@@ -2673,8 +2673,8 @@ https://www.w3.org/TR/webauthn-3/#scope
 -
 scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#scope
@@ -2683,8 +2683,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#scope
 -
 scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#scope
@@ -3150,8 +3150,8 @@ https://www.w3.org/TR/compositing-1/#valdef-blend-mode-screen
 -
 screen
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-media-screen
@@ -3161,8 +3161,8 @@ https://drafts.csswg.org/css2/#valdef-media-screen
 -
 screen
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-media-screen
@@ -3890,8 +3890,8 @@ modules
 -
 script
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-script
@@ -3900,8 +3900,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-script
 -
 script
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/interact.html#elementdef-script
@@ -3910,8 +3910,8 @@ https://svgwg.org/svg2-draft/interact.html#elementdef-script
 -
 script
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/interact.html#elementdef-script
@@ -4460,8 +4460,8 @@ https://www.w3.org/TR/clipboard-apis/#script-may-access-clipboard
 -
 script-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#script-src
@@ -4470,8 +4470,8 @@ https://w3c.github.io/webappsec-csp/#script-src
 -
 script-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#script-src
@@ -4480,8 +4480,8 @@ https://www.w3.org/TR/CSP3/#script-src
 -
 script-src-attr
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#script-src-attr
@@ -4490,8 +4490,8 @@ https://w3c.github.io/webappsec-csp/#script-src-attr
 -
 script-src-attr
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#script-src-attr
@@ -4500,8 +4500,8 @@ https://www.w3.org/TR/CSP3/#script-src-attr
 -
 script-src-elem
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#script-src-elem
@@ -4510,8 +4510,8 @@ https://w3c.github.io/webappsec-csp/#script-src-elem
 -
 script-src-elem
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#script-src-elem
@@ -4719,8 +4719,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#scripting-flag
 -
 scripting flag
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-scripting-flag
@@ -4920,8 +4920,8 @@ overflow-y
 -
 scroll
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-overflow-scroll
@@ -4931,8 +4931,8 @@ overflow
 -
 scroll
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-background-attachment-scroll
@@ -4942,8 +4942,8 @@ background-attachment
 -
 scroll
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-overflow-scroll
@@ -4953,8 +4953,8 @@ overflow
 -
 scroll
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-background-attachment-scroll

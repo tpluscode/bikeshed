@@ -1,7 +1,7 @@
 'bitmap' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#bitmap-media-group
@@ -10,8 +10,8 @@ https://drafts.csswg.org/css2/#bitmap-media-group
 -
 'bitmap' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#bitmap-media-group
@@ -50,8 +50,8 @@ https://www.w3.org/TR/webtransport/#bidirectionalstreamstransport
 -
 BigInteger
 typedef
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-BigInteger
@@ -526,8 +526,8 @@ unicode-bidi
 -
 bidi-override
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-unicode-bidi-bidi-override
@@ -537,8 +537,8 @@ unicode-bidi
 -
 bidi-override
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-unicode-bidi-bidi-override
@@ -579,8 +579,8 @@ https://www.w3.org/TR/css-writing-modes-4/#bidirectionality
 -
 bidirectionality
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#bidirectionality-bidi
@@ -589,8 +589,8 @@ https://drafts.csswg.org/css2/#bidirectionality-bidi
 -
 bidirectionality
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#bidirectionality-bidi
@@ -599,8 +599,8 @@ https://drafts.csswg.org/css2/#bidirectionality-bidi
 -
 bidirectionality (bidi)
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#bidirectionality-bidi
@@ -609,8 +609,8 @@ https://drafts.csswg.org/css2/#bidirectionality-bidi
 -
 bidirectionality (bidi)
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#bidirectionality-bidi
@@ -719,8 +719,8 @@ https://www.w3.org/TR/encoding/#big5-lead
 -
 bigint
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-bigint
@@ -729,8 +729,8 @@ https://heycam.github.io/webidl/#idl-bigint
 -
 biginteger
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-BigInteger
@@ -1060,8 +1060,8 @@ GPUBindGroupEntry
 -
 binding
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-binding
@@ -1071,8 +1071,8 @@ attribute
 -
 binding
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-binding

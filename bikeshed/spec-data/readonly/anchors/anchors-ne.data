@@ -164,8 +164,8 @@ GPUCompareFunction
 -
 "next"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursordirection-next
@@ -175,8 +175,8 @@ IDBCursorDirection
 -
 "next"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-next
@@ -208,8 +208,8 @@ MediaSessionAction
 -
 "nextunique"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursordirection-nextunique
@@ -219,8 +219,8 @@ IDBCursorDirection
 -
 "nextunique"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-nextunique
@@ -251,8 +251,8 @@ HTMLMediaElement
 -
 NETWORK_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-network_err
@@ -295,8 +295,8 @@ HTMLMediaElement
 -
 NetworkError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#networkerror
@@ -326,8 +326,8 @@ NetworkInformationSaveData
 -
 NewObject
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#NewObject
@@ -398,8 +398,8 @@ cursor
 -
 ne-resize
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-ne-resize
@@ -409,8 +409,8 @@ cursor
 -
 ne-resize
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-ne-resize
@@ -1461,8 +1461,8 @@ HTMLMediaElement
 -
 network_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-network_err
@@ -1471,8 +1471,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-network_err
 -
 networkerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#networkerror
@@ -1617,8 +1617,8 @@ https://immersive-web.github.io/webxr/#never-support
 -
 never-rendered element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/render.html#TermNeverRenderedElement
@@ -1627,8 +1627,8 @@ https://svgwg.org/svg2-draft/render.html#TermNeverRenderedElement
 -
 never-rendered element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/render.html#TermNeverRenderedElement
@@ -1637,8 +1637,8 @@ https://www.w3.org/TR/SVG2/render.html#TermNeverRenderedElement
 -
 new
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#new
@@ -2055,8 +2055,8 @@ MutationEvent/initMutationEvent(typeArg)
 -
 newValueSpecifiedUnits
 method
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__newValueSpecifiedUnits
@@ -2066,8 +2066,8 @@ SVGLength
 -
 newValueSpecifiedUnits
 method
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__newValueSpecifiedUnits
@@ -2077,8 +2077,8 @@ SVGAngle
 -
 newValueSpecifiedUnits
 method
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGLength__newValueSpecifiedUnits
@@ -2088,8 +2088,8 @@ SVGLength
 -
 newValueSpecifiedUnits
 method
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGAngle__newValueSpecifiedUnits
@@ -2099,8 +2099,8 @@ SVGAngle
 -
 newVersion
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbversionchangeeventinit-newversion
@@ -2110,8 +2110,8 @@ IDBVersionChangeEventInit
 -
 newVersion
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-newversion
@@ -2121,8 +2121,8 @@ IDBVersionChangeEvent
 -
 newVersion
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeeventinit-newversion
@@ -2132,8 +2132,8 @@ IDBVersionChangeEventInit
 -
 newVersion
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-newversion
@@ -2361,8 +2361,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#next-sibling
 -
 next sibling
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-next-sibling

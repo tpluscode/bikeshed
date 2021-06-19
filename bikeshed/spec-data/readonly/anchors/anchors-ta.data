@@ -62,8 +62,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'table-row'
 -
 'tactile' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#tactile-media-group
@@ -72,8 +72,8 @@ https://drafts.csswg.org/css2/#tactile-media-group
 -
 'tactile' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#tactile-media-group
@@ -480,8 +480,8 @@ https://w3c.github.io/mathml-core/#dfn-tabindex
 -
 tabindex
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#SVGElementTabindexAttribute
@@ -491,8 +491,8 @@ core-attributes
 -
 tabindex
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#SVGElementTabindexAttribute
@@ -586,8 +586,8 @@ https://www.w3.org/TR/css-tables-3/#table
 -
 table
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table
@@ -597,8 +597,8 @@ display
 -
 table
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#table
@@ -607,8 +607,8 @@ https://drafts.csswg.org/css2/#table
 -
 table
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table
@@ -618,8 +618,8 @@ display
 -
 table
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#table
@@ -670,8 +670,8 @@ https://www.w3.org/TR/css-display-3/#table-caption-box
 -
 table element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#table-element
@@ -680,8 +680,8 @@ https://drafts.csswg.org/css2/#table-element
 -
 table element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#table-element
@@ -750,8 +750,8 @@ https://www.w3.org/TR/css-tables-3/#table-grid-box
 -
 table grid box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#table-grid-box
@@ -760,8 +760,8 @@ https://drafts.csswg.org/css2/#table-grid-box
 -
 table grid box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#table-grid-box
@@ -981,8 +981,8 @@ https://www.w3.org/TR/css-tables-3/#table-wrapper-box
 -
 table wrapper box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#table-wrapper-box
@@ -991,8 +991,8 @@ https://drafts.csswg.org/css2/#table-wrapper-box
 -
 table wrapper box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#table-wrapper-box
@@ -1078,8 +1078,8 @@ https://www.w3.org/TR/css-tables-3/#table-caption
 -
 table-caption
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-caption
@@ -1089,8 +1089,8 @@ display
 -
 table-caption
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-caption
@@ -1144,8 +1144,8 @@ https://www.w3.org/TR/css-tables-3/#table-cell
 -
 table-cell
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-cell
@@ -1155,8 +1155,8 @@ display
 -
 table-cell
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-cell
@@ -1210,8 +1210,8 @@ https://www.w3.org/TR/css-tables-3/#table-column
 -
 table-column
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-column
@@ -1221,8 +1221,8 @@ display
 -
 table-column
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-column
@@ -1276,8 +1276,8 @@ https://www.w3.org/TR/css-tables-3/#table-column-group
 -
 table-column-group
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-column-group
@@ -1287,8 +1287,8 @@ display
 -
 table-column-group
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-column-group
@@ -1352,8 +1352,8 @@ https://www.w3.org/TR/css-tables-3/#table-footer-group
 -
 table-footer-group
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-footer-group
@@ -1363,8 +1363,8 @@ display
 -
 table-footer-group
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-footer-group
@@ -1438,8 +1438,8 @@ https://www.w3.org/TR/css-tables-3/#table-header-group
 -
 table-header-group
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-header-group
@@ -1449,8 +1449,8 @@ display
 -
 table-header-group
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-header-group
@@ -1500,8 +1500,8 @@ https://www.w3.org/TR/css-tables-3/#propdef-table-layout
 -
 table-layout
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-table-layout
@@ -1510,8 +1510,8 @@ https://drafts.csswg.org/css2/#propdef-table-layout
 -
 table-layout
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-table-layout
@@ -1520,8 +1520,8 @@ https://drafts.csswg.org/css2/#propdef-table-layout
 -
 table-layout
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/tables.html#propdef-table-layout
@@ -1614,8 +1614,8 @@ https://www.w3.org/TR/css-tables-3/#table-row
 -
 table-row
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-row
@@ -1625,8 +1625,8 @@ display
 -
 table-row
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-row
@@ -1680,8 +1680,8 @@ https://www.w3.org/TR/css-tables-3/#table-row-group
 -
 table-row-group
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-table-row-group
@@ -1691,8 +1691,8 @@ display
 -
 table-row-group
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-table-row-group
@@ -1868,8 +1868,8 @@ https://www.w3.org/TR/css-tables-3/#tabular-container
 -
 tabular container
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#tabular-container
@@ -1878,8 +1878,8 @@ https://drafts.csswg.org/css2/#tabular-container
 -
 tabular container
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#tabular-container
@@ -2170,8 +2170,8 @@ https://mimesniff.spec.whatwg.org/#tag-terminating-byte
 -
 tagLength
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesGcmParams-tagLength
@@ -2237,8 +2237,8 @@ https://www.w3.org/TR/css-color-4/#tagged-image
 -
 taglength
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesGcmParams-tagLength
@@ -2511,8 +2511,8 @@ ReportingObserver
 -
 takes a named argument list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-xattr-named-argument-list
@@ -2522,8 +2522,8 @@ extended attribute
 -
 takes a named argument list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-xattr-named-argument-list
@@ -2532,8 +2532,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-xattr-named-argument-list
 -
 takes an argument list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-xattr-argument-list
@@ -2543,8 +2543,8 @@ extended attribute
 -
 takes an argument list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-xattr-argument-list
@@ -2553,8 +2553,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-xattr-argument-list
 -
 takes an identifier
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-xattr-identifier
@@ -2564,8 +2564,8 @@ extended attribute
 -
 takes an identifier
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-xattr-identifier
@@ -2574,8 +2574,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-xattr-identifier
 -
 takes an identifier list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-xattr-identifier-list
@@ -2585,8 +2585,8 @@ extended attribute
 -
 takes an identifier list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-xattr-identifier-list
@@ -2595,8 +2595,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-xattr-identifier-list
 -
 takes no arguments
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-xattr-no-arguments
@@ -2606,8 +2606,8 @@ extended attribute
 -
 takes no arguments
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-xattr-no-arguments
@@ -3018,8 +3018,8 @@ alternate signed exchange preload info
 -
 target
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-target
@@ -3271,8 +3271,8 @@ ResizeObservation
 -
 target
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#AElementTargetAttribute
@@ -3282,8 +3282,8 @@ a
 -
 target
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__target
@@ -3293,8 +3293,8 @@ SVGAElement
 -
 target
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#AElementTargetAttribute
@@ -3304,8 +3304,8 @@ a
 -
 target
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__target
@@ -3425,8 +3425,8 @@ AudioParam/setTargetAtTime()
 -
 target
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#default-iterator-object-target
@@ -3436,8 +3436,8 @@ default iterator object
 -
 target
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#default-asynchronous-iterator-object-target

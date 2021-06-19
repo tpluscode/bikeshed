@@ -269,8 +269,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'bottom'
 -
 <border-style>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-border-style
@@ -279,8 +279,8 @@ https://drafts.csswg.org/css2/#value-def-border-style
 -
 <border-style>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-border-style
@@ -289,8 +289,8 @@ https://drafts.csswg.org/css2/#value-def-border-style
 -
 <border-width>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-border-width
@@ -299,8 +299,8 @@ https://drafts.csswg.org/css2/#value-def-border-width
 -
 <border-width>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-border-width
@@ -330,8 +330,8 @@ https://www.w3.org/TR/css-masking-1/#typedef-bottom
 -
 <bottom>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-bottom
@@ -340,8 +340,8 @@ https://drafts.csswg.org/css2/#value-def-bottom
 -
 <bottom>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-bottom
@@ -1049,8 +1049,8 @@ font-weight
 -
 bold
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-bold
@@ -1060,8 +1060,8 @@ font-weight
 -
 bold
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-bold
@@ -1093,8 +1093,8 @@ font-weight
 -
 bolder
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-bolder
@@ -1104,8 +1104,8 @@ font-weight
 -
 bolder
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-bolder
@@ -1331,8 +1331,8 @@ https://www.w3.org/TR/css-gcpm-3/#bookmarks0
 -
 bool
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#bool
@@ -1341,8 +1341,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#bool
 -
 bool
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#bool
@@ -1431,8 +1431,8 @@ https://www.w3.org/TR/webdriver2/#dfn-boolean
 -
 boolean
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-boolean
@@ -1782,8 +1782,8 @@ https://www.w3.org/TR/css-speech-1/#border-def
 -
 border
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#box-border-area
@@ -1792,8 +1792,8 @@ https://drafts.csswg.org/css2/#box-border-area
 -
 border
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border
@@ -1802,8 +1802,8 @@ https://drafts.csswg.org/css2/#propdef-border
 -
 border
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#box-border-area
@@ -1812,8 +1812,8 @@ https://drafts.csswg.org/css2/#box-border-area
 -
 border
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border
@@ -1822,8 +1822,8 @@ https://drafts.csswg.org/css2/#propdef-border
 -
 border
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border
@@ -1832,8 +1832,8 @@ https://www.w3.org/TR/CSS22/box.html#propdef-border
 -
 border (of a box)
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#box-border-area
@@ -1842,8 +1842,8 @@ https://drafts.csswg.org/css2/#box-border-area
 -
 border (of a box)
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#box-border-area
@@ -1952,8 +1952,8 @@ https://www.w3.org/TR/css-box-4/#border-box
 -
 border box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#border-box
@@ -1962,8 +1962,8 @@ https://drafts.csswg.org/css2/#border-box
 -
 border box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#border-box
@@ -2022,8 +2022,8 @@ https://www.w3.org/TR/css-box-4/#border-edge
 -
 border edge
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#border-edge
@@ -2032,8 +2032,8 @@ https://drafts.csswg.org/css2/#border-edge
 -
 border edge
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#border-edge
@@ -2402,8 +2402,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom
 -
 border-bottom
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom
@@ -2412,8 +2412,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom
 -
 border-bottom
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom
@@ -2422,8 +2422,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom
 -
 border-bottom
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-bottom
@@ -2462,8 +2462,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-color
 -
 border-bottom-color
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom-color
@@ -2472,8 +2472,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom-color
 -
 border-bottom-color
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom-color
@@ -2482,8 +2482,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom-color
 -
 border-bottom-color
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-bottom-color
@@ -2552,8 +2552,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-style
 -
 border-bottom-style
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom-style
@@ -2562,8 +2562,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom-style
 -
 border-bottom-style
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom-style
@@ -2572,8 +2572,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom-style
 -
 border-bottom-style
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-bottom-style
@@ -2602,8 +2602,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-bottom-width
 -
 border-bottom-width
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom-width
@@ -2612,8 +2612,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom-width
 -
 border-bottom-width
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-bottom-width
@@ -2622,8 +2622,8 @@ https://drafts.csswg.org/css2/#propdef-border-bottom-width
 -
 border-bottom-width
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-bottom-width
@@ -3005,8 +3005,8 @@ https://www.w3.org/TR/css-tables-3/#propdef-border-collapse
 -
 border-collapse
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-collapse
@@ -3015,8 +3015,8 @@ https://drafts.csswg.org/css2/#propdef-border-collapse
 -
 border-collapse
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-collapse
@@ -3025,8 +3025,8 @@ https://drafts.csswg.org/css2/#propdef-border-collapse
 -
 border-collapse
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/tables.html#propdef-border-collapse
@@ -3065,8 +3065,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-color
 -
 border-color
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-color
@@ -3075,8 +3075,8 @@ https://drafts.csswg.org/css2/#propdef-border-color
 -
 border-color
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-color
@@ -3085,8 +3085,8 @@ https://drafts.csswg.org/css2/#propdef-border-color
 -
 border-color
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-color
@@ -3515,8 +3515,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left
 -
 border-left
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-left
@@ -3525,8 +3525,8 @@ https://drafts.csswg.org/css2/#propdef-border-left
 -
 border-left
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-left
@@ -3535,8 +3535,8 @@ https://drafts.csswg.org/css2/#propdef-border-left
 -
 border-left
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-left
@@ -3575,8 +3575,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left-color
 -
 border-left-color
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-left-color
@@ -3585,8 +3585,8 @@ https://drafts.csswg.org/css2/#propdef-border-left-color
 -
 border-left-color
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-left-color
@@ -3595,8 +3595,8 @@ https://drafts.csswg.org/css2/#propdef-border-left-color
 -
 border-left-color
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-left-color
@@ -3625,8 +3625,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left-style
 -
 border-left-style
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-left-style
@@ -3635,8 +3635,8 @@ https://drafts.csswg.org/css2/#propdef-border-left-style
 -
 border-left-style
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-left-style
@@ -3645,8 +3645,8 @@ https://drafts.csswg.org/css2/#propdef-border-left-style
 -
 border-left-style
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-left-style
@@ -3675,8 +3675,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-left-width
 -
 border-left-width
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-left-width
@@ -3685,8 +3685,8 @@ https://drafts.csswg.org/css2/#propdef-border-left-width
 -
 border-left-width
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-left-width
@@ -3695,8 +3695,8 @@ https://drafts.csswg.org/css2/#propdef-border-left-width
 -
 border-left-width
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-left-width
@@ -3765,8 +3765,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right
 -
 border-right
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-right
@@ -3775,8 +3775,8 @@ https://drafts.csswg.org/css2/#propdef-border-right
 -
 border-right
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-right
@@ -3785,8 +3785,8 @@ https://drafts.csswg.org/css2/#propdef-border-right
 -
 border-right
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-right
@@ -3825,8 +3825,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right-color
 -
 border-right-color
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-right-color
@@ -3835,8 +3835,8 @@ https://drafts.csswg.org/css2/#propdef-border-right-color
 -
 border-right-color
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-right-color
@@ -3845,8 +3845,8 @@ https://drafts.csswg.org/css2/#propdef-border-right-color
 -
 border-right-color
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-right-color
@@ -3875,8 +3875,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right-style
 -
 border-right-style
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-right-style
@@ -3885,8 +3885,8 @@ https://drafts.csswg.org/css2/#propdef-border-right-style
 -
 border-right-style
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-right-style
@@ -3895,8 +3895,8 @@ https://drafts.csswg.org/css2/#propdef-border-right-style
 -
 border-right-style
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-right-style
@@ -3925,8 +3925,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-right-width
 -
 border-right-width
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-right-width
@@ -3935,8 +3935,8 @@ https://drafts.csswg.org/css2/#propdef-border-right-width
 -
 border-right-width
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-right-width
@@ -3945,8 +3945,8 @@ https://drafts.csswg.org/css2/#propdef-border-right-width
 -
 border-right-width
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-right-width
@@ -3975,8 +3975,8 @@ https://www.w3.org/TR/css-tables-3/#propdef-border-spacing
 -
 border-spacing
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-spacing
@@ -3985,8 +3985,8 @@ https://drafts.csswg.org/css2/#propdef-border-spacing
 -
 border-spacing
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-spacing
@@ -3995,8 +3995,8 @@ https://drafts.csswg.org/css2/#propdef-border-spacing
 -
 border-spacing
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/tables.html#propdef-border-spacing
@@ -4065,8 +4065,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-style
 -
 border-style
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-style
@@ -4075,8 +4075,8 @@ https://drafts.csswg.org/css2/#propdef-border-style
 -
 border-style
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-style
@@ -4085,8 +4085,8 @@ https://drafts.csswg.org/css2/#propdef-border-style
 -
 border-style
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-style
@@ -4115,8 +4115,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top
 -
 border-top
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-top
@@ -4125,8 +4125,8 @@ https://drafts.csswg.org/css2/#propdef-border-top
 -
 border-top
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-top
@@ -4135,8 +4135,8 @@ https://drafts.csswg.org/css2/#propdef-border-top
 -
 border-top
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-top
@@ -4175,8 +4175,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-color
 -
 border-top-color
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-top-color
@@ -4185,8 +4185,8 @@ https://drafts.csswg.org/css2/#propdef-border-top-color
 -
 border-top-color
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-top-color
@@ -4195,8 +4195,8 @@ https://drafts.csswg.org/css2/#propdef-border-top-color
 -
 border-top-color
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-top-color
@@ -4265,8 +4265,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-style
 -
 border-top-style
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-top-style
@@ -4275,8 +4275,8 @@ https://drafts.csswg.org/css2/#propdef-border-top-style
 -
 border-top-style
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-top-style
@@ -4285,8 +4285,8 @@ https://drafts.csswg.org/css2/#propdef-border-top-style
 -
 border-top-style
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-top-style
@@ -4315,8 +4315,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-top-width
 -
 border-top-width
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-top-width
@@ -4325,8 +4325,8 @@ https://drafts.csswg.org/css2/#propdef-border-top-width
 -
 border-top-width
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-top-width
@@ -4335,8 +4335,8 @@ https://drafts.csswg.org/css2/#propdef-border-top-width
 -
 border-top-width
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-top-width
@@ -4365,8 +4365,8 @@ https://www.w3.org/TR/css-backgrounds-3/#propdef-border-width
 -
 border-width
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-border-width
@@ -4375,8 +4375,8 @@ https://drafts.csswg.org/css2/#propdef-border-width
 -
 border-width
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-border-width
@@ -4385,8 +4385,8 @@ https://drafts.csswg.org/css2/#propdef-border-width
 -
 border-width
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-border-width
@@ -4556,8 +4556,8 @@ scroll-snap-type
 -
 both
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-clear-both
@@ -4567,8 +4567,8 @@ clear
 -
 both
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-clear-both
@@ -4848,8 +4848,8 @@ https://www.w3.org/TR/css-writing-modes-4/#physical-bottom
 -
 bottom
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-bottom
@@ -4858,8 +4858,8 @@ https://drafts.csswg.org/css2/#propdef-bottom
 -
 bottom
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-bottom
@@ -4869,8 +4869,8 @@ vertical-align
 -
 bottom
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-background-position-bottom
@@ -4880,8 +4880,8 @@ background-position
 -
 bottom
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-caption-side-bottom
@@ -4891,8 +4891,8 @@ caption-side
 -
 bottom
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-bottom
@@ -4901,8 +4901,8 @@ https://drafts.csswg.org/css2/#propdef-bottom
 -
 bottom
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-bottom
@@ -4912,8 +4912,8 @@ vertical-align
 -
 bottom
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-background-position-bottom
@@ -4923,8 +4923,8 @@ background-position
 -
 bottom
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-caption-side-bottom
@@ -4934,8 +4934,8 @@ caption-side
 -
 bottom
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-bottom
@@ -5029,8 +5029,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#bo
 -
 bound(lower, upper)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-bound
@@ -5040,8 +5040,8 @@ IDBKeyRange
 -
 bound(lower, upper)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound
@@ -5051,8 +5051,8 @@ IDBKeyRange
 -
 bound(lower, upper, lowerOpen)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-bound
@@ -5062,8 +5062,8 @@ IDBKeyRange
 -
 bound(lower, upper, lowerOpen)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound
@@ -5073,8 +5073,8 @@ IDBKeyRange
 -
 bound(lower, upper, lowerOpen, upperOpen)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-bound
@@ -5084,8 +5084,8 @@ IDBKeyRange
 -
 bound(lower, upper, lowerOpen, upperOpen)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound
@@ -5208,8 +5208,8 @@ XRReferenceSpaceType
 -
 bounding box
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#bounding-box
@@ -5218,8 +5218,8 @@ https://svgwg.org/svg2-draft/coords.html#bounding-box
 -
 bounding box
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#bounding-box

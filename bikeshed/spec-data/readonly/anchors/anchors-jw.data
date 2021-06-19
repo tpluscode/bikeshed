@@ -1,7 +1,7 @@
 jwk
 enum-value
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-keyformat-jwk

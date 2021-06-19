@@ -1,5 +1,5 @@
 {
-    "ref-for-dom-abortcontroller-abortcontroller①": [
+    "dom-abortcontroller-abortcontroller": [
         {
             "engines": [
                 "blink",
@@ -69,7 +69,9 @@
                 }
             },
             "title": "AbortController.AbortController()"
-        },
+        }
+    ],
+    "dom-abortcontroller-abort": [
         {
             "engines": [
                 "blink",
@@ -141,7 +143,7 @@
             "title": "AbortController.abort()"
         }
     ],
-    "ref-for-dom-abortcontroller-signal②": [
+    "dom-abortcontroller-signal": [
         {
             "engines": [
                 "blink",
@@ -285,63 +287,7 @@
             "title": "AbortController"
         }
     ],
-    "ref-for-dom-abortsignal-abort①": [
-        {
-            "engines": [
-                "gecko"
-            ],
-            "filename": "api/AbortSignal.json",
-            "name": "abort",
-            "slug": "API/AbortSignal/abort",
-            "summary": "The static AbortSignal.abort() method returns an AbortSignal that is already set as aborted (and which does not trigger an abort event).",
-            "support": {
-                "chrome": {
-                    "version_added": false
-                },
-                "chrome_android": {
-                    "version_added": false
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "88"
-                },
-                "firefox_android": {
-                    "version_added": "88"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": false
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": false
-                }
-            },
-            "title": "AbortSignal.abort()"
-        }
-    ],
-    "eventdef-abortsignal-abort": [
+    "dom-abortsignal-onabort": [
         {
             "engines": [
                 "blink",
@@ -399,57 +345,6 @@
             "title": "AbortSignal: abort event"
         },
         {
-            "engines": [],
-            "filename": "api/SVGElement.json",
-            "name": "abort_event",
-            "slug": "API/SVGElement/abort_event",
-            "summary": "The abort event is fired when page loading is stopped before an SVG element has been allowed to load completely. This basically implements the standard abort DOM event.",
-            "support": {
-                "chrome": {
-                    "version_added": null
-                },
-                "chrome_android": {
-                    "version_added": null
-                },
-                "edge": {
-                    "version_added": null
-                },
-                "firefox": {
-                    "version_added": null
-                },
-                "firefox_android": {
-                    "version_added": null
-                },
-                "ie": {
-                    "version_added": null
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": null
-                },
-                "webview_android": {
-                    "version_added": null
-                },
-                "edge_blink": {
-                    "version_added": null
-                }
-            },
-            "title": "SVGElement: abort event"
-        }
-    ],
-    "ref-for-dom-abortsignal-aborted①": [
-        {
             "engines": [
                 "blink",
                 "gecko",
@@ -458,7 +353,7 @@
             "filename": "api/AbortSignal.json",
             "name": "aborted",
             "slug": "API/AbortSignal/aborted",
-            "summary": "The aborted read-only property returns a value that indicates whether the DOM request(s) the signal is communicating with is/are aborted (true) or not (false).",
+            "summary": "The aborted read-only property returns a Boolean that indicates whether the DOM request(s) the signal is communicating with is/are aborted (true) or not (false).",
             "support": {
                 "chrome": {
                     "version_added": "66"
@@ -506,7 +401,7 @@
             "title": "AbortSignal.aborted"
         }
     ],
-    "abortsignal-onabort": [
+    "dom-abortsignal-aborted": [
         {
             "engines": [
                 "blink",
@@ -622,12 +517,10 @@
             "title": "AbortSignal"
         }
     ],
-    "ref-for-dom-range-collapsed①": [
+    "dom-range-collapsed": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/AbstractRange.json",
             "name": "collapsed",
@@ -635,10 +528,10 @@
             "summary": "The collapsed read-only property of the AbstractRange interface returns true if the range's start position and end position are the same.",
             "support": {
                 "chrome": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -659,19 +552,19 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "90"
+                    "version_added": false
                 }
             },
             "title": "AbstractRange.collapsed"
@@ -783,12 +676,10 @@
             "title": "StaticRange.collapsed"
         }
     ],
-    "ref-for-dom-range-endcontainer①": [
+    "dom-range-endcontainer": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/AbstractRange.json",
             "name": "endContainer",
@@ -796,10 +687,10 @@
             "summary": "The endContainer property of the AbstractRange interface returns the Node in which the end of the range is located.",
             "support": {
                 "chrome": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -820,19 +711,19 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "90"
+                    "version_added": false
                 }
             },
             "title": "AbstractRange.endContainer"
@@ -944,12 +835,10 @@
             "title": "StaticRange.endContainer"
         }
     ],
-    "ref-for-dom-range-endoffset①": [
+    "dom-range-endoffset": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/AbstractRange.json",
             "name": "endOffset",
@@ -957,10 +846,10 @@
             "summary": "The endOffset property of the AbstractRange interface returns the offset into the end node of the range's end position.",
             "support": {
                 "chrome": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -981,19 +870,19 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "90"
+                    "version_added": false
                 }
             },
             "title": "AbstractRange.endOffset"
@@ -1105,12 +994,10 @@
             "title": "StaticRange.endOffset"
         }
     ],
-    "ref-for-dom-range-startcontainer①": [
+    "dom-range-startcontainer": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/AbstractRange.json",
             "name": "startContainer",
@@ -1118,10 +1005,10 @@
             "summary": "The read-only startContainer property of the AbstractRange interface returns the start Node for the range.",
             "support": {
                 "chrome": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1142,19 +1029,19 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "90"
+                    "version_added": false
                 }
             },
             "title": "AbstractRange.startContainer"
@@ -1266,12 +1153,10 @@
             "title": "StaticRange.startContainer"
         }
     ],
-    "ref-for-dom-range-startoffset①": [
+    "dom-range-startoffset": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/AbstractRange.json",
             "name": "startOffset",
@@ -1279,10 +1164,10 @@
             "summary": "The read-only startOffset property of the AbstractRange interface returns the offset into the start node of the range's start position.",
             "support": {
                 "chrome": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1303,19 +1188,19 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "90"
+                    "version_added": false
                 }
             },
             "title": "AbstractRange.startOffset"
@@ -1427,12 +1312,10 @@
             "title": "StaticRange.startOffset"
         }
     ],
-    "interface-abstractrange": [
+    "abstractrange": [
         {
             "engines": [
-                "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/AbstractRange.json",
             "name": "AbstractRange",
@@ -1440,10 +1323,10 @@
             "summary": "The AbstractRange abstract interface is the base class upon which all DOM range types are defined. A range is an object that indicates the start and end points of a section of content within the document.",
             "support": {
                 "chrome": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1464,19 +1347,19 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "90"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "90"
+                    "version_added": false
                 }
             },
             "title": "AbstractRange"
@@ -1510,7 +1393,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "9"
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -1565,7 +1448,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "9"
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -1620,7 +1503,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "9"
+                    "version_added": false
                 },
                 "opera": {
                     "version_added": "12.1"
@@ -1730,7 +1613,7 @@
                     "version_added": "4"
                 },
                 "ie": {
-                    "version_added": "9"
+                    "version_added": true
                 },
                 "opera": {
                     "version_added": true
@@ -1744,9 +1627,6 @@
                 "safari_ios": {
                     "version_added": "1"
                 },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
                 "webview_android": {
                     "version_added": "37"
                 },
@@ -1757,282 +1637,7 @@
             "title": "CDATASection"
         }
     ],
-    "dom-characterdata-appenddata": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "appendData",
-            "slug": "API/CharacterData/appendData",
-            "summary": "The appendData() method of the CharacterData interface adds the provided data to the end of the Node's current data.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.appendData()"
-        }
-    ],
-    "dom-characterdata-data": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "data",
-            "slug": "API/CharacterData/data",
-            "summary": "The data property of the CharacterData interface returns or sets the value of the current CharacterData Node's data.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "5"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.data"
-        }
-    ],
-    "dom-characterdata-deletedata": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "deleteData",
-            "slug": "API/CharacterData/deleteData",
-            "summary": "The deleteData() method of the CharacterData interface removes all data from this CharacterData Node, leaving it empty.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.deleteData()"
-        }
-    ],
-    "dom-characterdata-insertdata": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "insertData",
-            "slug": "API/CharacterData/insertData",
-            "summary": "The insertData() method of the CharacterData interface inserts the provided data into this CharacterData Node's current data, at the provided offset from the start of the existing data. The provided data is spliced into the existing data.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.insertData()"
-        }
-    ],
-    "dom-characterdata-length": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "length",
-            "slug": "API/CharacterData/length",
-            "summary": "The CharacterData.length property returns the number of characters in the contained data, as a positive integer.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "5"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.length"
-        }
-    ],
-    "ref-for-dom-nondocumenttypechildnode-nextelementsibling②": [
+    "dom-nondocumenttypechildnode-nextelementsibling": [
         {
             "engines": [
                 "blink",
@@ -2140,7 +1745,7 @@
             "title": "Element.nextElementSibling"
         }
     ],
-    "ref-for-dom-nondocumenttypechildnode-previouselementsibling②": [
+    "dom-nondocumenttypechildnode-previouselementsibling": [
         {
             "engines": [
                 "blink",
@@ -2248,278 +1853,7 @@
             "title": "Element.previousElementSibling"
         }
     ],
-    "ref-for-dom-childnode-remove①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "remove",
-            "slug": "API/CharacterData/remove",
-            "summary": "The CharacterData.remove() method removes text.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "23"
-                },
-                "firefox_android": {
-                    "version_added": "23"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.remove()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/DocumentType.json",
-            "name": "remove",
-            "slug": "API/DocumentType/remove",
-            "summary": "The DocumentType.remove() method removes a document's doctype.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "23"
-                },
-                "firefox_android": {
-                    "version_added": "23"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "DocumentType.remove()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Element.json",
-            "name": "remove",
-            "slug": "API/Element/remove",
-            "summary": "The Element.remove() method removes the element from the tree it belongs to.",
-            "support": {
-                "chrome": {
-                    "version_added": "24"
-                },
-                "chrome_android": {
-                    "version_added": "25"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "23"
-                },
-                "firefox_android": {
-                    "version_added": "23"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "15"
-                },
-                "opera_android": {
-                    "version_added": "14"
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element.remove()"
-        }
-    ],
-    "dom-characterdata-replacedata": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "replaceData",
-            "slug": "API/CharacterData/replaceData",
-            "summary": "The replaceData() of the CharacterData interface is similar to insertData(), but replaceData() allows overwriting of a certain number of bytes.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.replaceData()"
-        }
-    ],
-    "dom-characterdata-substringdata": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/CharacterData.json",
-            "name": "substringData",
-            "slug": "API/CharacterData/substringData",
-            "summary": "The substringData() method of the CharacterData interface returns a portion of the existing data, starting at the specified index and extending for a given number of characters afterwards.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "CharacterData.substringData()"
-        }
-    ],
-    "interface-characterdata": [
+    "characterdata": [
         {
             "engines": [
                 "blink",
@@ -2574,7 +1908,290 @@
             "title": "CharacterData"
         }
     ],
-    "ref-for-dom-comment-comment①": [
+    "dom-childnode-after": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ChildNode.json",
+            "name": "after",
+            "slug": "API/ChildNode/after",
+            "summary": "The ChildNode.after() method inserts a set of Node or DOMString objects in the children list of this ChildNode's parent, just after this ChildNode. DOMString objects are inserted as equivalent Text nodes.",
+            "support": {
+                "chrome": {
+                    "version_added": "54"
+                },
+                "chrome_android": {
+                    "version_added": "54"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "49"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "39"
+                },
+                "opera_android": {
+                    "version_added": "41"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": "10"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "54"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ChildNode.after()"
+        }
+    ],
+    "dom-childnode-before": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ChildNode.json",
+            "name": "before",
+            "slug": "API/ChildNode/before",
+            "summary": "The ChildNode.before() method inserts a set of Node or DOMString objects in the children list of this ChildNode's parent, just before this ChildNode. DOMString objects are inserted as equivalent Text nodes.",
+            "support": {
+                "chrome": {
+                    "version_added": "54"
+                },
+                "chrome_android": {
+                    "version_added": "54"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "49"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "39"
+                },
+                "opera_android": {
+                    "version_added": "41"
+                },
+                "safari": {
+                    "version_added": "10"
+                },
+                "safari_ios": {
+                    "version_added": "10"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "54"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ChildNode.before()"
+        }
+    ],
+    "dom-childnode-remove": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ChildNode.json",
+            "name": "remove",
+            "slug": "API/ChildNode/remove",
+            "summary": "The ChildNode.remove() method removes the object from the tree it belongs to.",
+            "support": {
+                "chrome": {
+                    "version_added": "23"
+                },
+                "chrome_android": {
+                    "version_added": "25"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "23"
+                },
+                "firefox_android": {
+                    "version_added": "23"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "15"
+                },
+                "opera_android": {
+                    "version_added": "14"
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "childnode-remove",
+                "title": "ChildNode.remove()"
+            },
+            "title": "ChildNode.remove()"
+        }
+    ],
+    "dom-childnode-replacewith": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ChildNode.json",
+            "name": "replaceWith",
+            "slug": "API/ChildNode/replaceWith",
+            "summary": "The ChildNode.replaceWith() method replaces this ChildNode in the children list of its parent with a set of Node or DOMString objects. DOMString objects are inserted as equivalent Text nodes.",
+            "support": {
+                "chrome": {
+                    "version_added": "54"
+                },
+                "chrome_android": {
+                    "version_added": "54"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": {
+                    "version_added": "49"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "39"
+                },
+                "opera_android": {
+                    "version_added": "41"
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "54"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "ChildNode.replaceWith()"
+        }
+    ],
+    "interface-childnode": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/ChildNode.json",
+            "name": "ChildNode",
+            "slug": "API/ChildNode",
+            "summary": "The ChildNode mixin contains methods and properties that are common to all types of Node objects that can have a parent.",
+            "support": {
+                "chrome": {
+                    "version_added": "1"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "23"
+                },
+                "firefox_android": {
+                    "version_added": "23"
+                },
+                "ie": {
+                    "version_added": "9"
+                },
+                "opera": {
+                    "version_added": "10"
+                },
+                "opera_android": {
+                    "version_added": "10.1"
+                },
+                "safari": {
+                    "version_added": "4"
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": "1"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "dom-manip-convenience",
+                "title": "DOM manipulation convenience methods"
+            },
+            "title": "ChildNode"
+        }
+    ],
+    "dom-comment-comment": [
         {
             "engines": [
                 "blink",
@@ -2629,7 +2246,7 @@
             "title": "Comment()"
         }
     ],
-    "interface-comment": [
+    "comment": [
         {
             "engines": [
                 "blink",
@@ -2684,7 +2301,7 @@
             "title": "Comment"
         }
     ],
-    "ref-for-dom-customevent-customevent": [
+    "dom-customevent-customevent": [
         {
             "engines": [
                 "blink",
@@ -2739,7 +2356,7 @@
             "title": "CustomEvent()"
         }
     ],
-    "ref-for-dom-customevent-detail②": [
+    "dom-customevent-detail": [
         {
             "engines": [
                 "blink",
@@ -2853,7 +2470,7 @@
             "title": "CustomEvent"
         }
     ],
-    "ref-for-dom-domimplementation-createdocument②": [
+    "dom-domimplementation-createdocument": [
         {
             "engines": [
                 "blink",
@@ -2908,7 +2525,7 @@
             "title": "DOMImplementation.createDocument()"
         }
     ],
-    "ref-for-dom-domimplementation-createdocumenttype①": [
+    "dom-domimplementation-createdocumenttype": [
         {
             "engines": [
                 "blink",
@@ -2963,7 +2580,7 @@
             "title": "DOMImplementation.createDocumentType()"
         }
     ],
-    "ref-for-dom-domimplementation-createhtmldocument①": [
+    "dom-domimplementation-createhtmldocument": [
         {
             "engines": [
                 "blink",
@@ -3019,7 +2636,7 @@
             "title": "DOMImplementation.createHTMLDocument()"
         }
     ],
-    "interface-domimplementation": [
+    "domimplementation": [
         {
             "engines": [
                 "blink",
@@ -3074,7 +2691,7 @@
             "title": "DOMImplementation"
         }
     ],
-    "ref-for-dom-domtokenlist-add①": [
+    "dom-domtokenlist-add": [
         {
             "engines": [
                 "blink",
@@ -3129,7 +2746,7 @@
             "title": "DOMTokenList.add()"
         }
     ],
-    "ref-for-dom-domtokenlist-contains①": [
+    "dom-domtokenlist-contains": [
         {
             "engines": [
                 "blink",
@@ -3184,7 +2801,221 @@
             "title": "DOMTokenList.contains()"
         }
     ],
-    "ref-for-dom-domtokenlist-item①": [
+    "domtokenlist": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DOMTokenList.json",
+            "name": "entries",
+            "slug": "API/DOMTokenList/entries",
+            "summary": "The DOMTokenList.entries() method returns an iterator allowing you to go through all key/value pairs contained in this object. The values are DOMString objects, each representing a single token.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": {
+                    "version_added": "45"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "50"
+                },
+                "firefox_android": {
+                    "version_added": "50"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "32"
+                },
+                "opera_android": {
+                    "version_added": "32"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "45"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DOMTokenList.entries()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DOMTokenList.json",
+            "name": "forEach",
+            "slug": "API/DOMTokenList/forEach",
+            "summary": "The forEach() method of the DOMTokenList interface calls the callback given in parameter once for each value pair in the list, in insertion order.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": {
+                    "version_added": "45"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "50"
+                },
+                "firefox_android": {
+                    "version_added": "50"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "32"
+                },
+                "opera_android": {
+                    "version_added": "32"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "45"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DOMTokenList.forEach()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DOMTokenList.json",
+            "name": "keys",
+            "slug": "API/DOMTokenList/keys",
+            "summary": "The keys() method of the DOMTokenList interface returns an iterator allowing to go through all keys contained in this object. The keys are of type unsigned integer.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": {
+                    "version_added": "45"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "50"
+                },
+                "firefox_android": {
+                    "version_added": "50"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "32"
+                },
+                "opera_android": {
+                    "version_added": "32"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "45"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DOMTokenList.keys()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/DOMTokenList.json",
+            "name": "values",
+            "slug": "API/DOMTokenList/values",
+            "summary": "The values() method of the DOMTokenList interface returns an iterator allowing developers to go through all values contained in the DOMTokenList. The individual values are DOMString objects.",
+            "support": {
+                "chrome": {
+                    "version_added": "42"
+                },
+                "chrome_android": {
+                    "version_added": "45"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": "50"
+                },
+                "firefox_android": {
+                    "version_added": "50"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "32"
+                },
+                "opera_android": {
+                    "version_added": "32"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": "45"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "DOMTokenList.values()"
+        }
+    ],
+    "dom-domtokenlist-item": [
         {
             "engines": [
                 "blink",
@@ -3239,7 +3070,7 @@
             "title": "DOMTokenList.item()"
         }
     ],
-    "ref-for-dom-domtokenlist-length①": [
+    "dom-domtokenlist-length": [
         {
             "engines": [
                 "blink",
@@ -3294,7 +3125,7 @@
             "title": "DOMTokenList.length"
         }
     ],
-    "ref-for-dom-domtokenlist-remove①": [
+    "dom-domtokenlist-remove": [
         {
             "engines": [
                 "blink",
@@ -3349,7 +3180,7 @@
             "title": "DOMTokenList.remove()"
         }
     ],
-    "ref-for-dom-domtokenlist-replace①": [
+    "dom-domtokenlist-replace": [
         {
             "engines": [
                 "blink",
@@ -3404,62 +3235,7 @@
             "title": "DOMTokenList.replace()"
         }
     ],
-    "ref-for-dom-domtokenlist-supports①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/DOMTokenList.json",
-            "name": "supports",
-            "slug": "API/DOMTokenList/supports",
-            "summary": "The supports() method of the DOMTokenList interface returns true if a given token is in the associated attribute's supported tokens. This method is intended to support feature detection.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "36"
-                },
-                "opera_android": {
-                    "version_added": "36"
-                },
-                "safari": {
-                    "version_added": "10.1"
-                },
-                "safari_ios": {
-                    "version_added": "10.3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": "49"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "DOMTokenList.supports()"
-        }
-    ],
-    "ref-for-dom-domtokenlist-toggle①": [
+    "dom-domtokenlist-toggle": [
         {
             "engines": [
                 "blink",
@@ -3514,7 +3290,7 @@
             "title": "DOMTokenList.toggle()"
         }
     ],
-    "ref-for-dom-domtokenlist-value②": [
+    "dom-domtokenlist-value": [
         {
             "engines": [
                 "blink",
@@ -3631,7 +3407,7 @@
             "title": "DOMTokenList"
         }
     ],
-    "ref-for-dom-document-document①": [
+    "dom-document-document": [
         {
             "engines": [
                 "blink",
@@ -3686,7 +3462,7 @@
             "title": "Document()"
         }
     ],
-    "ref-for-dom-document-url①": [
+    "dom-document-url": [
         {
             "engines": [
                 "blink",
@@ -3741,7 +3517,7 @@
             "title": "Document.URL"
         }
     ],
-    "ref-for-dom-document-adoptnode①": [
+    "dom-document-adoptnode": [
         {
             "engines": [
                 "blink",
@@ -3796,7 +3572,7 @@
             "title": "Document.adoptNode()"
         }
     ],
-    "ref-for-dom-document-characterset①": [
+    "dom-document-characterset": [
         {
             "engines": [
                 "blink",
@@ -3976,7 +3752,7 @@
             "title": "Document.characterSet"
         }
     ],
-    "ref-for-dom-document-compatmode①": [
+    "dom-document-compatmode": [
         {
             "engines": [
                 "blink",
@@ -4031,7 +3807,7 @@
             "title": "Document.compatMode"
         }
     ],
-    "ref-for-dom-document-contenttype①": [
+    "dom-document-contenttype": [
         {
             "engines": [
                 "blink",
@@ -4167,7 +3943,7 @@
             "title": "Document.createAttribute()"
         }
     ],
-    "ref-for-dom-document-createcomment①": [
+    "dom-document-createcdatasection": [
         {
             "engines": [
                 "blink",
@@ -4220,7 +3996,9 @@
                 }
             },
             "title": "Document.createCDATASection()"
-        },
+        }
+    ],
+    "dom-document-createcomment": [
         {
             "engines": [
                 "blink",
@@ -4275,7 +4053,7 @@
             "title": "Document.createComment()"
         }
     ],
-    "ref-for-dom-document-createdocumentfragment①": [
+    "dom-document-createdocumentfragment": [
         {
             "engines": [
                 "blink",
@@ -4330,7 +4108,7 @@
             "title": "Document.createDocumentFragment()"
         }
     ],
-    "ref-for-dom-document-createelement①": [
+    "dom-document-createelement": [
         {
             "engines": [
                 "blink",
@@ -4386,7 +4164,7 @@
             "title": "Document.createElement()"
         }
     ],
-    "ref-for-dom-document-createelementns①": [
+    "dom-document-createelementns": [
         {
             "engines": [
                 "blink",
@@ -4498,114 +4276,6 @@
             "title": "Document.createEvent()"
         }
     ],
-    "dom-xpathevaluatorbase-createexpression": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "createExpression",
-            "slug": "API/Document/createExpression",
-            "summary": "This method compiles an XPathExpression which can then be used for (repeated) evaluations.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document.createExpression()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathEvaluator.json",
-            "name": "createExpression",
-            "slug": "API/XPathEvaluator/createExpression",
-            "summary": "This method compiles an XPathExpression which can then be used for (repeated) evaluations of the XPath expression.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathEvaluator.createExpression()"
-        }
-    ],
     "dom-document-createnodeiterator": [
         {
             "engines": [
@@ -4622,7 +4292,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -4649,7 +4319,7 @@
                     "version_added": "1"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -4661,115 +4331,7 @@
             "title": "Document.createNodeIterator()"
         }
     ],
-    "dom-xpathevaluatorbase-creatensresolver": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "createNSResolver",
-            "slug": "API/Document/createNSResolver",
-            "summary": "Creates an XPathNSResolver which resolves namespaces with respect to the definitions in scope for a specified node.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document.createNSResolver()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathEvaluator.json",
-            "name": "createNSResolver",
-            "slug": "API/XPathEvaluator/createNSResolver",
-            "summary": "This method adapts any DOM node to resolve namespaces so that an XPath expression can be easily evaluated relative to the context of the node where it appeared within the document.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathEvaluator.createNSResolver()"
-        }
-    ],
-    "ref-for-dom-document-createprocessinginstruction①": [
+    "dom-document-createprocessinginstruction": [
         {
             "engines": [
                 "blink",
@@ -4879,7 +4441,7 @@
             "title": "Document.createRange()"
         }
     ],
-    "ref-for-dom-document-createtextnode①": [
+    "dom-document-createtextnode": [
         {
             "engines": [
                 "blink",
@@ -4950,7 +4512,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -4977,7 +4539,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -4989,7 +4551,7 @@
             "title": "Document.createTreeWalker()"
         }
     ],
-    "ref-for-dom-document-doctype①": [
+    "dom-document-doctype": [
         {
             "engines": [
                 "blink",
@@ -5044,7 +4606,7 @@
             "title": "Document.doctype"
         }
     ],
-    "ref-for-dom-document-documentelement①": [
+    "dom-document-documentelement": [
         {
             "engines": [
                 "blink",
@@ -5099,7 +4661,7 @@
             "title": "Document.documentElement"
         }
     ],
-    "ref-for-dom-document-documenturi①": [
+    "dom-document-documenturi": [
         {
             "engines": [
                 "blink",
@@ -5154,115 +4716,7 @@
             "title": "Document.documentURI"
         }
     ],
-    "dom-xpathevaluatorbase-evaluate": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Document.json",
-            "name": "evaluate",
-            "slug": "API/Document/evaluate",
-            "summary": "Returns an XPathResult based on an XPath expression and other given parameters.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "9"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document.evaluate()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathEvaluator.json",
-            "name": "evaluate",
-            "slug": "API/XPathEvaluator/evaluate",
-            "summary": "The evaluate() method of the XPathEvaluator interface executes an XPath expression on the given node or document and returns an XPathResult.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathEvaluator.evaluate()"
-        }
-    ],
-    "ref-for-dom-nonelementparentnode-getelementbyid②": [
+    "dom-nonelementparentnode-getelementbyid": [
         {
             "engines": [
                 "blink",
@@ -5317,7 +4771,7 @@
             "title": "Document.getElementById()"
         }
     ],
-    "ref-for-dom-document-getelementsbyclassname①": [
+    "dom-document-getelementsbyclassname": [
         {
             "engines": [
                 "blink",
@@ -5369,10 +4823,14 @@
                     "version_added": "79"
                 }
             },
+            "caniuse": {
+                "feature": "getelementsbyclassname",
+                "title": "getElementsByClassName"
+            },
             "title": "Document.getElementsByClassName()"
         }
     ],
-    "ref-for-dom-document-getelementsbytagname①": [
+    "dom-document-getelementsbytagname": [
         {
             "engines": [
                 "blink",
@@ -5427,7 +4885,7 @@
             "title": "Document.getElementsByTagName()"
         }
     ],
-    "ref-for-dom-document-getelementsbytagnamens①": [
+    "dom-document-getelementsbytagnamens": [
         {
             "engines": [
                 "blink",
@@ -5482,7 +4940,7 @@
             "title": "Document.getElementsByTagNameNS()"
         }
     ],
-    "ref-for-dom-document-implementation①": [
+    "dom-document-implementation": [
         {
             "engines": [
                 "blink",
@@ -5537,7 +4995,7 @@
             "title": "Document.implementation"
         }
     ],
-    "ref-for-dom-document-importnode①": [
+    "dom-document-importnode": [
         {
             "engines": [
                 "blink",
@@ -5647,7 +5105,7 @@
             "title": "Document"
         }
     ],
-    "ref-for-dom-documentfragment-documentfragment①": [
+    "dom-documentfragment-documentfragment": [
         {
             "engines": [
                 "blink",
@@ -5757,7 +5215,7 @@
             "title": "DocumentFragment"
         }
     ],
-    "interface-documenttype": [
+    "documenttype": [
         {
             "engines": [
                 "blink",
@@ -5833,12 +5291,70 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": {
-                    "version_added": "63"
-                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5920,7 +5436,7 @@
             "title": "Text.assignedSlot"
         }
     ],
-    "ref-for-dom-element-attachshadow①": [
+    "dom-element-attachshadow": [
         {
             "engines": [
                 "blink",
@@ -5941,12 +5457,38 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": {
-                    "version_added": "63"
-                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -6030,7 +5572,7 @@
             "title": "Element.attributes"
         }
     ],
-    "ref-for-dom-element-classlist①": [
+    "dom-element-classlist": [
         {
             "engines": [
                 "blink",
@@ -6140,10 +5682,14 @@
                     }
                 ]
             },
+            "caniuse": {
+                "feature": "classlist",
+                "title": "classList (DOMTokenList)"
+            },
             "title": "Element.classList"
         }
     ],
-    "ref-for-dom-element-classname①": [
+    "dom-element-classname": [
         {
             "engines": [
                 "blink",
@@ -6238,7 +5784,7 @@
             "title": "Element.className"
         }
     ],
-    "ref-for-dom-element-closest①": [
+    "dom-element-closest": [
         {
             "engines": [
                 "blink",
@@ -6290,10 +5836,14 @@
                     "version_added": "79"
                 }
             },
+            "caniuse": {
+                "feature": "element-closest",
+                "title": "Element.closest()"
+            },
             "title": "Element.closest()"
         }
     ],
-    "ref-for-dom-element-getattribute①": [
+    "dom-element-getattribute": [
         {
             "engines": [
                 "blink",
@@ -6348,7 +5898,7 @@
             "title": "Element.getAttribute()"
         }
     ],
-    "ref-for-dom-element-getattributenames①": [
+    "dom-element-getattributenames": [
         {
             "engines": [
                 "blink",
@@ -6513,7 +6063,7 @@
             "title": "Element.getAttributeNodeNS()"
         }
     ],
-    "ref-for-dom-element-getattributens①": [
+    "dom-element-getattributens": [
         {
             "engines": [
                 "blink",
@@ -6570,7 +6120,7 @@
             "title": "Element.getAttributeNS()"
         }
     ],
-    "ref-for-dom-element-getelementsbyclassname": [
+    "dom-element-getelementsbyclassname": [
         {
             "engines": [
                 "blink",
@@ -6761,7 +6311,7 @@
             "title": "Element.getElementsByTagNameNS()"
         }
     ],
-    "ref-for-dom-element-hasattribute①": [
+    "dom-element-hasattribute": [
         {
             "engines": [
                 "blink",
@@ -6816,7 +6366,7 @@
             "title": "Element.hasAttribute()"
         }
     ],
-    "ref-for-dom-element-hasattributens①": [
+    "dom-element-hasattributens": [
         {
             "engines": [
                 "blink",
@@ -6871,7 +6421,7 @@
             "title": "Element.hasAttributeNS()"
         }
     ],
-    "ref-for-dom-element-hasattributes①": [
+    "dom-element-hasattributes": [
         {
             "engines": [
                 "blink",
@@ -6928,7 +6478,7 @@
             "title": "Element.hasAttributes()"
         }
     ],
-    "ref-for-dom-element-id①": [
+    "dom-element-id": [
         {
             "engines": [
                 "blink",
@@ -7130,7 +6680,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "2.2"
+                    "version_added": "2.3"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -7139,7 +6689,7 @@
             "title": "Element.insertAdjacentText()"
         }
     ],
-    "ref-for-dom-element-localname①": [
+    "dom-element-localname": [
         {
             "engines": [
                 "blink",
@@ -7194,7 +6744,7 @@
             "title": "Element.localName"
         }
     ],
-    "ref-for-dom-element-matches①": [
+    "dom-element-matches": [
         {
             "engines": [
                 "blink",
@@ -7336,10 +6886,14 @@
                     }
                 ]
             },
+            "caniuse": {
+                "feature": "matchesselector",
+                "title": "matches() DOM method"
+            },
             "title": "Element.matches()"
         }
     ],
-    "ref-for-dom-element-namespaceuri①": [
+    "dom-element-namespaceuri": [
         {
             "engines": [
                 "blink",
@@ -7394,7 +6948,7 @@
             "title": "Element.namespaceURI"
         }
     ],
-    "ref-for-dom-element-prefix①": [
+    "dom-element-prefix": [
         {
             "engines": [
                 "blink",
@@ -7449,7 +7003,7 @@
             "title": "Element.prefix"
         }
     ],
-    "ref-for-dom-element-removeattribute①": [
+    "dom-element-removeattribute": [
         {
             "engines": [
                 "blink",
@@ -7559,7 +7113,7 @@
             "title": "Element.removeAttributeNode()"
         }
     ],
-    "ref-for-dom-element-removeattributens①": [
+    "dom-element-removeattributens": [
         {
             "engines": [
                 "blink",
@@ -7614,7 +7168,7 @@
             "title": "Element.removeAttributeNS()"
         }
     ],
-    "ref-for-dom-element-setattribute①": [
+    "dom-element-setattribute": [
         {
             "engines": [
                 "blink",
@@ -7781,7 +7335,7 @@
             "title": "Element.setAttributeNodeNS()"
         }
     ],
-    "ref-for-dom-element-setattributens①": [
+    "dom-element-setattributens": [
         {
             "engines": [
                 "blink",
@@ -7836,7 +7390,7 @@
             "title": "Element.setAttributeNS()"
         }
     ],
-    "ref-for-dom-element-shadowroot①": [
+    "dom-element-shadowroot": [
         {
             "engines": [
                 "blink",
@@ -7857,12 +7411,38 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": {
-                    "version_added": "63"
-                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -7891,7 +7471,7 @@
             "title": "Element.shadowRoot"
         }
     ],
-    "ref-for-dom-element-slot①": [
+    "dom-element-slot": [
         {
             "engines": [
                 "blink",
@@ -7999,7 +7579,7 @@
             "title": "slot"
         }
     ],
-    "ref-for-dom-element-tagname①": [
+    "dom-element-tagname": [
         {
             "engines": [
                 "blink",
@@ -8054,7 +7634,7 @@
             "title": "Element.tagName"
         }
     ],
-    "ref-for-dom-element-toggleattribute①": [
+    "dom-element-toggleattribute": [
         {
             "engines": [
                 "blink",
@@ -8164,7 +7744,7 @@
             "title": "Element"
         }
     ],
-    "ref-for-dom-event-event": [
+    "dom-event-event": [
         {
             "engines": [
                 "blink",
@@ -8228,7 +7808,7 @@
             "title": "Event()"
         }
     ],
-    "ref-for-dom-event-bubbles③": [
+    "dom-event-bubbles": [
         {
             "engines": [
                 "blink",
@@ -8287,7 +7867,7 @@
             "title": "Event.bubbles"
         }
     ],
-    "ref-for-dom-event-cancelable②": [
+    "dom-event-cancelable": [
         {
             "engines": [
                 "blink",
@@ -8345,7 +7925,7 @@
             "title": "Event.cancelable"
         }
     ],
-    "ref-for-dom-event-cancelbubble①": [
+    "dom-event-cancelbubble": [
         {
             "engines": [
                 "blink",
@@ -8427,7 +8007,7 @@
             "title": "Event.cancelBubble"
         }
     ],
-    "ref-for-dom-event-composed①": [
+    "dom-event-composed": [
         {
             "engines": [
                 "blink",
@@ -8486,7 +8066,7 @@
             "title": "Event.composed"
         }
     ],
-    "ref-for-dom-event-composedpath①": [
+    "dom-event-composedpath": [
         {
             "engines": [
                 "blink",
@@ -8594,7 +8174,7 @@
             "title": "Event.composedPath()"
         }
     ],
-    "ref-for-dom-event-currenttarget②": [
+    "dom-event-currenttarget": [
         {
             "engines": [
                 "blink",
@@ -8660,7 +8240,7 @@
             "title": "Event.currentTarget"
         }
     ],
-    "ref-for-dom-event-defaultprevented①": [
+    "dom-event-defaultprevented": [
         {
             "engines": [
                 "blink",
@@ -8718,7 +8298,7 @@
             "title": "Event.defaultPrevented"
         }
     ],
-    "ref-for-dom-event-eventphase③": [
+    "dom-event-eventphase": [
         {
             "engines": [
                 "blink",
@@ -8776,7 +8356,7 @@
             "title": "Event.eventPhase"
         }
     ],
-    "ref-for-dom-event-istrusted①": [
+    "dom-event-istrusted": [
         {
             "engines": [
                 "blink",
@@ -8843,7 +8423,7 @@
             "title": "Event.isTrusted"
         }
     ],
-    "ref-for-dom-event-preventdefault③": [
+    "dom-event-preventdefault": [
         {
             "engines": [
                 "blink",
@@ -8901,7 +8481,7 @@
             "title": "Event.preventDefault()"
         }
     ],
-    "ref-for-dom-event-stopimmediatepropagation①": [
+    "dom-event-stopimmediatepropagation": [
         {
             "engines": [
                 "blink",
@@ -8959,7 +8539,7 @@
             "title": "Event.stopImmediatePropagation()"
         }
     ],
-    "ref-for-dom-event-stoppropagation①": [
+    "dom-event-stoppropagation": [
         {
             "engines": [
                 "blink",
@@ -9018,7 +8598,7 @@
             "title": "Event.stopPropagation()"
         }
     ],
-    "ref-for-dom-event-target③": [
+    "dom-event-target": [
         {
             "engines": [
                 "blink",
@@ -9076,7 +8656,7 @@
             "title": "Event.target"
         }
     ],
-    "ref-for-dom-event-timestamp①": [
+    "dom-event-timestamp": [
         {
             "engines": [
                 "blink",
@@ -9144,7 +8724,7 @@
             "title": "Event.timeStamp"
         }
     ],
-    "ref-for-dom-event-type④": [
+    "dom-event-type": [
         {
             "engines": [
                 "blink",
@@ -9370,7 +8950,7 @@
             "title": "EventListener"
         }
     ],
-    "ref-for-dom-eventtarget-eventtarget①": [
+    "dom-eventtarget-eventtarget": [
         {
             "engines": [
                 "blink",
@@ -9434,7 +9014,7 @@
             "title": "EventTarget()"
         }
     ],
-    "ref-for-dom-eventtarget-addeventlistener③": [
+    "dom-eventtarget-addeventlistener": [
         {
             "engines": [
                 "blink",
@@ -9502,10 +9082,14 @@
                     "notes": "Before Chrome 49, the <code>type</code> and <code>listener</code> parameters were optional."
                 }
             },
+            "caniuse": {
+                "feature": "addeventlistener",
+                "title": "EventTarget.addEventListener()"
+            },
             "title": "EventTarget.addEventListener()"
         }
     ],
-    "ref-for-dom-eventtarget-dispatchevent③": [
+    "dom-eventtarget-dispatchevent": [
         {
             "engines": [
                 "blink",
@@ -9568,10 +9152,14 @@
                     "version_added": "79"
                 }
             },
+            "caniuse": {
+                "feature": "dispatchevent",
+                "title": "EventTarget.dispatchEvent"
+            },
             "title": "EventTarget.dispatchEvent()"
         }
     ],
-    "ref-for-dom-eventtarget-removeeventlistener②": [
+    "dom-eventtarget-removeeventlistener": [
         {
             "engines": [
                 "blink",
@@ -9697,117 +9285,7 @@
             "title": "EventTarget"
         }
     ],
-    "ref-for-dom-htmlcollection-item①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLCollection.json",
-            "name": "item",
-            "slug": "API/HTMLCollection/item",
-            "summary": "The HTMLCollection method item() returns the node located at the specified offset into the collection.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "8"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLCollection.item"
-        }
-    ],
-    "ref-for-dom-htmlcollection-length①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/HTMLCollection.json",
-            "name": "length",
-            "slug": "API/HTMLCollection/length",
-            "summary": "The HTMLCollection.length property returns the number of items in a HTMLCollection.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "8"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": true
-                },
-                "safari_ios": {
-                    "version_added": true
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "HTMLCollection.length"
-        }
-    ],
-    "interface-htmlcollection": [
+    "htmlcollection": [
         {
             "engines": [
                 "blink",
@@ -9862,7 +9340,124 @@
             "title": "HTMLCollection"
         }
     ],
-    "ref-for-dom-mutationobserver-mutationobserver①": [
+    "mutation-observers": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/HTMLSlotElement.json",
+            "name": "slotchange_event",
+            "slug": "API/HTMLSlotElement/slotchange_event",
+            "summary": "The slotchange event is fired on an HTMLSlotElement instance (<slot> element) when the node(s) contained in that slot change.",
+            "support": {
+                "chrome": {
+                    "version_added": "53"
+                },
+                "chrome_android": {
+                    "version_added": "53"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "40"
+                },
+                "opera_android": {
+                    "version_added": "41"
+                },
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": "53"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "mutationobserver",
+                "title": "Mutation Observer"
+            },
+            "title": "HTMLSlotElement: slotchange event"
+        }
+    ],
+    "dom-mutationobserver-mutationobserver": [
         {
             "engines": [
                 "blink",
@@ -9959,7 +9554,7 @@
             "title": "MutationObserver.MutationObserver()"
         }
     ],
-    "ref-for-dom-mutationobserver-disconnect①": [
+    "dom-mutationobserver-disconnect": [
         {
             "engines": [
                 "blink",
@@ -10014,7 +9609,7 @@
             "title": "MutationObserver.disconnect()"
         }
     ],
-    "ref-for-dom-mutationobserver-observe②": [
+    "dom-mutationobserver-observe": [
         {
             "engines": [
                 "blink",
@@ -10069,7 +9664,7 @@
             "title": "MutationObserver.observe()"
         }
     ],
-    "ref-for-dom-mutationobserver-takerecords①": [
+    "dom-mutationobserver-takerecords": [
         {
             "engines": [
                 "blink",
@@ -10221,7 +9816,7 @@
             "title": "MutationObserver"
         }
     ],
-    "ref-for-dom-mutationobserverinit-attributefilter①": [
+    "dom-mutationobserverinit-attributefilter": [
         {
             "engines": [
                 "blink",
@@ -10277,7 +9872,7 @@
             "title": "MutationObserverInit.attributeFilter"
         }
     ],
-    "ref-for-dom-mutationobserverinit-attributeoldvalue①": [
+    "dom-mutationobserverinit-attributeoldvalue": [
         {
             "engines": [
                 "blink",
@@ -10334,7 +9929,7 @@
             "title": "MutationObserverInit.attributeOldValue"
         }
     ],
-    "ref-for-dom-mutationobserverinit-attributes": [
+    "dom-mutationobserverinit-attributes": [
         {
             "engines": [
                 "blink",
@@ -10391,7 +9986,7 @@
             "title": "MutationObserverInit.attributes"
         }
     ],
-    "ref-for-dom-mutationobserverinit-characterdata": [
+    "dom-mutationobserverinit-characterdata": [
         {
             "engines": [
                 "blink",
@@ -10448,7 +10043,7 @@
             "title": "MutationObserverInit.characterData"
         }
     ],
-    "ref-for-dom-mutationobserverinit-characterdataoldvalue①": [
+    "dom-mutationobserverinit-characterdataoldvalue": [
         {
             "engines": [
                 "blink",
@@ -10505,7 +10100,7 @@
             "title": "MutationObserverInit.characterDataOldValue"
         }
     ],
-    "ref-for-dom-mutationobserverinit-childlist": [
+    "dom-mutationobserverinit-childlist": [
         {
             "engines": [
                 "blink",
@@ -10560,7 +10155,7 @@
             "title": "MutationObserverInit.childList"
         }
     ],
-    "ref-for-dom-mutationobserverinit-subtree②": [
+    "dom-mutationobserverinit-subtree": [
         {
             "engines": [
                 "blink",
@@ -10712,7 +10307,7 @@
             "title": "MutationObserverInit"
         }
     ],
-    "interface-mutationrecord": [
+    "mutationrecord": [
         {
             "engines": [
                 "blink",
@@ -10765,61 +10360,6 @@
                 }
             },
             "title": "MutationRecord"
-        }
-    ],
-    "dom-namednodemap-getnameditem": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/NamedNodeMap.json",
-            "name": "getNamedItem",
-            "slug": "API/NamedNodeMap/getNamedItem",
-            "summary": "The getNamedItem() method of the NamedNodeMap interface returns the Attr corresponding to the given name, or null if there is no corresponding attribute.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "34"
-                },
-                "firefox_android": {
-                    "version_added": "34"
-                },
-                "ie": {
-                    "version_added": "6"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "1"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "NamedNodeMap.getNamedItem()"
         }
     ],
     "interface-namednodemap": [
@@ -10954,7 +10494,7 @@
             "title": "Node.appendChild()"
         }
     ],
-    "ref-for-dom-node-baseuri①": [
+    "dom-node-baseuri": [
         {
             "engines": [
                 "blink",
@@ -11009,7 +10549,7 @@
             "title": "Node.baseURI"
         }
     ],
-    "ref-for-dom-node-childnodes①": [
+    "dom-node-childnodes": [
         {
             "engines": [
                 "blink",
@@ -11064,7 +10604,7 @@
             "title": "Node.childNodes"
         }
     ],
-    "ref-for-dom-node-clonenode①": [
+    "dom-node-clonenode": [
         {
             "engines": [
                 "blink",
@@ -11119,7 +10659,7 @@
             "title": "Node.cloneNode()"
         }
     ],
-    "ref-for-dom-node-comparedocumentposition①": [
+    "dom-node-comparedocumentposition": [
         {
             "engines": [
                 "blink",
@@ -11172,10 +10712,14 @@
                     "version_added": "79"
                 }
             },
+            "caniuse": {
+                "feature": "comparedocumentposition",
+                "title": "Node.compareDocumentPosition()"
+            },
             "title": "Node.compareDocumentPosition()"
         }
     ],
-    "ref-for-dom-node-contains①": [
+    "dom-node-contains": [
         {
             "engines": [
                 "blink",
@@ -11232,7 +10776,7 @@
             "title": "Node.contains()"
         }
     ],
-    "ref-for-dom-node-firstchild①": [
+    "dom-node-firstchild": [
         {
             "engines": [
                 "blink",
@@ -11287,7 +10831,7 @@
             "title": "Node.firstChild"
         }
     ],
-    "ref-for-dom-node-getrootnode①": [
+    "dom-node-getrootnode": [
         {
             "engines": [
                 "blink",
@@ -11342,7 +10886,7 @@
             "title": "Node.getRootNode()"
         }
     ],
-    "ref-for-dom-node-haschildnodes①": [
+    "dom-node-haschildnodes": [
         {
             "engines": [
                 "blink",
@@ -11452,7 +10996,7 @@
             "title": "Node.insertBefore()"
         }
     ],
-    "ref-for-dom-node-isconnected①": [
+    "dom-node-isconnected": [
         {
             "engines": [
                 "blink",
@@ -11474,10 +11018,10 @@
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": "49"
+                    "version_added": "53"
                 },
                 "firefox_android": {
-                    "version_added": "49"
+                    "version_added": "45"
                 },
                 "ie": {
                     "version_added": false
@@ -11562,7 +11106,7 @@
             "title": "Node.isDefaultNamespace()"
         }
     ],
-    "ref-for-dom-node-isequalnode①": [
+    "dom-node-isequalnode": [
         {
             "engines": [
                 "blink",
@@ -11684,7 +11228,7 @@
             "title": "Node.isSameNode()"
         }
     ],
-    "ref-for-dom-node-lastchild①": [
+    "dom-node-lastchild": [
         {
             "engines": [
                 "blink",
@@ -11794,62 +11338,7 @@
             "title": "Node.lookupNamespaceURI()"
         }
     ],
-    "dom-node-lookupprefix": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/Node.json",
-            "name": "lookupPrefix",
-            "slug": "API/Node/lookupPrefix",
-            "summary": "The Node.lookupPrefix() method returns a DOMString containing the prefix for a given namespace URI, if present, and null if not. When multiple prefixes are possible, the result is implementation-dependent.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": "9"
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Node.lookupPrefix()"
-        }
-    ],
-    "ref-for-dom-node-nextsibling①": [
+    "dom-node-nextsibling": [
         {
             "engines": [
                 "blink",
@@ -11904,7 +11393,7 @@
             "title": "Node.nextSibling"
         }
     ],
-    "ref-for-dom-node-nodename①": [
+    "dom-node-nodename": [
         {
             "engines": [
                 "blink",
@@ -11959,7 +11448,7 @@
             "title": "Node.nodeName"
         }
     ],
-    "ref-for-dom-node-nodetype①": [
+    "dom-node-nodetype": [
         {
             "engines": [
                 "blink",
@@ -12069,7 +11558,7 @@
             "title": "Node.nodeValue"
         }
     ],
-    "ref-for-dom-node-normalize①": [
+    "dom-node-normalize": [
         {
             "engines": [
                 "blink",
@@ -12124,7 +11613,7 @@
             "title": "Node.normalize()"
         }
     ],
-    "ref-for-dom-node-ownerdocument①": [
+    "dom-node-ownerdocument": [
         {
             "engines": [
                 "blink",
@@ -12193,7 +11682,7 @@
             "title": "Node.ownerDocument"
         }
     ],
-    "ref-for-dom-node-parentelement①": [
+    "dom-node-parentelement": [
         {
             "engines": [
                 "blink",
@@ -12251,7 +11740,7 @@
             "title": "Node.parentElement"
         }
     ],
-    "ref-for-dom-node-parentnode①": [
+    "dom-node-parentnode": [
         {
             "engines": [
                 "blink",
@@ -12306,7 +11795,7 @@
             "title": "Node.parentNode"
         }
     ],
-    "ref-for-dom-node-previoussibling①": [
+    "dom-node-previoussibling": [
         {
             "engines": [
                 "blink",
@@ -12610,7 +12099,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -12637,7 +12126,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -12665,7 +12154,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -12692,7 +12181,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -12720,7 +12209,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -12747,7 +12236,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -12775,7 +12264,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -12802,7 +12291,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -12830,7 +12319,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "17"
@@ -12857,7 +12346,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -12885,7 +12374,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -12912,7 +12401,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -12940,7 +12429,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "17"
@@ -12967,7 +12456,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -12995,7 +12484,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -13022,7 +12511,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -13050,7 +12539,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -13077,7 +12566,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -13089,7 +12578,7 @@
             "title": "NodeIterator.whatToShow"
         }
     ],
-    "interface-nodeiterator": [
+    "nodeiterator": [
         {
             "engines": [
                 "blink",
@@ -13105,7 +12594,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -13132,7 +12621,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "1"
@@ -13144,7 +12633,7 @@
             "title": "NodeIterator"
         }
     ],
-    "ref-for-dom-nodelist-item①": [
+    "dom-nodelist-item": [
         {
             "engines": [
                 "blink",
@@ -13199,7 +12688,7 @@
             "title": "NodeList.item()"
         }
     ],
-    "ref-for-dom-nodelist-length①": [
+    "dom-nodelist-length": [
         {
             "engines": [
                 "blink",
@@ -13309,7 +12798,7 @@
             "title": "NodeList"
         }
     ],
-    "interface-processinginstruction": [
+    "processinginstruction": [
         {
             "engines": [
                 "blink",
@@ -13364,7 +12853,7 @@
             "title": "ProcessingInstruction"
         }
     ],
-    "ref-for-dom-range-range②": [
+    "dom-range-range": [
         {
             "engines": [
                 "blink",
@@ -13584,7 +13073,7 @@
             "title": "Range.collapse()"
         }
     ],
-    "ref-for-dom-range-commonancestorcontainer②": [
+    "dom-range-commonancestorcontainer": [
         {
             "engines": [
                 "blink",
@@ -13694,7 +13183,7 @@
             "title": "Range.compareBoundaryPoints()"
         }
     ],
-    "ref-for-dom-range-comparepoint①": [
+    "dom-range-comparepoint": [
         {
             "engines": [
                 "blink",
@@ -13981,7 +13470,7 @@
             "title": "Range.insertNode()"
         }
     ],
-    "ref-for-dom-range-intersectsnode①": [
+    "dom-range-intersectsnode": [
         {
             "engines": [
                 "blink",
@@ -14698,59 +14187,6 @@
             "title": "Range"
         }
     ],
-    "dom-shadowroot-delegatesfocus": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/ShadowRoot.json",
-            "name": "delegatesFocus",
-            "slug": "API/ShadowRoot/delegatesFocus",
-            "summary": "The delegatesFocus read-only property of the ShadowRoot interface returns a boolean that indicates whether delegatesFocus was set when the shadow was attached (see Element.attachShadow()).",
-            "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
-                "chrome_android": {
-                    "version_added": "53"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": null
-                },
-                "firefox_android": {
-                    "version_added": null
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "40"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "53"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "ShadowRoot.delegatesFocus"
-        }
-    ],
     "dom-shadowroot-host": [
         {
             "engines": [
@@ -14772,12 +14208,38 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": {
-                    "version_added": "63"
-                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -14816,7 +14278,7 @@
             "filename": "api/ShadowRoot.json",
             "name": "mode",
             "slug": "API/ShadowRoot/mode",
-            "summary": "The mode read-only property of the ShadowRoot specifies its mode — either open or closed. This defines whether or not the shadow root's internal features are accessible from JavaScript.",
+            "summary": "The mode property of the ShadowRoot specifies its mode — either open or closed. This defines whether or not the shadow root's internal features are accessible from JavaScript.",
             "support": {
                 "chrome": {
                     "version_added": "53"
@@ -14827,12 +14289,38 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": {
-                    "version_added": "63"
-                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -14882,12 +14370,38 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": {
-                    "version_added": "63"
-                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -14916,7 +14430,7 @@
             "title": "ShadowRoot"
         }
     ],
-    "ref-for-dom-staticrange-staticrange①": [
+    "dom-staticrange-staticrange": [
         {
             "engines": [
                 "gecko",
@@ -15026,7 +14540,7 @@
             "title": "StaticRange"
         }
     ],
-    "ref-for-dom-text-text①": [
+    "dom-text-text": [
         {
             "engines": [
                 "blink",
@@ -15081,7 +14595,7 @@
             "title": "Text()"
         }
     ],
-    "ref-for-dom-text-splittext①": [
+    "dom-text-splittext": [
         {
             "engines": [
                 "blink",
@@ -15145,7 +14659,7 @@
             "title": "Text.splitText()"
         }
     ],
-    "ref-for-dom-text-wholetext①": [
+    "dom-text-wholetext": [
         {
             "engines": [
                 "blink",
@@ -15197,7 +14711,7 @@
             "title": "Text.wholeText"
         }
     ],
-    "interface-text": [
+    "text": [
         {
             "engines": [
                 "blink",
@@ -15249,7 +14763,7 @@
             "title": "Text"
         }
     ],
-    "ref-for-dom-treewalker-currentnode①": [
+    "dom-treewalker-currentnode": [
         {
             "engines": [
                 "blink",
@@ -15265,7 +14779,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15292,7 +14806,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15320,7 +14834,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15347,7 +14861,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15375,7 +14889,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15402,7 +14916,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15430,7 +14944,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15457,7 +14971,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15485,7 +14999,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15512,7 +15026,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15540,7 +15054,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15567,7 +15081,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15595,7 +15109,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15622,7 +15136,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15650,7 +15164,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15677,7 +15191,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15705,7 +15219,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15732,7 +15246,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15760,7 +15274,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15787,7 +15301,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15815,7 +15329,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15842,7 +15356,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15870,7 +15384,7 @@
                     "version_added": "1"
                 },
                 "chrome_android": {
-                    "version_added": "18"
+                    "version_added": true
                 },
                 "edge": {
                     "version_added": "12"
@@ -15897,7 +15411,7 @@
                     "version_added": "3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "1.0"
+                    "version_added": true
                 },
                 "webview_android": {
                     "version_added": "3"
@@ -15944,7 +15458,7 @@
                     }
                 ],
                 "edge": {
-                    "version_added": "12"
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "1"
@@ -16034,611 +15548,6 @@
                 ]
             },
             "title": "XMLDocument"
-        }
-    ],
-    "interface-xpathevaluator": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathEvaluator.json",
-            "name": "XPathEvaluator",
-            "slug": "API/XPathEvaluator",
-            "summary": "The XPathEvaluator interface allows to compile and evaluate XPath expressions.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "1"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "caniuse": {
-                "feature": "document-evaluate-xpath",
-                "title": "document.evaluate & XPath"
-            },
-            "title": "XPathEvaluator"
-        }
-    ],
-    "dom-xpathexpression-evaluate": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathExpression.json",
-            "name": "evaluate",
-            "slug": "API/XPathExpression/evaluate",
-            "summary": "The evaluate() method of the XPathExpression interface executes an XPath expression on the given node or document and returns an XPathResult.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathExpression.evaluate()"
-        }
-    ],
-    "interface-xpathexpression": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathExpression.json",
-            "name": "XPathExpression",
-            "slug": "API/XPathExpression",
-            "summary": "This interface is a compiled XPath expression that can be evaluated on a document or specific node to return information from its DOM tree.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathExpression"
-        }
-    ],
-    "dom-xpathresult-invaliditeratorstate": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathResult.json",
-            "name": "invalidIteratorState",
-            "slug": "API/XPathResult/invalidIteratorState",
-            "summary": "The read-only invalidIteratorState property of the XPathResult interface signifies that the iterator has become invalid. It is true if XPathResult.resultType is UNORDERED_NODE_ITERATOR_TYPE or ORDERED_NODE_ITERATOR_TYPE and the document has been modified since this result was returned.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "XPathResult.invalidIteratorState"
-        }
-    ],
-    "dom-xpathresult-iteratenext": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathResult.json",
-            "name": "iterateNext",
-            "slug": "API/XPathResult/iterateNext",
-            "summary": "The iterateNext() method of the XPathResult interface iterates over a node set result and returns the next node from it or null if there are no more nodes.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathResult.iterateNext()"
-        }
-    ],
-    "dom-xpathresult-resulttype": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathResult.json",
-            "name": "resultType",
-            "slug": "API/XPathResult/resultType",
-            "summary": "The read-only resultType property of the XPathResult interface represents the type of the result, as defined by the type constants.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "XPathResult.resultType"
-        }
-    ],
-    "dom-xpathresult-snapshotitem-index-index": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathResult.json",
-            "name": "snapshotItem",
-            "slug": "API/XPathResult/snapshotItem",
-            "summary": "The snapshotItem() method of the XPathResult interface returns an item of the snapshot collection or null in case the index is not within the range of nodes. Unlike the iterator result, the snapshot does not become invalid, but may not correspond to the current document if it is mutated.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathResult.snapshotItem()"
-        }
-    ],
-    "interface-xpathresult": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/XPathResult.json",
-            "name": "XPathResult",
-            "slug": "API/XPathResult",
-            "summary": "The XPathResult interface represents the results generated by evaluating an XPath expression within the context of a given node.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "12.1"
-                },
-                "opera_android": {
-                    "version_added": "12.1"
-                },
-                "safari": {
-                    "version_added": "3"
-                },
-                "safari_ios": {
-                    "version_added": "1"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "1"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "XPathResult"
-        }
-    ],
-    "ref-for-dom-parentnode-append①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__Document.json",
-            "name": "append",
-            "slug": "API/Document/append",
-            "summary": "The Document.append() method inserts a set of Node objects or DOMString objects after the last child of the document. DOMString objects are inserted as equivalent Text nodes.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": "10"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document.append()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__DocumentFragment.json",
-            "name": "append",
-            "slug": "API/DocumentFragment/append",
-            "summary": "The DocumentFragment.append() method inserts a set of Node objects or DOMString objects after the last child of the document fragment. DOMString objects are inserted as equivalent Text nodes.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": "10"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "DocumentFragment.append()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__Element.json",
-            "name": "append",
-            "slug": "API/Element/append",
-            "summary": "The Element.append() method inserts a set of Node objects or DOMString objects after the last child of the Element. DOMString objects are inserted as equivalent Text nodes.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": "10"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element.append()"
         }
     ],
     "dom-parentnode-childelementcount": [
@@ -16793,7 +15702,7 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
@@ -16802,7 +15711,7 @@
             "title": "Element.childElementCount"
         }
     ],
-    "ref-for-dom-parentnode-children①": [
+    "dom-parentnode-children": [
         {
             "engines": [
                 "blink",
@@ -16812,7 +15721,7 @@
             "filename": "api/_mixins/ParentNode__Document.json",
             "name": "children",
             "slug": "API/Document/children",
-            "summary": "The read-only children property returns a live HTMLCollection which contains all of the child elements of the document upon which it was called.",
+            "summary": "The ParentNode property children is a read-only property that returns a live HTMLCollection which contains all of the child elements of the node upon which it was called.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -16854,7 +15763,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.children"
+            "title": "ParentNode.children"
         },
         {
             "engines": [
@@ -16865,7 +15774,7 @@
             "filename": "api/_mixins/ParentNode__DocumentFragment.json",
             "name": "children",
             "slug": "API/DocumentFragment/children",
-            "summary": "The read-only children property returns a live HTMLCollection which contains all of the child elements of the document fragment upon which it was called.",
+            "summary": "The ParentNode property children is a read-only property that returns a live HTMLCollection which contains all of the child elements of the node upon which it was called.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -16907,7 +15816,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "DocumentFragment.children"
+            "title": "ParentNode.children"
         },
         {
             "engines": [
@@ -16918,7 +15827,7 @@
             "filename": "api/_mixins/ParentNode__Element.json",
             "name": "children",
             "slug": "API/Element/children",
-            "summary": "The read-only children property returns a live HTMLCollection which contains all of the child elements of the element upon which it was called.",
+            "summary": "The ParentNode property children is a read-only property that returns a live HTMLCollection which contains all of the child elements of the node upon which it was called.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -16961,16 +15870,16 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
-            "title": "Element.children"
+            "title": "ParentNode.children"
         }
     ],
-    "ref-for-dom-parentnode-firstelementchild①": [
+    "dom-parentnode-firstelementchild": [
         {
             "engines": [
                 "blink",
@@ -16980,7 +15889,7 @@
             "filename": "api/_mixins/ParentNode__Document.json",
             "name": "firstElementChild",
             "slug": "API/Document/firstElementChild",
-            "summary": "The Document.firstElementChild read-only property returns the document's first child Element, or null if there are no child elements.",
+            "summary": "The ParentNode.firstElementChild read-only property returns the object's first child Element, or null if there are no child elements.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -17022,7 +15931,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.firstElementChild"
+            "title": "ParentNode.firstElementChild"
         },
         {
             "engines": [
@@ -17033,7 +15942,7 @@
             "filename": "api/_mixins/ParentNode__DocumentFragment.json",
             "name": "firstElementChild",
             "slug": "API/DocumentFragment/firstElementChild",
-            "summary": "The DocumentFragment.firstElementChild read-only property returns the document fragment's first child Element, or null if there are no child elements.",
+            "summary": "The ParentNode.firstElementChild read-only property returns the object's first child Element, or null if there are no child elements.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -17075,7 +15984,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "DocumentFragment.firstElementChild"
+            "title": "ParentNode.firstElementChild"
         },
         {
             "engines": [
@@ -17086,7 +15995,7 @@
             "filename": "api/_mixins/ParentNode__Element.json",
             "name": "firstElementChild",
             "slug": "API/Element/firstElementChild",
-            "summary": "The Element.firstElementChild read-only property returns an element's first child Element, or null if there are no child elements.",
+            "summary": "The ParentNode.firstElementChild read-only property returns the object's first child Element, or null if there are no child elements.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -17122,16 +16031,16 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
-            "title": "Element.firstElementChild"
+            "title": "ParentNode.firstElementChild"
         }
     ],
-    "ref-for-dom-parentnode-lastelementchild①": [
+    "dom-parentnode-lastelementchild": [
         {
             "engines": [
                 "blink",
@@ -17141,7 +16050,7 @@
             "filename": "api/_mixins/ParentNode__Document.json",
             "name": "lastElementChild",
             "slug": "API/Document/lastElementChild",
-            "summary": "The Document.lastElementChild read-only property returns the document's last child Element, or null if there are no child elements.",
+            "summary": "The ParentNode.lastElementChild read-only property returns the object's last child Element or null if there are no child elements.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -17183,7 +16092,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.lastElementChild"
+            "title": "ParentNode.lastElementChild"
         },
         {
             "engines": [
@@ -17194,7 +16103,7 @@
             "filename": "api/_mixins/ParentNode__DocumentFragment.json",
             "name": "lastElementChild",
             "slug": "API/DocumentFragment/lastElementChild",
-            "summary": "The DocumentFragment.lastElementChild read-only property returns the document fragment's last child Element, or null if there are no child elements.",
+            "summary": "The ParentNode.lastElementChild read-only property returns the object's last child Element or null if there are no child elements.",
             "support": {
                 "chrome": {
                     "version_added": "29"
@@ -17236,7 +16145,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "DocumentFragment.lastElementChild"
+            "title": "ParentNode.lastElementChild"
         },
         {
             "engines": [
@@ -17247,7 +16156,7 @@
             "filename": "api/_mixins/ParentNode__Element.json",
             "name": "lastElementChild",
             "slug": "API/Element/lastElementChild",
-            "summary": "The Element.lastElementChild read-only property returns an element's last child Element, or null if there are no child elements.",
+            "summary": "The ParentNode.lastElementChild read-only property returns the object's last child Element or null if there are no child elements.",
             "support": {
                 "chrome": {
                     "version_added": "1"
@@ -17283,177 +16192,16 @@
                     "version_added": "1.0"
                 },
                 "webview_android": {
-                    "version_added": "37"
+                    "version_added": "1"
                 },
                 "edge_blink": {
                     "version_added": "79"
                 }
             },
-            "title": "Element.lastElementChild"
+            "title": "ParentNode.lastElementChild"
         }
     ],
-    "ref-for-dom-parentnode-prepend①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__Document.json",
-            "name": "prepend",
-            "slug": "API/Document/prepend",
-            "summary": "The Document.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document. DOMString objects are inserted as equivalent Text nodes.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": "10"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Document.prepend()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__DocumentFragment.json",
-            "name": "prepend",
-            "slug": "API/DocumentFragment/prepend",
-            "summary": "The DocumentFragment.prepend() method inserts a set of Node objects or DOMString objects before the first child of the document fragment. DOMString objects are inserted as equivalent Text nodes.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": "10"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "DocumentFragment.prepend()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__Element.json",
-            "name": "prepend",
-            "slug": "API/Element/prepend",
-            "summary": "The Element.prepend() method inserts a set of Node objects or DOMString objects before the first child of the Element. DOMString objects are inserted as equivalent Text nodes.",
-            "support": {
-                "chrome": {
-                    "version_added": "54"
-                },
-                "chrome_android": {
-                    "version_added": "54"
-                },
-                "edge": {
-                    "version_added": "17"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "49"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "41"
-                },
-                "opera_android": {
-                    "version_added": "41"
-                },
-                "safari": {
-                    "version_added": "10"
-                },
-                "safari_ios": {
-                    "version_added": "10"
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "54"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "Element.prepend()"
-        }
-    ],
-    "ref-for-dom-parentnode-queryselector①": [
+    "dom-parentnode-queryselector": [
         {
             "engines": [
                 "blink",
@@ -17512,70 +16260,14 @@
                     "version_added": "79"
                 }
             },
-            "title": "Document.querySelector()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__DocumentFragment.json",
-            "name": "querySelector",
-            "slug": "API/DocumentFragment/querySelector",
-            "summary": "The DocumentFragment.querySelector() method returns the first element, or null if no matches are found, within the DocumentFragment (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": [
-                    {
-                        "version_added": "9"
-                    },
-                    {
-                        "version_added": "8",
-                        "partial_implementation": true,
-                        "notes": "<code>querySelectorAll()</code> is supported, but only for CSS 2.1 selectors."
-                    }
-                ],
-                "opera": {
-                    "version_added": "10"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+            "caniuse": {
+                "feature": "queryselector",
+                "title": "querySelector/querySelectorAll"
             },
-            "title": "DocumentFragment.querySelector()"
+            "title": "Document.querySelector()"
         }
     ],
-    "ref-for-dom-parentnode-queryselectorall①": [
+    "dom-parentnode-queryselectorall": [
         {
             "engines": [
                 "blink",
@@ -17635,66 +16327,6 @@
                 }
             },
             "title": "Document.querySelectorAll()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__DocumentFragment.json",
-            "name": "querySelectorAll",
-            "slug": "API/DocumentFragment/querySelectorAll",
-            "summary": "The DocumentFragment.querySelectorAll() method returns a NodeList of elements within the DocumentFragment (using depth-first pre-order traversal of the document's nodes) that matches the specified group of selectors.",
-            "support": {
-                "chrome": {
-                    "version_added": "1"
-                },
-                "chrome_android": {
-                    "version_added": "18"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "3.5"
-                },
-                "firefox_android": {
-                    "version_added": "4"
-                },
-                "ie": [
-                    {
-                        "version_added": "9"
-                    },
-                    {
-                        "version_added": "8",
-                        "partial_implementation": true,
-                        "notes": "<code>querySelectorAll()</code> is supported, but only for CSS 2.1 selectors."
-                    }
-                ],
-                "opera": {
-                    "version_added": "10"
-                },
-                "opera_android": {
-                    "version_added": "10.1"
-                },
-                "safari": {
-                    "version_added": "4"
-                },
-                "safari_ios": {
-                    "version_added": "3"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.0"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "DocumentFragment.querySelectorAll()"
         },
         {
             "engines": [
@@ -17817,167 +16449,6 @@
             "title": "Element.querySelectorAll()"
         }
     ],
-    "ref-for-dom-parentnode-replacechildren①": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__Document.json",
-            "name": "replaceChildren",
-            "slug": "API/Document/replaceChildren",
-            "summary": "The Document.replaceChildren() method replaces the existing children of a Document with a specified new set of children.",
-            "support": {
-                "chrome": {
-                    "version_added": "86"
-                },
-                "chrome_android": {
-                    "version_added": "86"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "78"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "72"
-                },
-                "opera_android": {
-                    "version_added": "61"
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": "14.0"
-                },
-                "webview_android": {
-                    "version_added": "86"
-                },
-                "edge_blink": {
-                    "version_added": "86"
-                }
-            },
-            "title": "Document.replaceChildren()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__DocumentFragment.json",
-            "name": "replaceChildren",
-            "slug": "API/DocumentFragment/replaceChildren",
-            "summary": "The DocumentFragment.replaceChildren() method replaces the existing children of a DocumentFragment with a specified new set of children. These can be DOMString or Node objects.",
-            "support": {
-                "chrome": {
-                    "version_added": "86"
-                },
-                "chrome_android": {
-                    "version_added": "86"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "78"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "72"
-                },
-                "opera_android": {
-                    "version_added": "61"
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": "14.0"
-                },
-                "webview_android": {
-                    "version_added": "86"
-                },
-                "edge_blink": {
-                    "version_added": "86"
-                }
-            },
-            "title": "DocumentFragment.replaceChildren()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/_mixins/ParentNode__Element.json",
-            "name": "replaceChildren",
-            "slug": "API/Element/replaceChildren",
-            "summary": "The Element.replaceChildren() method replaces the existing children of a Node with a specified new set of children. These can be DOMString or Node objects.",
-            "support": {
-                "chrome": {
-                    "version_added": "86"
-                },
-                "chrome_android": {
-                    "version_added": "86"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "78"
-                },
-                "firefox_android": {
-                    "version_added": "79"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "72"
-                },
-                "opera_android": {
-                    "version_added": "61"
-                },
-                "safari": {
-                    "version_added": "14"
-                },
-                "safari_ios": {
-                    "version_added": "14"
-                },
-                "samsunginternet_android": {
-                    "version_added": "14.0"
-                },
-                "webview_android": {
-                    "version_added": "86"
-                },
-                "edge_blink": {
-                    "version_added": "86"
-                }
-            },
-            "title": "Element.replaceChildren()"
-        }
-    ],
     "shadow-tree-slots": [
         {
             "engines": [
@@ -17988,7 +16459,7 @@
             "filename": "html/elements/slot.json",
             "name": "slot",
             "slug": "HTML/Element/slot",
-            "summary": "The <slot> HTML element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together.",
+            "summary": "The HTML <slot> element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together.",
             "support": {
                 "chrome": {
                     "version_added": "53"
@@ -17999,12 +16470,70 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "63"
-                },
-                "firefox_android": {
-                    "version_added": "63"
-                },
+                "firefox": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "63"
+                    },
+                    {
+                        "version_added": "59",
+                        "version_removed": "63",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": true,
+                        "version_removed": "59",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "dom.webcomponents.shadowdom.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },

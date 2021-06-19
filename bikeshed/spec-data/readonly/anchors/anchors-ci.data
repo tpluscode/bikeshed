@@ -118,8 +118,8 @@ text-emphasis-style
 -
 circle
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-circle
@@ -129,8 +129,8 @@ list-style-type
 -
 circle
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-circle
@@ -140,8 +140,8 @@ list-style-type
 -
 circle
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#elementdef-circle
@@ -150,8 +150,8 @@ https://svgwg.org/svg2-draft/shapes.html#elementdef-circle
 -
 circle
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#elementdef-circle
@@ -233,8 +233,8 @@ RTCIceCandidatePairStats
 -
 circular reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#TermCircularReference
@@ -243,8 +243,8 @@ https://svgwg.org/svg2-draft/linking.html#TermCircularReference
 -
 circular reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#TermCircularReference

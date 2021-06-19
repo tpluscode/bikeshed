@@ -43,8 +43,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'position'
 -
 <points>
 type
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#DataTypePoints
@@ -53,8 +53,8 @@ https://svgwg.org/svg2-draft/shapes.html#DataTypePoints
 -
 <points>
 type
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#DataTypePoints
@@ -161,8 +161,8 @@ https://www.w3.org/TR/css-values-4/#typedef-position
 -
 POSITION_UNAVAILABLE
 const
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-position_unavailable
@@ -172,8 +172,8 @@ GeolocationPositionError
 -
 POSITION_UNAVAILABLE
 const
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-position_unavailable
@@ -345,8 +345,8 @@ https://www.w3.org/TR/webvtt1/#enumdef-positionalignsetting
 -
 PositionCallback
 callback
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-positioncallback
@@ -356,8 +356,8 @@ PositionCallback
 -
 PositionCallback
 callback
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-positioncallback
@@ -367,8 +367,8 @@ PositionCallback
 -
 PositionErrorCallback
 callback
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-positionerrorcallback
@@ -378,8 +378,8 @@ PositionErrorCallback
 -
 PositionErrorCallback
 callback
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-positionerrorcallback
@@ -389,8 +389,8 @@ PositionErrorCallback
 -
 PositionOptions
 dictionary
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-positionoptions
@@ -399,8 +399,8 @@ https://w3c.github.io/geolocation-api/#dom-positionoptions
 -
 PositionOptions
 dictionary
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-positionoptions
@@ -585,8 +585,8 @@ quadrilateral
 -
 pointee type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pointee-type
@@ -595,8 +595,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pointee-type
 -
 pointee type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pointee-type
@@ -637,8 +637,8 @@ cursor
 -
 pointer
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-pointer
@@ -648,8 +648,8 @@ cursor
 -
 pointer
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-pointer
@@ -874,8 +874,8 @@ https://www.w3.org/TR/webdriver2/#dfn-pointer-type
 -
 pointer type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pointer-type
@@ -884,8 +884,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pointer-type
 -
 pointer type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pointer-type
@@ -894,8 +894,8 @@ https://www.w3.org/TR/WGSL/#pointer-type
 -
 pointer-events
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/interact.html#PointerEventsProperty
@@ -904,8 +904,8 @@ https://svgwg.org/svg2-draft/interact.html#PointerEventsProperty
 -
 pointer-events
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/interact.html#PointerEventsProperty
@@ -1457,8 +1457,8 @@ https://www.w3.org/TR/pointerevents3/#dfn-pointerup-event
 -
 points
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#PolylineElementPointsAttribute
@@ -1468,8 +1468,8 @@ polyline
 -
 points
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#PolygonElementPointsAttribute
@@ -1479,8 +1479,8 @@ polygon
 -
 points
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#__svg__SVGAnimatedPoints__points
@@ -1490,8 +1490,8 @@ SVGAnimatedPoints
 -
 points
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#PolylineElementPointsAttribute
@@ -1501,8 +1501,8 @@ polyline
 -
 points
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#PolygonElementPointsAttribute
@@ -1512,8 +1512,8 @@ polygon
 -
 points
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#__svg__SVGAnimatedPoints__points
@@ -1784,8 +1784,8 @@ origin policy manifest/features
 -
 policy
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-policy
@@ -1795,8 +1795,8 @@ violation
 -
 policy
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-policy
@@ -2229,8 +2229,8 @@ https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-p
 -
 polygon
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#elementdef-polygon
@@ -2239,8 +2239,8 @@ https://svgwg.org/svg2-draft/shapes.html#elementdef-polygon
 -
 polygon
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#elementdef-polygon
@@ -2280,8 +2280,8 @@ https://www.w3.org/TR/css-shapes-1/#funcdef-polygon
 -
 polyline
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#elementdef-polyline
@@ -2290,8 +2290,8 @@ https://svgwg.org/svg2-draft/shapes.html#elementdef-polyline
 -
 polyline
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#elementdef-polyline
@@ -2886,8 +2886,8 @@ https://url.spec.whatwg.org/#port-state
 -
 port-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-port-part
@@ -2896,8 +2896,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-port-part
 -
 port-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-port-part
@@ -2906,8 +2906,8 @@ https://www.w3.org/TR/CSP3/#grammardef-port-part
 -
 port-part matches
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#port-part-matches
@@ -2916,8 +2916,8 @@ https://w3c.github.io/webappsec-csp/#port-part-matches
 -
 port-part matches
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#port-part-matches
@@ -3553,8 +3553,8 @@ https://www.w3.org/TR/css-position-3/#propdef-position
 -
 position
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-position
@@ -3563,8 +3563,8 @@ https://drafts.csswg.org/css2/#propdef-position
 -
 position
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-position
@@ -3573,8 +3573,8 @@ https://drafts.csswg.org/css2/#propdef-position
 -
 position
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-position
@@ -3583,8 +3583,8 @@ https://www.w3.org/TR/CSS22/visuren.html#propdef-position
 -
 position
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor-position
@@ -3594,8 +3594,8 @@ cursor
 -
 position
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor-position
@@ -4024,8 +4024,8 @@ https://www.w3.org/TR/css-position-3/#positioned-box
 -
 positioned
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#positioned-element
@@ -4034,8 +4034,8 @@ https://drafts.csswg.org/css2/#positioned-element
 -
 positioned
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#positioned-element
@@ -4064,8 +4064,8 @@ https://www.w3.org/TR/css-position-3/#positioned-box
 -
 positioned element/box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#positioned-element
@@ -4074,8 +4074,8 @@ https://drafts.csswg.org/css2/#positioned-element
 -
 positioned element/box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#positioned-element
@@ -4084,8 +4084,8 @@ https://drafts.csswg.org/css2/#positioned-element
 -
 positioning rectangle
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/embedded.html#TermPositioningRectangle
@@ -4094,8 +4094,8 @@ https://svgwg.org/svg2-draft/embedded.html#TermPositioningRectangle
 -
 positioning rectangle
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/embedded.html#TermPositioningRectangle
@@ -4124,8 +4124,8 @@ https://www.w3.org/TR/css-position-3/#positioning-scheme
 -
 positioning scheme
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#positioning-scheme%E2%91%A0
@@ -4134,8 +4134,8 @@ https://drafts.csswg.org/css2/#positioning-scheme%E2%91%A0
 -
 positioning scheme
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#positioning-scheme%E2%91%A0
@@ -4144,8 +4144,8 @@ https://drafts.csswg.org/css2/#positioning-scheme%E2%91%A0
 -
 positioning schemes:
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#positioning-scheme%E2%91%A0
@@ -4154,8 +4154,8 @@ https://drafts.csswg.org/css2/#positioning-scheme%E2%91%A0
 -
 positioning schemes:
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#positioning-scheme%E2%91%A0
@@ -4195,8 +4195,8 @@ https://www.w3.org/TR/css-font-loading-3/#possibly-pending-font-loads
 -
 possibly update the key generator
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#possibly-update-the-key-generator
@@ -4205,8 +4205,8 @@ https://w3c.github.io/IndexedDB/#possibly-update-the-key-generator
 -
 possibly update the key generator
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#possibly-update-the-key-generator
@@ -4368,8 +4368,8 @@ fetch timing info
 -
 post-request check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-post-request-check
@@ -4379,8 +4379,8 @@ directive
 -
 post-request check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-post-request-check

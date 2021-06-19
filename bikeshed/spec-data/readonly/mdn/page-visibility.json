@@ -175,7 +175,7 @@
             "title": "Document.onvisibilitychange"
         }
     ],
-    "reacting-to-visibilitychange": [
+    "dfn-visibilitychange": [
         {
             "engines": [
                 "blink",
@@ -302,7 +302,7 @@
             "title": "Document: visibilitychange event"
         }
     ],
-    "visibilitystate-attribute": [
+    "visibility-states-and-the-visibilitystate-enum": [
         {
             "engines": [
                 "blink",

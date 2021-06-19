@@ -335,8 +335,8 @@ https://infra.spec.whatwg.org/#skip-ascii-whitespace
 -
 skip end tag
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-skip-end-tag

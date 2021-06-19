@@ -808,7 +808,7 @@ navigator<c- p>.</c->bluetooth<c- p>.</c-><a data-link-type="idl" href="#dom-blu
 </pre>
        <p class="note" role="note"><span>Note:</span> This may require that this algorithm has a <a href="https://html.spec.whatwg.org/#tracking-user-activation"> transient
         activation</a> on its <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global" id="ref-for-concept-relevant-global①">relevant global object</a> when triggered.</p>
-      <li> If the result is <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied">"denied"</a></code>,
+      <li> If the result is <code class="idl"><a data-link-type="idl">"denied"</a></code>,
         reject <var>promise</var> with a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#notallowederror" id="ref-for-notallowederror">NotAllowedError</a></code> and abort these steps. 
       <li>
         Let <var>scan</var> be a new <code class="idl"><a data-link-type="idl" href="#bluetoothlescan" id="ref-for-bluetoothlescan②">BluetoothLEScan</a></code> instance
@@ -1013,7 +1013,7 @@ steps:</p>
        <p> Given a <code class="idl"><a data-link-type="idl" href="#dictdef-bluetoothlescanpermissiondescriptor" id="ref-for-dictdef-bluetoothlescanpermissiondescriptor">BluetoothLEScanPermissionDescriptor</a></code> <var>descriptor</var> and a <code class="idl"><a data-link-type="idl" href="#bluetoothlescanpermissionresult" id="ref-for-bluetoothlescanpermissionresult">BluetoothLEScanPermissionResult</a></code> <var>result</var>: </p>
        <ol class="algorithm">
         <li> Update <code><var>result</var>.<code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state">state</a></code></code> to <var>descriptor</var>’s <a data-link-type="dfn" href="https://w3c.github.io/permissions/#permission-state" id="ref-for-permission-state">permission state</a>. 
-        <li> If <code><var>result</var>.<code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state①">state</a></code></code> is <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied①">"denied"</a></code>,
+        <li> If <code><var>result</var>.<code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state①">state</a></code></code> is <code class="idl"><a data-link-type="idl">"denied"</a></code>,
             set <code><var>result</var>.scans</code> to an empty <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array⑤">FrozenArray</a></code> and abort these steps. 
         <li>
           Update <code><var>result</var>.<code class="idl"><a data-link-type="idl" href="#dom-bluetoothlescanpermissionresult-scans" id="ref-for-dom-bluetoothlescanpermissionresult-scans">scans</a></code></code> to
@@ -1036,7 +1036,7 @@ steps:</p>
   keepRepeatedDevices<c- o>:</c-> <var>activeScan</var><c- p>.</c->keepRepeatedDevices
 <c- p>}</c->
 </pre>
-           <p>is not <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-granted" id="ref-for-dom-permissionstate-granted">"granted"</a></code>,
+           <p>is not <code class="idl"><a data-link-type="idl">"granted"</a></code>,
                 call <code><var>activeScan</var>.<code class="idl"><a data-link-type="idl" href="#dom-bluetoothlescan-stop" id="ref-for-dom-bluetoothlescan-stop③">stop()</a></code></code>.</p>
          </ol>
        </ol>
@@ -1467,19 +1467,6 @@ steps:</p>
     <li><a href="#ref-for-map-iterate">4.2. Handling Document Loss of Full Activity</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-dom-permissionstate-denied">
-   <a href="https://w3c.github.io/permissions/#dom-permissionstate-denied">https://w3c.github.io/permissions/#dom-permissionstate-denied</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dom-permissionstate-denied">4. Scanning for BLE advertisements</a>
-    <li><a href="#ref-for-dom-permissionstate-denied①">4.3. Permission to scan</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-dom-permissionstate-granted">
-   <a href="https://w3c.github.io/permissions/#dom-permissionstate-granted">https://w3c.github.io/permissions/#dom-permissionstate-granted</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dom-permissionstate-granted">4.3. Permission to scan</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-dictdef-permissiondescriptor">
    <a href="https://w3c.github.io/permissions/#dictdef-permissiondescriptor">https://w3c.github.io/permissions/#dictdef-permissiondescriptor</a><b>Referenced in:</b>
    <ul>
@@ -1673,6 +1660,12 @@ steps:</p>
     <li><a href="#ref-for-dom-bluetoothlescanfilterinit-services">4.1. Controlling a BLE scan</a> <a href="#ref-for-dom-bluetoothlescanfilterinit-services①">(2)</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-dfn-get-buffer-source-copy">
+   <a href="https://heycam.github.io/webidl/#dfn-get-buffer-source-copy">https://heycam.github.io/webidl/#dfn-get-buffer-source-copy</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dfn-get-buffer-source-copy">4.1. Controlling a BLE scan</a> <a href="#ref-for-dfn-get-buffer-source-copy①">(2)</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-idl-ArrayBuffer">
    <a href="https://heycam.github.io/webidl/#idl-ArrayBuffer">https://heycam.github.io/webidl/#idl-ArrayBuffer</a><b>Referenced in:</b>
    <ul>
@@ -1727,12 +1720,6 @@ steps:</p>
    <a href="https://heycam.github.io/webidl/#unknownerror">https://heycam.github.io/webidl/#unknownerror</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-unknownerror">4. Scanning for BLE advertisements</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-dfn-get-buffer-source-copy">
-   <a href="https://heycam.github.io/webidl/#dfn-get-buffer-source-copy">https://heycam.github.io/webidl/#dfn-get-buffer-source-copy</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dfn-get-buffer-source-copy">4.1. Controlling a BLE scan</a> <a href="#ref-for-dfn-get-buffer-source-copy①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-a-new-promise">
@@ -1828,8 +1815,6 @@ steps:</p>
    <li>
     <a data-link-type="biblio">[permissions]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-dom-permissionstate-denied">"denied"</span>
-     <li><span class="dfn-paneled" id="term-for-dom-permissionstate-granted">"granted"</span>
      <li><span class="dfn-paneled" id="term-for-dictdef-permissiondescriptor">PermissionDescriptor</span>
      <li><span class="dfn-paneled" id="term-for-permissionstatus">PermissionStatus</span>
      <li><span class="dfn-paneled" id="term-for-extra-permission-data">extra permission data</span>
@@ -1869,6 +1854,11 @@ steps:</p>
    <li>
     <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
     <ul>
+     <li><span class="dfn-paneled" id="term-for-dfn-get-buffer-source-copy">a copy of the bytes held</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
+    <ul>
      <li><span class="dfn-paneled" id="term-for-idl-ArrayBuffer">ArrayBuffer</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
      <li><span class="dfn-paneled" id="term-for-idl-frozen-array">FrozenArray</span>
@@ -1878,7 +1868,6 @@ steps:</p>
      <li><span class="dfn-paneled" id="term-for-idl-promise">Promise</span>
      <li><span class="dfn-paneled" id="term-for-SecureContext">SecureContext</span>
      <li><span class="dfn-paneled" id="term-for-unknownerror">UnknownError</span>
-     <li><span class="dfn-paneled" id="term-for-dfn-get-buffer-source-copy">a copy of the bytes held</span>
      <li><span class="dfn-paneled" id="term-for-a-new-promise">a new promise</span>
      <li><span class="dfn-paneled" id="term-for-idl-boolean">boolean</span>
      <li><span class="dfn-paneled" id="term-for-dfn-map-entries">map entries</span>
@@ -1900,19 +1889,21 @@ steps:</p>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMAScript]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-infra">[INFRA]
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
    <dt id="biblio-permissions">[PERMISSIONS]
-   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 15 June 2021. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
+   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 20 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-web-bluetooth">[WEB-BLUETOOTH]
    <dd>Jeffrey Yasskin. <a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a>. Draft Community Group Report. URL: <a href="https://webbluetoothcg.github.io/web-bluetooth/">https://webbluetoothcg.github.io/web-bluetooth/</a>
    <dt id="biblio-webidl">[WebIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

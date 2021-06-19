@@ -322,8 +322,8 @@ continue
 -
 overflow
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#overflow
@@ -332,8 +332,8 @@ https://drafts.csswg.org/css2/#overflow
 -
 overflow
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-overflow
@@ -342,8 +342,8 @@ https://drafts.csswg.org/css2/#propdef-overflow
 -
 overflow
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#overflow
@@ -352,8 +352,8 @@ https://drafts.csswg.org/css2/#overflow
 -
 overflow
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-overflow
@@ -362,8 +362,8 @@ https://drafts.csswg.org/css2/#propdef-overflow
 -
 overflow
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visufx.html#propdef-overflow
@@ -680,8 +680,8 @@ https://www.w3.org/TR/css-overflow-3/#propdef-overflow-y
 -
 overlap
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-overlap
@@ -691,8 +691,8 @@ transaction
 -
 overlap
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-overlap
@@ -702,8 +702,8 @@ transaction
 -
 overlap
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#overlap
@@ -712,8 +712,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#overlap
 -
 overlap
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#overlap
@@ -722,8 +722,8 @@ https://www.w3.org/TR/WGSL/#overlap
 -
 overlapping scope
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-overlap
@@ -733,8 +733,8 @@ transaction
 -
 overlapping scope
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-overlap
@@ -851,8 +851,8 @@ text-decoration-line
 -
 overline
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-decoration-overline
@@ -862,8 +862,8 @@ text-decoration
 -
 overline
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-decoration-overline
@@ -883,8 +883,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#overload-resolution-a
 -
 overload resolution algorithm
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-overload-resolution-algorithm
@@ -893,8 +893,8 @@ https://heycam.github.io/webidl/#dfn-overload-resolution-algorithm
 -
 overload resolution algorithm
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-overload-resolution-algorithm
@@ -903,8 +903,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-overload-resolution-algorithm
 -
 overloaded
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-overloaded
@@ -913,8 +913,8 @@ https://heycam.github.io/webidl/#dfn-overloaded
 -
 overloaded
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-overloaded
@@ -933,8 +933,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#overridden-constructo
 -
 overridden constructor steps
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#overridden-constructor-steps
@@ -943,8 +943,8 @@ https://heycam.github.io/webidl/#overridden-constructor-steps
 -
 override
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-override
@@ -954,8 +954,8 @@ attribute
 -
 override
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-override

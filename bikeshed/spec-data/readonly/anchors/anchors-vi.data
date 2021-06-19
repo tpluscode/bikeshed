@@ -151,8 +151,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'visibility'
 -
 'visual' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#visual-media-group
@@ -161,8 +161,8 @@ https://drafts.csswg.org/css2/#visual-media-group
 -
 'visual' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#visual-media-group
@@ -181,8 +181,8 @@ https://html.spec.whatwg.org/multipage/semantics-other.html#selector-visited
 -
 :visited
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-visited
@@ -191,8 +191,8 @@ https://drafts.csswg.org/css2/#selectordef-visited
 -
 :visited
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-visited
@@ -1958,8 +1958,8 @@ ReadableStreamBYOBRequest
 -
 view
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#elementdef-view
@@ -1968,8 +1968,8 @@ https://svgwg.org/svg2-draft/linking.html#elementdef-view
 -
 view
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#elementdef-view
@@ -2376,8 +2376,8 @@ CompositionEvent/initCompositionEvent(typeArg)
 -
 viewBox
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox
@@ -2387,8 +2387,8 @@ SVGFitToViewBox
 -
 viewBox
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGFitToViewBox__viewBox
@@ -2486,8 +2486,8 @@ XRLayerInit
 -
 viewbox
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermViewBox
@@ -2497,8 +2497,8 @@ svg
 -
 viewbox
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermViewBox
@@ -2582,8 +2582,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#viewport
 -
 viewport
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#viewport%E2%91%A0
@@ -2592,8 +2592,8 @@ https://drafts.csswg.org/css2/#viewport%E2%91%A0
 -
 viewport
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#viewport%E2%91%A0
@@ -2674,8 +2674,8 @@ https://wicg.github.io/layout-instability/#viewport-base-distance
 -
 viewport coordinate system
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermViewportCoordinateSystem
@@ -2684,8 +2684,8 @@ https://svgwg.org/svg2-draft/coords.html#TermViewportCoordinateSystem
 -
 viewport coordinate system
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermViewportCoordinateSystem
@@ -2821,8 +2821,8 @@ VTTRegion
 -
 viewportElement
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGElement__viewportElement
@@ -2832,8 +2832,8 @@ SVGElement
 -
 viewportElement
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGElement__viewportElement
@@ -2905,8 +2905,8 @@ https://www.w3.org/TR/permissions-policy-1/#violate
 -
 violatedDirective
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-violateddirective
@@ -2916,8 +2916,8 @@ SecurityPolicyViolationEvent
 -
 violatedDirective
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-violateddirective
@@ -2927,8 +2927,8 @@ SecurityPolicyViolationEventInit
 -
 violatedDirective
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-violateddirective
@@ -2938,8 +2938,8 @@ SecurityPolicyViolationEvent
 -
 violation
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation
@@ -2948,8 +2948,8 @@ https://w3c.github.io/webappsec-csp/#violation
 -
 violation
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation
@@ -3090,8 +3090,8 @@ https://www.w3.org/TR/css-text-4/#virtual-word-boundary
 -
 visibility
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-visibility
@@ -3100,8 +3100,8 @@ https://drafts.csswg.org/css2/#propdef-visibility
 -
 visibility
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-visibility
@@ -3110,8 +3110,8 @@ https://drafts.csswg.org/css2/#propdef-visibility
 -
 visibility
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visufx.html#propdef-visibility
@@ -3513,8 +3513,8 @@ overflow-y
 -
 visible
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-overflow-visible
@@ -3524,8 +3524,8 @@ overflow
 -
 visible
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-visibility-visible
@@ -3535,8 +3535,8 @@ visibility
 -
 visible
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-overflow-visible
@@ -3546,8 +3546,8 @@ overflow
 -
 visible
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-visibility-visible
@@ -3901,8 +3901,8 @@ https://www.w3.org/TR/css-speech-1/#box-model-def
 -
 visual formatting model
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#visual-formatting-model
@@ -3911,8 +3911,8 @@ https://drafts.csswg.org/css2/#visual-formatting-model
 -
 visual formatting model
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#visual-formatting-model

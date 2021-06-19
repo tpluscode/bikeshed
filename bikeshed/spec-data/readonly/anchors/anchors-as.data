@@ -184,8 +184,8 @@ https://wicg.github.io/cookie-store/#as-a-timestamp
 -
 ascending
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#greater-than
@@ -194,8 +194,8 @@ https://w3c.github.io/IndexedDB/#greater-than
 -
 ascending
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#greater-than
@@ -359,8 +359,8 @@ https://infra.spec.whatwg.org/#ascii-case-insensitive
 -
 ascii case-insensitive
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-ascii-case-insensitive
@@ -369,8 +369,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-ascii-case-insensitive
 -
 ascii case-insensitive
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#case-insensitive
@@ -379,8 +379,8 @@ https://w3c.github.io/webcrypto/#case-insensitive
 -
 ascii case-insensitive
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#case-insensitive
@@ -1475,8 +1475,8 @@ Slottable
 -
 assignment statement
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#assignment-statement
@@ -1485,8 +1485,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#assignment-statement
 -
 assignment statement
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#assignment-statement
@@ -2208,8 +2208,8 @@ https://www.w3.org/TR/webaudio/#associated-option-object
 -
 associated realm
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-associated-realm
@@ -2436,8 +2436,8 @@ XMLHttpRequest/open(method, url, async)
 -
 asynchronous iterator initialization steps
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#asynchronous-iterator-initialization-steps
@@ -2446,8 +2446,8 @@ https://heycam.github.io/webidl/#asynchronous-iterator-initialization-steps
 -
 asynchronous iterator prototype object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-asynchronous-iterator-prototype-object
@@ -2456,8 +2456,8 @@ https://heycam.github.io/webidl/#dfn-asynchronous-iterator-prototype-object
 -
 asynchronous iterator return
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#asynchronous-iterator-return
@@ -2466,8 +2466,8 @@ https://heycam.github.io/webidl/#asynchronous-iterator-return
 -
 asynchronous read method
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#asynchronous-read-methods
@@ -2476,8 +2476,8 @@ https://w3c.github.io/FileAPI/#asynchronous-read-methods
 -
 asynchronous read method
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#asynchronous-read-methods
@@ -2526,8 +2526,8 @@ https://www.w3.org/TR/wasm-js-api-1/#asynchronously-compile-a-webassembly-module
 -
 asynchronously execute a request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#asynchronously-execute-a-request
@@ -2536,8 +2536,8 @@ https://w3c.github.io/IndexedDB/#asynchronously-execute-a-request
 -
 asynchronously execute a request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#asynchronously-execute-a-request
@@ -2566,8 +2566,8 @@ https://www.w3.org/TR/wasm-js-api-1/#asynchronously-instantiate-a-webassembly-mo
 -
 asynchronously iterable declaration
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-async-iterable-declaration

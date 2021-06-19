@@ -86,8 +86,8 @@ font-size
 -
 <absolute-size>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-absolute-size
@@ -96,8 +96,8 @@ https://drafts.csswg.org/css2/#value-def-absolute-size
 -
 <absolute-size>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-absolute-size
@@ -106,8 +106,8 @@ https://drafts.csswg.org/css2/#value-def-absolute-size
 -
 ABORT_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-abort_err
@@ -138,8 +138,8 @@ AbortController
 -
 AbortError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#aborterror
@@ -432,8 +432,8 @@ WritableStream
 -
 abort
 event
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-abort-event
@@ -443,8 +443,8 @@ FileReader
 -
 abort
 event
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-abort-event
@@ -454,8 +454,8 @@ FileReader
 -
 abort
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-abort
@@ -465,8 +465,8 @@ transaction
 -
 abort
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#eventdef-transaction-abort
@@ -476,8 +476,8 @@ transaction
 -
 abort
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-abort
@@ -487,8 +487,8 @@ transaction
 -
 abort
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#eventdef-transaction-abort
@@ -590,8 +590,8 @@ https://html.spec.whatwg.org/multipage/webappapis.html#abort-a-running-script
 -
 abort a transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#abort-a-transaction
@@ -600,8 +600,8 @@ https://w3c.github.io/IndexedDB/#abort-a-transaction
 -
 abort a transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#abort-a-transaction
@@ -652,8 +652,8 @@ background fetch
 -
 abort an upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#abort-an-upgrade-transaction
@@ -662,8 +662,8 @@ https://w3c.github.io/IndexedDB/#abort-an-upgrade-transaction
 -
 abort an upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#abort-an-upgrade-transaction
@@ -808,8 +808,8 @@ SpeechRecognition
 -
 abort()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-abort
@@ -819,8 +819,8 @@ FileReader
 -
 abort()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-abort
@@ -830,8 +830,8 @@ FileReader
 -
 abort()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransaction-abort
@@ -841,8 +841,8 @@ IDBTransaction
 -
 abort()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-abort
@@ -998,8 +998,8 @@ SendStream
 -
 abort_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-abort_err
@@ -1040,8 +1040,8 @@ AbortSignal
 -
 aborted
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-abort
@@ -1051,8 +1051,8 @@ transaction
 -
 aborted
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-abort
@@ -1094,8 +1094,8 @@ https://fetch.spec.whatwg.org/#concept-aborted-network-error
 -
 aborterror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#aborterror
@@ -1115,8 +1115,8 @@ WritableStream
 -
 aborting
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-abort
@@ -1126,8 +1126,8 @@ transaction
 -
 aborting
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-abort
@@ -1301,8 +1301,8 @@ voice-range
 -
 absolute
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-position-absolute
@@ -1312,8 +1312,8 @@ position
 -
 absolute
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-position-absolute
@@ -1407,8 +1407,8 @@ https://www.w3.org/TR/css-values-4/#absolute-length
 -
 absolute length
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#absolute-length
@@ -1417,8 +1417,8 @@ https://drafts.csswg.org/css2/#absolute-length
 -
 absolute length
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#absolute-length
@@ -1689,8 +1689,8 @@ https://www.w3.org/TR/css-position-3/#absolute-position
 -
 absolutely positioned element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#absolutely-positioned
@@ -1699,8 +1699,8 @@ https://drafts.csswg.org/css2/#absolutely-positioned
 -
 absolutely positioned element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#absolutely-positioned
@@ -1859,8 +1859,8 @@ https://www.w3.org/TR/css-values-4/#mult-num-range
 -
 {a,b}
 grammar
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#mult-num-range
@@ -1869,8 +1869,8 @@ https://drafts.csswg.org/css2/#mult-num-range
 -
 {a,b}
 grammar
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#mult-num-range

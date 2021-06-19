@@ -1,5 +1,5 @@
 {
-    "ref-for-dom-body-arraybuffer①": [
+    "dom-body-arraybuffer": [
         {
             "engines": [
                 "blink",
@@ -54,7 +54,7 @@
             "title": "Body.arrayBuffer()"
         }
     ],
-    "ref-for-dom-body-blob①": [
+    "dom-body-blob": [
         {
             "engines": [
                 "blink",
@@ -109,7 +109,7 @@
             "title": "Body.blob()"
         }
     ],
-    "ref-for-dom-body-body①": [
+    "dom-body-body": [
         {
             "engines": [
                 "blink",
@@ -164,7 +164,7 @@
             "title": "Body.body"
         }
     ],
-    "ref-for-dom-body-bodyused①": [
+    "dom-body-bodyused": [
         {
             "engines": [
                 "blink",
@@ -219,7 +219,7 @@
             "title": "Body.bodyUsed"
         }
     ],
-    "ref-for-dom-body-formdata①": [
+    "dom-body-formdata": [
         {
             "engines": [
                 "blink",
@@ -280,7 +280,7 @@
             "title": "Body.formData()"
         }
     ],
-    "ref-for-dom-body-json①": [
+    "dom-body-json": [
         {
             "engines": [
                 "blink",
@@ -335,7 +335,7 @@
             "title": "Body.json()"
         }
     ],
-    "ref-for-dom-body-text①": [
+    "dom-body-text": [
         {
             "engines": [
                 "blink",
@@ -442,7 +442,7 @@
             "title": "Body"
         }
     ],
-    "ref-for-dom-headers①": [
+    "dom-headers": [
         {
             "engines": [
                 "blink",
@@ -563,7 +563,7 @@
             "title": "Headers()"
         }
     ],
-    "ref-for-dom-headers-append①": [
+    "dom-headers-append": [
         {
             "engines": [
                 "blink",
@@ -684,7 +684,7 @@
             "title": "Headers.append()"
         }
     ],
-    "ref-for-dom-headers-delete①": [
+    "dom-headers-delete": [
         {
             "engines": [
                 "blink",
@@ -805,7 +805,7 @@
             "title": "Headers.delete()"
         }
     ],
-    "ref-for-dom-headers-get①": [
+    "dom-headers-get": [
         {
             "engines": [
                 "blink",
@@ -930,7 +930,7 @@
             "title": "Headers.get()"
         }
     ],
-    "ref-for-dom-headers-has①": [
+    "dom-headers-has": [
         {
             "engines": [
                 "blink",
@@ -1051,7 +1051,7 @@
             "title": "Headers.has()"
         }
     ],
-    "ref-for-dom-headers-set①": [
+    "dom-headers-set": [
         {
             "engines": [
                 "blink",
@@ -1293,7 +1293,7 @@
             "title": "Headers"
         }
     ],
-    "ref-for-dom-request①": [
+    "dom-request": [
         {
             "engines": [
                 "blink",
@@ -1306,31 +1306,75 @@
             "summary": "The Request() constructor creates a new Request object.",
             "support": {
                 "chrome": {
-                    "version_added": "42",
+                    "version_added": "41",
                     "notes": "From Chrome 47, default values for the <code>init</code> argument's properties changed. <code>mode</code> defaults to <code>same-origin</code> (from <code>no-cors</code>). <code>credentials</code> defaults to <code>include</code> (from <code>same-origin</code>). <code>redirect</code> defaults to <code>follow</code> (from <code>manual</code>)."
                 },
                 "chrome_android": {
-                    "version_added": "42",
+                    "version_added": "41",
                     "notes": "From Chrome 47, default values for the <code>init</code> argument's properties changed. <code>mode</code> defaults to <code>same-origin</code> (from <code>no-cors</code>). <code>credentials</code> defaults to <code>include</code> (from <code>same-origin</code>). <code>redirect</code> defaults to <code>follow</code> (from <code>manual</code>)."
                 },
                 "edge": {
                     "version_added": "15"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -1358,7 +1402,7 @@
             "title": "Request()"
         }
     ],
-    "ref-for-dom-request-cache②": [
+    "dom-request-cache": [
         {
             "engines": [
                 "blink",
@@ -1413,7 +1457,7 @@
             "title": "Request.cache"
         }
     ],
-    "ref-for-dom-request-clone①": [
+    "dom-request-clone": [
         {
             "engines": [
                 "blink",
@@ -1425,30 +1469,74 @@
             "slug": "API/Request/clone",
             "summary": "The clone() method of the Request interface creates a copy of the current Request object.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -1461,14 +1549,25 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Request.clone()"
         }
     ],
-    "ref-for-dom-request-credentials②": [
+    "dom-request-credentials": [
         {
             "engines": [
                 "blink",
@@ -1480,30 +1579,74 @@
             "slug": "API/Request/credentials",
             "summary": "The credentials read-only property of the Request interface indicates whether the user agent should send cookies from the other domain in the case of cross-origin requests.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": "42"
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -1516,14 +1659,25 @@
                 "webview_android": {
                     "version_added": "42"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Request.credentials"
         }
     ],
-    "ref-for-dom-request-destination①": [
+    "dom-request-destination": [
         {
             "engines": [
                 "blink",
@@ -1578,7 +1732,7 @@
             "title": "Request.destination"
         }
     ],
-    "ref-for-dom-request-headers②": [
+    "dom-request-headers": [
         {
             "engines": [
                 "blink",
@@ -1590,30 +1744,75 @@
             "slug": "API/Request/headers",
             "summary": "The headers read-only property of the Request interface contains the Headers object associated with the request.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "42",
+                    "version_removed": "46"
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -1621,19 +1820,31 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "4.0"
+                    "version_added": "4.0",
+                    "version_removed": "5.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Request.headers"
         }
     ],
-    "ref-for-dom-request-integrity②": [
+    "dom-request-integrity": [
         {
             "engines": [
                 "blink",
@@ -1688,7 +1899,7 @@
             "title": "Request.integrity"
         }
     ],
-    "ref-for-dom-request-method②": [
+    "dom-request-method": [
         {
             "engines": [
                 "blink",
@@ -1700,30 +1911,75 @@
             "slug": "API/Request/method",
             "summary": "The method read-only property of the Request interface contains the request's method (GET, POST, etc.)",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": "42",
+                    "version_removed": "46"
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -1731,19 +1987,31 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "4.0"
+                    "version_added": "4.0",
+                    "version_removed": "5.0"
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Request.method"
         }
     ],
-    "ref-for-dom-request-mode②": [
+    "dom-request-mode": [
         {
             "engines": [
                 "blink",
@@ -1798,7 +2066,7 @@
             "title": "Request.mode"
         }
     ],
-    "ref-for-dom-request-redirect②": [
+    "dom-request-redirect": [
         {
             "engines": [
                 "blink",
@@ -1853,7 +2121,7 @@
             "title": "Request.redirect"
         }
     ],
-    "ref-for-dom-request-referrer①": [
+    "dom-request-referrer": [
         {
             "engines": [
                 "blink",
@@ -1865,11 +2133,22 @@
             "slug": "API/Request/referrer",
             "summary": "The referrer read-only property of the Request interface is set by the user agent to be the referrer of the Request. (e.g., client, no-referrer, or a URL.)",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
-                    "version_added": "42"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": "14"
@@ -1883,12 +2162,34 @@
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -1896,19 +2197,30 @@
                     "version_added": "10.3"
                 },
                 "samsunginternet_android": {
-                    "version_added": "4.0"
+                    "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "42"
+                    "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Request.referrer"
         }
     ],
-    "ref-for-dom-request-referrerpolicy②": [
+    "dom-request-referrerpolicy": [
         {
             "engines": [
                 "blink",
@@ -1963,7 +2275,7 @@
             "title": "Request.referrerPolicy"
         }
     ],
-    "ref-for-dom-request-url③": [
+    "dom-request-url": [
         {
             "engines": [
                 "blink",
@@ -1986,9 +2298,20 @@
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": "39"
                 },
@@ -2037,21 +2360,65 @@
             "slug": "API/Request",
             "summary": "The Request interface of the Fetch API represents a resource request.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": "18"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
-                "firefox_android": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -2073,9 +2440,20 @@
                 "webview_android": {
                     "version_added": "42"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Request"
         }
@@ -2134,7 +2512,7 @@
             "title": "RequestDestination"
         }
     ],
-    "ref-for-dom-response①": [
+    "dom-response": [
         {
             "engines": [
                 "blink",
@@ -2146,30 +2524,85 @@
             "slug": "API/Response/Response",
             "summary": "The Response() constructor creates a new Response object.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
-                "chrome_android": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": true
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -2182,14 +2615,25 @@
                 "webview_android": {
                     "version_added": "42"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response()"
         }
     ],
-    "ref-for-dom-response-clone①": [
+    "dom-response-clone": [
         {
             "engines": [
                 "blink",
@@ -2201,30 +2645,74 @@
             "slug": "API/Response/clone",
             "summary": "The clone() method of the Response interface creates a clone of a response object, identical in every way, but stored in a different variable.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": false
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -2237,14 +2725,25 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response.clone()"
         }
     ],
-    "ref-for-dom-response-error①": [
+    "dom-response-error": [
         {
             "engines": [
                 "blink",
@@ -2299,47 +2798,90 @@
             "title": "Response.error()"
         }
     ],
-    "ref-for-dom-response-headers①": [
+    "dom-response-headers": [
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/Response.json",
             "name": "headers",
             "slug": "API/Response/headers",
             "summary": "The headers read-only property of the Response interface contains the Headers object associated with the response.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": "42"
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "4.0"
@@ -2347,14 +2889,25 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response.headers"
         }
     ],
-    "ref-for-dom-response-ok②": [
+    "dom-response-ok": [
         {
             "engines": [
                 "blink",
@@ -2366,30 +2919,74 @@
             "slug": "API/Response/ok",
             "summary": "The ok read-only property of the Response interface contains a Boolean stating whether the response was successful (status in the range 200-299) or not.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": "42"
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": "39"
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -2402,14 +2999,25 @@
                 "webview_android": {
                     "version_added": "42"
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response.ok"
         }
     ],
-    "ref-for-dom-response-redirect①": [
+    "dom-response-redirect": [
         {
             "engines": [
                 "blink",
@@ -2464,12 +3072,11 @@
             "title": "Response.redirect()"
         }
     ],
-    "ref-for-dom-response-redirected①": [
+    "dom-response-redirected": [
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/Response.json",
             "name": "redirected",
@@ -2501,10 +3108,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": "10.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "10.3"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"
@@ -2519,7 +3126,7 @@
             "title": "Response.redirected"
         }
     ],
-    "ref-for-dom-response-status①": [
+    "dom-response-status": [
         {
             "engines": [
                 "blink",
@@ -2531,30 +3138,74 @@
             "slug": "API/Response/status",
             "summary": "The status read-only property of the Response interface contains the status code of the response (e.g., 200 for a success).",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": false
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": "10.1"
                 },
@@ -2567,14 +3218,25 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response.status"
         }
     ],
-    "ref-for-dom-response-statustext①": [
+    "dom-response-statustext": [
         {
             "engines": [
                 "blink",
@@ -2585,30 +3247,74 @@
             "slug": "API/Response/statusText",
             "summary": "The statusText read-only property of the Response interface contains the status message corresponding to the status code (e.g., OK for 200).",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": false
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
@@ -2621,14 +3327,25 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response.statusText"
         }
     ],
-    "ref-for-dom-response-type①": [
+    "dom-response-type": [
         {
             "engines": [
                 "blink",
@@ -2639,30 +3356,74 @@
             "slug": "API/Response/type",
             "summary": "The type read-only property of the Response interface contains the type of the response. It can be one of the following:",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": false
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
@@ -2675,14 +3436,25 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response.type"
         }
     ],
-    "ref-for-dom-response-url①": [
+    "dom-response-url": [
         {
             "engines": [
                 "blink",
@@ -2693,30 +3465,74 @@
             "slug": "API/Response/url",
             "summary": "The url read-only property of the Response interface contains the URL of the response. The value of the url property will be the final URL obtained after any redirects.",
             "support": {
-                "chrome": {
-                    "version_added": "42"
-                },
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "chrome_android": {
                     "version_added": false
                 },
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "39"
-                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
                 "firefox_android": {
                     "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
-                "opera": {
-                    "version_added": "29"
-                },
-                "opera_android": {
-                    "version_added": "29"
-                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
                 "safari": {
                     "version_added": false
                 },
@@ -2729,9 +3545,20 @@
                 "webview_android": {
                     "version_added": false
                 },
-                "edge_blink": {
-                    "version_added": "79"
-                }
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
             },
             "title": "Response.url"
         }
@@ -2747,6 +3574,138 @@
             "name": "Response",
             "slug": "API/Response",
             "summary": "The Response interface of the Fetch API represents the response to a request.",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "chrome_android": [
+                    {
+                        "version_added": "42"
+                    },
+                    {
+                        "version_added": "41",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "39"
+                    },
+                    {
+                        "version_added": "34",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.fetch.enabled"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "opera_android": [
+                    {
+                        "version_added": "29"
+                    },
+                    {
+                        "version_added": "28",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ],
+                "safari": {
+                    "version_added": "10.1"
+                },
+                "safari_ios": {
+                    "version_added": "10.3"
+                },
+                "samsunginternet_android": {
+                    "version_added": "4.0"
+                },
+                "webview_android": {
+                    "version_added": "42"
+                },
+                "edge_blink": [
+                    {
+                        "version_added": "79"
+                    },
+                    {
+                        "version_added": "79",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "Experimental Web Platform Features"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "title": "Response"
+        }
+    ],
+    "fetch-method": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/WindowOrWorkerGlobalScope.json",
+            "name": "fetch",
+            "slug": "API/WindowOrWorkerGlobalScope/fetch",
+            "summary": "The fetch() method of the WindowOrWorkerGlobalScope mixin starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available.",
             "support": {
                 "chrome": {
                     "version_added": "42"
@@ -2788,10 +3747,10 @@
                     "version_added": "79"
                 }
             },
-            "title": "Response"
+            "title": "WindowOrWorkerGlobalScope.fetch()"
         }
     ],
-    "fetch-method": [
+    "dom-global-fetch": [
         {
             "engines": [
                 "blink",

@@ -261,62 +261,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -932,21 +876,6 @@ when scrolling against the edge of the <a data-link-type="dfn" href="https://dra
 interacting with the page, for example displaying a overscroll UI affordance. Conversely, a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="non-local-boundary-default-action">non-local boundary default action</dfn> interacts with the page, for example scroll chaining or
 a navigation action.</p>
    <h2 class="heading settled" data-level="4" id="overscroll-behavior-properties"><span class="secno">4. </span><span class="content">Overscroll Behavior Properties</span><a class="self-link" href="#overscroll-behavior-properties"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior" title="The overscroll-behavior CSS property sets what a browser does when reaching the boundary of a scrolling area. It&apos;s a shorthand for overscroll-behavior-x and overscroll-behavior-y.">overscroll-behavior</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>59+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>63+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>50+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>59+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>63+</span></span><span class="webview_android yes"><span>Android WebView</span><span>63+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>8.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>46+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="overscroll-behavior">overscroll behavior</dfn> controls the permitted <a data-link-type="dfn" href="#boundary-default-action" id="ref-for-boundary-default-action④">boundary default action</a> for a <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scroll-container" id="ref-for-scroll-container①⓪">scroll container</a> element when its <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scrollport" id="ref-for-scrollport⑤">scrollport</a> reaches the boundary of its scroll box.</p>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-overscroll-behavior" id="ref-for-propdef-overscroll-behavior②">overscroll-behavior</a> property specifies the <a data-link-type="dfn" href="#overscroll-behavior" id="ref-for-overscroll-behavior">overscroll behavior</a> for a <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scroll-container" id="ref-for-scroll-container①①">scroll
 container</a> element. It allows the content author to specify that a <span id="ref-for-scroll-container①②">scroll container</span> element must prevent scroll chaining and/or overscroll affordances.</p>
@@ -1007,33 +936,6 @@ the second value defaults to the same value.</p>
 these values will have no side effects for a compliant implementation.</p>
    <p class="note" role="note"><span>Note:</span> Programmatic scrolling is clamped and can not trigger any <a data-link-type="dfn" href="#boundary-default-action" id="ref-for-boundary-default-action⑥">boundary default actions</a>.</p>
    <h3 class="heading settled" data-level="4.1" id="overscroll-behavior-longhands-physical"><span class="secno">4.1. </span><span class="content">Physical Longhands for <a class="property" data-link-type="propdesc" href="#propdef-overscroll-behavior" id="ref-for-propdef-overscroll-behavior④">overscroll-behavior</a></span><a class="self-link" href="#overscroll-behavior-longhands-physical"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-x" title="The overscroll-behavior-x CSS property sets the browser&apos;s behavior when the horizontal boundary of a scrolling area is reached.">overscroll-behavior-x</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>59+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>63+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>50+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>59+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>63+</span></span><span class="webview_android yes"><span>Android WebView</span><span>63+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>8.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>46+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-y" title="The overscroll-behavior-y CSS property sets the browser&apos;s behavior when the vertical boundary of a scrolling area is reached.">overscroll-behavior-y</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>59+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>63+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>50+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>59+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>63+</span></span><span class="webview_android yes"><span>Android WebView</span><span>63+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>8.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>46+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="overscroll-behavior-x">
     <tbody>
      <tr>
@@ -1073,33 +975,6 @@ vertical axis. When scrolling is performed along both the horizontal and vertica
 same time, the <span id="ref-for-overscroll-behavior③">overscroll behavior</span> of each respective axis should be considered
 independently.</p>
    <h3 class="heading settled" data-level="4.2" id="overscroll-behavior-longhands-logical"><span class="secno">4.2. </span><span class="content">Flow-relative Longhands for <a class="property" data-link-type="propdesc" href="#propdef-overscroll-behavior" id="ref-for-propdef-overscroll-behavior⑤">overscroll-behavior</a></span><a class="self-link" href="#overscroll-behavior-longhands-logical"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-block" title="The overscroll-behavior-block CSS property sets the browser&apos;s behavior when the block direction boundary of a scrolling area is reached.">overscroll-behavior-block</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>73+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior-inline" title="The overscroll-behavior-inline CSS property sets the browser&apos;s behavior when the inline direction boundary of a scrolling area is reached.">overscroll-behavior-inline</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>73+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="overscroll-behavior-inline">
     <tbody>
      <tr>
@@ -1548,11 +1423,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

@@ -64,8 +64,8 @@ https://www.w3.org/TR/css-counter-styles-3/#square
 -
 square
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-square
@@ -75,8 +75,8 @@ list-style-type
 -
 square
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-square

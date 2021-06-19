@@ -596,8 +596,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'inset-block-start'
 -
 'interactive media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#interactive-media-group
@@ -606,8 +606,8 @@ https://drafts.csswg.org/css2/#interactive-media-group
 -
 'interactive media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#interactive-media-group
@@ -962,8 +962,8 @@ https://www.w3.org/TR/css-values-4/#integer-value
 -
 <integer>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-integer
@@ -972,8 +972,8 @@ https://drafts.csswg.org/css2/#value-def-integer
 -
 <integer>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-integer
@@ -1081,8 +1081,8 @@ XRHand
 -
 INDEX_SIZE_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-index_size_err
@@ -1114,8 +1114,8 @@ GPUBufferUsage
 -
 INUSE_ATTRIBUTE_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-inuse_attribute_err
@@ -1125,8 +1125,8 @@ DOMException
 -
 INVALID_ACCESS_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-invalid_access_err
@@ -1136,8 +1136,8 @@ DOMException
 -
 INVALID_CHARACTER_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-invalid_character_err
@@ -1147,8 +1147,8 @@ DOMException
 -
 INVALID_MODIFICATION_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-invalid_modification_err
@@ -1158,8 +1158,8 @@ DOMException
 -
 INVALID_NODE_TYPE_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-invalid_node_type_err
@@ -1169,8 +1169,8 @@ DOMException
 -
 INVALID_STATE_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-invalid_state_err
@@ -1180,8 +1180,8 @@ DOMException
 -
 InUseAttributeError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#inuseattributeerror
@@ -1210,8 +1210,8 @@ https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recor
 -
 IndexSizeError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#indexsizeerror
@@ -1250,8 +1250,8 @@ https://streams.spec.whatwg.org/#initialize-writable-stream
 -
 InnerHTML
 interface
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dom-innerhtml
@@ -1438,8 +1438,8 @@ Instance
 -
 Int16Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Int16Array
@@ -1448,8 +1448,8 @@ https://heycam.github.io/webidl/#idl-Int16Array
 -
 Int32Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Int32Array
@@ -1458,8 +1458,8 @@ https://heycam.github.io/webidl/#idl-Int32Array
 -
 Int8Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Int8Array
@@ -1468,8 +1468,8 @@ https://heycam.github.io/webidl/#idl-Int8Array
 -
 IntegerPart
 abstract-op
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#abstract-opdef-integerpart
@@ -1744,8 +1744,8 @@ https://www.w3.org/TR/css-layout-api-1/#dictdef-intrinsicsizesresultoptions
 -
 InvalidAccessError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invalidaccesserror
@@ -1754,8 +1754,8 @@ https://heycam.github.io/webidl/#invalidaccesserror
 -
 InvalidCharacterError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invalidcharactererror
@@ -1764,8 +1764,8 @@ https://heycam.github.io/webidl/#invalidcharactererror
 -
 InvalidModificationError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invalidmodificationerror
@@ -1774,8 +1774,8 @@ https://heycam.github.io/webidl/#invalidmodificationerror
 -
 InvalidNodeTypeError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invalidnodetypeerror
@@ -1784,8 +1784,8 @@ https://heycam.github.io/webidl/#invalidnodetypeerror
 -
 InvalidStateError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invalidstateerror
@@ -2166,8 +2166,8 @@ https://www.w3.org/TR/css-values-4/#in
 -
 in
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-length-in
@@ -2177,8 +2177,8 @@ https://drafts.csswg.org/css2/#valdef-length-in
 -
 in
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-length-in
@@ -2232,8 +2232,8 @@ operator
 -
 in
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#in
@@ -2242,8 +2242,8 @@ https://w3c.github.io/IndexedDB/#in
 -
 in
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#in
@@ -2603,8 +2603,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#parsing-main-intr
 -
 in scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#in-scope
@@ -2613,8 +2613,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#in-scope
 -
 in scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#in-scope
@@ -2919,8 +2919,8 @@ https://www.w3.org/TR/css-display-3/#in-flow
 -
 in-flow
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#in-flow
@@ -2929,8 +2929,8 @@ https://drafts.csswg.org/css2/#in-flow
 -
 in-flow
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#in-flow
@@ -2939,8 +2939,8 @@ https://drafts.csswg.org/css2/#in-flow
 -
 in-line keys
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-in-line-keys
@@ -2950,8 +2950,8 @@ object-store
 -
 in-line keys
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-in-line-keys
@@ -3494,8 +3494,8 @@ TextTrack
 -
 inactive
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-inactive
@@ -3505,8 +3505,8 @@ transaction
 -
 inactive
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-inactive
@@ -3748,8 +3748,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#include
 -
 include
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#include
@@ -3843,8 +3843,8 @@ https://webbluetoothcg.github.io/web-bluetooth/#included-service
 -
 includes a nullable type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-includes-a-nullable-type
@@ -3853,8 +3853,8 @@ https://heycam.github.io/webidl/#dfn-includes-a-nullable-type
 -
 includes a nullable type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-includes-a-nullable-type
@@ -3893,8 +3893,8 @@ https://www.w3.org/TR/webdriver2/#dfn-includes-credentials
 -
 includes statement
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#includes-statement
@@ -3903,8 +3903,8 @@ https://heycam.github.io/webidl/#includes-statement
 -
 includes undefined
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-includes-undefined
@@ -3913,8 +3913,8 @@ https://heycam.github.io/webidl/#dfn-includes-undefined
 -
 includes(key)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-includes
@@ -3924,8 +3924,8 @@ IDBKeyRange
 -
 includes(key)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-includes
@@ -3935,8 +3935,8 @@ IDBKeyRange
 -
 inclusion criteria
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermInclusionCriteria
@@ -3945,8 +3945,8 @@ https://svgwg.org/svg2-draft/struct.html#TermInclusionCriteria
 -
 inclusion criteria
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermInclusionCriteria
@@ -4037,8 +4037,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#inclusive-descendants
 -
 inclusive inherited interfaces
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#interface-inclusive-inherited-interfaces
@@ -5011,8 +5011,8 @@ https://www.w3.org/TR/encoding/#index
 -
 index
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-index
@@ -5022,8 +5022,8 @@ FileList/item(index)
 -
 index
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-index
@@ -5077,8 +5077,8 @@ DOMRectList/item(index)
 -
 index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-concept
@@ -5087,8 +5087,8 @@ https://w3c.github.io/IndexedDB/#index-concept
 -
 index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-handle-index
@@ -5098,8 +5098,8 @@ index-handle
 -
 index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-concept
@@ -5108,8 +5108,8 @@ https://www.w3.org/TR/IndexedDB-3/#index-concept
 -
 index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-handle-index
@@ -5252,8 +5252,8 @@ GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsetsData, dy
 -
 index
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#default-iterator-object-index
@@ -5445,8 +5445,8 @@ https://www.w3.org/TR/encoding/#index-gb18030-ranges-pointer
 -
 index handle
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-handle
@@ -5455,8 +5455,8 @@ https://w3c.github.io/IndexedDB/#index-handle
 -
 index handle
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-handle
@@ -5585,8 +5585,8 @@ https://www.w3.org/TR/encoding/#index-pointer
 -
 index set
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-handle-index-set
@@ -5596,8 +5596,8 @@ object-store-handle
 -
 index set
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-handle-index-set
@@ -5647,8 +5647,8 @@ https://www.w3.org/TR/encoding/#index-single-byte
 -
 index(name)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-index
@@ -5658,8 +5658,8 @@ IDBObjectStore
 -
 index(name)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-index
@@ -5713,8 +5713,8 @@ GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)
 -
 indexNames
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-indexnames
@@ -5724,8 +5724,8 @@ IDBObjectStore
 -
 indexNames
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-indexnames
@@ -5735,8 +5735,8 @@ IDBObjectStore
 -
 index_size_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-index_size_err
@@ -5778,8 +5778,8 @@ CSSNumericArray
 -
 indexed properties
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-indexed-properties
@@ -5799,8 +5799,8 @@ CSSNumericArray
 -
 indexed property getter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-indexed-property-getter
@@ -5831,8 +5831,8 @@ XRInputSourceArray
 -
 indexed property getters
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-indexed-property-getter
@@ -5841,8 +5841,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-indexed-property-getter
 -
 indexed property setter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-indexed-property-setter
@@ -5851,8 +5851,8 @@ https://heycam.github.io/webidl/#dfn-indexed-property-setter
 -
 indexed property setters
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-indexed-property-setter
@@ -5861,8 +5861,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-indexed-property-setter
 -
 indexedDB
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb
@@ -5872,8 +5872,8 @@ WindowOrWorkerGlobalScope
 -
 indexedDB
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-windoworworkerglobalscope-indexeddb
@@ -5883,8 +5883,8 @@ WindowOrWorkerGlobalScope
 -
 indexsizeerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#indexsizeerror
@@ -6182,8 +6182,8 @@ GPURenderEncoderBase/drawIndexedIndirect(indirectBuffer, indirectOffset)
 -
 indirection
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#indirection
@@ -6192,8 +6192,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#indirection
 -
 indirection
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#indirection
@@ -6362,8 +6362,8 @@ calc()
 -
 info
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-HkdfParams-info
@@ -6373,8 +6373,8 @@ HkdfParams
 -
 info
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-HkdfParams-info
@@ -6852,8 +6852,8 @@ all
 -
 inherit
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-all-inherit
@@ -6863,8 +6863,8 @@ all
 -
 inherit
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-all-inherit
@@ -6874,8 +6874,8 @@ all
 -
 inherit
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-inherit
@@ -6885,8 +6885,8 @@ interface
 -
 inherit
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-inherit-dictionary
@@ -6896,8 +6896,8 @@ dictionary
 -
 inherit
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-inherit
@@ -6906,8 +6906,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-inherit
 -
 inherit
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-inherit-dictionary
@@ -6936,8 +6936,8 @@ https://www.w3.org/TR/css-lists-3/#inherit-counters
 -
 inherit its getter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-inherit-getter
@@ -6946,8 +6946,8 @@ https://heycam.github.io/webidl/#dfn-inherit-getter
 -
 inherit its getter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-inherit-getter
@@ -7026,8 +7026,8 @@ https://www.w3.org/TR/css-cascade-5/#inheritance
 -
 inherited dictionaries
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-inherited-dictionaries
@@ -7036,8 +7036,8 @@ https://heycam.github.io/webidl/#dfn-inherited-dictionaries
 -
 inherited dictionaries
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-inherited-dictionaries
@@ -7046,8 +7046,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-inherited-dictionaries
 -
 inherited from
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#inherited-from
@@ -7056,8 +7056,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#inherited-from
 -
 inherited from
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#inherited-from
@@ -7066,8 +7066,8 @@ https://www.w3.org/TR/WGSL/#inherited-from
 -
 inherited interfaces
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-inherited-interfaces
@@ -7076,8 +7076,8 @@ https://heycam.github.io/webidl/#dfn-inherited-interfaces
 -
 inherited interfaces
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-inherited-interfaces
@@ -7086,8 +7086,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-inherited-interfaces
 -
 inherited ns
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-inherited-ns
@@ -8999,8 +8999,8 @@ https://www.w3.org/TR/css-display-3/#initial-containing-block
 -
 initial containing block
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#initial-containing-block
@@ -9009,8 +9009,8 @@ https://drafts.csswg.org/css2/#initial-containing-block
 -
 initial containing block
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#initial-containing-block
@@ -9165,8 +9165,8 @@ initial-letter
 -
 initial objects
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-initial-object
@@ -9175,8 +9175,8 @@ https://heycam.github.io/webidl/#dfn-initial-object
 -
 initial objects
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-initial-object
@@ -9185,8 +9185,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-initial-object
 -
 initial point
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#TermInitialPoint
@@ -9195,8 +9195,8 @@ https://svgwg.org/svg2-draft/paths.html#TermInitialPoint
 -
 initial point
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#TermInitialPoint
@@ -9337,8 +9337,8 @@ https://www.w3.org/TR/css-cascade-5/#initial-value
 -
 initial value
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#initial-value%E2%91%A0
@@ -9347,8 +9347,8 @@ https://drafts.csswg.org/css2/#initial-value%E2%91%A0
 -
 initial value
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#initial-value%E2%91%A0
@@ -9357,8 +9357,8 @@ https://drafts.csswg.org/css2/#initial-value%E2%91%A0
 -
 initial value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermInitialValue
@@ -9367,8 +9367,8 @@ https://svgwg.org/svg2-draft/types.html#TermInitialValue
 -
 initial value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermInitialValue
@@ -9417,8 +9417,8 @@ https://www.w3.org/TR/css-device-adapt-1/#initial-viewport
 -
 initial viewport
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermInitialViewport
@@ -9427,8 +9427,8 @@ https://svgwg.org/svg2-draft/coords.html#TermInitialViewport
 -
 initial viewport
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermInitialViewport
@@ -9705,8 +9705,8 @@ https://html.spec.whatwg.org/multipage/obsolete.html#process-frame-initial-inser
 -
 initialization
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-initialization
@@ -9716,8 +9716,8 @@ directive
 -
 initialization
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-initialization
@@ -10329,8 +10329,8 @@ https://www.w3.org/TR/navigation-timing-2/#dfn-initiatortype
 -
 inject a key into a value using a key path
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#inject-a-key-into-a-value-using-a-key-path
@@ -10339,8 +10339,8 @@ https://w3c.github.io/IndexedDB/#inject-a-key-into-a-value-using-a-key-path
 -
 inject a key into a value using a key path
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#inject-a-key-into-a-value-using-a-key-path
@@ -10611,8 +10611,8 @@ scroll-snap-type
 -
 inline
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-inline
@@ -10622,8 +10622,8 @@ display
 -
 inline
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-inline
@@ -10797,8 +10797,8 @@ https://www.w3.org/TR/css-display-3/#inline-box
 -
 inline box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#inline-box
@@ -10807,8 +10807,8 @@ https://drafts.csswg.org/css2/#inline-box
 -
 inline box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#inline-box
@@ -10817,8 +10817,8 @@ https://drafts.csswg.org/css2/#inline-box
 -
 inline check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-inline-check
@@ -10828,8 +10828,8 @@ directive
 -
 inline check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-inline-check
@@ -11189,8 +11189,8 @@ https://www.w3.org/TR/css-writing-modes-4/#inline-axis
 -
 inline-base direction
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermInlineBaseDirection
@@ -11223,8 +11223,8 @@ display
 -
 inline-block
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-inline-block
@@ -11234,8 +11234,8 @@ display
 -
 inline-block
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-inline-block
@@ -11461,8 +11461,8 @@ https://www.w3.org/TR/css-display-3/#inline-level-box
 -
 inline-level boxes
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#inline-level-boxes
@@ -11471,8 +11471,8 @@ https://drafts.csswg.org/css2/#inline-level-boxes
 -
 inline-level boxes
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#inline-level-boxes
@@ -11501,8 +11501,8 @@ https://www.w3.org/TR/css-display-3/#inline-level
 -
 inline-level elements
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#inline-level
@@ -11511,8 +11511,8 @@ https://drafts.csswg.org/css2/#inline-level
 -
 inline-level elements
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#inline-level
@@ -11561,8 +11561,8 @@ https://www.w3.org/TR/css-writing-modes-4/#inline-size
 -
 inline-size
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#InlineSizeProperty
@@ -11571,8 +11571,8 @@ https://svgwg.org/svg2-draft/text.html#InlineSizeProperty
 -
 inline-size
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#InlineSizeProperty
@@ -11729,8 +11729,8 @@ https://www.w3.org/TR/css-tables-3/#inline-table
 -
 inline-table
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-inline-table
@@ -11740,8 +11740,8 @@ display
 -
 inline-table
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-inline-table
@@ -12078,8 +12078,8 @@ https://www.w3.org/TR/css-box-4/#inner-edge
 -
 inner edge
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#inner-edge
@@ -12088,8 +12088,8 @@ https://drafts.csswg.org/css2/#inner-edge
 -
 inner edge
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#inner-edge
@@ -12178,8 +12178,8 @@ https://www.w3.org/TR/css-sizing-3/#inner-size
 -
 inner type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-inner-type
@@ -12189,8 +12189,8 @@ nullable types
 -
 inner type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#annotated-types-inner-type
@@ -12200,8 +12200,8 @@ annotated types
 -
 inner type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-inner-type
@@ -12252,8 +12252,8 @@ InnerHTML
 -
 innerHTML
 attribute
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dom-innerhtml-innerhtml
@@ -13788,8 +13788,8 @@ set
 -
 insert
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-insert
@@ -13889,8 +13889,8 @@ Element
 -
 insertAdjacentHTML()
 method
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dom-element-insertadjacenthtml
@@ -13911,8 +13911,8 @@ Element
 -
 insertAdjacentHTML(position, text)
 method
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dom-element-insertadjacenthtml
@@ -14472,8 +14472,8 @@ https://www.w3.org/TR/css-position-3/#propdef-inset
 -
 inset
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-inset
@@ -14488,8 +14488,8 @@ border-style
 -
 inset
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-inset
@@ -14858,8 +14858,8 @@ list-style-position
 -
 inside
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-list-style-position-inside
@@ -14869,8 +14869,8 @@ list-style-position
 -
 inside
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-list-style-position-inside
@@ -15168,8 +15168,8 @@ WebAssemblyInstantiatedSource
 -
 instance root
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermInstanceRoot
@@ -15222,8 +15222,8 @@ GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVert
 -
 instanceRoot
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#__svg__SVGUseElement__instanceRoot
@@ -15233,8 +15233,8 @@ SVGUseElement
 -
 instanceRoot
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#__svg__SVGUseElement__instanceRoot
@@ -15652,8 +15652,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#integer-
 -
 integer types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-integer-type
@@ -15662,8 +15662,8 @@ https://heycam.github.io/webidl/#dfn-integer-type
 -
 integer types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-integer-type
@@ -15820,8 +15820,8 @@ https://www.w3.org/TR/preload/#dfn-integrity-metadata
 -
 integrity metadata
 dfn
-SRI
-SRI
+sri
+sri
 1
 current
 https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata
@@ -15830,8 +15830,8 @@ https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata
 -
 integrity metadata
 dfn
-SRI
-SRI
+sri
+sri
 1
 snapshot
 https://www.w3.org/TR/SRI/#dfn-integrity-metadata
@@ -15840,8 +15840,8 @@ https://www.w3.org/TR/SRI/#dfn-integrity-metadata
 -
 integrity-metadata
 grammar
-SRI
-SRI
+sri
+sri
 1
 current
 https://w3c.github.io/webappsec-subresource-integrity/#grammardef-integrity-metadata
@@ -16319,8 +16319,8 @@ Document/createEvent(interface)
 -
 interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-interface
@@ -16329,8 +16329,8 @@ https://heycam.github.io/webidl/#dfn-interface
 -
 interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-interface
@@ -16349,8 +16349,8 @@ https://wicg.github.io/webusb/#interface-descriptor
 -
 interface member
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-interface-member
@@ -16359,8 +16359,8 @@ https://heycam.github.io/webidl/#dfn-interface-member
 -
 interface members
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-interface-member
@@ -16369,8 +16369,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-interface-member
 -
 interface mixin
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#interface-mixin
@@ -16379,8 +16379,8 @@ https://heycam.github.io/webidl/#interface-mixin
 -
 interface mixin member
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#interface-mixin-member
@@ -16399,8 +16399,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#interface-object
 -
 interface object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-interface-object
@@ -16409,8 +16409,8 @@ https://heycam.github.io/webidl/#dfn-interface-object
 -
 interface object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-interface-object
@@ -16419,8 +16419,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-interface-object
 -
 interface of a shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#interface-of-a-shader-stage
@@ -16429,8 +16429,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#interface-of-a-shader-stage
 -
 interface of a shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#interface-of-a-shader-stage
@@ -16449,8 +16449,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#interface-prototype-o
 -
 interface prototype object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-interface-prototype-object
@@ -16459,8 +16459,8 @@ https://heycam.github.io/webidl/#dfn-interface-prototype-object
 -
 interface prototype object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-interface-prototype-object
@@ -16469,8 +16469,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-interface-prototype-object
 -
 interface types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-interface
@@ -17193,8 +17193,8 @@ https://www.w3.org/TR/css-display-3/#internal-table-box
 -
 internal table box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#internal-table-box
@@ -17203,8 +17203,8 @@ https://drafts.csswg.org/css2/#internal-table-box
 -
 internal table box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#internal-table-box
@@ -17233,8 +17233,8 @@ https://www.w3.org/TR/css-display-3/#internal-table-element
 -
 internal table element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#internal-table-element
@@ -17243,8 +17243,8 @@ https://drafts.csswg.org/css2/#internal-table-element
 -
 internal table element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 snapshot
 https://www.w3.org/TR/CSS21/tables.html#internal-table-element
@@ -17253,8 +17253,8 @@ https://www.w3.org/TR/CSS21/tables.html#internal-table-element
 -
 internal table element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#internal-table-element
@@ -17263,8 +17263,8 @@ https://drafts.csswg.org/css2/#internal-table-element
 -
 internal table element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/tables.html#internal-table-element
@@ -17346,8 +17346,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#internally-create-a-n
 -
 internally create a new object implementing the interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface
@@ -17376,8 +17376,8 @@ https://www.w3.org/TR/css-values-4/#interpolation
 -
 interpolate
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-interpolate
@@ -17387,8 +17387,8 @@ attribute
 -
 interpolate
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-interpolate
@@ -17438,8 +17438,8 @@ https://www.w3.org/TR/css-values-4/#interpolation
 -
 interpolation sampling
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#interpolation-sampling
@@ -17448,8 +17448,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#interpolation-sampling
 -
 interpolation sampling
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#interpolation-sampling
@@ -17458,8 +17458,8 @@ https://www.w3.org/TR/WGSL/#interpolation-sampling
 -
 interpolation type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#interpolation-type
@@ -17468,8 +17468,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#interpolation-type
 -
 interpolation type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#interpolation-type
@@ -18017,8 +18017,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#intrinsic-dimensions
 -
 intrinsic dimensions
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#intrinsic
@@ -18027,8 +18027,8 @@ https://drafts.csswg.org/css2/#intrinsic
 -
 intrinsic dimensions
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#intrinsic
@@ -18331,8 +18331,8 @@ LayoutChild
 -
 inuse_attribute_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-inuse_attribute_err
@@ -18341,8 +18341,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-inuse_attribute_err
 -
 inuseattributeerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#inuseattributeerror
@@ -18554,8 +18554,8 @@ https://www.w3.org/TR/css-images-4/#invalid-image
 -
 invalid memory reference
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference
@@ -18564,8 +18564,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference
 -
 invalid memory reference
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#invalid-memory-reference
@@ -18574,8 +18574,8 @@ https://www.w3.org/TR/WGSL/#invalid-memory-reference
 -
 invalid reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#TermInvalidReference
@@ -18584,8 +18584,8 @@ https://svgwg.org/svg2-draft/linking.html#TermInvalidReference
 -
 invalid reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#TermInvalidReference
@@ -18654,8 +18654,8 @@ https://www.w3.org/TR/webdriver2/#dfn-invalid-session-id
 -
 invalid value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermInvalidValue
@@ -18664,8 +18664,8 @@ https://svgwg.org/svg2-draft/types.html#TermInvalidValue
 -
 invalid value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermInvalidValue
@@ -18735,8 +18735,8 @@ XPathResult
 -
 invalid_access_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_access_err
@@ -18745,8 +18745,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_access_err
 -
 invalid_character_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_character_err
@@ -18766,8 +18766,8 @@ signed exchange report
 -
 invalid_modification_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_modification_err
@@ -18776,8 +18776,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_modification_err
 -
 invalid_node_type_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_node_type_err
@@ -18786,8 +18786,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_node_type_err
 -
 invalid_state_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-invalid_state_err
@@ -18806,8 +18806,8 @@ https://www.w3.org/TR/remote-playback/#dfn-invalidaccesserror
 -
 invalidaccesserror
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-InvalidAccessError
@@ -18816,8 +18816,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-InvalidAccessError
 -
 invalidaccesserror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#invalidaccesserror
@@ -18836,8 +18836,8 @@ https://www.w3.org/TR/css-layout-api-1/#invalidate-layout-functions
 -
 invalidcharactererror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#invalidcharactererror
@@ -18846,8 +18846,8 @@ https://www.w3.org/TR/WebIDL-1/#invalidcharactererror
 -
 invalidmodificationerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#invalidmodificationerror
@@ -18856,8 +18856,8 @@ https://www.w3.org/TR/WebIDL-1/#invalidmodificationerror
 -
 invalidnodetypeerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#invalidnodetypeerror
@@ -18866,8 +18866,8 @@ https://www.w3.org/TR/WebIDL-1/#invalidnodetypeerror
 -
 invalidstateerror
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-invalidstateerror
@@ -18906,8 +18906,8 @@ https://www.w3.org/TR/remote-playback/#dfn-invalidstateerror
 -
 invalidstateerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#invalidstateerror
@@ -18916,8 +18916,8 @@ https://www.w3.org/TR/WebIDL-1/#invalidstateerror
 -
 invariant
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-invariant
@@ -18927,8 +18927,8 @@ attribute
 -
 invariant
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-invariant
@@ -19058,8 +19058,8 @@ outline-color
 -
 invert
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-invert
@@ -19069,8 +19069,8 @@ outline-color
 -
 invert
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-invert
@@ -19244,8 +19244,8 @@ Event/path
 -
 invocations
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#invocations
@@ -19254,8 +19254,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#invocations
 -
 invocations
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#invocations
@@ -19284,8 +19284,8 @@ https://w3c.github.io/web-share-target/#dfn-invoke
 -
 invoke
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invoke-a-callback-function
@@ -19324,8 +19324,8 @@ https://www.w3.org/TR/css-layout-api-1/#invoke-a-layout-callback
 -
 invoke a named property setter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#invoke-named-setter
@@ -19364,8 +19364,8 @@ https://html.spec.whatwg.org/multipage/system-state.html#protocol-handler-invoca
 -
 invoke an indexed property setter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#invoke-indexed-setter
@@ -19434,8 +19434,8 @@ https://www.w3.org/TR/requestidlecallback/#dfn-invoke-idle-callbacks-algorithm
 -
 invoke the indexed property setter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invoke-indexed-setter
@@ -19444,8 +19444,8 @@ https://heycam.github.io/webidl/#invoke-indexed-setter
 -
 invoke the named property setter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#invoke-named-setter

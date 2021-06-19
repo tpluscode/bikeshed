@@ -343,8 +343,8 @@ https://www.w3.org/TR/css-values-4/#number-value
 -
 <number>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-number
@@ -353,8 +353,8 @@ https://drafts.csswg.org/css2/#value-def-number
 -
 <number>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-number
@@ -664,8 +664,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#parse-error-null-character-r
 -
 nullable type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-nullable-type
@@ -674,8 +674,8 @@ https://heycam.github.io/webidl/#dfn-nullable-type
 -
 nullable type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-nullable-type
@@ -904,8 +904,8 @@ https://html.spec.whatwg.org/multipage/window-object.html#number-of-document-tre
 -
 number of nullable member types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-number-of-nullable-member-types
@@ -914,8 +914,8 @@ https://heycam.github.io/webidl/#dfn-number-of-nullable-member-types
 -
 number of nullable member types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-number-of-nullable-member-types
@@ -1617,8 +1617,8 @@ https://www.w3.org/TR/css-values-4/#numeric-data-types
 -
 numeric scalar
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#numeric-scalar
@@ -1627,8 +1627,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#numeric-scalar
 -
 numeric scalar
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#numeric-scalar
@@ -1637,8 +1637,8 @@ https://www.w3.org/TR/WGSL/#numeric-scalar
 -
 numeric type value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermNumericTypeValue
@@ -1647,8 +1647,8 @@ https://svgwg.org/svg2-draft/types.html#TermNumericTypeValue
 -
 numeric type value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermNumericTypeValue
@@ -1657,8 +1657,8 @@ https://www.w3.org/TR/SVG2/types.html#TermNumericTypeValue
 -
 numeric types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-numeric-type
@@ -1667,8 +1667,8 @@ https://heycam.github.io/webidl/#dfn-numeric-type
 -
 numeric types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-numeric-type
@@ -1677,8 +1677,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-numeric-type
 -
 numeric vector
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#numeric-vector
@@ -1687,8 +1687,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#numeric-vector
 -
 numeric vector
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#numeric-vector

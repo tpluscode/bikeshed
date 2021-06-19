@@ -42,8 +42,8 @@ TextDecoderCommon
 -
 io-shareable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#io-shareable
@@ -52,8 +52,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#io-shareable
 -
 io-shareable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#io-shareable

@@ -54,8 +54,8 @@ https://www.w3.org/TR/css-values-4/#px
 -
 px
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-length-px
@@ -65,8 +65,8 @@ https://drafts.csswg.org/css2/#valdef-length-px
 -
 px
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-length-px

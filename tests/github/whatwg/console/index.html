@@ -124,24 +124,6 @@ and constructive.</p>
    <p>Please join us in the <a href="https://github.com/whatwg/console/issues">issue tracker</a> for more
 discussion.</p>
    <h2 class="heading settled" data-level="1" id="console-namespace"><span class="secno">1. </span><span class="content">Namespace <code class="idl"><a data-link-type="idl" href="#namespacedef-console" id="ref-for-namespacedef-console">console</a></code></span><span id="console-interface"></span><a class="self-link" href="#console-namespace"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Console" title="The console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided.">Console</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>4+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>10.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
-      <hr>
-      <span class="nodejs yes"><span>Node.js</span><span>0.10.0+</span></span>
-     </div>
-    </div>
-   </div>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=(<c- n>Window</c->,<c- n>Worker</c->,<c- n>Worklet</c->)]
 <c- b>namespace</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="namespace" data-export id="namespacedef-console"><code><c- g>console</c-></code></dfn> { // but see namespace object requirements below
   // Logging
@@ -191,7 +173,7 @@ its [[Prototype]] an empty object, created as if by <a data-link-type="abstract-
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>28+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>28+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>10.0.0+</span></span>
      </div>
@@ -262,7 +244,7 @@ its [[Prototype]] an empty object, created as if by <a data-link-type="abstract-
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>8.10.0+</span></span>
      </div>
@@ -376,7 +358,7 @@ back to just logging the argument if it can’t be parsed as tabular.</p>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>6+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>6+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>0.10.0+</span></span>
      </div>
@@ -430,7 +412,7 @@ back to just logging the argument if it can’t be parsed as tabular.</p>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>9+</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>8+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>8+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>0.10.0+</span></span>
      </div>
@@ -455,7 +437,7 @@ back to just logging the argument if it can’t be parsed as tabular.</p>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>9.3.0+</span></span>
      </div>
@@ -490,7 +472,22 @@ back to just logging the argument if it can’t be parsed as tabular.</p>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>30+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>30+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <hr>
+      <span class="nodejs yes"><span>Node.js</span><span>8.3.0+</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Console/countReset" title="The console.countReset() method resets counter used with console.count().">Console/countReset</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>62+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>68+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>55+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>62+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>68+</span></span><span class="webview_android yes"><span>Android WebView</span><span>68+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>48+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>8.3.0+</span></span>
      </div>
@@ -509,24 +506,6 @@ back to just logging the argument if it can’t be parsed as tabular.</p>
      <p>Perform <a data-link-type="abstract-op" href="#logger" id="ref-for-logger⑦">Logger</a>("count", « <var>concat</var> »).</p>
    </ol>
    <h4 class="heading settled dfn-paneled idl-code" data-dfn-for="console" data-dfn-type="method" data-export data-level="1.2.2" data-lt="countReset(label)|countReset()" id="countreset"><span class="secno">1.2.2. </span><span class="content">countReset(<var>label</var>)</span><a class="self-link" href="#countreset" id="ref-for-countreset②"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Console/countReset" title="The console.countReset() method resets counter used with console.count().">Console/countReset</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>62+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>68+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>55+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>62+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>68+</span></span><span class="webview_android yes"><span>Android WebView</span><span>68+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>48+</span></span>
-      <hr>
-      <span class="nodejs yes"><span>Node.js</span><span>8.3.0+</span></span>
-     </div>
-    </div>
-   </div>
    <ol>
     <li data-md>
      <p>Let <var>map</var> be the associated <a data-link-type="dfn" href="#count-map" id="ref-for-count-map①">count map</a>.</p>
@@ -656,7 +635,7 @@ output produced by calls to <a data-link-type="abstract-op" href="#printer" id="
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>10+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>10+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>0.10.0+</span></span>
      </div>
@@ -731,7 +710,7 @@ console<c- p>.</c->timeEnd<c- p>(</c-><c- u>"MyTimer"</c-><c- p>);</c->
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>10+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>10+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>0.10.0+</span></span>
      </div>
@@ -1315,7 +1294,7 @@ if ("serviceWorker" in navigator) {
      <li><span class="dfn-paneled" id="term-for-string">string</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
@@ -1331,11 +1310,11 @@ if ("serviceWorker" in navigator) {
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-infra">[INFRA]
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=(<c- n>Window</c->,<c- n>Worker</c->,<c- n>Worklet</c->)]

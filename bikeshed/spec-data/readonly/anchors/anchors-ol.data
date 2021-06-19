@@ -98,8 +98,8 @@ StorageEvent
 -
 oldVersion
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbversionchangeeventinit-oldversion
@@ -109,8 +109,8 @@ IDBVersionChangeEventInit
 -
 oldVersion
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-oldversion
@@ -120,8 +120,8 @@ IDBVersionChangeEvent
 -
 oldVersion
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeeventinit-oldversion
@@ -131,8 +131,8 @@ IDBVersionChangeEventInit
 -
 oldVersion
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-oldversion
@@ -239,8 +239,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-olive
 -
 olive
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-olive
@@ -250,8 +250,8 @@ https://drafts.csswg.org/css2/#valdef-color-olive
 -
 olive
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-olive

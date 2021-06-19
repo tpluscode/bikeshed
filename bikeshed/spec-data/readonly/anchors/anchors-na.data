@@ -22,8 +22,8 @@ SlotAssignmentMode
 -
 "native"
 enum-value
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-endingtype-native
@@ -33,8 +33,8 @@ EndingType
 -
 "native"
 enum-value
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-endingtype-native
@@ -165,8 +165,8 @@ https://drafts.csswg.org/css-namespaces/#typedef-namespace-prefix
 -
 NAMESPACE_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-namespace_err
@@ -208,8 +208,8 @@ https://dom.spec.whatwg.org/#namelist
 -
 NamedCurve
 typedef
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-NamedCurve
@@ -268,8 +268,8 @@ https://dom.spec.whatwg.org/#namednodemap
 -
 NamespaceError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#namespaceerror
@@ -2131,8 +2131,8 @@ FederatedCredentialInit
 -
 name
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-name
@@ -2142,8 +2142,8 @@ directive
 -
 name
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-name
@@ -2409,8 +2409,8 @@ CSSMarginRule
 -
 name
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-name
@@ -2441,8 +2441,8 @@ encoding
 -
 name
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-name
@@ -2452,8 +2452,8 @@ File
 -
 name
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-name
@@ -2463,8 +2463,8 @@ File
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#name
@@ -2473,8 +2473,8 @@ https://w3c.github.io/IndexedDB/#name
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#database-name
@@ -2484,8 +2484,8 @@ database
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-name
@@ -2495,8 +2495,8 @@ object-store
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-handle-name
@@ -2506,8 +2506,8 @@ object-store-handle
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-name
@@ -2517,8 +2517,8 @@ index
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-handle-name
@@ -2528,8 +2528,8 @@ index-handle
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbfactory-open-name-version-name
@@ -2540,8 +2540,8 @@ IDBFactory/open(name)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase-name-name
@@ -2551,8 +2551,8 @@ IDBFactory/deleteDatabase(name)
 -
 name
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabaseinfo-name
@@ -2562,8 +2562,8 @@ IDBDatabaseInfo
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-createobjectstore-name-options-name
@@ -2574,8 +2574,8 @@ IDBDatabase/createObjectStore(name)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-deleteobjectstore-name-name
@@ -2585,8 +2585,8 @@ IDBDatabase/deleteObjectStore(name)
 -
 name
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-name
@@ -2596,8 +2596,8 @@ IDBDatabase
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-index-name-name
@@ -2607,8 +2607,8 @@ IDBObjectStore/index(name)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-createindex-name-keypath-options-name
@@ -2619,8 +2619,8 @@ IDBObjectStore/createIndex(name, keyPath)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-deleteindex-name-name
@@ -2630,8 +2630,8 @@ IDBObjectStore/deleteIndex(name)
 -
 name
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-name
@@ -2641,8 +2641,8 @@ IDBObjectStore
 -
 name
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-name
@@ -2652,8 +2652,8 @@ IDBIndex
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransaction-objectstore-name-name
@@ -2663,8 +2663,8 @@ IDBTransaction/objectStore(name)
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#name
@@ -2673,8 +2673,8 @@ https://www.w3.org/TR/IndexedDB-3/#name
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#database-name
@@ -2684,8 +2684,8 @@ database
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-name
@@ -2695,8 +2695,8 @@ object-store
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-handle-name
@@ -2706,8 +2706,8 @@ object-store-handle
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-name
@@ -2717,8 +2717,8 @@ index
 -
 name
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-handle-name
@@ -2728,8 +2728,8 @@ index-handle
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-open-name-version-name
@@ -2740,8 +2740,8 @@ IDBFactory/open(name)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-deletedatabase-name-name
@@ -2751,8 +2751,8 @@ IDBFactory/deleteDatabase(name)
 -
 name
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabaseinfo-name
@@ -2762,8 +2762,8 @@ IDBDatabaseInfo
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-createobjectstore-name-options-name
@@ -2774,8 +2774,8 @@ IDBDatabase/createObjectStore(name)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-deleteobjectstore-name-name
@@ -2785,8 +2785,8 @@ IDBDatabase/deleteObjectStore(name)
 -
 name
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-name
@@ -2796,8 +2796,8 @@ IDBDatabase
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-index-name-name
@@ -2807,8 +2807,8 @@ IDBObjectStore/index(name)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-createindex-name-keypath-options-name
@@ -2819,8 +2819,8 @@ IDBObjectStore/createIndex(name, keyPath)
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-deleteindex-name-name
@@ -2830,8 +2830,8 @@ IDBObjectStore/deleteIndex(name)
 -
 name
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-name
@@ -2841,8 +2841,8 @@ IDBObjectStore
 -
 name
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-name
@@ -2852,8 +2852,8 @@ IDBIndex
 -
 name
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-objectstore-name-name
@@ -3228,8 +3228,8 @@ PublicKeyCredentialEntity
 -
 name
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-algorithm-name
@@ -3239,8 +3239,8 @@ Algorithm
 -
 name
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-keyalgorithm-name
@@ -3272,8 +3272,8 @@ GPUAdapter
 -
 name
 argument
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-domexception-message-name-name
@@ -3288,8 +3288,8 @@ DOMException/constructor()
 -
 name
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#domexception-name
@@ -3299,8 +3299,8 @@ DOMException
 -
 name
 attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-name
@@ -3343,8 +3343,8 @@ rtcidentityassertion
 -
 name
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#name
@@ -3353,8 +3353,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#name
 -
 name
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#name
@@ -3701,8 +3701,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#named-constructor
 -
 named constructor
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-named-constructor
@@ -3711,8 +3711,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-named-constructor
 -
 named definition
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-named-definition
@@ -3721,8 +3721,8 @@ https://heycam.github.io/webidl/#dfn-named-definition
 -
 named definitions
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-named-definition
@@ -3831,8 +3831,8 @@ https://www.w3.org/TR/css-page-3/#named-page
 -
 named properties
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-named-properties
@@ -3841,8 +3841,8 @@ https://heycam.github.io/webidl/#idl-named-properties
 -
 named properties object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-named-properties-object
@@ -3851,8 +3851,8 @@ https://heycam.github.io/webidl/#dfn-named-properties-object
 -
 named properties object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-named-properties-object
@@ -3861,8 +3861,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-named-properties-object
 -
 named property deleter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-named-property-deleter
@@ -3871,8 +3871,8 @@ https://heycam.github.io/webidl/#dfn-named-property-deleter
 -
 named property deleters
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-named-property-deleter
@@ -3881,8 +3881,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-named-property-deleter
 -
 named property getter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-named-property-getter
@@ -3891,8 +3891,8 @@ https://heycam.github.io/webidl/#dfn-named-property-getter
 -
 named property getters
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-named-property-getter
@@ -3901,8 +3901,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-named-property-getter
 -
 named property setter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-named-property-setter
@@ -3911,8 +3911,8 @@ https://heycam.github.io/webidl/#dfn-named-property-setter
 -
 named property setters
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-named-property-setter
@@ -3921,8 +3921,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-named-property-setter
 -
 named property visibility algorithm
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-named-property-visibility
@@ -3931,8 +3931,8 @@ https://heycam.github.io/webidl/#dfn-named-property-visibility
 -
 named property visibility algorithm
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-named-property-visibility
@@ -3981,8 +3981,8 @@ https://www.w3.org/TR/css-gcpm-3/#named-strings0
 -
 namedCurve
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcKeyGenParams-namedCurve
@@ -3992,8 +3992,8 @@ EcKeyGenParams
 -
 namedCurve
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcKeyAlgorithm-namedCurve
@@ -4003,8 +4003,8 @@ EcKeyAlgorithm
 -
 namedCurve
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcKeyImportParams-namedCurve
@@ -4124,8 +4124,8 @@ HTMLSelectElement
 -
 namedcurve
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams-namedCurve
@@ -4134,8 +4134,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams-namedCurve
 -
 namedcurve
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-NamedCurve
@@ -4144,8 +4144,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-NamedCurve
 -
 namedcurve
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyAlgorithm-namedCurve
@@ -4154,8 +4154,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyAlgorithm-namedCurve
 -
 namedcurve
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyImportParams-namedCurve
@@ -4404,8 +4404,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#concept-element-names
 -
 namespace
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-namespace
@@ -4414,8 +4414,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-namespace
 -
 namespace
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-namespace
@@ -4424,8 +4424,8 @@ https://heycam.github.io/webidl/#dfn-namespace
 -
 namespace concept
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-concept-namespace
@@ -4434,8 +4434,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-concept-namespace
 -
 namespace member
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-namespace-member
@@ -4444,8 +4444,8 @@ https://heycam.github.io/webidl/#dfn-namespace-member
 -
 namespace object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-namespace-object
@@ -4506,8 +4506,8 @@ https://www.w3.org/TR/css-namespaces-3/#namespace-prefix
 -
 namespace prefix lists
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-list
@@ -4516,8 +4516,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-list
 -
 namespace prefix map
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-namespace-prefix-map
@@ -4623,8 +4623,8 @@ CSSNamespaceRule
 -
 namespace_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-namespace_err
@@ -4633,8 +4633,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-namespace_err
 -
 namespaceerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#namespaceerror
@@ -4643,8 +4643,8 @@ https://www.w3.org/TR/WebIDL-1/#namespaceerror
 -
 namespaceuri
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-namespaceuri
@@ -5484,8 +5484,8 @@ https://fetch.spec.whatwg.org/#concept-navigate-redirect-fetch
 -
 navigate-to
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#navigate-to
@@ -5494,8 +5494,8 @@ https://w3c.github.io/webappsec-csp/#navigate-to
 -
 navigate-to
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#navigate-to
@@ -5678,8 +5678,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#navigation-request
 -
 navigation response check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-navigation-response-check
@@ -5689,8 +5689,8 @@ directive
 -
 navigation response check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-navigation-response-check
@@ -6243,8 +6243,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-navy
 -
 navy
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-navy
@@ -6254,8 +6254,8 @@ https://drafts.csswg.org/css2/#valdef-color-navy
 -
 navy
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-navy

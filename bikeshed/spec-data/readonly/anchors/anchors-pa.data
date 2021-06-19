@@ -267,8 +267,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'padding-top'
 -
 'paged' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#paged-media-group
@@ -277,8 +277,8 @@ https://drafts.csswg.org/css2/#paged-media-group
 -
 'paged' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#paged-media-group
@@ -367,8 +367,8 @@ https://www.w3.org/TR/selectors-4/#selectordef-paused
 -
 <padding-width>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-padding-width
@@ -377,8 +377,8 @@ https://drafts.csswg.org/css2/#value-def-padding-width
 -
 <padding-width>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-padding-width
@@ -509,8 +509,8 @@ https://www.w3.org/TR/fill-stroke-3/#typedef-paint
 -
 <paint>
 type
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#DataTypePaint
@@ -519,8 +519,8 @@ https://svgwg.org/svg2-draft/painting.html#DataTypePaint
 -
 <paint>
 type
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#DataTypePaint
@@ -571,8 +571,8 @@ https://www.w3.org/TR/css-page-3/#at-ruledef-page
 -
 @page
 at-rule
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#at-ruledef-page
@@ -581,8 +581,8 @@ https://drafts.csswg.org/css2/#at-ruledef-page
 -
 @page
 at-rule
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#at-ruledef-page
@@ -1525,8 +1525,8 @@ Body
 -
 package data
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#blob-package-data
@@ -1536,8 +1536,8 @@ Blob
 -
 package data
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#blob-package-data
@@ -2147,8 +2147,8 @@ https://www.w3.org/TR/css-speech-1/#padding-def
 -
 padding
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#box-padding-area
@@ -2157,8 +2157,8 @@ https://drafts.csswg.org/css2/#box-padding-area
 -
 padding
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-padding
@@ -2167,8 +2167,8 @@ https://drafts.csswg.org/css2/#propdef-padding
 -
 padding
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#box-padding-area
@@ -2177,8 +2177,8 @@ https://drafts.csswg.org/css2/#box-padding-area
 -
 padding
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-padding
@@ -2187,8 +2187,8 @@ https://drafts.csswg.org/css2/#propdef-padding
 -
 padding
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-padding
@@ -2197,8 +2197,8 @@ https://www.w3.org/TR/CSS22/box.html#propdef-padding
 -
 padding (of a box)
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#box-padding-area
@@ -2207,8 +2207,8 @@ https://drafts.csswg.org/css2/#box-padding-area
 -
 padding (of a box)
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#box-padding-area
@@ -2307,8 +2307,8 @@ https://www.w3.org/TR/css-box-4/#padding-box
 -
 padding box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#padding-box
@@ -2317,8 +2317,8 @@ https://drafts.csswg.org/css2/#padding-box
 -
 padding box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#padding-box
@@ -2367,8 +2367,8 @@ https://www.w3.org/TR/css-box-4/#padding-edge
 -
 padding edge
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#padding-edge
@@ -2377,8 +2377,8 @@ https://drafts.csswg.org/css2/#padding-edge
 -
 padding edge
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#padding-edge
@@ -2547,8 +2547,8 @@ https://www.w3.org/TR/css-box-4/#propdef-padding-bottom
 -
 padding-bottom
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-padding-bottom
@@ -2557,8 +2557,8 @@ https://drafts.csswg.org/css2/#propdef-padding-bottom
 -
 padding-bottom
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-padding-bottom
@@ -2567,8 +2567,8 @@ https://drafts.csswg.org/css2/#propdef-padding-bottom
 -
 padding-bottom
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-padding-bottom
@@ -2894,8 +2894,8 @@ https://www.w3.org/TR/css-box-4/#propdef-padding-left
 -
 padding-left
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-padding-left
@@ -2904,8 +2904,8 @@ https://drafts.csswg.org/css2/#propdef-padding-left
 -
 padding-left
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-padding-left
@@ -2914,8 +2914,8 @@ https://drafts.csswg.org/css2/#propdef-padding-left
 -
 padding-left
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-padding-left
@@ -2964,8 +2964,8 @@ https://www.w3.org/TR/css-box-4/#propdef-padding-right
 -
 padding-right
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-padding-right
@@ -2974,8 +2974,8 @@ https://drafts.csswg.org/css2/#propdef-padding-right
 -
 padding-right
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-padding-right
@@ -2984,8 +2984,8 @@ https://drafts.csswg.org/css2/#propdef-padding-right
 -
 padding-right
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-padding-right
@@ -3034,8 +3034,8 @@ https://www.w3.org/TR/css-box-4/#propdef-padding-top
 -
 padding-top
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-padding-top
@@ -3044,8 +3044,8 @@ https://drafts.csswg.org/css2/#propdef-padding-top
 -
 padding-top
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-padding-top
@@ -3054,8 +3054,8 @@ https://drafts.csswg.org/css2/#propdef-padding-top
 -
 padding-top
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-padding-top
@@ -3228,8 +3228,8 @@ https://www.w3.org/TR/css-page-3/#page-area
 -
 page area
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#page-area
@@ -3238,8 +3238,8 @@ https://drafts.csswg.org/css2/#page-area
 -
 page area
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#page-area
@@ -3288,8 +3288,8 @@ https://www.w3.org/TR/css-page-3/#page-box
 -
 page box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#page-box%E2%91%A0
@@ -3298,8 +3298,8 @@ https://drafts.csswg.org/css2/#page-box%E2%91%A0
 -
 page box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#page-box%E2%91%A0
@@ -3368,8 +3368,8 @@ https://www.w3.org/TR/css-page-3/#page-context
 -
 page context
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#page-context
@@ -3378,8 +3378,8 @@ https://drafts.csswg.org/css2/#page-context
 -
 page context
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#page-context
@@ -3698,8 +3698,8 @@ https://www.w3.org/TR/css-page-3/#page-selector
 -
 page selector
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#page-selector
@@ -3708,8 +3708,8 @@ https://drafts.csswg.org/css2/#page-selector
 -
 page selector
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#page-selector
@@ -3818,8 +3818,8 @@ https://www.w3.org/TR/cssom-view-1/#page-zoom
 -
 page-break-after
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-page-break-after
@@ -3828,8 +3828,8 @@ https://drafts.csswg.org/css2/#propdef-page-break-after
 -
 page-break-after
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-page-break-after
@@ -3838,8 +3838,8 @@ https://drafts.csswg.org/css2/#propdef-page-break-after
 -
 page-break-after
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/page.html#propdef-page-break-after
@@ -3848,8 +3848,8 @@ https://www.w3.org/TR/CSS22/page.html#propdef-page-break-after
 -
 page-break-before
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-page-break-before
@@ -3858,8 +3858,8 @@ https://drafts.csswg.org/css2/#propdef-page-break-before
 -
 page-break-before
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-page-break-before
@@ -3868,8 +3868,8 @@ https://drafts.csswg.org/css2/#propdef-page-break-before
 -
 page-break-before
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/page.html#propdef-page-break-before
@@ -3878,8 +3878,8 @@ https://www.w3.org/TR/CSS22/page.html#propdef-page-break-before
 -
 page-break-inside
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-page-break-inside
@@ -3888,8 +3888,8 @@ https://drafts.csswg.org/css2/#propdef-page-break-inside
 -
 page-break-inside
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-page-break-inside
@@ -3898,8 +3898,8 @@ https://drafts.csswg.org/css2/#propdef-page-break-inside
 -
 page-break-inside
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/page.html#propdef-page-break-inside
@@ -3908,8 +3908,8 @@ https://www.w3.org/TR/CSS22/page.html#propdef-page-break-inside
 -
 page-context
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#page-context
@@ -3918,8 +3918,8 @@ https://drafts.csswg.org/css2/#page-context
 -
 page-context
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#page-context
@@ -4420,8 +4420,8 @@ https://www.w3.org/TR/paint-timing/#paint
 -
 paint
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermPaint
@@ -4430,8 +4430,8 @@ https://svgwg.org/svg2-draft/painting.html#TermPaint
 -
 paint
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermPaint
@@ -4582,8 +4582,8 @@ https://www.w3.org/TR/webdriver2/#dfn-paint-order
 -
 paint server element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermPaintServerElement
@@ -4592,8 +4592,8 @@ https://svgwg.org/svg2-draft/painting.html#TermPaintServerElement
 -
 paint server element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermPaintServerElement
@@ -4672,8 +4672,8 @@ https://www.w3.org/TR/css-paint-api-1/#funcdef-paint
 -
 paint-order
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#PaintOrderProperty
@@ -4682,8 +4682,8 @@ https://svgwg.org/svg2-draft/painting.html#PaintOrderProperty
 -
 paint-order
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#PaintOrderProperty
@@ -4840,8 +4840,8 @@ https://infra.spec.whatwg.org/#pair
 -
 pair asynchronously iterable declaration
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#pair-asynchronously-iterable-declaration
@@ -4850,8 +4850,8 @@ https://heycam.github.io/webidl/#pair-asynchronously-iterable-declaration
 -
 pair iterator
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-pair-iterator
@@ -4860,8 +4860,8 @@ https://heycam.github.io/webidl/#dfn-pair-iterator
 -
 pair iterator
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-pair-iterator
@@ -5435,8 +5435,8 @@ AudioWorkletProcessCallback
 -
 parameters
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#algorithm-specific-params
@@ -5445,8 +5445,8 @@ https://w3c.github.io/webcrypto/#algorithm-specific-params
 -
 parameters
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#algorithm-specific-params
@@ -5554,8 +5554,8 @@ entry
 -
 parent
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#parent
@@ -5564,8 +5564,8 @@ https://drafts.csswg.org/css2/#parent
 -
 parent
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#parent
@@ -5574,8 +5574,8 @@ https://drafts.csswg.org/css2/#parent
 -
 parent
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-parent
@@ -6300,8 +6300,8 @@ https://infra.spec.whatwg.org/#parse-a-json-string-to-an-infra-value
 -
 parse a jwk
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-parse-a-jwk
@@ -6310,8 +6310,8 @@ https://w3c.github.io/webcrypto/#concept-parse-a-jwk
 -
 parse a jwk
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-parse-a-jwk
@@ -6561,8 +6561,8 @@ https://www.w3.org/TR/webvtt1/#parse-a-percentage-string
 -
 parse a privatekeyinfo
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-parse-a-privateKeyInfo
@@ -6571,8 +6571,8 @@ https://w3c.github.io/webcrypto/#concept-parse-a-privateKeyInfo
 -
 parse a privatekeyinfo
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-parse-a-privateKeyInfo
@@ -6621,8 +6621,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#parse-response-csp
 -
 parse a response’s Content Security Policies
 abstract-op
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies
@@ -6631,8 +6631,8 @@ https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-se
 -
 parse a response’s Content Security Policies
 abstract-op
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-responses-content-security-policies
@@ -6711,8 +6711,8 @@ https://www.w3.org/TR/selectors-4/#parse-a-selector
 -
 parse a serialized CSP
 abstract-op
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp
@@ -6721,8 +6721,8 @@ https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp
 -
 parse a serialized CSP
 abstract-op
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-serialized-csp
@@ -6731,8 +6731,8 @@ https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-serialized-csp
 -
 parse a serialized CSP list
 abstract-op
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp-list
@@ -6741,8 +6741,8 @@ https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-serialized-csp-list
 -
 parse a serialized CSP list
 abstract-op
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-serialized-csp-list
@@ -6861,8 +6861,8 @@ https://www.w3.org/TR/css-syntax-3/#parse-a-stylesheet
 -
 parse a subjectpublickeyinfo
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-parse-a-spki
@@ -6871,8 +6871,8 @@ https://w3c.github.io/webcrypto/#concept-parse-a-spki
 -
 parse a subjectpublickeyinfo
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-parse-a-spki
@@ -7021,8 +7021,8 @@ https://wicg.github.io/origin-policy/#parse-an-origin-policy-header
 -
 parse an asn.1 structure
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-parse-an-asn1-structure
@@ -7031,8 +7031,8 @@ https://w3c.github.io/webcrypto/#concept-parse-an-asn1-structure
 -
 parse an asn.1 structure
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-parse-an-asn1-structure
@@ -7354,8 +7354,8 @@ https://www.w3.org/TR/clear-site-data/#abstract-opdef-parse-responses-clear-site
 -
 parse response’s content security policies
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#parse-response-csp
@@ -7364,8 +7364,8 @@ https://w3c.github.io/webappsec-csp/#parse-response-csp
 -
 parse response’s content security policies
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#parse-response-csp
@@ -7922,8 +7922,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#js-parsescript
 -
 parsing
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-parsing
@@ -8143,8 +8143,8 @@ https://wicg.github.io/webpackage/loading.html#parsing-the-signature-header-fiel
 -
 parsing xhtml documents
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-parsing-xhtml-documents
@@ -8292,8 +8292,8 @@ element
 -
 partial derivative
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#partial-derivative
@@ -8302,8 +8302,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#partial-derivative
 -
 partial derivative
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#partial-derivative
@@ -8312,8 +8312,8 @@ https://www.w3.org/TR/WGSL/#partial-derivative
 -
 partial dictionary
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-partial-dictionary
@@ -8322,8 +8322,8 @@ https://heycam.github.io/webidl/#dfn-partial-dictionary
 -
 partial dictionary
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-partial-dictionary
@@ -8332,8 +8332,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-partial-dictionary
 -
 partial interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-partial-interface
@@ -8342,8 +8342,8 @@ https://heycam.github.io/webidl/#dfn-partial-interface
 -
 partial interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-partial-interface
@@ -8352,8 +8352,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-partial-interface
 -
 partial interface mixin
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#partial-interface-mixin
@@ -8402,8 +8402,8 @@ https://www.w3.org/TR/webdriver2/#dfn-partial-link-text-selector
 -
 partial namespace
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-partial-namespace
@@ -9159,8 +9159,8 @@ FileSystemDirectoryEntry/getDirectory()
 -
 path
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#elementdef-path
@@ -9169,8 +9169,8 @@ https://svgwg.org/svg2-draft/paths.html#elementdef-path
 -
 path
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextPathElementPathAttribute
@@ -9180,8 +9180,8 @@ textPath
 -
 path
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#elementdef-path
@@ -9190,8 +9190,8 @@ https://www.w3.org/TR/SVG2/paths.html#elementdef-path
 -
 path
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextPathElementPathAttribute
@@ -9271,8 +9271,8 @@ https://wicg.github.io/entries-api/#path-segment
 -
 path segment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#TermPathSegment
@@ -9281,8 +9281,8 @@ https://svgwg.org/svg2-draft/paths.html#TermPathSegment
 -
 path segment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#TermPathSegment
@@ -9393,8 +9393,8 @@ https://url.spec.whatwg.org/#path-absolute-url-string
 -
 path-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-path-part
@@ -9403,8 +9403,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-path-part
 -
 path-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-path-part
@@ -9413,8 +9413,8 @@ https://www.w3.org/TR/CSP3/#grammardef-path-part
 -
 path-part match
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#path-part-match
@@ -9423,8 +9423,8 @@ https://w3c.github.io/webappsec-csp/#path-part-match
 -
 path-part match
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#path-part-match
@@ -9453,8 +9453,8 @@ https://url.spec.whatwg.org/#path-relative-url-string
 -
 pathLength
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__pathLength
@@ -9464,8 +9464,8 @@ SVGGeometryElement
 -
 pathLength
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGGeometryElement__pathLength
@@ -9551,8 +9551,8 @@ input
 -
 pattern
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#elementdef-pattern
@@ -9561,8 +9561,8 @@ https://svgwg.org/svg2-draft/pservers.html#elementdef-pattern
 -
 pattern
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#elementdef-pattern
@@ -9591,8 +9591,8 @@ https://mimesniff.spec.whatwg.org/#pattern-matching-algorithm
 -
 patternContentUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__patternContentUnits
@@ -9602,8 +9602,8 @@ SVGPatternElement
 -
 patternContentUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#__svg__SVGPatternElement__patternContentUnits
@@ -9624,8 +9624,8 @@ ValidityState
 -
 patternTransform
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__patternTransform
@@ -9635,8 +9635,8 @@ SVGPatternElement
 -
 patternTransform
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#__svg__SVGPatternElement__patternTransform
@@ -9646,8 +9646,8 @@ SVGPatternElement
 -
 patternUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#__svg__SVGPatternElement__patternUnits
@@ -9657,8 +9657,8 @@ SVGPatternElement
 -
 patternUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#__svg__SVGPatternElement__patternUnits
@@ -9668,8 +9668,8 @@ SVGPatternElement
 -
 patterncontentunits
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#PatternElementPatternContentUnitsAttribute
@@ -9679,8 +9679,8 @@ pattern
 -
 patterncontentunits
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#PatternElementPatternContentUnitsAttribute
@@ -9690,8 +9690,8 @@ pattern
 -
 patterntransform
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#PatternElementPatternTransformAttribute
@@ -9701,8 +9701,8 @@ pattern
 -
 patterntransform
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#PatternElementPatternTransformAttribute
@@ -9712,8 +9712,8 @@ pattern
 -
 patternunits
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#PatternElementPatternUnitsAttribute
@@ -9723,8 +9723,8 @@ pattern
 -
 patternunits
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#PatternElementPatternUnitsAttribute
@@ -9786,8 +9786,8 @@ https://www.w3.org/TR/css-speech-1/#pause
 -
 pause
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-pause
@@ -9966,8 +9966,8 @@ https://www.w3.org/TR/css-speech-1/#pause-after
 -
 pause-after
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-pause-after
@@ -9996,8 +9996,8 @@ https://www.w3.org/TR/css-speech-1/#pause-before
 -
 pause-before
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-pause-before

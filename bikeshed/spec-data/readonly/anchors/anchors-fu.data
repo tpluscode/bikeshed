@@ -122,8 +122,8 @@ https://fullscreen.spec.whatwg.org/#dictdef-fullscreenoptions
 -
 Function
 callback
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#Function
@@ -164,8 +164,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-fuchsia
 -
 fuchsia
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-fuchsia
@@ -175,8 +175,8 @@ https://drafts.csswg.org/css2/#valdef-color-fuchsia
 -
 fuchsia
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-fuchsia
@@ -306,8 +306,8 @@ https://www.w3.org/TR/webrtc/#dfn-fulfill
 -
 full glyph cell
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermFullGlyphCell
@@ -316,8 +316,8 @@ https://svgwg.org/svg2-draft/coords.html#TermFullGlyphCell
 -
 full glyph cell
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermFullGlyphCell
@@ -1070,8 +1070,8 @@ https://www.w3.org/TR/webdriver2/#dfn-function
 -
 function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-classes-function
@@ -1081,8 +1081,8 @@ storage classes
 -
 function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#function-function
@@ -1092,8 +1092,8 @@ function
 -
 function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-classes-function
@@ -1103,8 +1103,8 @@ storage classes
 -
 function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#function-function
@@ -1114,8 +1114,8 @@ function
 -
 function body
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#function-body
@@ -1124,8 +1124,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#function-body
 -
 function body
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#function-body
@@ -1134,8 +1134,8 @@ https://www.w3.org/TR/WGSL/#function-body
 -
 function call
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#function-call
@@ -1144,8 +1144,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#function-call
 -
 function call
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#function-call
@@ -1154,8 +1154,8 @@ https://www.w3.org/TR/WGSL/#function-call
 -
 function declaration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#function-declaration
@@ -1164,8 +1164,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#function-declaration
 -
 function declaration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#function-declaration
@@ -1224,8 +1224,8 @@ https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#function
 -
 function object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-function-object
@@ -1234,8 +1234,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-function-object
 -
 function scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#function-scope
@@ -1244,8 +1244,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#function-scope
 -
 function scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#function-scope
@@ -1426,8 +1426,8 @@ https://www.w3.org/TR/webdriver2/#dfn-functioncreate
 -
 functions in a shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#functions-in-a-shader-stage
@@ -1436,8 +1436,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#functions-in-a-shader-stage
 -
 functions in a shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#functions-in-a-shader-stage
@@ -1446,8 +1446,8 @@ https://www.w3.org/TR/WGSL/#functions-in-a-shader-stage
 -
 furthest ancestral svg viewport
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermFurthestAncestorSVGViewport

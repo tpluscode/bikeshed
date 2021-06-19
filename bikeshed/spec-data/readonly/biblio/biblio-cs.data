@@ -254,30 +254,6 @@ a:csp-20210324
 CSP-20210324
 csp3-20210324
 -
-a:csp-20210416
-CSP-20210416
-csp3-20210416
--
-a:csp-20210505
-CSP-20210505
-csp3-20210505
--
-a:csp-20210510
-CSP-20210510
-csp3-20210510
--
-a:csp-20210512
-CSP-20210512
-csp3-20210512
--
-a:csp-20210604
-CSP-20210604
-csp3-20210604
--
-a:csp-20210616
-CSP-20210616
-csp3-20210616
--
 d:csp-cookies
 csp-cookies
 13 September 2016
@@ -615,7 +591,7 @@ Daniel Veditz
 -
 d:csp3
 CSP3
-16 June 2021
+24 March 2021
 WD
 Content Security Policy Level 3
 https://www.w3.org/TR/CSP3/
@@ -764,78 +740,6 @@ WD
 Content Security Policy Level 3
 https://www.w3.org/TR/2021/WD-CSP3-20210324/
 https://www.w3.org/TR/2021/WD-CSP3-20210324/
-
-
-
-Mike West
--
-d:csp3-20210416
-CSP3-20210416
-16 April 2021
-WD
-Content Security Policy Level 3
-https://www.w3.org/TR/2021/WD-CSP3-20210416/
-https://www.w3.org/TR/2021/WD-CSP3-20210416/
-
-
-
-Mike West
--
-d:csp3-20210505
-CSP3-20210505
-5 May 2021
-WD
-Content Security Policy Level 3
-https://www.w3.org/TR/2021/WD-CSP3-20210505/
-https://www.w3.org/TR/2021/WD-CSP3-20210505/
-
-
-
-Mike West
--
-d:csp3-20210510
-CSP3-20210510
-10 May 2021
-WD
-Content Security Policy Level 3
-https://www.w3.org/TR/2021/WD-CSP3-20210510/
-https://www.w3.org/TR/2021/WD-CSP3-20210510/
-
-
-
-Mike West
--
-d:csp3-20210512
-CSP3-20210512
-12 May 2021
-WD
-Content Security Policy Level 3
-https://www.w3.org/TR/2021/WD-CSP3-20210512/
-https://www.w3.org/TR/2021/WD-CSP3-20210512/
-
-
-
-Mike West
--
-d:csp3-20210604
-CSP3-20210604
-4 June 2021
-WD
-Content Security Policy Level 3
-https://www.w3.org/TR/2021/WD-CSP3-20210604/
-https://www.w3.org/TR/2021/WD-CSP3-20210604/
-
-
-
-Mike West
--
-d:csp3-20210616
-CSP3-20210616
-16 June 2021
-WD
-Content Security Policy Level 3
-https://www.w3.org/TR/2021/WD-CSP3-20210616/
-https://www.w3.org/TR/2021/WD-CSP3-20210616/
 
 
 
@@ -2245,7 +2149,7 @@ Tab Atkins Jr.
 -
 d:css-cascade-5
 css-cascade-5
-8 June 2021
+19 March 2021
 WD
 CSS Cascading and Inheritance Level 5
 https://www.w3.org/TR/css-cascade-5/
@@ -2292,20 +2196,6 @@ WD
 CSS Cascading and Inheritance Level 5
 https://www.w3.org/TR/2021/WD-css-cascade-5-20210319/
 https://www.w3.org/TR/2021/WD-css-cascade-5-20210319/
-
-
-
-Elika Etemad
-Miriam Suzanne
-Tab Atkins Jr.
--
-d:css-cascade-5-20210608
-css-cascade-5-20210608
-8 June 2021
-WD
-CSS Cascading and Inheritance Level 5
-https://www.w3.org/TR/2021/WD-css-cascade-5-20210608/
-https://www.w3.org/TR/2021/WD-css-cascade-5-20210608/
 
 
 
@@ -2497,7 +2387,7 @@ David Baron
 -
 d:css-color-4
 css-color-4
-1 June 2021
+12 November 2020
 WD
 CSS Color Module Level 4
 https://www.w3.org/TR/css-color-4/
@@ -2560,22 +2450,9 @@ https://www.w3.org/TR/2020/WD-css-color-4-20201112/
 Tab Atkins Jr.
 Chris Lilley
 -
-d:css-color-4-20210601
-css-color-4-20210601
-1 June 2021
-WD
-CSS Color Module Level 4
-https://www.w3.org/TR/2021/WD-css-color-4-20210601/
-https://www.w3.org/TR/2021/WD-css-color-4-20210601/
-
-
-
-Tab Atkins Jr.
-Chris Lilley
--
 d:css-color-5
 css-color-5
-1 June 2021
+3 March 2020
 WD
 CSS Color Module Level 5
 https://www.w3.org/TR/css-color-5/
@@ -2603,24 +2480,9 @@ Una Kravets
 Lea Verou
 Adam Argyle
 -
-d:css-color-5-20210601
-css-color-5-20210601
-1 June 2021
-WD
-CSS Color Module Level 5
-https://www.w3.org/TR/2021/WD-css-color-5-20210601/
-https://www.w3.org/TR/2021/WD-css-color-5-20210601/
-
-
-
-Chris Lilley
-Una Kravets
-Lea Verou
-Adam Argyle
--
 d:css-color-adjust-1
 css-color-adjust-1
-16 June 2021
+9 November 2020
 WD
 CSS Color Adjustment Module Level 1
 https://www.w3.org/TR/css-color-adjust-1/
@@ -2684,36 +2546,6 @@ WD
 CSS Color Adjustment Module Level 1
 https://www.w3.org/TR/2020/WD-css-color-adjust-1-20201109/
 https://www.w3.org/TR/2020/WD-css-color-adjust-1-20201109/
-
-
-
-Elika Etemad
-Rossen Atanassov
-Rune Lillesveen
-Tab Atkins Jr.
--
-d:css-color-adjust-1-20210520
-css-color-adjust-1-20210520
-20 May 2021
-WD
-CSS Color Adjustment Module Level 1
-https://www.w3.org/TR/2021/WD-css-color-adjust-1-20210520/
-https://www.w3.org/TR/2021/WD-css-color-adjust-1-20210520/
-
-
-
-Elika Etemad
-Rossen Atanassov
-Rune Lillesveen
-Tab Atkins Jr.
--
-d:css-color-adjust-1-20210616
-css-color-adjust-1-20210616
-16 June 2021
-WD
-CSS Color Adjustment Module Level 1
-https://www.w3.org/TR/2021/WD-css-color-adjust-1-20210616/
-https://www.w3.org/TR/2021/WD-css-color-adjust-1-20210616/
 
 
 
@@ -7309,7 +7141,7 @@ Elika Etemad
 -
 d:css-sizing-4
 css-sizing-4
-20 May 2021
+20 October 2020
 WD
 CSS Box Sizing Module Level 4
 https://www.w3.org/TR/css-sizing-4/
@@ -7319,7 +7151,6 @@ https://drafts.csswg.org/css-sizing-4/
 
 Tab Atkins Jr.
 Elika Etemad
-Jen Simmons
 -
 d:css-sizing-4-20200526
 css-sizing-4-20200526
@@ -7347,20 +7178,6 @@ https://www.w3.org/TR/2020/WD-css-sizing-4-20201020/
 
 Tab Atkins Jr.
 Elika Etemad
--
-d:css-sizing-4-20210520
-css-sizing-4-20210520
-20 May 2021
-WD
-CSS Box Sizing Module Level 4
-https://www.w3.org/TR/2021/WD-css-sizing-4-20210520/
-https://www.w3.org/TR/2021/WD-css-sizing-4-20210520/
-
-
-
-Tab Atkins Jr.
-Elika Etemad
-Jen Simmons
 -
 d:css-smil
 CSS-smil
@@ -7895,7 +7712,7 @@ César Acebal
 -
 d:css-text-3
 css-text-3
-22 April 2021
+16 March 2021
 CR
 CSS Text Module Level 3
 https://www.w3.org/TR/css-text-3/
@@ -8274,20 +8091,6 @@ CR
 CSS Text Module Level 3
 https://www.w3.org/TR/2021/CRD-css-text-3-20210316/
 https://www.w3.org/TR/2021/CRD-css-text-3-20210316/
-
-
-
-Elika Etemad
-Koji Ishii
-Florian Rivoal
--
-d:css-text-3-20210422
-css-text-3-20210422
-22 April 2021
-CR
-CSS Text Module Level 3
-https://www.w3.org/TR/2021/CRD-css-text-3-20210422/
-https://www.w3.org/TR/2021/CRD-css-text-3-20210422/
 
 
 
@@ -12406,10 +12209,6 @@ a:css3-text-20210316
 css3-text-20210316
 css-text-3-20210316
 -
-a:css3-text-20210422
-css3-text-20210422
-css-text-3-20210422
--
 a:css3-text-decor
 CSS3-TEXT-DECOR
 css-text-decor-3
@@ -13525,10 +13324,6 @@ css-text-3-20201222
 a:css3text-20210316
 CSS3TEXT-20210316
 css-text-3-20210316
--
-a:css3text-20210422
-CSS3TEXT-20210422
-css-text-3-20210422
 -
 a:css3textlayout
 CSS3TEXTLAYOUT

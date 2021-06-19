@@ -1617,110 +1617,6 @@
                 }
             },
             "title": "WebGL2RenderingContext.isSampler()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/WebGL2RenderingContext.json",
-            "name": "samplerParameterf",
-            "slug": "API/WebGL2RenderingContext/samplerParameter",
-            "summary": "The WebGL2RenderingContext.samplerParameter[if]() methods of the WebGL 2 API set WebGLSampler parameters.",
-            "support": {
-                "chrome": {
-                    "version_added": "56"
-                },
-                "chrome_android": {
-                    "version_added": "58"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51"
-                },
-                "firefox_android": {
-                    "version_added": "51"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "43"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
-                "webview_android": {
-                    "version_added": "58"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebGL2RenderingContext.samplerParameter[if]()"
-        },
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/WebGL2RenderingContext.json",
-            "name": "samplerParameteri",
-            "slug": "API/WebGL2RenderingContext/samplerParameter",
-            "summary": "The WebGL2RenderingContext.samplerParameter[if]() methods of the WebGL 2 API set WebGLSampler parameters.",
-            "support": {
-                "chrome": {
-                    "version_added": "56"
-                },
-                "chrome_android": {
-                    "version_added": "58"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51"
-                },
-                "firefox_android": {
-                    "version_added": "51"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "43"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
-                "webview_android": {
-                    "version_added": "58"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebGL2RenderingContext.samplerParameter[if]()"
         }
     ],
     "3.7.17": [
@@ -2826,58 +2722,6 @@
         }
     ],
     "3.7.6": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/WebGL2RenderingContext.json",
-            "name": "compressedTexImage3D",
-            "slug": "API/WebGL2RenderingContext/compressedTexImage3D",
-            "summary": "The WebGLRenderingContext.compressedTexImage2D() and WebGL2RenderingContext.compressedTexImage3D() methods of the WebGL API specify a two- or three-dimensional texture image in a compressed format.",
-            "support": {
-                "chrome": {
-                    "version_added": "56"
-                },
-                "chrome_android": {
-                    "version_added": "58"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51"
-                },
-                "firefox_android": {
-                    "version_added": "51"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "43"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
-                "webview_android": {
-                    "version_added": "58"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WebGLRenderingContext.compressedTexImage[23]D()"
-        },
         {
             "engines": [
                 "blink",
@@ -6505,6 +6349,57 @@
                 },
                 "edge_blink": {
                     "version_added": "79"
+                }
+            },
+            "title": "WebGLVertexArrayObject"
+        },
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/WebGLVertexArrayObjectOES.json",
+            "name": "WebGLVertexArrayObjectOES",
+            "slug": "API/WebGLVertexArrayObjectOES",
+            "summary": "The WebGLVertexArrayObject interface is part of the WebGL 2 API, represents vertex array objects (VAOs) pointing to vertex array data, and provides names for different sets of vertex data.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "25"
+                },
+                "firefox_android": {
+                    "version_added": null
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
                 }
             },
             "title": "WebGLVertexArrayObject"

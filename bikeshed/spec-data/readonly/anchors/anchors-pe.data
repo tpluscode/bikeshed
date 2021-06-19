@@ -22,8 +22,8 @@ BiquadFilterType
 -
 "pending"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbrequestreadystate-pending
@@ -33,8 +33,8 @@ IDBRequestReadyState
 -
 "pending"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbrequestreadystate-pending
@@ -535,8 +535,8 @@ https://www.w3.org/TR/css-values-4/#percentage-value
 -
 <percentage>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-percentage
@@ -545,8 +545,8 @@ https://drafts.csswg.org/css2/#value-def-percentage
 -
 <percentage>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-padding-width-percentage
@@ -556,8 +556,8 @@ https://drafts.csswg.org/css2/#valdef-padding-width-percentage
 -
 <percentage>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-top-percentage
@@ -570,8 +570,8 @@ left
 -
 <percentage>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-percentage
@@ -581,8 +581,8 @@ vertical-align
 -
 <percentage>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-percentage
@@ -591,8 +591,8 @@ https://drafts.csswg.org/css2/#value-def-percentage
 -
 <percentage>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-padding-width-percentage
@@ -602,8 +602,8 @@ https://drafts.csswg.org/css2/#valdef-padding-width-percentage
 -
 <percentage>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-top-percentage
@@ -616,8 +616,8 @@ left
 -
 <percentage>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-percentage
@@ -627,8 +627,8 @@ vertical-align
 -
 PERMISSION_DENIED
 const
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-permission_denied
@@ -638,8 +638,8 @@ GeolocationPositionError
 -
 PERMISSION_DENIED
 const
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-permission_denied
@@ -3402,8 +3402,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#perform-a-security-ch
 -
 perform a security check
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-perform-a-security-check
@@ -3412,8 +3412,8 @@ https://heycam.github.io/webidl/#dfn-perform-a-security-check
 -
 perform a security check
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-perform-a-security-check
@@ -3472,8 +3472,8 @@ https://www.w3.org/TR/webdriver2/#dfn-perform-implementation-specific-action-dis
 -
 perform some steps once a promise is settled
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-perform-steps-once-promise-is-settled

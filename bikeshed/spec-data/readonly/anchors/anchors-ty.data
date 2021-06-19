@@ -72,8 +72,8 @@ PerformanceNavigation
 -
 TYPE_MISMATCH_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-type_mismatch_err
@@ -149,8 +149,8 @@ PerformanceNavigation
 -
 TypeError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#exceptiondef-typeerror
@@ -169,8 +169,8 @@ https://dom.spec.whatwg.org/#typeinfo
 -
 TypeMismatchError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#typemismatcherror
@@ -278,8 +278,8 @@ EncodedVideoChunk
 -
 [[type]]
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-type
@@ -1527,8 +1527,8 @@ Credential
 -
 type
 argument
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-type
@@ -1541,8 +1541,8 @@ SecurityPolicyViolationEvent/constructor(type)
 -
 type
 argument
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-type
@@ -1857,8 +1857,8 @@ DevicePosture
 -
 type
 dict-member
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-BPtype
@@ -1868,8 +1868,8 @@ BlobPropertyBag
 -
 type
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-type
@@ -1879,8 +1879,8 @@ Blob
 -
 type
 dict-member
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-BPtype
@@ -1890,8 +1890,8 @@ BlobPropertyBag
 -
 type
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-type
@@ -2120,8 +2120,8 @@ ImageResource
 -
 type
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#key-type
@@ -2131,8 +2131,8 @@ key
 -
 type
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-type
@@ -2145,8 +2145,8 @@ IDBVersionChangeEvent/constructor(type)
 -
 type
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#key-type
@@ -2156,8 +2156,8 @@ key
 -
 type
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-type
@@ -2783,8 +2783,8 @@ cache batch operation
 -
 type
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute
@@ -2794,8 +2794,8 @@ style
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__type
@@ -2805,8 +2805,8 @@ SVGStyleElement
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__type
@@ -2816,8 +2816,8 @@ SVGTransform
 -
 type
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/interact.html#ScriptElementTypeAttribute
@@ -2827,8 +2827,8 @@ script
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/interact.html#__svg__SVGScriptElement__type
@@ -2838,8 +2838,8 @@ SVGScriptElement
 -
 type
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#AElementTypeAttribute
@@ -2849,8 +2849,8 @@ a
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__type
@@ -2860,8 +2860,8 @@ SVGAElement
 -
 type
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#StyleElementTypeAttribute
@@ -2871,8 +2871,8 @@ style
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#__svg__SVGStyleElement__type
@@ -2882,8 +2882,8 @@ SVGStyleElement
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#__svg__SVGTransform__type
@@ -2893,8 +2893,8 @@ SVGTransform
 -
 type
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/interact.html#ScriptElementTypeAttribute
@@ -2904,8 +2904,8 @@ script
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/interact.html#__svg__SVGScriptElement__type
@@ -2915,8 +2915,8 @@ SVGScriptElement
 -
 type
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#AElementTypeAttribute
@@ -2926,8 +2926,8 @@ a
 -
 type
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__type
@@ -3496,8 +3496,8 @@ ImageDecoderInit
 -
 type
 attribute
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-cryptokey-type
@@ -3507,8 +3507,8 @@ CryptoKey
 -
 type
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-type
@@ -3956,8 +3956,8 @@ XRLayerEvent/constructor(type, eventInitDict)
 -
 type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#type
@@ -3966,8 +3966,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#type
 -
 type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#type
@@ -3990,8 +3990,8 @@ ProgressEvent/constructor(type)
 -
 type assertion
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#type-assertion
@@ -4000,8 +4000,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#type-assertion
 -
 type assertion
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#type-assertion
@@ -4030,8 +4030,8 @@ https://www.w3.org/TR/webdriver2/#dfn-type
 -
 type being given a new name
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#type-being-given-a-new-name
@@ -4040,8 +4040,8 @@ https://heycam.github.io/webidl/#type-being-given-a-new-name
 -
 type checking
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#type-checking
@@ -4050,8 +4050,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#type-checking
 -
 type checking
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#type-checking
@@ -4060,8 +4060,8 @@ https://www.w3.org/TR/WGSL/#type-checking
 -
 type error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#type-error
@@ -4070,8 +4070,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#type-error
 -
 type error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#type-error
@@ -4100,8 +4100,8 @@ https://w3c.github.io/web-nfc/#dfn-type-length-field
 -
 type list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#type-list
@@ -4110,8 +4110,8 @@ https://heycam.github.io/webidl/#type-list
 -
 type name
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-type-name
@@ -4120,8 +4120,8 @@ https://heycam.github.io/webidl/#dfn-type-name
 -
 type name
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-type-name
@@ -4190,8 +4190,8 @@ https://w3c.github.io/web-nfc/#dfn-type-record
 -
 type rule
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#type-rule
@@ -4200,8 +4200,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#type-rule
 -
 type rule
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#type-rule
@@ -4210,8 +4210,8 @@ https://www.w3.org/TR/WGSL/#type-rule
 -
 type rule applies to an expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#type-rule-applies-to-an-expression
@@ -4220,8 +4220,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#type-rule-applies-to-an-expression
 -
 type rule applies to an expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#type-rule-applies-to-an-expression
@@ -4230,8 +4230,8 @@ https://www.w3.org/TR/WGSL/#type-rule-applies-to-an-expression
 -
 type rule tables
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#type-rule-tables
@@ -4240,8 +4240,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#type-rule-tables
 -
 type rule tables
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#type-rule-tables
@@ -4260,8 +4260,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#type-selector
 -
 type selector
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#type-selector
@@ -4270,8 +4270,8 @@ https://drafts.csswg.org/css2/#type-selector
 -
 type selector
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#type-selector
@@ -4477,8 +4477,8 @@ https://www.w3.org/TR/webdriver2/#dfn-typeable
 -
 typed array types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-typed-array-type
@@ -4487,8 +4487,8 @@ https://heycam.github.io/webidl/#dfn-typed-array-type
 -
 typed array types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-typed-array-type
@@ -4517,8 +4517,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#typedarraycreate
 -
 typedef
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-typedef
@@ -4527,8 +4527,8 @@ https://heycam.github.io/webidl/#dfn-typedef
 -
 typedef
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-typedef
@@ -4567,8 +4567,8 @@ https://www.w3.org/TR/beacon/#typeerror
 -
 typeerror
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-typeerror
@@ -4597,8 +4597,8 @@ https://www.w3.org/TR/encrypted-media/#dfn-TypeError
 -
 typeerror
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-TypeError
@@ -4837,8 +4837,8 @@ https://www.w3.org/TR/css-text-3/#typographic-character-unit
 -
 typographic character
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermTypographicCharacterUnit

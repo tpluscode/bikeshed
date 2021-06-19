@@ -206,8 +206,8 @@ https://html.spec.whatwg.org/multipage/semantics-other.html#selector-link
 -
 :link
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-link
@@ -216,8 +216,8 @@ https://drafts.csswg.org/css2/#selectordef-link
 -
 :link
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-link
@@ -867,8 +867,8 @@ ServiceWorkerClient
 -
 lifetime
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#lifeTime
@@ -878,8 +878,8 @@ blob url
 -
 lifetime
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#lifeTime
@@ -889,8 +889,8 @@ blob url
 -
 lifetime
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-lifetime
@@ -900,8 +900,8 @@ transaction
 -
 lifetime
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-lifetime
@@ -911,8 +911,8 @@ transaction
 -
 lifetime
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#lifetime
@@ -921,8 +921,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#lifetime
 -
 lifetime
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#lifetime
@@ -931,8 +931,8 @@ https://www.w3.org/TR/WGSL/#lifetime
 -
 lifetime stipulation
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#lifeTime
@@ -942,8 +942,8 @@ blob url
 -
 lifetime stipulation
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#lifeTime
@@ -1245,8 +1245,8 @@ font-weight
 -
 lighter
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-lighter
@@ -1256,8 +1256,8 @@ font-weight
 -
 lighter
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-lighter
@@ -1595,8 +1595,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-lime
 -
 lime
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-lime
@@ -1606,8 +1606,8 @@ https://drafts.csswg.org/css2/#valdef-color-lime
 -
 lime
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-lime
@@ -2006,8 +2006,8 @@ wrap-after
 -
 line
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#elementdef-line
@@ -2016,8 +2016,8 @@ https://svgwg.org/svg2-draft/shapes.html#elementdef-line
 -
 line
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#elementdef-line
@@ -2078,8 +2078,8 @@ https://www.w3.org/TR/css-inline-3/#line-box
 -
 line box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#line-box
@@ -2088,8 +2088,8 @@ https://drafts.csswg.org/css2/#line-box
 -
 line box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#line-box
@@ -2098,8 +2098,8 @@ https://drafts.csswg.org/css2/#line-box
 -
 line box
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermLineBox
@@ -2258,8 +2258,8 @@ https://www.w3.org/TR/svg-strokes/#TermLineJoinShape
 -
 line join shape
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermLineJoinShape
@@ -2268,8 +2268,8 @@ https://svgwg.org/svg2-draft/painting.html#TermLineJoinShape
 -
 line join shape
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermLineJoinShape
@@ -2318,8 +2318,8 @@ https://www.w3.org/TR/css-grid-2/#line-name-set
 -
 line number
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-line-number
@@ -2329,8 +2329,8 @@ violation
 -
 line number
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-line-number
@@ -2503,8 +2503,8 @@ https://www.w3.org/TR/css-inline-3/#propdef-line-height
 -
 line-height
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-line-height
@@ -2513,8 +2513,8 @@ https://drafts.csswg.org/css2/#propdef-line-height
 -
 line-height
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-line-height
@@ -2523,8 +2523,8 @@ https://drafts.csswg.org/css2/#propdef-line-height
 -
 line-height
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visudet.html#propdef-line-height
@@ -2859,8 +2859,8 @@ text-decoration-line
 -
 line-through
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-decoration-line-through
@@ -2870,8 +2870,8 @@ text-decoration
 -
 line-through
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-decoration-line-through
@@ -3042,8 +3042,8 @@ InterventionReportBody
 -
 lineNumber
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-linenumber
@@ -3053,8 +3053,8 @@ CSPViolationReportBody
 -
 lineNumber
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-linenumber
@@ -3064,8 +3064,8 @@ SecurityPolicyViolationEvent
 -
 lineNumber
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-linenumber
@@ -3075,8 +3075,8 @@ SecurityPolicyViolationEventInit
 -
 lineNumber
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-linenumber
@@ -3086,8 +3086,8 @@ CSPViolationReportBody
 -
 lineNumber
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-linenumber
@@ -3446,8 +3446,8 @@ XRPose
 -
 lineargradient
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#elementdef-linearGradient
@@ -3456,8 +3456,8 @@ https://svgwg.org/svg2-draft/pservers.html#elementdef-linearGradient
 -
 lineargradient
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#elementdef-linearGradient
@@ -3521,8 +3521,8 @@ ErrorEvent
 -
 lineno
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-lineno
@@ -3532,8 +3532,8 @@ SecurityPolicyViolationEvent
 -
 lineno
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-lineno
@@ -3776,8 +3776,8 @@ https://www.w3.org/TR/preload/#dfn-link
 -
 link
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#LinkElement
@@ -3786,8 +3786,8 @@ https://svgwg.org/svg2-draft/styling.html#LinkElement
 -
 link
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#LinkElement
@@ -3973,8 +3973,8 @@ URLSearchParams
 -
 list
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-list
@@ -4014,8 +4014,8 @@ select
 -
 list interfaces
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermListInterface
@@ -4024,8 +4024,8 @@ https://svgwg.org/svg2-draft/types.html#TermListInterface
 -
 list interfaces
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermListInterface
@@ -4660,8 +4660,8 @@ https://html.spec.whatwg.org/multipage/media.html#list-of-pending-text-tracks
 -
 list of records
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-list-of-records
@@ -4671,8 +4671,8 @@ object-store
 -
 list of records
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-list-of-records
@@ -4682,8 +4682,8 @@ index
 -
 list of records
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-list-of-records
@@ -4693,8 +4693,8 @@ object-store
 -
 list of records
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-list-of-records
@@ -5016,8 +5016,8 @@ https://html.spec.whatwg.org/multipage/grouping-content.html#list-owner
 -
 list properties
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#list-properties
@@ -5026,8 +5026,8 @@ https://drafts.csswg.org/css2/#list-properties
 -
 list properties
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#list-properties
@@ -5090,8 +5090,8 @@ counters()
 -
 list-item
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-list-item
@@ -5101,8 +5101,8 @@ display
 -
 list-item
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-list-item
@@ -5152,8 +5152,8 @@ https://www.w3.org/TR/css-lists-3/#propdef-list-style
 -
 list-style
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-list-style
@@ -5162,8 +5162,8 @@ https://drafts.csswg.org/css2/#propdef-list-style
 -
 list-style
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-list-style
@@ -5172,8 +5172,8 @@ https://drafts.csswg.org/css2/#propdef-list-style
 -
 list-style
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/generate.html#propdef-list-style
@@ -5212,8 +5212,8 @@ https://www.w3.org/TR/css-speech-1/#list-style-image-def
 -
 list-style-image
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-list-style-image
@@ -5222,8 +5222,8 @@ https://drafts.csswg.org/css2/#propdef-list-style-image
 -
 list-style-image
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-list-style-image
@@ -5232,8 +5232,8 @@ https://drafts.csswg.org/css2/#propdef-list-style-image
 -
 list-style-image
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/generate.html#propdef-list-style-image
@@ -5262,8 +5262,8 @@ https://www.w3.org/TR/css-lists-3/#propdef-list-style-position
 -
 list-style-position
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-list-style-position
@@ -5272,8 +5272,8 @@ https://drafts.csswg.org/css2/#propdef-list-style-position
 -
 list-style-position
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-list-style-position
@@ -5282,8 +5282,8 @@ https://drafts.csswg.org/css2/#propdef-list-style-position
 -
 list-style-position
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/generate.html#propdef-list-style-position
@@ -5322,8 +5322,8 @@ https://www.w3.org/TR/css-speech-1/#list-style-type-def
 -
 list-style-type
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-list-style-type
@@ -5332,8 +5332,8 @@ https://drafts.csswg.org/css2/#propdef-list-style-type
 -
 list-style-type
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-list-style-type
@@ -5342,8 +5342,8 @@ https://drafts.csswg.org/css2/#propdef-list-style-type
 -
 list-style-type
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/generate.html#propdef-list-style-type

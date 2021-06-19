@@ -276,62 +276,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -918,12 +862,12 @@ on screen, on paper, etc.
       For readability they have not been repeated explicitly.</p>
    <h2 class="heading settled" data-level="2" id="transitions"><span class="secno">2. </span><span class="content"><span id="transitions-">Transitions</span></span><a class="self-link" href="#transitions"></a></h2>
    <p> Normally when the value of a CSS property changes, the rendered result is instantly updated, with the affected elements immediately changing from the old property value to the new property value. This section describes a way to specify transitions using new CSS properties. These properties are used to animate smoothly from the old state to the new state over time. </p>
-   <p> For example, suppose that transitions of one second have been defined on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-left" id="ref-for-propdef-left">left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-background-color" id="ref-for-propdef-background-color">background-color</a> properties. The following diagram illustrates the effect of updating those properties on an element, in this case moving it to the right and changing the background from red to blue. This assumes other transition parameters still have their default values. </p>
+   <p> For example, suppose that transitions of one second have been defined on the <a class="property" data-link-type="propdesc">left</a> and <span class="property">background-color</span> properties. The following diagram illustrates the effect of updating those properties on an element, in this case moving it to the right and changing the background from red to blue. This assumes other transition parameters still have their default values. </p>
    <figure>
      <img alt="Example showing the initial, intermediate, and final states of a box whose color and position is interpolated" src="transition-example.svg" width="518"> 
-    <figcaption> Transitions of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-left" id="ref-for-propdef-left①">left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-background-color" id="ref-for-propdef-background-color①">background-color</a>. </figcaption>
+    <figcaption> Transitions of <a class="property" data-link-type="propdesc">left</a> and <span class="property">background-color</span>. </figcaption>
    </figure>
-   <p> Transitions are a presentational effect. The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed value</a> of a property transitions over time from the old value to the new value. Therefore if a script queries the <span id="ref-for-computed-value①">computed value</span> of a property (or other data depending on it) as it is transitioning, it will see an intermediate value that represents the current animated value of the property. </p>
+   <p> Transitions are a presentational effect. The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed value</a> of a property transitions over time from the old value to the new value. Therefore if a script queries the <span id="ref-for-computed-value①">computed value</span> of a property (or other data depending on it) as it is transitioning, it will see an intermediate value that represents the current animated value of the property. </p>
    <p> The transition for a property is defined using a number of new properties. For example: </p>
    <div class="example" id="example-c14634d9">
     <a class="self-link" href="#example-c14634d9"></a> 
@@ -933,7 +877,7 @@ on screen, on paper, etc.
   transition-duration: 2s;
 }
 </pre>
-    The above example defines a transition on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#opacity" id="ref-for-opacity">opacity</a> property that, when a new value is assigned to it, will cause a smooth change between the old value and the new value over a period of two seconds. 
+    The above example defines a transition on the <a class="property" data-link-type="propdesc">opacity</a> property that, when a new value is assigned to it, will cause a smooth change between the old value and the new value over a period of two seconds. 
    </div>
    <p> Each of the transition properties accepts a comma-separated list, allowing multiple transitions to be defined, each acting on a different property. In this case, the individual transitions take their parameters from the same index in all the lists. For example: </p>
    <div class="example" id="example-0825db11">
@@ -945,7 +889,7 @@ on screen, on paper, etc.
 }
 
 </pre>
-    This will cause the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#opacity" id="ref-for-opacity①">opacity</a> property to transition over a period of two seconds and the left property to transition over a period of four seconds. 
+    This will cause the <a class="property" data-link-type="propdesc">opacity</a> property to transition over a period of two seconds and the left property to transition over a period of four seconds. 
    </div>
    <p id="list-matching"> In the case where the lists of values in transition properties
         do not have the same length, the length of the <a class="property" data-link-type="propdesc" href="#propdef-transition-property" id="ref-for-propdef-transition-property">transition-property</a> list determines the number of items in
@@ -954,7 +898,7 @@ on screen, on paper, etc.
         not used.  If one of the other properties doesn’t have enough
         comma-separated values to match the number of values of <span class="property" id="ref-for-propdef-transition-property①">transition-property</span>, the user agent must calculate its used value by
         repeating the list of values until there are enough.  This
-        truncation or repetition does not affect the computed value. <span class="note"> Note: This is analogous to the behavior of the <a class="property" data-link-type="propdesc">background-*</a> properties, with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a> analogous to <a class="property" data-link-type="propdesc" href="#propdef-transition-property" id="ref-for-propdef-transition-property②">transition-property</a>. </span> </p>
+        truncation or repetition does not affect the computed value. <span class="note"> Note: This is analogous to the behavior of the <a class="property" data-link-type="propdesc">background-*</a> properties, with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a> analogous to <a class="property" data-link-type="propdesc" href="#propdef-transition-property" id="ref-for-propdef-transition-property②">transition-property</a>. </span> </p>
    <div class="example" id="example-d94cbd75">
     <a class="self-link" href="#example-d94cbd75"></a> 
     <p style="display:none"> Example(s): </p>
@@ -963,9 +907,9 @@ on screen, on paper, etc.
   transition-duration: 2s, 1s;
 }
 </pre>
-    The above example defines a transition on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#opacity" id="ref-for-opacity②">opacity</a> property of 2 seconds duration, a      transition on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-left" id="ref-for-propdef-left②">left</a> property of 1
-      second duration, a transition on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-top" id="ref-for-propdef-top">top</a> property of 2 seconds duration and a
-      transition on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-width" id="ref-for-propdef-width">width</a> property of 1
+    The above example defines a transition on the <a class="property" data-link-type="propdesc">opacity</a> property of 2 seconds duration, a      transition on the <span class="property">left</span> property of 1
+      second duration, a transition on the <span class="property">top</span> property of 2 seconds duration and a
+      transition on the <span class="property">width</span> property of 1
       second duration. 
    </div>
    <p> While authors can use transitions to create dynamically changing content,
@@ -974,22 +918,6 @@ on screen, on paper, etc.
         Seizures:
         Do not design content in a way that is known to cause seizures</a> (<a data-link-type="biblio" href="#biblio-wcag20">[WCAG20]</a>). </p>
    <h3 class="heading settled" data-level="2.1" id="transition-property-property"><span class="secno">2.1. </span><span class="content"><span id="the-transition-property-property-">The <a class="property" data-link-type="propdesc" href="#propdef-transition-property" id="ref-for-propdef-transition-property③">transition-property</a> Property</span></span><a class="self-link" href="#transition-property-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property" title="The transition-property CSS property sets the CSS properties to which a transition effect should be applied.">transition-property</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>16+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>26+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>16+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>26+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.5+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p> The <a class="property" data-link-type="propdesc" href="#propdef-transition-property" id="ref-for-propdef-transition-property④">transition-property</a> property specifies the name of the CSS property to which the transition is applied. </p>
    <table class="def propdef" data-link-for-hint="transition-property">
     <tbody>
@@ -1035,7 +963,7 @@ on screen, on paper, etc.
         the list to preserve the matching of indices. </p>
    <p> The <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#identifier-value" id="ref-for-identifier-value①">&lt;custom-ident></a> production in <a class="production css" data-link-type="type" href="#single-transition-property" id="ref-for-single-transition-property①">&lt;single-transition-property></a> also excludes the keyword <a class="css" data-link-type="maybe" href="#valdef-transition-property-none" id="ref-for-valdef-transition-property-none①">none</a>,
         in addition to the keywords always excluded from <span class="production" id="ref-for-identifier-value②">&lt;custom-ident></span>.
-        This means that <span class="css" id="ref-for-valdef-transition-property-none②">none</span>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a>, and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#valdef-all-initial" id="ref-for-valdef-all-initial">initial</a> are not
+        This means that <span class="css" id="ref-for-valdef-transition-property-none②">none</span>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a>, and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#valdef-all-initial" id="ref-for-valdef-all-initial">initial</a> are not
         permitted as items within a list of more that one identifier;
         any list that uses them is syntactically invalid. </p>
    <p> For the keyword <a class="css" data-link-type="maybe" href="#valdef-transition-property-all" id="ref-for-valdef-transition-property-all①">all</a>,
@@ -1047,26 +975,10 @@ on screen, on paper, etc.
         contains it, or via the <a class="css" data-link-type="maybe" href="#valdef-transition-property-all" id="ref-for-valdef-transition-property-all③">all</a> value), then the transition that
         starts uses the duration, delay, and timing function at the
         index corresponding to the <em>last</em> item in the value of <span class="property" id="ref-for-propdef-transition-property⑥">transition-property</span> that calls for animating that property. </p>
-   <p class="note" role="note"> Note:  The <a class="css" data-link-type="maybe" href="#valdef-transition-property-all" id="ref-for-valdef-transition-property-all④">all</a> value and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-cascade-5/#propdef-all" id="ref-for-propdef-all">all</a> shorthand
+   <p class="note" role="note"> Note:  The <a class="css" data-link-type="maybe" href="#valdef-transition-property-all" id="ref-for-valdef-transition-property-all④">all</a> value and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-cascade/#propdef-all" id="ref-for-propdef-all">all</a> shorthand
         property work in similar ways, so the <span class="css" id="ref-for-valdef-transition-property-all⑤">all</span> value is just like a shorthand that
         covers all properties. </p>
    <h3 class="heading settled" data-level="2.2" id="transition-duration-property"><span class="secno">2.2. </span><span class="content"><span id="the-transition-duration-property-">The <a class="property" data-link-type="propdesc" href="#propdef-transition-duration" id="ref-for-propdef-transition-duration①">transition-duration</a> Property</span></span><a class="self-link" href="#transition-duration-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration" title="The transition-duration CSS property sets the length of time a transition animation should take to complete. By default, the value is 0s, meaning that no animation will occur.">transition-duration</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>16+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>26+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>16+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>26+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.5+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p> The <a class="property" data-link-type="propdesc" href="#propdef-transition-duration" id="ref-for-propdef-transition-duration②">transition-duration</a> property defines the length of time that a transition takes. </p>
    <table class="def propdef" data-link-for-hint="transition-duration">
     <tbody>
@@ -1100,29 +1012,13 @@ on screen, on paper, etc.
    </table>
    <p> This property specifies how long the transition from the old value to the new value should take. By default the value is <span class="css">0s</span>, meaning that the transition is immediate (i.e. there will be no animation). A negative value for <a class="property" data-link-type="propdesc" href="#propdef-transition-duration" id="ref-for-propdef-transition-duration③">transition-duration</a> renders the declaration invalid. </p>
    <h3 class="heading settled" data-level="2.3" id="transition-timing-function-property"><span class="secno">2.3. </span><span class="content"><span id="transition-timing-function_tag">The <a class="property" data-link-type="propdesc" href="#propdef-transition-timing-function" id="ref-for-propdef-transition-timing-function①">transition-timing-function</a> Property</span></span><a class="self-link" href="#transition-timing-function-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function" title="The transition-timing-function CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.">transition-timing-function</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>16+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>26+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>16+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>26+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.5+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p> The <a class="property" data-link-type="propdesc" href="#propdef-transition-timing-function" id="ref-for-propdef-transition-timing-function②">transition-timing-function</a> property
         describes how the intermediate values used during a transition will be
         calculated. It allows for a transition to change speed over its
         duration. These effects are commonly called <em>easing</em> functions. </p>
    <p> Timing functions are defined in the separate CSS Easing Functions module <a data-link-type="biblio" href="#biblio-css-easing-1">[css-easing-1]</a>.
-        The <a data-link-type="dfn" href="https://drafts.csswg.org/css-easing-1/#input-progress-value" id="ref-for-input-progress-value">input progress value</a> used is the percentage
-        of the transition duration, and the <a data-link-type="dfn" href="https://drafts.csswg.org/css-easing-1/#output-progress-value" id="ref-for-output-progress-value">output progress
+        The <a data-link-type="dfn" href="https://drafts.csswg.org/css-easing/#input-progress-value" id="ref-for-input-progress-value">input progress value</a> used is the percentage
+        of the transition duration, and the <a data-link-type="dfn" href="https://drafts.csswg.org/css-easing/#output-progress-value" id="ref-for-output-progress-value">output progress
         value</a> is used as the <var>p</var> value when <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#interpolation" id="ref-for-interpolation">interpolating</a> the property value (see <a href="#application">§ 4 Application of transitions</a>). </p>
    <table class="def propdef" data-link-for-hint="transition-timing-function">
     <tbody>
@@ -1131,7 +1027,7 @@ on screen, on paper, etc.
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-transition-timing-function">transition-timing-function</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-easing-1/#typedef-easing-function" id="ref-for-typedef-easing-function">&lt;easing-function></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-comma" id="ref-for-mult-comma②">#</a> 
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-easing/#typedef-easing-function" id="ref-for-typedef-easing-function">&lt;easing-function></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-comma" id="ref-for-mult-comma②">#</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td><span class="css">ease</span> 
@@ -1155,22 +1051,6 @@ on screen, on paper, etc.
       <td>not animatable 
    </table>
    <h3 class="heading settled" data-level="2.4" id="transition-delay-property"><span class="secno">2.4. </span><span class="content"><span id="the-transition-delay-property-">The <a class="property" data-link-type="propdesc" href="#propdef-transition-delay" id="ref-for-propdef-transition-delay①">transition-delay</a> Property</span></span><a class="self-link" href="#transition-delay-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay" title="The transition-delay CSS property specifies the duration to wait before starting a property&apos;s transition effect when its value changes.">transition-delay</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>16+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>26+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>16+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>26+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.5+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p> The <a class="property" data-link-type="propdesc" href="#propdef-transition-delay" id="ref-for-propdef-transition-delay②">transition-delay</a> property defines when the transition will start. It allows a transition to begin execution after some period of time from when it is applied. A <span class="property" id="ref-for-propdef-transition-delay③">transition-delay</span> value of <span class="css">0s</span> means the transition will execute as soon as the property is changed. Otherwise, the value specifies an offset from the moment the property is changed, and the transition will delay execution by that offset. </p>
    <p> If the value for <a class="property" data-link-type="propdesc" href="#propdef-transition-delay" id="ref-for-propdef-transition-delay④">transition-delay</a> is a negative time offset then the transition will execute the moment the property is changed, but will appear to have begun execution at the specified offset. That is, the transition will appear to begin part-way through its play cycle. In the case where a transition has implied starting values and a negative <span class="property" id="ref-for-propdef-transition-delay⑤">transition-delay</span>, the starting values are taken from the moment the property is changed. </p>
    <table class="def propdef" data-link-for-hint="transition-delay">
@@ -1204,22 +1084,6 @@ on screen, on paper, etc.
       <td>not animatable 
    </table>
    <h3 class="heading settled" data-level="2.5" id="transition-shorthand-property"><span class="secno">2.5. </span><span class="content"><span id="the-transition-shorthand-property-">The <a class="property" data-link-type="propdesc" href="#propdef-transition" id="ref-for-propdef-transition">transition</a> Shorthand Property</span></span><a class="self-link" href="#transition-shorthand-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" title="The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay.">transition</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>16+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>26+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>16+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>26+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.5+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p> The <a class="property" data-link-type="propdesc" href="#propdef-transition" id="ref-for-propdef-transition①">transition</a> shorthand property combines the four properties described above into a single property. </p>
    <table class="def propdef" data-link-for-hint="transition">
     <tbody>
@@ -1254,7 +1118,7 @@ on screen, on paper, etc.
       <th><a href="https://www.w3.org/TR/web-animations/#animation-type">Animation type:</a>
       <td>not animatable 
    </table>
-   <div class="prod"> <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="single-transition">&lt;single-transition></dfn> = [ <a class="css" data-link-type="maybe" href="#valdef-transition-property-none" id="ref-for-valdef-transition-property-none③">none</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②">|</a> <a class="production css" data-link-type="type" href="#single-transition-property" id="ref-for-single-transition-property②">&lt;single-transition-property></a> ] <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-any" id="ref-for-comb-any">||</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#time-value" id="ref-for-time-value②" title="Expands to: ms | s">&lt;time></a> <span id="ref-for-comb-any①">||</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-easing-1/#typedef-easing-function" id="ref-for-typedef-easing-function①">&lt;easing-function></a> <span id="ref-for-comb-any②">||</span> <span class="production" id="ref-for-time-value③" title="Expands to: ms | s">&lt;time></span> </div>
+   <div class="prod"> <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="single-transition">&lt;single-transition></dfn> = [ <a class="css" data-link-type="maybe" href="#valdef-transition-property-none" id="ref-for-valdef-transition-property-none③">none</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②">|</a> <a class="production css" data-link-type="type" href="#single-transition-property" id="ref-for-single-transition-property②">&lt;single-transition-property></a> ] <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-any" id="ref-for-comb-any">||</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#time-value" id="ref-for-time-value②" title="Expands to: ms | s">&lt;time></a> <span id="ref-for-comb-any①">||</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-easing/#typedef-easing-function" id="ref-for-typedef-easing-function①">&lt;easing-function></a> <span id="ref-for-comb-any②">||</span> <span class="production" id="ref-for-time-value③" title="Expands to: ms | s">&lt;time></span> </div>
    <p> Note that order is important within the items in this property:
         the first value that can be parsed as a time is assigned to the
         transition-duration,
@@ -1298,7 +1162,7 @@ on screen, on paper, etc.
           implementations could start additional transitions on the child
           after the initial 1 second transition on the child completes. </p>
    </div>
-   <p> Various things can cause the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed values</a> of properties
+   <p> Various things can cause the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed values</a> of properties
         on an element to change.
         These include
         insertion and removal of elements from the document tree
@@ -1339,7 +1203,7 @@ on screen, on paper, etc.
         simultaneous in some implementations but not others. </p>
    <p> When a <a data-link-type="dfn" href="#style-change-event" id="ref-for-style-change-event②">style change event</a> occurs,
         implementations must start transitions based on
-        the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①⓪">computed values</a> that changed in that event.
+        the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①⓪">computed values</a> that changed in that event.
         If an element is not in the document during that
         style change event or was not in the document during
         the previous style change event,
@@ -1404,7 +1268,7 @@ on screen, on paper, etc.
    <p class="note" role="note"><span>Note:</span> Even if a <em>property</em> is defined to have an <a data-link-type="dfn" href="https://drafts.csswg.org/web-animations-1/#animation-type" id="ref-for-animation-type①">animation type</a> that is <em>not</em> <a data-link-type="dfn" href="https://drafts.csswg.org/web-animations-1/#discrete" id="ref-for-discrete①">discrete</a>,
       for a particular pair of <em>property values</em> the <span id="ref-for-animation-type②">animation type</span> may be <span id="ref-for-discrete②">discrete</span>.
       For example,
-      the <span id="ref-for-animation-type③">animation type</span> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> property is <a data-link-type="dfn" href="https://drafts.csswg.org/web-animations-1/#combining-shadow-lists" id="ref-for-combining-shadow-lists">shadow list</a>,
+      the <span id="ref-for-animation-type③">animation type</span> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> property is <a data-link-type="dfn" href="https://drafts.csswg.org/web-animations-1/#combining-shadow-lists" id="ref-for-combining-shadow-lists">shadow list</a>,
       which defines that
       when the <a class="css" data-link-type="maybe" href="https://www.w3.org/TR/css3-background/#shadow-inset" id="ref-for-shadow-inset">inset</a> keyword is absent in one value
       but present in the other, <span id="ref-for-discrete③">discrete</span> animation is used.
@@ -1577,7 +1441,7 @@ li:hover {
   transition-duration: 2s; /* applies to the transition *to* the :hover state */
 }</pre>
      <p> When a list item with these style rules enters the :hover
-            state, the computed <a class="property" data-link-type="propdesc" href="#propdef-transition-duration" id="ref-for-propdef-transition-duration⑦">transition-duration</a> at the time that <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-background-color" id="ref-for-propdef-background-color②">background-color</a> would have its new value (<span class="css">green</span>) is <span class="css">2s</span>,
+            state, the computed <a class="property" data-link-type="propdesc" href="#propdef-transition-duration" id="ref-for-propdef-transition-duration⑦">transition-duration</a> at the time that <a class="property" data-link-type="propdesc">background-color</a> would have its new value (<span class="css">green</span>) is <span class="css">2s</span>,
             so the transition from <span class="css">blue</span> to <span class="css">green</span> takes 2 seconds.
             However, when the list item leaves the :hover state, the
             transition from <span class="css">green</span> to <span class="css">blue</span> takes 1 second. </p>
@@ -1694,102 +1558,35 @@ with changes to transitions.</p>
    <p>Each event provides the name of the property the transition is
 associated with as well as the duration of the transition.</p>
    <h3 class="heading settled" data-level="6.1" id="interface-transitionevent"><span class="secno">6.1. </span><span class="content">Interface <code class="idl"><a data-link-type="idl" href="#transitionevent" id="ref-for-transitionevent">TransitionEvent</a></code></span><a class="self-link" href="#interface-transitionevent"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent" title="The TransitionEvent interface represents events providing information related to transitions.">TransitionEvent</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>4+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>27+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>27+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#transitionevent" id="ref-for-transitionevent①">TransitionEvent</a></code> interface provides specific contextual information
 associated with transitions.</p>
    <h4 class="heading settled" data-level="6.1.1" id="interface-transitionevent-idl"><span class="secno">6.1.1. </span><span class="content">IDL Definition</span><a class="self-link" href="#interface-transitionevent-idl"></a></h4>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="transitionevent"><code><c- g>TransitionEvent</c-></code></dfn> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#event" id="ref-for-event"><c- n>Event</c-></a> {
-  <a class="idl-code" data-link-type="constructor" href="#dom-transitionevent-transitionevent" id="ref-for-dom-transitionevent-transitionevent"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="TransitionEvent/TransitionEvent(type, transitionEventInitDict), TransitionEvent/constructor(type, transitionEventInitDict), TransitionEvent/TransitionEvent(type), TransitionEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-transitionevent-transitionevent-type-transitioneventinitdict-type"><code><c- g>type</c-></code><a class="self-link" href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-type"></a></dfn>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-transitioneventinit" id="ref-for-dictdef-transitioneventinit"><c- n>TransitionEventInit</c-></a> <dfn class="idl-code" data-dfn-for="TransitionEvent/TransitionEvent(type, transitionEventInitDict), TransitionEvent/constructor(type, transitionEventInitDict), TransitionEvent/TransitionEvent(type), TransitionEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-transitionevent-transitionevent-type-transitioneventinitdict-transitioneventinitdict"><code><c- g>transitionEventInitDict</c-></code><a class="self-link" href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-transitioneventinitdict"></a></dfn> = {});
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-propertyName" id="ref-for-Events-TransitionEvent-propertyName"><c- g>propertyName</c-></a>;
+  <a class="idl-code" data-link-type="constructor" href="#dom-transitionevent-transitionevent" id="ref-for-dom-transitionevent-transitionevent"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="TransitionEvent/TransitionEvent(type, transitionEventInitDict), TransitionEvent/constructor(type, transitionEventInitDict), TransitionEvent/TransitionEvent(type), TransitionEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-transitionevent-transitionevent-type-transitioneventinitdict-type"><code><c- g>type</c-></code><a class="self-link" href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-type"></a></dfn>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-transitioneventinit" id="ref-for-dictdef-transitioneventinit"><c- n>TransitionEventInit</c-></a> <dfn class="idl-code" data-dfn-for="TransitionEvent/TransitionEvent(type, transitionEventInitDict), TransitionEvent/constructor(type, transitionEventInitDict), TransitionEvent/TransitionEvent(type), TransitionEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-transitionevent-transitionevent-type-transitioneventinitdict-transitioneventinitdict"><code><c- g>transitionEventInitDict</c-></code><a class="self-link" href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-transitioneventinitdict"></a></dfn> = {});
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-propertyName" id="ref-for-Events-TransitionEvent-propertyName"><c- g>propertyName</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-double" id="ref-for-idl-double"><c- b>double</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="double" href="#Events-TransitionEvent-elapsedTime" id="ref-for-Events-TransitionEvent-elapsedTime"><c- g>elapsedTime</c-></a>;
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-pseudoElement" id="ref-for-Events-TransitionEvent-pseudoElement"><c- g>pseudoElement</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-pseudoElement" id="ref-for-Events-TransitionEvent-pseudoElement"><c- g>pseudoElement</c-></a>;
 };
 
 <c- b>dictionary</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="dictionary" data-export id="dictdef-transitioneventinit"><code><c- g>TransitionEventInit</c-></code></dfn> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#dictdef-eventinit" id="ref-for-dictdef-eventinit"><c- n>EventInit</c-></a> {
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;&quot;" data-dfn-for="TransitionEventInit" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-transitioneventinit-propertyname"><code><c- g>propertyName</c-></code><a class="self-link" href="#dom-transitioneventinit-propertyname"></a></dfn> = "";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;&quot;" data-dfn-for="TransitionEventInit" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-transitioneventinit-propertyname"><code><c- g>propertyName</c-></code><a class="self-link" href="#dom-transitioneventinit-propertyname"></a></dfn> = "";
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-double" id="ref-for-idl-double①"><c- b>double</c-></a> <dfn class="idl-code" data-default="0.0" data-dfn-for="TransitionEventInit" data-dfn-type="dict-member" data-export data-type="double " id="dom-transitioneventinit-elapsedtime"><code><c- g>elapsedTime</c-></code><a class="self-link" href="#dom-transitioneventinit-elapsedtime"></a></dfn> = 0.0;
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring④"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;&quot;" data-dfn-for="TransitionEventInit" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-transitioneventinit-pseudoelement"><code><c- g>pseudoElement</c-></code><a class="self-link" href="#dom-transitioneventinit-pseudoelement"></a></dfn> = "";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring④"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;&quot;" data-dfn-for="TransitionEventInit" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-transitioneventinit-pseudoelement"><code><c- g>pseudoElement</c-></code><a class="self-link" href="#dom-transitioneventinit-pseudoelement"></a></dfn> = "";
 };
 </pre>
    <h4 class="heading settled" data-level="6.1.2" id="interface-transitionevent-attributes"><span class="secno">6.1.2. </span><span class="content">Attributes</span><a class="self-link" href="#interface-transitionevent-attributes"></a></h4>
    <dl>
-    <dt data-md>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent/propertyName" title="The propertyName read-only property of TransitionEvent objects is a DOMString containing the name of the CSS property associated with the transition.">TransitionEvent/propertyName</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>6+</span></span><span class="chrome yes"><span>Chrome</span><span>2+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-       </div>
-      </div>
-     </div>
-     <p><code class="attribute-name"><dfn class="dfn-paneled idl-code" data-dfn-for="TransitionEvent" data-dfn-type="attribute" data-export id="Events-TransitionEvent-propertyName"><code>propertyName</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring⑤">CSSOMString</a>, readonly</span></code></p>
+    <dt data-md><code class="attribute-name"><dfn class="dfn-paneled idl-code" data-dfn-for="TransitionEvent" data-dfn-type="attribute" data-export id="Events-TransitionEvent-propertyName"><code>propertyName</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring⑤">CSSOMString</a>, readonly</span></code>
     <dd data-md>
      <p>The name of the CSS property associated with the transition.</p>
      <p class="note" role="note">Note:  This is always the name of a longhand property.  See <a class="property" data-link-type="propdesc" href="#propdef-transition-property" id="ref-for-propdef-transition-property①⓪">transition-property</a> for how specifying shorthand properties causes transitions on longhands.</p>
-    <dt data-md>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent/elapsedTime" title="The TransitionEvent.elapsedTime read-only property is a float giving the amount of time the animation has been running, in seconds, when this event fired. This value is not affected by the transition-delay property.">TransitionEvent/elapsedTime</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>4+</span></span><span class="safari yes"><span>Safari</span><span>6+</span></span><span class="chrome yes"><span>Chrome</span><span>2+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-       </div>
-      </div>
-     </div>
-     <p><code class="attribute-name"><dfn class="dfn-paneled idl-code" data-dfn-for="TransitionEvent" data-dfn-type="attribute" data-export id="Events-TransitionEvent-elapsedTime"><code>elapsedTime</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://heycam.github.io/webidl/#idl-double" id="ref-for-idl-double②">double</a>, readonly</span></code></p>
+    <dt data-md><code class="attribute-name"><dfn class="dfn-paneled idl-code" data-dfn-for="TransitionEvent" data-dfn-type="attribute" data-export id="Events-TransitionEvent-elapsedTime"><code>elapsedTime</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://heycam.github.io/webidl/#idl-double" id="ref-for-idl-double②">double</a>, readonly</span></code>
     <dd data-md>
      <p>The amount of time the transition has been running, in seconds, when this
 event fired not including any time spent in the delay phase.
 The calculation for of this member is defined along with each event type.</p>
-    <dt data-md>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent/pseudoElement" title="The TransitionEvent.pseudoElement read-only property is a DOMString, starting with &apos;::&apos;, containing the name of the pseudo-element the animation runs on. If the transition doesn&apos;t run on a pseudo-element but on the element, an empty string: &apos;&apos;.">TransitionEvent/pseudoElement</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>23+</span></span><span class="safari yes"><span>Safari</span><span>6+</span></span><span class="chrome yes"><span>Chrome</span><span>2+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>23+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-       </div>
-      </div>
-     </div>
-     <p><code class="attribute-name"><dfn class="dfn-paneled idl-code" data-dfn-for="TransitionEvent" data-dfn-type="attribute" data-export id="Events-TransitionEvent-pseudoElement"><code>pseudoElement</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring⑥">CSSOMString</a>, readonly</span></code></p>
+    <dt data-md><code class="attribute-name"><dfn class="dfn-paneled idl-code" data-dfn-for="TransitionEvent" data-dfn-type="attribute" data-export id="Events-TransitionEvent-pseudoElement"><code>pseudoElement</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring⑥">CSSOMString</a>, readonly</span></code>
     <dd data-md>
      <p>The name (beginning with two colons) of the CSS
 pseudo-element on which the transition occurred (in
@@ -1798,67 +1595,11 @@ pseudo-element’s corresponding element), or the empty
 string if the transition occurred on an element (which
 means the target of the event is that element).</p>
    </dl>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent/TransitionEvent" title="The TransitionEvent() constructor returns a newly created TransitionEvent, representing an event in relation with an transition.">TransitionEvent/TransitionEvent</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>23+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>27+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>23+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>27+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-     </div>
-    </div>
-   </div>
    <p><code id="TransitionEvent-constructor"><dfn class="dfn-paneled idl-code" data-dfn-for="TransitionEvent" data-dfn-type="constructor" data-export data-lt="TransitionEvent(type, transitionEventInitDict)|constructor(type, transitionEventInitDict)|TransitionEvent(type)|constructor(type)" id="dom-transitionevent-transitionevent"><code>TransitionEvent(type, transitionEventInitDict)</code></dfn></code> is an <a data-link-type="dfn" href="http://w3c.github.io/dom/#constructing-events" id="ref-for-constructing-events">event constructor</a>.</p>
    <h3 class="heading settled" data-level="6.2" id="event-transitionevent"><span class="secno">6.2. </span><span class="content">Types of <code>TransitionEvent</code></span><a class="self-link" href="#event-transitionevent"></a></h3>
    <p>The different types of transition events that can occur are:</p>
    <dl>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/transitionrun_event" title="The transitionrun event is fired when a CSS transition is first created, i.e. before any transition-delay has begun.">Document/transitionrun_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionrun_event" title="The transitionrun event is fired when a CSS transition is first created, i.e. before any transition-delay has begun.">HTMLElement/transitionrun_event</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome yes"><span>Chrome</span><span>74+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>62+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>74+</span></span><span class="webview_android yes"><span>Android WebView</span><span>74+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>53+</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/transitionrun_event" title="The transitionrun event is fired when a CSS transition is first created, i.e. before any transition-delay has begun.">Window/transitionrun_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-     </div>
-     <dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitionrun"><code>transitionrun</code></dfn>
+    <dt><dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitionrun"><code>transitionrun</code></dfn>
     <dd>
       The <code class="idl"><a data-link-type="idl" href="#transitionrun" id="ref-for-transitionrun">transitionrun</a></code> event occurs when a transition is created (i.e.,
       when it is added to the set of <a data-link-type="dfn" href="#running-transition" id="ref-for-running-transition②①">running transitions</a>). 
@@ -1871,48 +1612,7 @@ means the target of the event is that element).</p>
       <li>Cancelable: No
       <li>Context Info: propertyName, elapsedTime, pseudoElement
      </ul>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/transitionstart_event" title="The transitionstart event is fired when a CSS transition has actually started, i.e., after any transition-delay has ended.">Document/transitionstart_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionstart_event" title="The transitionstart event is fired when a CSS transition has actually started, i.e., after any transition-delay has ended.">HTMLElement/transitionstart_event</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome yes"><span>Chrome</span><span>74+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>62+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>74+</span></span><span class="webview_android yes"><span>Android WebView</span><span>74+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>53+</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/transitionstart_event" title="The transitionstart event is fired when a CSS transition has actually started, i.e., after any transition-delay has ended.">Window/transitionstart_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-     </div>
-     <dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitionstart"><code>transitionstart</code></dfn>
+    <dt><dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitionstart"><code>transitionstart</code></dfn>
     <dd>
       The <code class="idl"><a data-link-type="idl" href="#transitionstart" id="ref-for-transitionstart">transitionstart</a></code> event occurs when a transition’s delay phase ends. 
      <p>The value of <code class="idl"><a data-link-type="idl" href="#Events-TransitionEvent-elapsedTime" id="ref-for-Events-TransitionEvent-elapsedTime②">elapsedTime</a></code> for <code class="idl"><a data-link-type="idl" href="#transitionstart" id="ref-for-transitionstart①">transitionstart</a></code> events is the same as the value used for <code class="idl"><a data-link-type="idl" href="#transitionrun" id="ref-for-transitionrun①">transitionrun</a></code> events.</p>
@@ -1921,48 +1621,7 @@ means the target of the event is that element).</p>
       <li>Cancelable: No
       <li>Context Info: propertyName, elapsedTime, pseudoElement
      </ul>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/transitionend_event" title="The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.">Document/transitionend_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>51+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>51+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionend_event" title="The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.">HTMLElement/transitionend_event</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>51+</span></span><span class="safari yes"><span>Safari</span><span>6.1+</span></span><span class="chrome yes"><span>Chrome</span><span>26+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>51+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>7+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>26+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.5+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/transitionend_event" title="The transitionend event is fired when a CSS transition has completed. In the case where a transition is removed before completion, such as if the transition-property is removed or display is set to none, then the event will not be generated.">Window/transitionend_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>51+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>51+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-     </div>
-     <dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitionend"><code>transitionend</code></dfn>
+    <dt><dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitionend"><code>transitionend</code></dfn>
     <dd>
       The <code class="idl"><a data-link-type="idl" href="#transitionend" id="ref-for-transitionend">transitionend</a></code> event occurs at the completion of the transition. In
       the case where a transition is removed before completion, such as if the <a class="property" data-link-type="propdesc" href="#propdef-transition-property" id="ref-for-propdef-transition-property①①">transition-property</a> is removed, then the event will not fire. 
@@ -1973,48 +1632,7 @@ means the target of the event is that element).</p>
       <li>Cancelable: No
       <li>Context Info: propertyName, elapsedTime, pseudoElement
      </ul>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/transitioncancel_event" title="The transitioncancel event is fired when a CSS transition is canceled.">Document/transitioncancel_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event" title="The transitioncancel event is fired when a CSS transition is canceled.">HTMLElement/transitioncancel_event</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome yes"><span>Chrome</span><span>74+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>62+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>74+</span></span><span class="webview_android yes"><span>Android WebView</span><span>74+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>53+</span></span>
-       </div>
-      </div>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/transitioncancel_event" title="The transitioncancel event is fired when a CSS transition is canceled.">Window/transitioncancel_event</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-       </div>
-      </div>
-     </div>
-     <dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitioncancel"><code>transitioncancel</code></dfn>
+    <dt><dfn class="dfn-paneled idl-code" data-dfn-for="transitionevent" data-dfn-type="event" data-export id="transitioncancel"><code>transitioncancel</code></dfn>
     <dd>
       The <code class="idl"><a data-link-type="idl" href="#transitioncancel" id="ref-for-transitioncancel">transitioncancel</a></code> event occurs when a transition is <a data-link-type="dfn" href="#transition-cancel" id="ref-for-transition-cancel⑥">canceled</a>. 
      <p>The <code class="idl"><a data-link-type="idl" href="#Events-TransitionEvent-elapsedTime" id="ref-for-Events-TransitionEvent-elapsedTime④">elapsedTime</a></code> for <code class="idl"><a data-link-type="idl" href="#transitioncancel" id="ref-for-transitioncancel①">transitioncancel</a></code> events is
@@ -2023,7 +1641,7 @@ means the target of the event is that element).</p>
       If the transition had a negative <a class="property" data-link-type="propdesc" href="#propdef-transition-delay" id="ref-for-propdef-transition-delay①②">transition-delay</a>, the beginning of the
       transition is the moment equal to the absolute value of <span class="property" id="ref-for-propdef-transition-delay①③">transition-delay</span> seconds <em>prior</em> to when the transition was actually triggered.
       Alternatively, if the transition had a positive <span class="property" id="ref-for-propdef-transition-delay①④">transition-delay</span> and the
-      event is fired before the transition’s delay has expired, the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-animations-1/#dom-animationevent-elapsedtime" id="ref-for-dom-animationevent-elapsedtime">elapsedTime</a></code> will be zero.</p>
+      event is fired before the transition’s delay has expired, the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-animations/#dom-animationevent-elapsedtime" id="ref-for-dom-animationevent-elapsedtime">elapsedTime</a></code> will be zero.</p>
      <ul>
       <li>Bubbles: Yes
       <li>Cancelable: No
@@ -2047,44 +1665,10 @@ attributes</a>; and that must be supported by all <code class="idl"><a data-link
       <td><code class="idl"><a data-link-type="idl" href="#dom-globaleventhandlers-ontransitionstart" id="ref-for-dom-globaleventhandlers-ontransitionstart">ontransitionstart</a></code>
       <td><a data-link-type="idl" href="#transitionstart" id="ref-for-transitionstart②">transitionstart</a>
      <tr>
-      <td>
-       <div class="mdn-anno wrapped">
-        <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-        <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/ontransitionend" title="The ontransitionend property of the GlobalEventHandlers mixin is an event handler that processes transitionend events.">GlobalEventHandlers/ontransitionend</a></p>
-         <p class="all-engines-text">In all current engines.</p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>51+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>66+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-          <hr>
-          <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>51+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android yes"><span>Android WebView</span><span>79+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>57+</span></span>
-         </div>
-        </div>
-       </div>
-       <code class="idl"><a data-link-type="idl" href="#dom-globaleventhandlers-ontransitionend" id="ref-for-dom-globaleventhandlers-ontransitionend">ontransitionend</a></code>
+      <td><code class="idl"><a data-link-type="idl" href="#dom-globaleventhandlers-ontransitionend" id="ref-for-dom-globaleventhandlers-ontransitionend">ontransitionend</a></code>
       <td><a data-link-type="idl" href="#transitionend" id="ref-for-transitionend①">transitionend</a>
      <tr>
-      <td>
-       <div class="mdn-anno wrapped">
-        <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-        <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/ontransitioncancel" title="The ontransitioncancel property of the GlobalEventHandlers mixin is an event handler that processes transitioncancel events.">GlobalEventHandlers/ontransitioncancel</a></p>
-         <p class="all-engines-text">In all current engines.</p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>13.1+</span></span><span class="chrome yes"><span>Chrome</span><span>87+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>73+</span></span><span class="edge_blink yes"><span>Edge</span><span>87+</span></span>
-          <hr>
-          <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13.4+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>87+</span></span><span class="webview_android yes"><span>Android WebView</span><span>87+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>14.0+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-         </div>
-        </div>
-       </div>
-       <code class="idl"><a data-link-type="idl" href="#dom-globaleventhandlers-ontransitioncancel" id="ref-for-dom-globaleventhandlers-ontransitioncancel">ontransitioncancel</a></code>
+      <td><code class="idl"><a data-link-type="idl" href="#dom-globaleventhandlers-ontransitioncancel" id="ref-for-dom-globaleventhandlers-ontransitioncancel">ontransitioncancel</a></code>
       <td><a data-link-type="idl" href="#transitioncancel" id="ref-for-transitioncancel②">transitioncancel</a>
    </table>
    <h2 class="heading settled" data-level="7" id="interface-dom"><span class="secno">7. </span><span class="content">DOM Interfaces</span><a class="self-link" href="#interface-dom"></a></h2>
@@ -2109,7 +1693,7 @@ and it ways that implementations can optimize (for frame rate and
 CPU usage).</p>
    <p>One of the major categories of optimizations
 that implementations can make is implementing animation
-of certain high-value properties (such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-transforms-1/#propdef-transform" id="ref-for-propdef-transform">transform</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#opacity" id="ref-for-opacity③">opacity</a>)
+of certain high-value properties (such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-transforms/#propdef-transform" id="ref-for-propdef-transform">transform</a> and <a class="property" data-link-type="propdesc">opacity</a>)
 run on a browser’s compositor thread or process
 without updating style or layout on the main Web content thread
 unless up-to-date style data are needed.
@@ -2157,7 +1741,7 @@ even if the transitions were not run as continuous animations.
 However, it is probably poor practice for Web content to depend on
 such events to function correctly.</p>
    <h3 class="heading settled" data-level="10.2" id="accessibility-cascade"><span class="secno">10.2. </span><span class="content">Cascade</span><a class="self-link" href="#accessibility-cascade"></a></h3>
-   <p>The CSS <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade" id="ref-for-cascade">cascade</a> is a general mechanism in CSS
+   <p>The CSS <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade" id="ref-for-cascade">cascade</a> is a general mechanism in CSS
 that allows user needs to interact with author styles.
 This specification interacts with the cascade,
 but since it only allows animation between values
@@ -2374,76 +1958,69 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
    <li><a href="#propdef-transition-timing-function">transition-timing-function</a><span>, in §2.3</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-propdef-background-image">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image">https://drafts.csswg.org/css-backgrounds/#propdef-background-image</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-image">2. Transitions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-box-shadow">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-box-shadow">3. Starting of transitions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-all">
-   <a href="https://drafts.csswg.org/css-cascade-5/#propdef-all">https://drafts.csswg.org/css-cascade-5/#propdef-all</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#propdef-all">https://drafts.csswg.org/css-cascade/#propdef-all</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-all">2.1. The transition-property Property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade">https://drafts.csswg.org/css-cascade-5/#cascade</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade">https://drafts.csswg.org/css-cascade/#cascade</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade">10.2. Cascade</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">2. Transitions</a> <a href="#ref-for-computed-value①">(2)</a>
     <li><a href="#ref-for-computed-value②">3. Starting of transitions</a> <a href="#ref-for-computed-value③">(2)</a> <a href="#ref-for-computed-value④">(3)</a> <a href="#ref-for-computed-value⑤">(4)</a> <a href="#ref-for-computed-value⑥">(5)</a> <a href="#ref-for-computed-value⑦">(6)</a> <a href="#ref-for-computed-value⑧">(7)</a> <a href="#ref-for-computed-value⑨">(8)</a> <a href="#ref-for-computed-value①⓪">(9)</a> <a href="#ref-for-computed-value①①">(10)</a> <a href="#ref-for-computed-value①②">(11)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-all-inherit">
-   <a href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit">https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit">https://drafts.csswg.org/css-cascade/#valdef-all-inherit</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-all-inherit">2.1. The transition-property Property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-all-initial">
-   <a href="https://drafts.csswg.org/css-cascade-5/#valdef-all-initial">https://drafts.csswg.org/css-cascade-5/#valdef-all-initial</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#valdef-all-initial">https://drafts.csswg.org/css-cascade/#valdef-all-initial</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-all-initial">2.1. The transition-property Property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-opacity">
-   <a href="https://drafts.csswg.org/css-color-3/#opacity">https://drafts.csswg.org/css-color-3/#opacity</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-opacity">2. Transitions</a> <a href="#ref-for-opacity①">(2)</a> <a href="#ref-for-opacity②">(3)</a>
-    <li><a href="#ref-for-opacity③">8. Security Considerations</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-easing-function">
-   <a href="https://drafts.csswg.org/css-easing-1/#typedef-easing-function">https://drafts.csswg.org/css-easing-1/#typedef-easing-function</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-easing/#typedef-easing-function">https://drafts.csswg.org/css-easing/#typedef-easing-function</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-easing-function">2.3. The transition-timing-function Property</a>
     <li><a href="#ref-for-typedef-easing-function①">2.5. The transition Shorthand Property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-input-progress-value">
-   <a href="https://drafts.csswg.org/css-easing-1/#input-progress-value">https://drafts.csswg.org/css-easing-1/#input-progress-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-easing/#input-progress-value">https://drafts.csswg.org/css-easing/#input-progress-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-input-progress-value">2.3. The transition-timing-function Property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-output-progress-value">
-   <a href="https://drafts.csswg.org/css-easing-1/#output-progress-value">https://drafts.csswg.org/css-easing-1/#output-progress-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-easing/#output-progress-value">https://drafts.csswg.org/css-easing/#output-progress-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-output-progress-value">2.3. The transition-timing-function Property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-transform">
-   <a href="https://drafts.csswg.org/css-transforms-1/#propdef-transform">https://drafts.csswg.org/css-transforms-1/#propdef-transform</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-transforms/#propdef-transform">https://drafts.csswg.org/css-transforms/#propdef-transform</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-transform">8. Security Considerations</a>
    </ul>
@@ -2505,39 +2082,14 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
     <li><a href="#ref-for-comb-any">2.5. The transition Shorthand Property</a> <a href="#ref-for-comb-any①">(2)</a> <a href="#ref-for-comb-any②">(3)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-background-color">
-   <a href="https://drafts.csswg.org/css2/#propdef-background-color">https://drafts.csswg.org/css2/#propdef-background-color</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-background-color">2. Transitions</a> <a href="#ref-for-propdef-background-color①">(2)</a>
-    <li><a href="#ref-for-propdef-background-color②">3. Starting of transitions</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-left">
-   <a href="https://drafts.csswg.org/css2/#propdef-left">https://drafts.csswg.org/css2/#propdef-left</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-left">2. Transitions</a> <a href="#ref-for-propdef-left①">(2)</a> <a href="#ref-for-propdef-left②">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-top">
-   <a href="https://drafts.csswg.org/css2/#propdef-top">https://drafts.csswg.org/css2/#propdef-top</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-top">2. Transitions</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-width">https://drafts.csswg.org/css2/#propdef-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-width">2. Transitions</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-dom-animationevent-elapsedtime">
-   <a href="https://drafts.csswg.org/css-animations-1/#dom-animationevent-elapsedtime">https://drafts.csswg.org/css-animations-1/#dom-animationevent-elapsedtime</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-animations/#dom-animationevent-elapsedtime">https://drafts.csswg.org/css-animations/#dom-animationevent-elapsedtime</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-animationevent-elapsedtime">6.2. Types of TransitionEvent</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssomstring">
-   <a href="https://drafts.csswg.org/cssom-1/#cssomstring">https://drafts.csswg.org/cssom-1/#cssomstring</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssomstring">https://drafts.csswg.org/cssom/#cssomstring</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssomstring">6.1.1. IDL Definition</a> <a href="#ref-for-cssomstring①">(2)</a> <a href="#ref-for-cssomstring②">(3)</a> <a href="#ref-for-cssomstring③">(4)</a> <a href="#ref-for-cssomstring④">(5)</a>
     <li><a href="#ref-for-cssomstring⑤">6.1.2. Attributes</a> <a href="#ref-for-cssomstring⑥">(2)</a>
@@ -2664,18 +2216,13 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
      <li><span class="dfn-paneled" id="term-for-propdef-box-shadow">box-shadow</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-propdef-all">all</span>
      <li><span class="dfn-paneled" id="term-for-cascade">cascade</span>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
      <li><span class="dfn-paneled" id="term-for-valdef-all-inherit">inherit</span>
      <li><span class="dfn-paneled" id="term-for-valdef-all-initial">initial</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-color-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-opacity">opacity</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-easing-1]</a> defines the following terms:
@@ -2704,14 +2251,6 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
      <li><span class="dfn-paneled" id="term-for-interpolation①">interpolation</span>
      <li><span class="dfn-paneled" id="term-for-comb-one">|</span>
      <li><span class="dfn-paneled" id="term-for-comb-any">||</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS2]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-background-color">background-color</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-left">left</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-top">top</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-width">width</span>
     </ul>
    <li>
     <a data-link-type="biblio">[CSS3-ANIMATIONS]</a> defines the following terms:
@@ -2752,7 +2291,7 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
      <li><span class="dfn-paneled" id="term-for-not-animatable">not animatable</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
      <li><span class="dfn-paneled" id="term-for-idl-double">double</span>
@@ -2761,10 +2300,8 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
-   <dt id="biblio-css-color-3">[CSS-COLOR-3]
-   <dd>Tantek Çelik; Chris Lilley; David Baron. <a href="https://www.w3.org/TR/css-color-3/">CSS Color Module Level 3</a>. 19 June 2018. REC. URL: <a href="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-easing-1">[CSS-EASING-1]
    <dd>Brian Birtles; et al. <a href="https://www.w3.org/TR/css-easing-1/">CSS Easing Functions Level 1</a>. 1 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-easing-1/">https://www.w3.org/TR/css-easing-1/</a>
    <dt id="biblio-css-transforms-1">[CSS-TRANSFORMS-1]
@@ -2788,9 +2325,9 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-web-animations-1">[WEB-ANIMATIONS-1]
-   <dd>Brian Birtles; et al. <a href="https://www.w3.org/TR/web-animations-1/">Web Animations</a>. 18 May 2021. WD. URL: <a href="https://www.w3.org/TR/web-animations-1/">https://www.w3.org/TR/web-animations-1/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dd>Brian Birtles; et al. <a href="https://www.w3.org/TR/web-animations-1/">Web Animations</a>. 11 October 2018. WD. URL: <a href="https://www.w3.org/TR/web-animations-1/">https://www.w3.org/TR/web-animations-1/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
@@ -2879,16 +2416,16 @@ and all the rest of the <a href="http://lists.w3.org/Archives/Public/www-style/"
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <a href="#transitionevent"><code><c- g>TransitionEvent</c-></code></a> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#event"><c- n>Event</c-></a> {
-  <a class="idl-code" data-link-type="constructor" href="#dom-transitionevent-transitionevent"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-type"><code><c- g>type</c-></code></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-transitioneventinit"><c- n>TransitionEventInit</c-></a> <a href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-transitioneventinitdict"><code><c- g>transitionEventInitDict</c-></code></a> = {});
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-propertyName"><c- g>propertyName</c-></a>;
+  <a class="idl-code" data-link-type="constructor" href="#dom-transitionevent-transitionevent"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-type"><code><c- g>type</c-></code></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-transitioneventinit"><c- n>TransitionEventInit</c-></a> <a href="#dom-transitionevent-transitionevent-type-transitioneventinitdict-transitioneventinitdict"><code><c- g>transitionEventInitDict</c-></code></a> = {});
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-propertyName"><c- g>propertyName</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-double"><c- b>double</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="double" href="#Events-TransitionEvent-elapsedTime"><c- g>elapsedTime</c-></a>;
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-pseudoElement"><c- g>pseudoElement</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#Events-TransitionEvent-pseudoElement"><c- g>pseudoElement</c-></a>;
 };
 
 <c- b>dictionary</c-> <a href="#dictdef-transitioneventinit"><code><c- g>TransitionEventInit</c-></code></a> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#dictdef-eventinit"><c- n>EventInit</c-></a> {
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;&quot;" data-type="CSSOMString " href="#dom-transitioneventinit-propertyname"><code><c- g>propertyName</c-></code></a> = "";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;&quot;" data-type="CSSOMString " href="#dom-transitioneventinit-propertyname"><code><c- g>propertyName</c-></code></a> = "";
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-double"><c- b>double</c-></a> <a data-default="0.0" data-type="double " href="#dom-transitioneventinit-elapsedtime"><code><c- g>elapsedTime</c-></code></a> = 0.0;
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;&quot;" data-type="CSSOMString " href="#dom-transitioneventinit-pseudoelement"><code><c- g>pseudoElement</c-></code></a> = "";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;&quot;" data-type="CSSOMString " href="#dom-transitioneventinit-pseudoelement"><code><c- g>pseudoElement</c-></code></a> = "";
 };
 
 <c- b>partial</c-> <c- b>interface</c-> <c- b>mixin</c-> <a class="idl-code" data-link-type="interface" href="https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"><c- g>GlobalEventHandlers</c-></a> {
@@ -3240,11 +2777,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

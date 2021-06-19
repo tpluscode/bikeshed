@@ -1464,8 +1464,8 @@ https://www.w3.org/TR/webdriver2/#dfn-web-frame-identifier
 -
 web idl arguments list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#web-idl-arguments-list
@@ -5171,8 +5171,8 @@ https://w3c.github.io/web-nfc/#dfn-well-known-type-record
 -
 well-typed
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#well-typed
@@ -5181,8 +5181,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#well-typed
 -
 well-typed
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#well-typed

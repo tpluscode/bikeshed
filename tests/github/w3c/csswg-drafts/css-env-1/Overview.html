@@ -261,62 +261,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -648,7 +592,7 @@ dd:not(:last-child) > .wpt-tests-block:not([open]):last-child {
   </div>
   <div class="p-summary" data-fill-with="abstract">
    <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
-   <p>This specification defines the concept of <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable">environment variables</a> and the <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env">env()</a> function, which work similarly to custom properties and the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var" id="ref-for-funcdef-var">var()</a> function, but are defined globally for a document. These can be defined either by the user agent, providing values that can be used on the page based on information the UA has special access to, or provided by the author for "global" variables that are guaranteed to be the same no matter where in the document they’re used.</p>
+   <p>This specification defines the concept of <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable">environment variables</a> and the <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env">env()</a> function, which work similarly to custom properties and the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var" id="ref-for-funcdef-var">var()</a> function, but are defined globally for a document. These can be defined either by the user agent, providing values that can be used on the page based on information the UA has special access to, or provided by the author for "global" variables that are guaranteed to be the same no matter where in the document they’re used.</p>
     <a href="https://www.w3.org/TR/CSS/">CSS</a> is a language for describing the rendering of structured documents
 (such as HTML and XML)
 on screen, on paper, etc. 
@@ -712,21 +656,21 @@ on screen, on paper, etc.
   <main>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
    <p>The <a data-link-type="biblio" href="#biblio-css-variables-1">[css-variables-1]</a> specification defined the concept of "cascading variables",
-author-defined variables created from the value of <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property" id="ref-for-custom-property">custom properties</a>,
-capable of being substituted into arbitrary other properties via the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var" id="ref-for-funcdef-var①">var()</a> function.</p>
+author-defined variables created from the value of <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property" id="ref-for-custom-property">custom properties</a>,
+capable of being substituted into arbitrary other properties via the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var" id="ref-for-funcdef-var①">var()</a> function.</p>
    <p>This specification defines a related, but simpler, concept of <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable①">environment variables</a>.
 Unlike "cascading variables",
-which can change throughout the page as their corresponding <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property" id="ref-for-custom-property①">custom property</a> takes on different values,
+which can change throughout the page as their corresponding <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property" id="ref-for-custom-property①">custom property</a> takes on different values,
 an <span id="ref-for-css-environment-variable②">environment variable</span> is "global" to a particular document—<wbr>its value is the same everywhere.
 The <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env①">env()</a> function can then be used to substitute the value into arbitrary locations,
-similar to the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var" id="ref-for-funcdef-var②">var()</a> function.</p>
+similar to the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var" id="ref-for-funcdef-var②">var()</a> function.</p>
    <p>These "global" variables have both benefits and downsides versus cascading variables:</p>
    <ul>
     <li data-md>
      <p>Many variables aren’t meant to change over the course of a page;
 they set up themes,
 or are helpers for particular numerical values.
-Using <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable③">environment variables</a> instead of <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property" id="ref-for-custom-property②">custom properties</a> to define these
+Using <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable③">environment variables</a> instead of <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property" id="ref-for-custom-property②">custom properties</a> to define these
 communicates the proper intent,
 which is good both for the author of the document
 (particularly when multiple people are collaborating on a single document),
@@ -736,19 +680,19 @@ as it can store these variables in a more optimal way.</p>
      <p>Because <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable④">environment variables</a> don’t depend on the value of anything drawn from a particular element,
 they can be used in places where there is no obvious element to draw from,
 such as in <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-media" id="ref-for-at-ruledef-media">@media</a> rules,
-where the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var" id="ref-for-funcdef-var③">var()</a> function would not be valid.</p>
+where the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var" id="ref-for-funcdef-var③">var()</a> function would not be valid.</p>
     <li data-md>
      <p>Information from the user agent itself,
 such as the margin of the viewport to avoid laying out in by default
 (for example, to avoid overlapping a "notch" in the screen),
 can be retrieved via <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env②">env()</a>,
-whereas the element-specific nature of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var" id="ref-for-funcdef-var④">var()</a> was not an appropriate place to pipe that information in.</p>
+whereas the element-specific nature of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var" id="ref-for-funcdef-var④">var()</a> was not an appropriate place to pipe that information in.</p>
    </ul>
    <h2 class="heading settled" data-level="2" id="environment"><span class="secno">2. </span><span class="content">Environment Variables</span><a class="self-link" href="#environment"></a></h2>
-   <p>A CSS <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-noexport id="css-environment-variable">environment variable</dfn> is a name associated with a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value" id="ref-for-typedef-declaration-value">&lt;declaration-value></a> (a sequence of zero more CSS tokens, with almost no restrictions on what tokens can exist),
-similar to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property" id="ref-for-custom-property③">custom property</a>. <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable⑤">Environment variables</a> can be defined by the user agent,
+   <p>A CSS <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-noexport id="css-environment-variable">environment variable</dfn> is a name associated with a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-value" id="ref-for-typedef-declaration-value">&lt;declaration-value></a> (a sequence of zero more CSS tokens, with almost no restrictions on what tokens can exist),
+similar to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property" id="ref-for-custom-property③">custom property</a>. <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable⑤">Environment variables</a> can be defined by the user agent,
 or by the user.
-(In the latter case, the names are <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-variables-1/#typedef-custom-property-name" id="ref-for-typedef-custom-property-name">&lt;custom-property-name></a>s,
+(In the latter case, the names are <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-variables/#typedef-custom-property-name" id="ref-for-typedef-custom-property-name">&lt;custom-property-name></a>s,
 and start with `--` per standard for custom identifiers.)</p>
    <p class="issue" id="issue-c17a17b4"><a class="self-link" href="#issue-c17a17b4"></a> Is the set of UA-defined <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable⑥">environment variables</a> visible to script?
 If so, define an API on <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document">Document</a></code> to expose them.</p>
@@ -771,16 +715,16 @@ unless/until they are added to this list.</p>
       <th>Value 
      <tr>
       <td><dfn class="css" data-dfn-for="env()" data-dfn-type="value" data-export id="valdef-env-safe-area-inset-top">safe-area-inset-top<a class="self-link" href="#valdef-env-safe-area-inset-top"></a></dfn> 
-      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
+      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
      <tr>
       <td><dfn class="css" data-dfn-for="env()" data-dfn-type="value" data-export id="valdef-env-safe-area-inset-right">safe-area-inset-right<a class="self-link" href="#valdef-env-safe-area-inset-right"></a></dfn> 
-      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
+      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
      <tr>
       <td><dfn class="css" data-dfn-for="env()" data-dfn-type="value" data-export id="valdef-env-safe-area-inset-bottom">safe-area-inset-bottom<a class="self-link" href="#valdef-env-safe-area-inset-bottom"></a></dfn> 
-      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
+      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
      <tr>
       <td><dfn class="css" data-dfn-for="env()" data-dfn-type="value" data-export id="valdef-env-safe-area-inset-left">safe-area-inset-left<a class="self-link" href="#valdef-env-safe-area-inset-left"></a></dfn> 
-      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
+      <td><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
    </table>
    <p>The safe area insets are four <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable①⓪">environment variables</a> that define a rectangle by
 its top, right, bottom, and left insets from the edge of the viewport. For rectangular
@@ -791,28 +735,12 @@ the rectangle to be invisible due to the nonrectangular nature of the display. T
 allows authors to limit the layout of essential content to the space inside of the
 safe area rectangle.</p>
    <h2 class="heading settled" data-level="3" id="env-function"><span class="secno">3. </span><span class="content">Using Environment Variables: the <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env③">env()</a> notation</span><a class="self-link" href="#env-function"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/env()" title="The env() CSS function can be used to insert the value of a user agent-defined environment variable into your CSS, in a similar fashion to the var() function and custom properties. The difference is that, as well as being user-agent defined rather than user-defined, environment variables are globally scoped to a document, whereas custom properties are scoped to the element(s) on which they are declared. ">env()</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>65+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="chrome yes"><span>Chrome</span><span>69+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>56+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>65+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>69+</span></span><span class="webview_android yes"><span>Android WebView</span><span>69+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>48+</span></span>
-     </div>
-    </div>
-   </div>
    <p>In order to substitute the value of an <a data-link-type="dfn" href="#css-environment-variable" id="ref-for-css-environment-variable①①">environment variable</a> into a CSS context,
 use the <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env④">env()</a> function:</p>
-<pre class="prod"><dfn class="dfn-paneled" data-dfn-type="function" data-export id="funcdef-env">env()</dfn> = env( <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#identifier-value" id="ref-for-identifier-value">&lt;custom-ident></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-comma" id="ref-for-comb-comma">,</a> <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value" id="ref-for-typedef-declaration-value①">&lt;declaration-value></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a> )
+<pre class="prod"><dfn class="dfn-paneled" data-dfn-type="function" data-export id="funcdef-env">env()</dfn> = env( <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#identifier-value" id="ref-for-identifier-value">&lt;custom-ident></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-comma" id="ref-for-comb-comma">,</a> <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-value" id="ref-for-typedef-declaration-value①">&lt;declaration-value></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a> )
 </pre>
    <p>The <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env⑤">env()</a> function can be used in place of any part of a value in any property on any element,
-or any part of a value in any descriptor on any <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#at-rule" id="ref-for-at-rule">at-rule</a>,
+or any part of a value in any descriptor on any <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#at-rule" id="ref-for-at-rule">at-rule</a>,
 and in several other places where CSS values are allowed.</p>
    <div class="issue" id="issue-9ee89738">
     <a class="self-link" href="#issue-9ee89738"></a> Define the full set of places <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env⑥">env()</a> can be used. 
@@ -855,22 +783,22 @@ replace the <span class="css" id="ref-for-funcdef-env①③">env()</span> functi
 replace the <span class="css" id="ref-for-funcdef-env①⑤">env()</span> function by the fallback value.
 If there are any <span class="css" id="ref-for-funcdef-env①⑥">env()</span> references in the fallback, <a data-link-type="dfn" href="#substitute-an-env" id="ref-for-substitute-an-env②">substitute</a> them as well.</p>
      <li data-md>
-      <p>Otherwise, the property or descriptor containing the <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env①⑦">env()</a> function is <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#invalid-at-computed-value-time" id="ref-for-invalid-at-computed-value-time">invalid at computed-value time</a>.</p>
+      <p>Otherwise, the property or descriptor containing the <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env①⑦">env()</a> function is <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#invalid-at-computed-value-time" id="ref-for-invalid-at-computed-value-time">invalid at computed-value time</a>.</p>
     </ol>
    </div>
    <p class="issue" id="issue-91e85376"><a class="self-link" href="#issue-91e85376"></a> Define when substitution happens.
-It has to be before <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var" id="ref-for-funcdef-var⑤">var()</a> substitution.
+It has to be before <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var" id="ref-for-funcdef-var⑤">var()</a> substitution.
 Alternately, should <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env①⑧">env()</a> substitution happen at parse time,
 so unknown variable names cause it to fail syntax checking?
 There’s no particular reason to have it happen at computed-value time,
-like <span class="css" id="ref-for-funcdef-var⑥">var()</span> does—<wbr>that was to ensure that <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property" id="ref-for-custom-property④">custom properties</a> could inherit their value down
+like <span class="css" id="ref-for-funcdef-var⑥">var()</span> does—<wbr>that was to ensure that <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property" id="ref-for-custom-property④">custom properties</a> could inherit their value down
 before they were picked up by a <span class="css" id="ref-for-funcdef-var⑦">var()</span>.</p>
    <p class="issue" id="issue-9806265e"><a class="self-link" href="#issue-9806265e"></a> When I figure out where else <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env①⑨">env()</a> can go,
 define how/when it substitutes.</p>
    <h3 class="heading settled" data-level="3.1" id="env-in-shorthands"><span class="secno">3.1. </span><span class="content">Environment Variables in Shorthand Properties</span><a class="self-link" href="#env-in-shorthands"></a></h3>
    <p class="issue" id="issue-66b99b40"><a class="self-link" href="#issue-66b99b40"></a> If <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env②⓪">env()</a> substitution happens during parsing,
 then this is unnecessary.</p>
-   <p>The <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env②①">env()</a> function causes the same difficulties with <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#shorthand-property" id="ref-for-shorthand-property">shorthand properties</a> as the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var" id="ref-for-funcdef-var⑧">var()</a> function does.
+   <p>The <a class="css" data-link-type="maybe" href="#funcdef-env" id="ref-for-funcdef-env②①">env()</a> function causes the same difficulties with <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#shorthand-property" id="ref-for-shorthand-property">shorthand properties</a> as the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var" id="ref-for-funcdef-var⑧">var()</a> function does.
 When an <span class="css" id="ref-for-funcdef-env②②">env()</span> is used in a <span id="ref-for-shorthand-property①">shorthand property</span>,
 then,
 it has the same effects as defined in <a href="https://www.w3.org/TR/css-variables-1/#variables-in-shorthands">CSS Variables 1 §3.2 Variables in Shorthand Properties</a>.</p>
@@ -981,7 +909,7 @@ it has the same effects as defined in <a href="https://www.w3.org/TR/css-variabl
    <li><a href="#substitute-an-env">substitute an env()</a><span>, in §3</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-shorthand-property">
-   <a href="https://drafts.csswg.org/css-cascade-5/#shorthand-property">https://drafts.csswg.org/css-cascade-5/#shorthand-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#shorthand-property">https://drafts.csswg.org/css-cascade/#shorthand-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-shorthand-property">3.1. Environment Variables in Shorthand Properties</a> <a href="#ref-for-shorthand-property①">(2)</a>
    </ul>
@@ -993,14 +921,14 @@ it has the same effects as defined in <a href="https://www.w3.org/TR/css-variabl
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-declaration-value">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value">https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-declaration-value">https://drafts.csswg.org/css-syntax/#typedef-declaration-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-declaration-value">2. Environment Variables</a>
     <li><a href="#ref-for-typedef-declaration-value①">3. Using Environment Variables: the env() notation</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-at-rule">
-   <a href="https://drafts.csswg.org/css-syntax-3/#at-rule">https://drafts.csswg.org/css-syntax-3/#at-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#at-rule">https://drafts.csswg.org/css-syntax/#at-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-at-rule">3. Using Environment Variables: the env() notation</a>
    </ul>
@@ -1030,13 +958,13 @@ it has the same effects as defined in <a href="https://www.w3.org/TR/css-variabl
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-custom-property-name">
-   <a href="https://drafts.csswg.org/css-variables-1/#typedef-custom-property-name">https://drafts.csswg.org/css-variables-1/#typedef-custom-property-name</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-variables/#typedef-custom-property-name">https://drafts.csswg.org/css-variables/#typedef-custom-property-name</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-custom-property-name">2. Environment Variables</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-custom-property">
-   <a href="https://drafts.csswg.org/css-variables-1/#custom-property">https://drafts.csswg.org/css-variables-1/#custom-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-variables/#custom-property">https://drafts.csswg.org/css-variables/#custom-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-custom-property">1. Introduction</a> <a href="#ref-for-custom-property①">(2)</a> <a href="#ref-for-custom-property②">(3)</a>
     <li><a href="#ref-for-custom-property③">2. Environment Variables</a>
@@ -1044,13 +972,13 @@ it has the same effects as defined in <a href="https://www.w3.org/TR/css-variabl
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-invalid-at-computed-value-time">
-   <a href="https://drafts.csswg.org/css-variables-1/#invalid-at-computed-value-time">https://drafts.csswg.org/css-variables-1/#invalid-at-computed-value-time</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-variables/#invalid-at-computed-value-time">https://drafts.csswg.org/css-variables/#invalid-at-computed-value-time</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-invalid-at-computed-value-time">3. Using Environment Variables: the env() notation</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-funcdef-var">
-   <a href="https://drafts.csswg.org/css-variables-1/#funcdef-var">https://drafts.csswg.org/css-variables-1/#funcdef-var</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-variables/#funcdef-var">https://drafts.csswg.org/css-variables/#funcdef-var</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-funcdef-var">Unnumbered Section</a>
     <li><a href="#ref-for-funcdef-var①">1. Introduction</a> <a href="#ref-for-funcdef-var②">(2)</a> <a href="#ref-for-funcdef-var③">(3)</a> <a href="#ref-for-funcdef-var④">(4)</a>
@@ -1067,7 +995,7 @@ it has the same effects as defined in <a href="https://www.w3.org/TR/css-variabl
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-shorthand-property">shorthand property</span>
     </ul>
@@ -1111,8 +1039,8 @@ it has the same effects as defined in <a href="https://www.w3.org/TR/css-variabl
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-conditional-3">[CSS-CONDITIONAL-3]
    <dd>David Baron; Elika Etemad; Chris Lilley. <a href="https://www.w3.org/TR/css-conditional-3/">CSS Conditional Rules Module Level 3</a>. 8 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-conditional-3/">https://www.w3.org/TR/css-conditional-3/</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
@@ -1152,11 +1080,11 @@ like reusing a block of declarations?</p>
     <a href="#issue-9ee89738"> ↵ </a>
    </div>
    <div class="issue"> Define when substitution happens.
-It has to be before <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables-1/#funcdef-var">var()</a> substitution.
+It has to be before <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-variables/#funcdef-var">var()</a> substitution.
 Alternately, should <a class="css" data-link-type="maybe" href="#funcdef-env">env()</a> substitution happen at parse time,
 so unknown variable names cause it to fail syntax checking?
 There’s no particular reason to have it happen at computed-value time,
-like <span class="css">var()</span> does—<wbr>that was to ensure that <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property">custom properties</a> could inherit their value down
+like <span class="css">var()</span> does—<wbr>that was to ensure that <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property">custom properties</a> could inherit their value down
 before they were picked up by a <span class="css">var()</span>.<a href="#issue-91e85376"> ↵ </a></div>
    <div class="issue"> When I figure out where else <a class="css" data-link-type="maybe" href="#funcdef-env">env()</a> can go,
 define how/when it substitutes.<a href="#issue-9806265e"> ↵ </a></div>
@@ -1242,11 +1170,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

@@ -1,5 +1,5 @@
 {
-    "exclusion-api": [
+    "propdef-overflow-anchor": [
         {
             "engines": [
                 "blink",

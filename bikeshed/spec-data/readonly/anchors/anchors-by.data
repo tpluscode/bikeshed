@@ -54,8 +54,8 @@ ByteLengthQueuingStrategy
 -
 ByteString
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-ByteString
@@ -192,8 +192,8 @@ https://infra.spec.whatwg.org/#byte
 -
 byte
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-byte

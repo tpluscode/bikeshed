@@ -206,8 +206,8 @@ GPUSampler
 -
 [[isHighAccuracy]]
 idl
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-ishighaccuracy
@@ -217,8 +217,8 @@ GeolocationPosition
 -
 [[isHighAccuracy]]
 idl
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-ishighaccuracy
@@ -303,8 +303,8 @@ matrix
 -
 is a platform object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#is-a-platform-object
@@ -333,8 +333,8 @@ https://wicg.github.io/file-system-access/#is-allowed-to-show-a-file-picker
 -
 is an array index
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#is-an-array-index
@@ -373,8 +373,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#is-base-allowed-for-d
 -
 is base allowed for document?
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#allow-base-for-document
@@ -383,8 +383,8 @@ https://w3c.github.io/webappsec-csp/#allow-base-for-document
 -
 is base allowed for document?
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#allow-base-for-document
@@ -518,8 +518,8 @@ https://www.w3.org/TR/permissions-policy-1/#is-feature-enabled
 -
 is finished
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#default-asynchronous-iterator-object-is-finished
@@ -609,8 +609,8 @@ https://wicg.github.io/webusb/#is-not-a-valid-filter
 -
 is not an array index
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#is-an-array-index
@@ -1542,8 +1542,8 @@ HTMLImageElement
 -
 isPointInFill
 method
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__isPointInFill
@@ -1553,8 +1553,8 @@ SVGGeometryElement
 -
 isPointInFill
 method
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGGeometryElement__isPointInFill
@@ -1586,8 +1586,8 @@ Range
 -
 isPointInStroke
 method
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGGeometryElement__isPointInStroke

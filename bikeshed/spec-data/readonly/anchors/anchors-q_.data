@@ -98,8 +98,8 @@ https://www.w3.org/TR/css-values-4/#Q
 -
 q
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-jsonwebkey-q

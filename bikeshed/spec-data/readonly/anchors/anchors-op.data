@@ -161,8 +161,8 @@ https://wicg.github.io/file-system-access/#dictdef-openfilepickeroptions
 -
 OperationError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#operationerror
@@ -631,8 +631,8 @@ text-text-emphasis
 -
 open
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-lowerbound-lower-open-open
@@ -643,8 +643,8 @@ IDBKeyRange/lowerBound(lower)
 -
 open
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperbound-upper-open-open
@@ -655,8 +655,8 @@ IDBKeyRange/upperBound(upper)
 -
 open
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-lowerbound-lower-open-open
@@ -667,8 +667,8 @@ IDBKeyRange/lowerBound(lower)
 -
 open
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperbound-upper-open-open
@@ -777,8 +777,8 @@ https://www.w3.org/TR/webrtc/#event-datachannel-open
 -
 open a database
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#open-a-database
@@ -787,8 +787,8 @@ https://w3c.github.io/IndexedDB/#open-a-database
 -
 open a database
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#open-a-database
@@ -797,8 +797,8 @@ https://www.w3.org/TR/IndexedDB-3/#open-a-database
 -
 open request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request-open-request
@@ -808,8 +808,8 @@ request
 -
 open request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request-open-request
@@ -839,8 +839,8 @@ https://www.w3.org/TR/openscreenprotocol/#open-screen-protocol-agent
 -
 open subpath
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#TermOpenSubpath
@@ -849,8 +849,8 @@ https://svgwg.org/svg2-draft/paths.html#TermOpenSubpath
 -
 open subpath
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#TermOpenSubpath
@@ -999,8 +999,8 @@ XMLHttpRequest
 -
 open(name)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbfactory-open
@@ -1010,8 +1010,8 @@ IDBFactory
 -
 open(name)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-open
@@ -1021,8 +1021,8 @@ IDBFactory
 -
 open(name, version)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbfactory-open
@@ -1032,8 +1032,8 @@ IDBFactory
 -
 open(name, version)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-open
@@ -1113,8 +1113,8 @@ content
 -
 open-quote
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-open-quote
@@ -1124,8 +1124,8 @@ content
 -
 open-quote
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-open-quote
@@ -1135,8 +1135,8 @@ content
 -
 openCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-opencursor
@@ -1146,8 +1146,8 @@ IDBObjectStore
 -
 openCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-opencursor
@@ -1157,8 +1157,8 @@ IDBIndex
 -
 openCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-opencursor
@@ -1168,8 +1168,8 @@ IDBObjectStore
 -
 openCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-opencursor
@@ -1179,8 +1179,8 @@ IDBIndex
 -
 openCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-opencursor
@@ -1190,8 +1190,8 @@ IDBObjectStore
 -
 openCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-opencursor
@@ -1201,8 +1201,8 @@ IDBIndex
 -
 openCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-opencursor
@@ -1212,8 +1212,8 @@ IDBObjectStore
 -
 openCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-opencursor
@@ -1223,8 +1223,8 @@ IDBIndex
 -
 openCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-opencursor
@@ -1234,8 +1234,8 @@ IDBObjectStore
 -
 openCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-opencursor
@@ -1245,8 +1245,8 @@ IDBIndex
 -
 openCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-opencursor
@@ -1256,8 +1256,8 @@ IDBObjectStore
 -
 openCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-opencursor
@@ -1267,8 +1267,8 @@ IDBIndex
 -
 openKeyCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-openkeycursor
@@ -1278,8 +1278,8 @@ IDBObjectStore
 -
 openKeyCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-openkeycursor
@@ -1289,8 +1289,8 @@ IDBIndex
 -
 openKeyCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-openkeycursor
@@ -1300,8 +1300,8 @@ IDBObjectStore
 -
 openKeyCursor()
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-openkeycursor
@@ -1311,8 +1311,8 @@ IDBIndex
 -
 openKeyCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-openkeycursor
@@ -1322,8 +1322,8 @@ IDBObjectStore
 -
 openKeyCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-openkeycursor
@@ -1333,8 +1333,8 @@ IDBIndex
 -
 openKeyCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-openkeycursor
@@ -1344,8 +1344,8 @@ IDBObjectStore
 -
 openKeyCursor(query)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-openkeycursor
@@ -1355,8 +1355,8 @@ IDBIndex
 -
 openKeyCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-openkeycursor
@@ -1366,8 +1366,8 @@ IDBObjectStore
 -
 openKeyCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-openkeycursor
@@ -1377,8 +1377,8 @@ IDBIndex
 -
 openKeyCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-openkeycursor
@@ -1388,8 +1388,8 @@ IDBObjectStore
 -
 openKeyCursor(query, direction)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-openkeycursor
@@ -1621,8 +1621,8 @@ https://www.w3.org/TR/filter-effects-1/#operating-coordinate-space
 -
 operation
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#supported-operations
@@ -1631,8 +1631,8 @@ https://w3c.github.io/webcrypto/#supported-operations
 -
 operation
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#supported-operations
@@ -1663,8 +1663,8 @@ GPUBlendComponent
 -
 operation
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-operation
@@ -1673,8 +1673,8 @@ https://heycam.github.io/webidl/#dfn-operation
 -
 operation
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-operation
@@ -1693,8 +1693,8 @@ https://www.w3.org/TR/remote-playback/#dfn-operationerror
 -
 operationerror
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-OperationError
@@ -1703,8 +1703,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-OperationError
 -
 operationerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#operationerror
@@ -2106,8 +2106,8 @@ https://www.w3.org/TR/webdriver2/#dfn-option-elements
 -
 option-expression
 grammar
-SRI
-SRI
+sri
+sri
 1
 current
 https://w3c.github.io/webappsec-subresource-integrity/#grammardef-option-expression
@@ -2160,8 +2160,8 @@ https://www.w3.org/TR/css-fonts-4/#valdef-font-face-font-display-optional
 -
 optional
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#optional
@@ -2170,8 +2170,8 @@ https://drafts.csswg.org/css2/#optional
 -
 optional
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#optional
@@ -2202,8 +2202,8 @@ mediakeysrequirement
 -
 optional
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dictionary-member-optional
@@ -2213,8 +2213,8 @@ dictionary member
 -
 optional argument
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-optional-argument
@@ -2223,8 +2223,8 @@ https://heycam.github.io/webidl/#dfn-optional-argument
 -
 optional argument
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-optional-argument
@@ -2283,8 +2283,8 @@ https://privacycg.github.io/private-click-measurement/#optional-trigger-priority
 -
 optional-ascii-whitespace
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-optional-ascii-whitespace
@@ -2293,8 +2293,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-optional-ascii-whitespace
 -
 optional-ascii-whitespace
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-optional-ascii-whitespace
@@ -2391,8 +2391,8 @@ BluetoothPermissionDescriptor
 -
 optionality list
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#optionality-list
@@ -2401,8 +2401,8 @@ https://heycam.github.io/webidl/#optionality-list
 -
 optionality values
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-optionality-value
@@ -2411,8 +2411,8 @@ https://heycam.github.io/webidl/#dfn-optionality-value
 -
 optionality values
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-optionality-value
@@ -3874,8 +3874,8 @@ TextDecoderStream/constructor()
 -
 options
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-blob-blob-blobparts-options-options
@@ -3890,8 +3890,8 @@ Blob/constructor()
 -
 options
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-file-file-filebits-filename-options-options
@@ -3904,8 +3904,8 @@ File/constructor(fileBits, fileName)
 -
 options
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-blob-blob-blobparts-options-options
@@ -3920,8 +3920,8 @@ Blob/constructor()
 -
 options
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-file-file-filebits-filename-options-options
@@ -3962,8 +3962,8 @@ GeolocationSensor/constructor()
 -
 options
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-transaction-storenames-mode-options-options
@@ -3975,8 +3975,8 @@ IDBDatabase/transaction(storeNames)
 -
 options
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-createobjectstore-name-options-options
@@ -3987,8 +3987,8 @@ IDBDatabase/createObjectStore(name)
 -
 options
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-createindex-name-keypath-options-options
@@ -3999,8 +3999,8 @@ IDBObjectStore/createIndex(name, keyPath)
 -
 options
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-transaction-storenames-mode-options-options
@@ -4012,8 +4012,8 @@ IDBDatabase/transaction(storeNames)
 -
 options
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-createobjectstore-name-options-options
@@ -4024,8 +4024,8 @@ IDBDatabase/createObjectStore(name)
 -
 options
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-createindex-name-keypath-options-options

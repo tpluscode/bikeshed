@@ -1718,6 +1718,35 @@ listing is given in the <a href="#idl-index">IDL Index</a>.</p>
    </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#publickeycredential" id="ref-for-publickeycredential①">PublicKeyCredential</a></code> interface inherits from <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-credential-management/#credential" id="ref-for-credential①">Credential</a></code> <a data-link-type="biblio" href="#biblio-credential-management-1">[CREDENTIAL-MANAGEMENT-1]</a>, and contains the attributes
 that are returned to the caller when a new credential is created, or a new assertion is requested.</p>
+   <div class="mdn-anno wrapped">
+    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults" title="getClientExtensionResults() is a method of the PublicKeyCredential interface that returns an ArrayBuffer which contains a map between the extensions identifiers and their results after having being processed by the client.">PublicKeyCredential/getClientExtensionResults</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>60+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>67+</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>60+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>70+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/rawId" title="The rawId read-only property of the PublicKeyCredential interface is an ArrayBuffer object containing the identifier of the credentials.">PublicKeyCredential/rawId</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>60+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>67+</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>60+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>70+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+     </div>
+    </div>
+   </div>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext" id="ref-for-SecureContext"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="#publickeycredential" id="ref-for-publickeycredential②"><c- g>PublicKeyCredential</c-></a> : <a data-link-type="idl-name" href="https://w3c.github.io/webappsec-credential-management/#credential" id="ref-for-credential②"><c- n>Credential</c-></a> {
     [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-ArrayBuffer" id="ref-for-idl-ArrayBuffer"><c- b>ArrayBuffer</c-></a>              <dfn class="dfn-paneled idl-code" data-dfn-for="PublicKeyCredential" data-dfn-type="attribute" data-export data-readonly data-type="ArrayBuffer" id="dom-publickeycredential-rawid"><code><c- g>rawId</c-></code></dfn>;
@@ -1730,24 +1759,7 @@ that are returned to the caller when a new credential is created, or a new asser
     <dd data-md>
      <p>This attribute is inherited from <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-credential-management/#credential" id="ref-for-credential③">Credential</a></code>, though <code class="idl"><a data-link-type="idl" href="#publickeycredential" id="ref-for-publickeycredential③">PublicKeyCredential</a></code> overrides <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-credential-management/#credential" id="ref-for-credential④">Credential</a></code>'s getter,
 instead returning the <a data-link-type="dfn" href="#base64url-encoding" id="ref-for-base64url-encoding">base64url encoding</a> of the data contained in the object’s <code class="idl"><a data-link-type="idl" href="#dom-publickeycredential-identifier-slot" id="ref-for-dom-publickeycredential-identifier-slot">[[identifier]]</a></code> <a data-link-type="dfn" href="https://tc39.github.io/ecma262/#sec-object-internal-methods-and-internal-slots" id="ref-for-sec-object-internal-methods-and-internal-slots①">internal slot</a>.</p>
-    <dt data-md>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/rawId" title="The rawId read-only property of the PublicKeyCredential interface is an ArrayBuffer object containing the identifier of the credentials.">PublicKeyCredential/rawId</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>60+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>67+</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>60+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>70+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-       </div>
-      </div>
-     </div>
-     <p><code class="idl"><a data-link-type="idl" href="#dom-publickeycredential-rawid" id="ref-for-dom-publickeycredential-rawid">rawId</a></code></p>
+    <dt data-md><code class="idl"><a data-link-type="idl" href="#dom-publickeycredential-rawid" id="ref-for-dom-publickeycredential-rawid">rawId</a></code>
     <dd data-md>
      <p>This attribute returns the <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-ArrayBuffer" id="ref-for-idl-ArrayBuffer①">ArrayBuffer</a></code> contained in the <code class="idl"><a data-link-type="idl" href="#dom-publickeycredential-identifier-slot" id="ref-for-dom-publickeycredential-identifier-slot①">[[identifier]]</a></code> internal slot.</p>
     <dt data-md>
@@ -1773,24 +1785,7 @@ instead returning the <a data-link-type="dfn" href="#base64url-encoding" id="ref
 credential</a>, or generate an <a data-link-type="dfn" href="#authentication-assertion" id="ref-for-authentication-assertion⑧">authentication assertion</a>. If the <code class="idl"><a data-link-type="idl" href="#publickeycredential" id="ref-for-publickeycredential④">PublicKeyCredential</a></code> is created in response to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-credential-management/#dom-credentialscontainer-create" id="ref-for-dom-credentialscontainer-create②">create()</a></code>, this attribute’s value will be an <code class="idl"><a data-link-type="idl" href="#authenticatorattestationresponse" id="ref-for-authenticatorattestationresponse">AuthenticatorAttestationResponse</a></code>, otherwise,
 the <code class="idl"><a data-link-type="idl" href="#publickeycredential" id="ref-for-publickeycredential⑤">PublicKeyCredential</a></code> was created in response to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-credential-management/#dom-credentialscontainer-get" id="ref-for-dom-credentialscontainer-get⑨">get()</a></code>, and this attribute’s value
 will be an <code class="idl"><a data-link-type="idl" href="#authenticatorassertionresponse" id="ref-for-authenticatorassertionresponse①">AuthenticatorAssertionResponse</a></code>.</p>
-    <dt data-md>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredential/getClientExtensionResults" title="getClientExtensionResults() is a method of the PublicKeyCredential interface that returns an ArrayBuffer which contains a map between the extensions identifiers and their results after having being processed by the client.">PublicKeyCredential/getClientExtensionResults</a></p>
-       <p class="all-engines-text">In all current engines.</p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>60+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>67+</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>60+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>70+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-       </div>
-      </div>
-     </div>
-     <p><code class="idl"><a data-link-type="idl" href="#dom-publickeycredential-getclientextensionresults" id="ref-for-dom-publickeycredential-getclientextensionresults">getClientExtensionResults()</a></code></p>
+    <dt data-md><code class="idl"><a data-link-type="idl" href="#dom-publickeycredential-getclientextensionresults" id="ref-for-dom-publickeycredential-getclientextensionresults">getClientExtensionResults()</a></code>
     <dd data-md>
      <p>This operation returns the value of <code class="idl"><a data-link-type="idl" href="#dom-publickeycredential-clientextensionsresults-slot" id="ref-for-dom-publickeycredential-clientextensionsresults-slot">[[clientExtensionsResults]]</a></code>, which is a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map" id="ref-for-ordered-map">map</a> containing <a data-link-type="dfn" href="#extension-identifier" id="ref-for-extension-identifier">extension identifier</a> → <a data-link-type="dfn" href="#client-extension-output" id="ref-for-client-extension-output">client extension output</a> entries produced by the extension’s <a data-link-type="dfn" href="#client-extension-processing" id="ref-for-client-extension-processing">client extension processing</a>.</p>
     <dt data-md><dfn class="idl-code" data-dfn-for="PublicKeyCredential" data-dfn-type="attribute" data-export id="dom-publickeycredential-type-slot"><code>[[type]]</code><a class="self-link" href="#dom-publickeycredential-type-slot"></a></dfn>
@@ -3103,24 +3098,7 @@ the <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webapp
       <p>This member is intended for use by <a data-link-type="dfn" href="#relying-party" id="ref-for-relying-party①⓪①">Relying Parties</a> that wish to express their preference for <a data-link-type="dfn" href="#attestation-conveyance" id="ref-for-attestation-conveyance①">attestation conveyance</a>.
 Its values SHOULD be members of <code class="idl"><a data-link-type="idl" href="#enumdef-attestationconveyancepreference" id="ref-for-enumdef-attestationconveyancepreference④">AttestationConveyancePreference</a></code>. <a data-link-type="dfn" href="#client-platform" id="ref-for-client-platform②⑦">Client platforms</a> MUST ignore unknown values, treating an unknown value as if the <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#map-exists" id="ref-for-map-exists">member does not exist</a>.
 Its default value is "none".</p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions" title="extensions, an optional property of the PublicKeyCredentialCreationOptions dictionary, is an object providing the client extensions and their input values.">PublicKeyCredentialCreationOptions/extensions</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>60+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>67+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>54+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android no"><span>Firefox for Android</span><span>?</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>67+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>48+</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="PublicKeyCredentialCreationOptions" data-dfn-type="dict-member" data-export id="dom-publickeycredentialcreationoptions-extensions"><code>extensions</code></dfn>, <span> of type <a data-link-type="idl-name" href="#dictdef-authenticationextensionsclientinputs" id="ref-for-dictdef-authenticationextensionsclientinputs①">AuthenticationExtensionsClientInputs</a></span></p>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="PublicKeyCredentialCreationOptions" data-dfn-type="dict-member" data-export id="dom-publickeycredentialcreationoptions-extensions"><code>extensions</code></dfn>, <span> of type <a data-link-type="idl-name" href="#dictdef-authenticationextensionsclientinputs" id="ref-for-dictdef-authenticationextensionsclientinputs①">AuthenticationExtensionsClientInputs</a></span>
      <dd data-md>
       <p>This member contains additional parameters requesting additional processing by the client and authenticator. For
 example, the caller may request that only authenticators with certain capabilities be used to create the credential, or
@@ -3478,6 +3456,19 @@ preferred credential, and so on down the list).</p>
     <dt data-md>
      <div class="mdn-anno wrapped">
       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+      <div class="feature">
+       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/extensions" title="extensions, an optional property of the PublicKeyCredentialCreationOptions dictionary, is an object providing the client extensions and their input values.">PublicKeyCredentialCreationOptions/extensions</a></p>
+       <p class="all-engines-text">In all current engines.</p>
+       <div class="support">
+        <span class="firefox yes"><span>Firefox</span><span>60+</span></span><span class="safari yes"><span>Safari</span><span>13+</span></span><span class="chrome yes"><span>Chrome</span><span>67+</span></span>
+        <hr>
+        <span class="opera yes"><span>Opera</span><span>54+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+        <hr>
+        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+        <hr>
+        <span class="firefox_android no"><span>Firefox for Android</span><span>?</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>13+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>67+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>48+</span></span>
+       </div>
+      </div>
       <div class="feature">
        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialRequestOptions/extensions" title="extensions, an optional property of the PublicKeyCredentialRequestOptions dictionary, is an object providing the client extensions and their input values.">PublicKeyCredentialRequestOptions/extensions</a></p>
        <p class="all-engines-text">In all current engines.</p>
@@ -8838,6 +8829,13 @@ for their contributions as our W3C Team Contacts.</p>
     <li><a href="#ref-for-dfn-error-code②③">11.9. Set User Verified</a> <a href="#ref-for-dfn-error-code②④">(2)</a> <a href="#ref-for-dfn-error-code②⑤">(3)</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-dfn-get-buffer-source-reference">
+   <a href="https://heycam.github.io/webidl#dfn-get-buffer-source-reference">https://heycam.github.io/webidl#dfn-get-buffer-source-reference</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dfn-get-buffer-source-reference">5.1.3. Create a New Credential - PublicKeyCredential’s [[Create]](origin, options, sameOriginWithAncestors) Method</a>
+    <li><a href="#ref-for-dfn-get-buffer-source-reference①">5.1.4.1. PublicKeyCredential’s [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) Method</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-aborterror">
    <a href="https://heycam.github.io/webidl/#aborterror">https://heycam.github.io/webidl/#aborterror</a><b>Referenced in:</b>
    <ul>
@@ -9013,13 +9011,6 @@ for their contributions as our W3C Team Contacts.</p>
     <li><a href="#ref-for-idl-boolean⑦">10.3. User Verification Method Extension (uvm)</a>
     <li><a href="#ref-for-idl-boolean⑧">10.4. Credential Properties Extension (credProps)</a> <a href="#ref-for-idl-boolean⑨">(2)</a> <a href="#ref-for-idl-boolean①⓪">(3)</a>
     <li><a href="#ref-for-idl-boolean①①">10.5. Large blob storage extension (largeBlob)</a> <a href="#ref-for-idl-boolean①②">(2)</a> <a href="#ref-for-idl-boolean①③">(3)</a> <a href="#ref-for-idl-boolean①④">(4)</a> <a href="#ref-for-idl-boolean①⑤">(5)</a> <a href="#ref-for-idl-boolean①⑥">(6)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-dfn-get-buffer-source-reference">
-   <a href="https://heycam.github.io/webidl#dfn-get-buffer-source-reference">https://heycam.github.io/webidl#dfn-get-buffer-source-reference</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dfn-get-buffer-source-reference">5.1.3. Create a New Credential - PublicKeyCredential’s [[Create]](origin, options, sameOriginWithAncestors) Method</a>
-    <li><a href="#ref-for-dfn-get-buffer-source-reference①">5.1.4.1. PublicKeyCredential’s [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) Method</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dfn-interface-object">
@@ -9306,6 +9297,11 @@ for their contributions as our W3C Team Contacts.</p>
    <li>
     <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
     <ul>
+     <li><span class="dfn-paneled" id="term-for-dfn-get-buffer-source-reference">get a copy of the bytes held by the buffer source</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
+    <ul>
      <li><span class="dfn-paneled" id="term-for-aborterror">AbortError</span>
      <li><span class="dfn-paneled" id="term-for-idl-ArrayBuffer">ArrayBuffer</span>
      <li><span class="dfn-paneled" id="term-for-BufferSource">BufferSource</span>
@@ -9324,7 +9320,6 @@ for their contributions as our W3C Team Contacts.</p>
      <li><span class="dfn-paneled" id="term-for-idl-USVString">USVString</span>
      <li><span class="dfn-paneled" id="term-for-unknownerror">UnknownError</span>
      <li><span class="dfn-paneled" id="term-for-idl-boolean">boolean</span>
-     <li><span class="dfn-paneled" id="term-for-dfn-get-buffer-source-reference">get a copy of the bytes held by the buffer source</span>
      <li><span class="dfn-paneled" id="term-for-dfn-interface-object">interface object</span>
      <li><span class="dfn-paneled" id="term-for-idl-long">long</span>
      <li><span class="dfn-paneled" id="term-for-idl-sequence">sequence</span>
@@ -9349,7 +9344,7 @@ for their contributions as our W3C Team Contacts.</p>
    <dt id="biblio-dom4">[DOM4]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMAScript]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-encoding">[ENCODING]
    <dd>Anne van Kesteren. <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a>. Living Standard. URL: <a href="https://encoding.spec.whatwg.org/">https://encoding.spec.whatwg.org/</a>
    <dt id="biblio-fetch">[FETCH]
@@ -9365,7 +9360,7 @@ for their contributions as our W3C Team Contacts.</p>
    <dt id="biblio-fido-u2f-message-formats">[FIDO-U2F-Message-Formats]
    <dd>D. Balfanz; J. Ehrensvard; J. Lang. <a href="https://fidoalliance.org/specs/fido-u2f-v1.1-id-20160915/fido-u2f-raw-message-formats-v1.1-id-20160915.html">FIDO U2F Raw Message Formats</a>. FIDO Alliance Implementation Draft. URL: <a href="https://fidoalliance.org/specs/fido-u2f-v1.1-id-20160915/fido-u2f-raw-message-formats-v1.1-id-20160915.html">https://fidoalliance.org/specs/fido-u2f-v1.1-id-20160915/fido-u2f-raw-message-formats-v1.1-id-20160915.html</a>
    <dt id="biblio-fileapi">[FileAPI]
-   <dd>Marijn Kruisselbrink; Arun Ranganathan. <a href="https://www.w3.org/TR/FileAPI/">File API</a>. 4 June 2021. WD. URL: <a href="https://www.w3.org/TR/FileAPI/">https://www.w3.org/TR/FileAPI/</a>
+   <dd>Marijn Kruisselbrink; Arun Ranganathan. <a href="https://www.w3.org/TR/FileAPI/">File API</a>. 11 September 2019. WD. URL: <a href="https://www.w3.org/TR/FileAPI/">https://www.w3.org/TR/FileAPI/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-iana-cose-algs-reg">[IANA-COSE-ALGS-REG]
@@ -9440,6 +9435,8 @@ for their contributions as our W3C Team Contacts.</p>
    <dd>Simon Stewart; David Burns. <a href="https://www.w3.org/TR/webdriver1/">WebDriver</a>. 5 June 2018. REC. URL: <a href="https://www.w3.org/TR/webdriver1/">https://www.w3.org/TR/webdriver1/</a>
    <dt id="biblio-webidl">[WebIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

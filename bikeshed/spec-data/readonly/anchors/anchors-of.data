@@ -693,8 +693,8 @@ https://www.w3.org/TR/motion-1/#propdef-offset
 -
 offset
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#StopElementOffsetAttribute
@@ -704,8 +704,8 @@ stop
 -
 offset
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#__svg__SVGStopElement__offset
@@ -715,8 +715,8 @@ SVGStopElement
 -
 offset
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#StopElementOffsetAttribute
@@ -726,8 +726,8 @@ stop
 -
 offset
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#__svg__SVGStopElement__offset
@@ -1511,8 +1511,8 @@ https://www.w3.org/TR/webdriver2/#dfn-offsetleft
 -
 offsetof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#offsetof
@@ -1521,8 +1521,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#offsetof
 -
 offsetof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#offsetof

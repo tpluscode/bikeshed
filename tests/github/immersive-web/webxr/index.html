@@ -1106,7 +1106,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
          <li data-md>
           <p>If <var>device</var>’s <a data-link-type="dfn" href="#list-of-supported-modes" id="ref-for-list-of-supported-modes③">list of supported modes</a> does not <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list-contain" id="ref-for-list-contain④">contain</a> <var>mode</var>, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task③">queue a task</a> to <a data-link-type="dfn" href="https://heycam.github.io/webidl/#resolve" id="ref-for-resolve④">resolve</a> <var>promise</var> with <code>false</code> and abort these steps.</p>
          <li data-md>
-          <p><a data-link-type="dfn" href="https://w3c.github.io/permissions/#request-permission-to-use" id="ref-for-request-permission-to-use">request permission to use</a> the <a data-link-type="dfn" href="https://w3c.github.io/permissions/#powerful-feature" id="ref-for-powerful-feature">powerful feature</a> <code class="idl"><a data-link-type="idl" href="#dom-permissionname-xr-session-supported" id="ref-for-dom-permissionname-xr-session-supported">"xr-session-supported"</a></code> with <code class="idl"><a data-link-type="idl" href="#dictdef-xrsessionsupportedpermissiondescriptor" id="ref-for-dictdef-xrsessionsupportedpermissiondescriptor">XRSessionSupportedPermissionDescriptor</a></code> with <code class="idl"><a data-link-type="idl" href="#dom-xrsessionsupportedpermissiondescriptor-mode" id="ref-for-dom-xrsessionsupportedpermissiondescriptor-mode">mode</a></code> equal to <var>mode</var>. If it returns <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied">"denied"</a></code> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task④">queue a task</a> to <a data-link-type="dfn" href="https://heycam.github.io/webidl/#resolve" id="ref-for-resolve⑤">resolve</a> <var>promise</var> with <code>false</code> and abort these steps. <span class="note">See <a href="#issessionsupported-fingerprinting">Fingerprinting considerations</a> for more information.</span></p>
+          <p><a data-link-type="dfn" href="https://w3c.github.io/permissions/#request-permission-to-use" id="ref-for-request-permission-to-use">request permission to use</a> the <a data-link-type="dfn">powerful feature</a> <code class="idl"><a data-link-type="idl" href="#dom-permissionname-xr-session-supported" id="ref-for-dom-permissionname-xr-session-supported">"xr-session-supported"</a></code> with <code class="idl"><a data-link-type="idl" href="#dictdef-xrsessionsupportedpermissiondescriptor" id="ref-for-dictdef-xrsessionsupportedpermissiondescriptor">XRSessionSupportedPermissionDescriptor</a></code> with <code class="idl"><a data-link-type="idl" href="#dom-xrsessionsupportedpermissiondescriptor-mode" id="ref-for-dom-xrsessionsupportedpermissiondescriptor-mode">mode</a></code> equal to <var>mode</var>. If it returns <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied">"denied"</a></code> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task④">queue a task</a> to <a data-link-type="dfn" href="https://heycam.github.io/webidl/#resolve" id="ref-for-resolve⑤">resolve</a> <var>promise</var> with <code>false</code> and abort these steps. <span class="note">See <a href="#issessionsupported-fingerprinting">Fingerprinting considerations</a> for more information.</span></p>
          <li data-md>
           <p><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task⑤">queue a task</a> to <a data-link-type="dfn" href="https://heycam.github.io/webidl/#resolve" id="ref-for-resolve⑥">resolve</a> <var>promise</var> with <code>true</code>.</p>
         </ol>
@@ -1201,7 +1201,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
          <li data-md>
           <p><a data-link-type="dfn" href="#request-the-xr-permission" id="ref-for-request-the-xr-permission">Request the xr permission</a> with <var>descriptor</var> and <var>status</var>.</p>
          <li data-md>
-          <p>If <var>status</var>’ <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state">state</a></code> is <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied①">"denied"</a></code> run the following steps:</p>
+          <p>If <var>status</var>’ <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state">state</a></code> is <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied①">"denied"</a></code> run the following steps:</p>
           <ol>
            <li data-md>
             <p><a data-link-type="dfn" href="https://heycam.github.io/webidl/#reject" id="ref-for-reject⑤">Reject</a> <var>promise</var> with a "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#notsupportederror" id="ref-for-notsupportederror①">NotSupportedError</a></code>" <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-DOMException" id="ref-for-idl-DOMException⑤">DOMException</a></code>.</p>
@@ -1303,40 +1303,8 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
 </pre>
    <ul>
     <li data-md>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode#inline" title="The WebXR Device API&apos;s XRSessionMode enumerated type defines the string values used to identify the possible kinds of session mode that can be used.">XRSessionMode#inline</a></p>
-       <p class="less-than-two-engines-text">In only one current engine.</p>
-       <div class="support">
-        <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android yes"><span>Android WebView</span><span>79+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-       </div>
-      </div>
-     </div>
      <p>A session mode of <dfn class="dfn-paneled idl-code" data-dfn-for="XRSessionMode" data-dfn-type="enum-value" data-export data-lt="&quot;inline&quot;|inline" id="dom-xrsessionmode-inline"><code>inline</code></dfn> indicates that the session’s output will be shown as an element in the HTML document. <code class="idl"><a data-link-type="idl" href="#dom-xrsessionmode-inline" id="ref-for-dom-xrsessionmode-inline④">inline</a></code> session content MUST be displayed in mono (i.e., with a single <a data-link-type="dfn" href="#view" id="ref-for-view①">view</a>). It MAY allow for <a data-link-type="dfn" href="#viewer" id="ref-for-viewer">viewer</a> tracking. User agents MUST allow <code class="idl"><a data-link-type="idl" href="#dom-xrsessionmode-inline" id="ref-for-dom-xrsessionmode-inline⑤">inline</a></code> sessions to be created.</p>
     <li data-md>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode#immersive-vr" title="The WebXR Device API&apos;s XRSessionMode enumerated type defines the string values used to identify the possible kinds of session mode that can be used.">XRSessionMode#immersive-vr</a></p>
-       <p class="less-than-two-engines-text">In only one current engine.</p>
-       <div class="support">
-        <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android yes"><span>Android WebView</span><span>79+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-       </div>
-      </div>
-     </div>
      <p>A session mode of <dfn class="dfn-paneled idl-code" data-dfn-for="XRSessionMode" data-dfn-type="enum-value" data-export data-lt="&quot;immersive-vr&quot;|immersive-vr" id="dom-xrsessionmode-immersive-vr"><code>immersive-vr</code></dfn> indicates that the session’s output will be given <a data-link-type="dfn" href="#exclusive-access" id="ref-for-exclusive-access">exclusive access</a> to the <a data-link-type="dfn" href="#immersive-xr-device" id="ref-for-immersive-xr-device①④">immersive XR device</a> display and that content <b>is not</b> intended to be integrated with the user’s environment.</p>
     <li data-md>
      <p>The behavior of the <dfn class="dfn-paneled idl-code" data-dfn-for="XRSessionMode" data-dfn-type="enum-value" data-export data-lt="&quot;immersive-ar&quot;|immersive-ar" id="dom-xrsessionmode-immersive-ar"><code>immersive-ar</code></dfn> session mode is defined in the <a href="https://immersive-web.github.io/webxr-ar-module/">WebXR AR Module</a> and MUST NOT be added to the <a data-link-type="dfn" href="#immersive-xr-device" id="ref-for-immersive-xr-device①⑤">immersive XR device</a>'s <a data-link-type="dfn" href="#list-of-supported-modes" id="ref-for-list-of-supported-modes⑤">list of supported modes</a> unless the UA implements that module.</p>
@@ -1364,7 +1332,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
      <p>Any <code class="idl"><a data-link-type="idl" href="#enumdef-xrreferencespacetype" id="ref-for-enumdef-xrreferencespacetype">XRReferenceSpaceType</a></code> enum value</p>
    </ul>
    <p>Future iterations of this specification and additional modules may expand the list of accepted <a data-link-type="dfn" href="#feature-descriptor" id="ref-for-feature-descriptor③">feature descriptors</a>.</p>
-   <p class="note" role="note"><span>Note:</span> Features are accepted as an array of <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-any" id="ref-for-idl-any②">any</a></code> values to ensure forwards compatibility. It allows unrecognized optional values to be properly ignored as new <a data-link-type="dfn" href="#feature-descriptor" id="ref-for-feature-descriptor④">feature descriptor</a> types are added.</p>
+   <p class="note" role="note"><span>Note:</span> Features are accepted as an array of <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/screen-orientation/#dom-orientationlocktype-any" id="ref-for-dom-orientationlocktype-any">any</a></code> values to ensure forwards compatibility. It allows unrecognized optional values to be properly ignored as new <a data-link-type="dfn" href="#feature-descriptor" id="ref-for-feature-descriptor④">feature descriptor</a> types are added.</p>
    <p class="note" role="note"><span>Note:</span> Features that can be stringified via <a data-link-type="abstract-op" href="https://tc39.github.io/ecma262/#sec-tostring" id="ref-for-sec-tostring">ToString</a>() will be converted.</p>
    <p>Depending on the <code class="idl"><a data-link-type="idl" href="#enumdef-xrsessionmode" id="ref-for-enumdef-xrsessionmode⑥">XRSessionMode</a></code> requested, certain <a data-link-type="dfn" href="#feature-descriptor" id="ref-for-feature-descriptor⑤">feature descriptors</a> are added to the <code class="idl"><a data-link-type="idl" href="#dom-xrsessioninit-requiredfeatures" id="ref-for-dom-xrsessioninit-requiredfeatures③">requiredFeatures</a></code> or <code class="idl"><a data-link-type="idl" href="#dom-xrsessioninit-optionalfeatures" id="ref-for-dom-xrsessioninit-optionalfeatures③">optionalFeatures</a></code> lists by default. The following table describes the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="default-features">default features</dfn> associated with each session type and feature list:</p>
    <table class="tg">
@@ -1996,7 +1964,8 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRRenderState" data-dfn-type="attribute" data-export id="dom-xrrenderstate-inlineverticalfieldofview"><code>inlineVerticalFieldOfView</code></dfn> attribute defines the default vertical field of view in radians used when computing projection matrices for <code class="idl"><a data-link-type="idl" href="#dom-xrsessionmode-inline" id="ref-for-dom-xrsessionmode-inline①⓪">"inline"</a></code> <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession⑥③">XRSession</a></code>s. The projection matrix calculation also takes into account the aspect ratio of the <a data-link-type="dfn" href="#xrrenderstate-output-canvas" id="ref-for-xrrenderstate-output-canvas⑦">output canvas</a>. This value MUST be <code>null</code> for <a data-link-type="dfn" href="#immersive-session" id="ref-for-immersive-session②⓪">immersive sessions</a>.</p>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRRenderState" data-dfn-type="attribute" data-export id="dom-xrrenderstate-baselayer"><code>baseLayer</code></dfn> attribute defines an <code class="idl"><a data-link-type="idl" href="#xrwebgllayer" id="ref-for-xrwebgllayer④">XRWebGLLayer</a></code> which the <a data-link-type="dfn" href="#xr-compositor" id="ref-for-xr-compositor①">XR compositor</a> will obtain images from.</p>
    <h3 class="heading settled" data-level="4.3" id="animation-frames"><span class="secno">4.3. </span><span class="content">Animation Frames</span><a class="self-link" href="#animation-frames"></a></h3>
-   <div class="mdn-anno wrapped after">
+   <p>The primary way an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession⑥④">XRSession</a></code> provides information about the tracking state of the <a data-link-type="dfn" href="#xrsession-xr-device" id="ref-for-xrsession-xr-device①④">XR device</a> is via callbacks scheduled by calling <code class="idl"><a data-link-type="idl" href="#dom-xrsession-requestanimationframe" id="ref-for-dom-xrsession-requestanimationframe④">requestAnimationFrame()</a></code> on the <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession⑥⑤">XRSession</a></code> instance.</p>
+   <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRFrameRequestCallback" title="The XRFrameRequestCallback is a callback function passed into XRSession.requestAnimationFrame (part of WebXR API) to obtain the current time and the current XRFrame.">XRFrameRequestCallback</a></p>
@@ -2012,7 +1981,6 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
      </div>
     </div>
    </div>
-   <p>The primary way an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession⑥④">XRSession</a></code> provides information about the tracking state of the <a data-link-type="dfn" href="#xrsession-xr-device" id="ref-for-xrsession-xr-device①④">XR device</a> is via callbacks scheduled by calling <code class="idl"><a data-link-type="idl" href="#dom-xrsession-requestanimationframe" id="ref-for-dom-xrsession-requestanimationframe④">requestAnimationFrame()</a></code> on the <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession⑥⑤">XRSession</a></code> instance.</p>
 <pre class="idl highlight def"><c- b>callback</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="callback" data-export id="callbackdef-xrframerequestcallback"><code><c- g>XRFrameRequestCallback</c-></code></dfn> = <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-undefined" id="ref-for-idl-undefined③"><c- b>undefined</c-></a> (<a data-link-type="idl-name" href="https://www.w3.org/TR/hr-time/#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <dfn class="idl-code" data-dfn-for="XRFrameRequestCallback" data-dfn-type="argument" data-export id="dom-xrframerequestcallback-time"><code><c- g>time</c-></code><a class="self-link" href="#dom-xrframerequestcallback-time"></a></dfn>, <a data-link-type="idl-name" href="#xrframe" id="ref-for-xrframe①"><c- n>XRFrame</c-></a> <dfn class="idl-code" data-dfn-for="XRFrameRequestCallback" data-dfn-type="argument" data-export id="dom-xrframerequestcallback-frame"><code><c- g>frame</c-></code><a class="self-link" href="#dom-xrframerequestcallback-frame"></a></dfn>);
 </pre>
    <p>Each <code class="idl"><a data-link-type="idl" href="#callbackdef-xrframerequestcallback" id="ref-for-callbackdef-xrframerequestcallback①">XRFrameRequestCallback</a></code> object has a <dfn class="dfn-paneled" data-dfn-for="XRFrameRequestCallback" data-dfn-type="dfn" data-noexport id="xrframerequestcallback-cancelled">cancelled</dfn> boolean initially set to <code>false</code>.</p>
@@ -2105,7 +2073,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
       <p><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task①⑥">Queue a task</a> to perform the following steps:</p>
       <ol>
        <li data-md>
-        <p>Let <var>now</var> be the <a data-link-type="dfn" href="https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time" id="ref-for-dfn-current-high-resolution-time">current high resolution time</a>.</p>
+        <p>Let <var>now</var> be the <a data-link-type="dfn" href="https://w3c.github.io/hr-time/#dfn-current-high-resolution-time" id="ref-for-dfn-current-high-resolution-time">current high resolution time</a>.</p>
        <li data-md>
         <p>Let <var>frame</var> be <var>session</var>’s <a data-link-type="dfn" href="#xrsession-animation-frame" id="ref-for-xrsession-animation-frame">animation frame</a>.</p>
        <li data-md>
@@ -2596,12 +2564,12 @@ window<c- p>.</c->requestAnimationFrame<c- p>(</c->onWindowAnimationFrame<c- p>)
    <p><code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace④">XRBoundedReferenceSpace</a></code> extends <code class="idl"><a data-link-type="idl" href="#xrreferencespace" id="ref-for-xrreferencespace②④">XRReferenceSpace</a></code> to include <code class="idl"><a data-link-type="idl" href="#dom-xrboundedreferencespace-boundsgeometry" id="ref-for-dom-xrboundedreferencespace-boundsgeometry④">boundsGeometry</a></code>, indicating the pre-configured boundaries of the users space.</p>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext" id="ref-for-SecureContext⑦"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed⑥"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xrboundedreferencespace"><code><c- g>XRBoundedReferenceSpace</c-></code></dfn> : <a data-link-type="idl-name" href="#xrreferencespace" id="ref-for-xrreferencespace②⑤"><c- n>XRReferenceSpace</c-></a> {
-  <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <a class="idl-code" data-link-type="attribute" data-readonly data-type="FrozenArray<DOMPointReadOnly>" href="#dom-xrboundedreferencespace-boundsgeometry" id="ref-for-dom-xrboundedreferencespace-boundsgeometry⑤"><c- g>boundsGeometry</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <a class="idl-code" data-link-type="attribute" data-readonly data-type="FrozenArray<DOMPointReadOnly>" href="#dom-xrboundedreferencespace-boundsgeometry" id="ref-for-dom-xrboundedreferencespace-boundsgeometry⑤"><c- g>boundsGeometry</c-></a>;
 };
 </pre>
    <p>The origin of an <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑤">XRBoundedReferenceSpace</a></code> MUST be positioned at the floor, such that the <code>Y</code> axis equals <code>0</code> at floor level. The <code>X</code> and <code>Z</code> position and orientation are initialized based on the conventions of the underlying platform, typically expected to be near the center of the room facing in a logical forward direction.</p>
    <p class="note" role="note"><span>Note:</span> Other XR platforms sometimes refer to the type of tracking offered by a <code class="idl"><a data-link-type="idl" href="#dom-xrreferencespacetype-bounded-floor" id="ref-for-dom-xrreferencespacetype-bounded-floor⑧">bounded-floor</a></code> reference space as "room scale" tracking. An <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑥">XRBoundedReferenceSpace</a></code> is not intended to describe multi-room spaces, areas with uneven floor levels, or very large open areas. Content that needs to handle those scenarios should use an <code class="idl"><a data-link-type="idl" href="#dom-xrreferencespacetype-unbounded" id="ref-for-dom-xrreferencespacetype-unbounded⑤">unbounded</a></code> reference space.</p>
-   <p>Each <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑦">XRBoundedReferenceSpace</a></code> has a <dfn class="dfn-paneled" data-dfn-for="XRBoundedReferenceSpace" data-dfn-type="dfn" data-noexport id="xrboundedreferencespace-native-bounds-geometry">native bounds geometry</dfn> describing the border around the <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑧">XRBoundedReferenceSpace</a></code>, which the user can expect to safely move within. The polygonal boundary is given as an array of <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly①">DOMPointReadOnly</a></code>s, which represents a loop of points at the edges of the safe space. The points describe offsets from the <a data-link-type="dfn" href="#xrspace-native-origin" id="ref-for-xrspace-native-origin①①">native origin</a> in meters. Points MUST be given in a clockwise order as viewed from above, looking towards the negative end of the Y axis. The <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y">y</a></code> value of each point MUST be <code>0</code> and the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w">w</a></code> value of each point MUST be <code>1</code>. The bounds can be considered to originate at the floor and extend infinitely high. The shape it describes MAY be convex or concave.</p>
+   <p>Each <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑦">XRBoundedReferenceSpace</a></code> has a <dfn class="dfn-paneled" data-dfn-for="XRBoundedReferenceSpace" data-dfn-type="dfn" data-noexport id="xrboundedreferencespace-native-bounds-geometry">native bounds geometry</dfn> describing the border around the <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑧">XRBoundedReferenceSpace</a></code>, which the user can expect to safely move within. The polygonal boundary is given as an array of <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly①">DOMPointReadOnly</a></code>s, which represents a loop of points at the edges of the safe space. The points describe offsets from the <a data-link-type="dfn" href="#xrspace-native-origin" id="ref-for-xrspace-native-origin①①">native origin</a> in meters. Points MUST be given in a clockwise order as viewed from above, looking towards the negative end of the Y axis. The <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y">y</a></code> value of each point MUST be <code>0</code> and the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w">w</a></code> value of each point MUST be <code>1</code>. The bounds can be considered to originate at the floor and extend infinitely high. The shape it describes MAY be convex or concave.</p>
    <p>Each point in the <a data-link-type="dfn" href="#xrboundedreferencespace-native-bounds-geometry" id="ref-for-xrboundedreferencespace-native-bounds-geometry">native bounds geometry</a> MUST be <a data-link-type="dfn" href="#limiting" id="ref-for-limiting">limited</a> to a reasonable distance from the reference space’s <a data-link-type="dfn" href="#xrspace-native-origin" id="ref-for-xrspace-native-origin①②">native origin</a>.</p>
    <p class="note" role="note"><span>Note:</span> It is suggested that points of the <a data-link-type="dfn" href="#xrboundedreferencespace-native-bounds-geometry" id="ref-for-xrboundedreferencespace-native-bounds-geometry①">native bounds geometry</a> be <a data-link-type="dfn" href="#limiting" id="ref-for-limiting①">limited</a> to 15 meters from the <a data-link-type="dfn" href="#xrspace-native-origin" id="ref-for-xrspace-native-origin①③">native origin</a> in all directions.</p>
    <p>Each point in the <a data-link-type="dfn" href="#xrboundedreferencespace-native-bounds-geometry" id="ref-for-xrboundedreferencespace-native-bounds-geometry②">native bounds geometry</a> MUST also be <a data-link-type="dfn" href="#quantization" id="ref-for-quantization">quantized</a> sufficiently to prevent fingerprinting.  For user’s safety, quantized points values MUST NOT fall outside the bounds reported by the platform.</p>
@@ -2622,7 +2590,7 @@ window<c- p>.</c->requestAnimationFrame<c- p>(</c->onWindowAnimationFrame<c- p>)
      </div>
     </div>
    </div>
-   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRBoundedReferenceSpace" data-dfn-type="attribute" data-export id="dom-xrboundedreferencespace-boundsgeometry"><code>boundsGeometry</code></dfn> attribute is an array of <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly②">DOMPointReadOnly</a></code>s such that each entry is equal to the entry in the <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑨">XRBoundedReferenceSpace</a></code>'s <a data-link-type="dfn" href="#xrboundedreferencespace-native-bounds-geometry" id="ref-for-xrboundedreferencespace-native-bounds-geometry④">native bounds geometry</a> premultiplied by the <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-inverse" id="ref-for-dom-xrrigidtransform-inverse①">inverse</a></code> of the <a data-link-type="dfn" href="#xrspace-origin-offset" id="ref-for-xrspace-origin-offset④">origin offset</a>. In other words, it provides the same border in <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace①⓪">XRBoundedReferenceSpace</a></code> coordinates relative to the <a data-link-type="dfn" href="#xrspace-effective-origin" id="ref-for-xrspace-effective-origin①⓪">effective origin</a>.</p>
+   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRBoundedReferenceSpace" data-dfn-type="attribute" data-export id="dom-xrboundedreferencespace-boundsgeometry"><code>boundsGeometry</code></dfn> attribute is an array of <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly②">DOMPointReadOnly</a></code>s such that each entry is equal to the entry in the <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace⑨">XRBoundedReferenceSpace</a></code>'s <a data-link-type="dfn" href="#xrboundedreferencespace-native-bounds-geometry" id="ref-for-xrboundedreferencespace-native-bounds-geometry④">native bounds geometry</a> premultiplied by the <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-inverse" id="ref-for-dom-xrrigidtransform-inverse①">inverse</a></code> of the <a data-link-type="dfn" href="#xrspace-origin-offset" id="ref-for-xrspace-origin-offset④">origin offset</a>. In other words, it provides the same border in <code class="idl"><a data-link-type="idl" href="#xrboundedreferencespace" id="ref-for-xrboundedreferencespace①⓪">XRBoundedReferenceSpace</a></code> coordinates relative to the <a data-link-type="dfn" href="#xrspace-effective-origin" id="ref-for-xrspace-effective-origin①⓪">effective origin</a>.</p>
    <p>If the <a data-link-type="dfn" href="#xrboundedreferencespace-native-bounds-geometry" id="ref-for-xrboundedreferencespace-native-bounds-geometry⑤">native bounds geometry</a> is temporarily unavailable, which may occur for several reasons such as during XR device initialization, extended periods of tracking loss, or movement between pre-configured spaces, the <code class="idl"><a data-link-type="idl" href="#dom-xrboundedreferencespace-boundsgeometry" id="ref-for-dom-xrboundedreferencespace-boundsgeometry⑥">boundsGeometry</a></code> MUST report an empty array.</p>
    <div class="algorithm" data-algorithm="bounded-space-supported">
      To check if <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="bounded-reference-spaces-are-supported">bounded reference spaces are supported</dfn> run the following steps: 
@@ -2661,6 +2629,13 @@ window<c- p>.</c->requestAnimationFrame<c- p>(</c->onWindowAnimationFrame<c- p>)
    <p>A <a data-link-type="dfn" href="#view" id="ref-for-view①②">view</a> has an associated internal <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="view-offset">view offset</dfn>, which is an <code class="idl"><a data-link-type="idl" href="#xrrigidtransform" id="ref-for-xrrigidtransform③">XRRigidTransform</a></code> describing the position and orientation of the <a data-link-type="dfn" href="#view" id="ref-for-view①③">view</a> in the <a data-link-type="dfn" href="#xrsession-viewer-reference-space" id="ref-for-xrsession-viewer-reference-space①">viewer reference space</a>'s <a data-link-type="dfn" href="#xrspace-coordinate-system" id="ref-for-xrspace-coordinate-system⑧">coordinate system</a>.</p>
    <p class="note" role="note"><span>NOTE:</span> There are no constraints on what the view offset might be, and views are allowed to have differing orientations. This can crop up in head-mounted devices with eye displays centered at an angle, and it can also surface itself in more extreme cases like CAVE rendering. Techniques like z-sorting and culling may need to be done per-eye because of this.</p>
    <p>A <a data-link-type="dfn" href="#view" id="ref-for-view①④">view</a> has an associated <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-projection-matrix">projection matrix</dfn> which is a <a data-link-type="dfn" href="#matrix" id="ref-for-matrix">matrix</a> describing the projection to be used when rendering the <a data-link-type="dfn" href="#view" id="ref-for-view①⑤">view</a>, provided by the underlying XR device. The <a data-link-type="dfn" href="#view-projection-matrix" id="ref-for-view-projection-matrix">projection matrix</a> MAY include transformations such as shearing that prevent the projection from being accurately described by a simple frustum.</p>
+   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view①⑥">view</a> has an associated <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-eye">eye</dfn> which is an <code class="idl"><a data-link-type="idl" href="#enumdef-xreye" id="ref-for-enumdef-xreye">XREye</a></code> describing which eye this view is expected to be shown to. If the view does not have an intrinsically associated eye (the display is monoscopic, for example) this value MUST be set to <code class="idl"><a data-link-type="idl" href="#dom-xreye-none" id="ref-for-dom-xreye-none">"none"</a></code>.</p>
+   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view①⑦">view</a> has an <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-active">active</dfn> flag that may change through the lifecycle of an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession⑧⑤">XRSession</a></code>. <a data-link-type="dfn" href="#primary-view" id="ref-for-primary-view">Primary views</a> MUST always have the <a data-link-type="dfn" href="#view-active" id="ref-for-view-active③">active</a> flag set to <code>true</code>.</p>
+   <p class="note" role="note"><span>Note:</span> Many HMDs will request that content render two <a data-link-type="dfn" href="#view" id="ref-for-view①⑧">views</a>, one for the left eye and one for the right, while most magic window devices will only request one <a data-link-type="dfn" href="#view" id="ref-for-view①⑨">view</a>, but applications should never assume a specific view configuration. For example: A magic window device may request two views if it is capable of stereo output, but may revert to requesting a single view for performance reasons if the stereo output mode is turned off. Similarly, HMDs may request more than two views to facilitate a wide field of view or displays of different pixel density.</p>
+   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view②⓪">view</a> has an internal <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-viewport-modifiable">viewport modifiable</dfn> flag that indicates if the viewport scale can be changed by a <code class="idl"><a data-link-type="idl" href="#dom-xrview-requestviewportscale" id="ref-for-dom-xrview-requestviewportscale">requestViewportScale()</a></code> call at this point in the session. It is set to <code>true</code> at the start of an animation frame, and set to <code>false</code> when <code class="idl"><a data-link-type="idl" href="#dom-xrwebgllayer-getviewport" id="ref-for-dom-xrwebgllayer-getviewport">getViewport()</a></code> is called.</p>
+   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view②①">view</a> has an internal <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-requested-viewport-scale">requested viewport scale</dfn> value that represents the requested viewport scale for this view. It is initially set to 1.0, and can be modified by the <code class="idl"><a data-link-type="idl" href="#dom-xrview-requestviewportscale" id="ref-for-dom-xrview-requestviewportscale①">requestViewportScale()</a></code> method if the system supports dynamic viewport scaling.</p>
+   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view②②">view</a> has an internal <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-current-viewport-scale">current viewport scale</dfn> value that represents the current viewport scale for this view as used internally by the system. It is initially set to 1.0. It is updated to match the <a data-link-type="dfn" href="#view-requested-viewport-scale" id="ref-for-view-requested-viewport-scale">requested viewport scale</a> when the viewport change is successfully applied by a <code class="idl"><a data-link-type="idl" href="#dom-xrwebgllayer-getviewport" id="ref-for-dom-xrwebgllayer-getviewport①">getViewport()</a></code> call.</p>
+   <p class="note" role="note"><span>Note:</span> Dynamic viewport scaling allows applications to render to a subset of the full-sized viewport using a scale factor that can be changed every animation frame. This is intended to be efficiently modifiable on a per-frame basis without reallocation. For correct rendering, it’s essential that the XR system and application agree on the active viewport. An application can call <code class="idl"><a data-link-type="idl" href="#dom-xrview-requestviewportscale" id="ref-for-dom-xrview-requestviewportscale②">requestViewportScale()</a></code> for an <code class="idl"><a data-link-type="idl" href="#xrview" id="ref-for-xrview③">XRView</a></code> multiple times within a single animation frame, but the requested scale does not take effect until the application calls <code class="idl"><a data-link-type="idl" href="#dom-xrwebgllayer-getviewport" id="ref-for-dom-xrwebgllayer-getviewport②">getViewport()</a></code> for that view. The first <code>getViewport</code> call in an animation frame applies the change (taking effect immediately for the current animation frame), locks in the view’s current scaled viewport for the remainder of this animation frame, and sets the scale as the new default for future animation frames. Optionally, the system can provide a suggested value through the <code class="idl"><a data-link-type="idl" href="#dom-xrview-recommendedviewportscale" id="ref-for-dom-xrview-recommendedviewportscale">recommendedViewportScale</a></code> attribute based on internal performance heuristics and target framerates.</p>
    <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
@@ -2677,13 +2652,6 @@ window<c- p>.</c->requestAnimationFrame<c- p>(</c->onWindowAnimationFrame<c- p>)
      </div>
     </div>
    </div>
-   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view①⑥">view</a> has an associated <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-eye">eye</dfn> which is an <code class="idl"><a data-link-type="idl" href="#enumdef-xreye" id="ref-for-enumdef-xreye">XREye</a></code> describing which eye this view is expected to be shown to. If the view does not have an intrinsically associated eye (the display is monoscopic, for example) this value MUST be set to <code class="idl"><a data-link-type="idl" href="#dom-xreye-none" id="ref-for-dom-xreye-none">"none"</a></code>.</p>
-   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view①⑦">view</a> has an <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-active">active</dfn> flag that may change through the lifecycle of an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession⑧⑤">XRSession</a></code>. <a data-link-type="dfn" href="#primary-view" id="ref-for-primary-view">Primary views</a> MUST always have the <a data-link-type="dfn" href="#view-active" id="ref-for-view-active③">active</a> flag set to <code>true</code>.</p>
-   <p class="note" role="note"><span>Note:</span> Many HMDs will request that content render two <a data-link-type="dfn" href="#view" id="ref-for-view①⑧">views</a>, one for the left eye and one for the right, while most magic window devices will only request one <a data-link-type="dfn" href="#view" id="ref-for-view①⑨">view</a>, but applications should never assume a specific view configuration. For example: A magic window device may request two views if it is capable of stereo output, but may revert to requesting a single view for performance reasons if the stereo output mode is turned off. Similarly, HMDs may request more than two views to facilitate a wide field of view or displays of different pixel density.</p>
-   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view②⓪">view</a> has an internal <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-viewport-modifiable">viewport modifiable</dfn> flag that indicates if the viewport scale can be changed by a <code class="idl"><a data-link-type="idl" href="#dom-xrview-requestviewportscale" id="ref-for-dom-xrview-requestviewportscale">requestViewportScale()</a></code> call at this point in the session. It is set to <code>true</code> at the start of an animation frame, and set to <code>false</code> when <code class="idl"><a data-link-type="idl" href="#dom-xrwebgllayer-getviewport" id="ref-for-dom-xrwebgllayer-getviewport">getViewport()</a></code> is called.</p>
-   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view②①">view</a> has an internal <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-requested-viewport-scale">requested viewport scale</dfn> value that represents the requested viewport scale for this view. It is initially set to 1.0, and can be modified by the <code class="idl"><a data-link-type="idl" href="#dom-xrview-requestviewportscale" id="ref-for-dom-xrview-requestviewportscale①">requestViewportScale()</a></code> method if the system supports dynamic viewport scaling.</p>
-   <p>A <a data-link-type="dfn" href="#view" id="ref-for-view②②">view</a> has an internal <dfn class="dfn-paneled" data-dfn-for="view" data-dfn-type="dfn" data-noexport id="view-current-viewport-scale">current viewport scale</dfn> value that represents the current viewport scale for this view as used internally by the system. It is initially set to 1.0. It is updated to match the <a data-link-type="dfn" href="#view-requested-viewport-scale" id="ref-for-view-requested-viewport-scale">requested viewport scale</a> when the viewport change is successfully applied by a <code class="idl"><a data-link-type="idl" href="#dom-xrwebgllayer-getviewport" id="ref-for-dom-xrwebgllayer-getviewport①">getViewport()</a></code> call.</p>
-   <p class="note" role="note"><span>Note:</span> Dynamic viewport scaling allows applications to render to a subset of the full-sized viewport using a scale factor that can be changed every animation frame. This is intended to be efficiently modifiable on a per-frame basis without reallocation. For correct rendering, it’s essential that the XR system and application agree on the active viewport. An application can call <code class="idl"><a data-link-type="idl" href="#dom-xrview-requestviewportscale" id="ref-for-dom-xrview-requestviewportscale②">requestViewportScale()</a></code> for an <code class="idl"><a data-link-type="idl" href="#xrview" id="ref-for-xrview③">XRView</a></code> multiple times within a single animation frame, but the requested scale does not take effect until the application calls <code class="idl"><a data-link-type="idl" href="#dom-xrwebgllayer-getviewport" id="ref-for-dom-xrwebgllayer-getviewport②">getViewport()</a></code> for that view. The first <code>getViewport</code> call in an animation frame applies the change (taking effect immediately for the current animation frame), locks in the view’s current scaled viewport for the remainder of this animation frame, and sets the scale as the new default for future animation frames. Optionally, the system can provide a suggested value through the <code class="idl"><a data-link-type="idl" href="#dom-xrview-recommendedviewportscale" id="ref-for-dom-xrview-recommendedviewportscale">recommendedViewportScale</a></code> attribute based on internal performance heuristics and target framerates.</p>
 <pre class="idl highlight def"><c- b>enum</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="enum" data-export id="enumdef-xreye"><code><c- g>XREye</c-></code></dfn> {
   <dfn class="dfn-paneled idl-code" data-dfn-for="XREye" data-dfn-type="enum-value" data-export id="dom-xreye-none"><code><c- s>"none"</c-></code></dfn>,
   <dfn class="idl-code" data-dfn-for="XREye" data-dfn-type="enum-value" data-export id="dom-xreye-left"><code><c- s>"left"</c-></code><a class="self-link" href="#dom-xreye-left"></a></dfn>,
@@ -2980,12 +2948,12 @@ window<c- p>.</c->requestAnimationFrame<c- p>(</c->onWindowAnimationFrame<c- p>)
    </div>
    <h2 class="heading settled" data-level="8" id="geometricprimitives"><span class="secno">8. </span><span class="content">Geometric Primitives</span><a class="self-link" href="#geometricprimitives"></a></h2>
    <h3 class="heading settled" data-level="8.1" id="matrices"><span class="secno">8.1. </span><span class="content">Matrices</span><a class="self-link" href="#matrices"></a></h3>
-   <p>WebXR provides various transforms in the form of <dfn class="dfn-paneled" data-dfn-type="dfn" data-lt="matrix" data-noexport id="matrix">matrices</dfn>. WebXR uses the WebGL conventions when communicating matrices, in which 4x4 matrices are given as 16 element <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array①">Float32Array</a></code>s with column major storage, and are applied to column vectors by premultiplying the matrix from the left. They may be passed directly to WebGL’s <code class="idl"><a data-link-type="idl" href="https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.14.10" id="ref-for-5.14.10">uniformMatrix4fv</a></code> function, used to create an equivalent <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dommatrix" id="ref-for-dommatrix">DOMMatrix</a></code>, or used with a variety of third party math libraries.</p>
+   <p>WebXR provides various transforms in the form of <dfn class="dfn-paneled" data-dfn-type="dfn" data-lt="matrix" data-noexport id="matrix">matrices</dfn>. WebXR uses the WebGL conventions when communicating matrices, in which 4x4 matrices are given as 16 element <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array①">Float32Array</a></code>s with column major storage, and are applied to column vectors by premultiplying the matrix from the left. They may be passed directly to WebGL’s <code class="idl"><a data-link-type="idl" href="https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.14.10" id="ref-for-5.14.10">uniformMatrix4fv</a></code> function, used to create an equivalent <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dommatrix" id="ref-for-dommatrix">DOMMatrix</a></code>, or used with a variety of third party math libraries.</p>
    <div class="example" id="example-2a96dddb">
     <a class="self-link" href="#example-2a96dddb"></a> Matrices returned from the WebXR Device API will be a 16 element <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array②">Float32Array</a></code> laid out like so: 
 <pre>[a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15]
 </pre>
-    <p>Applying this matrix as a transform to a column vector specified as a <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly③">DOMPointReadOnly</a></code> like so:</p>
+    <p>Applying this matrix as a transform to a column vector specified as a <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly③">DOMPointReadOnly</a></code> like so:</p>
 <pre>{x:X, y:Y, z:Z, w:1}</pre>
     <p>Produces the following result:</p>
 <pre>a0 a4 a8  a12  *  X  =  a0 * X + a4 * Y +  a8 * Z + a12
@@ -3028,9 +2996,9 @@ a3 a7 a11 a15     1     a3 * X + a7 * Y + a11 * Z + a15
    <p>An <code class="idl"><a data-link-type="idl" href="#xrrigidtransform" id="ref-for-xrrigidtransform⑧">XRRigidTransform</a></code> contains an <dfn class="dfn-paneled" data-dfn-for="XRRigidTransform" data-dfn-type="dfn" data-noexport id="xrrigidtransform-internal-matrix">internal matrix</dfn> which is a <a data-link-type="dfn" href="#matrix" id="ref-for-matrix②">matrix</a>.</p>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext" id="ref-for-SecureContext①⓪"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed⑨"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xrrigidtransform"><code><c- g>XRRigidTransform</c-></code></dfn> {
-  <a class="idl-code" data-link-type="constructor" href="#dom-xrrigidtransform-xrrigidtransform" id="ref-for-dom-xrrigidtransform-xrrigidtransform"><c- g>constructor</c-></a>(<c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit" id="ref-for-dictdef-dompointinit"><c- n>DOMPointInit</c-></a> <dfn class="idl-code" data-dfn-for="XRRigidTransform/XRRigidTransform(position, orientation), XRRigidTransform/constructor(position, orientation), XRRigidTransform/XRRigidTransform(position), XRRigidTransform/constructor(position), XRRigidTransform/XRRigidTransform(), XRRigidTransform/constructor()" data-dfn-type="argument" data-export id="dom-xrrigidtransform-xrrigidtransform-position-orientation-position"><code><c- g>position</c-></code><a class="self-link" href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-position"></a></dfn> = {}, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit" id="ref-for-dictdef-dompointinit①"><c- n>DOMPointInit</c-></a> <dfn class="idl-code" data-dfn-for="XRRigidTransform/XRRigidTransform(position, orientation), XRRigidTransform/constructor(position, orientation), XRRigidTransform/XRRigidTransform(position), XRRigidTransform/constructor(position), XRRigidTransform/XRRigidTransform(), XRRigidTransform/constructor()" data-dfn-type="argument" data-export id="dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation"><code><c- g>orientation</c-></code><a class="self-link" href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation"></a></dfn> = {});
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑤"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly④"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑤"><c- g>position</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑥"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly⑤"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑤"><c- g>orientation</c-></a>;
+  <a class="idl-code" data-link-type="constructor" href="#dom-xrrigidtransform-xrrigidtransform" id="ref-for-dom-xrrigidtransform-xrrigidtransform"><c- g>constructor</c-></a>(<c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dictdef-dompointinit" id="ref-for-dictdef-dompointinit"><c- n>DOMPointInit</c-></a> <dfn class="idl-code" data-dfn-for="XRRigidTransform/XRRigidTransform(position, orientation), XRRigidTransform/constructor(position, orientation), XRRigidTransform/XRRigidTransform(position), XRRigidTransform/constructor(position), XRRigidTransform/XRRigidTransform(), XRRigidTransform/constructor()" data-dfn-type="argument" data-export id="dom-xrrigidtransform-xrrigidtransform-position-orientation-position"><code><c- g>position</c-></code><a class="self-link" href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-position"></a></dfn> = {}, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dictdef-dompointinit" id="ref-for-dictdef-dompointinit①"><c- n>DOMPointInit</c-></a> <dfn class="idl-code" data-dfn-for="XRRigidTransform/XRRigidTransform(position, orientation), XRRigidTransform/constructor(position, orientation), XRRigidTransform/XRRigidTransform(position), XRRigidTransform/constructor(position), XRRigidTransform/XRRigidTransform(), XRRigidTransform/constructor()" data-dfn-type="argument" data-export id="dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation"><code><c- g>orientation</c-></code><a class="self-link" href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation"></a></dfn> = {});
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑤"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly④"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑤"><c- g>position</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑥"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly⑤"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑤"><c- g>orientation</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array③"><c- b>Float32Array</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="Float32Array" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix"><c- g>matrix</c-></a>;
   [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑦"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#xrrigidtransform" id="ref-for-xrrigidtransform⑨"><c- n>XRRigidTransform</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="XRRigidTransform" href="#dom-xrrigidtransform-inverse" id="ref-for-dom-xrrigidtransform-inverse②"><c- g>inverse</c-></a>;
 };
@@ -3057,21 +3025,21 @@ a3 a7 a11 a15     1     a3 * X + a7 * Y + a11 * Z + a15
      <li data-md>
       <p>Let <var>transform</var> be a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①③">new</a> <code class="idl"><a data-link-type="idl" href="#xrrigidtransform" id="ref-for-xrrigidtransform①⓪">XRRigidTransform</a></code> in the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#current" id="ref-for-current">current realm</a>.</p>
      <li data-md>
-      <p>Let <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑥">position</a></code> be a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①④">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly⑥">DOMPointReadOnly</a></code> in the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#current" id="ref-for-current①">current realm</a>.</p>
+      <p>Let <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑥">position</a></code> be a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①④">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly⑥">DOMPointReadOnly</a></code> in the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#current" id="ref-for-current①">current realm</a>.</p>
      <li data-md>
-      <p>If <var>position</var>’s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w①">w</a></code> value is not <code>1.0</code>, throw a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#exceptiondef-typeerror" id="ref-for-exceptiondef-typeerror">TypeError</a></code> and abort these steps.</p>
+      <p>If <var>position</var>’s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w①">w</a></code> value is not <code>1.0</code>, throw a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#exceptiondef-typeerror" id="ref-for-exceptiondef-typeerror">TypeError</a></code> and abort these steps.</p>
      <li data-md>
       <p>If one or more of <var>position</var>’s or <var>orientation</var>’s values is <code>NaN</code> or another non-finite number such as <code>infinity</code>, throw a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#exceptiondef-typeerror" id="ref-for-exceptiondef-typeerror①">TypeError</a></code> and abort these steps.</p>
      <li data-md>
-      <p>Set <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑦">position</a></code>’s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x">x</a></code> value to <var>position</var>’s x dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y①">y</a></code> value to <var>position</var>’s y dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z">z</a></code> value to <var>position</var>’s z dictionary member and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w②">w</a></code> value to <var>position</var>’s w dictionary member.</p>
+      <p>Set <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑦">position</a></code>’s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x">x</a></code> value to <var>position</var>’s x dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y①">y</a></code> value to <var>position</var>’s y dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z">z</a></code> value to <var>position</var>’s z dictionary member and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w②">w</a></code> value to <var>position</var>’s w dictionary member.</p>
      <li data-md>
-      <p>Let <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑥">orientation</a></code> be a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①⑤">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly⑦">DOMPointReadOnly</a></code> in the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#current" id="ref-for-current②">current realm</a>.</p>
+      <p>Let <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑥">orientation</a></code> be a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①⑤">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly⑦">DOMPointReadOnly</a></code> in the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#current" id="ref-for-current②">current realm</a>.</p>
      <li data-md>
-      <p>Set <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑦">orientation</a></code>’s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x①">x</a></code> value to <var>orientation</var>’s x dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y②">y</a></code> value to <var>orientation</var>’s y dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z①">z</a></code> value to <var>orientation</var>’s z dictionary member and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w③">w</a></code> value to <var>orientation</var>’s w dictionary member.</p>
+      <p>Set <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑦">orientation</a></code>’s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x①">x</a></code> value to <var>orientation</var>’s x dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y②">y</a></code> value to <var>orientation</var>’s y dictionary member, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z①">z</a></code> value to <var>orientation</var>’s z dictionary member and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w③">w</a></code> value to <var>orientation</var>’s w dictionary member.</p>
      <li data-md>
       <p>Let <var>transform</var>’s <a data-link-type="dfn" href="#xrrigidtransform-internal-matrix" id="ref-for-xrrigidtransform-internal-matrix">internal matrix</a> be <code>null</code>.</p>
      <li data-md>
-      <p><a data-link-type="dfn" href="#normalize" id="ref-for-normalize">Normalize</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x②">x</a></code>, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y③">y</a></code>, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z②">z</a></code>, and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w④">w</a></code> components of <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑧">orientation</a></code>.</p>
+      <p><a data-link-type="dfn" href="#normalize" id="ref-for-normalize">Normalize</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x②">x</a></code>, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y③">y</a></code>, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z②">z</a></code>, and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w④">w</a></code> components of <var>transform</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation⑧">orientation</a></code>.</p>
      <li data-md>
       <p>Return <var>transform</var>.</p>
     </ol>
@@ -3092,7 +3060,7 @@ a3 a7 a11 a15     1     a3 * X + a7 * Y + a11 * Z + a15
      </div>
     </div>
    </div>
-   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRRigidTransform" data-dfn-type="attribute" data-export id="dom-xrrigidtransform-position"><code>position</code></dfn> attribute is a 3-dimensional point, given in meters, describing the translation component of the transform. The <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑧">position</a></code>'s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w⑤">w</a></code> attribute MUST be <code>1.0</code>.</p>
+   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRRigidTransform" data-dfn-type="attribute" data-export id="dom-xrrigidtransform-position"><code>position</code></dfn> attribute is a 3-dimensional point, given in meters, describing the translation component of the transform. The <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position⑧">position</a></code>'s <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w⑤">w</a></code> attribute MUST be <code>1.0</code>.</p>
    <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
@@ -3176,9 +3144,9 @@ a3 a7 a11 a15     1     a3 * X + a7 * Y + a11 * Z + a15
      <li data-md>
       <p>Set <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix①">matrix</a></code> to a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①⑧">new</a> <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array⑤">Float32Array</a></code> in <var>realm</var>, the result of premultiplying <var>B</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix②">matrix</a></code> from the left onto <var>A</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix③">matrix</a></code>.</p>
      <li data-md>
-      <p>Set <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation①⑥">orientation</a></code> to a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①⑨">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly⑧">DOMPointReadOnly</a></code> in <var>realm</var>, the quaternion that describes the rotation indicated by the top left 3x3 sub-matrix of <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix④">matrix</a></code>.</p>
+      <p>Set <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-orientation" id="ref-for-dom-xrrigidtransform-orientation①⑥">orientation</a></code> to a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new①⑨">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly⑧">DOMPointReadOnly</a></code> in <var>realm</var>, the quaternion that describes the rotation indicated by the top left 3x3 sub-matrix of <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix④">matrix</a></code>.</p>
      <li data-md>
-      <p>Set <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position①⑤">position</a></code> to  a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new②⓪">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly⑨">DOMPointReadOnly</a></code> in <var>realm</var>, the vector given by the fourth column of <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix⑤">matrix</a></code>.</p>
+      <p>Set <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-position" id="ref-for-dom-xrrigidtransform-position①⑤">position</a></code> to  a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#new" id="ref-for-new②⓪">new</a> <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly⑨">DOMPointReadOnly</a></code> in <var>realm</var>, the vector given by the fourth column of <var>result</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrrigidtransform-matrix" id="ref-for-dom-xrrigidtransform-matrix⑤">matrix</a></code>.</p>
      <li data-md>
       <p>Return <var>result</var>.</p>
     </ol>
@@ -3206,8 +3174,8 @@ a3 a7 a11 a15     1     a3 * X + a7 * Y + a11 * Z + a15
    <p>An <code class="idl"><a data-link-type="idl" href="#xrpose" id="ref-for-xrpose⑥">XRPose</a></code> describes a position and orientation in space relative to an <code class="idl"><a data-link-type="idl" href="#xrspace" id="ref-for-xrspace①⑧">XRSpace</a></code>.</p>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext" id="ref-for-SecureContext①①"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed①⓪"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xrpose"><code><c- g>XRPose</c-></code></dfn> {
   [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑧"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#xrrigidtransform" id="ref-for-xrrigidtransform②⓪"><c- n>XRRigidTransform</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="XRRigidTransform" href="#dom-xrpose-transform" id="ref-for-dom-xrpose-transform②"><c- g>transform</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑨"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly①⓪"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-linearvelocity" id="ref-for-dom-xrpose-linearvelocity③"><c- g>linearVelocity</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject①⓪"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly①①"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-angularvelocity" id="ref-for-dom-xrpose-angularvelocity③"><c- g>angularVelocity</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject⑨"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly①⓪"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-linearvelocity" id="ref-for-dom-xrpose-linearvelocity③"><c- g>linearVelocity</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject①⓪"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly①①"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-angularvelocity" id="ref-for-dom-xrpose-angularvelocity③"><c- g>angularVelocity</c-></a>;
 
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean" id="ref-for-idl-boolean①"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="boolean" href="#dom-xrpose-emulatedposition" id="ref-for-dom-xrpose-emulatedposition⑥"><c- g>emulatedPosition</c-></a>;
 };
@@ -3575,6 +3543,61 @@ a3 a7 a11 a15     1     a3 * X + a7 * Y + a11 * Z + a15
     </div>
    </div>
    <p>An <code class="idl"><a data-link-type="idl" href="#xrinputsourcearray" id="ref-for-xrinputsourcearray①">XRInputSourceArray</a></code> represents a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list" id="ref-for-list①⑦">list</a> of <code class="idl"><a data-link-type="idl" href="#xrinputsource" id="ref-for-xrinputsource①③">XRInputSource</a></code>s. It is used in favor of a <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-frozen-array-type" id="ref-for-dfn-frozen-array-type">frozen array type</a> when the contents of the <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list" id="ref-for-list①⑧">list</a> are expected to change over time, such as with the <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession①⓪④">XRSession</a></code> <code class="idl"><a data-link-type="idl" href="#dom-xrsession-inputsources" id="ref-for-dom-xrsession-inputsources②">inputSources</a></code> attribute.</p>
+   <div class="mdn-anno wrapped">
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray/entries" title="The XRInputSourceArray interface&apos;s entries() method returns a JavaScript iterator which can then be used to iterate over the key/value pairs in the input source array.">XRInputSourceArray/entries</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray/forEach" title="The XRInputSourceArray method forEach() executes the specified callback once for each input source in the array, starting at index 0 and progressing until the end of the list.">XRInputSourceArray/forEach</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray/keys" title="The keys() method in the XRInputSourceArray interface returns a JavaScript iterator which can then be used to iterate over the keys used to reference each item in the array of input sources.">XRInputSourceArray/keys</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceArray/values" title="The XRInputSourceArray method values() returns a JavaScript iterator that can walk over the list of XRInputSource objects contained in the array, from first to last.">XRInputSourceArray/values</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+     </div>
+    </div>
+   </div>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext" id="ref-for-SecureContext①④"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed①③"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xrinputsourcearray"><code><c- g>XRInputSourceArray</c-></code></dfn> {
   <c- b>iterable</c->&lt;<a data-link-type="idl-name" href="#xrinputsource" id="ref-for-xrinputsource①④"><c- n>XRInputSource</c-></a>>;
@@ -4222,10 +4245,11 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
    <h2 class="heading settled" data-level="12" id="events"><span class="secno">12. </span><span class="content">Events</span><a class="self-link" href="#events"></a></h2>
    <p>The <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source">task source</a> for all <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task③③">tasks queued</a> in this specification is the <dfn data-dfn-type="dfn" data-export id="xr-task-source">XR task source<a class="self-link" href="#xr-task-source"></a></dfn>, unless otherwise specified.</p>
    <h3 class="heading settled" data-level="12.1" id="xrsessionevent-interface"><span class="secno">12.1. </span><span class="content">XRSessionEvent</span><a class="self-link" href="#xrsessionevent-interface"></a></h3>
-   <div class="mdn-anno wrapped after">
+   <p><code class="idl"><a data-link-type="idl" href="#xrsessionevent" id="ref-for-xrsessionevent①">XRSessionEvent</a></code>s are fired to indicate changes to the state of an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession①①⑤">XRSession</a></code>.</p>
+   <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent" title="The WebXR Device API&apos;s XRSessionEvent interface describes an event which indicates the change of the state of an XRSession.">XRSessionEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/XRSessionEvent" title="The WebXR Device API&apos;s XRSessionEvent() constructor creates and returns a new XRSessionEvent object.">XRSessionEvent/XRSessionEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4237,12 +4261,8 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
       <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
-   </div>
-   <p><code class="idl"><a data-link-type="idl" href="#xrsessionevent" id="ref-for-xrsessionevent①">XRSessionEvent</a></code>s are fired to indicate changes to the state of an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession①①⑤">XRSession</a></code>.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent/XRSessionEvent" title="The WebXR Device API&apos;s XRSessionEvent() constructor creates and returns a new XRSessionEvent object.">XRSessionEvent/XRSessionEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRSessionEvent" title="The WebXR Device API&apos;s XRSessionEvent interface describes an event which indicates the change of the state of an XRSession.">XRSessionEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4283,10 +4303,11 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
    </div>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRSessionEvent" data-dfn-type="attribute" data-export id="dom-xrsessionevent-session"><code>session</code></dfn> attribute indicates the <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession①①⑧">XRSession</a></code> that generated the event.</p>
    <h3 class="heading settled" data-level="12.2" id="xrinputsourceevent-interface"><span class="secno">12.2. </span><span class="content">XRInputSourceEvent</span><a class="self-link" href="#xrinputsourceevent-interface"></a></h3>
-   <div class="mdn-anno wrapped after">
+   <p><code class="idl"><a data-link-type="idl" href="#xrinputsourceevent" id="ref-for-xrinputsourceevent②">XRInputSourceEvent</a></code>s are fired to indicate changes to the state of an <code class="idl"><a data-link-type="idl" href="#xrinputsource" id="ref-for-xrinputsource①⑧">XRInputSource</a></code>.</p>
+   <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent" title="The WebXR Device API&apos;s XRInputSourceEvent interface describes an event which has occurred on a WebXR user input device such as a hand controller, gaze tracking system, or motion tracking system.">XRInputSourceEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/XRInputSourceEvent" title="The XRInputSourceEvent() constructor creates and returns a new XRInputSourceEvent object describing an event (state change) which has occurred on a WebXR user input device represented by an XRInputSource.">XRInputSourceEvent/XRInputSourceEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4298,12 +4319,8 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
       <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
-   </div>
-   <p><code class="idl"><a data-link-type="idl" href="#xrinputsourceevent" id="ref-for-xrinputsourceevent②">XRInputSourceEvent</a></code>s are fired to indicate changes to the state of an <code class="idl"><a data-link-type="idl" href="#xrinputsource" id="ref-for-xrinputsource①⑧">XRInputSource</a></code>.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent/XRInputSourceEvent" title="The XRInputSourceEvent() constructor creates and returns a new XRInputSourceEvent object describing an event (state change) which has occurred on a WebXR user input device represented by an XRInputSource.">XRInputSourceEvent/XRInputSourceEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourceEvent" title="The WebXR Device API&apos;s XRInputSourceEvent interface describes an event which has occurred on a WebXR user input device such as a hand controller, gaze tracking system, or motion tracking system.">XRInputSourceEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4378,10 +4395,11 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
     </ol>
    </div>
    <h3 class="heading settled" data-level="12.3" id="xrinputsourceschangeevent-interface"><span class="secno">12.3. </span><span class="content">XRInputSourcesChangeEvent</span><a class="self-link" href="#xrinputsourceschangeevent-interface"></a></h3>
-   <div class="mdn-anno wrapped after">
+   <p><code class="idl"><a data-link-type="idl" href="#xrinputsourceschangeevent" id="ref-for-xrinputsourceschangeevent④">XRInputSourcesChangeEvent</a></code>s are fired to indicate changes to the <code class="idl"><a data-link-type="idl" href="#xrinputsource" id="ref-for-xrinputsource②③">XRInputSource</a></code>s that are available to an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession①①⑨">XRSession</a></code>.</p>
+   <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent" title="The WebXR Device API interface XRInputSourcesChangeEvent is used to represent the inputsourceschange event sent to an XRSession when the set of available WebXR input controllers changes.">XRInputSourcesChangeEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/XRInputSourcesChangeEvent" title="The XRInputSourcesChangeEvent() constructor creates and returns a new XRInputSourcesChangeEvent object, representing an update to the list of available WebXR input devices.">XRInputSourcesChangeEvent/XRInputSourcesChangeEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4393,12 +4411,8 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
       <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
-   </div>
-   <p><code class="idl"><a data-link-type="idl" href="#xrinputsourceschangeevent" id="ref-for-xrinputsourceschangeevent④">XRInputSourcesChangeEvent</a></code>s are fired to indicate changes to the <code class="idl"><a data-link-type="idl" href="#xrinputsource" id="ref-for-xrinputsource②③">XRInputSource</a></code>s that are available to an <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession①①⑨">XRSession</a></code>.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent/XRInputSourcesChangeEvent" title="The XRInputSourcesChangeEvent() constructor creates and returns a new XRInputSourcesChangeEvent object, representing an update to the list of available WebXR input devices.">XRInputSourcesChangeEvent/XRInputSourcesChangeEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRInputSourcesChangeEvent" title="The WebXR Device API interface XRInputSourcesChangeEvent is used to represent the inputsourceschange event sent to an XRSession when the set of available WebXR input controllers changes.">XRInputSourcesChangeEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4478,10 +4492,11 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
    </div>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRInputSourcesChangeEvent" data-dfn-type="attribute" data-export id="dom-xrinputsourceschangeevent-removed"><code>removed</code></dfn> attribute is a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list" id="ref-for-list②②">list</a> of <code class="idl"><a data-link-type="idl" href="#xrinputsource" id="ref-for-xrinputsource②⑨">XRInputSource</a></code>s that were removed from the <code class="idl"><a data-link-type="idl" href="#xrsession" id="ref-for-xrsession①②④">XRSession</a></code> at the time of the event.</p>
    <h3 class="heading settled" data-level="12.4" id="xrreferencespaceevent-interface"><span class="secno">12.4. </span><span class="content">XRReferenceSpaceEvent</span><a class="self-link" href="#xrreferencespaceevent-interface"></a></h3>
-   <div class="mdn-anno wrapped after">
+   <p><code class="idl"><a data-link-type="idl" href="#xrreferencespaceevent" id="ref-for-xrreferencespaceevent">XRReferenceSpaceEvent</a></code>s are fired to indicate changes to the state of an <code class="idl"><a data-link-type="idl" href="#xrreferencespace" id="ref-for-xrreferencespace②⑨">XRReferenceSpace</a></code>.</p>
+   <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent" title="The WebXR Device API interface XRReferenceSpaceEvent represents an event sent to an XRReferenceSpace. Currently, the only event that uses this type is the reset event.">XRReferenceSpaceEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/XRReferenceSpaceEvent" title="The XRReferenceSpaceEvent() constructor is used to create a new XRReferenceSpaceEvent object, which represents an event regarding the state of a WebXR reference space object, XRReferenceSpace.">XRReferenceSpaceEvent/XRReferenceSpaceEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4493,12 +4508,8 @@ glCanvas<c- p>.</c->addEventListener<c- p>(</c-><c- u>"webglcontextrestored"</c-
       <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>79+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>11.2+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
-   </div>
-   <p><code class="idl"><a data-link-type="idl" href="#xrreferencespaceevent" id="ref-for-xrreferencespaceevent">XRReferenceSpaceEvent</a></code>s are fired to indicate changes to the state of an <code class="idl"><a data-link-type="idl" href="#xrreferencespace" id="ref-for-xrreferencespace②⑨">XRReferenceSpace</a></code>.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent/XRReferenceSpaceEvent" title="The XRReferenceSpaceEvent() constructor is used to create a new XRReferenceSpaceEvent object, which represents an event regarding the state of a WebXR reference space object, XRReferenceSpace.">XRReferenceSpaceEvent/XRReferenceSpaceEvent</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceEvent" title="The WebXR Device API interface XRReferenceSpaceEvent represents an event sent to an XRReferenceSpace. Currently, the only event that uses this type is the reset event.">XRReferenceSpaceEvent</a></p>
      <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
       <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>79+</span></span>
@@ -4856,7 +4867,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <p>Given that the API describes hardware available to the user and its capabilities it will inevitably provide additional surface area for fingerprinting. While it’s impossible to completely avoid this, user agents should take steps to mitigate the issue. This spec limits reporting of available hardware to only a single device at a time, which prevents using the rare cases of multiple headsets being connected as a fingerprinting signal. Also, the devices that are reported have no string identifiers and expose very little information about the devices capabilities until an XRSession is created, which requires additional protections when <a data-link-type="dfn" href="#sensitive-information" id="ref-for-sensitive-information⑨">sensitive information</a> will be exposed.</p>
    <h3 class="heading settled" data-level="13.9" id="issessionsupported-fingerprinting"><span class="secno">13.9. </span><span class="content">Fingerprinting considerations of <code class="idl"><a data-link-type="idl" href="#dom-xrsystem-issessionsupported" id="ref-for-dom-xrsystem-issessionsupported⑥">isSessionSupported()</a></code></span><a class="self-link" href="#issessionsupported-fingerprinting"></a></h3>
     Because <code class="idl"><a data-link-type="idl" href="#dom-xrsystem-issessionsupported" id="ref-for-dom-xrsystem-issessionsupported⑦">isSessionSupported()</a></code> can be called without user activation it may be used as a fingerprinting vector. 
-   <p><dfn class="dfn-paneled idl-code" data-dfn-for="PermissionName" data-dfn-type="enum-value" data-export id="dom-permissionname-xr-session-supported"><code>"xr-session-supported"</code></dfn> <a data-link-type="dfn" href="https://w3c.github.io/permissions/#powerful-feature" id="ref-for-powerful-feature①">powerful feature</a> gates access to the <code class="idl"><a data-link-type="idl" href="#dom-xrsystem-issessionsupported" id="ref-for-dom-xrsystem-issessionsupported⑧">isSessionSupported()</a></code> API.</p>
+   <p><dfn class="dfn-paneled idl-code" data-dfn-for="PermissionName" data-dfn-type="enum-value" data-export id="dom-permissionname-xr-session-supported"><code>"xr-session-supported"</code></dfn> <a data-link-type="dfn">powerful feature</a> gates access to the <code class="idl"><a data-link-type="idl" href="#dom-xrsystem-issessionsupported" id="ref-for-dom-xrsystem-issessionsupported⑧">isSessionSupported()</a></code> API.</p>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-permissionname-xr-session-supported" id="ref-for-dom-permissionname-xr-session-supported①">"xr-session-supported"</a></code>’s permission-related algorithms and types are defined as follows:</p>
    <dl>
     <dt><a data-link-type="dfn" href="https://w3c.github.io/permissions/#permission-descriptor-type" id="ref-for-permission-descriptor-type">permission descriptor type</a>
@@ -4912,7 +4923,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <p class="note" role="note"><span>Note:</span> If the document’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#concept-origin" id="ref-for-concept-origin⑤">origin</a> is not allowed to use the <code>"xr-spatial-tracking"</code> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy" id="ref-for-concept-document-permissions-policy①">permissions policy</a> any <a data-link-type="dfn" href="#immersive-session" id="ref-for-immersive-session③③">immersive sessions</a> will be blocked, because all <a data-link-type="dfn" href="#immersive-session" id="ref-for-immersive-session③④">immersive sessions</a> require some use of spatial tracking. <a data-link-type="dfn" href="#inline-session" id="ref-for-inline-session⑤">Inline sessions</a> will still be allowed, but restricted to only using the <code class="idl"><a data-link-type="idl" href="#dom-xrreferencespacetype-viewer" id="ref-for-dom-xrreferencespacetype-viewer⑥">"viewer"</a></code> <code class="idl"><a data-link-type="idl" href="#xrreferencespace" id="ref-for-xrreferencespace③⑧">XRReferenceSpace</a></code>.</p>
    <h3 class="heading settled" data-level="14.2" id="permissions"><span class="secno">14.2. </span><span class="content">Permissions API Integration</span><a class="self-link" href="#permissions"></a></h3>
    <p>The <a data-link-type="biblio" href="#biblio-permissions">[permissions]</a> API provides a uniform way for websites to request permissions from users and query which permissions they have been granted.</p>
-   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="PermissionName" data-dfn-type="enum-value" data-export id="dom-permissionname-xr"><code>"xr"</code></dfn> <a data-link-type="dfn" href="https://w3c.github.io/permissions/#powerful-feature" id="ref-for-powerful-feature②">powerful feature</a>’s permission-related algorithms and types are defined as follows:</p>
+   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="PermissionName" data-dfn-type="enum-value" data-export id="dom-permissionname-xr"><code>"xr"</code></dfn> <a data-link-type="dfn">powerful feature</a>’s permission-related algorithms and types are defined as follows:</p>
    <dl>
     <dt><a data-link-type="dfn" href="https://w3c.github.io/permissions/#permission-descriptor-type" id="ref-for-permission-descriptor-type①">permission descriptor type</a>
     <dd>
@@ -4973,8 +4984,8 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
      </div>
 <pre class="idl highlight def"><c- b>dictionary</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="dictionary" data-export id="dictdef-xrpermissiondescriptor"><code><c- g>XRPermissionDescriptor</c-></code></dfn>: <a data-link-type="idl-name" href="https://w3c.github.io/permissions/#dictdef-permissiondescriptor" id="ref-for-dictdef-permissiondescriptor①"><c- n>PermissionDescriptor</c-></a> {
   <a data-link-type="idl-name" href="#enumdef-xrsessionmode" id="ref-for-enumdef-xrsessionmode①⑥"><c- n>XRSessionMode</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPermissionDescriptor" data-dfn-type="dict-member" data-export data-type="XRSessionMode " id="dom-xrpermissiondescriptor-mode"><code><c- g>mode</c-></code></dfn>;
-  <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence③"><c- b>sequence</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-any" id="ref-for-idl-any③"><c- b>any</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPermissionDescriptor" data-dfn-type="dict-member" data-export data-type="sequence<any> " id="dom-xrpermissiondescriptor-requiredfeatures"><code><c- g>requiredFeatures</c-></code></dfn>;
-  <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence④"><c- b>sequence</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-any" id="ref-for-idl-any④"><c- b>any</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPermissionDescriptor" data-dfn-type="dict-member" data-export data-type="sequence<any> " id="dom-xrpermissiondescriptor-optionalfeatures"><code><c- g>optionalFeatures</c-></code></dfn>;
+  <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence③"><c- b>sequence</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-any" id="ref-for-idl-any②"><c- b>any</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPermissionDescriptor" data-dfn-type="dict-member" data-export data-type="sequence<any> " id="dom-xrpermissiondescriptor-requiredfeatures"><code><c- g>requiredFeatures</c-></code></dfn>;
+  <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence④"><c- b>sequence</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-any" id="ref-for-idl-any③"><c- b>any</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPermissionDescriptor" data-dfn-type="dict-member" data-export data-type="sequence<any> " id="dom-xrpermissiondescriptor-optionalfeatures"><code><c- g>optionalFeatures</c-></code></dfn>;
 };
 </pre>
      <p><code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissiondescriptor-name" id="ref-for-dom-permissiondescriptor-name①">name</a></code> for <code class="idl"><a data-link-type="idl" href="#dictdef-xrpermissiondescriptor" id="ref-for-dictdef-xrpermissiondescriptor②">XRPermissionDescriptor</a></code> is <code class="idl"><a data-link-type="idl" href="#dom-permissionname-xr" id="ref-for-dom-permissionname-xr">"xr"</a></code>.</p>
@@ -5011,7 +5022,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
      </div>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed②⓪"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xrpermissionstatus"><code><c- g>XRPermissionStatus</c-></code></dfn>: <a data-link-type="idl-name" href="https://w3c.github.io/permissions/#permissionstatus" id="ref-for-permissionstatus"><c- n>PermissionStatus</c-></a> {
-  <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array⑦"><c- b>FrozenArray</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-any" id="ref-for-idl-any⑤"><c- b>any</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPermissionStatus" data-dfn-type="attribute" data-export data-type="FrozenArray<any>" id="dom-xrpermissionstatus-granted"><code><c- g>granted</c-></code></dfn>;
+  <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array⑦"><c- b>FrozenArray</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-any" id="ref-for-idl-any④"><c- b>any</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPermissionStatus" data-dfn-type="attribute" data-export data-type="FrozenArray<any>" id="dom-xrpermissionstatus-granted"><code><c- g>granted</c-></code></dfn>;
 };
 </pre>
     <dt><a data-link-type="dfn" href="https://wicg.github.io/permissions-request/#permission-request-algorithm" id="ref-for-permission-request-algorithm">permission request algorithm</a>
@@ -5033,7 +5044,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
         <p>If <var>result</var> is <code>null</code>, run the following steps:</p>
         <ol>
          <li data-md>
-          <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state①">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied②">"denied"</a></code>.</p>
+          <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state①">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied②">"denied"</a></code>.</p>
          <li data-md>
           <p>Abort these steps.</p>
         </ol>
@@ -5047,7 +5058,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
          <li data-md>
           <p>The user agent MAY at this point ask the user’s permission for the calling algorithm to use <var>feature</var>. The results of these prompts should be included when determining if there is a clear signal of <a data-link-type="dfn" href="#user-intent" id="ref-for-user-intent①⑤">user intent</a> to enable <var>feature</var>.</p>
          <li data-md>
-          <p>If a clear signal of <a data-link-type="dfn" href="#user-intent" id="ref-for-user-intent①⑥">user intent</a> to enable <var>feature</var> has not been determined, set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state②">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied③">"denied"</a></code> and abort these steps.</p>
+          <p>If a clear signal of <a data-link-type="dfn" href="#user-intent" id="ref-for-user-intent①⑥">user intent</a> to enable <var>feature</var> has not been determined, set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state②">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied③">"denied"</a></code> and abort these steps.</p>
          <li data-md>
           <p>If <var>feature</var> is not in <var>granted</var>, append <var>feature</var> to <var>granted</var>.</p>
         </ol>
@@ -5066,7 +5077,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
        <li data-md>
         <p>Add all elements of <var>granted</var> to <var>device</var>’s <a data-link-type="dfn" href="#xr-device-set-of-granted-features" id="ref-for-xr-device-set-of-granted-features">set of granted features</a> for <var>mode</var>.</p>
        <li data-md>
-        <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state③">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-granted" id="ref-for-dom-permissionstate-granted">"granted"</a></code>.</p>
+        <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state③">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-granted" id="ref-for-dom-permissionstate-granted">"granted"</a></code>.</p>
       </ol>
       <p class="note" role="note"><span>Note:</span> The user agent has the freedom to batch up permissions prompts for all requested features when gauging if there is a clear signal of <a data-link-type="dfn" href="#user-intent" id="ref-for-user-intent①⑨">user intent</a>, but it is also allowed to show them one at a time.</p>
       <p class="note" role="note"><span>Note:</span> When determining <a data-link-type="dfn" href="#user-intent" id="ref-for-user-intent②⓪">user intent</a> for a web application, user agents must check that it was explicitly <a data-link-type="dfn" href="#launching-a-web-application" id="ref-for-launching-a-web-application②">launched by the user</a> as an web application. They must NOT just check if the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#concept-origin" id="ref-for-concept-origin⑥">origin</a> matches that of an installed web application.</p>
@@ -5079,7 +5090,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
        <li data-md>
         <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state④">state</a></code> to <var>descriptor</var>’s <a data-link-type="dfn" href="https://w3c.github.io/permissions/#permission-state" id="ref-for-permission-state">permission state</a>.</p>
        <li data-md>
-        <p>If <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state⑤">state</a></code> is <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied④">"denied"</a></code>, set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrpermissionstatus-granted" id="ref-for-dom-xrpermissionstatus-granted③">granted</a></code> to an empty <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array⑨">FrozenArray</a></code> and abort these steps.</p>
+        <p>If <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state⑤">state</a></code> is <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied④">"denied"</a></code>, set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrpermissionstatus-granted" id="ref-for-dom-xrpermissionstatus-granted③">granted</a></code> to an empty <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array⑨">FrozenArray</a></code> and abort these steps.</p>
        <li data-md>
         <p>Let <var>result</var> be the result of <a data-link-type="dfn" href="#resolve-the-requested-features" id="ref-for-resolve-the-requested-features②">resolving the requested features</a> given <var>descriptor</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrpermissiondescriptor-requiredfeatures" id="ref-for-dom-xrpermissiondescriptor-requiredfeatures①">requiredFeatures</a></code>, <code class="idl"><a data-link-type="idl" href="#dom-xrpermissiondescriptor-optionalfeatures" id="ref-for-dom-xrpermissiondescriptor-optionalfeatures①">optionalFeatures</a></code>, and <code class="idl"><a data-link-type="idl" href="#dom-xrpermissiondescriptor-mode" id="ref-for-dom-xrpermissiondescriptor-mode①">mode</a></code>.</p>
        <li data-md>
@@ -5088,7 +5099,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
          <li data-md>
           <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrpermissionstatus-granted" id="ref-for-dom-xrpermissionstatus-granted④">granted</a></code> to an empty <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array①⓪">FrozenArray</a></code>.</p>
          <li data-md>
-          <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state⑥">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied⑤">"denied"</a></code>.</p>
+          <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state⑥">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-denied" id="ref-for-dom-permissionstate-denied⑤">"denied"</a></code>.</p>
          <li data-md>
           <p>Abort these steps.</p>
         </ol>
@@ -5097,7 +5108,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
        <li data-md>
         <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="#dom-xrpermissionstatus-granted" id="ref-for-dom-xrpermissionstatus-granted⑤">granted</a></code> to <var>granted</var>.</p>
        <li data-md>
-        <p>If <var>consentRequired</var> <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list-is-empty" id="ref-for-list-is-empty">is empty</a> and <var>consentOptional</var> <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list-is-empty" id="ref-for-list-is-empty①">is empty</a>, set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state⑦">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-granted" id="ref-for-dom-permissionstate-granted①">"granted"</a></code> and abort these steps</p>
+        <p>If <var>consentRequired</var> <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list-is-empty" id="ref-for-list-is-empty">is empty</a> and <var>consentOptional</var> <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list-is-empty" id="ref-for-list-is-empty①">is empty</a>, set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state⑦">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-granted" id="ref-for-dom-permissionstate-granted①">"granted"</a></code> and abort these steps</p>
        <li data-md>
         <p>Set <var>status</var>’s <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstatus-state" id="ref-for-dom-permissionstatus-state⑧">state</a></code> to <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-prompt" id="ref-for-dom-permissionstate-prompt">"prompt"</a></code>.</p>
       </ol>
@@ -5715,6 +5726,19 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <li><a href="#typedefdef-xrwebglrenderingcontext">XRWebGLRenderingContext</a><span>, in §11.2</span>
    <li><a href="#dom-xrviewport-y">y</a><span>, in §7.3</span>
   </ul>
+  <aside class="dfn-panel" data-for="term-for-dom-permissionstate-denied">
+   <a href="https://w3c.github.io/deviceorientation/#dom-permissionstate-denied">https://w3c.github.io/deviceorientation/#dom-permissionstate-denied</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dom-permissionstate-denied">3.2. XRSystem</a> <a href="#ref-for-dom-permissionstate-denied①">(2)</a>
+    <li><a href="#ref-for-dom-permissionstate-denied②">14.2. Permissions API Integration</a> <a href="#ref-for-dom-permissionstate-denied③">(2)</a> <a href="#ref-for-dom-permissionstate-denied④">(3)</a> <a href="#ref-for-dom-permissionstate-denied⑤">(4)</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-dom-permissionstate-granted">
+   <a href="https://w3c.github.io/deviceorientation/#dom-permissionstate-granted">https://w3c.github.io/deviceorientation/#dom-permissionstate-granted</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dom-permissionstate-granted">14.2. Permissions API Integration</a> <a href="#ref-for-dom-permissionstate-granted①">(2)</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-document">
    <a href="https://dom.spec.whatwg.org/#document">https://dom.spec.whatwg.org/#document</a><b>Referenced in:</b>
    <ul>
@@ -5813,19 +5837,19 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dommatrix">
-   <a href="https://drafts.fxtf.org/geometry-1/#dommatrix">https://drafts.fxtf.org/geometry-1/#dommatrix</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dommatrix">https://drafts.fxtf.org/geometry/#dommatrix</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dommatrix">8.1. Matrices</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dictdef-dompointinit">
-   <a href="https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit">https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dictdef-dompointinit">https://drafts.fxtf.org/geometry/#dictdef-dompointinit</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dictdef-dompointinit">8.3. XRRigidTransform</a> <a href="#ref-for-dictdef-dompointinit①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dompointreadonly">
-   <a href="https://drafts.fxtf.org/geometry-1/#dompointreadonly">https://drafts.fxtf.org/geometry-1/#dompointreadonly</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dompointreadonly">https://drafts.fxtf.org/geometry/#dompointreadonly</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dompointreadonly">6.3. XRBoundedReferenceSpace</a> <a href="#ref-for-dompointreadonly①">(2)</a> <a href="#ref-for-dompointreadonly②">(3)</a>
     <li><a href="#ref-for-dompointreadonly③">8.1. Matrices</a>
@@ -5834,27 +5858,27 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-w">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-w">6.3. XRBoundedReferenceSpace</a>
     <li><a href="#ref-for-dom-dompointreadonly-w①">8.3. XRRigidTransform</a> <a href="#ref-for-dom-dompointreadonly-w②">(2)</a> <a href="#ref-for-dom-dompointreadonly-w③">(3)</a> <a href="#ref-for-dom-dompointreadonly-w④">(4)</a> <a href="#ref-for-dom-dompointreadonly-w⑤">(5)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-x">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-x">8.3. XRRigidTransform</a> <a href="#ref-for-dom-dompointreadonly-x①">(2)</a> <a href="#ref-for-dom-dompointreadonly-x②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-y">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-y">6.3. XRBoundedReferenceSpace</a>
     <li><a href="#ref-for-dom-dompointreadonly-y①">8.3. XRRigidTransform</a> <a href="#ref-for-dom-dompointreadonly-y②">(2)</a> <a href="#ref-for-dom-dompointreadonly-y③">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-z">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-z">8.3. XRRigidTransform</a> <a href="#ref-for-dom-dompointreadonly-z①">(2)</a> <a href="#ref-for-dom-dompointreadonly-z②">(3)</a>
    </ul>
@@ -5866,7 +5890,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dfn-current-high-resolution-time">
-   <a href="https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time">https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/hr-time/#dfn-current-high-resolution-time">https://w3c.github.io/hr-time/#dfn-current-high-resolution-time</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dfn-current-high-resolution-time">4.3. Animation Frames</a>
    </ul>
@@ -6170,19 +6194,6 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
     <li><a href="#ref-for-visibilitystate-attribute">4.1. XRSession</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-dom-permissionstate-denied">
-   <a href="https://w3c.github.io/permissions/#dom-permissionstate-denied">https://w3c.github.io/permissions/#dom-permissionstate-denied</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dom-permissionstate-denied">3.2. XRSystem</a> <a href="#ref-for-dom-permissionstate-denied①">(2)</a>
-    <li><a href="#ref-for-dom-permissionstate-denied②">14.2. Permissions API Integration</a> <a href="#ref-for-dom-permissionstate-denied③">(2)</a> <a href="#ref-for-dom-permissionstate-denied④">(3)</a> <a href="#ref-for-dom-permissionstate-denied⑤">(4)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-dom-permissionstate-granted">
-   <a href="https://w3c.github.io/permissions/#dom-permissionstate-granted">https://w3c.github.io/permissions/#dom-permissionstate-granted</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dom-permissionstate-granted">14.2. Permissions API Integration</a> <a href="#ref-for-dom-permissionstate-granted①">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-dom-permissionstate-prompt">
    <a href="https://w3c.github.io/permissions/#dom-permissionstate-prompt">https://w3c.github.io/permissions/#dom-permissionstate-prompt</a><b>Referenced in:</b>
    <ul>
@@ -6234,14 +6245,6 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
     <li><a href="#ref-for-permission-state">14.2. Permissions API Integration</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-powerful-feature">
-   <a href="https://w3c.github.io/permissions/#powerful-feature">https://w3c.github.io/permissions/#powerful-feature</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-powerful-feature">3.2. XRSystem</a>
-    <li><a href="#ref-for-powerful-feature①">13.9. Fingerprinting considerations of isSessionSupported()</a>
-    <li><a href="#ref-for-powerful-feature②">14.2. Permissions API Integration</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-request-permission-to-use">
    <a href="https://w3c.github.io/permissions/#request-permission-to-use">https://w3c.github.io/permissions/#request-permission-to-use</a><b>Referenced in:</b>
    <ul>
@@ -6283,6 +6286,12 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <a href="https://w3c.github.io/requestidlecallback/#the-requestidlecallback-method">https://w3c.github.io/requestidlecallback/#the-requestidlecallback-method</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-the-requestidlecallback-method">4.3. Animation Frames</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-dom-orientationlocktype-any">
+   <a href="https://w3c.github.io/screen-orientation/#dom-orientationlocktype-any">https://w3c.github.io/screen-orientation/#dom-orientationlocktype-any</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dom-orientationlocktype-any">3.4. Feature Dependencies</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-WebGL2RenderingContext">
@@ -6483,6 +6492,12 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
     <li><a href="#ref-for-5.14.4④">11.2. XRWebGLLayer</a> <a href="#ref-for-5.14.4⑤">(2)</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-invoke-a-callback-function">
+   <a href="https://heycam.github.io/webidl/#invoke-a-callback-function">https://heycam.github.io/webidl/#invoke-a-callback-function</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-invoke-a-callback-function">4.3. Animation Frames</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-aborterror">
    <a href="https://heycam.github.io/webidl/#aborterror">https://heycam.github.io/webidl/#aborterror</a><b>Referenced in:</b>
    <ul>
@@ -6662,8 +6677,8 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
   <aside class="dfn-panel" data-for="term-for-idl-any">
    <a href="https://heycam.github.io/webidl/#idl-any">https://heycam.github.io/webidl/#idl-any</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-idl-any">3.4. Feature Dependencies</a> <a href="#ref-for-idl-any①">(2)</a> <a href="#ref-for-idl-any②">(3)</a>
-    <li><a href="#ref-for-idl-any③">14.2. Permissions API Integration</a> <a href="#ref-for-idl-any④">(2)</a> <a href="#ref-for-idl-any⑤">(3)</a>
+    <li><a href="#ref-for-idl-any">3.4. Feature Dependencies</a> <a href="#ref-for-idl-any①">(2)</a>
+    <li><a href="#ref-for-idl-any②">14.2. Permissions API Integration</a> <a href="#ref-for-idl-any③">(2)</a> <a href="#ref-for-idl-any④">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-idl-boolean">
@@ -6693,12 +6708,6 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <a href="https://heycam.github.io/webidl/#dfn-indexed-property-getter">https://heycam.github.io/webidl/#dfn-indexed-property-getter</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dfn-indexed-property-getter">10.3. XRInputSourceArray</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-invoke-a-callback-function">
-   <a href="https://heycam.github.io/webidl/#invoke-a-callback-function">https://heycam.github.io/webidl/#invoke-a-callback-function</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-invoke-a-callback-function">4.3. Animation Frames</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-idl-long">
@@ -6788,6 +6797,12 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
+    <a data-link-type="biblio">[DEVICE-ORIENTATION]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-dom-permissionstate-denied">"denied"</span>
+     <li><span class="dfn-paneled" id="term-for-dom-permissionstate-granted">"granted"</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[DOM]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-document">Document</span>
@@ -6826,7 +6841,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
      <li><span class="dfn-paneled" id="term-for-dom-domhighrestimestamp">DOMHighResTimeStamp</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[hr-time-2]</a> defines the following terms:
+    <a data-link-type="biblio">[hr-time-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dfn-current-high-resolution-time">current high resolution time</span>
     </ul>
@@ -6890,8 +6905,6 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <li>
     <a data-link-type="biblio">[permissions]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-dom-permissionstate-denied">"denied"</span>
-     <li><span class="dfn-paneled" id="term-for-dom-permissionstate-granted">"granted"</span>
      <li><span class="dfn-paneled" id="term-for-dom-permissionstate-prompt">"prompt"</span>
      <li><span class="dfn-paneled" id="term-for-dictdef-permissiondescriptor">PermissionDescriptor</span>
      <li><span class="dfn-paneled" id="term-for-permissionstatus">PermissionStatus</span>
@@ -6900,7 +6913,6 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
      <li><span class="dfn-paneled" id="term-for-permission-query-algorithm">permission query algorithm</span>
      <li><span class="dfn-paneled" id="term-for-permission-result-type">permission result type</span>
      <li><span class="dfn-paneled" id="term-for-permission-state">permission state</span>
-     <li><span class="dfn-paneled" id="term-for-powerful-feature">powerful feature</span>
      <li><span class="dfn-paneled" id="term-for-request-permission-to-use">request permission to use</span>
      <li><span class="dfn-paneled" id="term-for-dom-permissionstatus-state">state</span>
     </ul>
@@ -6924,6 +6936,11 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
     <a data-link-type="biblio">[requestidlecallback]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-the-requestidlecallback-method">requestIdleCallback()</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[screen-orientation]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-dom-orientationlocktype-any">any</span>
     </ul>
    <li>
     <a data-link-type="biblio">[webgl 2.0]</a> defines the following terms:
@@ -6967,6 +6984,11 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <li>
     <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
     <ul>
+     <li><span class="dfn-paneled" id="term-for-invoke-a-callback-function">invoke the web idl callback function</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
+    <ul>
      <li><span class="dfn-paneled" id="term-for-aborterror">AbortError</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
@@ -6988,7 +7010,6 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
      <li><span class="dfn-paneled" id="term-for-idl-double">double</span>
      <li><span class="dfn-paneled" id="term-for-dfn-frozen-array-type">frozen array type</span>
      <li><span class="dfn-paneled" id="term-for-dfn-indexed-property-getter">indexed property getter</span>
-     <li><span class="dfn-paneled" id="term-for-invoke-a-callback-function">invoke the web idl callback function</span>
      <li><span class="dfn-paneled" id="term-for-idl-long">long</span>
      <li><span class="dfn-paneled" id="term-for-new">new</span>
      <li><span class="dfn-paneled" id="term-for-reject">reject</span>
@@ -7004,7 +7025,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
      <li><span class="dfn-paneled" id="term-for-first-person-observer-view">first-person observer view</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[webxr-layers-1]</a> defines the following terms:
+    <a data-link-type="biblio">[webxrlayers-1]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dom-xrrenderstate-layers">layers</span>
     </ul>
@@ -7012,20 +7033,22 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-device-orientation">[DEVICE-ORIENTATION]
+   <dd>Rich Tibbett; et al. <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a>. 16 April 2019. WD. URL: <a href="https://www.w3.org/TR/orientation-event/">https://www.w3.org/TR/orientation-event/</a>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-geometry-1">[GEOMETRY-1]
    <dd>Simon Pieters; Chris Harrelson. <a href="https://www.w3.org/TR/geometry-1/">Geometry Interfaces Module Level 1</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/geometry-1/">https://www.w3.org/TR/geometry-1/</a>
-   <dt id="biblio-hr-time-2">[HR-TIME-2]
-   <dd>Ilya Grigorik. <a href="https://www.w3.org/TR/hr-time-2/">High Resolution Time Level 2</a>. 21 November 2019. REC. URL: <a href="https://www.w3.org/TR/hr-time-2/">https://www.w3.org/TR/hr-time-2/</a>
+   <dt id="biblio-hr-time-3">[HR-TIME-3]
+   <dd>Yoav Weiss; et al. <a href="https://www.w3.org/TR/hr-time-3/">High Resolution Time</a>. 24 March 2021. WD. URL: <a href="https://www.w3.org/TR/hr-time-3/">https://www.w3.org/TR/hr-time-3/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-infra">[INFRA]
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
    <dt id="biblio-permissions">[PERMISSIONS]
-   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 15 June 2021. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
+   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 20 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
    <dt id="biblio-permissions-policy-1">[PERMISSIONS-POLICY-1]
    <dd>Ian Clelland. <a href="https://www.w3.org/TR/permissions-policy-1/">Permissions Policy</a>. 16 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions-policy-1/">https://www.w3.org/TR/permissions-policy-1/</a>
    <dt id="biblio-permissions-request">[PERMISSIONS-REQUEST]
@@ -7040,13 +7063,15 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
    <dd>Dean Jackson; Jeff Gilbert. <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a>. 12 August 2017. URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">https://www.khronos.org/registry/webgl/specs/latest/2.0/</a>
    <dt id="biblio-webidl">[WebIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
-   <dt id="biblio-webxr-layers-1">[WEBXR-LAYERS-1]
-   <dd>WebXR Layers API Level 1 URL: <a href="https://immersive-web.github.io/layers/">https://immersive-web.github.io/layers/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
+   <dt id="biblio-webxrlayers-1">[WEBXRLAYERS-1]
+   <dd>Rik Cabanier. <a href="https://www.w3.org/TR/webxrlayers-1/">WebXR Layers API Level 1</a>. 3 December 2020. WD. URL: <a href="https://www.w3.org/TR/webxrlayers-1/">https://www.w3.org/TR/webxrlayers-1/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
-   <dt id="biblio-device-orientation">[DEVICE-ORIENTATION]
-   <dd>Rich Tibbett; et al. <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a>. 16 April 2019. WD. URL: <a href="https://www.w3.org/TR/orientation-event/">https://www.w3.org/TR/orientation-event/</a>
+   <dt id="biblio-screen-orientation">[SCREEN-ORIENTATION]
+   <dd>Mounir Lamouri; Marcos Caceres; Johanna Herman. <a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a>. 19 October 2020. WD. URL: <a href="https://www.w3.org/TR/screen-orientation/">https://www.w3.org/TR/screen-orientation/</a>
    <dt id="biblio-webxr-ar-module-1">[WEBXR-AR-MODULE-1]
    <dd>Brandon Jones; Nell Waliczek; Manish Goregaokar. <a href="https://www.w3.org/TR/webxr-ar-module-1/">WebXR Augmented Reality Module - Level 1</a>. 10 October 2019. WD. URL: <a href="https://www.w3.org/TR/webxr-ar-module-1/">https://www.w3.org/TR/webxr-ar-module-1/</a>
   </dl>
@@ -7153,7 +7178,7 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <a href="#xrboundedreferencespace"><code><c- g>XRBoundedReferenceSpace</c-></code></a> : <a data-link-type="idl-name" href="#xrreferencespace"><c- n>XRReferenceSpace</c-></a> {
-  <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <a class="idl-code" data-link-type="attribute" data-readonly data-type="FrozenArray<DOMPointReadOnly>" href="#dom-xrboundedreferencespace-boundsgeometry"><c- g>boundsGeometry</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <a class="idl-code" data-link-type="attribute" data-readonly data-type="FrozenArray<DOMPointReadOnly>" href="#dom-xrboundedreferencespace-boundsgeometry"><c- g>boundsGeometry</c-></a>;
 };
 
 <c- b>enum</c-> <a href="#enumdef-xreye"><code><c- g>XREye</c-></code></a> {
@@ -7180,17 +7205,17 @@ have been the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipa
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <a href="#xrrigidtransform"><code><c- g>XRRigidTransform</c-></code></a> {
-  <a class="idl-code" data-link-type="constructor" href="#dom-xrrigidtransform-xrrigidtransform"><c- g>constructor</c-></a>(<c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit"><c- n>DOMPointInit</c-></a> <a href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-position"><code><c- g>position</c-></code></a> = {}, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit"><c- n>DOMPointInit</c-></a> <a href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation"><code><c- g>orientation</c-></code></a> = {});
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-position"><c- g>position</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-orientation"><c- g>orientation</c-></a>;
+  <a class="idl-code" data-link-type="constructor" href="#dom-xrrigidtransform-xrrigidtransform"><c- g>constructor</c-></a>(<c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dictdef-dompointinit"><c- n>DOMPointInit</c-></a> <a href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-position"><code><c- g>position</c-></code></a> = {}, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dictdef-dompointinit"><c- n>DOMPointInit</c-></a> <a href="#dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation"><code><c- g>orientation</c-></code></a> = {});
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-position"><c- g>position</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrrigidtransform-orientation"><c- g>orientation</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array"><c- b>Float32Array</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="Float32Array" href="#dom-xrrigidtransform-matrix"><c- g>matrix</c-></a>;
   [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#xrrigidtransform"><c- n>XRRigidTransform</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="XRRigidTransform" href="#dom-xrrigidtransform-inverse"><c- g>inverse</c-></a>;
 };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>interface</c-> <a href="#xrpose"><code><c- g>XRPose</c-></code></a> {
   [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#xrrigidtransform"><c- n>XRRigidTransform</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="XRRigidTransform" href="#dom-xrpose-transform"><c- g>transform</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-linearvelocity"><c- g>linearVelocity</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-angularvelocity"><c- g>angularVelocity</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-linearvelocity"><c- g>linearVelocity</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly?" href="#dom-xrpose-angularvelocity"><c- g>angularVelocity</c-></a>;
 
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="boolean" href="#dom-xrpose-emulatedposition"><c- g>emulatedPosition</c-></a>;
 };

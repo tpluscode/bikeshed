@@ -301,62 +301,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -931,12 +875,12 @@ on screen, on paper, etc.
     <dd> A page that would be on the left if it is part of a pair of facing pages as
 		typically laid out. Page layouts for documents using a left-to-right page
 		progression have the earlier of the facing pages on the left. Rules specific to
-		the left page can be specified using the <a class="css" data-link-type="maybe" href="#valdef-page-left" id="ref-for-valdef-page-left">:left</a> <a data-link-type="dfn" href="#page-selector" id="ref-for-page-selector">page selector</a>. 
+		the left page can be specified using the <span class="css">:left</span> <a data-link-type="dfn" href="#page-selector" id="ref-for-page-selector">page selector</a>. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="right-page">Right Page</dfn> 
     <dd> A page that would be on the right if it is part of a pair of facing pages as
 		typically laid out. Page layouts for documents using a right-to-left page
 		progression have the earlier of the facing pages on the right. Rules specific
-		to the right page can be specified using the <a class="css" data-link-type="maybe" href="#valdef-page-right" id="ref-for-valdef-page-right">:right</a> <a data-link-type="dfn" href="#page-selector" id="ref-for-page-selector①">page selector</a>. 
+		to the right page can be specified using the <span class="css">:right</span> <a data-link-type="dfn" href="#page-selector" id="ref-for-page-selector①">page selector</a>. 
    </dl>
    <h2 class="heading settled" data-level="3" id="page-model"><span class="secno">3. </span><span class="content">The Page Model</span><a class="self-link" href="#page-model"></a></h2>
    <p>In the <a data-link-type="dfn" href="https://drafts.csswg.org/mediaqueries-5/#paged-media" id="ref-for-paged-media">paged media</a> formatting model, the document is transferred into one
@@ -986,14 +930,14 @@ on screen, on paper, etc.
    </ol>
    <p>In the page model, the page background behaves similar to the root background:
 	its <a data-link-type="dfn" href="https://drafts.csswg.org/css-backgrounds-4/#background-painting-area" id="ref-for-background-painting-area">background painting area</a> is the <a data-link-type="dfn" href="#bleed-area" id="ref-for-bleed-area">bleed area</a>,
-	which covers the entire page box, including its margins (regardless of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-clip" id="ref-for-propdef-background-clip">background-clip</a>).
+	which covers the entire page box, including its margins (regardless of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-clip" id="ref-for-propdef-background-clip">background-clip</a>).
 	Page backgrounds are anchored within the page box’s padding area by default
-	(and honor <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-origin" id="ref-for-propdef-background-origin">background-origin</a> if the UA supports <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>).
-	However if <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-attachment" id="ref-for-propdef-background-attachment">background-attachment</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-fixed" id="ref-for-valdef-background-attachment-fixed">fixed</a> then the image is positioned relative to the page box including its margins
-	(i.e. the <a data-link-type="dfn" href="https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area" id="ref-for-background-positioning-area">background positioning area</a> is the page’s margin box).</p>
+	(and honor <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-origin" id="ref-for-propdef-background-origin">background-origin</a> if the UA supports <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>).
+	However if <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-attachment" id="ref-for-propdef-background-attachment">background-attachment</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-fixed" id="ref-for-valdef-background-attachment-fixed">fixed</a> then the image is positioned relative to the page box including its margins
+	(i.e. the <a data-link-type="dfn" href="https://drafts.csswg.org/css-backgrounds/#background-positioning-area" id="ref-for-background-positioning-area">background positioning area</a> is the page’s margin box).</p>
    <p>The document canvas background is drawn as the page box’s background:
 	by default its <a data-link-type="dfn" href="https://drafts.csswg.org/css-backgrounds-4/#background-painting-area" id="ref-for-background-painting-area①">background painting area</a> covers the page box’s border box,
-	and for UAs that support <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>, follows the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-clip" id="ref-for-propdef-background-clip①">background-clip</a> value specified on the root element.
+	and for UAs that support <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>, follows the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-clip" id="ref-for-propdef-background-clip①">background-clip</a> value specified on the root element.
 	It remains, however, positioned with respect to the root element
 	or page area as usual.</p>
    <p>With respect to the page-margin boxes,
@@ -1005,8 +949,8 @@ on screen, on paper, etc.
 	or behind the document canvas.
 	The page background is always painted underneath everything else.</p>
    <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-z-index" id="ref-for-propdef-z-index">z-index</a> property applies to page-margin boxes.
-	Since the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a> property does not apply to page-margin boxes, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-z-index" id="ref-for-propdef-z-index①">z-index</a> always affects page-margin boxes as if they were positioned elements
-	regardless of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position①">position</a> property’s value.
+	Since the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a> property does not apply to page-margin boxes, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-z-index" id="ref-for-propdef-z-index①">z-index</a> always affects page-margin boxes as if they were positioned elements
+	regardless of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position①">position</a> property’s value.
 	Each page-margin boxes always establishes a stacking context.</p>
    <p>The default painting order,
 	or <a href="https://www.w3.org/TR/CSS2/zindex.html">CSS2.1 Appendix E</a> "tree order",
@@ -1059,12 +1003,12 @@ box:</p>
 	background and/or borders and/or page-margin box content <em>is</em> a
 	content-empty page. 
      <p class="note" role="note">Note, however, that generating a small number of empty page
-	boxes is sometimes necessary to honor the forced-break values for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-before" id="ref-for-propdef-page-break-before">page-break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-after" id="ref-for-propdef-page-break-after">page-break-after</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-4/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a>. <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> <a data-link-type="biblio" href="#biblio-css-break-3">[CSS-BREAK-3]</a> </p>
+	boxes is sometimes necessary to honor the forced-break values for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-before" id="ref-for-propdef-page-break-before">page-break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-after" id="ref-for-propdef-page-break-after">page-break-after</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-4/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a>. <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> <a data-link-type="biblio" href="#biblio-css-break-3">[CSS-BREAK-3]</a> </p>
     <li>
      Authors <em class="RFC2119">SHOULD NOT</em> position elements in
 	inconvenient locations just to avoid rendering them. Instead: 
      <ul>
-      <li>To suppress box generation entirely, set the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display">display</a> property to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-none" id="ref-for-valdef-display-none">none</a>. 
+      <li>To suppress box generation entirely, set the <a class="property" data-link-type="propdesc">display</a> property to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-none" id="ref-for-valdef-display-none">none</a>. 
       <li>To make a box invisible, set the <span class="property"><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility">visibility</a></span> property. 
      </ul>
     <li>This specification does not define how boxes positioned outside the page
@@ -1090,11 +1034,11 @@ box:</p>
     <li>If text is laid out in vertical lines,
 		the <a data-link-type="dfn" href="#page-progression" id="ref-for-page-progression①">page progression</a> is the same as the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction" id="ref-for-block-flow-direction">block flow direction</a>. 
    </ul>
-   <p>If the UA supports the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction">direction</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode" id="ref-for-propdef-writing-mode">writing-mode</a> properties
+   <p>If the UA supports the <a class="property" data-link-type="propdesc">direction</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode" id="ref-for-propdef-writing-mode">writing-mode</a> properties
 	from the CSS 3 Writing Modes Module <a data-link-type="biblio" href="#biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]</a>, it must <a href="https://www.w3.org/TR/css3-writing-modes/#page-direction">determine</a> the <a data-link-type="dfn" href="#page-progression" id="ref-for-page-progression②">page progression</a> is determined by the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#principal-writing-mode" id="ref-for-principal-writing-mode">principal writing mode</a>.</p>
    <p>In documents with a left-to-right <a data-link-type="dfn" href="#page-progression" id="ref-for-page-progression③">page progression</a> the first page of the document is a right page, and vice versa.
 	To explicitly force a document to begin printing on a left or right page,
-	authors can specify a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before①">break-before</a> value
+	authors can specify a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before①">break-before</a> value
 	that that propagates a page break to the root. <a data-link-type="biblio" href="#biblio-css-break-3">[CSS-BREAK-3]</a> The UA must suppress the first (empty) page(s) in this case
 	(and the <code>:first</code> pseudo-class matches the first printed page).</p>
    <div class="example" id="example-0b89bad0">
@@ -1144,53 +1088,14 @@ a page or a margin context, the <a href="https://www.w3.org/TR/CSS2/syndata.html
 		does not make the rule invalid,
 		but must never match. </span></p>
    <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="page-pseudo-class">page pseudo-class</dfn> is <a href="https://www.w3.org/TR/CSS2/syndata.html#characters">ASCII case-insensitive</a> and has the same syntax as <a href="https://www.w3.org/TR/selectors/#pseudo-classes">pseudo-classes</a> in regular Selectors. <a data-link-type="biblio" href="#biblio-select">[SELECT]</a> The various <a data-link-type="dfn" href="#page-pseudo-class" id="ref-for-page-pseudo-class②">page pseudo-classes</a> are defined below.</p>
-   <h4 class="heading settled" data-level="4.2.1" id="spread-pseudos"><span class="secno">4.2.1. </span><span class="content"><span id="left-right-first"></span> Spread pseudo-classes: <a class="css" data-link-type="maybe" href="#valdef-page-left" id="ref-for-valdef-page-left①">:left</a>, <a class="css" data-link-type="maybe" href="#valdef-page-right" id="ref-for-valdef-page-right①">:right</a></span><a class="self-link" href="#spread-pseudos"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first" title="The :first CSS pseudo-class, used with the @page at-rule, represents the first page of a printed document. ">:first</a></p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>6+</span></span><span class="chrome yes"><span>Chrome</span><span>18+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>6+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:left" title="The :left CSS pseudo-class, used with the @page at-rule, represents all left-hand pages of a printed document.">:left</a></p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>5.1+</span></span><span class="chrome yes"><span>Chrome</span><span>6+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>6+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:right" title="The :right CSS pseudo-class, used with the @page at-rule, represents all right-hand pages of a printed document.">:right</a></p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>5.1+</span></span><span class="chrome yes"><span>Chrome</span><span>6+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>6+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
+   <h4 class="heading settled" data-level="4.2.1" id="spread-pseudos"><span class="secno">4.2.1. </span><span class="content"><span id="left-right-first"></span> Spread pseudo-classes: <span class="css">:left</span>, <span class="css">:right</span></span><a class="self-link" href="#spread-pseudos"></a></h4>
    <p>When printing double-sided documents,
 	left and right pages are often formatted differently.
-	This can be expressed by using the <a class="css" data-link-type="maybe" href="#valdef-page-left" id="ref-for-valdef-page-left②">:left</a> and <a class="css" data-link-type="maybe" href="#valdef-page-right" id="ref-for-valdef-page-right②">:right</a> page pseudo-classes.</p>
+	This can be expressed by using the <span class="css">:left</span> and <span class="css">:right</span> page pseudo-classes.</p>
    <p>All pages are automatically classified by user agents
 	as either left pages or right pages,
 	based on <a href="#progression">page progression</a>.
-	The <dfn class="dfn-paneled css" data-dfn-for="@page" data-dfn-type="value" data-export id="valdef-page-left">:left</dfn> and <dfn class="dfn-paneled css" data-dfn-for="@page" data-dfn-type="value" data-export id="valdef-page-right">:right</dfn> pseudo-classes
+	The <dfn class="css" data-dfn-for="@page" data-dfn-type="value" data-export id="valdef-page-left">:left<a class="self-link" href="#valdef-page-left"></a></dfn> and <dfn class="css" data-dfn-for="@page" data-dfn-type="value" data-export id="valdef-page-right">:right<a class="self-link" href="#valdef-page-right"></a></dfn> pseudo-classes
 	only <a data-link-type="dfn" href="#match" id="ref-for-match②">match</a> <a data-link-type="dfn" href="#left-page" id="ref-for-left-page">left</a> or <a data-link-type="dfn" href="#right-page" id="ref-for-right-page">right pages</a>,
 	respectively. </p>
    <div class="example" id="example-d233352a">
@@ -1212,13 +1117,13 @@ agent does not transfer the page boxes to left and right sheets (i.e., a
 printer that only prints on one side of the medium must nevertheless produce
 correctly formatted output).</p>
    <div class="note" role="note">
-    <p><em><strong>Note.</strong> Adding declarations to the <a class="css" data-link-type="maybe" href="#valdef-page-left" id="ref-for-valdef-page-left③">:left</a> or <a class="css" data-link-type="maybe" href="#valdef-page-right" id="ref-for-valdef-page-right③">:right</a> pseudo-class
+    <p><em><strong>Note.</strong> Adding declarations to the <span class="css">:left</span> or <span class="css">:right</span> pseudo-class
 	does not necessarily influence whether the document
 	comes out of the printer double- or single-sided
 	(which is outside the scope of this specification).</em></p>
    </div>
-   <h4 class="heading settled" data-level="4.2.2" id="first-pseudo"><span class="secno">4.2.2. </span><span class="content"> First-page pseudo-class: <a class="css" data-link-type="maybe" href="#valdef-page-first" id="ref-for-valdef-page-first">:first</a></span><a class="self-link" href="#first-pseudo"></a></h4>
-   <p>The <dfn class="dfn-paneled css" data-dfn-for="@page" data-dfn-type="value" data-export id="valdef-page-first">:first</dfn> pseudo-class <a data-link-type="dfn" href="#match" id="ref-for-match③">matches</a> the first printed page of a document.</p>
+   <h4 class="heading settled" data-level="4.2.2" id="first-pseudo"><span class="secno">4.2.2. </span><span class="content"> First-page pseudo-class: <span class="css">:first</span></span><a class="self-link" href="#first-pseudo"></a></h4>
+   <p>The <dfn class="css" data-dfn-for="@page" data-dfn-type="value" data-export id="valdef-page-first">:first<a class="self-link" href="#valdef-page-first"></a></dfn> pseudo-class <a data-link-type="dfn" href="#match" id="ref-for-match③">matches</a> the first printed page of a document.</p>
    <div class="example" id="example-0c64c208">
     <a class="self-link" href="#example-0c64c208"></a> 
 <pre>@page { margin: 2cm } /* All margins set to 2cm */
@@ -1231,7 +1136,7 @@ margin-top: 10cm /* Top margin on first page 10cm */
    <h4 class="heading settled" data-level="4.2.3" id="blank-pseudo"><span class="secno">4.2.3. </span><span class="content"> Blank-page pseudo-class: <a class="css" data-link-type="maybe" href="#valdef-page-blank" id="ref-for-valdef-page-blank">:blank</a></span><a class="self-link" href="#blank-pseudo"></a></h4>
    <p>The <dfn class="dfn-paneled css" data-dfn-for="@page" data-dfn-type="value" data-export id="valdef-page-blank">:blank</dfn> pseudo-class <a data-link-type="dfn" href="#match" id="ref-for-match④">matches</a> <a data-link-type="dfn" href="#content-empty" id="ref-for-content-empty">content-empty pages</a> that appear as a result of <a href="https://www.w3.org/TR/css3-break/#forced-breaks">forced page breaks</a>.</p>
    <div class="note" role="note"> Only the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-left" id="ref-for-valdef-break-before-left">left</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-right" id="ref-for-valdef-break-before-right">right</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-recto" id="ref-for-valdef-break-before-recto">recto</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-verso" id="ref-for-valdef-break-before-verso">verso</a> values
-		of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before②">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-4/#propdef-break-after" id="ref-for-propdef-break-after①">break-after</a> properties
+		of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before②">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-4/#propdef-break-after" id="ref-for-propdef-break-after①">break-after</a> properties
 		can generate pages that match <a class="css" data-link-type="maybe" href="#valdef-page-blank" id="ref-for-valdef-page-blank①">:blank</a>. </div>
    <div class="example" id="example-63622ae9">
     <a class="self-link" href="#example-63622ae9"></a> In this example, forced page break may occur before <code>h1</code> elements. 
@@ -1269,35 +1174,35 @@ edition"</code>.</p>
    <div class="note" role="note"> <em><strong>Note.</strong> Future versions of CSS may include other page
 pseudo-classes.</em> </div>
    <h3 class="heading settled" data-level="4.3" id="syntax-page-selector"><span class="secno">4.3. </span><span class="content">@page rule grammar</span><a class="self-link" href="#syntax-page-selector"></a></h3>
-   <p><a class="css" data-link-type="maybe" href="#at-ruledef-page" id="ref-for-at-ruledef-page⑧">@page</a> rules are <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar">parsed</a> according to the following grammar,
+   <p><a class="css" data-link-type="maybe" href="#at-ruledef-page" id="ref-for-at-ruledef-page⑧">@page</a> rules are <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar">parsed</a> according to the following grammar,
 plus the additional rules noted below:</p>
-<pre class="prod">@page = @page <a class="production" data-link-type="type" href="#typedef-page-selector-list" id="ref-for-typedef-page-selector-list">&lt;page-selector-list></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a> { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list">&lt;declaration-list></a> }
+<pre class="prod">@page = @page <a class="production" data-link-type="type" href="#typedef-page-selector-list" id="ref-for-typedef-page-selector-list">&lt;page-selector-list></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a> { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list">&lt;declaration-list></a> }
 <dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-page-selector-list"><a class="production" data-link-type="type" href="#typedef-page-selector-list" id="ref-for-typedef-page-selector-list①">&lt;page-selector-list></a></dfn> = <a class="production" data-link-type="type" href="#typedef-page-selector" id="ref-for-typedef-page-selector①">&lt;page-selector></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-comma" id="ref-for-mult-comma">#</a>
-<dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-page-selector"><a class="production" data-link-type="type" href="#typedef-page-selector" id="ref-for-typedef-page-selector②">&lt;page-selector></a></dfn> = [ <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-ident-token" id="ref-for-typedef-ident-token">&lt;ident-token></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt①">?</a> <a class="production" data-link-type="type" href="#typedef-pseudo-page" id="ref-for-typedef-pseudo-page">&lt;pseudo-page></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus">*</a> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-req" id="ref-for-mult-req">!</a>
+<dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-page-selector"><a class="production" data-link-type="type" href="#typedef-page-selector" id="ref-for-typedef-page-selector②">&lt;page-selector></a></dfn> = [ <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-ident-token" id="ref-for-typedef-ident-token">&lt;ident-token></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt①">?</a> <a class="production" data-link-type="type" href="#typedef-pseudo-page" id="ref-for-typedef-pseudo-page">&lt;pseudo-page></a><a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-">*</a> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-req" id="ref-for-mult-req">!</a>
 <dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-pseudo-page"><a class="production" data-link-type="type" href="#typedef-pseudo-page" id="ref-for-typedef-pseudo-page①">&lt;pseudo-page></a></dfn> = ':' [ left <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> right <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> first <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②">|</a> blank ]
 
-/<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus①">*</a> Margin rules <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus②">*</a>/
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-left-corner">@top-left-corner</dfn> = @top-left-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-left">@top-left</dfn> = @top-left { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list②">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-center">@top-center</dfn> = @top-center { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list③">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-right">@top-right</dfn> = @top-right { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list④">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-right-corner">@top-right-corner</dfn> = @top-right-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑤">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-left-corner">@bottom-left-corner</dfn> = @bottom-left-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑥">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-left">@bottom-left</dfn> = @bottom-left { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑦">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-center">@bottom-center</dfn> = @bottom-center { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑧">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-right">@bottom-right</dfn> = @bottom-right { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑨">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-right-corner">@bottom-right-corner</dfn> = @bottom-right-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①⓪">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-left-top">@left-top</dfn> = @left-top { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①①">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-left-middle">@left-middle</dfn> = @left-middle { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①②">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-left-bottom">@left-bottom</dfn> = @left-bottom { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①③">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-right-top">@right-top</dfn> = @right-top { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①④">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-right-middle">@right-middle</dfn> = @right-middle { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①⑤">&lt;declaration-list></a> };
-<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-right-bottom">@right-bottom</dfn> = @right-bottom { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list①⑥">&lt;declaration-list></a> };
+/<a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-①">*</a> Margin rules <a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-②">*</a>/
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-left-corner">@top-left-corner</dfn> = @top-left-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-left">@top-left</dfn> = @top-left { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list②">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-center">@top-center</dfn> = @top-center { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list③">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-right">@top-right</dfn> = @top-right { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list④">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-top-right-corner">@top-right-corner</dfn> = @top-right-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑤">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-left-corner">@bottom-left-corner</dfn> = @bottom-left-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑥">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-left">@bottom-left</dfn> = @bottom-left { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑦">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-center">@bottom-center</dfn> = @bottom-center { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑧">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-right">@bottom-right</dfn> = @bottom-right { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list⑨">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-bottom-right-corner">@bottom-right-corner</dfn> = @bottom-right-corner { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①⓪">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-left-top">@left-top</dfn> = @left-top { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①①">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-left-middle">@left-middle</dfn> = @left-middle { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①②">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-left-bottom">@left-bottom</dfn> = @left-bottom { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①③">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-right-top">@right-top</dfn> = @right-top { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①④">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-right-middle">@right-middle</dfn> = @right-middle { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①⑤">&lt;declaration-list></a> };
+<dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-right-bottom">@right-bottom</dfn> = @right-bottom { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list①⑥">&lt;declaration-list></a> };
 </pre>
    <p>In addition, the following rules apply:</p>
    <ul>
     <li data-md>
-     <p>No whitespace is allowed between the productions in <a class="production css" data-link-type="type" href="#typedef-page-selector" id="ref-for-typedef-page-selector③">&lt;page-selector></a> or <a class="production css" data-link-type="type" href="#typedef-pseudo-page" id="ref-for-typedef-pseudo-page②">&lt;pseudo-page></a> (similar to the rule for <a class="production css" data-link-type="type" href="https://drafts.csswg.org/selectors-4/#typedef-compound-selector" id="ref-for-typedef-compound-selector">&lt;compound-selector></a>).</p>
+     <p>No whitespace is allowed between the productions in <a class="production css" data-link-type="type" href="#typedef-page-selector" id="ref-for-typedef-page-selector③">&lt;page-selector></a> or <a class="production css" data-link-type="type" href="#typedef-pseudo-page" id="ref-for-typedef-pseudo-page②">&lt;pseudo-page></a> (similar to the rule for <a class="production css" data-link-type="type" href="https://drafts.csswg.org/selectors/#typedef-compound-selector" id="ref-for-typedef-compound-selector">&lt;compound-selector></a>).</p>
     <li data-md>
      <p>The <a class="css" data-link-type="maybe" href="#at-ruledef-page" id="ref-for-at-ruledef-page⑨">@page</a> rule can only contain <a data-link-type="dfn" href="#page-property" id="ref-for-page-property">page properties</a> and <a data-link-type="dfn" href="#margin-at-rule" id="ref-for-margin-at-rule①">margin at-rules</a>.</p>
     <li data-md>
@@ -1535,7 +1440,7 @@ millimeter margins and 14 point type in the page-margin boxes:</p>
 Authors should put these rules after any declarations in the page context
 as legacy clients may not handle declarations
 after margin at-rules correctly.</p>
-   <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="margin-at-rule">margin at-rule</dfn> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#at-rule" id="ref-for-at-rule">at-rule</a> that identifies the page-margin box
+   <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="margin-at-rule">margin at-rule</dfn> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#at-rule" id="ref-for-at-rule">at-rule</a> that identifies the page-margin box
 (e.g. <a class="css" data-link-type="maybe" href="#at-ruledef-top-left" id="ref-for-at-ruledef-top-left②">@top-left</a>) and a block of descriptors
 (said to be in the <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="margin-context">margin context</dfn>).</p>
    <div class="example" id="example-26a4432a">
@@ -1560,8 +1465,8 @@ right side:</p>
    <p>As with the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#selectordef-before" id="ref-for-selectordef-before">:before</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#selectordef-after" id="ref-for-selectordef-after">:after</a> pseudo-elements,
 a specified <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content">content: normal</a> on a page-margin box computes to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-none" id="ref-for-valdef-content-none">none</a>.
 A page-margin box is <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="generated">generated</dfn> if and only if the computed value of its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content①">content</a> property is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-none" id="ref-for-valdef-content-none①">none</a>.
-Otherwise, no box is generated, as for elements with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display①">display: none</a>.</p>
-   <p class="note" role="note"> The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display②">display</a> property does not apply to page-margin boxes. </p>
+Otherwise, no box is generated, as for elements with <a class="css" data-link-type="propdesc">display: none</a>.</p>
+   <p class="note" role="note"> The <a class="property" data-link-type="propdesc">display</a> property does not apply to page-margin boxes. </p>
    <div class="example" id="example-ab340c9c">
     <a class="self-link" href="#example-ab340c9c"></a> The following style sheet creates a green box in each corner of the page
 except the bottom-left corner. 
@@ -1577,11 +1482,11 @@ except the bottom-left corner.
    <p>The width and height of each page-margin box is determined by the rules
 below. These rules define the equivalent of CSS2.1 Sections 10.3 and
 10.6 for page-margin boxes.</p>
-   <p>The rules for applying <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height">min-height</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height">max-height</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width">min-width</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width">max-width</a> <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> do apply to page-margin boxes and may imply
+   <p>The rules for applying <a class="property" data-link-type="propdesc">min-height</a>, <a class="property" data-link-type="propdesc">max-height</a>, <a class="property" data-link-type="propdesc">min-width</a>, and <a class="property" data-link-type="propdesc">max-width</a> <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> do apply to page-margin boxes and may imply
 a recalculation of the width, height, and/or margins
 if the dimensions resulting from the specified <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width">width</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a> violate their constraints.
-If the UA does not support the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height①">min-height</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width①">min-width</a> properties
-then it must behave as if <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height②">min-height</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width②">min-width</a> were always zero.</p>
+If the UA does not support the <a class="property" data-link-type="propdesc">min-height</a> or <a class="property" data-link-type="propdesc">min-width</a> properties
+then it must behave as if <a class="property" data-link-type="propdesc">min-height</a> and <a class="property" data-link-type="propdesc">min-width</a> were always zero.</p>
    <h4 class="heading settled" data-level="5.3.1" id="margin-box-terms"><span class="secno">5.3.1. </span><span class="content"> Page-Margin Box Layout Terminology</span><span id="max-margin-dimension"></span><a class="self-link" href="#margin-box-terms"></a></h4>
    <p>In addition to the box model definitions in CSS2.1 <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>,
 	and the sizing terms in CSS Sizing <a data-link-type="biblio" href="#biblio-css-sizing-3">[CSS-SIZING-3]</a>,
@@ -1676,20 +1581,20 @@ distribute space proportionally to the amount of content. </p>
     <li> Then, resolve any <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑤">auto</a> widths of the side boxes (A and C)
 			by setting that box’s outer width to <code>(<a data-link-type="dfn" href="#available-width" id="ref-for-available-width⑤">available width</a> − used <a data-link-type="dfn" href="#outer-width" id="ref-for-outer-width④">outer width</a>s of B) ÷ 2</code> 
    </ol>
-   <h5 class="heading settled" data-level="5.3.2.3" id="variable-minmax"><span class="secno">5.3.2.3. </span><span class="content">Handling <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width③">min-width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width①">max-width</a></span><a class="self-link" href="#variable-minmax"></a></h5>
-   <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width④">min-width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width②">max-width</a> properties <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> apply to page-margin
+   <h5 class="heading settled" data-level="5.3.2.3" id="variable-minmax"><span class="secno">5.3.2.3. </span><span class="content">Handling <a class="property" data-link-type="propdesc">min-width</a> and <a class="property" data-link-type="propdesc">max-width</a></span><a class="self-link" href="#variable-minmax"></a></h5>
+   <p>The <a class="property" data-link-type="propdesc">min-width</a> and <a class="property" data-link-type="propdesc">max-width</a> properties <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> apply to page-margin
 	boxes in the variable dimension like on normal elements, except that the
 	three boxes on the same side are considered together.</p>
    <p>More precisely:</p>
    <ol>
     <li> The tentative used widths are calculated
-		(without <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑤">min-width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width③">max-width</a>) following the rules under <a href="#variable-auto-sizing">§ 5.3.2.2 Resolving auto widths</a>. 
+		(without <a class="property" data-link-type="propdesc">min-width</a> and <a class="property" data-link-type="propdesc">max-width</a>) following the rules under <a href="#variable-auto-sizing">§ 5.3.2.2 Resolving auto widths</a>. 
     <li> If the tentative used width of any of the three boxes
-		is greater than <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width④">max-width</a>, the rules above are applied again,
-		but this time using the computed value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width⑤">max-width</a> as the computed value for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width④">width</a>. 
+		is greater than <a class="property" data-link-type="propdesc">max-width</a>, the rules above are applied again,
+		but this time using the computed value of <a class="property" data-link-type="propdesc">max-width</a> as the computed value for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width④">width</a>. 
     <li> If the resulting width of any of the three boxes
-		is smaller than <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑥">min-width</a>, the rules above are applied again,
-		but this time using the value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑦">min-width</a> as the computed value for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width⑤">width</a>. 
+		is smaller than <a class="property" data-link-type="propdesc">min-width</a>, the rules above are applied again,
+		but this time using the value of <a class="property" data-link-type="propdesc">min-width</a> as the computed value for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width⑤">width</a>. 
    </ol>
    <h5 class="heading settled" data-level="5.3.2.4" id="variable-position"><span class="secno">5.3.2.4. </span><span class="content">Positioning</span><a class="self-link" href="#variable-position"></a></h5>
    <p>Once the dimensions of the boxes are determined,
@@ -1715,8 +1620,8 @@ are established by the same rules as for <a class="css" data-link-type="maybe" h
     <li>
       The following constraint must hold among the used values of the margin
 		box’s properties: 
-     <p><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top①">margin-top</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width" id="ref-for-propdef-border-top-width">border-top-width</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-top" id="ref-for-propdef-padding-top">padding-top</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height②">height</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-bottom" id="ref-for-propdef-padding-bottom">padding-bottom</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width">border-bottom-width</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom①">margin-bottom</a> = top page margin</p>
-    <li> If <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width" id="ref-for-propdef-border-top-width①">border-top-width</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-top" id="ref-for-propdef-padding-top①">padding-top</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height③">height</a> (if it is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑥">auto</a>) + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-bottom" id="ref-for-propdef-padding-bottom①">padding-bottom</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width①">border-bottom-width</a>,
+     <p><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top①">margin-top</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width" id="ref-for-propdef-border-top-width">border-top-width</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-top" id="ref-for-propdef-padding-top">padding-top</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height②">height</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-bottom" id="ref-for-propdef-padding-bottom">padding-bottom</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width">border-bottom-width</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom①">margin-bottom</a> = top page margin</p>
+    <li> If <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width" id="ref-for-propdef-border-top-width①">border-top-width</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-top" id="ref-for-propdef-padding-top①">padding-top</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height③">height</a> (if it is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑥">auto</a>) + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-bottom" id="ref-for-propdef-padding-bottom①">padding-bottom</a> + <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width①">border-bottom-width</a>,
 		plus <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top②">margin-top</a> and/or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom②">margin-bottom</a> if not <span class="css">auto</span>,
 		is larger than the height of the top page margin,
 		then any <span class="css">auto</span> values for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top③">margin-top</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom③">margin-bottom</a> are,
@@ -1815,7 +1720,7 @@ are established by the same rules as for <a class="css" data-link-type="maybe" h
    <p>Properties that apply to the page-margin boxes can also be set
 	within the page context:
 	if inheritable or explicitly inherited
-	(with the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a> keyword in the margin context),
+	(with the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a> keyword in the margin context),
 	they will inherit to the page-margin boxes.</p>
    <p>The same appendix defines the normative list of
 	CSS 2.1 <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> <a href="#page-property-list">properties that apply to page-margin boxes</a>.
@@ -1841,11 +1746,11 @@ are established by the same rules as for <a class="css" data-link-type="maybe" h
 			root element) is also conformant to CSS Paged Media Level 3. Note that this
 			exception will be removed in Level 4. 
     <li> Values in units of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#em" id="ref-for-em">em</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#ex" id="ref-for-ex">ex</a> are interpreted relative to the font
-			associated with their context. When used on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size">font-size</a> property in the
+			associated with their context. When used on the <a class="property" data-link-type="propdesc">font-size</a> property in the
 			margin context, they are relative to the font of the page context. When used
-			on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size①">font-size</a> property in the page context, they are relative to the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size②">font-size</a> of the root element. However, since a previous revision of CSS
+			on the <a class="property" data-link-type="propdesc">font-size</a> property in the page context, they are relative to the <a class="property" data-link-type="propdesc">font-size</a> of the root element. However, since a previous revision of CSS
 			Paged Media Level 3 was ambiguous on this point, an implementation that
-			treats <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#em" id="ref-for-em①">em</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#ex" id="ref-for-ex①">ex</a> on <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size③">font-size</a> as relative to the initial value is
+			treats <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#em" id="ref-for-em①">em</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#ex" id="ref-for-ex①">ex</a> on <a class="property" data-link-type="propdesc">font-size</a> as relative to the initial value is
 			also conformant to CSS Paged Media Level 3. Note that this exception will
 			be removed in Level 4. 
     <li> Percentage values on the margin and padding properties are relative to the
@@ -1870,7 +1775,7 @@ are established by the same rules as for <a class="css" data-link-type="maybe" h
    <h3 class="heading settled" data-level="6.1" id="page-based-counters"><span class="secno">6.1. </span><span class="content"> Page-based counters</span><a class="self-link" href="#page-based-counters"></a></h3>
    <p>Counters can be defined and controlled within an <a class="css" data-link-type="maybe" href="#at-ruledef-page" id="ref-for-at-ruledef-page①⓪">@page</a> rule, and used as content in page-margin boxes.
 	This is useful for maintaining a page count.</p>
-   <p>A <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-counter-increment" id="ref-for-propdef-counter-increment">counter-increment</a> within either a page or margin context causes the counter
+   <p>A <a class="property" data-link-type="propdesc">counter-increment</a> within either a page or margin context causes the counter
 	to increment with the generation of each page box.</p>
    <p>If a counter is reset or incremented within the page context, it is in scope
 	for all page-margin boxes and obscures all counters of the same name within the
@@ -1887,9 +1792,9 @@ are established by the same rules as for <a class="css" data-link-type="maybe" h
 	the calculation of the counter’s value.</p>
    <p>A counter named <span class="css">page</span> is automatically created
 	and incremented by 1 on every page of the document,
-	unless the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-counter-increment" id="ref-for-propdef-counter-increment①">counter-increment</a> property in the <a data-link-type="dfn" href="#page-context" id="ref-for-page-context③">page context</a> explicitly specifies a different increment for the <span class="css">page</span> counter.
+	unless the <a class="property" data-link-type="propdesc">counter-increment</a> property in the <a data-link-type="dfn" href="#page-context" id="ref-for-page-context③">page context</a> explicitly specifies a different increment for the <span class="css">page</span> counter.
 	The implied <span class="css">page</span> counter is a real counter,
-	and can be directly affected using the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-counter-increment" id="ref-for-propdef-counter-increment②">counter-increment</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-counter-reset" id="ref-for-propdef-counter-reset">counter-reset</a> properties
+	and can be directly affected using the <a class="property" data-link-type="propdesc">counter-increment</a> and <a class="property" data-link-type="propdesc">counter-reset</a> properties
 	when named explicitly in those properties.
 	It can also be used in the 'counter()' and 'counters()' function forms.</p>
    <div class="example" id="example-13051aa4">
@@ -1914,7 +1819,7 @@ are established by the same rules as for <a class="css" data-link-type="maybe" h
    </div>
    <p>Additionally, a counter named <span class="css">pages</span> is automatically created by the UA.
 	Its value is always the total number of pages in the document. (In continuous
-	media this is always 1.) The value of <span class="css">pages</span> cannot be manipulated: while <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-counter-reset" id="ref-for-propdef-counter-reset①">counter-reset</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-counter-increment" id="ref-for-propdef-counter-increment③">counter-increment</a> statements that set it are valid, they
+	media this is always 1.) The value of <span class="css">pages</span> cannot be manipulated: while <a class="property" data-link-type="propdesc">counter-reset</a> and <a class="property" data-link-type="propdesc">counter-increment</a> statements that set it are valid, they
 	have no effect.</p>
    <p>In all other respects, page-associated counters behave as described in <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>, <a href="https://www.w3.org/TR/CSS2/generate.html#scope">Nested Counters and Scope</a> and <a href="https://www.w3.org/TR/CSS2/syndata.html#counter">Counters</a>.</p>
    <h3 class="heading settled" data-level="6.2" id="margin-text-alignment"><span class="secno">6.2. </span><span class="content"> Page-margin boxes and default values</span><a class="self-link" href="#margin-text-alignment"></a></h3>
@@ -1927,7 +1832,7 @@ are established by the same rules as for <a class="css" data-link-type="maybe" h
     <thead>
      <tr>
       <th>Page-margin box 
-      <th><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-align" id="ref-for-propdef-text-align">text-align</a>
+      <th><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-align" id="ref-for-propdef-text-align">text-align</a> 
       <th><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-inline-3/#propdef-vertical-align" id="ref-for-propdef-vertical-align①">vertical-align</a> 
     <tbody>
      <tr>
@@ -2015,48 +1920,6 @@ div.chapter {counter-increment: chapter;}
 	which indicates that the document should preferentially be displayed on a
 	surface of a certain size; another method is to use Media Queries <a data-link-type="biblio" href="#biblio-mediaq">[MEDIAQ]</a> which allow different style sheets to be applied to different page sizes.</p>
    <h3 class="heading settled" data-level="7.1" id="page-size-prop"><span class="secno">7.1. </span><span class="content"> Page size: the <a class="property" data-link-type="propdesc" href="#descdef-page-size" id="ref-for-descdef-page-size③">size</a> property</span><a class="self-link" href="#page-size-prop"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size" title="The size CSS at-rule descriptor, used with the @page at-rule, defines the size and orientation of the box which is used to represent a page. Most of the time, this size corresponds to the target size of the printed page if applicable.">@page/size</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>83+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>69+</span></span><span class="edge_blink yes"><span>Edge</span><span>83+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>83+</span></span><span class="webview_android yes"><span>Android WebView</span><span>83+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>13.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>59+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size" title="The size CSS at-rule descriptor, used with the @page at-rule, defines the size and orientation of the box which is used to represent a page. Most of the time, this size corresponds to the target size of the printed page if applicable.">@page/size</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>83+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>69+</span></span><span class="edge_blink yes"><span>Edge</span><span>83+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>83+</span></span><span class="webview_android yes"><span>Android WebView</span><span>83+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>13.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>59+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size" title="The size CSS at-rule descriptor, used with the @page at-rule, defines the size and orientation of the box which is used to represent a page. Most of the time, this size corresponds to the target size of the printed page if applicable.">@page/size</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>15+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>15+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.5+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def descdef">
     <tbody>
      <tr>
@@ -2067,13 +1930,13 @@ div.chapter {counter-increment: chapter;}
       <td><a class="css" data-link-type="at-rule" href="#at-ruledef-page" id="ref-for-at-ruledef-page①①">@page</a> 
      <tr>
       <th>Value:
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{1,2}</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one③">|</a> auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④">|</a> [ <a class="production css" data-link-type="type" href="#typedef-page-size-page-size" id="ref-for-typedef-page-size-page-size" title="Expands to: a3 | a4 | a5 | b4 | b5 | jis-b4 | jis-b5 | ledger | legal | letter">&lt;page-size></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-any" id="ref-for-comb-any">||</a> [ portrait <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑤">|</a> landscape ] ] 
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{1,2}</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one③">|</a> auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④">|</a> [ <a class="production css" data-link-type="type" href="#typedef-page-size-page-size" id="ref-for-typedef-page-size-page-size" title="Expands to: a3 | a4 | a5 | b4 | b5 | jis-b4 | jis-b5 | ledger | legal | letter">&lt;page-size></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-any" id="ref-for-comb-any">||</a> [ portrait <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑤">|</a> landscape ] ] 
      <tr>
       <th>Initial:
       <td>auto 
      <tr>
       <th>Computed value:
-      <td>specified value, with <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a>s made absolute. 
+      <td>specified value, with <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a>s made absolute. 
    </table>
    <p>This property specifies the target size and orientation of the <a data-link-type="dfn" href="#page-box" id="ref-for-page-box⑥">page box</a>’s containing block.
 	In the general case, where one page box is rendered onto one <a data-link-type="dfn" href="#page-sheet" id="ref-for-page-sheet">page sheet</a>,
@@ -2093,7 +1956,7 @@ div.chapter {counter-increment: chapter;}
    <div class="issue" id="issue-59a903e8">
     <a class="self-link" href="#issue-59a903e8"></a> It would be useful if media queries could respond at least
 		to sizes specified on an unqualified @page. 
-    <p>Another option could be to do like <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport" id="ref-for-at-ruledef-viewport">@viewport</a> rules <a data-link-type="biblio" href="#biblio-css-device-adapt">[CSS-DEVICE-ADAPT]</a>:
+    <p>Another option could be to do like <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-device-adapt/#at-ruledef-viewport" id="ref-for-at-ruledef-viewport">@viewport</a> rules <a data-link-type="biblio" href="#biblio-css-device-adapt">[CSS-DEVICE-ADAPT]</a>:
 		First apply <a class="css" data-link-type="maybe" href="#at-ruledef-page" id="ref-for-at-ruledef-page①③">@page</a> rules (matching which selectors?),
 		using the UA’s default page size for Media Queries and <a href="https://www.w3.org/TR/css3-values/#viewport-relative-lengths">viewport-percentage lengths</a> <a data-link-type="biblio" href="#biblio-css-values-3">[CSS-VALUES-3]</a>.
 		The resulting page size is the "base page size".
@@ -2129,7 +1992,7 @@ div.chapter {counter-increment: chapter;}
     <dd> Specifies that the page’s content be printed in portrait orientation. The
 			shorter sides of the page box are horizontal. If a <a class="production css" data-link-type="type" href="#typedef-page-size-page-size" id="ref-for-typedef-page-size-page-size②" title="Expands to: a3 | a4 | a5 | b4 | b5 | jis-b4 | jis-b5 | ledger | legal | letter">&lt;page-size></a> is not specified, the size of the page sheet
 			is chosen by the UA. 
-    <dt><dfn class="css" data-dfn-for="@page/size" data-dfn-type="value" data-export id="valdef-page-size-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-page-size-length"></a></dfn> 
+    <dt><dfn class="css" data-dfn-for="@page/size" data-dfn-type="value" data-export id="valdef-page-size-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-page-size-length"></a></dfn> 
     <dd> The page box will be set to the given absolute dimension(s). If only one length
 			value is specified, it sets both the width and height of the page box (i.e.,
 			the box is a square). If two length values are specified, the first establishes
@@ -2176,7 +2039,7 @@ size: A4 landscape;
    </div>
    <div class="example" id="example-e0739c4c">
     <a class="self-link" href="#example-e0739c4c"></a> In the following example, the outer edges of the page box will align with the
-	page. The percentage value on the <span class="property"><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-margin" id="ref-for-propdef-margin">margin</a></span> property is relative to the page size so if the page sheet dimensions are 210mm
+	page. The percentage value on the <span class="property"><a class="property" data-link-type="propdesc">margin</a></span> property is relative to the page size so if the page sheet dimensions are 210mm
 	x 297mm (i.e., A4), the margins are 21mm and 29.7mm. Assuming there are no page
 	borders or padding set in the UA default style sheet, the resulting page area
 	is 189mm by 367.3mm (210mm-21mm by 297mm-29.7mm). 
@@ -2354,7 +2217,7 @@ of how it was laid out.</p>
       <td><a class="css" data-link-type="at-rule" href="#at-ruledef-page" id="ref-for-at-ruledef-page①⑥">@page</a> 
      <tr>
       <th>Value:
-      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑨">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
+      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑨">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
      <tr>
       <th>Initial:
       <td>auto 
@@ -2367,8 +2230,8 @@ of how it was laid out.</p>
 	Values have the following meanings:</p>
    <dl>
     <dt><dfn class="dfn-paneled css" data-dfn-for="@page/bleed" data-dfn-type="value" data-export id="valdef-page-bleed-auto">auto</dfn> 
-    <dd> Computes to <span class="css">6pt</span> if <a class="property" data-link-type="propdesc" href="#descdef-page-marks" id="ref-for-descdef-page-marks①">marks</a> has <a class="css" data-link-type="maybe" href="#valdef-page-marks-crop" id="ref-for-valdef-page-marks-crop">crop</a> and to zero otherwise.
-    <dt><dfn class="css" data-dfn-for="@page/bleed" data-dfn-type="value" data-export id="valdef-page-bleed-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-page-bleed-length"></a></dfn> 
+    <dd> Computes to <span class="css">6pt</span> if <a class="property" data-link-type="propdesc" href="#descdef-page-marks" id="ref-for-descdef-page-marks①">marks</a> has <a class="css" data-link-type="maybe" href="#valdef-page-marks-crop" id="ref-for-valdef-page-marks-crop">crop</a> and to zero otherwise. 
+    <dt><dfn class="css" data-dfn-for="@page/bleed" data-dfn-type="value" data-export id="valdef-page-bleed-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-page-bleed-length"></a></dfn> 
     <dd> Specifies by how far outward, in each direction,
 			the <a data-link-type="dfn" href="#bleed-area" id="ref-for-bleed-area②">bleed area</a> extends past the <a data-link-type="dfn" href="#page-box" id="ref-for-page-box⑦">page box</a>.
 			Values may be negative, but there may be implementation-specific limits. 
@@ -2394,54 +2257,12 @@ of how it was laid out.</p>
 		sheet; or 
     <li>position the page box in the upper left corner of the page sheet
 		(or another corner,
-		based on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction①">direction</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode" id="ref-for-propdef-writing-mode②">writing-mode</a> properties of the page box)
+		based on the <a class="property" data-link-type="propdesc">direction</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode" id="ref-for-propdef-writing-mode②">writing-mode</a> properties of the page box)
 		as this may minimize media consumption. 
    </ul>
    <p>The user agent may wish to consult the user in this
 	regard.</p>
    <h2 class="heading settled" data-level="8" id="page-breaks"><span class="secno">8. </span><span class="content"> <span id="pg-br-before-after"></span> <span id="page-break-before"></span> <span id="page-break-after"></span> <span id="page-break-inside"></span> <span id="breaks-inside"></span> <span id="orphans"></span> <span id="widows"></span> <span id="allowed-pg-brk"></span> <span id="brk-btw-blocks"></span> <span id="brk-btw-lines"></span> <span id="brk-end-block"></span> <span id="forced-pg-brk"></span> <span id="best-pg-brk"></span> Page Breaks </span><a class="self-link" href="#page-breaks"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-after" title="The page-break-after CSS property adjusts page breaks after the current element.">page-break-after</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-before" title="The page-break-before CSS property adjusts page breaks before the current element.">page-break-before</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-inside" title="The page-break-inside CSS property adjusts page breaks inside the current element.">page-break-inside</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>19+</span></span><span class="safari yes"><span>Safari</span><span>1.3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>19+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The CSS Fragmentation Module <a data-link-type="biblio" href="#biblio-css-break-3">[CSS-BREAK-3]</a> module
 	defines how and where CSS boxes
 	can be <em>fragmented</em>, including across page breaks.
@@ -2949,8 +2770,8 @@ table { page: rotated }
    <h2 class="no-num heading settled" id="changes"><span class="content"> Changes</span><a class="self-link" href="#changes"></a></h2>
    <p>Changes since the <a href="https://www.w3.org/TR/2013/WD-css3-page-20130314/">14 March 2013 Working Draft</a> are:</p>
    <ul>
-    <li>Imported the <a class="property" data-link-type="propdesc" href="#descdef-page-marks" id="ref-for-descdef-page-marks②">marks</a> and <a class="property" data-link-type="propdesc" href="#descdef-page-bleed" id="ref-for-descdef-page-bleed①">bleed</a> properties from <a data-link-type="biblio" href="#biblio-css3gcpm">[CSS3GCPM]</a>.
-    <li>Added <a class="css" data-link-type="maybe" href="#valdef-page-bleed-auto" id="ref-for-valdef-page-bleed-auto">auto</a> as the initial value of <a class="property" data-link-type="propdesc" href="#descdef-page-bleed" id="ref-for-descdef-page-bleed②">bleed</a> and allowed it to apply even when <a class="property" data-link-type="propdesc" href="#descdef-page-marks" id="ref-for-descdef-page-marks③">marks</a> is <a class="css" data-link-type="maybe" href="#valdef-page-marks-none" id="ref-for-valdef-page-marks-none">none</a>.
+    <li>Imported the <a class="property" data-link-type="propdesc" href="#descdef-page-marks" id="ref-for-descdef-page-marks②">marks</a> and <a class="property" data-link-type="propdesc" href="#descdef-page-bleed" id="ref-for-descdef-page-bleed①">bleed</a> properties from <a data-link-type="biblio" href="#biblio-css3gcpm">[CSS3GCPM]</a>. 
+    <li>Added <a class="css" data-link-type="maybe" href="#valdef-page-bleed-auto" id="ref-for-valdef-page-bleed-auto">auto</a> as the initial value of <a class="property" data-link-type="propdesc" href="#descdef-page-bleed" id="ref-for-descdef-page-bleed②">bleed</a> and allowed it to apply even when <a class="property" data-link-type="propdesc" href="#descdef-page-marks" id="ref-for-descdef-page-marks③">marks</a> is <a class="css" data-link-type="maybe" href="#valdef-page-marks-none" id="ref-for-valdef-page-marks-none">none</a>. 
     <li>Added JIS-B4 and JIS-B5. 
    </ul>
    <h2 class="no-num heading settled" id="acknowledgements"><span class="content">Acknowledgements</span><a class="self-link" href="#acknowledgements"></a></h2>
@@ -3179,50 +3000,56 @@ table { page: rotated }
    <li><a href="#at-ruledef-top-right-corner">@top-right-corner</a><span>, in §4.3</span>
    <li><a href="#valdef-page-orientation-upright">upright</a><span>, in §7.1.2</span>
   </ul>
+  <aside class="dfn-panel" data-for="term-for-grammardef-">
+   <a href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-">https://w3c.github.io/webappsec-clear-site-data/#grammardef-</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-grammardef-">4.3. @page rule grammar</a> <a href="#ref-for-grammardef-①">(2)</a> <a href="#ref-for-grammardef-②">(3)</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-background-positioning-area">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area">https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#background-positioning-area">https://drafts.csswg.org/css-backgrounds/#background-positioning-area</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-background-positioning-area">3.1. 
 Page Backgrounds and Painting Order</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-attachment">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-attachment">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-attachment</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-attachment">https://drafts.csswg.org/css-backgrounds/#propdef-background-attachment</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-background-attachment">3.1.
+    <li><a href="#ref-for-propdef-background-attachment">3.1. 
 Page Backgrounds and Painting Order</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-clip">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-clip">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-clip</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-clip">https://drafts.csswg.org/css-backgrounds/#propdef-background-clip</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-background-clip">3.1.
+    <li><a href="#ref-for-propdef-background-clip">3.1. 
 Page Backgrounds and Painting Order</a> <a href="#ref-for-propdef-background-clip①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-origin">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-origin">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-origin</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-origin">https://drafts.csswg.org/css-backgrounds/#propdef-background-origin</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-origin">3.1. 
 Page Backgrounds and Painting Order</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-bottom-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-bottom-width">5.3.3. Page-Margin Box Fixed Dimension Computation Rules</a> <a href="#ref-for-propdef-border-bottom-width①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-top-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-top-width">5.3.3. Page-Margin Box Fixed Dimension Computation Rules</a> <a href="#ref-for-propdef-border-top-width①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-background-attachment-fixed">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-fixed">https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-fixed</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-fixed">https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-fixed</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-background-attachment-fixed">3.1.
+    <li><a href="#ref-for-valdef-background-attachment-fixed">3.1. 
 Page Backgrounds and Painting Order</a>
    </ul>
   </aside>
@@ -3272,7 +3099,7 @@ Page-Margin Box Layout Terminology</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-before">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-before">https://drafts.csswg.org/css-break-3/#propdef-break-before</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-before">https://drafts.csswg.org/css-break/#propdef-break-before</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-before">3.2. Content outside the page box</a>
     <li><a href="#ref-for-propdef-break-before①">3.3. Page Progression</a>
@@ -3324,7 +3151,7 @@ Blank-page pseudo-class: :blank</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-all-inherit">
-   <a href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit">https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit">https://drafts.csswg.org/css-cascade/#valdef-all-inherit</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-all-inherit">6. 
 Page Properties</a>
@@ -3354,23 +3181,16 @@ Page Properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-at-ruledef-viewport">
-   <a href="https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport">https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-device-adapt/#at-ruledef-viewport">https://drafts.csswg.org/css-device-adapt/#at-ruledef-viewport</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-at-ruledef-viewport">7.1. 
 Page size: the size property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-none">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-none">https://drafts.csswg.org/css-display-3/#valdef-display-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-none">https://drafts.csswg.org/css-display/#valdef-display-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-none">3.2. Content outside the page box</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-font-size">
-   <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size">https://drafts.csswg.org/css-fonts-3/#propdef-font-size</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-font-size">6. 
-Page Properties</a> <a href="#ref-for-propdef-font-size①">(2)</a> <a href="#ref-for-propdef-font-size②">(3)</a> <a href="#ref-for-propdef-font-size③">(4)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-vertical-align">
@@ -3383,7 +3203,7 @@ Page-margin boxes and default values</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">3.1. 
 Page Backgrounds and Painting Order</a> <a href="#ref-for-propdef-position①">(2)</a>
@@ -3449,25 +3269,25 @@ Page Properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-declaration-list">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list">https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list">https://drafts.csswg.org/css-syntax/#typedef-declaration-list</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-declaration-list">4.3. @page rule grammar</a> <a href="#ref-for-typedef-declaration-list①">(2)</a> <a href="#ref-for-typedef-declaration-list②">(3)</a> <a href="#ref-for-typedef-declaration-list③">(4)</a> <a href="#ref-for-typedef-declaration-list④">(5)</a> <a href="#ref-for-typedef-declaration-list⑤">(6)</a> <a href="#ref-for-typedef-declaration-list⑥">(7)</a> <a href="#ref-for-typedef-declaration-list⑦">(8)</a> <a href="#ref-for-typedef-declaration-list⑧">(9)</a> <a href="#ref-for-typedef-declaration-list⑨">(10)</a> <a href="#ref-for-typedef-declaration-list①⓪">(11)</a> <a href="#ref-for-typedef-declaration-list①①">(12)</a> <a href="#ref-for-typedef-declaration-list①②">(13)</a> <a href="#ref-for-typedef-declaration-list①③">(14)</a> <a href="#ref-for-typedef-declaration-list①④">(15)</a> <a href="#ref-for-typedef-declaration-list①⑤">(16)</a> <a href="#ref-for-typedef-declaration-list①⑥">(17)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-ident-token">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-ident-token">https://drafts.csswg.org/css-syntax-3/#typedef-ident-token</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-ident-token">https://drafts.csswg.org/css-syntax/#typedef-ident-token</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-ident-token">4.3. @page rule grammar</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-at-rule">
-   <a href="https://drafts.csswg.org/css-syntax-3/#at-rule">https://drafts.csswg.org/css-syntax-3/#at-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#at-rule">https://drafts.csswg.org/css-syntax/#at-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-at-rule">5.1. At-rules for page-margin boxes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-css-parse-something-according-to-a-css-grammar">
-   <a href="https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar">https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar">https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-css-parse-something-according-to-a-css-grammar">4.3. @page rule grammar</a>
    </ul>
@@ -3510,12 +3330,6 @@ Bleed Area: the bleed property</a> <a href="#ref-for-length-value④">(2)</a>
    <a href="https://drafts.csswg.org/css-values-4/#mult-comma">https://drafts.csswg.org/css-values-4/#mult-comma</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-mult-comma">4.3. @page rule grammar</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-mult-zero-plus">
-   <a href="https://drafts.csswg.org/css-values-4/#mult-zero-plus">https://drafts.csswg.org/css-values-4/#mult-zero-plus</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-mult-zero-plus">4.3. @page rule grammar</a> <a href="#ref-for-mult-zero-plus①">(2)</a> <a href="#ref-for-mult-zero-plus②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-identifier-value">
@@ -3588,14 +3402,6 @@ Page size: the size property</a>
 Crop and Registration Marks: the marks property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-direction">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction">https://drafts.csswg.org/css-writing-modes-3/#propdef-direction</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-direction">3.3. Page Progression</a>
-    <li><a href="#ref-for-propdef-direction①">7.5. 
-Positioning the page box on the sheet</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-block-flow-direction">
    <a href="https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction">https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction</a><b>Referenced in:</b>
    <ul>
@@ -3636,64 +3442,10 @@ Positioning the page box on the sheet</a>
     <li><a href="#ref-for-selectordef-before">5.2. Populating page-margin boxes</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-counter-increment">
-   <a href="https://drafts.csswg.org/css2/#propdef-counter-increment">https://drafts.csswg.org/css2/#propdef-counter-increment</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-counter-increment">6.1. 
-Page-based counters</a> <a href="#ref-for-propdef-counter-increment①">(2)</a> <a href="#ref-for-propdef-counter-increment②">(3)</a> <a href="#ref-for-propdef-counter-increment③">(4)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-counter-reset">
-   <a href="https://drafts.csswg.org/css2/#propdef-counter-reset">https://drafts.csswg.org/css2/#propdef-counter-reset</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-counter-reset">6.1. 
-Page-based counters</a> <a href="#ref-for-propdef-counter-reset①">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css2/#propdef-display">https://drafts.csswg.org/css2/#propdef-display</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-display">3.2. Content outside the page box</a>
-    <li><a href="#ref-for-propdef-display①">5.2. Populating page-margin boxes</a> <a href="#ref-for-propdef-display②">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-visibility-hidden">
    <a href="https://drafts.csswg.org/css2/#valdef-visibility-hidden">https://drafts.csswg.org/css2/#valdef-visibility-hidden</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-visibility-hidden">3.2. Content outside the page box</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-margin">
-   <a href="https://drafts.csswg.org/css2/#propdef-margin">https://drafts.csswg.org/css2/#propdef-margin</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-margin">7.1. 
-Page size: the size property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-height">https://drafts.csswg.org/css2/#propdef-max-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-height">5.3. Computing Page-margin Box Dimensions</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-width">https://drafts.csswg.org/css2/#propdef-max-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-width">5.3. Computing Page-margin Box Dimensions</a>
-    <li><a href="#ref-for-propdef-max-width①">5.3.2.3. Handling min-width and max-width</a> <a href="#ref-for-propdef-max-width②">(2)</a> <a href="#ref-for-propdef-max-width③">(3)</a> <a href="#ref-for-propdef-max-width④">(4)</a> <a href="#ref-for-propdef-max-width⑤">(5)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-height">https://drafts.csswg.org/css2/#propdef-min-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-height">5.3. Computing Page-margin Box Dimensions</a> <a href="#ref-for-propdef-min-height①">(2)</a> <a href="#ref-for-propdef-min-height②">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-width">https://drafts.csswg.org/css2/#propdef-min-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-width">5.3. Computing Page-margin Box Dimensions</a> <a href="#ref-for-propdef-min-width①">(2)</a> <a href="#ref-for-propdef-min-width②">(3)</a>
-    <li><a href="#ref-for-propdef-min-width③">5.3.2.3. Handling min-width and max-width</a> <a href="#ref-for-propdef-min-width④">(2)</a> <a href="#ref-for-propdef-min-width⑤">(3)</a> <a href="#ref-for-propdef-min-width⑥">(4)</a> <a href="#ref-for-propdef-min-width⑦">(5)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-page-break-after">
@@ -3742,7 +3494,7 @@ Introduction</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-compound-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#typedef-compound-selector">https://drafts.csswg.org/selectors-4/#typedef-compound-selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#typedef-compound-selector">https://drafts.csswg.org/selectors/#typedef-compound-selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-compound-selector">4.3. @page rule grammar</a>
    </ul>
@@ -3756,6 +3508,11 @@ Page Backgrounds and Painting Order</a>
   </aside>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
+   <li>
+    <a data-link-type="biblio">[clear-site-data]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-grammardef-">*</span>
+    </ul>
    <li>
     <a data-link-type="biblio">[CSS-BACKGROUNDS-3]</a> defines the following terms:
     <ul>
@@ -3794,7 +3551,7 @@ Page Backgrounds and Painting Order</a>
      <li><span class="dfn-paneled" id="term-for-valdef-break-before-verso">verso</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-valdef-all-inherit">inherit</span>
     </ul>
@@ -3814,11 +3571,6 @@ Page Backgrounds and Painting Order</a>
     <a data-link-type="biblio">[css-display-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-valdef-display-none">none</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-fonts-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-font-size">font-size</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-inline-3]</a> defines the following terms:
@@ -3870,7 +3622,6 @@ Page Backgrounds and Painting Order</a>
     <ul>
      <li><span class="dfn-paneled" id="term-for-mult-req">!</span>
      <li><span class="dfn-paneled" id="term-for-mult-comma">#</span>
-     <li><span class="dfn-paneled" id="term-for-mult-zero-plus">*</span>
      <li><span class="dfn-paneled" id="term-for-identifier-value">&lt;custom-ident></span>
      <li><span class="dfn-paneled" id="term-for-mult-opt">?</span>
      <li><span class="dfn-paneled" id="term-for-css-wide-keywords">css-wide keywords</span>
@@ -3879,11 +3630,6 @@ Page Backgrounds and Painting Order</a>
      <li><span class="dfn-paneled" id="term-for-mult-num-range">{a,b}</span>
      <li><span class="dfn-paneled" id="term-for-comb-one">|</span>
      <li><span class="dfn-paneled" id="term-for-comb-any">||</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS-WRITING-MODES-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-direction">direction</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-writing-modes-4]</a> defines the following terms:
@@ -3898,15 +3644,7 @@ Page Backgrounds and Painting Order</a>
     <ul>
      <li><span class="dfn-paneled" id="term-for-selectordef-after">:after</span>
      <li><span class="dfn-paneled" id="term-for-selectordef-before">:before</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-counter-increment">counter-increment</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-counter-reset">counter-reset</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-display">display</span>
      <li><span class="dfn-paneled" id="term-for-valdef-visibility-hidden">hidden</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-margin">margin</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-height">max-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-width">max-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-height">min-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-width">min-width</span>
      <li><span class="dfn-paneled" id="term-for-propdef-page-break-after">page-break-after</span>
      <li><span class="dfn-paneled" id="term-for-propdef-page-break-before">page-break-before</span>
      <li><span class="dfn-paneled" id="term-for-propdef-visibility">visibility</span>
@@ -3937,6 +3675,8 @@ Page Backgrounds and Painting Order</a>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-clear-site-data">[CLEAR-SITE-DATA]
+   <dd>Mike West. <a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a>. 30 November 2017. WD. URL: <a href="https://www.w3.org/TR/clear-site-data/">https://www.w3.org/TR/clear-site-data/</a>
    <dt id="biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]
    <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="https://www.w3.org/TR/css-backgrounds-3/">CSS Backgrounds and Borders Module Level 3</a>. 22 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-backgrounds-3/">https://www.w3.org/TR/css-backgrounds-3/</a>
    <dt id="biblio-css-box-3">[CSS-BOX-3]
@@ -3947,16 +3687,14 @@ Page Backgrounds and Painting Order</a>
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/css-break-3/">https://www.w3.org/TR/css-break-3/</a>
    <dt id="biblio-css-break-4">[CSS-BREAK-4]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a>. 18 December 2018. WD. URL: <a href="https://www.w3.org/TR/css-break-4/">https://www.w3.org/TR/css-break-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-content-3">[CSS-CONTENT-3]
    <dd>Elika Etemad; Dave Cramer. <a href="https://www.w3.org/TR/css-content-3/">CSS Generated Content Module Level 3</a>. 2 August 2019. WD. URL: <a href="https://www.w3.org/TR/css-content-3/">https://www.w3.org/TR/css-content-3/</a>
    <dt id="biblio-css-device-adapt">[CSS-DEVICE-ADAPT]
    <dd>Rune Lillesveen; Florian Rivoal; Matt Rakow. <a href="https://www.w3.org/TR/css-device-adapt-1/">CSS Device Adaptation Module Level 1</a>. 29 March 2016. WD. URL: <a href="https://www.w3.org/TR/css-device-adapt-1/">https://www.w3.org/TR/css-device-adapt-1/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
-   <dt id="biblio-css-fonts-3">[CSS-FONTS-3]
-   <dd>John Daggett; Myles Maxfield; Chris Lilley. <a href="https://www.w3.org/TR/css-fonts-3/">CSS Fonts Module Level 3</a>. 20 September 2018. REC. URL: <a href="https://www.w3.org/TR/css-fonts-3/">https://www.w3.org/TR/css-fonts-3/</a>
    <dt id="biblio-css-inline-3">[CSS-INLINE-3]
    <dd>Dave Cramer; Elika Etemad; Steve Zilles. <a href="https://www.w3.org/TR/css-inline-3/">CSS Inline Layout Module Level 3</a>. 27 August 2020. WD. URL: <a href="https://www.w3.org/TR/css-inline-3/">https://www.w3.org/TR/css-inline-3/</a>
    <dt id="biblio-css-position-3">[CSS-POSITION-3]
@@ -3966,15 +3704,13 @@ Page Backgrounds and Painting Order</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
    <dd>Tab Atkins Jr.; Simon Sapin. <a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a>. 16 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-syntax-3/">https://www.w3.org/TR/css-syntax-3/</a>
    <dt id="biblio-css-text-3">[CSS-TEXT-3]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
    <dt id="biblio-css-text-4">[CSS-TEXT-4]
    <dd>Elika Etemad; et al. <a href="https://www.w3.org/TR/css-text-4/">CSS Text Module Level 4</a>. 13 November 2019. WD. URL: <a href="https://www.w3.org/TR/css-text-4/">https://www.w3.org/TR/css-text-4/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a>. 6 June 2019. CR. URL: <a href="https://www.w3.org/TR/css-values-3/">https://www.w3.org/TR/css-values-3/</a>
    <dt id="biblio-css-values-4">[CSS-VALUES-4]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a>. 11 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-values-4/">https://www.w3.org/TR/css-values-4/</a>
-   <dt id="biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]
-   <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 10 December 2019. REC. URL: <a href="https://www.w3.org/TR/css-writing-modes-3/">https://www.w3.org/TR/css-writing-modes-3/</a>
    <dt id="biblio-css-writing-modes-4">[CSS-WRITING-MODES-4]
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-4/">CSS Writing Modes Level 4</a>. 30 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-writing-modes-4/">https://www.w3.org/TR/css-writing-modes-4/</a>
    <dt id="biblio-css2">[CSS2]
@@ -4000,6 +3736,8 @@ Page Backgrounds and Painting Order</a>
   <dl>
    <dt id="biblio-css-images-3">[CSS-IMAGES-3]
    <dd>Tab Atkins Jr.; Elika Etemad; Lea Verou. <a href="https://www.w3.org/TR/css-images-3/">CSS Images Module Level 3</a>. 17 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-images-3/">https://www.w3.org/TR/css-images-3/</a>
+   <dt id="biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]
+   <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 10 December 2019. REC. URL: <a href="https://www.w3.org/TR/css-writing-modes-3/">https://www.w3.org/TR/css-writing-modes-3/</a>
    <dt id="biblio-css3gcpm">[CSS3GCPM]
    <dd>Dave Cramer. <a href="https://www.w3.org/TR/css-gcpm-3/">CSS Generated Content for Paged Media Module</a>. 13 May 2014. WD. URL: <a href="https://www.w3.org/TR/css-gcpm-3/">https://www.w3.org/TR/css-gcpm-3/</a>
    <dt id="biblio-jlreq">[JLREQ]
@@ -4074,7 +3812,7 @@ Page Backgrounds and Painting Order</a>
    <div class="issue">
      It would be useful if media queries could respond at least
 		to sizes specified on an unqualified @page. 
-    <p>Another option could be to do like <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport">@viewport</a> rules <a data-link-type="biblio" href="#biblio-css-device-adapt">[CSS-DEVICE-ADAPT]</a>:
+    <p>Another option could be to do like <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-device-adapt/#at-ruledef-viewport">@viewport</a> rules <a data-link-type="biblio" href="#biblio-css-device-adapt">[CSS-DEVICE-ADAPT]</a>:
 		First apply <a class="css" data-link-type="maybe" href="#at-ruledef-page">@page</a> rules (matching which selectors?),
 		using the UA’s default page size for Media Queries and <a href="https://www.w3.org/TR/css3-values/#viewport-relative-lengths">viewport-percentage lengths</a> <a data-link-type="biblio" href="#biblio-css-values-3">[CSS-VALUES-3]</a>.
 		The resulting page size is the "base page size".
@@ -4227,31 +3965,6 @@ Blank-page pseudo-class: :blank</a>
    <b><a href="#page-pseudo-class">#page-pseudo-class</a></b><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-page-pseudo-class">4.2. Page selectors</a> <a href="#ref-for-page-pseudo-class①">(2)</a> <a href="#ref-for-page-pseudo-class②">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="valdef-page-left">
-   <b><a href="#valdef-page-left">#valdef-page-left</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valdef-page-left">2. 
-Page Terminology</a>
-    <li><a href="#ref-for-valdef-page-left①">4.2.1. 
-Spread pseudo-classes: :left, :right</a> <a href="#ref-for-valdef-page-left②">(2)</a> <a href="#ref-for-valdef-page-left③">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="valdef-page-right">
-   <b><a href="#valdef-page-right">#valdef-page-right</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valdef-page-right">2. 
-Page Terminology</a>
-    <li><a href="#ref-for-valdef-page-right①">4.2.1. 
-Spread pseudo-classes: :left, :right</a> <a href="#ref-for-valdef-page-right②">(2)</a> <a href="#ref-for-valdef-page-right③">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="valdef-page-first">
-   <b><a href="#valdef-page-first">#valdef-page-first</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valdef-page-first">4.2.2. 
-First-page pseudo-class: :first</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="valdef-page-blank">
@@ -4581,9 +4294,9 @@ Rotating The Printed Page: the page-orientation property</a>
   <aside class="dfn-panel" data-for="descdef-page-marks">
    <b><a href="#descdef-page-marks">#descdef-page-marks</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-descdef-page-marks">7.2.
+    <li><a href="#ref-for-descdef-page-marks">7.2. 
 Crop and Registration Marks: the marks property</a>
-    <li><a href="#ref-for-descdef-page-marks①">7.3.
+    <li><a href="#ref-for-descdef-page-marks①">7.3. 
 Bleed Area: the bleed property</a>
     <li><a href="#ref-for-descdef-page-marks②"> Changes</a> <a href="#ref-for-descdef-page-marks③">(2)</a>
    </ul>
@@ -4604,7 +4317,7 @@ Bleed Area: the bleed property</a>
   <aside class="dfn-panel" data-for="descdef-page-bleed">
    <b><a href="#descdef-page-bleed">#descdef-page-bleed</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-descdef-page-bleed">7.3.
+    <li><a href="#ref-for-descdef-page-bleed">7.3. 
 Bleed Area: the bleed property</a>
     <li><a href="#ref-for-descdef-page-bleed①"> Changes</a> <a href="#ref-for-descdef-page-bleed②">(2)</a>
    </ul>
@@ -4716,11 +4429,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

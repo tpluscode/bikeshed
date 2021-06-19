@@ -268,8 +268,8 @@ https://wicg.github.io/netinfo/#dfn-effective-connection-type
 -
 effective directive
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-effective-directive
@@ -279,8 +279,8 @@ violation
 -
 effective directive
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#request-effective-directive
@@ -290,8 +290,8 @@ request
 -
 effective directive
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-effective-directive
@@ -301,8 +301,8 @@ violation
 -
 effective directive
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#request-effective-directive
@@ -374,8 +374,8 @@ XRTransientInputHitTestOptionsInit
 -
 effective key
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor-effective-key
@@ -385,8 +385,8 @@ cursor
 -
 effective key
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor-effective-key
@@ -416,8 +416,8 @@ https://wicg.github.io/periodic-background-sync/#effective-minimum-sync-interval
 -
 effective object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor-effective-object-store
@@ -427,8 +427,8 @@ cursor
 -
 effective object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor-effective-object-store
@@ -482,8 +482,8 @@ XRSpace
 -
 effective overload set
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-effective-overload-set
@@ -492,8 +492,8 @@ https://heycam.github.io/webidl/#dfn-effective-overload-set
 -
 effective overload set
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-effective-overload-set
@@ -672,8 +672,8 @@ https://www.w3.org/TR/webauthn-3/#effective-user-verification-requirement-for-cr
 -
 effectiveDirective
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-effectivedirective
@@ -683,8 +683,8 @@ CSPViolationReportBody
 -
 effectiveDirective
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-effectivedirective
@@ -694,8 +694,8 @@ SecurityPolicyViolationEvent
 -
 effectiveDirective
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-effectivedirective
@@ -705,8 +705,8 @@ SecurityPolicyViolationEventInit
 -
 effectiveDirective
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-effectivedirective
@@ -716,8 +716,8 @@ CSPViolationReportBody
 -
 effectiveDirective
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-effectivedirective
@@ -727,8 +727,8 @@ SecurityPolicyViolationEvent
 -
 effectiveDirective
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-effectivedirective

@@ -341,8 +341,8 @@ https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submitev
 -
 SubtleCrypto
 interface
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto
@@ -361,8 +361,8 @@ https://w3c.github.io/web-nfc/#dfn-suspended
 -
 [[supportedalgorithms]]
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-supportedAlgorithms
@@ -449,8 +449,8 @@ vertical-align
 -
 sub
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-sub
@@ -460,8 +460,8 @@ vertical-align
 -
 sub
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-sub
@@ -706,8 +706,8 @@ endpoint group
 -
 subexpressions
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#subexpressions
@@ -716,8 +716,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#subexpressions
 -
 subexpressions
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#subexpressions
@@ -846,8 +846,8 @@ selector
 -
 subject (of selector)
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#subject
@@ -856,8 +856,8 @@ https://drafts.csswg.org/css2/#subject
 -
 subject (of selector)
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#subject
@@ -888,8 +888,8 @@ selector
 -
 subjects
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#subject
@@ -898,8 +898,8 @@ https://drafts.csswg.org/css2/#subject
 -
 subjects
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#subject
@@ -908,8 +908,8 @@ https://drafts.csswg.org/css2/#subject
 -
 subkeys
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#subkeys
@@ -918,8 +918,8 @@ https://w3c.github.io/IndexedDB/#subkeys
 -
 subkeys
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#subkeys
@@ -1624,8 +1624,8 @@ https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-kind-subtitles
 -
 subtle
 attribute
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-Crypto-attribute-subtle
@@ -1635,8 +1635,8 @@ Crypto
 -
 subtle
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-Crypto-attribute-subtle
@@ -1645,8 +1645,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-Crypto-attribute-subtle
 -
 subtlecrypto
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto
@@ -1805,8 +1805,8 @@ RTCStatsIceCandidatePairState
 -
 success
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#eventdef-request-success
@@ -1816,8 +1816,8 @@ request
 -
 success
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#eventdef-request-success
@@ -2432,8 +2432,8 @@ vertical-align
 -
 super
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-super
@@ -2443,8 +2443,8 @@ vertical-align
 -
 super
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-super
@@ -2567,8 +2567,8 @@ set
 -
 supplemental interfaces
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-supplemental-interface
@@ -2743,8 +2743,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#support-global-identifiers
 -
 support indexed properties
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-support-indexed-properties
@@ -2753,8 +2753,8 @@ https://heycam.github.io/webidl/#dfn-support-indexed-properties
 -
 support indexed properties
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-support-indexed-properties
@@ -2773,8 +2773,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#support-named-propert
 -
 support named properties
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-support-named-properties
@@ -2783,8 +2783,8 @@ https://heycam.github.io/webidl/#dfn-support-named-properties
 -
 support named properties
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-support-named-properties
@@ -3087,8 +3087,8 @@ https://www.w3.org/TR/cssom-view-1/#supported-open-feature-name
 -
 supported operations
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#supported-operation
@@ -3097,8 +3097,8 @@ https://w3c.github.io/webcrypto/#supported-operation
 -
 supported operations
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#supported-operation
@@ -3240,8 +3240,8 @@ https://www.w3.org/TR/webdriver2/#dfn-supported-property-index
 -
 supported property indices
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-supported-property-indices
@@ -3250,8 +3250,8 @@ https://heycam.github.io/webidl/#dfn-supported-property-indices
 -
 supported property indices
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-supported-property-indices
@@ -3270,8 +3270,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#supported-property-na
 -
 supported property names
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-supported-property-names
@@ -3280,8 +3280,8 @@ https://heycam.github.io/webidl/#dfn-supported-property-names
 -
 supported property names
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-supported-property-names
@@ -3483,8 +3483,8 @@ BasicCardRequest
 -
 supportedalgorithms
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-supportedAlgorithms
@@ -4017,8 +4017,8 @@ OfflineAudioContext
 -
 suspendRedraw
 method
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__suspendRedraw
@@ -4028,8 +4028,8 @@ SVGSVGElement
 -
 suspendRedraw
 method
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#__svg__SVGSVGElement__suspendRedraw

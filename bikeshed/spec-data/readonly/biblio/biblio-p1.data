@@ -478,18 +478,6 @@ https://wg21.link/p1018r1
 
 Ville Voutilainen
 -
-d:p1018r10
-P1018R10
-29 April 2021
-
-C++ Language Evolution status - pandemic edition - 2021/04
-https://wg21.link/p1018r10
-
-
-
-
-JF Bastien
--
 d:p1018r2
 P1018R2
 10 November 2018
@@ -1810,18 +1798,6 @@ https://wg21.link/p1068r4
 
 Ilya Burylov, Pavel Dyakov, Ruslan Arutyunyan, Andrey Nikolaev
 -
-d:p1068r5
-P1068R5
-14 May 2021
-
-Vector API for random number generation
-https://wg21.link/p1068r5
-
-
-
-
-Ilya Burylov, Pavel Dyakov, Ruslan Arutyunyan, Andrey Nikolaev
--
 d:p1069r0
 P1069R0
 8 October 2018
@@ -2950,18 +2926,6 @@ https://wg21.link/p1121r2
 
 Maged M. Michael, Michael Wong, Paul McKenney, Geoffrey Romer, Andrew Hunter, Arthur O'Dwyer, Daisy S. Hollman, JF Bastien, Hans Boehm, David Goldblatt, Frank Birbacher, Mathias Stearn
 -
-d:p1121r3
-P1121R3
-9 April 2021
-
-Hazard Pointers: Proposed Interface and Wording for Concurrency TS 2
-https://wg21.link/p1121r3
-
-
-
-
-Maged M. Michael, Michael Wong, Paul McKenney, Geoffrey Romer, Andrew Hunter, Arthur O'Dwyer, D. S. Hollman, JF Bastien, Hans Boehm, David Goldblatt, Frank Birbacher, Mathias Stearn, Jens Maurer
--
 d:p1122r0
 P1122R0
 7 June 2018
@@ -2997,30 +2961,6 @@ https://wg21.link/p1122r2
 
 
 Paul McKenney, Michael Wong, Maged M. Michael, Geoffrey Romer, Andrew Hunter, Arthur O'Dwyer, D. S. Hollman, JF Bastien, Hans Boehm, David Goldblatt, Frank Birbacher, Erik Rigtorp
--
-d:p1122r3
-P1122R3
-25 March 2021
-
-Proposed Wording for Concurrent Data Structures: Read-Copy-Update (RCU)
-https://wg21.link/p1122r3
-
-
-
-
-Paul E. McKenney, Michael Wong, Maged M. Michael, Geoffrey Romer, Andrew Hunter, Arthur O'Dwyer, D. S. Hollman, JF Bastien, Hans Boehm, David Goldblatt, Frank Birbacher, Erik Rigtorp,Tomasz Kamiński
--
-d:p1122r4
-P1122R4
-14 May 2021
-
-Proposed Wording for Concurrent Data Structures: Read-Copy-Update (RCU)
-https://wg21.link/p1122r4
-
-
-
-
-Paul E. McKenney, Paul McKenney, Michael Wong, Maged M. Michael, Geoffrey Romer, Andrew Hunter, Arthur O'Dwyer, Daisy Hollman, JF Bastien, Hans Boehm, David Goldblatt, Frank Birbacher, Erik Rigtorp, Tomasz Kamiński, and Jens Maurer
 -
 d:p1123r0
 P1123R0
@@ -3172,18 +3112,6 @@ P1132R6
 
 out_ptr - a scalable output pointer abstraction
 https://wg21.link/p1132r6
-
-
-
-
-JeanHeyd Meneide, Todor Buyukliev, Isabella Muerte
--
-d:p1132r7
-P1132R7
-16 April 2021
-
-out_ptr - a scalable output pointer abstraction
-https://wg21.link/p1132r7
 
 
 
@@ -3940,18 +3868,6 @@ P1169R0
 
 static operator()
 https://wg21.link/p1169r0
-
-
-
-
-Barry Revzin, Casey Carter
--
-d:p1169r1
-P1169R1
-6 April 2021
-
-static operator()
-https://wg21.link/p1169r1
 
 
 
@@ -6833,18 +6749,6 @@ https://wg21.link/p1328r0
 
 Peter Dimov
 -
-d:p1328r1
-P1328R1
-3 May 2021
-
-Making std::type_info::operator== constexpr
-https://wg21.link/p1328r1
-
-
-
-
-Peter Dimov
--
 d:p1329r0
 P1329R0
 20 November 2018
@@ -8095,18 +7999,6 @@ P1401R4
 
 Narrowing contextual conversions to bool
 https://wg21.link/p1401r4
-
-
-
-
-Andrzej Krzemieński
--
-d:p1401r5
-P1401R5
-12 April 2021
-
-Narrowing contextual conversions to bool
-https://wg21.link/p1401r5
 
 
 
@@ -10393,18 +10285,6 @@ https://wg21.link/p1631r0
 
 Niall Douglas, Bob Steagall
 -
-d:p1631r1
-P1631R1
-11 July 2019
-
-Object detachment and attachment
-https://wg21.link/p1631r1
-
-
-
-
-Niall Douglas, Bob Steagall
--
 d:p1633r0
 P1633R0
 16 June 2019
@@ -11065,18 +10945,6 @@ https://wg21.link/p1664r2
 
 JeanHeyd Meneide
 -
-d:p1664r3
-P1664R3
-16 April 2021
-
-reconstructible_range - a concept for putting ranges back together
-https://wg21.link/p1664r3
-
-
-
-
-JeanHeyd Meneide
--
 d:p1665r0
 P1665R0
 17 June 2019
@@ -11220,18 +11088,6 @@ https://wg21.link/p1673r2
 
 
 Mark Hoemmen, D. S. Hollman, Christian Trott, Daniel Sunderland, Nevin Liber, Siva Rajamanickam, Li-Ta Lo, Damien Lebrun-Grandie, Graham Lopez, Peter Caday, Sarah Knepper, Piotr Luszczek, Timothy Costa
--
-d:p1673r3
-P1673R3
-14 April 2021
-
-A free function linear algebra interface based on the BLAS
-https://wg21.link/p1673r3
-
-
-
-
-Mark Hoemmen, Daisy Hollman,Christian Trott,Daniel Sunderland,Nevin Liber,Li-Ta Lo,Damien Lebrun-Grandie,Graham Lopez,Peter Caday,Sarah Knepper,Piotr Luszczek,Timothy Costa
 -
 d:p1674r0
 P1674R0
@@ -11713,18 +11569,6 @@ https://wg21.link/p1701r1
 
 Nathan Sidwell
 -
-d:p1701r2
-P1701R2
-4 May 2021
-
-Inline Namespaces: Fragility Bites
-https://wg21.link/p1701r2
-
-
-
-
-Nathan Sidwell
--
 d:p1702r0
 P1702R0
 17 June 2019
@@ -11833,18 +11677,6 @@ https://wg21.link/p1706r2
 
 Michael Wong, Stephen Michel, Peter Sommerlad, Lisa Lippincott, Aaron Ballman, Richard Corden, Clive Pygott, Erhard Ploedereder, John McFarlane, Paul Preney, Andreas Weis, Federico Kircheis, Tullio Vardanega, Jorg Brown, Chris Tapp
 -
-d:p1706r3
-P1706R3
-14 April 2021
-
-Programming Language Vulnerabilities for Safety Critical C++
-https://wg21.link/p1706r3
-
-
-
-
-Michael Wong, Stephen Michel, Peter Sommerlad, Lisa Lippincott, Aaron Ballman, Richard Corden, Clive Pygott, Erhard Ploedereder, John McFarlane, Paul Preney, Andreas Weis, Federico Kircheis, Tullio Vardanega, Jorg Brown, Chris Tapp
--
 d:p1708r0
 P1708R0
 17 June 2019
@@ -11892,18 +11724,6 @@ https://wg21.link/p1708r3
 
 
 Richard Dosselman, Micheal Chiu, Richard Dosselmann, Eric Niebler, Phillip Ratzlof, Vincent Reverdy
--
-d:p1708r4
-P1708R4
-14 April 2021
-
-Simple Statistical Functions
-https://wg21.link/p1708r4
-
-
-
-
-Richard Dosselman, Micheal Chiu, Richard Dosselmann, Eric Niebler, Phillip Ratzlof, Vincent Reverdy, Jens Maurer
 -
 d:p1709r0
 P1709R0
@@ -13993,18 +13813,6 @@ https://wg21.link/p1847r3
 
 Pal Balog
 -
-d:p1847r4
-P1847R4
-12 April 2021
-
-Make declaration order layout mandated
-https://wg21.link/p1847r4
-
-
-
-
-Pal Balog
--
 d:p1848r0
 P1848R0
 13 January 2020
@@ -15565,18 +15373,6 @@ https://wg21.link/p1938r2
 
 Barry Revzin, Daveed Vandevoorde, Richard Smith, Andrew Sutton
 -
-d:p1938r3
-P1938R3
-22 March 2021
-
-if consteval
-https://wg21.link/p1938r3
-
-
-
-
-Barry Revzin, Daveed Vandevoorde, Richard Smith, Andrew Sutton
--
 d:p1943r0
 P1943R0
 7 October 2019
@@ -15739,18 +15535,6 @@ P1949R6
 
 C++ Identifier Syntax using Unicode Standard Annex 31
 https://wg21.link/p1949r6
-
-
-
-
-Steve Downey, Zach Laine, Tom Honermann, Peter Bindels, Jens Maurer
--
-d:p1949r7
-P1949R7
-15 April 2021
-
-C++ Identifier Syntax using Unicode Standard Annex 31
-https://wg21.link/p1949r7
 
 
 
@@ -16051,18 +15835,6 @@ P1967R2
 
 #embed - a simple, scannable preprocessor-based resource acquisition method
 https://wg21.link/p1967r2
-
-
-
-
-JeanHeyd Meneide
--
-d:p1967r3
-P1967R3
-15 April 2021
-
-#embed - a simple, scannable preprocessor-based resource acquisition method
-https://wg21.link/p1967r3
 
 
 
@@ -16375,18 +16147,6 @@ P1989R1
 
 Range constructor for std::string_view 2: Constrain Harder
 https://wg21.link/p1989r1
-
-
-
-
-Corentin Jabot
--
-d:p1989r2
-P1989R2
-17 March 2021
-
-Range constructor for std::string_view 2: Constrain Harder
-https://wg21.link/p1989r2
 
 
 

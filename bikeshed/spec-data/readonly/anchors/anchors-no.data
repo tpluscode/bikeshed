@@ -629,8 +629,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#notsupportederror
 -
 'none'
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-none
@@ -639,8 +639,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-none
 -
 'none'
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-none
@@ -712,8 +712,8 @@ Node
 -
 NOT_FOUND_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-not_found_err
@@ -723,8 +723,8 @@ DOMException
 -
 NOT_SUPPORTED_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-not_supported_err
@@ -734,8 +734,8 @@ DOMException
 -
 NO_DATA_ALLOWED_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-no_data_allowed_err
@@ -745,8 +745,8 @@ DOMException
 -
 NO_MODIFICATION_ALLOWED_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-no_modification_allowed_err
@@ -756,8 +756,8 @@ DOMException
 -
 NoModificationAllowedError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#nomodificationallowederror
@@ -826,8 +826,8 @@ https://dom.spec.whatwg.org/#nonelementparentnode
 -
 NotAllowedError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#notallowederror
@@ -836,8 +836,8 @@ https://heycam.github.io/webidl/#notallowederror
 -
 NotFoundError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#notfounderror
@@ -846,8 +846,8 @@ https://heycam.github.io/webidl/#notfounderror
 -
 NotReadableError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#notreadableerror
@@ -856,8 +856,8 @@ https://heycam.github.io/webidl/#notreadableerror
 -
 NotSupportedError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#notsupportederror
@@ -1301,8 +1301,8 @@ content
 -
 no-close-quote
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-no-close-quote
@@ -1312,8 +1312,8 @@ content
 -
 no-close-quote
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-no-close-quote
@@ -1567,8 +1567,8 @@ content
 -
 no-open-quote
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-no-open-quote
@@ -1578,8 +1578,8 @@ content
 -
 no-open-quote
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-no-open-quote
@@ -1868,8 +1868,8 @@ HTMLTableCellElement
 -
 no_modification_allowed_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-no_modification_allowed_err
@@ -2171,8 +2171,8 @@ NamedFlow/getRegionsByContent()
 -
 node
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-node
@@ -2324,8 +2324,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#node-document
 -
 node document
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-node-document
@@ -2703,8 +2703,8 @@ ChildNode/replaceWith()
 -
 nodes
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-node
@@ -2918,8 +2918,8 @@ RTCIceCandidatePairStats
 -
 nomodificationallowederror
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-nomodificationallowederror
@@ -2928,8 +2928,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-nomodificationallowederror
 -
 nomodificationallowederror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#nomodificationallowederror
@@ -2949,8 +2949,8 @@ script
 -
 non-arrayed texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#non-arrayed-texture
@@ -2959,8 +2959,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#non-arrayed-texture
 -
 non-arrayed texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#non-arrayed-texture
@@ -3319,8 +3319,8 @@ https://www.w3.org/TR/css-syntax-3/#non-printable-code-point
 -
 non-rendered element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/render.html#TermNonRenderedElement
@@ -3329,8 +3329,8 @@ https://svgwg.org/svg2-draft/render.html#TermNonRenderedElement
 -
 non-rendered element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/render.html#TermNonRenderedElement
@@ -3564,8 +3564,8 @@ https://w3c.github.io/mathml-core/#dfn-nonce
 -
 nonce-source
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-nonce-source
@@ -3574,8 +3574,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-nonce-source
 -
 nonce-source
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-nonce-source
@@ -5669,8 +5669,8 @@ text-combine-upright
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-bo-none
@@ -5685,8 +5685,8 @@ border-style
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-display-none
@@ -5696,8 +5696,8 @@ display
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-float-none
@@ -5707,8 +5707,8 @@ float
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-clear-none
@@ -5718,8 +5718,8 @@ clear
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-max-width-none
@@ -5729,8 +5729,8 @@ max-width
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-max-height-none
@@ -5740,8 +5740,8 @@ max-height
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-content-none
@@ -5751,8 +5751,8 @@ content
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-quotes-none
@@ -5762,8 +5762,8 @@ quotes
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-counter-reset-none
@@ -5774,8 +5774,8 @@ counter-increment
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-list-style-type-none
@@ -5785,8 +5785,8 @@ list-style-type
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-background-image-none
@@ -5796,8 +5796,8 @@ background-image
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-decoration-none
@@ -5807,8 +5807,8 @@ text-decoration
 -
 none
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-transform-none
@@ -5818,8 +5818,8 @@ text-transform
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-bo-none
@@ -5834,8 +5834,8 @@ border-style
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-display-none
@@ -5845,8 +5845,8 @@ display
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-float-none
@@ -5856,8 +5856,8 @@ float
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-clear-none
@@ -5867,8 +5867,8 @@ clear
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-max-width-none
@@ -5878,8 +5878,8 @@ max-width
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-max-height-none
@@ -5889,8 +5889,8 @@ max-height
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-content-none
@@ -5900,8 +5900,8 @@ content
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-quotes-none
@@ -5911,8 +5911,8 @@ quotes
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-counter-reset-none
@@ -5923,8 +5923,8 @@ counter-increment
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-list-style-type-none
@@ -5934,8 +5934,8 @@ list-style-type
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-background-image-none
@@ -5945,8 +5945,8 @@ background-image
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-decoration-none
@@ -5956,8 +5956,8 @@ text-decoration
 -
 none
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-transform-none
@@ -7684,8 +7684,8 @@ unicode-bidi
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-unicode-bidi-normal
@@ -7695,8 +7695,8 @@ unicode-bidi
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-line-height-normal
@@ -7706,8 +7706,8 @@ line-height
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-content-normal
@@ -7717,8 +7717,8 @@ content
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-style-normal
@@ -7728,8 +7728,8 @@ font-style
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-variant-normal
@@ -7739,8 +7739,8 @@ font-variant
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-normal
@@ -7750,8 +7750,8 @@ font-weight
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-letter-spacing-normal
@@ -7761,8 +7761,8 @@ letter-spacing
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-word-spacing-normal
@@ -7772,8 +7772,8 @@ word-spacing
 -
 normal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-white-space-normal
@@ -7783,8 +7783,8 @@ white-space
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-unicode-bidi-normal
@@ -7794,8 +7794,8 @@ unicode-bidi
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-line-height-normal
@@ -7805,8 +7805,8 @@ line-height
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-content-normal
@@ -7816,8 +7816,8 @@ content
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-style-normal
@@ -7827,8 +7827,8 @@ font-style
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-variant-normal
@@ -7838,8 +7838,8 @@ font-variant
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-weight-normal
@@ -7849,8 +7849,8 @@ font-weight
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-letter-spacing-normal
@@ -7860,8 +7860,8 @@ letter-spacing
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-word-spacing-normal
@@ -7871,8 +7871,8 @@ word-spacing
 -
 normal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-white-space-normal
@@ -8066,8 +8066,8 @@ https://wicg.github.io/import-maps/#normalize-a-specifier-key
 -
 normalize an algorithm
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm
@@ -8076,8 +8076,8 @@ https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm
 -
 normalize an algorithm
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-normalize-an-algorithm
@@ -8208,8 +8208,8 @@ https://html.spec.whatwg.org/multipage/media.html#normalised-timeranges-object
 -
 normalized value
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-normalized-usages
@@ -8218,8 +8218,8 @@ https://w3c.github.io/webcrypto/#concept-normalized-usages
 -
 normalized value of a usages list
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-normalized-usages
@@ -8228,8 +8228,8 @@ https://w3c.github.io/webcrypto/#concept-normalized-usages
 -
 normalized value of a usages list
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-normalized-usages
@@ -8398,8 +8398,8 @@ https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
 -
 noscript
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-noscript
@@ -8698,8 +8698,8 @@ mediakeysrequirement
 -
 not_found_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-not_found_err
@@ -8708,8 +8708,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-not_found_err
 -
 not_supported_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-not_supported_err
@@ -8791,8 +8791,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-note
 -
 notfound
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#NotFoundFR
@@ -8801,8 +8801,8 @@ https://w3c.github.io/FileAPI/#NotFoundFR
 -
 notfound
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#NotFoundFR
@@ -8821,8 +8821,8 @@ https://www.w3.org/TR/remote-playback/#dfn-notfounderror
 -
 notfounderror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#notfounderror
@@ -9024,8 +9024,8 @@ https://www.w3.org/TR/generic-sensor/#notify-new-reading
 -
 notreadableerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#notreadableerror
@@ -9064,8 +9064,8 @@ https://www.w3.org/TR/remote-playback/#dfn-notsupportederror
 -
 notsupportederror
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-NotSupportedError
@@ -9074,8 +9074,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-NotSupportedError
 -
 notsupportederror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#notsupportederror
@@ -9307,8 +9307,8 @@ text-wrap
 -
 nowrap
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-white-space-nowrap
@@ -9318,8 +9318,8 @@ white-space
 -
 nowrap
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-white-space-nowrap

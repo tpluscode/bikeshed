@@ -46,8 +46,8 @@ DOMMatrix
 -
 d
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#DProperty
@@ -56,8 +56,8 @@ https://svgwg.org/svg2-draft/paths.html#DProperty
 -
 d
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#DProperty
@@ -86,8 +86,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-d
 -
 d
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-rsaotherprimesinfo-d
@@ -97,8 +97,8 @@ RsaOtherPrimesInfo
 -
 d
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-jsonwebkey-d

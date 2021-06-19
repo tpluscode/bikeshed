@@ -33,8 +33,8 @@ WellKnownDirectory
 -
 "done"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbrequestreadystate-done
@@ -44,8 +44,8 @@ IDBRequestReadyState
 -
 "done"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbrequestreadystate-done
@@ -239,8 +239,8 @@ https://dom.spec.whatwg.org/#domerrorhandler
 -
 DOMException
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-DOMException
@@ -249,8 +249,8 @@ https://heycam.github.io/webidl/#idl-DOMException
 -
 DOMException()
 constructor
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-domexception
@@ -260,8 +260,8 @@ DOMException
 -
 DOMException(message)
 constructor
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-domexception
@@ -271,8 +271,8 @@ DOMException
 -
 DOMException(message, name)
 constructor
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-domexception
@@ -1049,8 +1049,8 @@ DOMRectReadOnly
 -
 DOMSTRING_SIZE_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-domstring_size_err
@@ -1060,8 +1060,8 @@ DOMException
 -
 DOMString
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-DOMString
@@ -1090,8 +1090,8 @@ https://html.spec.whatwg.org/multipage/dom.html#domstringmap
 -
 DOMTimeStamp
 typedef
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#DOMTimeStamp
@@ -1274,8 +1274,8 @@ KeyboardEvent
 -
 DONE
 const
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-filereader-done
@@ -1285,8 +1285,8 @@ FileReader
 -
 DONE
 const
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-filereader-done
@@ -1513,8 +1513,8 @@ https://www.w3.org/TR/webrtc/#dfn-documentorigin
 -
 do bytes match metadatalist?
 dfn
-SRI
-SRI
+sri
+sri
 1
 current
 https://w3c.github.io/webappsec-subresource-integrity/#does-response-match-metadatalist
@@ -1631,8 +1631,8 @@ https://html.spec.whatwg.org/multipage/syntax.html#syntax-doctype
 -
 doctype
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-doctype
@@ -1651,8 +1651,8 @@ https://html.spec.whatwg.org/multipage/syntax.html#doctype-legacy-string
 -
 doctype name
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-doctype-name
@@ -1721,8 +1721,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#doctype-system-identifier-(s
 -
 doctype.name
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-doctype-name
@@ -1894,8 +1894,8 @@ MediaQueryList
 -
 document
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-document
@@ -2134,8 +2134,8 @@ https://w3c.github.io/webdriver/#dfn-document-fragment-host
 -
 document language
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#doclanguage
@@ -2144,8 +2144,8 @@ https://drafts.csswg.org/css2/#doclanguage
 -
 document language
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#doclanguage
@@ -2405,8 +2405,8 @@ https://dom.spec.whatwg.org/#concept-document-tree
 -
 document tree
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#doctree
@@ -2415,8 +2415,8 @@ https://drafts.csswg.org/css2/#doctree
 -
 document tree
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#doctree
@@ -2713,8 +2713,8 @@ Document
 -
 documentURI
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-documenturi
@@ -2724,8 +2724,8 @@ SecurityPolicyViolationEvent
 -
 documentURI
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-documenturi
@@ -2735,8 +2735,8 @@ SecurityPolicyViolationEventInit
 -
 documentURI
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-documenturi
@@ -2746,8 +2746,8 @@ SecurityPolicyViolationEvent
 -
 documentURL
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-documenturl
@@ -2757,8 +2757,8 @@ CSPViolationReportBody
 -
 documentURL
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-documenturl
@@ -2768,8 +2768,8 @@ CSPViolationReportBody
 -
 documentURL
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-documenturl
@@ -2779,8 +2779,8 @@ SecurityPolicyViolationEvent
 -
 documentURL
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-documenturl
@@ -2830,8 +2830,8 @@ https://w3c.github.io/mathml-core/#dfn-documentandelementeventhandlers
 -
 documentelement
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-documentelement
@@ -2850,8 +2850,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#documentfragment
 -
 documentfragment
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-documentfragment
@@ -2891,8 +2891,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#documenttype
 -
 documenttype
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-documenttype
@@ -3140,8 +3140,8 @@ https://html.spec.whatwg.org/multipage/dom.html#dom-tree-accessors
 -
 dom-domparser
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-domparser
@@ -3150,8 +3150,8 @@ https://www.w3.org/TR/DOM-Parsing/#dfn-dom-domparser
 -
 dom-domparser-parsefromstring
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-domparser-parsefromstring
@@ -3160,8 +3160,8 @@ https://www.w3.org/TR/DOM-Parsing/#dfn-dom-domparser-parsefromstring
 -
 dom-element-innerhtml
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-element-innerhtml
@@ -3170,8 +3170,8 @@ https://www.w3.org/TR/DOM-Parsing/#dfn-dom-element-innerhtml
 -
 dom-element-insertadjacenthtml
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-element-insertadjacenthtml
@@ -3180,8 +3180,8 @@ https://www.w3.org/TR/DOM-Parsing/#dfn-dom-element-insertadjacenthtml
 -
 dom-element-outerhtml
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-element-outerhtml
@@ -3201,8 +3201,8 @@ feature descriptor
 -
 dom-range-createcontextualfragment
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-range-createcontextualfragment
@@ -3211,8 +3211,8 @@ https://www.w3.org/TR/DOM-Parsing/#dfn-dom-range-createcontextualfragment
 -
 dom-xmlserializer
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-xmlserializer
@@ -3221,8 +3221,8 @@ https://www.w3.org/TR/DOM-Parsing/#dfn-dom-xmlserializer
 -
 dom-xmlserializer-serializetostring
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-dom-xmlserializer-serializetostring
@@ -3900,8 +3900,8 @@ https://www.w3.org/TR/battery-status/#dfn-domexception
 -
 domexception
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-domexception
@@ -3930,8 +3930,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-domexception
 -
 domexception
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-DOMException
@@ -3960,8 +3960,8 @@ https://www.w3.org/TR/webdriver2/#dfn-domexception
 -
 domexception
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-DOMException
@@ -3970,8 +3970,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-DOMException
 -
 domexception constructor object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-DOMException-constructor-object
@@ -3980,8 +3980,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-DOMException-constructor-object
 -
 domexception prototype object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-DOMException-prototype-object
@@ -4170,8 +4170,8 @@ https://www.w3.org/TR/css-writing-modes-4/#dominant-baseline
 -
 dominant baseline
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermDominantBaseline
@@ -4180,8 +4180,8 @@ https://svgwg.org/svg2-draft/text.html#TermDominantBaseline
 -
 dominant baseline
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TermDominantBaseline
@@ -4411,8 +4411,8 @@ https://www.w3.org/TR/wai-aria-1.2/#dfn-domstring
 -
 domstring
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-DOMString
@@ -4505,8 +4505,8 @@ https://wicg.github.io/entries-api/#done-flag
 -
 done flag
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request-done-flag
@@ -4516,8 +4516,8 @@ request
 -
 done flag
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request-done-flag
@@ -4638,8 +4638,8 @@ leader()
 -
 dotted
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-dotted
@@ -4654,8 +4654,8 @@ border-style
 -
 dotted
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-dotted
@@ -4714,8 +4714,8 @@ border
 -
 double
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-double
@@ -4730,8 +4730,8 @@ border-style
 -
 double
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-double
@@ -4746,8 +4746,8 @@ border-style
 -
 double
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-double
@@ -4960,8 +4960,8 @@ HTMLAreaElement
 -
 download
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#AElementDownloadAttribute
@@ -4971,8 +4971,8 @@ a
 -
 download
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__download
@@ -4982,8 +4982,8 @@ SVGAElement
 -
 download
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#AElementDownloadAttribute
@@ -4993,8 +4993,8 @@ a
 -
 download
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__download

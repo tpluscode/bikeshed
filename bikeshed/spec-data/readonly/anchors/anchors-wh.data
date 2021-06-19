@@ -501,8 +501,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-white
 -
 white
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-white
@@ -512,8 +512,8 @@ https://drafts.csswg.org/css2/#valdef-color-white
 -
 white
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-white
@@ -603,8 +603,8 @@ https://www.w3.org/TR/css-text-3/#white-space
 -
 white space characters
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermWhiteSpaceCharacter
@@ -653,8 +653,8 @@ https://www.w3.org/TR/css-text-4/#propdef-white-space
 -
 white-space
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-white-space
@@ -663,8 +663,8 @@ https://drafts.csswg.org/css2/#propdef-white-space
 -
 white-space
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-white-space
@@ -673,8 +673,8 @@ https://drafts.csswg.org/css2/#propdef-white-space
 -
 white-space
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/text.html#propdef-white-space

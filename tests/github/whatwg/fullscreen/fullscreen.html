@@ -190,18 +190,6 @@ steps: </p>
       <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
      </div>
     </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FullscreenOptions" title="The FullscreenOptions dictionary is used to provide configuration options when calling requestFullscreen() on an element to place that element into full-screen mode.">FullscreenOptions</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-     </div>
-    </div>
    </div>
 <pre class="idl highlight def"><c- b>enum</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="enum" data-export id="enumdef-fullscreennavigationui"><code><c- g>FullscreenNavigationUI</c-></code></dfn> {
   <dfn class="idl-code" data-dfn-for="FullscreenNavigationUI" data-dfn-type="enum-value" data-export id="dom-fullscreennavigationui-auto"><code><c- s>"auto"</c-></code><a class="self-link" href="#dom-fullscreennavigationui-auto"></a></dfn>,
@@ -235,23 +223,7 @@ steps: </p>
 };
 </pre>
    <dl class="domintro">
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen" title="The Element.requestFullscreen() method issues an asynchronous request to make the element be displayed in full-screen mode.">Element/requestFullscreen</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>58+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>50+</span></span>
-       </div>
-      </div>
-     </div>
-     <code><var>promise</var> = <var>element</var> . <a class="idl-code" data-link-type="method" href="#dom-element-requestfullscreen" id="ref-for-dom-element-requestfullscreen①">requestFullscreen([<var>options</var>])</a></code>
+    <dt><code><var>promise</var> = <var>element</var> . <a class="idl-code" data-link-type="method" href="#dom-element-requestfullscreen" id="ref-for-dom-element-requestfullscreen①">requestFullscreen([<var>options</var>])</a></code> 
     <dd>
       Displays <var>element</var> fullscreen and resolves <var>promise</var> when done. 
      <p>When supplied, <var>options</var>’s <code>navigationUI</code> member indicates whether showing
@@ -259,82 +231,18 @@ steps: </p>
   simplicity is preferred over screen space, and if set to "<code>hide</code>", more screen space
   is preferred. User agents are always free to honor user preference over the application’s. The
   default value "<code>auto</code>" indicates no application preference.</p>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenEnabled" title="The read-only fullscreenEnabled property on the Document interface indicates whether or not full-screen mode is available.">Document/fullscreenEnabled</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-       </div>
-      </div>
-     </div>
-     <code><var>document</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-fullscreenenabled" id="ref-for-dom-document-fullscreenenabled①">fullscreenEnabled</a></code></code>
+    <dt><code><var>document</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-fullscreenenabled" id="ref-for-dom-document-fullscreenenabled①">fullscreenEnabled</a></code></code> 
     <dd>
      <p>Returns true if <var>document</var> has the ability to display <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element" id="ref-for-concept-element⑤">elements</a> fullscreen
  and <a data-link-type="dfn" href="#fullscreen-is-supported" id="ref-for-fullscreen-is-supported">fullscreen is supported</a>, or false otherwise. </p>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/exitFullscreen" title="The Document method exitFullscreen() requests that the element on this document which is currently being presented in full-screen mode be taken out of full-screen mode, restoring the previous state of the screen.">Document/exitFullscreen</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-        <hr>
-        <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-       </div>
-      </div>
-     </div>
-     <code><var>promise</var> = <var>document</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-exitfullscreen" id="ref-for-dom-document-exitfullscreen①">exitFullscreen()</a></code></code>
+    <dt><code><var>promise</var> = <var>document</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-exitfullscreen" id="ref-for-dom-document-exitfullscreen①">exitFullscreen()</a></code></code> 
     <dd>
      <p>Stops <var>document</var>’s <a data-link-type="dfn" href="#fullscreen-element" id="ref-for-fullscreen-element⑤">fullscreen element</a> from being displayed fullscreen and
  resolves <var>promise</var> when done. </p>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement" title="The Document.fullscreenElement read-only property returns the Element that is currently being presented in full-screen mode in this document, or null if full-screen mode is not currently in use.">Document/fullscreenElement</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>58+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>50+</span></span>
-       </div>
-      </div>
-     </div>
-     <code><var>document</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-fullscreenelement" id="ref-for-dom-document-fullscreenelement①">fullscreenElement</a></code></code>
+    <dt><code><var>document</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-fullscreenelement" id="ref-for-dom-document-fullscreenelement①">fullscreenElement</a></code></code> 
     <dd>
      <p>Returns <var>document</var>’s <a data-link-type="dfn" href="#fullscreen-element" id="ref-for-fullscreen-element⑥">fullscreen element</a>. </p>
-    <dt>
-     <div class="mdn-anno wrapped">
-      <button class="mdn-anno-btn"><span>MDN</span></button>
-      <div class="feature">
-       <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/fullscreenElement" title="The fullscreenElement read-only property of the ShadowRoot interface returns the element within the shadow tree that is currently displayed in full screen.">ShadowRoot/fullscreenElement</a></p>
-       <div class="support">
-        <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-        <hr>
-        <span class="opera yes"><span>Opera</span><span>58+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-        <hr>
-        <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-        <hr>
-        <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>50+</span></span>
-       </div>
-      </div>
-     </div>
-     <code><var>shadowroot</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-fullscreenelement" id="ref-for-dom-document-fullscreenelement②">fullscreenElement</a></code></code>
+    <dt><code><var>shadowroot</var> . <code class="idl"><a data-link-type="idl" href="#dom-document-fullscreenelement" id="ref-for-dom-document-fullscreenelement②">fullscreenElement</a></code></code> 
     <dd>
      <p>Returns <var>shadowroot</var>’s <a data-link-type="dfn" href="#fullscreen-element" id="ref-for-fullscreen-element⑦">fullscreen element</a>. </p>
    </dl>
@@ -347,6 +255,21 @@ if all of the following are true, and false otherwise: </p>
      <p><var>element</var>’s <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-node-document" id="ref-for-concept-node-document④">node document</a> is <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use" id="ref-for-allowed-to-use">allowed to use</a> the "<code><a data-link-type="dfn" href="#fullscreen-feature" id="ref-for-fullscreen-feature">fullscreen</a></code>" feature. </p>
    </ul>
    <div class="algorithm" data-algorithm="requestFullscreen(options)" data-algorithm-for="Element">
+    <div class="mdn-anno wrapped">
+     <button class="mdn-anno-btn"><span>MDN</span></button>
+     <div class="feature">
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen" title="The Element.requestFullscreen() method issues an asynchronous request to make the element be displayed in full-screen mode.">Element/requestFullscreen</a></p>
+      <div class="support">
+       <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
+       <hr>
+       <span class="opera yes"><span>Opera</span><span>58+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+       <hr>
+       <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+       <hr>
+       <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>50+</span></span>
+      </div>
+     </div>
+    </div>
     <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="Element" data-dfn-type="method" data-export data-lt="requestFullscreen(options)|requestFullscreen()" id="dom-element-requestfullscreen"><code>requestFullscreen(<var>options</var>)</code></dfn> method,
 when invoked, must run these steps: </p>
     <ol>
@@ -440,6 +363,21 @@ when invoked, must run these steps: </p>
     <p class="note" role="note">Implementations with out-of-process <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context②">browsing contexts</a> are left as an
 exercise to the reader. Input welcome on potential improvements. </p>
    </div>
+   <div class="mdn-anno wrapped">
+    <button class="mdn-anno-btn"><span>MDN</span></button>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenEnabled" title="The read-only fullscreenEnabled property on the Document interface indicates whether or not full-screen mode is available.">Document/fullscreenEnabled</a></p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
+     </div>
+    </div>
+   </div>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="Document" data-dfn-type="attribute" data-export id="dom-document-fullscreenenabled"><code>fullscreenEnabled</code></dfn> attribute’s getter must
 return true if the <a data-link-type="dfn">context object</a> is <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use" id="ref-for-allowed-to-use①">allowed to use</a> the "<code><a data-link-type="dfn" href="#fullscreen-feature" id="ref-for-fullscreen-feature①">fullscreen</a></code>" feature and <a data-link-type="dfn" href="#fullscreen-is-supported" id="ref-for-fullscreen-is-supported②">fullscreen is supported</a>, and
 false otherwise. </p>
@@ -447,6 +385,21 @@ false otherwise. </p>
 false if <a data-link-type="dfn">context object</a>’s <a data-link-type="dfn" href="#fullscreen-element" id="ref-for-fullscreen-element⑨">fullscreen element</a> is null, and true otherwise. </p>
    <p class="note" role="note">Use the <code class="idl"><a data-link-type="idl" href="#dom-document-fullscreenelement" id="ref-for-dom-document-fullscreenelement③">fullscreenElement</a></code> attribute instead. </p>
    <div class="algorithm" data-algorithm="fullscreenElement" data-algorithm-for="DocumentOrShadowRoot">
+    <div class="mdn-anno wrapped">
+     <button class="mdn-anno-btn"><span>MDN</span></button>
+     <div class="feature">
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement" title="The Document.fullscreenElement read-only property returns the Element that is currently being presented in full-screen mode in this document, or null if full-screen mode is not currently in use.">Document/fullscreenElement</a></p>
+      <div class="support">
+       <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
+       <hr>
+       <span class="opera yes"><span>Opera</span><span>58+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+       <hr>
+       <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+       <hr>
+       <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>50+</span></span>
+      </div>
+     </div>
+    </div>
     <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="DocumentOrShadowRoot" data-dfn-type="attribute" data-export id="dom-document-fullscreenelement"><code>fullscreenElement</code></dfn> attribute’s getter must run these steps: </p>
     <ol>
      <li>
@@ -548,6 +501,21 @@ could be an open <code><a data-link-type="element" href="https://html.spec.whatw
       <p>Resolve <var>promise</var> with undefined. </p>
     </ol>
    </div>
+   <div class="mdn-anno wrapped">
+    <button class="mdn-anno-btn"><span>MDN</span></button>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/exitFullscreen" title="The Document method exitFullscreen() requests that the element on this document which is currently being presented in full-screen mode be taken out of full-screen mode, restoring the previous state of the screen.">Document/exitFullscreen</a></p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>10.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
+     </div>
+    </div>
+   </div>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="Document" data-dfn-type="method" data-export id="dom-document-exitfullscreen"><code>exitFullscreen()</code></dfn> method, when invoked, must
 return the result of running <a data-link-type="dfn" href="#exit-fullscreen" id="ref-for-exit-fullscreen②">exit fullscreen</a> on the <a data-link-type="dfn">context object</a>. </p>
    <hr>
@@ -563,18 +531,6 @@ return the result of running <a data-link-type="dfn" href="#exit-fullscreen" id=
        <div class="mdn-anno wrapped">
         <button class="mdn-anno-btn"><span>MDN</span></button>
         <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenchange_event" title="The fullscreenchange event is fired immediately after the browser switches into or out of full-screen mode.">Document/fullscreenchange_event</a></p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>32+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-          <hr>
-          <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>32+</span></span>
-         </div>
-        </div>
-        <div class="feature">
          <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/onfullscreenchange" title="The Document interface&apos;s onfullscreenchange property is an event handler for the fullscreenchange event that is fired immediately before a document transitions into or out of full-screen mode.">Document/onfullscreenchange</a></p>
          <div class="support">
           <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
@@ -584,18 +540,6 @@ return the result of running <a data-link-type="dfn" href="#exit-fullscreen" id=
           <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
           <hr>
           <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-         </div>
-        </div>
-        <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/fullscreenchange_event" title="The fullscreenchange event is fired immediately after an Element switches into or out of full-screen mode.">Element/fullscreenchange_event</a></p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-          <hr>
-          <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>7.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
          </div>
         </div>
         <div class="feature">
@@ -618,18 +562,6 @@ return the result of running <a data-link-type="dfn" href="#exit-fullscreen" id=
        <div class="mdn-anno wrapped">
         <button class="mdn-anno-btn"><span>MDN</span></button>
         <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenerror_event" title="The fullscreenerror event is fired when the browser cannot switch to full-screen mode.">Document/fullscreenerror_event</a></p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>32+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-          <hr>
-          <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>32+</span></span>
-         </div>
-        </div>
-        <div class="feature">
          <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/onfullscreenerror" title="The Document.onfullscreenerror property is an event handler for the fullscreenerror event that is sent to the document when it fails to transition into full-screen mode after a prior call to Element.requestFullscreen().">Document/onfullscreenerror</a></p>
          <div class="support">
           <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
@@ -639,18 +571,6 @@ return the result of running <a data-link-type="dfn" href="#exit-fullscreen" id=
           <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
           <hr>
           <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-         </div>
-        </div>
-        <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/fullscreenerror_event" title="The fullscreenerror event is fired when the browser cannot switch to full-screen mode.">Element/fullscreenerror_event</a></p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>64+</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome yes"><span>Chrome</span><span>71+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-          <hr>
-          <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>64+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>71+</span></span><span class="webview_android yes"><span>Android WebView</span><span>71+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>7.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
          </div>
         </div>
         <div class="feature">
@@ -829,7 +749,7 @@ document is allowed to go fullscreen. If disabled in any document, no content in
 be <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use" id="ref-for-allowed-to-use②">allowed to use</a> fullscreen. </p>
     <p>The <code><a data-link-type="element-sub" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen" id="ref-for-attr-iframe-allowfullscreen">allowfullscreen</a></code> attribute of the HTML <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" id="ref-for-the-iframe-element②">iframe</a></code> element affects the <a data-link-type="dfn" href="https://w3c.github.io/webappsec-permissions-policy/#container-policy" id="ref-for-container-policy">container
 policy</a> for any document nested in that iframe. Unless overridden by the <code><a data-link-type="element-sub" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow" id="ref-for-attr-iframe-allow">allow</a></code> attribute, setting <code><a data-link-type="element-sub" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen" id="ref-for-attr-iframe-allowfullscreen①">allowfullscreen</a></code> on an iframe is equivalent to <code>&lt;iframe
-allow="fullscreen *"></code>, as described in <a href="https://www.w3.org/TR/permissions-policy/#iframe-allowfullscreen-attribute">Permissions Policy §6.3.1 allowfullscreen</a>. </p>
+allow="fullscreen *"></code>, as described in <span spec-section="#iframe-allowfullscreen-attribute"></span>. </p>
    </div>
    <h2 class="heading settled" data-level="7" id="security-and-privacy-considerations"><span class="secno">7. </span><span class="content">Security and Privacy Considerations</span><a class="self-link" href="#security-and-privacy-considerations"></a></h2>
    <p>User agents should ensure, e.g. by means of an overlay, that the end user is aware something is
@@ -1469,7 +1389,7 @@ Integration</a>
      <li><span class="dfn-paneled" id="term-for-policy-controlled-feature">policy-controlled feature</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-LegacyLenientSetter">LegacyLenientSetter</span>
      <li><span class="dfn-paneled" id="term-for-idl-promise">Promise</span>
@@ -1497,6 +1417,8 @@ Integration</a>
    <dd>Erik Dahlström; et al. <a href="https://www.w3.org/TR/SVG11/">Scalable Vector Graphics (SVG) 1.1 (Second Edition)</a>. 16 August 2011. REC. URL: <a href="https://www.w3.org/TR/SVG11/">https://www.w3.org/TR/SVG11/</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
 <pre class="idl highlight def"><c- b>enum</c-> <a href="#enumdef-fullscreennavigationui"><code><c- g>FullscreenNavigationUI</c-></code></a> {

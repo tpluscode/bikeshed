@@ -827,8 +827,8 @@ https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities-0
 -
 [[cachedPosition]]
 idl
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-cachedposition
@@ -838,8 +838,8 @@ Geolocation
 -
 [[cachedPosition]]
 idl
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-cachedposition
@@ -1241,8 +1241,8 @@ MultiCacheQueryOptions
 -
 cached ecmascript object
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-cached-object
@@ -1251,8 +1251,8 @@ https://w3c.github.io/webcrypto/#concept-cached-object
 -
 cached ecmascript object
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-cached-object
@@ -1650,8 +1650,8 @@ https://www.w3.org/TR/webdriver2/#dfn-call
 -
 call a user object’s operation
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#call-a-user-objects-operation
@@ -1680,8 +1680,8 @@ https://www.w3.org/TR/wasm-js-api-1/#call-an-exported-function
 -
 call back with error
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-call-back-with-error
@@ -1690,8 +1690,8 @@ https://w3c.github.io/geolocation-api/#dfn-call-back-with-error
 -
 call back with error
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-call-back-with-error
@@ -1700,8 +1700,8 @@ https://www.w3.org/TR/geolocation-API/#dfn-call-back-with-error
 -
 call site
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#call-site
@@ -1710,8 +1710,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#call-site
 -
 call site
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#call-site
@@ -1720,8 +1720,8 @@ https://www.w3.org/TR/WGSL/#call-site
 -
 callable
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#effective-overload-set-tuple-callable
@@ -2007,8 +2007,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#callback-context
 -
 callback context
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-callback-context
@@ -2017,8 +2017,8 @@ https://heycam.github.io/webidl/#dfn-callback-context
 -
 callback context
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-callback-context
@@ -2027,8 +2027,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-callback-context
 -
 callback function
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-callback-function
@@ -2037,8 +2037,8 @@ https://heycam.github.io/webidl/#dfn-callback-function
 -
 callback function
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-callback-function
@@ -2047,8 +2047,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-callback-function
 -
 callback function types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-callback-function
@@ -2057,8 +2057,8 @@ https://heycam.github.io/webidl/#idl-callback-function
 -
 callback interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-callback-interface
@@ -2067,8 +2067,8 @@ https://heycam.github.io/webidl/#dfn-callback-interface
 -
 callback interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-callback-interface
@@ -2077,8 +2077,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-callback-interface
 -
 callback interface member
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#callback-interface-member
@@ -2087,8 +2087,8 @@ https://heycam.github.io/webidl/#callback-interface-member
 -
 callback interface types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-callback-interface
@@ -2117,8 +2117,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#dfn-callback-this-val
 -
 callback this value
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-callback-this-value
@@ -2127,8 +2127,8 @@ https://heycam.github.io/webidl/#dfn-callback-this-value
 -
 callback this value
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-callback-this-value
@@ -3843,8 +3843,8 @@ https://www.w3.org/TR/css-color-4/#valdef-system-color-canvas
 -
 canvas
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#canvas
@@ -3853,8 +3853,8 @@ https://drafts.csswg.org/css2/#canvas
 -
 canvas
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#canvas
@@ -3885,8 +3885,8 @@ CanvasCaptureMediaStreamTrack
 -
 canvas
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermCanvas
@@ -3895,8 +3895,8 @@ https://svgwg.org/svg2-draft/coords.html#TermCanvas
 -
 canvas
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermCanvas
@@ -4252,8 +4252,8 @@ https://www.w3.org/TR/svg-strokes/#TermCapShape
 -
 cap shapes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermCapShape
@@ -4262,8 +4262,8 @@ https://svgwg.org/svg2-draft/painting.html#TermCapShape
 -
 cap shapes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermCapShape
@@ -4516,8 +4516,8 @@ text-transform
 -
 capitalize
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-transform-capitalize
@@ -4527,8 +4527,8 @@ text-transform
 -
 capitalize
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-transform-capitalize
@@ -4581,8 +4581,8 @@ font
 -
 caption
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-caption
@@ -4592,8 +4592,8 @@ font
 -
 caption
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-caption
@@ -4643,8 +4643,8 @@ https://www.w3.org/TR/css-tables-3/#propdef-caption-side
 -
 caption-side
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-caption-side
@@ -4653,8 +4653,8 @@ https://drafts.csswg.org/css2/#propdef-caption-side
 -
 caption-side
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-caption-side
@@ -4663,8 +4663,8 @@ https://drafts.csswg.org/css2/#propdef-caption-side
 -
 caption-side
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/tables.html#propdef-caption-side
@@ -5361,8 +5361,8 @@ https://www.w3.org/TR/css-speech-1/#cascade-def
 -
 cascade
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#cascade%E2%91%A0
@@ -5371,8 +5371,8 @@ https://drafts.csswg.org/css2/#cascade%E2%91%A0
 -
 cascade
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#cascade%E2%91%A0
@@ -5511,8 +5511,8 @@ https://www.w3.org/TR/css-cascade-5/#cascaded-value
 -
 case-insensitive
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#case-insensitive
@@ -5521,8 +5521,8 @@ https://w3c.github.io/webcrypto/#case-insensitive
 -
 case-sensitive
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-case-sensitive
@@ -5531,8 +5531,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-case-sensitive
 -
 case-sensitive
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#case-sensitive
@@ -5541,8 +5541,8 @@ https://w3c.github.io/webcrypto/#case-sensitive
 -
 case-sensitive
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#case-sensitive

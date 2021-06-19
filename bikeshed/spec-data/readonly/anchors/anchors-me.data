@@ -557,8 +557,8 @@ https://www.w3.org/TR/css-conditional-3/#at-ruledef-media
 -
 @media
 at-rule
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#at-ruledef-media
@@ -567,8 +567,8 @@ https://drafts.csswg.org/css2/#at-ruledef-media
 -
 @media
 at-rule
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#at-ruledef-media
@@ -2601,8 +2601,8 @@ CSSMediaRule
 -
 media
 at-rule
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#at-ruledef-media%E2%91%A0
@@ -2611,8 +2611,8 @@ https://drafts.csswg.org/css2/#at-ruledef-media%E2%91%A0
 -
 media
 at-rule
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#at-ruledef-media%E2%91%A0
@@ -2808,8 +2808,8 @@ MediaQueryListEvent
 -
 media
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#StyleElementMediaAttribute
@@ -2819,8 +2819,8 @@ style
 -
 media
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__media
@@ -2830,8 +2830,8 @@ SVGStyleElement
 -
 media
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#StyleElementMediaAttribute
@@ -2841,8 +2841,8 @@ style
 -
 media
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#__svg__SVGStyleElement__media
@@ -3234,8 +3234,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#media-fragment-syntax
 -
 media groups
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#media-groups%E2%91%A0
@@ -3244,8 +3244,8 @@ https://drafts.csswg.org/css2/#media-groups%E2%91%A0
 -
 media groups
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#media-groups%E2%91%A0
@@ -3916,8 +3916,8 @@ https://www.w3.org/TR/webdriver2/#dfn-media-type
 -
 media-dependent import
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#conditional-import
@@ -3926,8 +3926,8 @@ https://drafts.csswg.org/css2/#conditional-import
 -
 media-dependent import
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#conditional-import
@@ -4000,8 +4000,8 @@ RTCStatsType
 -
 media-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#media-src
@@ -4010,8 +4010,8 @@ https://w3c.github.io/webappsec-csp/#media-src
 -
 media-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#media-src
@@ -5291,8 +5291,8 @@ voice-range
 -
 medium
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-border-width-medium
@@ -5307,8 +5307,8 @@ border-width
 -
 medium
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-size-medium
@@ -5318,8 +5318,8 @@ font-size
 -
 medium
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-border-width-medium
@@ -5334,8 +5334,8 @@ border-width
 -
 medium
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-size-medium
@@ -5609,8 +5609,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-mediumvioletred
 -
 meetOrSlice
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__meetOrSlice
@@ -5620,8 +5620,8 @@ SVGPreserveAspectRatio
 -
 meetOrSlice
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#__svg__SVGPreserveAspectRatio__meetOrSlice
@@ -5661,8 +5661,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-member
 -
 member types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-union-member-type
@@ -5672,8 +5672,8 @@ union
 -
 member types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-union-member-type
@@ -5705,8 +5705,8 @@ CSSUnparsedValue/CSSUnparsedValue(members)
 -
 members
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-member
@@ -5715,8 +5715,8 @@ https://heycam.github.io/webidl/#dfn-member
 -
 memory access
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#memory-access
@@ -5725,8 +5725,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#memory-access
 -
 memory access
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#memory-access
@@ -5756,8 +5756,8 @@ WindowOrWorkerGlobalScope
 -
 memory layout
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#memory-layout
@@ -5766,8 +5766,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#memory-layout
 -
 memory layout
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#memory-layout
@@ -5776,8 +5776,8 @@ https://www.w3.org/TR/WGSL/#memory-layout
 -
 memory locations
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#memory-locations
@@ -5786,8 +5786,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#memory-locations
 -
 memory locations
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#memory-locations
@@ -5826,8 +5826,8 @@ https://www.w3.org/TR/wasm-js-api-1/#memory-object-cache
 -
 memory view
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#memory-view
@@ -5836,8 +5836,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#memory-view
 -
 memory view
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#memory-view
@@ -5898,8 +5898,8 @@ font
 -
 menu
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-menu
@@ -5909,8 +5909,8 @@ font
 -
 menu
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-menu
@@ -6345,8 +6345,8 @@ https://www.w3.org/TR/encrypted-media/#dom-evt-message
 -
 message
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-message
@@ -6356,8 +6356,8 @@ GeolocationPositionError
 -
 message
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-message
@@ -6690,8 +6690,8 @@ GPUValidationError
 -
 message
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-exception-message
@@ -6701,8 +6701,8 @@ exception
 -
 message
 argument
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-domexception-message-name-message
@@ -6717,8 +6717,8 @@ DOMException/constructor()
 -
 message
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#domexception-message
@@ -6728,8 +6728,8 @@ DOMException
 -
 message
 attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-message
@@ -6739,8 +6739,8 @@ DOMException
 -
 message
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-exception-message
@@ -6802,8 +6802,8 @@ font
 -
 message-box
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-message-box
@@ -6813,8 +6813,8 @@ font
 -
 message-box
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-message-box
@@ -7035,8 +7035,8 @@ https://html.spec.whatwg.org/multipage/semantics.html#meta
 -
 meta
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-meta
@@ -7275,8 +7275,8 @@ MediaSession
 -
 metadata
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#elementdef-metadata
@@ -7285,8 +7285,8 @@ https://svgwg.org/svg2-draft/struct.html#elementdef-metadata
 -
 metadata
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#elementdef-metadata
@@ -7531,8 +7531,8 @@ PaymentInstrument
 -
 method
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextPathElementMethodAttribute
@@ -7542,8 +7542,8 @@ textPath
 -
 method
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__method
@@ -7553,8 +7553,8 @@ SVGTextPathElement
 -
 method
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextPathElementMethodAttribute
@@ -7564,8 +7564,8 @@ textPath
 -
 method
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__method
@@ -7629,8 +7629,8 @@ https://fetch.spec.whatwg.org/#concept-cache-match-method
 -
 method steps
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#method-steps

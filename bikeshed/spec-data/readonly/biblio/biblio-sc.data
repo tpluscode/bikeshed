@@ -36,7 +36,7 @@ W3C Schema.org Community Group
 -
 d:screen-capture
 screen-capture
-10 June 2021
+5 February 2021
 WD
 Screen Capture
 https://www.w3.org/TR/screen-capture/
@@ -49,7 +49,6 @@ Keith Griffin
 Suhas Nandakumar
 Henrik Boström
 Jan-Ivar Bruaroey
-Elad Alon
 -
 d:screen-capture-20150210
 screen-capture-20150210
@@ -79,7 +78,6 @@ Keith Griffin
 Suhas Nandakumar
 Henrik Boström
 Jan-Ivar Bruaroey
-Elad Alon
 -
 d:screen-capture-20160714
 screen-capture-20160714
@@ -126,56 +124,6 @@ Suhas Nandakumar
 Henrik Boström
 Jan-Ivar Bruaroey
 -
-d:screen-capture-20210527
-screen-capture-20210527
-27 May 2021
-WD
-Screen Capture
-https://www.w3.org/TR/2021/WD-screen-capture-20210527/
-https://www.w3.org/TR/2021/WD-screen-capture-20210527/
-
-
-
-Martin Thomson
-Keith Griffin
-Suhas Nandakumar
-Henrik Boström
-Jan-Ivar Bruaroey
--
-d:screen-capture-20210603
-screen-capture-20210603
-3 June 2021
-WD
-Screen Capture
-https://www.w3.org/TR/2021/WD-screen-capture-20210603/
-https://www.w3.org/TR/2021/WD-screen-capture-20210603/
-
-
-
-Martin Thomson
-Keith Griffin
-Suhas Nandakumar
-Henrik Boström
-Jan-Ivar Bruaroey
-Elad Alon
--
-d:screen-capture-20210610
-screen-capture-20210610
-10 June 2021
-WD
-Screen Capture
-https://www.w3.org/TR/2021/WD-screen-capture-20210610/
-https://www.w3.org/TR/2021/WD-screen-capture-20210610/
-
-
-
-Martin Thomson
-Keith Griffin
-Suhas Nandakumar
-Henrik Boström
-Jan-Ivar Bruaroey
-Elad Alon
--
 a:screen-fold
 screen-fold
 device-posture
@@ -187,14 +135,6 @@ device-posture-20201217
 a:screen-fold-20210318
 screen-fold-20210318
 device-posture-20210318
--
-a:screen-fold-20210513
-screen-fold-20210513
-device-posture-20210513
--
-a:screen-fold-20210603
-screen-fold-20210603
-device-posture-20210603
 -
 d:screen-orientation
 screen-orientation
@@ -964,7 +904,7 @@ Johanna Herman
 -
 d:screen-wake-lock
 screen-wake-lock
-7 June 2021
+29 September 2020
 WD
 Screen Wake Lock API
 https://www.w3.org/TR/screen-wake-lock/
@@ -975,8 +915,6 @@ https://w3c.github.io/screen-wake-lock/
 Kenneth Christiansen
 Marcos Caceres
 Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
 -
 d:screen-wake-lock-20150212
 screen-wake-lock-20150212
@@ -1047,8 +985,6 @@ https://www.w3.org/TR/2016/WD-wake-lock-20160603/
 Kenneth Christiansen
 Marcos Caceres
 Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
 -
 d:screen-wake-lock-20160617
 screen-wake-lock-20160617
@@ -1063,8 +999,6 @@ https://www.w3.org/TR/2016/WD-wake-lock-20160617/
 Kenneth Christiansen
 Marcos Caceres
 Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
 -
 d:screen-wake-lock-20160620
 screen-wake-lock-20160620
@@ -1079,8 +1013,6 @@ https://www.w3.org/TR/2016/WD-wake-lock-20160620/
 Kenneth Christiansen
 Marcos Caceres
 Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
 -
 d:screen-wake-lock-20160714
 screen-wake-lock-20160714
@@ -1095,8 +1027,6 @@ https://www.w3.org/TR/2016/WD-wake-lock-20160714/
 Kenneth Christiansen
 Marcos Caceres
 Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
 -
 d:screen-wake-lock-20160803
 screen-wake-lock-20160803
@@ -1111,8 +1041,6 @@ https://www.w3.org/TR/2016/WD-wake-lock-20160803/
 Kenneth Christiansen
 Marcos Caceres
 Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
 -
 d:screen-wake-lock-20161220
 screen-wake-lock-20161220
@@ -1296,70 +1224,6 @@ Kenneth Christiansen
 Marcos Caceres
 Raphael Kubo da Costa
 -
-d:screen-wake-lock-20210601
-screen-wake-lock-20210601
-1 June 2021
-WD
-Screen Wake Lock API
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210601/
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210601/
-
-
-
-Kenneth Christiansen
-Marcos Caceres
-Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
--
-d:screen-wake-lock-20210602
-screen-wake-lock-20210602
-2 June 2021
-WD
-Screen Wake Lock API
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210602/
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210602/
-
-
-
-Kenneth Christiansen
-Marcos Caceres
-Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
--
-d:screen-wake-lock-20210603
-screen-wake-lock-20210603
-3 June 2021
-WD
-Screen Wake Lock API
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210603/
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210603/
-
-
-
-Kenneth Christiansen
-Marcos Caceres
-Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
--
-d:screen-wake-lock-20210607
-screen-wake-lock-20210607
-7 June 2021
-WD
-Screen Wake Lock API
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210607/
-https://www.w3.org/TR/2021/WD-screen-wake-lock-20210607/
-
-
-
-Kenneth Christiansen
-Marcos Caceres
-Raphael Kubo da Costa
-Ilya Bogdanovich
-Andrey Logvinov
--
 d:scroll-animations
 SCROLL-ANIMATIONS
 
@@ -1379,8 +1243,8 @@ d:scte01
 scte01
 
 
-SCTE 01 2021: Specification for "F" Port, Female, Outdoor
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-01-2021-1618396377026.pdf
+ANSI/SCTE 01 2015: Specification for "F" Port, Female, Outdoor
+https://scte-cms-resource-storage.s3.amazonaws.com/ANSI_SCTE-01-2015-1575399793906.pdf
 
 
 
@@ -1390,8 +1254,8 @@ d:scte02
 scte02
 
 
-SCTE 02 2021: Specification for "F" Port, Female, Indoor
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-02-2021-1618396460579.pdf
+ANSI/SCTE 02 2015: Specification for "F" Port, Female, Indoor
+https://scte-cms-resource-storage.s3.amazonaws.com/ANSI_SCTE%2002%202015.pdf
 
 
 
@@ -1828,8 +1692,8 @@ d:scte129
 scte129
 
 
-SCTE 129 2021: Drop Passives: Bonding Blocks (Without Surge Protection)
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-129-2021-1618396555870.pdf
+ANSI/SCTE 129 2017: Drop Passives: Bonding Blocks (Without Surge Protection)
+https://scte-cms-resource-storage.s3.amazonaws.com/Standards/ANSI_SCTE%20129%202017.pdf
 
 
 
@@ -2029,8 +1893,8 @@ d:scte134
 scte134
 
 
-ANSI/SCTE 134 2021: Fusion Splicing Equipment and Applications for the Cable/Broadband Industry
-https://scte-cms-resource-storage.s3.amazonaws.com/ANSI_SCTE-134-2021-1621536551206.pdf
+SCTE 134 2021: Fusion Splicing Equipment and Applications for the Cable/Broadband Industry
+https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-134-2021-1614108871640.pdfhttps://scte-cms-resource-storage.s3.amazonaws.com/SCTE-134-2021-1614108871640.pdf
 
 
 
@@ -2327,8 +2191,8 @@ d:scte146
 scte146
 
 
-SCTE 146 2021: Outdoor "F" Female to "F" Female Inline Splice
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-146-2021-1618396655770.pdf
+ANSI/SCTE 146 2017: Outdoor "F" Female to "F" Female Inline Splice
+https://scte-cms-resource-storage.s3.amazonaws.com/Standards/ANSI_SCTE%20146%202017.pdf
 
 
 
@@ -2501,8 +2365,8 @@ d:scte155
 scte155
 
 
-SCTE 155 2021: Indoor "F" Female to "F" Female Inline Splice
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-155-2021-1618396721231.pdf
+ANSI/SCTE 155 2017: Indoor "F" Female to "F" Female Inline Splice
+https://scte-cms-resource-storage.s3.amazonaws.com/Standards/ANSI_SCTE%20155%202017.pdf
 
 
 
@@ -3156,8 +3020,8 @@ d:scte186
 scte186
 
 
-ANSI/SCTE 186 2021: Product Physical, Environmental, Electrical, Sustainability, and Quality Requirements for Cable Telecommunications
-https://scte-cms-resource-storage.s3.amazonaws.com/ANSI_SCTE-186-2021-1618940663947.pdf
+SCTE 186 2021: Product Physical, Environmental, Electrical, Sustainability, and Quality Requirements for Cable Telecommunications
+https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-186-2021-1611168047057.pdf
 
 
 
@@ -3764,8 +3628,8 @@ d:scte224
 scte224
 
 
-SCTE 224 2021: Event Scheduling and Notification Interface (ESNI)
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-224-2021-1620314764331.pdf
+ANSI/SCTE 224 2020r1: Event Scheduling and Notification Interface (ESNI)
+https://scte-cms-resource-storage.s3.amazonaws.com/ANSI_SCTE-224-2020r1-1609616235561.pdf
 
 
 
@@ -3941,8 +3805,8 @@ d:scte236
 scte236
 
 
-SCTE 236 2021: Content Metadata
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-236-2021_Errata-Notice-on-schema-locations-1621454832940.pdf
+ANSI/SCTE 236 2017: Content Metadata
+https://scte-cms-resource-storage.s3.amazonaws.com/ANSI_SCTE-236-2017-with-errata-notice-1601490258907.pdf
 
 
 
@@ -4826,17 +4690,6 @@ https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-263-2020-1609358322075.p
 
 
 -
-d:scte264
-scte264
-
-
-SCTE 264 2020: Broadband Radio Frequency Hardline Taps for Cable Systems
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-264-2020-1618241459202.pdf
-
-
-
-
--
 d:scte266
 scte266
 
@@ -4854,28 +4707,6 @@ scte267
 
 SCTE 267 2021: Optimum Load Shaping for Electric Vehicle and Battery Charging
 https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-267-2021-1617105049103.pdf
-
-
-
-
--
-d:scte268
-scte268
-
-
-SCTE 268 2021: Operational Practice on the Usage of SCTE 224 for Advertising Information
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-268-2021_with-errata-notice-1621910364946.pdf
-
-
-
-
--
-d:scte269
-scte269
-
-
-SCTE 269 2021: Test Procedure for “F” Port Center Conductor Retention Force
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-269-2021-1618396804564.pdf
 
 
 
@@ -4973,8 +4804,8 @@ d:scte35
 scte35
 
 
-ANSI/SCTE 35 2020: Digital Program Insertion Cueing Message
-https://scte-cms-resource-storage.s3.amazonaws.com/ANSI_SCTE-35-2020-1619708851007.pdf
+SCTE 35 2020: Digital Program Insertion Cueing Message
+https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-35-2020_notice-1609861286512.pdf
 
 
 
@@ -5225,8 +5056,8 @@ d:scte46
 scte46
 
 
-SCTE 46 2014 (R2021): Test Method for AC to DC Power Supplies
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-46-2014-(R2021)-1622466098265.pdf
+ANSI/SCTE 46 2014: Test Method for AC to DC Power Supplies
+https://scte-cms-resource-storage.s3.amazonaws.com/Standards/ANSI_SCTE%2046%202014.pdf
 
 
 
@@ -5571,8 +5402,8 @@ d:scte78
 scte78
 
 
-SCTE 78 2021: Test Method for Transfer Impedance
-https://scte-cms-resource-storage.s3.amazonaws.com/SCTE-78-2021-1619549405316.pdf
+ANSI/SCTE 78 2017: Test Method for Transfer Impedance
+https://scte-cms-resource-storage.s3.amazonaws.com/Standards/ANSI_SCTE%2078%202017.pdf
 
 
 

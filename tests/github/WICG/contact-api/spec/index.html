@@ -769,7 +769,7 @@ contacts.</p>
 specified.</p>
    <h2 class="heading settled" data-level="4" id="infrastructure"><span class="secno">4. </span><span class="content">Infrastructure</span><a class="self-link" href="#infrastructure"></a></h2>
    <p>The <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="contact-picker-task-source">contact picker task source</dfn> is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source">task source</a>.</p>
-   <div class="algorithm" data-algorithm="queue a contact picker task"> To <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="queue-a-contact-picker-task">queue a contact picker task</dfn> on an optional <var>eventLoop</var> (an <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop">event loop</a>,
+   <div class="algorithm" data-algorithm="queue a contact picker task"> To <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="queue-a-contact-picker-task">queue a contact picker task</dfn> on an optional <var>eventLoop</var> (an <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop">event loop</a>,
   defaulting to the caller’s <a data-link-type="dfn">context object</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object">relevant settings object</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop" id="ref-for-responsible-event-loop">responsible event loop</a>) with <var>steps</var> (steps), <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task">queue a task</a> on <var>eventLoop</var> using the <a data-link-type="dfn" href="#contact-picker-task-source" id="ref-for-contact-picker-task-source">contact picker task source</a> to run <var>steps</var>. </div>
    <h3 class="heading settled" data-level="4.1" id="infrastructure-user-contact"><span class="secno">4.1. </span><span class="content">User contact</span><a class="self-link" href="#infrastructure-user-contact"></a></h3>
    <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="user-contact">user contact</dfn> consists of:</p>
@@ -965,7 +965,7 @@ the user agent.</p>
       <li data-md>
        <p>If presenting a user interface fails or accessing the <a data-link-type="dfn" href="#user-contact-contacts-source" id="ref-for-user-contact-contacts-source④">contacts source</a>'s <a data-link-type="dfn" href="#contacts-source-available-contacts" id="ref-for-contacts-source-available-contacts">available contacts</a> fails, then return failure.</p>
       <li data-md>
-       <p>The UI MUST prominently display the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context①">browsing context</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#concept-request-origin" id="ref-for-concept-request-origin">origin</a>.</p>
+       <p>The UI MUST prominently display the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context①">browsing context</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#concept-url-origin" id="ref-for-concept-url-origin">origin</a>.</p>
       <li data-md>
        <p>The UI MUST make it clear which <code>properties</code> of the contacts are requested.</p>
        <p class="note" role="note"><span>NOTE:</span> This information is derived from <var>properties</var>.</p>
@@ -1108,10 +1108,10 @@ remove the UI and return a <a data-link-type="dfn" href="https://infra.spec.what
     <li><a href="#ref-for-browsing-context①">6. Contact Picker</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-agent-event-loop">
-   <a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop">https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-event-loop">
+   <a href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop">https://html.spec.whatwg.org/multipage/webappapis.html#event-loop</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-concept-agent-event-loop">4. Infrastructure</a>
+    <li><a href="#ref-for-event-loop">4. Infrastructure</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-in-parallel">
@@ -1121,10 +1121,10 @@ remove the UI and return a <a data-link-type="dfn" href="https://infra.spec.what
     <li><a href="#ref-for-in-parallel①">5.3.2. select()</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-request-origin">
-   <a href="https://html.spec.whatwg.org/multipage/infrastructure.html#concept-request-origin">https://html.spec.whatwg.org/multipage/infrastructure.html#concept-request-origin</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-concept-url-origin">
+   <a href="https://html.spec.whatwg.org/multipage/infrastructure.html#concept-url-origin">https://html.spec.whatwg.org/multipage/infrastructure.html#concept-url-origin</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-concept-request-origin">6. Contact Picker</a>
+    <li><a href="#ref-for-concept-url-origin">6. Contact Picker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-queue-a-task">
@@ -1331,9 +1331,9 @@ remove the UI and return a <a data-link-type="dfn" href="https://infra.spec.what
      <li><span class="dfn-paneled" id="term-for-htmlimageelement">HTMLImageElement</span>
      <li><span class="dfn-paneled" id="term-for-navigator">Navigator</span>
      <li><span class="dfn-paneled" id="term-for-browsing-context">browsing context</span>
-     <li><span class="dfn-paneled" id="term-for-concept-agent-event-loop">event loop</span>
+     <li><span class="dfn-paneled" id="term-for-event-loop">event loop</span>
      <li><span class="dfn-paneled" id="term-for-in-parallel">in parallel</span>
-     <li><span class="dfn-paneled" id="term-for-concept-request-origin">origin</span>
+     <li><span class="dfn-paneled" id="term-for-concept-url-origin">origin</span>
      <li><span class="dfn-paneled" id="term-for-queue-a-task">queue a task</span>
      <li><span class="dfn-paneled" id="term-for-concept-relevant-realm">relevant realm</span>
      <li><span class="dfn-paneled" id="term-for-relevant-settings-object">relevant settings object</span>
@@ -1365,7 +1365,7 @@ remove the UI and return a <a data-link-type="dfn" href="https://infra.spec.what
      <li><span class="dfn-paneled" id="term-for-physical-addresses">physical addresses</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
@@ -1386,7 +1386,7 @@ remove the UI and return a <a data-link-type="dfn" href="https://infra.spec.what
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
    <dt id="biblio-fileapi">[FileAPI]
-   <dd>Marijn Kruisselbrink; Arun Ranganathan. <a href="https://www.w3.org/TR/FileAPI/">File API</a>. 4 June 2021. WD. URL: <a href="https://www.w3.org/TR/FileAPI/">https://www.w3.org/TR/FileAPI/</a>
+   <dd>Marijn Kruisselbrink; Arun Ranganathan. <a href="https://www.w3.org/TR/FileAPI/">File API</a>. 11 September 2019. WD. URL: <a href="https://www.w3.org/TR/FileAPI/">https://www.w3.org/TR/FileAPI/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-infra">[INFRA]
@@ -1395,8 +1395,8 @@ remove the UI and return a <a data-link-type="dfn" href="https://infra.spec.what
    <dd>Marcos Caceres; et al. <a href="https://www.w3.org/TR/payment-request/">Payment Request API</a>. 3 December 2020. CR. URL: <a href="https://www.w3.org/TR/payment-request/">https://www.w3.org/TR/payment-request/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

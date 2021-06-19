@@ -1,7 +1,7 @@
 z-index
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-z-index
@@ -10,8 +10,8 @@ https://drafts.csswg.org/css2/#propdef-z-index
 -
 z-index
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-z-index
@@ -20,8 +20,8 @@ https://drafts.csswg.org/css2/#propdef-z-index
 -
 z-index
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-z-index

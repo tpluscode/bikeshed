@@ -216,8 +216,8 @@ SVGFEOffsetElement
 -
 dy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextElementDYAttribute
@@ -227,8 +227,8 @@ text
 -
 dy
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__dy
@@ -238,8 +238,8 @@ SVGTextPositioningElement
 -
 dy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextElementDYAttribute
@@ -249,8 +249,8 @@ text
 -
 dy
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPositioningElement__dy
@@ -260,8 +260,8 @@ SVGTextPositioningElement
 -
 dynamic context
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#dynamic-context
@@ -270,8 +270,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#dynamic-context
 -
 dynamic context
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#dynamic-context
@@ -280,8 +280,8 @@ https://www.w3.org/TR/WGSL/#dynamic-context
 -
 dynamic error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#dynamic-error
@@ -290,8 +290,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#dynamic-error
 -
 dynamic error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#dynamic-error

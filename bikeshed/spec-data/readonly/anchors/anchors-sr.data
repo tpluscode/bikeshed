@@ -195,8 +195,8 @@ cursor
 -
 s-resize
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-s-resize
@@ -206,8 +206,8 @@ cursor
 -
 s-resize
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-s-resize

@@ -55,8 +55,8 @@ GPUBufferBindingType
 -
 "readonly"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransactionmode-readonly
@@ -66,8 +66,8 @@ IDBTransactionMode
 -
 "readonly"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactionmode-readonly
@@ -88,8 +88,8 @@ FileSystemPermissionMode
 -
 "readwrite"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransactionmode-readwrite
@@ -99,8 +99,8 @@ IDBTransactionMode
 -
 "readwrite"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactionmode-readwrite
@@ -274,8 +274,8 @@ MockSensorType
 -
 "relaxed"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransactiondurability-relaxed
@@ -285,8 +285,8 @@ IDBTransactionDurability
 -
 "relaxed"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactiondurability-relaxed
@@ -419,8 +419,8 @@ RequestDestination
 -
 "report"
 enum-value
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventdisposition-report
@@ -430,8 +430,8 @@ SecurityPolicyViolationEventDisposition
 -
 "report"
 enum-value
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventdisposition-report
@@ -626,8 +626,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'relative-colorimetri
 -
 'report-sample'
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-report-sample
@@ -636,8 +636,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-report-sample
 -
 'report-sample'
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-report-sample
@@ -820,8 +820,8 @@ font-size
 -
 <relative-size>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-relative-size
@@ -830,8 +830,8 @@ https://drafts.csswg.org/css2/#value-def-relative-size
 -
 <relative-size>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-relative-size
@@ -1031,8 +1031,8 @@ GPUTextureUsage
 -
 ReadOnlyError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#readonlyerror
@@ -1847,8 +1847,8 @@ https://www.w3.org/TR/image-capture/#enumdef-redeyereduction
 -
 ReferenceError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#exceptiondef-referenceerror
@@ -2051,8 +2051,8 @@ https://html.spec.whatwg.org/multipage/canvas.html#renderingcontext
 -
 Replaceable
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#Replaceable
@@ -3460,8 +3460,8 @@ https://www.w3.org/TR/css-scroll-snap-1/#re-snap
 -
 re-used graphics
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/render.html#TermReusedGraphics
@@ -3470,8 +3470,8 @@ https://svgwg.org/svg2-draft/render.html#TermReusedGraphics
 -
 re-used graphics
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/render.html#TermReusedGraphics
@@ -3480,8 +3480,8 @@ https://www.w3.org/TR/SVG2/render.html#TermReusedGraphics
 -
 react
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled
@@ -3491,8 +3491,8 @@ promise
 -
 reacting
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled
@@ -3590,8 +3590,8 @@ AuthenticationExtensionsLargeBlobInputs
 -
 read
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#access-read
@@ -3601,8 +3601,8 @@ access
 -
 read
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#access-read
@@ -3633,8 +3633,8 @@ ReadableStreamDefaultReader
 -
 read access
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#read-access
@@ -3643,8 +3643,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#read-access
 -
 read access
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#read-access
@@ -3734,8 +3734,8 @@ https://webbluetoothcg.github.io/web-bluetooth/#read-long-characteristic-descrip
 -
 read method
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#read-method
@@ -3744,8 +3744,8 @@ https://w3c.github.io/FileAPI/#read-method
 -
 read method
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#read-method
@@ -3774,8 +3774,8 @@ https://www.w3.org/TR/webdriver2/#dfn-read-only
 -
 read only
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-read-only
@@ -3784,8 +3784,8 @@ https://heycam.github.io/webidl/#dfn-read-only
 -
 read only
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-read-only
@@ -3804,8 +3804,8 @@ https://webbluetoothcg.github.io/web-bluetooth/#read-only-arraybuffer
 -
 read operation
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#readOperation
@@ -3814,8 +3814,8 @@ https://w3c.github.io/FileAPI/#readOperation
 -
 read operation
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#readOperation
@@ -4002,8 +4002,8 @@ https://www.w3.org/TR/webrtc/#dfn-read-only-parameter
 -
 read-only storage texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#read-only-storage-texture
@@ -4012,8 +4012,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#read-only-storage-texture
 -
 read-only storage texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#read-only-storage-texture
@@ -4022,8 +4022,8 @@ https://www.w3.org/TR/WGSL/#read-only-storage-texture
 -
 read-only transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-read-only-transaction
@@ -4033,8 +4033,8 @@ transaction
 -
 read-only transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-read-only-transaction
@@ -4054,8 +4054,8 @@ https://html.spec.whatwg.org/multipage/dnd.html#concept-dnd-rw
 -
 read/write transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-read-write-transaction
@@ -4065,8 +4065,8 @@ transaction
 -
 read/write transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-read-write-transaction
@@ -4076,8 +4076,8 @@ transaction
 -
 readAsArrayBuffer(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsArrayBuffer
@@ -4087,8 +4087,8 @@ FileReader
 -
 readAsArrayBuffer(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsArrayBufferSync
@@ -4098,8 +4098,8 @@ FileReaderSync
 -
 readAsArrayBuffer(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsArrayBuffer
@@ -4109,8 +4109,8 @@ FileReader
 -
 readAsArrayBuffer(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsArrayBufferSync
@@ -4120,8 +4120,8 @@ FileReaderSync
 -
 readAsBinaryString(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsBinaryString
@@ -4131,8 +4131,8 @@ FileReader
 -
 readAsBinaryString(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsBinaryStringSync
@@ -4142,8 +4142,8 @@ FileReaderSync
 -
 readAsBinaryString(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsBinaryString
@@ -4153,8 +4153,8 @@ FileReader
 -
 readAsBinaryString(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsBinaryStringSync
@@ -4164,8 +4164,8 @@ FileReaderSync
 -
 readAsDataURL(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsDataURL
@@ -4175,8 +4175,8 @@ FileReader
 -
 readAsDataURL(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsDataURLSync
@@ -4186,8 +4186,8 @@ FileReaderSync
 -
 readAsDataURL(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsDataURL
@@ -4197,8 +4197,8 @@ FileReader
 -
 readAsDataURL(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsDataURLSync
@@ -4208,8 +4208,8 @@ FileReaderSync
 -
 readAsText(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsText
@@ -4219,8 +4219,8 @@ FileReader
 -
 readAsText(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsTextSync
@@ -4230,8 +4230,8 @@ FileReaderSync
 -
 readAsText(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsText
@@ -4241,8 +4241,8 @@ FileReader
 -
 readAsText(blob)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsTextSync
@@ -4252,8 +4252,8 @@ FileReaderSync
 -
 readAsText(blob, encoding)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsText
@@ -4263,8 +4263,8 @@ FileReader
 -
 readAsText(blob, encoding)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-readAsTextSync
@@ -4274,8 +4274,8 @@ FileReaderSync
 -
 readAsText(blob, encoding)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsText
@@ -4285,8 +4285,8 @@ FileReader
 -
 readAsText(blob, encoding)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-readAsTextSync
@@ -4419,8 +4419,8 @@ BluetoothRemoteGATTDescriptor
 -
 read_write
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#access-read_write
@@ -4430,8 +4430,8 @@ access
 -
 read_write
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#access-read_write
@@ -4944,8 +4944,8 @@ CSSStyleDeclaration
 -
 readonlyerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#readonlyerror
@@ -5146,8 +5146,8 @@ ServiceWorkerContainer
 -
 ready promise
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#environment-ready-promise
@@ -5223,8 +5223,8 @@ WebSocket
 -
 readyState
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-filereader-readystate
@@ -5234,8 +5234,8 @@ FileReader
 -
 readyState
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-filereader-readystate
@@ -5245,8 +5245,8 @@ FileReader
 -
 readyState
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbrequest-readystate
@@ -5256,8 +5256,8 @@ IDBRequest
 -
 readyState
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-readystate
@@ -5864,8 +5864,8 @@ WebTransportCloseInfo
 -
 reassociation
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#reassociation
@@ -5874,8 +5874,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#reassociation
 -
 reassociation
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#reassociation
@@ -6635,8 +6635,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-recipient
 -
 recognized algorithm name
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#recognized-algorithm-name
@@ -6645,8 +6645,8 @@ https://w3c.github.io/webcrypto/#recognized-algorithm-name
 -
 recognized algorithm name
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#recognized-algorithm-name
@@ -6655,8 +6655,8 @@ https://www.w3.org/TR/WebCryptoAPI/#recognized-algorithm-name
 -
 recognized key format values
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RecognizedKeyFormats
@@ -6665,8 +6665,8 @@ https://w3c.github.io/webcrypto/#dfn-RecognizedKeyFormats
 -
 recognized key format values
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyFormats
@@ -6675,8 +6675,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyFormats
 -
 recognized key type values
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RecognizedKeyType
@@ -6685,8 +6685,8 @@ https://w3c.github.io/webcrypto/#dfn-RecognizedKeyType
 -
 recognized key type values
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyType
@@ -6695,8 +6695,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyType
 -
 recognized key usage values
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RecognizedKeyUsage
@@ -6705,8 +6705,8 @@ https://w3c.github.io/webcrypto/#dfn-RecognizedKeyUsage
 -
 recognized key usage values
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyUsage
@@ -6715,8 +6715,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-RecognizedKeyUsage
 -
 recommended
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#recommended
@@ -6725,8 +6725,8 @@ https://drafts.csswg.org/css2/#recommended
 -
 recommended
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#recommended
@@ -6931,8 +6931,8 @@ script
 -
 record
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-record
@@ -6942,8 +6942,8 @@ object-store
 -
 record
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-record
@@ -6975,8 +6975,8 @@ MediaEncodingType
 -
 record
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-record
@@ -7046,8 +7046,8 @@ https://w3c.github.io/web-nfc/#dfn-record-type
 -
 record type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#record-type
@@ -7056,8 +7056,8 @@ https://heycam.github.io/webidl/#record-type
 -
 record-namespace-loop
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-record-namespace-loop
@@ -7130,8 +7130,8 @@ https://www.w3.org/TR/webaudio/#recording-the-input
 -
 recording the namespace information
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-recording-the-namespace-information
@@ -7173,8 +7173,8 @@ background fetch
 -
 records
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-records
@@ -7184,8 +7184,8 @@ index
 -
 records
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-records
@@ -7284,8 +7284,8 @@ GeometryUtils/convertRectFromNode(rect, from)
 -
 rect
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#elementdef-rect
@@ -7294,8 +7294,8 @@ https://svgwg.org/svg2-draft/shapes.html#elementdef-rect
 -
 rect
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#elementdef-rect
@@ -7704,8 +7704,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-red
 -
 red
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-red
@@ -7715,8 +7715,8 @@ https://drafts.csswg.org/css2/#valdef-color-red
 -
 red
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-red
@@ -8318,8 +8318,8 @@ PannerOptions
 -
 refX
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__refX
@@ -8329,8 +8329,8 @@ SVGMarkerElement
 -
 refX
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__refX
@@ -8340,8 +8340,8 @@ SVGMarkerElement
 -
 refY
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__refY
@@ -8351,8 +8351,8 @@ SVGMarkerElement
 -
 refY
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__refY
@@ -8485,8 +8485,8 @@ https://www.w3.org/TR/css-values-4/#reference-pixel
 -
 reference pixel
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#reference-pixel
@@ -8495,8 +8495,8 @@ https://drafts.csswg.org/css2/#reference-pixel
 -
 reference pixel
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#reference-pixel
@@ -8525,8 +8525,8 @@ https://www.w3.org/TR/webxr/#reference-space-is-supported
 -
 reference type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#reference-type
@@ -8535,8 +8535,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#reference-type
 -
 reference type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#reference-type
@@ -8720,8 +8720,8 @@ https://html.spec.whatwg.org/multipage/dom.html#referenced
 -
 referenced
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-referenced
@@ -8731,8 +8731,8 @@ index
 -
 referenced
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-referenced
@@ -8742,8 +8742,8 @@ index
 -
 referenced document subtree
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermReferencedDocumentSubtree
@@ -8752,8 +8752,8 @@ https://svgwg.org/svg2-draft/struct.html#TermReferencedDocumentSubtree
 -
 referenced element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermReferencedElement
@@ -8762,8 +8762,8 @@ https://svgwg.org/svg2-draft/struct.html#TermReferencedElement
 -
 referenced value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-referenced-value
@@ -8773,8 +8773,8 @@ index
 -
 referenced value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-referenced-value
@@ -8784,8 +8784,8 @@ index
 -
 references
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-referenced
@@ -8795,8 +8795,8 @@ index
 -
 references
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-referenced
@@ -8931,8 +8931,8 @@ https://www.w3.org/TR/beacon/#concept-request-referrer
 -
 referrer
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-referrer
@@ -8942,8 +8942,8 @@ violation
 -
 referrer
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-referrer
@@ -8953,8 +8953,8 @@ CSPViolationReportBody
 -
 referrer
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-referrer
@@ -8964,8 +8964,8 @@ SecurityPolicyViolationEvent
 -
 referrer
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-referrer
@@ -8975,8 +8975,8 @@ SecurityPolicyViolationEventInit
 -
 referrer
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-referrer
@@ -8986,8 +8986,8 @@ violation
 -
 referrer
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-referrer
@@ -8997,8 +8997,8 @@ CSPViolationReportBody
 -
 referrer
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-referrer
@@ -9008,8 +9008,8 @@ SecurityPolicyViolationEvent
 -
 referrer
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-referrer
@@ -9294,8 +9294,8 @@ HTMLPortalElement
 -
 referrerPolicy
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__referrerPolicy
@@ -9305,8 +9305,8 @@ SVGAElement
 -
 referrerPolicy
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__referrerPolicy
@@ -9383,8 +9383,8 @@ portal
 -
 referrerpolicy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#AElementReferrerpolicyAttribute
@@ -9394,8 +9394,8 @@ a
 -
 referrerpolicy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#AElementReferrerpolicyAttribute
@@ -9477,8 +9477,8 @@ https://www.w3.org/TR/remote-playback/#dfn-reflect
 -
 reflect
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermReflect
@@ -9487,8 +9487,8 @@ https://svgwg.org/svg2-draft/types.html#TermReflect
 -
 reflect
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermReflect
@@ -9642,8 +9642,8 @@ https://html.spec.whatwg.org/multipage/browsing-the-web.html#refused-to-allow-th
 -
 refx
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#SymbolElementRefXAttribute
@@ -9653,8 +9653,8 @@ symbol
 -
 refx
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerElementRefXAttribute
@@ -9664,8 +9664,8 @@ marker
 -
 refx
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#SymbolElementRefXAttribute
@@ -9675,8 +9675,8 @@ symbol
 -
 refx
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerElementRefXAttribute
@@ -9686,8 +9686,8 @@ marker
 -
 refy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#SymbolElementRefYAttribute
@@ -9697,8 +9697,8 @@ symbol
 -
 refy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerElementRefYAttribute
@@ -9708,8 +9708,8 @@ marker
 -
 refy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#SymbolElementRefYAttribute
@@ -9719,8 +9719,8 @@ symbol
 -
 refy
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerElementRefYAttribute
@@ -10766,8 +10766,8 @@ https://wicg.github.io/background-sync/spec/#registration-state
 -
 regular attribute
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-regular-attribute
@@ -10776,8 +10776,8 @@ https://heycam.github.io/webidl/#dfn-regular-attribute
 -
 regular attribute
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-regular-attribute
@@ -10786,8 +10786,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-regular-attribute
 -
 regular operation
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-regular-operation
@@ -10796,8 +10796,8 @@ https://heycam.github.io/webidl/#dfn-regular-operation
 -
 regular operation
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-regular-operation
@@ -11090,8 +11090,8 @@ https://www.w3.org/TR/webdriver2/#dfn-reject
 -
 reject
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#reject
@@ -11452,8 +11452,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-related-rel
 -
 rel
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#AElementRelAttribute
@@ -11463,8 +11463,8 @@ a
 -
 rel
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__rel
@@ -11474,8 +11474,8 @@ SVGAElement
 -
 rel
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#AElementRelAttribute
@@ -11485,8 +11485,8 @@ a
 -
 rel
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__rel
@@ -11540,8 +11540,8 @@ HTMLFormElement
 -
 relList
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__relList
@@ -11551,8 +11551,8 @@ SVGAElement
 -
 relList
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__relList
@@ -12200,8 +12200,8 @@ position
 -
 relative
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-position-relative
@@ -12211,8 +12211,8 @@ position
 -
 relative
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-position-relative
@@ -12372,8 +12372,8 @@ https://www.w3.org/TR/css-position-3/#relative-position
 -
 relative positioning
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#relative-positioning%E2%91%A0
@@ -12382,8 +12382,8 @@ https://drafts.csswg.org/css2/#relative-positioning%E2%91%A0
 -
 relative positioning
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#relative-positioning%E2%91%A0
@@ -12432,8 +12432,8 @@ https://url.spec.whatwg.org/#relative-state
 -
 relative units
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#relative-units
@@ -12442,8 +12442,8 @@ https://drafts.csswg.org/css2/#relative-units
 -
 relative units
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#relative-units
@@ -14868,8 +14868,8 @@ https://dom.spec.whatwg.org/#concept-element-attributes-remove-by-namespace
 -
 remove an entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#removeTheEntry
@@ -14879,8 +14879,8 @@ blob url store
 -
 remove an entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#removeTheEntry
@@ -14890,8 +14890,8 @@ blob url store
 -
 remove an entry from the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#removeTheEntry
@@ -14901,8 +14901,8 @@ blob url store
 -
 remove an entry from the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#removeTheEntry
@@ -15035,8 +15035,8 @@ https://www.w3.org/TR/web-animations-1/#remove-replaced-animations
 -
 remove the entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#removeTheEntry
@@ -15046,8 +15046,8 @@ blob url store
 -
 remove the entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#removeTheEntry
@@ -15057,8 +15057,8 @@ blob url store
 -
 remove the entry from the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#removeTheEntry
@@ -15068,8 +15068,8 @@ blob url store
 -
 remove the entry from the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#removeTheEntry
@@ -16089,8 +16089,8 @@ LargestContentfulPaint
 -
 renderable element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/render.html#TermRenderableElement
@@ -16099,8 +16099,8 @@ https://svgwg.org/svg2-draft/render.html#TermRenderableElement
 -
 renderable element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/render.html#TermRenderableElement
@@ -16129,8 +16129,8 @@ https://www.w3.org/TR/webgpu/#renderable-format
 -
 rendered content
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#rendered-content
@@ -16139,8 +16139,8 @@ https://drafts.csswg.org/css2/#rendered-content
 -
 rendered content
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#rendered-content
@@ -16149,8 +16149,8 @@ https://drafts.csswg.org/css2/#rendered-content
 -
 rendered element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/render.html#TermRenderedElement
@@ -16159,8 +16159,8 @@ https://svgwg.org/svg2-draft/render.html#TermRenderedElement
 -
 rendered element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/render.html#TermRenderedElement
@@ -16305,8 +16305,8 @@ https://www.w3.org/TR/webaudio/#rendering-thread
 -
 rendering tree
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/render.html#TermRenderingTree
@@ -16315,8 +16315,8 @@ https://svgwg.org/svg2-draft/render.html#TermRenderingTree
 -
 rendering tree
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/render.html#TermRenderingTree
@@ -16818,8 +16818,8 @@ set
 -
 replace
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-replace
@@ -16873,8 +16873,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#concept-node-replace-
 -
 replace all
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-replace-all
@@ -17245,8 +17245,8 @@ https://www.w3.org/TR/css-display-3/#replaced-element
 -
 replaced element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#replaced-element
@@ -17255,8 +17255,8 @@ https://drafts.csswg.org/css2/#replaced-element
 -
 replaced element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#replaced-element
@@ -17490,8 +17490,8 @@ https://www.w3.org/TR/reporting-1/#report-buffer
 -
 report content security policy violations for request
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#report-for-request
@@ -17500,8 +17500,8 @@ https://w3c.github.io/webappsec-csp/#report-for-request
 -
 report content security policy violations for request
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#report-for-request
@@ -17784,8 +17784,8 @@ https://html.spec.whatwg.org/multipage/origin.html#coep-report-to
 -
 report-to
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#report-to
@@ -17794,8 +17794,8 @@ https://w3c.github.io/webappsec-csp/#report-to
 -
 report-to
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#report-to
@@ -17814,8 +17814,8 @@ https://www.w3.org/TR/reporting-1/#report-to
 -
 report-uri
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#report-uri
@@ -17824,8 +17824,8 @@ https://w3c.github.io/webappsec-csp/#report-uri
 -
 report-uri
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#report-uri
@@ -18215,8 +18215,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-representation
 -
 representation data
 dfn
-SRI
-SRI
+sri
+sri
 1
 snapshot
 https://www.w3.org/TR/SRI/#dfn-representation-data
@@ -18458,8 +18458,8 @@ https://www.w3.org/TR/beacon/#concept-request
 -
 request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request
@@ -18468,8 +18468,8 @@ https://w3c.github.io/IndexedDB/#request
 -
 request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor-request
@@ -18479,8 +18479,8 @@ cursor
 -
 request
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursor-request
@@ -18490,8 +18490,8 @@ IDBCursor
 -
 request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request
@@ -18500,8 +18500,8 @@ https://www.w3.org/TR/IndexedDB-3/#request
 -
 request
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor-request
@@ -18511,8 +18511,8 @@ cursor
 -
 request
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-request
@@ -18926,8 +18926,8 @@ https://immersive-web.github.io/hit-test/#request-hit-test
 -
 request list
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-request-list
@@ -18937,8 +18937,8 @@ transaction
 -
 request list
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-request-list
@@ -19048,8 +19048,8 @@ https://www.w3.org/TR/picture-in-picture/#request-picture-in-picture-algorithm
 -
 request position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-request-position
@@ -19058,8 +19058,8 @@ https://w3c.github.io/geolocation-api/#dfn-request-position
 -
 request position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-request-position
@@ -20532,8 +20532,8 @@ notification
 -
 require well-formed
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-require-well-formed
@@ -20715,8 +20715,8 @@ CredentialMediationRequirement
 -
 required
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#required
@@ -20725,8 +20725,8 @@ https://drafts.csswg.org/css2/#required
 -
 required
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#required
@@ -20821,8 +20821,8 @@ UserVerificationRequirement
 -
 required
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#required-dictionary-member
@@ -20873,8 +20873,8 @@ https://www.w3.org/TR/csp-embedded-enforcement/#required-csp
 -
 required dictionary member
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#required-dictionary-member
@@ -20913,8 +20913,8 @@ https://www.w3.org/TR/webxr/#required-features
 -
 required-ascii-whitespace
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-required-ascii-whitespace
@@ -20923,8 +20923,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-required-ascii-whitespace
 -
 required-ascii-whitespace
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-required-ascii-whitespace
@@ -20933,8 +20933,8 @@ https://www.w3.org/TR/CSP3/#grammardef-required-ascii-whitespace
 -
 requiredExtensions
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGTests__requiredExtensions
@@ -20944,8 +20944,8 @@ SVGTests
 -
 requiredExtensions
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGTests__requiredExtensions
@@ -21021,8 +21021,8 @@ GPUDeviceDescriptor
 -
 requiredalignof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#requiredalignof
@@ -21031,8 +21031,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#requiredalignof
 -
 requiredalignof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#requiredalignof
@@ -21041,8 +21041,8 @@ https://www.w3.org/TR/WGSL/#requiredalignof
 -
 requiredextensions
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#RequiredExtensionsAttribute
@@ -21075,8 +21075,8 @@ use
 -
 requiredextensions
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#RequiredExtensionsAttribute
@@ -21156,8 +21156,8 @@ https://wicg.github.io/background-sync/spec/#reregisteredwhilefiring
 -
 reserialized
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermReserialize
@@ -21166,8 +21166,8 @@ https://svgwg.org/svg2-draft/types.html#TermReserialize
 -
 reserialized
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermReserialize
@@ -21218,8 +21218,8 @@ https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-r
 -
 reserved identifiers
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-reserved-identifier
@@ -21228,8 +21228,8 @@ https://heycam.github.io/webidl/#dfn-reserved-identifier
 -
 reserved identifiers
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-reserved-identifier
@@ -22406,8 +22406,8 @@ entry
 -
 resolve
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#blob-url-resolve
@@ -22417,8 +22417,8 @@ blob URL
 -
 resolve
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#blob-url-resolve
@@ -22478,8 +22478,8 @@ https://www.w3.org/TR/webdriver2/#dfn-resolve
 -
 resolve
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#resolve
@@ -22915,8 +22915,8 @@ https://www.w3.org/TR/webrtc/#dfn-resolve
 -
 resolved descendant node
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermResolvedDescendantNode
@@ -22925,8 +22925,8 @@ https://svgwg.org/svg2-draft/text.html#TermResolvedDescendantNode
 -
 resolved descendant node
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TermResolvedDescendantNode
@@ -23161,8 +23161,8 @@ https://www.w3.org/TR/webrtc/#dfn-resolve
 -
 resolves
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#resolves
@@ -23171,8 +23171,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#resolves
 -
 resolves
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#resolves
@@ -23231,8 +23231,8 @@ https://mimesniff.spec.whatwg.org/#resource
 -
 resource
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-resource
@@ -23242,8 +23242,8 @@ violation
 -
 resource
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-resource
@@ -23315,8 +23315,8 @@ GPUBindGroupEntry
 -
 resource
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#resource
@@ -23325,8 +23325,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#resource
 -
 resource
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#resource
@@ -23395,8 +23395,8 @@ https://www.w3.org/TR/resource-hints/#dfn-resource-hint-link
 -
 resource interface of a shader
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#resource-interface-of-a-shader
@@ -23405,8 +23405,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#resource-interface-of-a-shader
 -
 resource interface of a shader
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#resource-interface-of-a-shader
@@ -24831,8 +24831,8 @@ signed exchange report
 -
 result
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#filereader-result
@@ -24842,8 +24842,8 @@ FileReader
 -
 result
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-filereader-result
@@ -24853,8 +24853,8 @@ FileReader
 -
 result
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#filereader-result
@@ -24864,8 +24864,8 @@ FileReader
 -
 result
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-filereader-result
@@ -24919,8 +24919,8 @@ SVGFilterPrimitiveStandardAttributes
 -
 result
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request-result
@@ -24930,8 +24930,8 @@ request
 -
 result
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbrequest-result
@@ -24941,8 +24941,8 @@ IDBRequest
 -
 result
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request-result
@@ -24952,8 +24952,8 @@ request
 -
 result
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-result
@@ -24963,8 +24963,8 @@ IDBRequest
 -
 result
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#algorithm-result
@@ -24973,8 +24973,8 @@ https://w3c.github.io/webcrypto/#algorithm-result
 -
 result
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#algorithm-result
@@ -25372,8 +25372,8 @@ RTCOutboundRtpStreamStats
 -
 retrieve a key from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-a-key-from-an-object-store
@@ -25382,8 +25382,8 @@ https://w3c.github.io/IndexedDB/#retrieve-a-key-from-an-object-store
 -
 retrieve a key from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-a-key-from-an-object-store
@@ -25392,8 +25392,8 @@ https://www.w3.org/TR/IndexedDB-3/#retrieve-a-key-from-an-object-store
 -
 retrieve a preferred prefix string
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-retrieving-a-preferred-prefix-string
@@ -25402,8 +25402,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-retrieving-a-preferred-prefix-string
 -
 retrieve a referenced value from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-a-referenced-value-from-an-index
@@ -25412,8 +25412,8 @@ https://w3c.github.io/IndexedDB/#retrieve-a-referenced-value-from-an-index
 -
 retrieve a referenced value from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-a-referenced-value-from-an-index
@@ -25422,8 +25422,8 @@ https://www.w3.org/TR/IndexedDB-3/#retrieve-a-referenced-value-from-an-index
 -
 retrieve a value from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-a-value-from-an-index
@@ -25432,8 +25432,8 @@ https://w3c.github.io/IndexedDB/#retrieve-a-value-from-an-index
 -
 retrieve a value from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-a-value-from-an-index
@@ -25442,8 +25442,8 @@ https://www.w3.org/TR/IndexedDB-3/#retrieve-a-value-from-an-index
 -
 retrieve a value from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-a-value-from-an-object-store
@@ -25452,8 +25452,8 @@ https://w3c.github.io/IndexedDB/#retrieve-a-value-from-an-object-store
 -
 retrieve a value from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-a-value-from-an-object-store
@@ -25462,8 +25462,8 @@ https://www.w3.org/TR/IndexedDB-3/#retrieve-a-value-from-an-object-store
 -
 retrieve multiple keys from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-multiple-keys-from-an-object-store
@@ -25472,8 +25472,8 @@ https://w3c.github.io/IndexedDB/#retrieve-multiple-keys-from-an-object-store
 -
 retrieve multiple keys from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-keys-from-an-object-store
@@ -25482,8 +25482,8 @@ https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-keys-from-an-object-store
 -
 retrieve multiple referenced values from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-multiple-referenced-values-from-an-index
@@ -25492,8 +25492,8 @@ https://w3c.github.io/IndexedDB/#retrieve-multiple-referenced-values-from-an-ind
 -
 retrieve multiple referenced values from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-referenced-values-from-an-index
@@ -25502,8 +25502,8 @@ https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-referenced-values-from-an-i
 -
 retrieve multiple values from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-multiple-values-from-an-index
@@ -25512,8 +25512,8 @@ https://w3c.github.io/IndexedDB/#retrieve-multiple-values-from-an-index
 -
 retrieve multiple values from an index
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-values-from-an-index
@@ -25522,8 +25522,8 @@ https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-values-from-an-index
 -
 retrieve multiple values from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#retrieve-multiple-values-from-an-object-store
@@ -25532,8 +25532,8 @@ https://w3c.github.io/IndexedDB/#retrieve-multiple-values-from-an-object-store
 -
 retrieve multiple values from an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-values-from-an-object-store
@@ -25562,8 +25562,8 @@ https://wicg.github.io/client-hints-infrastructure/#retrieve-the-client-hints-se
 -
 retrieving a preferred prefix string
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-retrieving-a-preferred-prefix-string
@@ -25647,8 +25647,8 @@ endpoint
 -
 return
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#return
@@ -25657,8 +25657,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#return
 -
 return
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#return
@@ -25687,8 +25687,8 @@ https://wicg.github.io/ua-client-hints/#abstract-opdef-return-the-sec-ch-ua-valu
 -
 return type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-return-type
@@ -25697,8 +25697,8 @@ https://heycam.github.io/webidl/#dfn-return-type
 -
 return type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-return-type
@@ -25707,8 +25707,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-return-type
 -
 return type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#return-type
@@ -25717,8 +25717,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#return-type
 -
 return type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#return-type
@@ -26073,8 +26073,8 @@ Permissions
 -
 revokeObjectURL(url)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-revokeObjectURL
@@ -26084,8 +26084,8 @@ URL
 -
 revokeObjectURL(url)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-revokeObjectURL

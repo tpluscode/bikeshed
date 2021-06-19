@@ -159,8 +159,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'text-transform'
 -
 TEXTPATH_METHODTYPE_ALIGN
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_METHODTYPE_ALIGN
@@ -170,8 +170,8 @@ SVGTextPathElement
 -
 TEXTPATH_METHODTYPE_ALIGN
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__TEXTPATH_METHODTYPE_ALIGN
@@ -181,8 +181,8 @@ SVGTextPathElement
 -
 TEXTPATH_METHODTYPE_STRETCH
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_METHODTYPE_STRETCH
@@ -192,8 +192,8 @@ SVGTextPathElement
 -
 TEXTPATH_METHODTYPE_STRETCH
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__TEXTPATH_METHODTYPE_STRETCH
@@ -203,8 +203,8 @@ SVGTextPathElement
 -
 TEXTPATH_METHODTYPE_UNKNOWN
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_METHODTYPE_UNKNOWN
@@ -214,8 +214,8 @@ SVGTextPathElement
 -
 TEXTPATH_METHODTYPE_UNKNOWN
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__TEXTPATH_METHODTYPE_UNKNOWN
@@ -225,8 +225,8 @@ SVGTextPathElement
 -
 TEXTPATH_SPACINGTYPE_AUTO
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_SPACINGTYPE_AUTO
@@ -236,8 +236,8 @@ SVGTextPathElement
 -
 TEXTPATH_SPACINGTYPE_AUTO
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__TEXTPATH_SPACINGTYPE_AUTO
@@ -247,8 +247,8 @@ SVGTextPathElement
 -
 TEXTPATH_SPACINGTYPE_EXACT
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_SPACINGTYPE_EXACT
@@ -258,8 +258,8 @@ SVGTextPathElement
 -
 TEXTPATH_SPACINGTYPE_EXACT
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__TEXTPATH_SPACINGTYPE_EXACT
@@ -269,8 +269,8 @@ SVGTextPathElement
 -
 TEXTPATH_SPACINGTYPE_UNKNOWN
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__TEXTPATH_SPACINGTYPE_UNKNOWN
@@ -280,8 +280,8 @@ SVGTextPathElement
 -
 TEXTPATH_SPACINGTYPE_UNKNOWN
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__TEXTPATH_SPACINGTYPE_UNKNOWN
@@ -825,8 +825,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-teal
 -
 teal
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-teal
@@ -836,8 +836,8 @@ https://drafts.csswg.org/css2/#valdef-color-teal
 -
 teal
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-teal
@@ -1150,8 +1150,8 @@ https://html.spec.whatwg.org/multipage/scripting.html#the-template-element
 -
 template
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-template
@@ -1160,8 +1160,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-template
 -
 template content
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-template-content
@@ -1180,8 +1180,8 @@ https://html.spec.whatwg.org/multipage/scripting.html#template-contents
 -
 template contents
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-template-content
@@ -1399,8 +1399,8 @@ https://html.spec.whatwg.org/multipage/worklets.html#terminate-a-worklet-global-
 -
 terminate an algorithm
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#terminate-an-algorithm
@@ -1409,8 +1409,8 @@ https://w3c.github.io/FileAPI/#terminate-an-algorithm
 -
 terminate an algorithm
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#terminate-an-algorithm
@@ -1439,8 +1439,8 @@ https://www.w3.org/TR/service-workers-1/#terminate-service-worker
 -
 terminate the algorithm
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#terminate-the-algorithm
@@ -1449,8 +1449,8 @@ https://w3c.github.io/webcrypto/#terminate-the-algorithm
 -
 terminate the algorithm
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#terminate-the-algorithm
@@ -1459,8 +1459,8 @@ https://www.w3.org/TR/WebCryptoAPI/#terminate-the-algorithm
 -
 terminate this algorithm
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#terminate-an-algorithm
@@ -1469,8 +1469,8 @@ https://w3c.github.io/FileAPI/#terminate-an-algorithm
 -
 terminate this algorithm
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#terminate-an-algorithm
@@ -1637,8 +1637,8 @@ https://www.w3.org/TR/webauthn-3/#test-of-user-presence
 -
 texel
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#texel
@@ -1647,8 +1647,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#texel
 -
 texel
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#texel
@@ -1737,8 +1737,8 @@ https://www.w3.org/TR/webgpu/#texel-block-width
 -
 texel format
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#texel-format
@@ -1747,8 +1747,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#texel-format
 -
 texel format
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#texel-format
@@ -2216,8 +2216,8 @@ user-select
 -
 text
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-text
@@ -2227,8 +2227,8 @@ cursor
 -
 text
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-text
@@ -2282,8 +2282,8 @@ CSSRule
 -
 text
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-text
@@ -2292,8 +2292,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-text
 -
 text
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#elementdef-text
@@ -2302,8 +2302,8 @@ https://svgwg.org/svg2-draft/text.html#elementdef-text
 -
 text
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__text
@@ -2313,8 +2313,8 @@ SVGAElement
 -
 text
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#elementdef-text
@@ -2323,8 +2323,8 @@ https://www.w3.org/TR/SVG2/text.html#elementdef-text
 -
 text
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__text
@@ -2421,8 +2421,8 @@ https://www.w3.org/TR/webdriver2/#dfn-text-and-search-state
 -
 text chunk
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermTextChunk
@@ -2451,8 +2451,8 @@ https://www.w3.org/TR/uievents/#text-composition-system
 -
 text content block element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermTextContentBlockElement
@@ -2461,8 +2461,8 @@ https://svgwg.org/svg2-draft/text.html#TermTextContentBlockElement
 -
 text content child element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermTextContentChildElement
@@ -2471,8 +2471,8 @@ https://svgwg.org/svg2-draft/text.html#TermTextContentChildElement
 -
 text content element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermTextContentElement
@@ -2481,8 +2481,8 @@ https://svgwg.org/svg2-draft/text.html#TermTextContentElement
 -
 text content element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TermTextContentElement
@@ -2796,8 +2796,8 @@ Body
 -
 text()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-blob-text
@@ -2807,8 +2807,8 @@ Blob
 -
 text()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-blob-text
@@ -2882,8 +2882,8 @@ https://www.w3.org/TR/css-text-3/#propdef-text-align
 -
 text-align
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-text-align
@@ -2892,8 +2892,8 @@ https://drafts.csswg.org/css2/#propdef-text-align
 -
 text-align
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-text-align
@@ -2902,8 +2902,8 @@ https://drafts.csswg.org/css2/#propdef-text-align
 -
 text-align
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/text.html#propdef-text-align
@@ -2952,8 +2952,8 @@ https://www.w3.org/TR/css-text-3/#propdef-text-align-last
 -
 text-anchor
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextAnchorProperty
@@ -2962,8 +2962,8 @@ https://svgwg.org/svg2-draft/text.html#TextAnchorProperty
 -
 text-anchor
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextAnchorProperty
@@ -3040,8 +3040,8 @@ vertical-align
 -
 text-bottom
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-text-bottom
@@ -3051,8 +3051,8 @@ vertical-align
 -
 text-bottom
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-text-bottom
@@ -3122,8 +3122,8 @@ https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration
 -
 text-decoration
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-text-decoration
@@ -3132,8 +3132,8 @@ https://drafts.csswg.org/css2/#propdef-text-decoration
 -
 text-decoration
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-text-decoration
@@ -3142,8 +3142,8 @@ https://drafts.csswg.org/css2/#propdef-text-decoration
 -
 text-decoration
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/text.html#propdef-text-decoration
@@ -3192,8 +3192,8 @@ https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-color
 -
 text-decoration-fill
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextDecorationFillProperty
@@ -3362,8 +3362,8 @@ https://www.w3.org/TR/css-text-decor-4/#propdef-text-decoration-skip-spaces
 -
 text-decoration-stroke
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextDecorationStrokeProperty
@@ -3692,8 +3692,8 @@ https://www.w3.org/TR/css-text-3/#propdef-text-indent
 -
 text-indent
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-text-indent
@@ -3702,8 +3702,8 @@ https://drafts.csswg.org/css2/#propdef-text-indent
 -
 text-indent
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-text-indent
@@ -3712,8 +3712,8 @@ https://drafts.csswg.org/css2/#propdef-text-indent
 -
 text-indent
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/text.html#propdef-text-indent
@@ -3812,8 +3812,8 @@ https://drafts.csswg.org/css-overflow-4/#propdef-text-overflow
 -
 text-rendering
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TextRenderingProperty
@@ -3822,8 +3822,8 @@ https://svgwg.org/svg2-draft/painting.html#TextRenderingProperty
 -
 text-rendering
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TextRenderingProperty
@@ -3988,8 +3988,8 @@ vertical-align
 -
 text-top
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-text-top
@@ -3999,8 +3999,8 @@ vertical-align
 -
 text-top
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-text-top
@@ -4060,8 +4060,8 @@ https://www.w3.org/TR/css-text-3/#propdef-text-transform
 -
 text-transform
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-text-transform
@@ -4070,8 +4070,8 @@ https://drafts.csswg.org/css2/#propdef-text-transform
 -
 text-transform
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-text-transform
@@ -4080,8 +4080,8 @@ https://drafts.csswg.org/css2/#propdef-text-transform
 -
 text-transform
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/text.html#propdef-text-transform
@@ -4518,8 +4518,8 @@ HTMLTextAreaElement
 -
 textLength
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__textLength
@@ -4529,8 +4529,8 @@ SVGTextContentElement
 -
 textLength
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextContentElement__textLength
@@ -4852,8 +4852,8 @@ document
 -
 textlength
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextElementTextLengthAttribute
@@ -4863,8 +4863,8 @@ text
 -
 textlength
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextElementTextLengthAttribute
@@ -4874,8 +4874,8 @@ text
 -
 textpath
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#elementdef-textPath
@@ -4884,8 +4884,8 @@ https://svgwg.org/svg2-draft/text.html#elementdef-textPath
 -
 textpath
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#elementdef-textPath
@@ -5066,8 +5066,8 @@ XRTextureType
 -
 texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#texture
@@ -5076,8 +5076,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#texture
 -
 texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#texture

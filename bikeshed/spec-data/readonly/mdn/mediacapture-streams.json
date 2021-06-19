@@ -488,7 +488,7 @@
             "title": "MediaDeviceInfo.label"
         }
     ],
-    "device-info": [
+    "dom-mediadeviceinfo": [
         {
             "engines": [
                 "blink",
@@ -816,7 +816,7 @@
             "filename": "api/MediaDevices.json",
             "name": "ondevicechange",
             "slug": "API/MediaDevices/ondevicechange",
-            "summary": "The MediaDevices.ondevicechange property is an event handler which specifies a function to be called when the devicechange event occurs on a MediaDevices instance. This happens whenever the set of media devices available to the user agent and, by extension, to the web site or app has changed. You can at any time use enumerateDevices() to get the updated list of available devices.",
+            "summary": "The MediaDevices.ondevicechange property is an EventHandler which specifies a function to be called when the devicechange event occurs on a MediaDevices instance. This happens whenever the set of media devices available to the user agent and, by extension, to the web site or app has changed. You can at any time use enumerateDevices() to get the updated list of available devices.",
             "support": {
                 "chrome": {
                     "version_added": "57"
@@ -827,9 +827,23 @@
                 "edge": {
                     "version_added": "12"
                 },
-                "firefox": {
-                    "version_added": "52"
-                },
+                "firefox": [
+                    {
+                        "version_added": "52"
+                    },
+                    {
+                        "version_added": "51",
+                        "version_removed": "52",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.ondevicechange.enabled",
+                                "value_to_set": "true"
+                            }
+                        ],
+                        "notes": "<code>MediaDevices.ondevicechange</code> is supported only on macOS."
+                    }
+                ],
                 "firefox_android": {
                     "version_added": true
                 },
@@ -969,7 +983,7 @@
             "title": "Navigator.mediaDevices"
         }
     ],
-    "dom-mediastream-constructor": [
+    "mediastream": [
         {
             "engines": [
                 "blink",
@@ -1076,7 +1090,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "MediaStream.active"
+            "title": "active"
         }
     ],
     "dom-mediastream-addtrack": [
@@ -1187,6 +1201,59 @@
                 }
             },
             "title": "MediaStream: addtrack event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/MediaStream.json",
+            "name": "onaddtrack",
+            "slug": "API/MediaStream/onaddtrack",
+            "summary": "The MediaStream.onaddtrack property is an EventHandler which specifies a function to be called when the addtrack event occurs on a MediaStream instance. This happens when a new track of any kind is added to the media stream.",
+            "support": {
+                "chrome": {
+                    "version_added": "26"
+                },
+                "chrome_android": {
+                    "version_added": "26"
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": "50"
+                },
+                "firefox_android": {
+                    "version_added": "50"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "11"
+                },
+                "safari_ios": {
+                    "version_added": "11"
+                },
+                "samsunginternet_android": {
+                    "version_added": "1.5"
+                },
+                "webview_android": {
+                    "version_added": "37"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaStream.onaddtrack"
         }
     ],
     "dom-mediastream-clone": [
@@ -1529,61 +1596,6 @@
             "title": "MediaStream.id"
         }
     ],
-    "dom-mediastream-onaddtrack": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/MediaStream.json",
-            "name": "onaddtrack",
-            "slug": "API/MediaStream/onaddtrack",
-            "summary": "The MediaStream.onaddtrack property is an event handler which specifies a function to be called when the addtrack event occurs on a MediaStream instance. This happens when a new track of any kind is added to the media stream.",
-            "support": {
-                "chrome": {
-                    "version_added": "26"
-                },
-                "chrome_android": {
-                    "version_added": "26"
-                },
-                "edge": {
-                    "version_added": "12"
-                },
-                "firefox": {
-                    "version_added": "50"
-                },
-                "firefox_android": {
-                    "version_added": "50"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "11"
-                },
-                "safari_ios": {
-                    "version_added": "11"
-                },
-                "samsunginternet_android": {
-                    "version_added": "1.5"
-                },
-                "webview_android": {
-                    "version_added": "37"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaStream.onaddtrack"
-        }
-    ],
     "dom-mediastream-onremovetrack": [
         {
             "engines": [
@@ -1593,7 +1605,7 @@
             "filename": "api/MediaStream.json",
             "name": "onremovetrack",
             "slug": "API/MediaStream/onremovetrack",
-            "summary": "The MediaStream.onremovetrack property is an event handler which specifies a function to be called when the removetrack event occurs on a MediaStream instance. This happens when a track of any kind is removed from the media stream.",
+            "summary": "The MediaStream.onremovetrack property is an EventHandler which specifies a function to be called when the removetrack event occurs on a MediaStream instance. This happens when a track of any kind is removed from the media stream.",
             "support": {
                 "chrome": {
                     "version_added": "26"
@@ -1692,7 +1704,7 @@
             "title": "MediaStream: removetrack event"
         }
     ],
-    "mediastream": [
+    "dom-mediastream": [
         {
             "engines": [
                 "blink",
@@ -1897,61 +1909,7 @@
             "title": "MediaStreamConstraints.video"
         }
     ],
-    "mediastreamconstraints": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/MediaStreamConstraints.json",
-            "name": "MediaStreamConstraints",
-            "slug": "API/MediaStreamConstraints",
-            "summary": "The MediaStreamConstraints dictionary is used when calling getUserMedia() to specify what kinds of tracks should be included in the returned MediaStream, and, optionally, to establish constraints for those tracks' settings.",
-            "support": {
-                "chrome": {
-                    "version_added": "53"
-                },
-                "chrome_android": {
-                    "version_added": "53"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "38"
-                },
-                "firefox_android": {
-                    "version_added": "38"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "53"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaStreamConstraints"
-        }
-    ],
-    "dom-mediastreamtrack-applyconstraints": [
+    "dom-mediatrackconstraints": [
         {
             "engines": [
                 "blink",
@@ -2004,6 +1962,58 @@
                 }
             },
             "title": "MediaStreamTrack.applyConstraints()"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "filename": "api/MediaTrackConstraints.json",
+            "name": "MediaTrackConstraints",
+            "slug": "API/MediaTrackConstraints",
+            "summary": "The MediaTrackConstraints dictionary is used to describe a set of capabilities and the value or values each can take on. A constraints dictionary is passed into applyConstraints() to allow a script to establish a set of exact (required) values or ranges and/or preferred values or ranges of values for the track, and the most recently-requested set of custom constraints can be retrieved by calling getConstraints().",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": null
+                },
+                "safari_ios": {
+                    "version_added": null
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "MediaTrackConstraints"
         }
     ],
     "dom-mediastreamtrack-clone": [
@@ -2620,7 +2630,7 @@
             "filename": "api/MediaStreamTrack.json",
             "name": "onended",
             "slug": "API/MediaStreamTrack/onended",
-            "summary": "The MediaStreamTrack.onended event handler is used to specify a function which serves as an event handler to be called when the ended event occurs on the track. This event occurs when the track will no longer provide data to the stream for any reason, including the end of the media input being reached, the user revoking needed permissions, the source device being removed, or the remote peer ending a connection.",
+            "summary": "The MediaStreamTrack.onended event handler is used to specify a function which serves as an EventHandler to be called when the ended event occurs on the track. This event occurs when the track will no longer provide data to the stream for any reason, including the end of the media input being reached, the user revoking needed permissions, the source device being removed, or the remote peer ending a connection.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -2995,7 +3005,7 @@
             "title": "MediaStreamTrack"
         }
     ],
-    "dom-mediastreamtrackevent-constructor": [
+    "dom-mediastreamtrackevent": [
         {
             "engines": [
                 "blink",
@@ -3882,60 +3892,6 @@
                 }
             },
             "title": "MediaTrackConstraints.width"
-        }
-    ],
-    "dom-mediatrackconstraints": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/MediaTrackConstraints.json",
-            "name": "MediaTrackConstraints",
-            "slug": "API/MediaTrackConstraints",
-            "summary": "The MediaTrackConstraints dictionary is used to describe a set of capabilities and the value or values each can take on. A constraints dictionary is passed into applyConstraints() to allow a script to establish a set of exact (required) values or ranges and/or preferred values or ranges of values for the track, and the most recently-requested set of custom constraints can be retrieved by calling getConstraints().",
-            "support": {
-                "chrome": {
-                    "version_added": "59"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": "18"
-                },
-                "firefox": {
-                    "version_added": true
-                },
-                "firefox_android": {
-                    "version_added": true
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "46"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": "59"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaTrackConstraints"
         }
     ],
     "dom-mediatracksettings-aspectratio": [
@@ -5545,61 +5501,7 @@
             "title": "MediaTrackSupportedConstraints.width"
         }
     ],
-    "media-track-supported-constraints": [
-        {
-            "engines": [
-                "blink",
-                "gecko"
-            ],
-            "filename": "api/MediaTrackSupportedConstraints.json",
-            "name": "MediaTrackSupportedConstraints",
-            "slug": "API/MediaTrackSupportedConstraints",
-            "summary": "The MediaTrackSupportedConstraints dictionary establishes the list of constrainable properties recognized by the user agent or browser in its implementation of the MediaStreamTrack object. An object conforming to MediaTrackSupportedConstraints is returned by MediaDevices.getSupportedConstraints().",
-            "support": {
-                "chrome": {
-                    "version_added": "52"
-                },
-                "chrome_android": {
-                    "version_added": "52"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "42"
-                },
-                "firefox_android": {
-                    "version_added": "42"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": null
-                },
-                "safari_ios": {
-                    "version_added": null
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": "52"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "MediaTrackSupportedConstraints"
-        }
-    ],
-    "dom-overconstrainederror": [
+    "dom-overconstrainederror-constructor": [
         {
             "engines": [
                 "blink",

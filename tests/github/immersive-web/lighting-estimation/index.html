@@ -762,18 +762,18 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext" id="ref-for-SecureContext①"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed①"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xrlightestimate"><code><c- g>XRLightEstimate</c-></code></dfn> {
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array"><c- b>Float32Array</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="Float32Array" href="#dom-xrlightestimate-sphericalharmonicscoefficients" id="ref-for-dom-xrlightestimate-sphericalharmonicscoefficients"><c- g>sphericalHarmonicsCoefficients</c-></a>;
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightdirection" id="ref-for-dom-xrlightestimate-primarylightdirection"><c- g>primaryLightDirection</c-></a>;
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly①"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightintensity" id="ref-for-dom-xrlightestimate-primarylightintensity"><c- g>primaryLightIntensity</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightdirection" id="ref-for-dom-xrlightestimate-primarylightdirection"><c- g>primaryLightDirection</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly①"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightintensity" id="ref-for-dom-xrlightestimate-primarylightintensity"><c- g>primaryLightIntensity</c-></a>;
 };
 </pre>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRLightEstimate" data-dfn-type="attribute" data-export id="dom-xrlightestimate-sphericalharmonicscoefficients"><code>sphericalHarmonicsCoefficients</code></dfn> attribute returns a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array①">Float32Array</a></code> containing 9 spherical harmonics coefficients. The array MUST be 27 elements in length, with every 3 elements defining the red, green, and blue components respectively of a single coefficient. The first term of the <code class="idl"><a data-link-type="idl" href="#dom-xrlightestimate-sphericalharmonicscoefficients" id="ref-for-dom-xrlightestimate-sphericalharmonicscoefficients①">sphericalHarmonicsCoefficients</a></code>, meaning the first 3 elements of the array, MUST be representative of a valid lighting estimate. All other terms are optional, and MAY be 0 if a corresponding lighting estimate is not available due to either user privacy settings or the capabilities of the platform.</p>
    <p>The order of coefficients in <code class="idl"><a data-link-type="idl" href="#dom-xrlightestimate-sphericalharmonicscoefficients" id="ref-for-dom-xrlightestimate-sphericalharmonicscoefficients②">sphericalHarmonicsCoefficients</a></code>, is  [<var>C</var><sub>0</sub><sup>0</sup>, <var>C</var><sub>1</sub><sup>-1</sup>, <var>C</var><sub>1</sub><sup>0</sup>, <var>C</var><sub>1</sub><sup>1</sup>, <var>C</var><sub>2</sub><sup>-2</sup>, <var>C</var><sub>2</sub><sup>-1</sup>, <var>C</var><sub>2</sub><sup>0</sup>, <var>C</var><sub>2</sub><sup>1</sup>, <var>C</var><sub>2</sub><sup>2</sup>], where <var>C</var><sub><var>l</var></sub><sup><var>m</var></sup> is the coefficient of spherical harmonic <var>Y</var><sub><var>l</var></sub><sup><var>m</var></sup>.</p>
-   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRLightEstimate" data-dfn-type="attribute" data-export id="dom-xrlightestimate-primarylightdirection"><code>primaryLightDirection</code></dfn> represents the direction to the primary light source from the <a data-link-type="dfn" href="https://www.w3.org/TR/webxr/#xrspace-native-origin" id="ref-for-xrspace-native-origin①">native origin</a> of the <code class="idl"><a data-link-type="idl" href="#dom-xrlightprobe-probespace" id="ref-for-dom-xrlightprobe-probespace①">probeSpace</a></code> of the <code class="idl"><a data-link-type="idl" href="#xrlightprobe" id="ref-for-xrlightprobe④">XRLightProbe</a></code> that produced the <code class="idl"><a data-link-type="idl" href="#xrlightestimate" id="ref-for-xrlightestimate②">XRLightEstimate</a></code>. The value MUST be a unit length 3D vector and the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w">w</a></code> value MUST be <code>0.0</code>. If estimated values from the users’s environment are not available the <code class="idl"><a data-link-type="idl" href="#dom-xrlightestimate-primarylightdirection" id="ref-for-dom-xrlightestimate-primarylightdirection①">primaryLightDirection</a></code> MUST be <code>{ x: 0.0, y: 1.0, z: 0.0, w: 0.0 }</code>, representing a light shining straight down from above.</p>
-   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRLightEstimate" data-dfn-type="attribute" data-export id="dom-xrlightestimate-primarylightintensity"><code>primaryLightIntensity</code></dfn> represents the direction to the primary light source from the origin of the <code class="idl"><a data-link-type="idl" href="#dom-xrlightprobe-probespace" id="ref-for-dom-xrlightprobe-probespace②">probeSpace</a></code> of the <code class="idl"><a data-link-type="idl" href="#xrlightprobe" id="ref-for-xrlightprobe⑤">XRLightProbe</a></code> that produced the <code class="idl"><a data-link-type="idl" href="#xrlightestimate" id="ref-for-xrlightestimate③">XRLightEstimate</a></code>. The value MUST represent an RGB value mapped to the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x">x</a></code>, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y">y</a></code>, and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z">z</a></code> values respectively where each component is greater than or equal to <code>0.0</code> and the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w①">w</a></code> value MUST be <code>1.0</code>. If estimated values from the users’s environment are not available the <code class="idl"><a data-link-type="idl" href="#dom-xrlightestimate-primarylightintensity" id="ref-for-dom-xrlightestimate-primarylightintensity①">primaryLightIntensity</a></code> MUST be <code>{x: 0.0, y: 0.0, z: 0.0, w: 1.0}</code>, representing no illumination.</p>
+   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRLightEstimate" data-dfn-type="attribute" data-export id="dom-xrlightestimate-primarylightdirection"><code>primaryLightDirection</code></dfn> represents the direction to the primary light source from the <a data-link-type="dfn" href="https://www.w3.org/TR/webxr/#xrspace-native-origin" id="ref-for-xrspace-native-origin①">native origin</a> of the <code class="idl"><a data-link-type="idl" href="#dom-xrlightprobe-probespace" id="ref-for-dom-xrlightprobe-probespace①">probeSpace</a></code> of the <code class="idl"><a data-link-type="idl" href="#xrlightprobe" id="ref-for-xrlightprobe④">XRLightProbe</a></code> that produced the <code class="idl"><a data-link-type="idl" href="#xrlightestimate" id="ref-for-xrlightestimate②">XRLightEstimate</a></code>. The value MUST be a unit length 3D vector and the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w">w</a></code> value MUST be <code>0.0</code>. If estimated values from the users’s environment are not available the <code class="idl"><a data-link-type="idl" href="#dom-xrlightestimate-primarylightdirection" id="ref-for-dom-xrlightestimate-primarylightdirection①">primaryLightDirection</a></code> MUST be <code>{ x: 0.0, y: 1.0, z: 0.0, w: 0.0 }</code>, representing a light shining straight down from above.</p>
+   <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="XRLightEstimate" data-dfn-type="attribute" data-export id="dom-xrlightestimate-primarylightintensity"><code>primaryLightIntensity</code></dfn> represents the direction to the primary light source from the origin of the <code class="idl"><a data-link-type="idl" href="#dom-xrlightprobe-probespace" id="ref-for-dom-xrlightprobe-probespace②">probeSpace</a></code> of the <code class="idl"><a data-link-type="idl" href="#xrlightprobe" id="ref-for-xrlightprobe⑤">XRLightProbe</a></code> that produced the <code class="idl"><a data-link-type="idl" href="#xrlightestimate" id="ref-for-xrlightestimate③">XRLightEstimate</a></code>. The value MUST represent an RGB value mapped to the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x" id="ref-for-dom-dompointreadonly-x">x</a></code>, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y" id="ref-for-dom-dompointreadonly-y">y</a></code>, and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z" id="ref-for-dom-dompointreadonly-z">z</a></code> values respectively where each component is greater than or equal to <code>0.0</code> and the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w" id="ref-for-dom-dompointreadonly-w①">w</a></code> value MUST be <code>1.0</code>. If estimated values from the users’s environment are not available the <code class="idl"><a data-link-type="idl" href="#dom-xrlightestimate-primarylightintensity" id="ref-for-dom-xrlightestimate-primarylightintensity①">primaryLightIntensity</a></code> MUST be <code>{x: 0.0, y: 0.0, z: 0.0, w: 1.0}</code>, representing no illumination.</p>
    <h2 class="heading settled" data-level="3" id="webxr-device-api-integration"><span class="secno">3. </span><span class="content">WebXR Device API Integration</span><a class="self-link" href="#webxr-device-api-integration"></a></h2>
    <p>Both the <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/webxr/#xrsession-interface" id="ref-for-xrsession-interface">XRSession</a></code> and <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/webxr/#xrframe-interface" id="ref-for-xrframe-interface②">XRFrame</a></code> interfaces from the <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a> are expanded by this module.</p>
    <h3 class="heading settled" data-level="3.1" id="session-initialization"><span class="secno">3.1. </span><span class="content">Session Initialization</span><a class="self-link" href="#session-initialization"></a></h3>
-   <p>The string "<dfn class="dfn-paneled" data-dfn-for="feature descriptor" data-dfn-type="dfn" data-noexport id="feature-descriptor-light-estimation">light-estimation</dfn>" is introduced by this module as a new valid <a data-link-type="dfn" href="https://immersive-web.github.io/webxr/#feature-descriptor" id="ref-for-feature-descriptor">feature descriptor</a>. Applications that wish to use light estimation features MUST be requested with an the "<a data-link-type="dfn" href="#feature-descriptor-light-estimation" id="ref-for-feature-descriptor-light-estimation">light-estimation</a>" <a data-link-type="dfn" href="https://immersive-web.github.io/webxr/#feature-descriptor" id="ref-for-feature-descriptor①">feature descriptor</a>.</p>
+   <p>The string "<dfn class="dfn-paneled" data-dfn-for="feature descriptor" data-dfn-type="dfn" data-noexport id="feature-descriptor-light-estimation">light-estimation</dfn>" is introduced by this module as a new valid <a data-link-type="dfn">feature descriptor</a>. Applications that wish to use light estimation features MUST be requested with an the "<a data-link-type="dfn" href="#feature-descriptor-light-estimation" id="ref-for-feature-descriptor-light-estimation">light-estimation</a>" <a data-link-type="dfn">feature descriptor</a>.</p>
    <h3 class="heading settled" data-level="3.2" id="xrsession-interface"><span class="secno">3.2. </span><span class="content">XRSession</span><a class="self-link" href="#xrsession-interface"></a></h3>
    <p>The <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/webxr/#xrsession-interface" id="ref-for-xrsession-interface①">XRSession</a></code> interface is extended with the ability to create new <code class="idl"><a data-link-type="idl" href="#xrlightprobe" id="ref-for-xrlightprobe⑥">XRLightProbe</a></code> instances. <code class="idl"><a data-link-type="idl" href="#xrlightprobe" id="ref-for-xrlightprobe⑦">XRLightProbe</a></code> instances have a <dfn class="dfn-paneled" data-dfn-for="XRLightProbe" data-dfn-type="dfn" data-noexport id="xrlightprobe-session">session</dfn> object, which is the <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/webxr/#xrsession-interface" id="ref-for-xrsession-interface②">XRSession</a></code> that created this <code class="idl"><a data-link-type="idl" href="#xrlightprobe" id="ref-for-xrlightprobe⑧">XRLightProbe</a></code>. And an <dfn class="dfn-paneled" data-dfn-for="XRLightProbe" data-dfn-type="dfn" data-noexport id="xrlightprobe-reflection-format">reflection format</dfn> object, which is the <code class="idl"><a data-link-type="idl" href="#enumdef-xrreflectionformat" id="ref-for-enumdef-xrreflectionformat①">XRReflectionFormat</a></code> that the light probe may retrieve.</p>
    <p>The <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/webxr/#xrsession-interface" id="ref-for-xrsession-interface③">XRSession</a></code> interface is further extended with an attribute <code class="idl"><a data-link-type="idl" href="#dom-xrsession-preferredreflectionformat" id="ref-for-dom-xrsession-preferredreflectionformat①">preferredReflectionFormat</a></code>, indicating the <code class="idl"><a data-link-type="idl" href="#enumdef-xrreflectionformat" id="ref-for-enumdef-xrreflectionformat②">XRReflectionFormat</a></code> most closely supported by the underlying <a data-link-type="dfn" href="https://www.w3.org/TR/webxr/#xrsession-xr-device" id="ref-for-xrsession-xr-device">XR device</a></p>
@@ -922,7 +922,7 @@ consider.</p>
      <li data-md>
       <p>Reflection cube maps of a high enough resolution approach the same level as camera access.</p>
     </ul>
-    <p>Lighting estimation must be declared when creating an XR Session as a <a data-link-type="dfn" href="https://immersive-web.github.io/webxr/#feature-descriptor" id="ref-for-feature-descriptor②">feature descriptor</a>, which will allow the user agent to notify the user of the potential privacy implications of allowing the lighting estimation API to be used by the website. The user agent is encouraged to NOT provide real-time updates to any portion of the lighting estimation API, especially the reflection cube map. By default, only low spaital frequency and low temporal frequency information should be returned by the WebXR API. Reflection cube maps should be kept low resolution, unless the user has also consented to camera permissions for a particular origin.  As further mitigation, the Spherical Harmonics and primary light direction MAY be quantized.</p>
+    <p>Lighting estimation must be declared when creating an XR Session as a <a data-link-type="dfn">feature descriptor</a>, which will allow the user agent to notify the user of the potential privacy implications of allowing the lighting estimation API to be used by the website. The user agent is encouraged to NOT provide real-time updates to any portion of the lighting estimation API, especially the reflection cube map. By default, only low spaital frequency and low temporal frequency information should be returned by the WebXR API. Reflection cube maps should be kept low resolution, unless the user has also consented to camera permissions for a particular origin.  As further mitigation, the Spherical Harmonics and primary light direction MAY be quantized.</p>
    </section>
    <p id="back-to-top" role="navigation"><a href="#toc"><abbr title="Back to Top">↑</abbr></a></p>
 <script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script>
@@ -971,31 +971,31 @@ consider.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dompointreadonly">
-   <a href="https://drafts.fxtf.org/geometry-1/#dompointreadonly">https://drafts.fxtf.org/geometry-1/#dompointreadonly</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dompointreadonly">https://drafts.fxtf.org/geometry/#dompointreadonly</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dompointreadonly">2.3. XRLightEstimate</a> <a href="#ref-for-dompointreadonly①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-w">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-w</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-w">2.3. XRLightEstimate</a> <a href="#ref-for-dom-dompointreadonly-w①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-x">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-x</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-x">2.3. XRLightEstimate</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-y">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-y</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-y">2.3. XRLightEstimate</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dompointreadonly-z">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z">https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z">https://drafts.fxtf.org/geometry/#dom-dompointreadonly-z</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dompointreadonly-z">2.3. XRLightEstimate</a>
    </ul>
@@ -1104,13 +1104,6 @@ consider.</p>
    <a href="https://immersive-web.github.io/webxr/#xrspace">https://immersive-web.github.io/webxr/#xrspace</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-xrspace">2.1. XRLightProbe</a> <a href="#ref-for-xrspace①">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-feature-descriptor">
-   <a href="https://immersive-web.github.io/webxr/#feature-descriptor">https://immersive-web.github.io/webxr/#feature-descriptor</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-feature-descriptor">3.1. Session Initialization</a> <a href="#ref-for-feature-descriptor①">(2)</a>
-    <li><a href="#ref-for-feature-descriptor②">6. Privacy &amp; Security Considerations</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-xrframe-session">
@@ -1233,7 +1226,7 @@ consider.</p>
      <li><span class="dfn-paneled" id="term-for-WebGLTexture">WebGLTexture</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
@@ -1250,7 +1243,6 @@ consider.</p>
     <a data-link-type="biblio">[webxr]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-xrspace">XRSpace</span>
-     <li><span class="dfn-paneled" id="term-for-feature-descriptor">feature descriptor</span>
      <li><span class="dfn-paneled" id="term-for-dom-xrframe-session">session</span>
     </ul>
    <li>
@@ -1277,7 +1269,7 @@ consider.</p>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
    <dt id="biblio-ambient-light">[AMBIENT-LIGHT]
-   <dd>Anssi Kostiainen; Rijubrata Bhaumik; Tobie Langel. <a href="https://www.w3.org/TR/ambient-light/">Ambient Light Sensor</a>. 6 June 2021. WD. URL: <a href="https://www.w3.org/TR/ambient-light/">https://www.w3.org/TR/ambient-light/</a>
+   <dd>Anssi Kostiainen. <a href="https://www.w3.org/TR/ambient-light/">Ambient Light Sensor</a>. 7 March 2019. WD. URL: <a href="https://www.w3.org/TR/ambient-light/">https://www.w3.org/TR/ambient-light/</a>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-geometry-1">[GEOMETRY-1]
@@ -1288,8 +1280,8 @@ consider.</p>
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
    <dt id="biblio-webgl-2">[WEBGL-2]
    <dd>Dean Jackson; Jeff Gilbert. <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a>. 12 August 2017. URL: <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">https://www.khronos.org/registry/webgl/specs/latest/2.0/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
    <dt id="biblio-webxr">[WEBXR]
    <dd>Brandon Jones; Manish Goregaokar; Nell Waliczek. <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a>. 24 July 2020. WD. URL: <a href="https://www.w3.org/TR/webxr/">https://www.w3.org/TR/webxr/</a>
   </dl>
@@ -1308,8 +1300,8 @@ consider.</p>
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <a href="#xrlightestimate"><code><c- g>XRLightEstimate</c-></code></a> {
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array"><c- b>Float32Array</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="Float32Array" href="#dom-xrlightestimate-sphericalharmonicscoefficients"><c- g>sphericalHarmonicsCoefficients</c-></a>;
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightdirection"><c- g>primaryLightDirection</c-></a>;
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightintensity"><c- g>primaryLightIntensity</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightdirection"><c- g>primaryLightDirection</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="DOMPointReadOnly" href="#dom-xrlightestimate-primarylightintensity"><c- g>primaryLightIntensity</c-></a>;
 };
 
 <c- b>dictionary</c-> <a href="#dictdef-xrlightprobeinit"><code><c- g>XRLightProbeInit</c-></code></a> {

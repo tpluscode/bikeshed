@@ -337,62 +337,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -1060,7 +1004,7 @@ ways:</p>
    <ol>
     <li>Outlines do not take up space. 
     <li>Outlines may be non-rectangular. 
-    <li>UAs often render outlines on elements in the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#focus-visible-pseudo" id="ref-for-focus-visible-pseudo">:focus-visible</a> state. 
+    <li>UAs often render outlines on elements in the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#focus-visible-pseudo" id="ref-for-focus-visible-pseudo">:focus-visible</a> state. 
    </ol>
    <p>The outline properties control the style of these dynamic outlines.</p>
    <p>The stacking of the rendering of these outlines is explicitly left up to implementations
@@ -1070,27 +1014,11 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
 	 in particular people with disabilities
 	 who may not be able to interact with the page in any other fashion,
 	 depend on the outline being visible
-	 on elements in the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#focus-visible-pseudo" id="ref-for-focus-visible-pseudo①">:focus-visible</a> state,
+	 on elements in the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#focus-visible-pseudo" id="ref-for-focus-visible-pseudo①">:focus-visible</a> state,
 	 thus authors must not make the outline invisible on such elements
 	 without making sure an alternative highlighting mechanism is provided. </strong></p>
    <p>The rendering of applying transforms to outlines is left explicitly undefined in CSS3-UI.</p>
    <h3 class="heading settled" data-level="3.1" id="outline"><span class="secno">3.1. </span><span class="content">Outlines Shorthand: the <a class="property" data-link-type="propdesc" href="#propdef-outline" id="ref-for-propdef-outline">outline</a> property</span><a class="self-link" href="#outline"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline" title="The outline CSS shorthand property set all the outline properties in a single declaration.">outline</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1.5+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="outline">
     <tbody>
      <tr>
@@ -1122,22 +1050,6 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
       <td>per grammar
    </table>
    <h3 class="heading settled" data-level="3.2" id="outline-width"><span class="secno">3.2. </span><span class="content">Outline Thickness: the <a class="property" data-link-type="propdesc" href="#propdef-outline-width" id="ref-for-propdef-outline-width①">outline-width</a> property</span><a class="self-link" href="#outline-width"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline-width" title="The CSS outline-width property sets the thickness of an element&apos;s outline. An outline is a line that is drawn around an element, outside the border.">outline-width</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1.5+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="outline-width">
     <tbody>
      <tr>
@@ -1145,7 +1057,7 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-outline-width">outline-width</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-backgrounds-3/#typedef-line-width" id="ref-for-typedef-line-width" title="Expands to: medium | thick | thin">&lt;line-width></a>
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-backgrounds/#typedef-line-width" id="ref-for-typedef-line-width" title="Expands to: medium | thick | thin">&lt;line-width></a>
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>medium
@@ -1160,7 +1072,7 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
       <td>N/A
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>absolute length; <span class="css">0</span> if the outline style is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-none" id="ref-for-valdef-line-style-none">none</a>.
+      <td>absolute length; <span class="css">0</span> if the outline style is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#valdef-line-style-none" id="ref-for-valdef-line-style-none">none</a>.
      <tr>
       <th>Canonical order:
       <td>per grammar
@@ -1169,22 +1081,6 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
       <td>by computed value
    </table>
    <h3 class="heading settled" data-level="3.3" id="outline-style"><span class="secno">3.3. </span><span class="content">Outline Patterns: the <a class="property" data-link-type="propdesc" href="#propdef-outline-style" id="ref-for-propdef-outline-style①">outline-style</a> property</span><a class="self-link" href="#outline-style"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline-style" title="The outline-style CSS property sets the style of an element&apos;s outline. An outline is a line that is drawn around an element, outside the border.">outline-style</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1.5+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>2+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="outline-style">
     <tbody>
      <tr>
@@ -1216,22 +1112,6 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
       <td>by computed value
    </table>
    <h3 class="heading settled" data-level="3.4" id="outline-color"><span class="secno">3.4. </span><span class="content">Outline Colors: the <a class="property" data-link-type="propdesc" href="#propdef-outline-color" id="ref-for-propdef-outline-color①">outline-color</a> property</span><a class="self-link" href="#outline-color"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline-color" title="The outline-color CSS property sets the color of an element&apos;s outline.">outline-color</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1.5+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="outline-color">
     <tbody>
      <tr>
@@ -1239,7 +1119,7 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-outline-color">outline-color</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> invert
+      <td class="prod"><a class="production css" data-link-type="type">&lt;color></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> invert
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>invert
@@ -1255,7 +1135,7 @@ This supersedes the stacking of outlines as defined in <a href="https://www.w3.o
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
       <td>The computed value for <a class="css" data-link-type="maybe" href="#valdef-outline-color-invert" id="ref-for-valdef-outline-color-invert">invert</a> is <span class="css" id="ref-for-valdef-outline-color-invert①">invert</span>.
-For <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color①" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> values, see [[!CSS-COLOR-4#resolving-color-values]] in <a data-link-type="biblio" href="#biblio-css-color-4">[CSS-COLOR-4]</a>.
+For <a class="production css" data-link-type="type">&lt;color></a> values, see [[!CSS-COLOR-4#resolving-color-values]] in <a data-link-type="biblio" href="#biblio-css-color-4">[CSS-COLOR-4]</a>.
      <tr>
       <th>Canonical order:
       <td>per grammar
@@ -1277,16 +1157,16 @@ rather than open on some sides
 (as borders on inline elements are when lines are broken).</p>
    <p>The parts of the outline are not required to be rectangular.
 To the extent that the outline follows the <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#border-edge" id="ref-for-border-edge">border edge</a>,
-it should follow the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-radius" id="ref-for-propdef-border-radius">border-radius</a> curve.</p>
+it should follow the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-radius" id="ref-for-propdef-border-radius">border-radius</a> curve.</p>
    <p>The position of the outline may be affected by descendant boxes.</p>
    <p>User agents should use an algorithm for determining
 the outline that encloses a region appropriate
 for conveying the concept of focus to the user.</p>
    <p class="note" role="note"><span>Note:</span> This specification does not define the exact position or shape of the outline, but it is typically drawn immediately outside the border box.</p>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-outline-width" id="ref-for-propdef-outline-width②">outline-width</a> property accepts
-the same values as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width" id="ref-for-propdef-border-width">border-width</a> (<a href="https://www.w3.org/TR/css-backgrounds-3/#border-width">CSS Backgrounds 3 §3.3 Line Thickness: the border-width properties</a>).</p>
+the same values as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-width" id="ref-for-propdef-border-width">border-width</a> (<a href="https://www.w3.org/TR/css-backgrounds-3/#border-width">CSS Backgrounds 3 §3.3 Line Thickness: the border-width properties</a>).</p>
    <p><dfn class="dfn-paneled css" data-dfn-type="type" data-export id="typedef-outline-line-style"><a class="production css" data-link-type="type" href="#typedef-outline-line-style" id="ref-for-typedef-outline-line-style①">&lt;outline-line-style></a></dfn> accepts
-the same values as <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-backgrounds-3/#typedef-line-style" id="ref-for-typedef-line-style" title="Expands to: dashed | dotted | double | groove | hidden | inset | none | outset | ridge | solid">&lt;line-style></a> (<a href="https://www.w3.org/TR/css-backgrounds-3/#border-style">CSS Backgrounds 3 §3.2 Line Patterns: the border-style properties</a>)
+the same values as <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-backgrounds/#typedef-line-style" id="ref-for-typedef-line-style" title="Expands to: dashed | dotted | double | groove | hidden | inset | none | outset | ridge | solid">&lt;line-style></a> (<a href="https://www.w3.org/TR/css-backgrounds-3/#border-style">CSS Backgrounds 3 §3.2 Line Patterns: the border-style properties</a>)
 with the same meaning,
 except that <span class="css">hidden</span> is not a legal outline style.
 In addition,
@@ -1342,22 +1222,6 @@ The focus is the subject of user interaction in a document
 (i.e., no space is left for it in the box model),
 it may well overlap other elements on the page.</p>
    <h3 class="heading settled" data-level="3.5" id="outline-offset"><span class="secno">3.5. </span><span class="content">Offsetting the Outline: the <a class="property" data-link-type="propdesc" href="#propdef-outline-offset" id="ref-for-propdef-outline-offset">outline-offset</a> property</span><a class="self-link" href="#outline-offset"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset" title="The outline-offset CSS property sets the amount of space between an outline and the edge or border of an element.">outline-offset</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1.5+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>15+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <p>By default, the outline is drawn starting just outside the <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#border-edge" id="ref-for-border-edge①">border edge</a>.
 However, it is possible to offset the outline and draw it beyond the <span id="ref-for-border-edge②">border edge</span>.</p>
    <table class="def propdef" data-link-for-hint="outline-offset">
@@ -1367,7 +1231,7 @@ However, it is possible to offset the outline and draw it beyond the <span id="r
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-outline-offset">outline-offset</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a>
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a>
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>0
@@ -1418,22 +1282,6 @@ on block container elements.
 This specification adds a mechanism to that for controlling
 user resizability of elements as well as the ability to specify text overflow behavior.</p>
    <h3 class="heading settled caniuse-paneled" data-level="4.1" id="resize"><span class="secno">4.1. </span><span class="content">Resizing Boxes: the <a class="property" data-link-type="propdesc" href="#propdef-resize" id="ref-for-propdef-resize">resize</a> property</span><a class="self-link" href="#resize"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/resize" title="The resize CSS property sets whether an element is resizable, and if so, in which directions.">resize</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>4+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-resize" id="ref-for-propdef-resize①">resize</a> property allows the author
 to specify whether or not an element is resizable by the user,
 and if so, along which axis/axes.</p>
@@ -1527,14 +1375,14 @@ only the corresponding property is set, not both.</p>
 (i.e. altering the top-left of the element or altering the bottom-right)
 may depend on a number of CSS layout factors
 including whether the element is absolutely positioned,
-whether it is positioned using the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-right" id="ref-for-propdef-right">right</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-bottom" id="ref-for-propdef-bottom">bottom</a> properties,
+whether it is positioned using the <a class="property" data-link-type="propdesc">right</a> and <span class="property">bottom</span> properties,
 whether the language of the element is right-to-left etc.
 The UA should consider the direction of resizing
 (as determined by CSS layout),
 as well as platform conventions and constraints when deciding
 how to convey the resizing mechanism to the user.</p>
    <p>The user agent must allow the user to resize the element
-with no other constraints than what is imposed by <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width">min-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width">max-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height">min-height</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height">max-height</a>.</p>
+with no other constraints than what is imposed by <a class="property" data-link-type="propdesc">min-width</a>, <span class="property">max-width</span>, <span class="property">min-height</span>, and <span class="property">max-height</span>.</p>
    <p class="note" role="note"><span>Note:</span> There may be situations in which user attempts to resize an element
 appear to be overridden or ignored, e.g. because of <span class="css">!important</span> cascading declarations that supersede
 that element’s <a href="https://www.w3.org/TR/css-style-attr/#style-attribute">style attribute</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a> properties in the DOM.</p>
@@ -1556,35 +1404,6 @@ object<c- p>[</c->type$=<c- s>"+xml"</c-><c- p>],</c->object<c- p>[</c->type=<c-
    <h2 class="heading settled" data-level="5" id="pointing-keyboard"><span class="secno">5. </span><span class="content">Pointing Devices and Keyboards</span><a class="self-link" href="#pointing-keyboard"></a></h2>
    <h3 class="heading settled" data-level="5.1" id="pointer-interaction"><span class="secno">5.1. </span><span class="content">Pointer interaction</span><a class="self-link" href="#pointer-interaction"></a></h3>
    <h4 class="heading settled caniuse-paneled" data-level="5.1.1" id="cursor"><span class="secno">5.1.1. </span><span class="content">Styling the Cursor: the <a class="property" data-link-type="propdesc" href="#propdef-cursor" id="ref-for-propdef-cursor">cursor</a> property</span><a class="self-link" href="#cursor"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor" title="The cursor CSS property sets the type of mouse cursor, if any, to show when the mouse pointer is over an element.">cursor</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cursor" title="« SVG Attribute reference home">Attribute/cursor</a></p>
-     <p class="less-than-two-engines-text">In no current engines.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>?</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome no"><span>Chrome</span><span>?</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>?</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>?</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>?</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>?</span></span><span class="webview_android no"><span>Android WebView</span><span>?</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>?</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="cursor">
     <tbody>
      <tr>
@@ -1592,7 +1411,7 @@ object<c- p>[</c->type$=<c- s>"+xml"</c-><c- p>],</c->object<c- p>[</c->type=<c-
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-cursor">cursor</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">[ [<a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#url-value" id="ref-for-url-value">&lt;url></a> [&lt;x> &lt;y>]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-comma" id="ref-for-comb-comma">,</a>]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus">*</a> <br> [ auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑦">|</a> default <span id="ref-for-comb-one⑧">|</span> none <span id="ref-for-comb-one⑨">|</span><br> context-menu <span id="ref-for-comb-one①⓪">|</span> help <span id="ref-for-comb-one①①">|</span> pointer <span id="ref-for-comb-one①②">|</span> progress <span id="ref-for-comb-one①③">|</span> wait <span id="ref-for-comb-one①④">|</span> <br> cell <span id="ref-for-comb-one①⑤">|</span> crosshair <span id="ref-for-comb-one①⑥">|</span> text <span id="ref-for-comb-one①⑦">|</span> vertical-text <span id="ref-for-comb-one①⑧">|</span> <br> alias <span id="ref-for-comb-one①⑨">|</span> copy <span id="ref-for-comb-one②⓪">|</span> move <span id="ref-for-comb-one②①">|</span> no-drop <span id="ref-for-comb-one②②">|</span> not-allowed <span id="ref-for-comb-one②③">|</span> grab <span id="ref-for-comb-one②④">|</span> grabbing <span id="ref-for-comb-one②⑤">|</span> <br> e-resize <span id="ref-for-comb-one②⑥">|</span> n-resize <span id="ref-for-comb-one②⑦">|</span> ne-resize <span id="ref-for-comb-one②⑧">|</span> nw-resize <span id="ref-for-comb-one②⑨">|</span> s-resize <span id="ref-for-comb-one③⓪">|</span> se-resize <span id="ref-for-comb-one③①">|</span> sw-resize <span id="ref-for-comb-one③②">|</span> w-resize <span id="ref-for-comb-one③③">|</span> ew-resize <span id="ref-for-comb-one③④">|</span> ns-resize <span id="ref-for-comb-one③⑤">|</span> nesw-resize <span id="ref-for-comb-one③⑥">|</span> nwse-resize <span id="ref-for-comb-one③⑦">|</span> col-resize <span id="ref-for-comb-one③⑧">|</span> row-resize <span id="ref-for-comb-one③⑨">|</span> all-scroll <span id="ref-for-comb-one④⓪">|</span><br> zoom-in <span id="ref-for-comb-one④①">|</span> zoom-out <br> ] ]
+      <td class="prod">[ [<a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#url-value" id="ref-for-url-value">&lt;url></a> [&lt;x> &lt;y>]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-comma" id="ref-for-comb-comma">,</a>]<a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-">*</a> <br> [ auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑦">|</a> default <span id="ref-for-comb-one⑧">|</span> none <span id="ref-for-comb-one⑨">|</span><br> context-menu <span id="ref-for-comb-one①⓪">|</span> help <span id="ref-for-comb-one①①">|</span> pointer <span id="ref-for-comb-one①②">|</span> progress <span id="ref-for-comb-one①③">|</span> wait <span id="ref-for-comb-one①④">|</span> <br> cell <span id="ref-for-comb-one①⑤">|</span> crosshair <span id="ref-for-comb-one①⑥">|</span> text <span id="ref-for-comb-one①⑦">|</span> vertical-text <span id="ref-for-comb-one①⑧">|</span> <br> alias <span id="ref-for-comb-one①⑨">|</span> copy <span id="ref-for-comb-one②⓪">|</span> move <span id="ref-for-comb-one②①">|</span> no-drop <span id="ref-for-comb-one②②">|</span> not-allowed <span id="ref-for-comb-one②③">|</span> grab <span id="ref-for-comb-one②④">|</span> grabbing <span id="ref-for-comb-one②⑤">|</span> <br> e-resize <span id="ref-for-comb-one②⑥">|</span> n-resize <span id="ref-for-comb-one②⑦">|</span> ne-resize <span id="ref-for-comb-one②⑧">|</span> nw-resize <span id="ref-for-comb-one②⑨">|</span> s-resize <span id="ref-for-comb-one③⓪">|</span> se-resize <span id="ref-for-comb-one③①">|</span> sw-resize <span id="ref-for-comb-one③②">|</span> w-resize <span id="ref-for-comb-one③③">|</span> ew-resize <span id="ref-for-comb-one③④">|</span> ns-resize <span id="ref-for-comb-one③⑤">|</span> nesw-resize <span id="ref-for-comb-one③⑥">|</span> nwse-resize <span id="ref-for-comb-one③⑦">|</span> col-resize <span id="ref-for-comb-one③⑧">|</span> row-resize <span id="ref-for-comb-one③⑨">|</span> all-scroll <span id="ref-for-comb-one④⓪">|</span><br> zoom-in <span id="ref-for-comb-one④①">|</span> zoom-out <br> ] ]
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>auto
@@ -1617,7 +1436,7 @@ object<c- p>[</c->type$=<c- s>"+xml"</c-><c- p>],</c->object<c- p>[</c->type=<c-
    </table>
    <p>This property specifies the type of cursor to be displayed for the pointing device
 when the cursor’s hotspot is within the element’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#border-edge" id="ref-for-border-edge④">border edge</a>.</p>
-   <p class="note" role="note"><span>Note:</span> As per <a href="https://www.w3.org/TR/css-backgrounds-3/#border-radius">CSS Backgrounds 3 §4.1 Curve Radii: the border-radius properties</a>, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#border-edge" id="ref-for-border-edge⑤">border edge</a> is affected by <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-radius" id="ref-for-propdef-border-radius①">border-radius</a>.</p>
+   <p class="note" role="note"><span>Note:</span> As per <a href="https://www.w3.org/TR/css-backgrounds-3/#border-radius">CSS Backgrounds 3 §4.1 Curve Radii: the border-radius properties</a>, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#border-edge" id="ref-for-border-edge⑤">border edge</a> is affected by <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-radius" id="ref-for-propdef-border-radius①">border-radius</a>.</p>
    <p>In the case of overlapping elements,
 which element determines the type of cursor
 is based on hit testing:
@@ -1656,7 +1475,7 @@ or a text cursor when the user is performing text selection.</p>
 					if it has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-size" id="ref-for-natural-size">natural size</a>. 
         <li> any other non-animated image file format that they support
 					for <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-images-3/#typedef-image" id="ref-for-typedef-image①">&lt;image></a> in other properties,
-					such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a> property
+					such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a> property 
        </ul>
        <p>In addition, the UA should support the following image file formats:</p>
        <ul>
@@ -1665,7 +1484,7 @@ or a text cursor when the user is performing text selection.</p>
 					if it has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-size" id="ref-for-natural-size①">natural size</a>. 
         <li> any other animated image file format that they support
 					for <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-images-3/#typedef-image" id="ref-for-typedef-image②">&lt;image></a> in other properties,
-					such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image" id="ref-for-propdef-background-image①">background-image</a> property
+					such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image" id="ref-for-propdef-background-image①">background-image</a> property 
        </ul>
        <p>The UA may also support additional file formats,
 			including SVG, as defined in <a data-link-type="biblio" href="#biblio-svg11">[SVG11]</a>,
@@ -1750,7 +1569,7 @@ or a text cursor when the user is performing text selection.</p>
        <p>Unless otherwise specified,
 		UAs must apply <a class="css" data-link-type="propdesc" href="#propdef-cursor" id="ref-for-propdef-cursor③">cursor: pointer</a> to hyperlinks
 		for all supported document formats
-		via the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua" id="ref-for-cascade-origin-ua">UA stylesheet</a>,
+		via the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-ua" id="ref-for-cascade-origin-ua">UA stylesheet</a>,
 		using a normal (i.e. not <span class="css">!important</span>) declaration.</p>
        <p>Authors should use pointer on links and may use on other interactive elements.</p>
       <dt style="cursor:progress"><dfn class="css" data-dfn-for="cursor" data-dfn-type="value" data-export id="valdef-cursor-progress">progress<a class="self-link" href="#valdef-cursor-progress"></a></dfn> 
@@ -1848,7 +1667,7 @@ or a text cursor when the user is performing text selection.</p>
 <c- p>}</c->
 </code></pre>
     <p>This example sets the cursor on all hyperlinks (whether visited or not)
-	to an external SVG <code><a data-link-type="element" href="https://www.w3.org/TR/SVG11/interact.html#CursorElement" id="ref-for-CursorElement">cursor</a></code>.
+	to an external SVG <code><a data-link-type="element">cursor</a></code>.
 	User agents that don’t support SVG cursors would simply skip
 	to the next value and attempt to use the "hyper.cur" cursor.
 	If that cursor format was also not supported,
@@ -1862,30 +1681,14 @@ Since no element corresponds to the canvas,
 in order to allow styling of the cursor when not over any element,
 the canvas cursor re-uses the root element’s cursor.
 However, if no boxes are generated for the root element
-(for example, if the root element has <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display: none</a>),
+(for example, if the root element has <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display: none</a>),
 then the canvas cursor is the platform-dependent default cursor.</p>
    <p class="note" role="note"><span>Note:</span> An element might be invisible
 but still generate boxes. For example,
-if the element has <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility">visibility: hidden</a> but not <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display: none</a>,
+if the element has <a class="css" data-link-type="propdesc">visibility: hidden</a> but not <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display: none</a>,
 boxes are generated for it and its cursor is used for the canvas.</p>
    <h3 class="heading settled" data-level="5.2" id="insertion-caret"><span class="secno">5.2. </span><span class="content">Insertion caret</span><a class="self-link" href="#insertion-caret"></a></h3>
    <h4 class="heading settled caniuse-paneled" data-level="5.2.1" id="caret-color"><span class="secno">5.2.1. </span><span class="content">Coloring the Insertion Caret: the <a class="property" data-link-type="propdesc" href="#propdef-caret-color" id="ref-for-propdef-caret-color">caret-color</a> property</span><a class="self-link" href="#caret-color"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color" title="The caret-color CSS property sets the color of the insertion caret, the visible marker where the next character typed will be inserted. This is sometimes referred to as the text input cursor.">caret-color</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>57+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>7.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="caret-color">
     <tbody>
      <tr>
@@ -1893,7 +1696,7 @@ boxes are generated for it and its cursor is used for the canvas.</p>
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-caret-color">caret-color</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④②">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color②" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a>
+      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④②">|</a> <a class="production css" data-link-type="type">&lt;color></a>
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>auto
@@ -1908,8 +1711,8 @@ boxes are generated for it and its cursor is used for the canvas.</p>
       <td>N/A
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>The computed value for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-ui-3/#valdef-caret-color-auto" id="ref-for-valdef-caret-color-auto">auto</a> is <span class="css" id="ref-for-valdef-caret-color-auto①">auto</span>.
-For <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color③" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> values, see [[!CSS-COLOR-4#resolving-color-values]] in <a data-link-type="biblio" href="#biblio-css-color-4">[CSS-COLOR-4]</a>.
+      <td>The computed value for <span class="css">auto</span> is <span class="css">auto</span>.
+For <a class="production css" data-link-type="type">&lt;color></a> values, see [[!CSS-COLOR-4#resolving-color-values]] in <a data-link-type="biblio" href="#biblio-css-color-4">[CSS-COLOR-4]</a>.
      <tr>
       <th>Canonical order:
       <td>per grammar
@@ -1920,14 +1723,14 @@ For <a class="production css" data-link-type="type" href="https://drafts.csswg.o
    <dl>
     <dt>auto 
     <dd>
-      User agents should use <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor">currentColor</a>.
+      User agents should use <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor">currentColor</a>.
 		User agents may automatically adjust the color of caret
 		to ensure good visibility and contrast with the surrounding content,
 		possibly based on the currentColor, background, shadows, etc. 
      <p class="note" role="note"><span>Note:</span> When <a class="property" data-link-type="propdesc" href="#propdef-caret-shape" id="ref-for-propdef-caret-shape">caret-shape</a> is <a class="css" data-link-type="maybe" href="#valdef-caret-shape-block" id="ref-for-valdef-caret-shape-block">block</a>,
 		ensuring good visibility and contrast
-		is best achieved with a UA determined color other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor①">currentColor</a>.</p>
-    <dt><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color④" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> 
+		is best achieved with a UA determined color other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor①">currentColor</a>.</p>
+    <dt><a class="production css" data-link-type="type">&lt;color></a> 
     <dd>The insertion caret is colored with the specified color. 
    </dl>
    <p>The caret is a visible indicator of the insertion point in an element where text (and potentially other content) is inserted by the user. This property controls the color of that visible indicator.</p>
@@ -2154,7 +1957,7 @@ Omitted values are set to their initial values.</p>
 		that was not otherwise focusable,
 		it becomes focusable
 		only as the result of this directional navigation,
-		and the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#focus-pseudo" id="ref-for-focus-pseudo">:focus</a> pseudo-class matches the element
+		and the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#focus-pseudo" id="ref-for-focus-pseudo">:focus</a> pseudo-class matches the element
 		while it is focused as such.</p>
      <p class="note" role="note"><span>Note:</span> there were other options under consideration for such "not otherwise focusable" elements,
 		including focus to the next otherwise focusable element in the document tree
@@ -2254,21 +2057,6 @@ e.g. with a user style sheet rule like:</p>
    </div>
    <h2 class="heading settled" data-level="6" id="user-interaction"><span class="secno">6. </span><span class="content">User Interaction</span><a class="self-link" href="#user-interaction"></a></h2>
    <h3 class="heading settled" data-level="6.1" id="content-selection"><span class="secno">6.1. </span><span class="content">Controlling content selection</span><a class="self-link" href="#content-selection"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/user-select" title="The user-select CSS property controls whether the user can select text. This doesn&apos;t have any effect on content loaded as part of a browser&apos;s user interface (its chrome), except in textboxes.">user-select</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>69+</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome yes"><span>Chrome</span><span>54+</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>?</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>54+</span></span><span class="webview_android yes"><span>Android WebView</span><span>54+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.0+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select①">user-select</a> property enables authors to specify
 which elements in the document can be selected by the user and how.
 This allows for easier interactions when not
@@ -2307,7 +2095,7 @@ avoiding accidental selections of neighboring content.</p>
    <p>User agents must not apply the <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select②">user-select</a> property to
 the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-line" id="ref-for-selectordef-first-line">::first-line</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter" id="ref-for-selectordef-first-letter">::first-letter</a> pseudo-elements.</p>
    <p class="note" role="note"><span>Note:</span> The UA may apply this property to the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-before" id="ref-for-selectordef-before②">::before</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-after" id="ref-for-selectordef-after②">::after</a> pseudo-elements.
-If it does, the <a class="css" data-link-type="maybe" href="#valdef-user-select-auto" id="ref-for-valdef-user-select-auto">auto</a> value maps to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used value</a> of <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none">none</a> on these pseudos,
+If it does, the <a class="css" data-link-type="maybe" href="#valdef-user-select-auto" id="ref-for-valdef-user-select-auto">auto</a> value maps to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used value</a> of <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none">none</a> on these pseudos,
 but other values can be specified.
 This preserves the legacy behavior of generated content not being selectable or copyable,
 which is appropriate when these pseudos are used for decorative purposes.
@@ -2323,15 +2111,15 @@ we need to figure out what this means for copyability, and DOM APIs.</p>
 through this mechanism,
 UAs should also make this content findable through their search function.</p>
    <p class="issue" id="issue-bb04ee05"><a class="self-link" href="#issue-bb04ee05"></a> Should it also apply to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker">::marker</a>? To <a data-link-type="dfn" href="https://drafts.csswg.org/css-page-3/#page-margin-boxes" id="ref-for-page-margin-boxes">page-margin boxes</a>?
-Should the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used value</a> of <span class="css">auto</span> also be <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none②">none</a>,
+Should the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used value</a> of <span class="css">auto</span> also be <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none②">none</a>,
 or would <a class="css" data-link-type="maybe" href="#valdef-user-select-text" id="ref-for-valdef-user-select-text">text</a> be more appropriate?</p>
-   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value②">used value</a> is the same as the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed value</a>,
+   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value②">used value</a> is the same as the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed value</a>,
 except:</p>
    <ol>
     <li> on <a data-link-type="dfn" href="#editable-element" id="ref-for-editable-element">editable element</a>s
-		where the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value③">used value</a> is always <a class="css" data-link-type="maybe" href="#valdef-user-select-contain" id="ref-for-valdef-user-select-contain">contain</a> regardless of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed value</a> 
-    <li> when the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed value</a> is <a class="css" data-link-type="maybe" href="#valdef-user-select-auto" id="ref-for-valdef-user-select-auto①">auto</a>,
-		in which case the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value④">used value</a> one of the other values as defined below 
+		where the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value③">used value</a> is always <a class="css" data-link-type="maybe" href="#valdef-user-select-contain" id="ref-for-valdef-user-select-contain">contain</a> regardless of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed value</a> 
+    <li> when the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed value</a> is <a class="css" data-link-type="maybe" href="#valdef-user-select-auto" id="ref-for-valdef-user-select-auto①">auto</a>,
+		in which case the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value④">used value</a> one of the other values as defined below 
    </ol>
    <p>For the purpose of this specification,
 an <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="editable-element">editable element</dfn> is either
@@ -2346,19 +2134,19 @@ or maybe all values should map to <span class="css" id="ref-for-valdef-user-sele
    <dl>
     <dt><dfn class="dfn-paneled css" data-dfn-for="user-select" data-dfn-type="value" data-export id="valdef-user-select-auto">auto</dfn> 
     <dd>
-      The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑤">used value</a> of <a class="css" data-link-type="maybe" href="#valdef-user-select-auto" id="ref-for-valdef-user-select-auto②">auto</a> is determined as follows: 
+      The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑤">used value</a> of <a class="css" data-link-type="maybe" href="#valdef-user-select-auto" id="ref-for-valdef-user-select-auto②">auto</a> is determined as follows: 
      <ul>
       <li> On the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-before" id="ref-for-selectordef-before③">::before</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-after" id="ref-for-selectordef-after③">::after</a> pseudo-elements,
 				the used value is <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none④">none</a> 
       <li> If the element is an <a data-link-type="dfn" href="#editable-element" id="ref-for-editable-element①">editable element</a>,
-				the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑥">used value</a> is <a class="css" data-link-type="maybe" href="#valdef-user-select-contain" id="ref-for-valdef-user-select-contain①">contain</a> 
+				the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑥">used value</a> is <a class="css" data-link-type="maybe" href="#valdef-user-select-contain" id="ref-for-valdef-user-select-contain①">contain</a> 
       <li> Otherwise,
-				if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑦">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select③">user-select</a> on the parent of this element is <a class="css" data-link-type="maybe" href="#valdef-user-select-all" id="ref-for-valdef-user-select-all">all</a>,
+				if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑦">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select③">user-select</a> on the parent of this element is <a class="css" data-link-type="maybe" href="#valdef-user-select-all" id="ref-for-valdef-user-select-all">all</a>,
 				the <span id="ref-for-used-value⑧">used value</span> is <span class="css" id="ref-for-valdef-user-select-all①">all</span> 
       <li> Otherwise,
-				if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑨">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select④">user-select</a> on the parent of this element is <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none⑤">none</a>,
+				if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑨">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select④">user-select</a> on the parent of this element is <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none⑤">none</a>,
 				the <span id="ref-for-used-value①⓪">used value</span> is <span class="css" id="ref-for-valdef-user-select-none⑥">none</span> 
-      <li> Otherwise, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①①">used value</a> is <a class="css" data-link-type="maybe" href="#valdef-user-select-text" id="ref-for-valdef-user-select-text③">text</a> 
+      <li> Otherwise, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①①">used value</a> is <a class="css" data-link-type="maybe" href="#valdef-user-select-text" id="ref-for-valdef-user-select-text③">text</a> 
      </ul>
      <p class="note" role="note"><span>Note:</span> This unusual combination of a non-inherited property with an initial value of <a class="css" data-link-type="maybe" href="#valdef-user-select-auto" id="ref-for-valdef-user-select-auto③">auto</a> whose used value depends on the parent element
 		makes it possible to create what is effectively selective inheritance.
@@ -2389,13 +2177,13 @@ or maybe all values should map to <span class="css" id="ref-for-valdef-user-sele
 		to the user-designated end-point.
 		Firefox and Internet explorer behave as prescribed in this specification
 		and do not create a selection at all.</p>
-     <p>However, if this element has descendants on which the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①②">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select⑥">user-select</a> is not <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none⑦">none</a>,
+     <p>However, if this element has descendants on which the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①②">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select⑥">user-select</a> is not <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none⑦">none</a>,
 		selections that start and end within these descendants are allowed.</p>
      <p>The UA must allow selections to extend across this element,
 		and must exclude this element from such a selection.
 		An exception is made for UAs which do not support multiple ranges per selection,
 		and they may include this element.
-		If the element has descendants on which the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①③">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select⑦">user-select</a> is not <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none⑧">none</a>,
+		If the element has descendants on which the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①③">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select⑦">user-select</a> is not <a class="css" data-link-type="maybe" href="#valdef-user-select-none" id="ref-for-valdef-user-select-none⑧">none</a>,
 		these descendants must be included in a selection extending across the element. <span class="note">This specification makes no normative requirement
 		about the behavior of the clipboard.
 		however, UAs are encouraged to keep the visual selection consistent
@@ -2467,9 +2255,9 @@ or to look for warnings and error messages in a search engine…</p>
 		If a selection would contain part of the element,
 		then the selection must contain the entire element including all its descendants.
 		If the element is selected
-		and the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①④">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select①③">user-select</a> on its parent is <a class="css" data-link-type="maybe" href="#valdef-user-select-all" id="ref-for-valdef-user-select-all③">all</a>,
+		and the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①④">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select①③">user-select</a> on its parent is <a class="css" data-link-type="maybe" href="#valdef-user-select-all" id="ref-for-valdef-user-select-all③">all</a>,
 		then the parent must be included in the selection, recursively. 
-     <p>If this element has descendants on which the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①⑤">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select①④">user-select</a> is not <a class="css" data-link-type="maybe" href="#valdef-user-select-all" id="ref-for-valdef-user-select-all④">all</a> and if a selection is entirely contained in these descendants,
+     <p>If this element has descendants on which the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①⑤">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-user-select" id="ref-for-propdef-user-select①④">user-select</a> is not <a class="css" data-link-type="maybe" href="#valdef-user-select-all" id="ref-for-valdef-user-select-all④">all</a> and if a selection is entirely contained in these descendants,
 		then the selection is not extended to include this whole element.</p>
    </dl>
    <p class="note" role="note"><span>Note:</span> Selections can include more than just text and extend over images, tables, videos, etc.
@@ -2496,7 +2284,7 @@ so this specification allows flexibility.</p>
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-accent-color">accent-color</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑤③">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color⑤" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a>
+      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑤③">|</a> <a class="production css" data-link-type="type">&lt;color></a>
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td><a class="css" data-link-type="maybe" href="#valdef-accent-color-auto" id="ref-for-valdef-accent-color-auto">auto</a>
@@ -2533,7 +2321,7 @@ Values have the following meanings:</p>
     <dt><dfn class="dfn-paneled css" data-dfn-for="accent-color" data-dfn-type="value" data-export id="valdef-accent-color-auto">auto</dfn> 
     <dd> Represents a UA-chosen color,
 		which should match the <a data-link-type="dfn" href="#accent-color" id="ref-for-accent-color②">accent color</a> of the platform, if any. 
-    <dt><dfn class="css" data-dfn-for="accent-color" data-dfn-type="value" data-export id="valdef-accent-color-color"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color⑥" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a><a class="self-link" href="#valdef-accent-color-color"></a></dfn> 
+    <dt><dfn class="css" data-dfn-for="accent-color" data-dfn-type="value" data-export id="valdef-accent-color-color"><a class="production css" data-link-type="type">&lt;color></a><a class="self-link" href="#valdef-accent-color-color"></a></dfn> 
     <dd> Specifies the color to be used as the <a data-link-type="dfn" href="#accent-color" id="ref-for-accent-color③">accent color</a>. 
    </dl>
    <p>The UA should use the specified <a class="property" data-link-type="propdesc" href="#propdef-accent-color" id="ref-for-propdef-accent-color②">accent-color</a> to draw whichever parts of the element’s control(s)
@@ -2542,7 +2330,7 @@ The UA must maintain contrast for legibility of the control,
 and in order to do so
 may adjust the luminance or brightness of the color
 or make color substitutions in other parts of the control
-(e.g. switching an overlaid glyph from using <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color">color</a> to using <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-color" id="ref-for-propdef-background-color">background-color</a>).
+(e.g. switching an overlaid glyph from using <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color">color</a> to using <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-color" id="ref-for-propdef-background-color">background-color</a>).
 It may also generate variations of the color for gradients etc.
 to match the control to platform conventions for the use of the accent color.</p>
    <div class="example" id="example-6760b48f">
@@ -2594,21 +2382,6 @@ to match the control to platform conventions for the use of the accent color.</p
     </table>
    </div>
    <h3 class="heading settled caniuse-paneled" data-level="7.2" id="appearance-switching"><span class="secno">7.2. </span><span class="content">Switching appearance: the <a class="property" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance">appearance</a> property</span><a class="self-link" href="#appearance-switching"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/appearance" title="The appearance CSS property is used to display an element using platform-native styling, based on the operating system&apos;s theme. The -moz-appearance and -webkit-appearance properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support -webkit-appearance, for compatibility reasons.">appearance</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>80+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>84+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>70+</span></span><span class="edge_blink yes"><span>Edge</span><span>84+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>80+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>84+</span></span><span class="webview_android yes"><span>Android WebView</span><span>84+</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>60+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="appearance">
     <tbody>
      <tr>
@@ -2705,7 +2478,7 @@ input<c- p>[</c->type=checkbox<c- p>]</c-> <c- p>{</c-> <c- k>appearance</c-><c-
       For <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/rendering.html#drop-down-box" id="ref-for-drop-down-box">drop-down box</a> <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element" id="ref-for-the-select-element">select</a></code> elements,
 		the element is rendered as a drop-down box, including a "drop-down button",
 		but not necessarily using a native control of the host operating system.
-		For such elements, CSS properties such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color①">color</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-color" id="ref-for-propdef-background-color①">background-color</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border" id="ref-for-propdef-border">border</a> (that can be disregarded for <a class="css" data-link-type="maybe" href="#valdef-appearance-auto" id="ref-for-valdef-appearance-auto②">auto</a>) should not be disregarded.
+		For such elements, CSS properties such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color①">color</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-color" id="ref-for-propdef-background-color①">background-color</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border" id="ref-for-propdef-border">border</a> (that can be disregarded for <a class="css" data-link-type="maybe" href="#valdef-appearance-auto" id="ref-for-valdef-appearance-auto②">auto</a>) should not be disregarded. 
      <p>For all other elements, this value has the same effect as <a class="css" data-link-type="maybe" href="#valdef-appearance-auto" id="ref-for-valdef-appearance-auto③">auto</a>.</p>
     <dt><dfn class="dfn-paneled css" data-dfn-for="appearance" data-dfn-type="type" data-export id="typedef-appearance-compat-auto">&lt;compat-auto></dfn> 
     <dd>
@@ -2757,20 +2530,20 @@ or because these properties may not be meaningful for the chosen appearance.
 However, the following properties must not be disregarded:</p>
    <ul>
     <li><a class="property" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance③">appearance</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②">display</a> (the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> may be ignored) 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility①">visibility</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-top" id="ref-for-propdef-top">top</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-right" id="ref-for-propdef-right①">right</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-bottom" id="ref-for-propdef-bottom①">bottom</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-left" id="ref-for-propdef-left">left</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear">clear</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②">display</a> (the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> may be ignored) 
+    <li><a class="property" data-link-type="propdesc">visibility</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a> 
+    <li><a class="property" data-link-type="propdesc">top</a> 
+    <li><a class="property" data-link-type="propdesc">right</a> 
+    <li><a class="property" data-link-type="propdesc">bottom</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-left" id="ref-for-propdef-left">left</a> 
+    <li><a class="property" data-link-type="propdesc">float</a> 
+    <li><a class="property" data-link-type="propdesc">clear</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin">margin</a> and related long-hand properties 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi">unicode-bidi</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction">direction</a>
+    <li><a class="property" data-link-type="propdesc">unicode-bidi</a> 
+    <li><a class="property" data-link-type="propdesc">direction</a> 
     <li><a class="property" data-link-type="propdesc" href="#propdef-cursor" id="ref-for-propdef-cursor⑥">cursor</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-z-index" id="ref-for-propdef-z-index">z-index</a> 
+    <li><a class="property" data-link-type="propdesc">z-index</a> 
    </ul>
    <p class="issue" id="issue-a8bdbcb3"><a class="self-link" href="#issue-a8bdbcb3"></a> Are there more properties that should be included in this list?
 Should we remove some?
@@ -2778,7 +2551,7 @@ Should we whitelist the properties that are ok to ignore instead of
 blacklisting those that are not?
 Either way, UAs do ignore some properties when rendering <a data-link-type="dfn" href="#widget" id="ref-for-widget⑧">widgets</a>,
 so this specification needs to say something about this.</p>
-   <p>For compatibility with legacy content, UAs must also support <dfn class="css" data-dfn-type="property" data-export id="propdef--webkit-appearance">-webkit-appearance<a class="self-link" href="#propdef--webkit-appearance"></a></dfn> as a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#legacy-name-alias" id="ref-for-legacy-name-alias">legacy name alias</a> of <a class="property" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance④">appearance</a>.</p>
+   <p>For compatibility with legacy content, UAs must also support <dfn class="css" data-dfn-type="property" data-export id="propdef--webkit-appearance">-webkit-appearance<a class="self-link" href="#propdef--webkit-appearance"></a></dfn> as a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#legacy-name-alias" id="ref-for-legacy-name-alias">legacy name alias</a> of <a class="property" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance④">appearance</a>.</p>
    <h4 class="heading settled" data-level="7.2.1" id="appearance-decorative"><span class="secno">7.2.1. </span><span class="content"> Effects of <a class="property" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance⑤">appearance</a> on Decorative Aspects of Elements</span><a class="self-link" href="#appearance-decorative"></a></h4>
    <p>All decorative visual aspects of a <a data-link-type="dfn" href="#widget" id="ref-for-widget⑨">widget</a> which are not caused by a CSS style rule
 must be suppressed when the appearance is changed using <a class="property" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance⑥">appearance</a>,
@@ -2791,7 +2564,7 @@ was composed of multiple elements or pseudo-elements combined together.</p>
 to give <a data-link-type="dfn" href="#widget" id="ref-for-widget①⓪">widgets</a> a recognizable shape when <a class="property" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance⑧">appearance</a> is <a class="css" data-link-type="maybe" href="#valdef-appearance-none" id="ref-for-valdef-appearance-none④">none</a>.</p>
    <p class="note" role="note"><span>Note:</span> Authors may therefore need to override these UA style rules to get the styling
 they intended.</p>
-   <div class="advisement"> Authors may find it convenient to use <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-cascade-5/#propdef-all" id="ref-for-propdef-all">all: unset</a>,
+   <div class="advisement"> Authors may find it convenient to use <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-cascade/#propdef-all" id="ref-for-propdef-all">all: unset</a>,
 	to get fully unstyled <a data-link-type="dfn" href="#widget" id="ref-for-widget①①">widgets</a>,
 	which they can then style as they want without interference from the user agent’s stylesheet.
 	However, this also suppresses the focus indicators provided by the same UA stylesheet.
@@ -2818,7 +2591,7 @@ what needs to be preserved.</p>
     <p>On the other hand,
 	the check mark in an <code class="lang-markup highlight"><c- p>&lt;</c-><c- f>input</c-> <c- e>type</c-><c- o>=</c-><c- s>checkbox</c-> <c- e>checked</c-><c- p>></c-></code> must be suppressed,
 	as it merely indicates the state the element is in,
-	which can be styled in different ways using the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#checked-pseudo" id="ref-for-checked-pseudo">:checked</a> selector.</p>
+	which can be styled in different ways using the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#checked-pseudo" id="ref-for-checked-pseudo">:checked</a> selector.</p>
    </div>
    <p>The behavior and semantics of elements remain defined by the document language,
 and are not influenced by this property.</p>
@@ -2836,7 +2609,7 @@ and are not influenced by this property.</p>
    <p>Conversely, changing the appearance of an element must not cause it
 to acquire the semantics, pseudo-classes, event handlers, etc.
 that are typical of the element whose appearance it acquires.</p>
-   <div class="example" id="example-84da96a5"><a class="self-link" href="#example-84da96a5"></a> For example, neither <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#enabled-pseudo" id="ref-for-enabled-pseudo">:enabled</a> nor <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#disabled-pseudo" id="ref-for-disabled-pseudo">:disabled</a> match on
+   <div class="example" id="example-84da96a5"><a class="self-link" href="#example-84da96a5"></a> For example, neither <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#enabled-pseudo" id="ref-for-enabled-pseudo">:enabled</a> nor <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#disabled-pseudo" id="ref-for-disabled-pseudo">:disabled</a> match on
 	a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element" id="ref-for-the-div-element">div</a></code> styled with <a class="css" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance①②">appearance: button</a>.
 	The ability for an element to be focused
 	is also not changed by the <span class="property" id="ref-for-propdef-appearance①③">appearance</span> property. </div>
@@ -2846,7 +2619,7 @@ should be moved to the <a data-link-type="biblio" href="#biblio-html">[HTML]</a>
 at some point.</p>
    <p class="issue" id="issue-a6172891"><a class="self-link" href="#issue-a6172891"></a> On some elements, setting some properties inhibits <a class="css" data-link-type="propdesc" href="#propdef-appearance" id="ref-for-propdef-appearance①④">appearance: auto</a>.
 For instance, even if <span class="property" id="ref-for-propdef-appearance①⑤">appearance</span> is <a class="css" data-link-type="maybe" href="#valdef-appearance-auto" id="ref-for-valdef-appearance-auto⑦">auto</a>,
-buttons lose their native appearance when a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border" id="ref-for-propdef-border①">border</a> is set.
+buttons lose their native appearance when a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border" id="ref-for-propdef-border①">border</a> is set.
 This is not in contradiction with the definition of <span class="css" id="ref-for-valdef-appearance-auto⑧">auto</span>,
 since <span class="css" id="ref-for-propdef-appearance①⑥">appearance: auto</span> only means
 UAs <em>may</em> use a native appearance,
@@ -2964,7 +2737,7 @@ the following normative changes have been made:</p>
     <dt>Does this specification allow an origin some measure of control over a user agent’s native UI? 
     <dd>
       Yes. 
-     <p>The <a class="property" data-link-type="propdesc" href="#propdef-cursor" id="ref-for-propdef-cursor⑨">cursor</a> and <a class="property" data-link-type="propdesc" href="#propdef-caret" id="ref-for-propdef-caret①">caret</a> property and <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand">sub-properties</a> enable the page to change the display of the cursor and text insertion caret of the user agent’s native UI.
+     <p>The <a class="property" data-link-type="propdesc" href="#propdef-cursor" id="ref-for-propdef-cursor⑨">cursor</a> and <a class="property" data-link-type="propdesc" href="#propdef-caret" id="ref-for-propdef-caret①">caret</a> property and <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand">sub-properties</a> enable the page to change the display of the cursor and text insertion caret of the user agent’s native UI.
 		In addition the <a class="property" data-link-type="propdesc" href="#propdef-outline-style" id="ref-for-propdef-outline-style④">outline-style</a> property’s <span class="css">auto</span> value
 		(and thus <a class="property" data-link-type="propdesc" href="#propdef-outline" id="ref-for-propdef-outline②">outline</a> shorthand)
 		enable the page to potentially display a native focused element outline presentation around any element.</p>
@@ -3194,48 +2967,48 @@ option<c- p>[</c->selected<c- p>]</c->::before <c- p>{</c->
 <script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script>
   <aside class="caniuse-status" data-deco data-dfn-id="text-overflow">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>7+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie yes"><span>IE</span><span>6+</span></span><span class="ie_mob yes"><span>IE Mobile</span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11+</span></span><span class="op_mini yes"><span>Opera Mini</span><span>All</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12.1+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=text-overflow">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>7+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie yes"><span>IE</span><span>6+</span></span><span class="ie_mob yes"><span>IE Mobile</span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11+</span></span><span class="op_mini yes"><span>Opera Mini</span><span>All</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12.1+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=text-overflow">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="outline-props">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>15+</span></span><span class="firefox yes"><span>Firefox</span><span>2+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie partial"><span><span>IE (limited)</span></span><span>8+</span></span><span class="ie_mob partial"><span><span>IE Mobile (limited)</span></span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11.6+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=outline">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>15+</span></span><span class="firefox yes"><span>Firefox</span><span>2+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie partial"><span><span>IE (limited)</span></span><span>8+</span></span><span class="ie_mob partial"><span><span>IE Mobile (limited)</span></span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11.6+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=outline">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="resize">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>91+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>79+</span></span><span class="firefox yes"><span>Firefox</span><span>5+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>15+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>4+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css-resize">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>89+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>79+</span></span><span class="firefox yes"><span>Firefox</span><span>5+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>15+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>4+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css-resize">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="cursor">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>91+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>5+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>14+</span></span><span class="firefox yes"><span>Firefox</span><span>4+</span></span><span class="and_ff no"><span>Firefox for Android</span><span>None</span></span><span class="ie yes"><span>IE</span><span>9+</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>15+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>5+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css3-cursors">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>89+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>5+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>14+</span></span><span class="firefox yes"><span>Firefox</span><span>4+</span></span><span class="and_ff no"><span>Firefox for Android</span><span>None</span></span><span class="ie yes"><span>IE</span><span>9+</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>15+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>5+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css3-cursors">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="cursor-grab">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>91+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>68+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>15+</span></span><span class="firefox yes"><span>Firefox</span><span>27+</span></span><span class="and_ff no"><span>Firefox for Android</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>55+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob no"><span>Opera Mobile</span><span>None</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css3-cursors-grab">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>89+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>68+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>15+</span></span><span class="firefox yes"><span>Firefox</span><span>27+</span></span><span class="and_ff no"><span>Firefox for Android</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>55+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob no"><span>Opera Mobile</span><span>None</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css3-cursors-grab">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="zooming-cursors">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>91+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>37+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>24+</span></span><span class="and_ff no"><span>Firefox for Android</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>24+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css3-cursors-newer">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>89+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>37+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>24+</span></span><span class="and_ff no"><span>Firefox for Android</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>24+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css3-cursors-newer">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="caret-color">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>91+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>79+</span></span><span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>44+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>11.3+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>7.2+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css-caret-color">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>89+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>79+</span></span><span class="firefox yes"><span>Firefox</span><span>53+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>44+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>11.3+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>7.2+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css-caret-color">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="valdef-user-select-none">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>91+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>54+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>79+</span></span><span class="firefox yes"><span>Firefox</span><span>69+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>41+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung yes"><span>Samsung Internet</span><span>6.2+</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=user-select-none">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>89+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>54+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>79+</span></span><span class="firefox yes"><span>Firefox</span><span>69+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob no"><span>IE Mobile</span><span>None</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>41+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>62+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung yes"><span>Samsung Internet</span><span>6.2+</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=user-select-none">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <aside class="caniuse-status" data-deco data-dfn-id="appearance-switching">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>91+</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>84+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>84+</span></span><span class="firefox yes"><span>Firefox</span><span>80+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob partial"><span><span>IE Mobile (limited)</span></span><span>11+</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera yes"><span>Opera</span><span>73+</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob no"><span>Opera Mobile</span><span>None</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css-appearance">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android no"><span>Android Browser</span><span>None</span></span><span class="baidu no"><span>Baidu Browser</span><span>None</span></span><span class="bb no"><span>Blackberry Browser</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>84+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>84+</span></span><span class="firefox yes"><span>Firefox</span><span>80+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie no"><span>IE</span><span>None</span></span><span class="ie_mob partial"><span><span>IE Mobile (limited)</span></span><span>11+</span></span><span class="kaios no"><span>KaiOS Browser</span><span>None</span></span><span class="opera no"><span>Opera</span><span>None</span></span><span class="op_mini no"><span>Opera Mini</span><span>None</span></span><span class="op_mob no"><span>Opera Mobile</span><span>None</span></span><span class="and_qq no"><span>QQ Browser</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="ios_saf no"><span>Safari on iOS</span><span>None</span></span><span class="samsung no"><span>Samsung Internet</span><span>None</span></span><span class="and_uc no"><span>UC Browser for Android</span><span>None</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=css-appearance">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="#index"></a></h2>
   <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="#index-defined-here"></a></h3>
@@ -3346,54 +3119,60 @@ option<c- p>[</c->selected<c- p>]</c->::before <c- p>{</c->
    <li><a href="#valdef-cursor-zoom-in">zoom-in</a><span>, in §5.1.1</span>
    <li><a href="#valdef-cursor-zoom-out">zoom-out</a><span>, in §5.1.1</span>
   </ul>
+  <aside class="dfn-panel" data-for="term-for-grammardef-">
+   <a href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-">https://w3c.github.io/webappsec-clear-site-data/#grammardef-</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-grammardef-">5.1.1. Styling the Cursor: the cursor property</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-line-style">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#typedef-line-style">https://drafts.csswg.org/css-backgrounds-3/#typedef-line-style</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#typedef-line-style">https://drafts.csswg.org/css-backgrounds/#typedef-line-style</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-line-style">3.4. Outline Colors: the outline-color property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-line-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#typedef-line-width">https://drafts.csswg.org/css-backgrounds-3/#typedef-line-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#typedef-line-width">https://drafts.csswg.org/css-backgrounds/#typedef-line-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-line-width">3.2. Outline Thickness: the outline-width property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-color">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-color">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-color">https://drafts.csswg.org/css-backgrounds/#propdef-background-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-color">7.1. Widget Accent Colors: the accent-color property</a>
     <li><a href="#ref-for-propdef-background-color①">7.2. Switching appearance: the appearance property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-image">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image">https://drafts.csswg.org/css-backgrounds/#propdef-background-image</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-image">5.1.1. Styling the Cursor: the cursor property</a> <a href="#ref-for-propdef-background-image①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border">https://drafts.csswg.org/css-backgrounds-3/#propdef-border</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border">https://drafts.csswg.org/css-backgrounds/#propdef-border</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border">7.2. Switching appearance: the appearance property</a>
-    <li><a href="#ref-for-propdef-border①">7.3.
+    <li><a href="#ref-for-propdef-border①">7.3. 
 Control Specific Rules</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-radius">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-radius">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-radius</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-radius">https://drafts.csswg.org/css-backgrounds/#propdef-border-radius</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-radius">3.4. Outline Colors: the outline-color property</a>
     <li><a href="#ref-for-propdef-border-radius①">5.1.1. Styling the Cursor: the cursor property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-width">3.4. Outline Colors: the outline-color property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-line-style-none">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-none">https://drafts.csswg.org/css-backgrounds-3/#valdef-line-style-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#valdef-line-style-none">https://drafts.csswg.org/css-backgrounds/#valdef-line-style-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-line-style-none">3.2. Outline Thickness: the outline-width property</a>
    </ul>
@@ -3427,72 +3206,64 @@ Single-Line Text Input Controls</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-all">
-   <a href="https://drafts.csswg.org/css-cascade-5/#propdef-all">https://drafts.csswg.org/css-cascade-5/#propdef-all</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#propdef-all">https://drafts.csswg.org/css-cascade/#propdef-all</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-all">7.2.1. 
 Effects of appearance on Decorative Aspects of Elements</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">6.1. Controlling content selection</a> <a href="#ref-for-computed-value①">(2)</a> <a href="#ref-for-computed-value②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-legacy-name-alias">
-   <a href="https://drafts.csswg.org/css-cascade-5/#legacy-name-alias">https://drafts.csswg.org/css-cascade-5/#legacy-name-alias</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#legacy-name-alias">https://drafts.csswg.org/css-cascade/#legacy-name-alias</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-legacy-name-alias">7.2. Switching appearance: the appearance property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-longhand">
-   <a href="https://drafts.csswg.org/css-cascade-5/#longhand">https://drafts.csswg.org/css-cascade-5/#longhand</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#longhand">https://drafts.csswg.org/css-cascade/#longhand</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-longhand">Appendix C. Considerations for Security and Privacy</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">6.1. Controlling content selection</a> <a href="#ref-for-used-value①">(2)</a> <a href="#ref-for-used-value②">(3)</a> <a href="#ref-for-used-value③">(4)</a> <a href="#ref-for-used-value④">(5)</a> <a href="#ref-for-used-value⑤">(6)</a> <a href="#ref-for-used-value⑥">(7)</a> <a href="#ref-for-used-value⑦">(8)</a> <a href="#ref-for-used-value⑧">(9)</a> <a href="#ref-for-used-value⑨">(10)</a> <a href="#ref-for-used-value①⓪">(11)</a> <a href="#ref-for-used-value①①">(12)</a> <a href="#ref-for-used-value①②">(13)</a> <a href="#ref-for-used-value①③">(14)</a> <a href="#ref-for-used-value①④">(15)</a> <a href="#ref-for-used-value①⑤">(16)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade-origin-ua">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua">https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade-origin-ua">https://drafts.csswg.org/css-cascade/#cascade-origin-ua</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade-origin-ua">5.1.1. Styling the Cursor: the cursor property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-valuea-def-color">
-   <a href="https://drafts.csswg.org/css-color-3/#valuea-def-color">https://drafts.csswg.org/css-color-3/#valuea-def-color</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valuea-def-color">3.4. Outline Colors: the outline-color property</a> <a href="#ref-for-valuea-def-color①">(2)</a>
-    <li><a href="#ref-for-valuea-def-color②">5.2.1. Coloring the Insertion Caret: the caret-color property</a> <a href="#ref-for-valuea-def-color③">(2)</a> <a href="#ref-for-valuea-def-color④">(3)</a>
-    <li><a href="#ref-for-valuea-def-color⑤">7.1. Widget Accent Colors: the accent-color property</a> <a href="#ref-for-valuea-def-color⑥">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-color">
-   <a href="https://drafts.csswg.org/css-color-4/#propdef-color">https://drafts.csswg.org/css-color-4/#propdef-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#propdef-color">https://drafts.csswg.org/css-color/#propdef-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-color">7.1. Widget Accent Colors: the accent-color property</a>
     <li><a href="#ref-for-propdef-color①">7.2. Switching appearance: the appearance property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-color-currentcolor">
-   <a href="https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor">https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#valdef-color-currentcolor">https://drafts.csswg.org/css-color/#valdef-color-currentcolor</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-color-currentcolor">5.2.1. Coloring the Insertion Caret: the caret-color property</a> <a href="#ref-for-valdef-color-currentcolor①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">5.1.1.1. Cursor of the canvas</a> <a href="#ref-for-propdef-display①">(2)</a>
     <li><a href="#ref-for-propdef-display②">7.2. Switching appearance: the appearance property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inner-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#inner-display-type">https://drafts.csswg.org/css-display-3/#inner-display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inner-display-type">https://drafts.csswg.org/css-display/#inner-display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inner-display-type">7.2. Switching appearance: the appearance property</a>
    </ul>
@@ -3565,13 +3336,13 @@ Single-Line Text Input Controls</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-left">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-left">https://drafts.csswg.org/css-position-3/#propdef-left</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-left">https://drafts.csswg.org/css-position/#propdef-left</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-left">7.2. Switching appearance: the appearance property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">7.2. Switching appearance: the appearance property</a>
    </ul>
@@ -3628,12 +3399,6 @@ Single-Line Text Input Controls</a>
     <li><a href="#ref-for-propdef-width">4.1. Resizing Boxes: the resize property</a> <a href="#ref-for-propdef-width①">(2)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-valdef-caret-color-auto">
-   <a href="https://drafts.csswg.org/css-ui-3/#valdef-caret-color-auto">https://drafts.csswg.org/css-ui-3/#valdef-caret-color-auto</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valdef-caret-color-auto">5.2.1. Coloring the Insertion Caret: the caret-color property</a> <a href="#ref-for-valdef-caret-color-auto①">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-length-value">
    <a href="https://drafts.csswg.org/css-values-3/#length-value">https://drafts.csswg.org/css-values-3/#length-value</a><b>Referenced in:</b>
    <ul>
@@ -3656,12 +3421,6 @@ Single-Line Text Input Controls</a>
    <a href="https://drafts.csswg.org/css-values-3/#url-value">https://drafts.csswg.org/css-values-3/#url-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-url-value">5.1.1. Styling the Cursor: the cursor property</a> <a href="#ref-for-url-value①">(2)</a> <a href="#ref-for-url-value②">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-mult-zero-plus">
-   <a href="https://drafts.csswg.org/css-values-4/#mult-zero-plus">https://drafts.csswg.org/css-values-4/#mult-zero-plus</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-mult-zero-plus">5.1.1. Styling the Cursor: the cursor property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-comb-comma">
@@ -3705,18 +3464,6 @@ Single-Line Text Input Controls</a>
     <li><a href="#ref-for-comb-any②">5.2.3. Insertion caret shorthand: caret</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-direction">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction">https://drafts.csswg.org/css-writing-modes-3/#propdef-direction</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-direction">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-unicode-bidi">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi">https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-unicode-bidi">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-block-size">
    <a href="https://drafts.csswg.org/css-writing-modes-4/#block-size">https://drafts.csswg.org/css-writing-modes-4/#block-size</a><b>Referenced in:</b>
    <ul>
@@ -3752,75 +3499,6 @@ Single-Line Text Input Controls</a>
    <ul>
     <li><a href="#ref-for-writing-mode">5.1.1. Styling the Cursor: the cursor property</a> <a href="#ref-for-writing-mode①">(2)</a> <a href="#ref-for-writing-mode②">(3)</a>
     <li><a href="#ref-for-writing-mode③">5.2.2. Shape of the insertion caret: caret-shape</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-bottom">
-   <a href="https://drafts.csswg.org/css2/#propdef-bottom">https://drafts.csswg.org/css2/#propdef-bottom</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-bottom">4.1. Resizing Boxes: the resize property</a>
-    <li><a href="#ref-for-propdef-bottom①">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-clear">
-   <a href="https://drafts.csswg.org/css2/#propdef-clear">https://drafts.csswg.org/css2/#propdef-clear</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-clear">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-height">https://drafts.csswg.org/css2/#propdef-max-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-height">4.1. Resizing Boxes: the resize property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-width">https://drafts.csswg.org/css2/#propdef-max-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-width">4.1. Resizing Boxes: the resize property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-height">https://drafts.csswg.org/css2/#propdef-min-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-height">4.1. Resizing Boxes: the resize property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-width">https://drafts.csswg.org/css2/#propdef-min-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-width">4.1. Resizing Boxes: the resize property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-right">
-   <a href="https://drafts.csswg.org/css2/#propdef-right">https://drafts.csswg.org/css2/#propdef-right</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-right">4.1. Resizing Boxes: the resize property</a>
-    <li><a href="#ref-for-propdef-right①">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-top">
-   <a href="https://drafts.csswg.org/css2/#propdef-top">https://drafts.csswg.org/css2/#propdef-top</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-top">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-visibility">
-   <a href="https://drafts.csswg.org/css2/#propdef-visibility">https://drafts.csswg.org/css2/#propdef-visibility</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-visibility">5.1.1.1. Cursor of the canvas</a>
-    <li><a href="#ref-for-propdef-visibility①">7.2. Switching appearance: the appearance property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-z-index">
-   <a href="https://drafts.csswg.org/css2/#propdef-z-index">https://drafts.csswg.org/css2/#propdef-z-index</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-z-index">7.2. Switching appearance: the appearance property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-canvas">
@@ -3915,42 +3593,36 @@ Effects of appearance on Semantic Aspects of Elements</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-checked-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#checked-pseudo">https://drafts.csswg.org/selectors-4/#checked-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#checked-pseudo">https://drafts.csswg.org/selectors/#checked-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-checked-pseudo">7.2.2. 
 Effects of appearance on Semantic Aspects of Elements</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-disabled-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#disabled-pseudo">https://drafts.csswg.org/selectors-4/#disabled-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#disabled-pseudo">https://drafts.csswg.org/selectors/#disabled-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-disabled-pseudo">7.2.2. 
 Effects of appearance on Semantic Aspects of Elements</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-enabled-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#enabled-pseudo">https://drafts.csswg.org/selectors-4/#enabled-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#enabled-pseudo">https://drafts.csswg.org/selectors/#enabled-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-enabled-pseudo">7.2.2. 
 Effects of appearance on Semantic Aspects of Elements</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-focus-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#focus-pseudo">https://drafts.csswg.org/selectors-4/#focus-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#focus-pseudo">https://drafts.csswg.org/selectors/#focus-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-focus-pseudo">5.3.1. Directional Focus Navigation: the nav-up, nav-right, nav-down, nav-left properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-focus-visible-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#focus-visible-pseudo">https://drafts.csswg.org/selectors-4/#focus-visible-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#focus-visible-pseudo">https://drafts.csswg.org/selectors/#focus-visible-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-focus-visible-pseudo">3. Outline properties</a> <a href="#ref-for-focus-visible-pseudo①">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-CursorElement">
-   <a href="https://www.w3.org/TR/SVG11/interact.html#CursorElement">https://www.w3.org/TR/SVG11/interact.html#CursorElement</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-CursorElement">5.1.1. Styling the Cursor: the cursor property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-elementdef-svg">
@@ -3967,6 +3639,11 @@ Effects of appearance on Semantic Aspects of Elements</a>
   </aside>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
+   <li>
+    <a data-link-type="biblio">[clear-site-data]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-grammardef-">*</span>
+    </ul>
    <li>
     <a data-link-type="biblio">[css-backgrounds-3]</a> defines the following terms:
     <ul>
@@ -3988,7 +3665,7 @@ Effects of appearance on Semantic Aspects of Elements</a>
      <li><span class="dfn-paneled" id="term-for-padding-edge">padding edge</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-propdef-all">all</span>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
@@ -3996,11 +3673,6 @@ Effects of appearance on Semantic Aspects of Elements</a>
      <li><span class="dfn-paneled" id="term-for-longhand">sub-property</span>
      <li><span class="dfn-paneled" id="term-for-used-value">used value</span>
      <li><span class="dfn-paneled" id="term-for-cascade-origin-ua">user-agent origin</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-color-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-valuea-def-color">&lt;color></span>
     </ul>
    <li>
     <a data-link-type="biblio">[CSS-COLOR-4]</a> defines the following terms:
@@ -4063,11 +3735,6 @@ Effects of appearance on Semantic Aspects of Elements</a>
      <li><span class="dfn-paneled" id="term-for-propdef-width">width</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[CSS-UI-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-valdef-caret-color-auto">auto</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[CSS-VALUES-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-length-value">&lt;length></span>
@@ -4078,18 +3745,11 @@ Effects of appearance on Semantic Aspects of Elements</a>
    <li>
     <a data-link-type="biblio">[css-values-4]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-mult-zero-plus">*</span>
      <li><span class="dfn-paneled" id="term-for-comb-comma">,</span>
      <li><span class="dfn-paneled" id="term-for-mult-opt">?</span>
      <li><span class="dfn-paneled" id="term-for-css-wide-keywords">css-wide keywords</span>
      <li><span class="dfn-paneled" id="term-for-comb-one">|</span>
      <li><span class="dfn-paneled" id="term-for-comb-any">||</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS-WRITING-MODES-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-direction">direction</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-unicode-bidi">unicode-bidi</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-writing-modes-4]</a> defines the following terms:
@@ -4100,21 +3760,6 @@ Effects of appearance on Semantic Aspects of Elements</a>
      <li><span class="dfn-paneled" id="term-for-inline-axis">inline-axis</span>
      <li><span class="dfn-paneled" id="term-for-under">under</span>
      <li><span class="dfn-paneled" id="term-for-writing-mode">writing mode</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS21]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-bottom">bottom</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-clear">clear</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-height">max-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-width">max-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-height">min-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-width">min-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-right">right</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-top">top</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-visibility">visibility</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-z-index">z-index</span>
     </ul>
    <li>
     <a data-link-type="biblio">[HTML]</a> defines the following terms:
@@ -4144,11 +3789,6 @@ Effects of appearance on Semantic Aspects of Elements</a>
      <li><span class="dfn-paneled" id="term-for-focus-visible-pseudo">:focus-visible</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[SVG11]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-CursorElement">cursor</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[SVG2]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-elementdef-svg">svg</span>
@@ -4158,16 +3798,16 @@ Effects of appearance on Semantic Aspects of Elements</a>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-clear-site-data">[CLEAR-SITE-DATA]
+   <dd>Mike West. <a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a>. 30 November 2017. WD. URL: <a href="https://www.w3.org/TR/clear-site-data/">https://www.w3.org/TR/clear-site-data/</a>
    <dt id="biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]
    <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="https://www.w3.org/TR/css-backgrounds-3/">CSS Backgrounds and Borders Module Level 3</a>. 22 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-backgrounds-3/">https://www.w3.org/TR/css-backgrounds-3/</a>
    <dt id="biblio-css-box-4">[CSS-BOX-4]
    <dd>Elika Etemad. <a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a>. 21 April 2020. WD. URL: <a href="https://www.w3.org/TR/css-box-4/">https://www.w3.org/TR/css-box-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
-   <dt id="biblio-css-color-3">[CSS-COLOR-3]
-   <dd>Tantek Çelik; Chris Lilley; David Baron. <a href="https://www.w3.org/TR/css-color-3/">CSS Color Module Level 3</a>. 19 June 2018. REC. URL: <a href="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-color-4">[CSS-COLOR-4]
-   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
+   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 12 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
    <dt id="biblio-css-images-3">[CSS-IMAGES-3]
@@ -4429,7 +4069,7 @@ and optionally replaced elements such as images, videos, and iframes
    <div class="issue"> if we allow user-select to change to a value other than <a class="css" data-link-type="maybe" href="#valdef-user-select-none">none</a>,
 we need to figure out what this means for copyability, and DOM APIs.<a href="#issue-aa023f10"> ↵ </a></div>
    <div class="issue"> Should it also apply to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker">::marker</a>? To <a data-link-type="dfn" href="https://drafts.csswg.org/css-page-3/#page-margin-boxes">page-margin boxes</a>?
-Should the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value">used value</a> of <span class="css">auto</span> also be <a class="css" data-link-type="maybe" href="#valdef-user-select-none">none</a>,
+Should the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value">used value</a> of <span class="css">auto</span> also be <a class="css" data-link-type="maybe" href="#valdef-user-select-none">none</a>,
 or would <a class="css" data-link-type="maybe" href="#valdef-user-select-text">text</a> be more appropriate?<a href="#issue-bb04ee05"> ↵ </a></div>
    <div class="issue"> Should there be constraints
 on what happens to the used value
@@ -4464,7 +4104,7 @@ should be moved to the <a data-link-type="biblio" href="#biblio-html">[HTML]</a>
 at some point.<a href="#issue-0b89ac4a"> ↵ </a></div>
    <div class="issue"> On some elements, setting some properties inhibits <a class="css" data-link-type="propdesc" href="#propdef-appearance">appearance: auto</a>.
 For instance, even if <span class="property">appearance</span> is <a class="css" data-link-type="maybe" href="#valdef-appearance-auto">auto</a>,
-buttons lose their native appearance when a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border">border</a> is set.
+buttons lose their native appearance when a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border">border</a> is set.
 This is not in contradiction with the definition of <span class="css">auto</span>,
 since <span class="css">appearance: auto</span> only means
 UAs <em>may</em> use a native appearance,
@@ -4908,11 +4548,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

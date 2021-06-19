@@ -32,8 +32,8 @@ Event
 -
 BufferSource
 typedef
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#BufferSource
@@ -664,8 +664,8 @@ https://www.w3.org/TR/media-source/#sourcebuffer-buffer-full-flag
 -
 buffer source types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-buffer-source-type
@@ -674,8 +674,8 @@ https://heycam.github.io/webidl/#dfn-buffer-source-type
 -
 buffer source types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-buffer-source-type
@@ -1037,8 +1037,8 @@ GPUVertexState
 -
 buffersource
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#BufferSource
@@ -1047,8 +1047,8 @@ https://www.w3.org/TR/WebCryptoAPI/#BufferSource
 -
 built-in functions
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#built-in-functions
@@ -1057,8 +1057,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#built-in-functions
 -
 built-in functions
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#built-in-functions
@@ -1067,8 +1067,8 @@ https://www.w3.org/TR/WGSL/#built-in-functions
 -
 built-in input variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#built-in-input-variable
@@ -1077,8 +1077,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#built-in-input-variable
 -
 built-in input variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#built-in-input-variable
@@ -1087,8 +1087,8 @@ https://www.w3.org/TR/WGSL/#built-in-input-variable
 -
 built-in output variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#built-in-output-variable
@@ -1097,8 +1097,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#built-in-output-variable
 -
 built-in output variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#built-in-output-variable
@@ -1107,8 +1107,8 @@ https://www.w3.org/TR/WGSL/#built-in-output-variable
 -
 builtin
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-builtin
@@ -1118,8 +1118,8 @@ attribute
 -
 builtin
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-builtin

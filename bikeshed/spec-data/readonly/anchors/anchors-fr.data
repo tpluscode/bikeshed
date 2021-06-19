@@ -293,8 +293,8 @@ https://www.w3.org/TR/service-workers-1/#enumdef-frametype
 -
 FrozenArray
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-frozen-array
@@ -303,8 +303,8 @@ https://heycam.github.io/webidl/#idl-frozen-array
 -
 FrozenArray<T>
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-frozen-array
@@ -399,8 +399,8 @@ https://www.w3.org/TR/css-grid-2/#valdef-flex-fr
 -
 fr
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementFRAttribute
@@ -410,8 +410,8 @@ radialGradient
 -
 fr
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#__svg__SVGRadialGradientElement__fr
@@ -421,8 +421,8 @@ SVGRadialGradientElement
 -
 fr
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#RadialGradientElementFRAttribute
@@ -432,8 +432,8 @@ radialGradient
 -
 fr
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#__svg__SVGRadialGradientElement__fr
@@ -745,8 +745,8 @@ GPURenderPipelineDescriptor
 -
 fragment
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#fragment
@@ -755,8 +755,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#fragment
 -
 fragment
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#fragment
@@ -835,8 +835,8 @@ https://wicg.github.io/scroll-to-text-fragment/#fragment-directive-delimiter
 -
 fragment parsing algorithm
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-fragment-parsing-algorithm
@@ -865,8 +865,8 @@ https://www.w3.org/TR/css-scoping-1/#fragment-pseudo-element
 -
 fragment serializing algorithm
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm
@@ -895,8 +895,8 @@ https://www.w3.org/TR/webdriver2/#dfn-fragment-serializing-algorithm
 -
 fragment shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#fragment-shader-stage
@@ -905,8 +905,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#fragment-shader-stage
 -
 fragment shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#fragment-shader-stage
@@ -1692,8 +1692,8 @@ https://www.w3.org/TR/webxr/#frame-update
 -
 frame-ancestors
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#frame-ancestors
@@ -1702,8 +1702,8 @@ https://w3c.github.io/webappsec-csp/#frame-ancestors
 -
 frame-ancestors
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#frame-ancestors
@@ -1742,8 +1742,8 @@ https://www.w3.org/TR/css-animation-worklet-1/#frame-requested
 -
 frame-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#frame-src
@@ -1752,8 +1752,8 @@ https://w3c.github.io/webappsec-csp/#frame-src
 -
 frame-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#frame-src
@@ -3868,8 +3868,8 @@ https://www.w3.org/TR/performance-timeline-2/#dfn-frozen-array-of-supported-entr
 -
 frozen array type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-frozen-array-type

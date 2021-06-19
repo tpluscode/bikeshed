@@ -2350,7 +2350,7 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
    </div>
    <hr id="urlutils-members">
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/href" title="The href property of the URL interface is a USVString containing the whole URL.">URL/href</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2364,6 +2364,19 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
       <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/href" title="The URLUtilsReadOnly.href read-only property is a stringifier that returns a DOMString containing the whole URL.">URLUtilsReadOnly/href</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
     <div class="feature">
@@ -2400,7 +2413,7 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
      <p>If <var>query</var> is non-null, then set <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this⑨">this</a>’s <a data-link-type="dfn" href="#concept-url-query-object" id="ref-for-concept-url-query-object④">query object</a>’s <a data-link-type="dfn" href="#concept-urlsearchparams-list" id="ref-for-concept-urlsearchparams-list①">list</a> to the result of <a data-link-type="dfn" href="#concept-urlencoded-string-parser" id="ref-for-concept-urlencoded-string-parser">parsing</a> <var>query</var>. </p>
    </ol>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/origin" title="The origin read-only property of the URL interface returns a USVString containing the Unicode serialization of the origin of the represented URL.">URL/origin</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2416,10 +2429,23 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
      </div>
     </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/origin" title="The URLUtilsReadOnly.origin read-only property is a DOMString containing the Unicode serialization of the origin of the represented URL, that is, for http and https, the scheme followed by &apos;://&apos;, followed by the domain, followed by &apos;:&apos;, followed by the port (the default port, 80 and 443 respectively, if explicitly specified). For URL using file: scheme, the value is browser dependant.">URLUtilsReadOnly/origin</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>29+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>29+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+     </div>
+    </div>
    </div>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="URL" data-dfn-type="attribute" data-export id="dom-url-origin"><code>origin</code></dfn> getter steps are to return the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#ascii-serialisation-of-an-origin" id="ref-for-ascii-serialisation-of-an-origin">serialization</a> of <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this①⓪">this</a>’s <a data-link-type="dfn" href="#concept-url-url" id="ref-for-concept-url-url④">URL</a>’s <a data-link-type="dfn" href="#concept-url-origin" id="ref-for-concept-url-origin②">origin</a>. <a data-link-type="biblio" href="#biblio-html">[HTML]</a> </p>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/protocol" title="The protocol property of the URL interface is a USVString representing the protocol scheme of the URL, including the final &apos;:&apos;.">URL/protocol</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2433,6 +2459,19 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
       <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/protocol" title="The URLUtilsReadOnly.protocol read-only property returns a DOMString containing the protocol scheme of the URL, including the final &apos;:&apos;.">URLUtilsReadOnly/protocol</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -2493,7 +2532,7 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
      <p><a data-link-type="dfn" href="#set-the-password" id="ref-for-set-the-password">Set the password</a> given <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this①⑧">this</a>’s <a data-link-type="dfn" href="#concept-url-url" id="ref-for-concept-url-url①②">URL</a> and the given value. </p>
    </ol>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/host" title="The host property of the URL interface is a USVString containing the host, that is the hostname, and then, if the port of the URL is nonempty, a &apos;:&apos;, followed by the port of the URL.">URL/host</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2507,6 +2546,19 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
       <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>7+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/host" title="The URLUtilsReadOnly.host read-only property returns a DOMString containing the host, that is the hostname, a &apos;:&apos;, and the port of the URL.">URLUtilsReadOnly/host</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -2533,7 +2585,7 @@ url<c- p>.</c->pathname <c- c1>// "/%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88"<
    <p class="note no-backref" role="note">If the given value for the <code><a class="idl-code" data-link-type="attribute" href="#dom-url-host" id="ref-for-dom-url-host②">host</a></code> setter lacks a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-port-string②">port</a>, <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this②②">this</a>’s <a data-link-type="dfn" href="#concept-url-url" id="ref-for-concept-url-url①⑥">URL</a>’s <a data-link-type="dfn" href="#concept-url-port" id="ref-for-concept-url-port①⑦">port</a> will not change. This can be unexpected as <code>host</code> getter
 does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-port-string③">URL-port string</a> so one might have assumed the setter to always "reset" both. </p>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/hostname" title="The hostname property of the URL interface is a USVString containing the domain name of the URL.">URL/hostname</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2547,6 +2599,19 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
       <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/hostname" title="The URLUtilsReadOnly.hostname read-only property returns a DOMString containing the domain of the URL.">URLUtilsReadOnly/hostname</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -2567,7 +2632,7 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
      <p><a data-link-type="dfn" href="#concept-basic-url-parser" id="ref-for-concept-basic-url-parser①⓪">Basic URL parse</a> the given value with <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this②⑥">this</a>’s <a data-link-type="dfn" href="#concept-url-url" id="ref-for-concept-url-url②⓪">URL</a> as <a data-link-type="dfn" href="#basic-url-parser-url" id="ref-for-basic-url-parser-url②"><i>url</i></a> and <a data-link-type="dfn" href="#hostname-state" id="ref-for-hostname-state①">hostname state</a> as <a data-link-type="dfn" href="#basic-url-parser-state-override" id="ref-for-basic-url-parser-state-override②"><i>state override</i></a>. </p>
    </ol>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/port" title="The port property of the URL interface is a USVString containing the port number of the URL. If the URL does not contain an explicit port number, it will be set to &apos;&apos;.">URL/port</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2581,6 +2646,19 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
       <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/port" title="The URLUtilsReadOnly.port read-only property returns a DOMString containing the port number of the URL.">URLUtilsReadOnly/port</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -2603,7 +2681,7 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
      <p>Otherwise, <a data-link-type="dfn" href="#concept-basic-url-parser" id="ref-for-concept-basic-url-parser①①">basic URL parse</a> the given value with <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this③①">this</a>’s <a data-link-type="dfn" href="#concept-url-url" id="ref-for-concept-url-url②⑤">URL</a> as <a data-link-type="dfn" href="#basic-url-parser-url" id="ref-for-basic-url-parser-url③"><i>url</i></a> and <a data-link-type="dfn" href="#port-state" id="ref-for-port-state①">port state</a> as <a data-link-type="dfn" href="#basic-url-parser-state-override" id="ref-for-basic-url-parser-state-override③"><i>state override</i></a>. </p>
    </ol>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/pathname" title="The pathname property of the URL interface is a USVString containing an initial &apos;/&apos; followed by the path of the URL not including the query string or fragment (or the empty string if there is no path).">URL/pathname</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2617,6 +2695,19 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
       <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/pathname" title="The URLUtilsReadOnly.pathname read-only property returns a USVString containing an initial &apos;/&apos; followed by the path of the URL, not including the query string or fragment.">URLUtilsReadOnly/pathname</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -2642,7 +2733,7 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
      <p><a data-link-type="dfn" href="#concept-basic-url-parser" id="ref-for-concept-basic-url-parser①②">Basic URL parse</a> the given value with <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this③⑧">this</a>’s <a data-link-type="dfn" href="#concept-url-url" id="ref-for-concept-url-url③②">URL</a> as <a data-link-type="dfn" href="#basic-url-parser-url" id="ref-for-basic-url-parser-url④"><i>url</i></a> and <a data-link-type="dfn" href="#path-start-state" id="ref-for-path-start-state④">path start state</a> as <a data-link-type="dfn" href="#basic-url-parser-state-override" id="ref-for-basic-url-parser-state-override④"><i>state override</i></a>. </p>
    </ol>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/search" title="The search property of the URL interface is a search string, also called a query string, that is a USVString containing a &apos;?&apos; followed by the parameters of the URL.">URL/search</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2656,6 +2747,19 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
       <span class="firefox_android yes"><span>Firefox for Android</span><span>53+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/search" title="The URLUtilsReadOnly.search read-only property returns a DOMString containing a &apos;?&apos; followed by the parameters of the URL.">URLUtilsReadOnly/search</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -2704,7 +2808,7 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
    </div>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="URL" data-dfn-type="attribute" data-export id="dom-url-searchparams"><code>searchParams</code></dfn> getter steps are to return <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this④④">this</a>’s <a data-link-type="dfn" href="#concept-url-query-object" id="ref-for-concept-url-query-object⑦">query object</a>. </p>
    <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URL/hash" title="The hash property of the URL interface is a USVString containing a &apos;#&apos; followed by the fragment identifier of the URL.">URL/hash</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -2718,6 +2822,19 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
       <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>7+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>32+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4.3+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>19+</span></span>
       <hr>
       <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLUtilsReadOnly/hash" title="The URLUtilsReadOnly.hash read-only property returns a DOMString containing a &apos;#&apos; followed by the fragment identifier of the URL. The hash is not percent encoded.">URLUtilsReadOnly/hash</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>38+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
+      <hr>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
+      <hr>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>38+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -2741,6 +2858,82 @@ does return a <a data-link-type="dfn" href="#url-port-string" id="ref-for-url-po
      <p><a data-link-type="dfn" href="#concept-basic-url-parser" id="ref-for-concept-basic-url-parser①④">Basic URL parse</a> <var>input</var> with <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this④⑨">this</a>’s <a data-link-type="dfn" href="#concept-url-url" id="ref-for-concept-url-url④⓪">URL</a> as <a data-link-type="dfn" href="#basic-url-parser-url" id="ref-for-basic-url-parser-url⑥"><i>url</i></a> and <a data-link-type="dfn" href="#fragment-state" id="ref-for-fragment-state⑦">fragment state</a> as <a data-link-type="dfn" href="#basic-url-parser-state-override" id="ref-for-basic-url-parser-state-override⑥"><i>state override</i></a>. </p>
    </ol>
    <h3 class="heading settled" data-level="6.2" id="interface-urlsearchparams"><span class="secno">6.2. </span><span class="content">URLSearchParams class</span><a class="self-link" href="#interface-urlsearchparams"></a></h3>
+   <div class="mdn-anno wrapped after">
+    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/entries" title="The entries() method of the URLSearchParams interface returns an iterator allowing iteration through all key/value pairs contained in this object. The key and value of each pair are USVString objects.">URLSearchParams/entries</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>44+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>49+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>36+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>17+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>44+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>49+</span></span><span class="webview_android yes"><span>Android WebView</span><span>49+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>36+</span></span>
+      <hr>
+      <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/forEach" title="The forEach() method of the URLSearchParams interface allows iteration through all values contained in this object via a callback function.">URLSearchParams/forEach</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>44+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>49+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>36+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>17+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>44+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>49+</span></span><span class="webview_android yes"><span>Android WebView</span><span>49+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>36+</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/keys" title="The keys() method of the URLSearchParams interface returns an iterator allowing iteration through all keys contained in this object. The keys are USVString objects.">URLSearchParams/keys</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>44+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>49+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>36+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>17+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>44+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>49+</span></span><span class="webview_android yes"><span>Android WebView</span><span>49+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>36+</span></span>
+      <hr>
+      <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/toString" title="The toString() method of the URLSearchParams interface returns a query string suitable for use in a URL.">URLSearchParams/toString</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>29+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>49+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>36+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>17+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>29+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>49+</span></span><span class="webview_android yes"><span>Android WebView</span><span>49+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>36+</span></span>
+      <hr>
+      <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/values" title="The values() method of the URLsearchParams interface returns an iterator allowing iteration through all values contained in this object. The values are USVString objects.">URLSearchParams/values</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>44+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>49+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>36+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>17+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>44+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>49+</span></span><span class="webview_android yes"><span>Android WebView</span><span>49+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>36+</span></span>
+      <hr>
+      <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
+     </div>
+    </div>
+   </div>
    <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
     <div class="feature">
@@ -3042,24 +3235,6 @@ sorted<c- p>.</c->sort<c- p>()</c-></code></pre>
    <hr>
    <p>The <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over" id="ref-for-dfn-value-pairs-to-iterate-over">value pairs to iterate over</a> are <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this⑥⓪">this</a>’s <a data-link-type="dfn" href="#concept-urlsearchparams-list" id="ref-for-concept-urlsearchparams-list①⑤">list</a>’s
 name-value pairs with the key being the name and the value being the value. </p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/toString" title="The toString() method of the URLSearchParams interface returns a query string suitable for use in a URL.">URLSearchParams/toString</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>29+</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>49+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>36+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>17+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>29+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>49+</span></span><span class="webview_android yes"><span>Android WebView</span><span>49+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>36+</span></span>
-      <hr>
-      <span class="nodejs yes"><span>Node.js</span><span>Yes</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <dfn class="dfn-paneled" data-dfn-for="URLSearchParams" data-dfn-type="dfn" data-lt="stringificationbehavior" data-noexport id="urlsearchparams-stringification-behavior">stringification behavior</dfn> steps are to return the <a data-link-type="dfn" href="#concept-urlencoded-serializer" id="ref-for-concept-urlencoded-serializer①">serialization</a> of <a data-link-type="dfn" href="https://heycam.github.io/webidl/#this" id="ref-for-this⑥①">this</a>’s <a data-link-type="dfn" href="#concept-urlsearchparams-list" id="ref-for-concept-urlsearchparams-list①⑥">list</a>. </p>
    <h3 class="heading settled" data-level="6.3" id="url-apis-elsewhere"><span class="secno">6.3. </span><span class="content">URL APIs elsewhere</span><a class="self-link" href="#url-apis-elsewhere"></a></h3>
    <p>A standard that exposes <a data-link-type="dfn" href="#concept-url" id="ref-for-concept-url⑥⑥">URLs</a>, should expose the <a data-link-type="dfn" href="#concept-url" id="ref-for-concept-url⑥⑦">URL</a> as a string (by <a data-link-type="dfn" href="#concept-url-serializer" id="ref-for-concept-url-serializer⑨">serializing</a> an internal <a data-link-type="dfn" href="#concept-url" id="ref-for-concept-url⑥⑧">URL</a>). A standard should not expose a <a data-link-type="dfn" href="#concept-url" id="ref-for-concept-url⑥⑨">URL</a> using a <code class="idl"><a data-link-type="idl" href="#url" id="ref-for-url⑦">URL</a></code> object. <code class="idl"><a data-link-type="idl" href="#url" id="ref-for-url⑧">URL</a></code> objects are meant for <a data-link-type="dfn" href="#concept-url" id="ref-for-concept-url⑦⓪">URL</a> manipulation. In IDL the USVString type should be used. </p>
@@ -4018,7 +4193,7 @@ if ("serviceWorker" in navigator) {
      <li><span class="dfn-paneled" id="term-for-ToUnicode">ToUnicode</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
      <li><span class="dfn-paneled" id="term-for-LegacyWindowAlias">LegacyWindowAlias</span>
@@ -4061,11 +4236,13 @@ if ("serviceWorker" in navigator) {
    <dd>Mark Davis; Michel Suignard. <a href="https://www.unicode.org/reports/tr46/tr46-25.html">Unicode IDNA Compatibility Processing</a>. 6 February 2020. Unicode Technical Standard #46. URL: <a href="https://www.unicode.org/reports/tr46/tr46-25.html">https://www.unicode.org/reports/tr46/tr46-25.html</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
    <dt id="biblio-ecma-262">[ECMA-262]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-idnfaq">[IDNFAQ]
    <dd><a href="https://unicode.org/faq/idn.html">Internationalized Domain Names (IDN) FAQ</a>. URL: <a href="https://unicode.org/faq/idn.html">https://unicode.org/faq/idn.html</a>
    <dt id="biblio-rfc1034">[RFC1034]

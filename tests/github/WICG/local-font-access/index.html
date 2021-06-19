@@ -989,7 +989,7 @@ includeLocalFontsButton<c- p>.</c->onclick <c- o>=</c-> <c- k>async</c-> <c- a>f
          <li data-md>
           <p>Let <var>permission</var> be the result of <a data-link-type="dfn" href="https://w3c.github.io/permissions/#request-permission-to-use" id="ref-for-request-permission-to-use">requesting permission to use</a> <code class="idl"><a data-link-type="idl" href="#dom-permissionname-font-access" id="ref-for-dom-permissionname-font-access">"font-access"</a></code>.</p>
          <li data-md>
-          <p>If <var>permission</var> is not <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/permissions/#dom-permissionstate-granted" id="ref-for-dom-permissionstate-granted">"granted"</a></code>, then <a data-link-type="dfn" href="https://heycam.github.io/webidl/#reject" id="ref-for-reject①">reject</a> <var>promise</var> with a "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#notallowederror" id="ref-for-notallowederror">NotAllowedError</a></code>" <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-DOMException" id="ref-for-idl-DOMException">DOMException</a></code>, and abort these steps.</p>
+          <p>If <var>permission</var> is not <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/deviceorientation/#dom-permissionstate-granted" id="ref-for-dom-permissionstate-granted">"granted"</a></code>, then <a data-link-type="dfn" href="https://heycam.github.io/webidl/#reject" id="ref-for-reject①">reject</a> <var>promise</var> with a "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#notallowederror" id="ref-for-notallowederror">NotAllowedError</a></code>" <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-DOMException" id="ref-for-idl-DOMException">DOMException</a></code>, and abort these steps.</p>
          <li data-md>
           <p>Let <var>fonts</var> be <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list" id="ref-for-list①">list</a> of all local fonts on the system.</p>
         </ol>
@@ -1089,7 +1089,7 @@ includeLocalFontsButton<c- p>.</c->onclick <c- o>=</c-> <c- k>async</c-> <c- a>f
    <p class="issue" id="issue-85d2bf43"><a class="self-link" href="#issue-85d2bf43"></a> Document internationalization consideration, e.g. string localization</p>
    <h3 class="heading settled" data-level="7.1" id="i18n-names"><span class="secno">7.1. </span><span class="content">Font Names</span><a class="self-link" href="#i18n-names"></a></h3>
    <p>The `<code>name</code>` table in OpenType <a data-link-type="biblio" href="#biblio-opentype">[OPENTYPE]</a> fonts allows names (family, subfamily, etc) to have multilingual strings, using either platform-specific numeric language identifiers or language-tag strings conforming to <a data-link-type="biblio" href="#biblio-bcp47">[BCP47]</a>. For example, a font could have family name strings defined for both `<code>en</code>` and `<code>zh-Hant-HK</code>`.</p>
-   <p>The <code class="idl"><a data-link-type="idl" href="#fontmetadata" id="ref-for-fontmetadata⑥">FontMetadata</a></code> properties <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-postscriptname" id="ref-for-dom-fontmetadata-postscriptname③">postscriptName</a></code>, <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-fullname" id="ref-for-dom-fontmetadata-fullname②">fullName</a></code>, <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-family" id="ref-for-dom-fontmetadata-family②">family</a></code>, and <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-style" id="ref-for-dom-fontmetadata-style②">style</a></code> are provided by this API simply as strings, using the `<code>en</code>` locale. This matches the behavior of the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-font-loading-3/#fontface" id="ref-for-fontface">FontFace</a></code> <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-font-loading-3/#dom-fontface-family" id="ref-for-dom-fontface-family">family</a></code> property.</p>
+   <p>The <code class="idl"><a data-link-type="idl" href="#fontmetadata" id="ref-for-fontmetadata⑥">FontMetadata</a></code> properties <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-postscriptname" id="ref-for-dom-fontmetadata-postscriptname③">postscriptName</a></code>, <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-fullname" id="ref-for-dom-fontmetadata-fullname②">fullName</a></code>, <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-family" id="ref-for-dom-fontmetadata-family②">family</a></code>, and <code class="idl"><a data-link-type="idl" href="#dom-fontmetadata-style" id="ref-for-dom-fontmetadata-style②">style</a></code> are provided by this API simply as strings, using the `<code>en</code>` locale. This matches the behavior of the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-font-loading/#fontface" id="ref-for-fontface">FontFace</a></code> <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-font-loading/#dom-fontface-family" id="ref-for-dom-fontface-family">family</a></code> property.</p>
    <p class="issue" id="issue-5dc0994a"><a class="self-link" href="#issue-5dc0994a"></a> The above does not match the spec/implementation. Resolve the ambiguity.</p>
    <p>Web applications that need to provide names in other languages can request and parse the `<code>name</code>` table directly.</p>
    <p class="issue" id="issue-656971e2"><a class="self-link" href="#issue-656971e2"></a> Should we define an option to the <code class="idl"><a data-link-type="idl" href="#dom-fontmanager-query" id="ref-for-dom-fontmanager-query②">query()</a></code> method to specify the desired language for strings (e.g. <code>{lang: 'zh'}</code>), falling back to `<code>en</code>` if not present?</p>
@@ -1210,13 +1210,13 @@ Jake Archibald</p>
    <li><a href="#font-table-tag">tag</a><span>, in §4.2</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-fontface">
-   <a href="https://drafts.csswg.org/css-font-loading-3/#fontface">https://drafts.csswg.org/css-font-loading-3/#fontface</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-font-loading/#fontface">https://drafts.csswg.org/css-font-loading/#fontface</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fontface">7.1. Font Names</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-fontface-family">
-   <a href="https://drafts.csswg.org/css-font-loading-3/#dom-fontface-family">https://drafts.csswg.org/css-font-loading-3/#dom-fontface-family</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-font-loading/#dom-fontface-family">https://drafts.csswg.org/css-font-loading/#dom-fontface-family</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-fontface-family">7.1. Font Names</a>
    </ul>
@@ -1332,7 +1332,7 @@ Jake Archibald</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-permissionstate-granted">
-   <a href="https://w3c.github.io/permissions/#dom-permissionstate-granted">https://w3c.github.io/permissions/#dom-permissionstate-granted</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/deviceorientation/#dom-permissionstate-granted">https://w3c.github.io/deviceorientation/#dom-permissionstate-granted</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-permissionstate-granted">6.1. Font manager</a>
    </ul>
@@ -1496,14 +1496,18 @@ Jake Archibald</p>
      <li><span class="dfn-paneled" id="term-for-list-sort-in-ascending-order">sort in ascending order</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[permissions]</a> defines the following terms:
+    <a data-link-type="biblio">[orientation-event]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dom-permissionstate-granted">"granted"</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[permissions]</a> defines the following terms:
+    <ul>
      <li><span class="dfn-paneled" id="term-for-powerful-feature">powerful feature</span>
      <li><span class="dfn-paneled" id="term-for-request-permission-to-use">requesting permission to use</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-ByteString">ByteString</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
@@ -1530,21 +1534,23 @@ Jake Archibald</p>
    <dt id="biblio-css-font-loading-3">[CSS-FONT-LOADING-3]
    <dd>Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-font-loading-3/">CSS Font Loading Module Level 3</a>. 22 May 2014. WD. URL: <a href="https://www.w3.org/TR/css-font-loading-3/">https://www.w3.org/TR/css-font-loading-3/</a>
    <dt id="biblio-fileapi">[FileAPI]
-   <dd>Marijn Kruisselbrink; Arun Ranganathan. <a href="https://www.w3.org/TR/FileAPI/">File API</a>. 4 June 2021. WD. URL: <a href="https://www.w3.org/TR/FileAPI/">https://www.w3.org/TR/FileAPI/</a>
+   <dd>Marijn Kruisselbrink; Arun Ranganathan. <a href="https://www.w3.org/TR/FileAPI/">File API</a>. 11 September 2019. WD. URL: <a href="https://www.w3.org/TR/FileAPI/">https://www.w3.org/TR/FileAPI/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-infra">[INFRA]
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
    <dt id="biblio-opentype">[OPENTYPE]
    <dd><a href="http://www.microsoft.com/typography/otspec/default.htm">OpenType specification</a>. URL: <a href="http://www.microsoft.com/typography/otspec/default.htm">http://www.microsoft.com/typography/otspec/default.htm</a>
+   <dt id="biblio-orientation-event">[ORIENTATION-EVENT]
+   <dd>Rich Tibbett; et al. <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a>. 16 April 2019. WD. URL: <a href="https://www.w3.org/TR/orientation-event/">https://www.w3.org/TR/orientation-event/</a>
    <dt id="biblio-permissions">[PERMISSIONS]
-   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 15 June 2021. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
+   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 20 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-sfnt">[SFNT]
    <dd><a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:14496:-22:ed-4:v1:en">Spline/Scalable font format</a>. January 2019. URL: <a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:14496:-22:ed-4:v1:en">https://www.iso.org/obp/ui/#iso:std:iso-iec:14496:-22:ed-4:v1:en</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

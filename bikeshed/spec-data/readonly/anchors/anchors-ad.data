@@ -313,8 +313,8 @@ mask-composite
 -
 add
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-add
@@ -469,8 +469,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#add-a-vcard-line
 -
 add an entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#add-an-entry
@@ -480,8 +480,8 @@ blob url store
 -
 add an entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#add-an-entry
@@ -491,8 +491,8 @@ blob url store
 -
 add an entry to the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#add-an-entry
@@ -502,8 +502,8 @@ blob url store
 -
 add an entry to the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#add-an-entry
@@ -647,8 +647,8 @@ ExtendableEvent
 -
 add map elements from an iterable
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#add-map-elements-from-iterable
@@ -677,8 +677,8 @@ https://w3c.github.io/mediacapture-automation/#add-mock-microphone
 -
 add or put
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#add-or-put
@@ -687,8 +687,8 @@ https://w3c.github.io/IndexedDB/#add-or-put
 -
 add or put
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#add-or-put
@@ -697,8 +697,8 @@ https://www.w3.org/TR/IndexedDB-3/#add-or-put
 -
 add the entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#add-an-entry
@@ -708,8 +708,8 @@ blob url store
 -
 add the entry
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#add-an-entry
@@ -719,8 +719,8 @@ blob url store
 -
 add the entry to the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#add-an-entry
@@ -730,8 +730,8 @@ blob url store
 -
 add the entry to the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#add-an-entry
@@ -967,8 +967,8 @@ HighlightsRegister
 -
 add(value)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-add
@@ -978,8 +978,8 @@ IDBObjectStore
 -
 add(value)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-add
@@ -989,8 +989,8 @@ IDBObjectStore
 -
 add(value, key)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-add
@@ -1000,8 +1000,8 @@ IDBObjectStore
 -
 add(value, key)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-add
@@ -1698,8 +1698,8 @@ https://www.w3.org/TR/webdriver2/#dfn-adding-a-cookie
 -
 adding an entry to the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#add-an-entry
@@ -1709,8 +1709,8 @@ blob url store
 -
 adding an entry to the blob url store
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#add-an-entry
@@ -1827,8 +1827,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-n-additional-name
 -
 additionalData
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesGcmParams-additionalData
@@ -1860,8 +1860,8 @@ PaymentDetailsModifier
 -
 additionaldata
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesGcmParams-additionalData
@@ -2339,8 +2339,8 @@ textarea/autocomplete
 -
 address-of
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#address-of
@@ -2349,8 +2349,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#address-of
 -
 address-of
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#address-of
@@ -2458,8 +2458,8 @@ GPUSamplerDescriptor
 -
 addressable character
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermAddressableCharacter
@@ -2468,8 +2468,8 @@ https://svgwg.org/svg2-draft/text.html#TermAddressableCharacter
 -
 addressable character
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TermAddressableCharacter
@@ -2573,8 +2573,8 @@ https://www.w3.org/TR/webrtc-identity/#dfn-addtrack
 -
 adjoining
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#adjoining-margins
@@ -2583,8 +2583,8 @@ https://drafts.csswg.org/css2/#adjoining-margins
 -
 adjoining
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#adjoining-margins
@@ -2593,8 +2593,8 @@ https://drafts.csswg.org/css2/#adjoining-margins
 -
 adjoining margins
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#adjoining-margins
@@ -2603,8 +2603,8 @@ https://drafts.csswg.org/css2/#adjoining-margins
 -
 adjoining margins
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#adjoining-margins
@@ -2861,8 +2861,8 @@ https://www.w3.org/TR/css-values-4/#length-advance-measure
 -
 advance(count)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursor-advance
@@ -2872,8 +2872,8 @@ IDBCursor
 -
 advance(count)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-advance

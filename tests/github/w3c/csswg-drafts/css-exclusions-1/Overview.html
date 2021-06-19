@@ -753,7 +753,7 @@ on screen, on paper, etc.
       an <span>exclusion area</span> for other boxes. The <a class="property" data-link-type="propdesc" href="#propdef-wrap-flow" id="ref-for-propdef-wrap-flow">wrap-flow</a> property is
       used to make an element’s generated box an exclusion box. An exclusion box
       contributes its <span>exclusion area</span> to its <a href="https://www.w3.org/TR/CSS2/visudet.html#containing-block-details">containing block’s</a> <span>wrapping context</span>. An element with a <span class="css">float</span> computed value other
-      than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-page-floats-3/#valdef-float-none" id="ref-for-valdef-float-none">none</a> does not become an exclusion. 
+      than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-page-floats/#valdef-float-none" id="ref-for-valdef-float-none">none</a> does not become an exclusion. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="exclusion-area">Exclusion area</dfn> 
     <dd>
       The area used for excluding inline flow content around an exclusion box. The <span>exclusion area</span> is equivalent to the <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#border-box" id="ref-for-border-box">border box</a> for an exclusion box. 
@@ -816,7 +816,7 @@ on screen, on paper, etc.
       <td>N/A 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>as specified except for element’s whose <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a> computed value is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-page-floats-3/#valdef-float-none" id="ref-for-valdef-float-none①">none</a>, in which case the computed value is <a class="css" data-link-type="maybe" href="#valdef-wrap-flow-auto" id="ref-for-valdef-wrap-flow-auto②">auto</a>. 
+      <td>as specified except for element’s whose <a class="property" data-link-type="propdesc">float</a> computed value is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-page-floats/#valdef-float-none" id="ref-for-valdef-float-none①">none</a>, in which case the computed value is <a class="css" data-link-type="maybe" href="#valdef-wrap-flow-auto" id="ref-for-valdef-wrap-flow-auto②">auto</a>. 
      <tr>
       <th>Canonical order:
       <td>per grammar 
@@ -826,13 +826,13 @@ on screen, on paper, etc.
     <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-auto">auto</dfn> 
     <dd> No exclusion is created. Inline flow content interacts with the element
         as usual. In particular, if the element is a <a href="https://www.w3.org/TR/CSS2/visuren.html#floats">float</a> (see <a data-link-type="biblio" href="#biblio-css21">[CSS21]</a>), the behavior is unchanged. 
-    <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-both">both</dfn>
+    <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-both">both</dfn> 
     <dd> Inline flow content can flow on all sides of the exclusion. 
-    <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-start">start</dfn>
+    <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-start">start</dfn> 
     <dd> Inline flow content can flow around the start edge of the <span>exclusion
         area</span> but must leave the area next to the end edge of the exclusion
         empty. 
-    <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-end">end</dfn>
+    <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-end">end</dfn> 
     <dd> Inline flow content can flow around the end edge of the <span>exclusion area</span> but must leave the area next to the start edge
         of the exclusion empty. 
     <dt><dfn class="dfn-paneled css" data-dfn-for="wrap-flow" data-dfn-type="value" data-export id="valdef-wrap-flow-minimum">minimum</dfn> 
@@ -951,7 +951,7 @@ on screen, on paper, etc.
   containing block of the exclusions is affected. To stop the effect of exclusions
   defined outside an element, the <a class="property" data-link-type="propdesc" href="#propdef-wrap-through" id="ref-for-propdef-wrap-through①">wrap-through</a> property can be used
   (see the <a href="#propagation-of-exclusions">propagation of exclusions</a> section below).</p>
-   <p>As a reminder, for exclusions with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a>:<a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-fixed" id="ref-for-valdef-position-fixed">fixed</a>, the containing block
+   <p>As a reminder, for exclusions with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a>:<a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-fixed" id="ref-for-valdef-position-fixed">fixed</a>, the containing block
   is established by the root element.</p>
    <h3 class="heading settled" data-level="3.3" id="propagation-of-exclusions"><span class="secno">3.3. </span><span class="content"> Propagation of Exclusions</span><a class="self-link" href="#propagation-of-exclusions"></a></h3>
    <p>By default, an element inherits its parent <a data-link-type="dfn" href="#wrapping-context" id="ref-for-wrapping-context②">wrapping context</a>. In other
@@ -1167,7 +1167,7 @@ on screen, on paper, etc.
    <p>Step 2-A yields a position and size for all <a data-link-type="dfn" href="#exclusion-box" id="ref-for-exclusion-box②">exclusion boxes</a> in the <a data-link-type="dfn" href="#wrapping-context" id="ref-for-wrapping-context①②">wrapping context</a>. Each exclusion box is processed in turn, starting from
   the top-most, and each <a data-link-type="dfn" href="#exclusion-area" id="ref-for-exclusion-area⑤">exclusion area</a> is computed and contributed to the <a href="https://www.w3.org/TR/CSS2/visudet.html#containing-block-details">containing
   block’s</a> <span id="ref-for-wrapping-context①③">wrapping context</span>.</p>
-   <p>Scrolling is ignored in this step when resolving the position and size of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position①">position</a>: <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-fixed" id="ref-for-valdef-position-fixed①">fixed</a> <a data-link-type="dfn" href="#exclusion-box" id="ref-for-exclusion-box③">exclusion boxes</a>.</p>
+   <p>Scrolling is ignored in this step when resolving the position and size of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position①">position</a>: <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-fixed" id="ref-for-valdef-position-fixed①">fixed</a> <a data-link-type="dfn" href="#exclusion-box" id="ref-for-exclusion-box③">exclusion boxes</a>.</p>
    <p>Once the <a href="https://www.w3.org/TR/CSS2/visudet.html#containing-block-details">containing block’s</a> <a data-link-type="dfn" href="#wrapping-context" id="ref-for-wrapping-context①④">wrapping context</a> is computed, all <a data-link-type="dfn" href="#exclusion-box" id="ref-for-exclusion-box④">exclusion boxes</a> in
   that <span id="ref-for-wrapping-context①⑤">wrapping context</span> are removed from the normal flow.</p>
    <h4 class="heading settled" data-level="3.5.5" id="step-2-B"><span class="secno">3.5.5. </span><span class="content"> Step 2-B: lay out containing block applying wrapping</span><a class="self-link" href="#step-2-B"></a></h4>
@@ -1331,7 +1331,7 @@ wrapping around the <a data-link-type="dfn" href="#wrapping-context" id="ref-for
    <ul>
     <li><strong>scope</strong>. While floats apply to content that follows in the
     document, exclusions apply to content in their containing block. 
-    <li><strong>positioning</strong>. Floats are part of the inline flow and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float①">float</a> on the line box. Authors can control how the floats move on the line
+    <li><strong>positioning</strong>. Floats are part of the inline flow and <a class="property" data-link-type="propdesc">float</a> on the line box. Authors can control how the floats move on the line
     box, to the right or to the left. By contrast, exclusions can be positioned
     using any positioning scheme such as grid layout (<a data-link-type="biblio" href="#biblio-css3-grid-layout">[CSS3-GRID-LAYOUT]</a>),
     flexible box (<a data-link-type="biblio" href="#biblio-css3-flexbox">[CSS3-FLEXBOX]</a>) or any other CSS positioning scheme. 
@@ -1515,7 +1515,7 @@ Propagation of Exclusions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-float-none">
-   <a href="https://drafts.csswg.org/css-page-floats-3/#valdef-float-none">https://drafts.csswg.org/css-page-floats-3/#valdef-float-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-page-floats/#valdef-float-none">https://drafts.csswg.org/css-page-floats/#valdef-float-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-float-none">2. 
 Terminology</a>
@@ -1524,7 +1524,7 @@ The wrap-flow property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-position-fixed">
-   <a href="https://drafts.csswg.org/css-position-3/#valdef-position-fixed">https://drafts.csswg.org/css-position-3/#valdef-position-fixed</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#valdef-position-fixed">https://drafts.csswg.org/css-position/#valdef-position-fixed</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-position-fixed">3.2. 
 Scope and effect of exclusions</a>
@@ -1533,7 +1533,7 @@ Step 2-A: resolve the position and size of exclusion boxes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">3.2. 
 Scope and effect of exclusions</a>
@@ -1555,15 +1555,6 @@ Value Definitions</a>
 The wrap-flow property</a> <a href="#ref-for-comb-one①">(2)</a> <a href="#ref-for-comb-one②">(3)</a> <a href="#ref-for-comb-one③">(4)</a> <a href="#ref-for-comb-one④">(5)</a> <a href="#ref-for-comb-one⑤">(6)</a>
     <li><a href="#ref-for-comb-one⑥">3.3.1. 
 The wrap-through Property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">3.1.1. 
-The wrap-flow property</a>
-    <li><a href="#ref-for-propdef-float①">3.6.2. 
-Differences</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-z-index">
@@ -1607,7 +1598,6 @@ Exclusions order</a> <a href="#ref-for-propdef-z-index②">(2)</a>
    <li>
     <a data-link-type="biblio">[CSS21]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
      <li><span class="dfn-paneled" id="term-for-propdef-z-index">z-index</span>
     </ul>
   </ul>
@@ -1813,21 +1803,21 @@ The wrap-flow property</a> <a href="#ref-for-valdef-wrap-flow-auto③">(2)</a>
   <aside class="dfn-panel" data-for="valdef-wrap-flow-both">
    <b><a href="#valdef-wrap-flow-both">#valdef-wrap-flow-both</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-wrap-flow-both">3.1.1.
+    <li><a href="#ref-for-valdef-wrap-flow-both">3.1.1. 
 The wrap-flow property</a> <a href="#ref-for-valdef-wrap-flow-both①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="valdef-wrap-flow-start">
    <b><a href="#valdef-wrap-flow-start">#valdef-wrap-flow-start</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-wrap-flow-start">3.1.1.
+    <li><a href="#ref-for-valdef-wrap-flow-start">3.1.1. 
 The wrap-flow property</a> <a href="#ref-for-valdef-wrap-flow-start①">(2)</a> <a href="#ref-for-valdef-wrap-flow-start②">(3)</a> <a href="#ref-for-valdef-wrap-flow-start③">(4)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="valdef-wrap-flow-end">
    <b><a href="#valdef-wrap-flow-end">#valdef-wrap-flow-end</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-wrap-flow-end">3.1.1.
+    <li><a href="#ref-for-valdef-wrap-flow-end">3.1.1. 
 The wrap-flow property</a> <a href="#ref-for-valdef-wrap-flow-end①">(2)</a>
    </ul>
   </aside>

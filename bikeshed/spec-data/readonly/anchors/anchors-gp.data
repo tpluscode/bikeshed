@@ -3159,8 +3159,8 @@ GPUUncapturedErrorEvent/constructor(type, gpuUncapturedErrorEventInitDict)
 -
 gpucomputepipeline
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#gpucomputepipeline
@@ -3169,8 +3169,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#gpucomputepipeline
 -
 gpucomputepipeline
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#gpucomputepipeline
@@ -3179,8 +3179,8 @@ https://www.w3.org/TR/WGSL/#gpucomputepipeline
 -
 gpurenderpipeline
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#gpurenderpipeline
@@ -3189,8 +3189,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#gpurenderpipeline
 -
 gpurenderpipeline
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#gpurenderpipeline

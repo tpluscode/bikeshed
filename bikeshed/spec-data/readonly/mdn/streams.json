@@ -20,12 +20,46 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -75,12 +109,46 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -130,12 +198,46 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -164,7 +266,7 @@
             "title": "ByteLengthQueuingStrategy"
         }
     ],
-    "ref-for-cqs-constructor①": [
+    "cqs-constructor": [
         {
             "engines": [
                 "blink",
@@ -185,12 +287,46 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -219,7 +355,7 @@
             "title": "CountQueuingStrategy.CountQueuingStrategy()"
         }
     ],
-    "ref-for-cqs-size②": [
+    "cqs-size": [
         {
             "engines": [
                 "blink",
@@ -240,12 +376,46 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -295,12 +465,46 @@
                 "edge": {
                     "version_added": "16"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -329,7 +533,7 @@
             "title": "CountQueuingStrategy"
         }
     ],
-    "ref-for-rbs-controller-byob-request②": [
+    "rbs-controller-byob-request": [
         {
             "engines": [
                 "blink"
@@ -382,7 +586,7 @@
             "title": "ReadableByteStreamController.byobRequest"
         }
     ],
-    "ref-for-rbs-controller-close①": [
+    "rbs-controller-close": [
         {
             "engines": [
                 "blink"
@@ -435,7 +639,7 @@
             "title": "ReadableByteStreamController.close()"
         }
     ],
-    "ref-for-rbs-controller-desired-size②": [
+    "rbs-controller-desired-size": [
         {
             "engines": [
                 "blink"
@@ -488,7 +692,7 @@
             "title": "ReadableByteStreamController.desiredSize"
         }
     ],
-    "ref-for-rbs-controller-enqueue①": [
+    "rbs-controller-enqueue": [
         {
             "engines": [
                 "blink"
@@ -541,7 +745,7 @@
             "title": "ReadableByteStreamController.enqueue()"
         }
     ],
-    "ref-for-rbs-controller-error①": [
+    "rbs-controller-error": [
         {
             "engines": [
                 "blink"
@@ -647,7 +851,7 @@
             "title": "ReadableByteStreamController"
         }
     ],
-    "ref-for-rs-constructor⑤": [
+    "rs-constructor": [
         {
             "engines": [
                 "blink",
@@ -668,12 +872,46 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -702,7 +940,7 @@
             "title": "ReadableStream.ReadableStream()"
         }
     ],
-    "ref-for-rs-cancel③": [
+    "rs-cancel": [
         {
             "engines": [
                 "blink",
@@ -723,12 +961,46 @@
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -757,7 +1029,7 @@
             "title": "ReadableStream.cancel()"
         }
     ],
-    "ref-for-rs-get-reader⑤": [
+    "rs-get-reader": [
         {
             "engines": [
                 "blink",
@@ -778,12 +1050,46 @@
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -812,7 +1118,7 @@
             "title": "ReadableStream.getReader()"
         }
     ],
-    "ref-for-rs-locked②": [
+    "rs-locked": [
         {
             "engines": [
                 "blink",
@@ -833,12 +1139,46 @@
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -867,7 +1207,7 @@
             "title": "ReadableStream.locked"
         }
     ],
-    "ref-for-rs-pipe-through②": [
+    "rs-pipe-through": [
         {
             "engines": [
                 "blink",
@@ -921,7 +1261,7 @@
             "title": "ReadableStream.pipeThrough()"
         }
     ],
-    "ref-for-rs-pipe-to④": [
+    "rs-pipe-to": [
         {
             "engines": [
                 "blink",
@@ -975,7 +1315,7 @@
             "title": "ReadableStream.pipeTo()"
         }
     ],
-    "ref-for-rs-tee②": [
+    "rs-tee": [
         {
             "engines": [
                 "blink",
@@ -996,12 +1336,46 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1051,12 +1425,46 @@
                 "edge": {
                     "version_added": "14"
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1085,28 +1493,25 @@
             "title": "ReadableStream"
         }
     ],
-    "ref-for-byob-reader-constructor①": [
+    "byob-reader-constructor": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "ReadableStreamBYOBReader",
             "slug": "API/ReadableStreamBYOBReader/ReadableStreamBYOBReader",
             "summary": "The ReadableStreamBYOBReader() constructor creates and returns a ReadableStreamBYOBReader object instance. ",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": false
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1130,37 +1535,34 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBReader.ReadableStreamBYOBReader()"
         }
     ],
-    "ref-for-generic-reader-cancel②": [
+    "byob-reader-cancel": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "cancel",
             "slug": "API/ReadableStreamBYOBReader/cancel",
             "summary": "The cancel() method of the ReadableStreamBYOBReader interface returns a Promise that resolves when the stream is canceled. Calling this method signals a loss of interest in the stream by a consumer.",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": false
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1184,88 +1586,34 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBReader.cancel()"
-        },
-        {
-            "engines": [
-                "gecko"
-            ],
-            "filename": "api/ReadableStreamDefaultReader.json",
-            "name": "cancel",
-            "slug": "API/ReadableStreamDefaultReader/cancel",
-            "summary": "The cancel() method of the ReadableStreamDefaultReader interface returns a Promise that resolves when the stream is canceled. Calling this method signals a loss of interest in the stream by a consumer.",
-            "support": {
-                "chrome": {
-                    "version_added": null
-                },
-                "chrome_android": {
-                    "version_added": null
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": null
-                },
-                "webview_android": {
-                    "version_added": null
-                },
-                "edge_blink": {
-                    "version_added": null
-                }
-            },
-            "title": "ReadableStreamDefaultReader.cancel()"
         }
     ],
-    "ref-for-generic-reader-closed②": [
+    "byob-reader-closed": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "closed",
             "slug": "API/ReadableStreamBYOBReader/closed",
             "summary": "The closed read-only property of the ReadableStreamBYOBReader interface returns a Promise that fulfills when the stream closes or the reader's lock is released, or rejects if the stream throws an error. This property enables you to write code that responds to an end to the streaming process.",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": false
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1289,88 +1637,34 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBReader.closed"
-        },
-        {
-            "engines": [
-                "gecko"
-            ],
-            "filename": "api/ReadableStreamDefaultReader.json",
-            "name": "closed",
-            "slug": "API/ReadableStreamDefaultReader/closed",
-            "summary": "The closed read-only property of the ReadableStreamDefaultReader interface returns a Promise that fulfills when the stream closes or the reader's lock is released, or rejects if the stream throws an error. This property enables you to write code that responds to an end to the streaming process.",
-            "support": {
-                "chrome": {
-                    "version_added": null
-                },
-                "chrome_android": {
-                    "version_added": null
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": null
-                },
-                "webview_android": {
-                    "version_added": null
-                },
-                "edge_blink": {
-                    "version_added": null
-                }
-            },
-            "title": "ReadableStreamDefaultReader.closed"
         }
     ],
-    "ref-for-byob-reader-read③": [
+    "byob-reader-read": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "read",
             "slug": "API/ReadableStreamBYOBReader/read",
             "summary": "The read() method of the ReadableStreamBYOBReader interface returns a Promise that resolves with an obect representing the next chunk in the stream's queue.",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": false
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1394,37 +1688,34 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBReader.read()"
         }
     ],
-    "ref-for-byob-reader-release-lock②": [
+    "byob-reader-release-lock": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "releaseLock",
             "slug": "API/ReadableStreamBYOBReader/releaseLock",
             "summary": "The releaseLock() method of the ReadableStreamBYOBReader interface releases the reader's lock on the stream. After the lock is released, the reader is no longer active.",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": false
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1448,10 +1739,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBReader.releaseLock()"
@@ -1459,26 +1750,23 @@
     ],
     "byob-reader-class": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBReader.json",
             "name": "ReadableStreamBYOBReader",
             "slug": "API/ReadableStreamBYOBReader",
             "summary": "The ReadableStreamBYOBReader interface of the Streams API represents a BYOB (\"bring your own buffer\") reader that can be used to read stream data supplied by the developer (e.g. a custom ReadableStream() constructor).",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
                 },
                 "firefox": {
-                    "version_added": false,
-                    "notes": "See <a href='https://bugzil.la/1604037'>bug 1604037</a>."
+                    "version_added": false
                 },
                 "firefox_android": {
                     "version_added": false
@@ -1502,30 +1790,28 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBReader"
         }
     ],
-    "ref-for-rs-byob-request-respond①": [
+    "rs-byob-request-respond": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respond",
             "slug": "API/ReadableStreamBYOBRequest/respond",
             "summary": "The error() method of the ReadableStreamBYOBRequest interface xxx",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1555,30 +1841,28 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBRequest.respond()"
         }
     ],
-    "ref-for-rs-byob-request-respond-with-new-view①": [
+    "rs-byob-request-respond-with-new-view": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "respondWithNewView",
             "slug": "API/ReadableStreamBYOBRequest/respondWithNewView",
             "summary": "The respondWithNewView() method of the ReadableStreamBYOBRequest interface xxx",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1608,30 +1892,28 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBRequest.respondWithNewView()"
         }
     ],
-    "ref-for-rs-byob-request-view①": [
+    "rs-byob-request-view": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "view",
             "slug": "API/ReadableStreamBYOBRequest/view",
             "summary": "The view getter property of the ReadableStreamBYOBRequest interface returns the current view.",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1661,10 +1943,10 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBRequest.view"
@@ -1672,19 +1954,17 @@
     ],
     "rs-byob-request-class": [
         {
-            "engines": [
-                "blink"
-            ],
+            "engines": [],
             "filename": "api/ReadableStreamBYOBRequest.json",
             "name": "ReadableStreamBYOBRequest",
             "slug": "API/ReadableStreamBYOBRequest",
             "summary": "The ReadableStreamBYOBRequest interface of the Streams API represents a pull request into a ReadableByteStreamController view.",
             "support": {
                 "chrome": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "chrome_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge": {
                     "version_added": false
@@ -1714,16 +1994,16 @@
                     "version_added": false
                 },
                 "webview_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "edge_blink": {
-                    "version_added": "89"
+                    "version_added": false
                 }
             },
             "title": "ReadableStreamBYOBRequest"
         }
     ],
-    "ref-for-rs-default-controller-close①": [
+    "rs-default-controller-close": [
         {
             "engines": [
                 "gecko"
@@ -1742,12 +2022,46 @@
                 "edge": {
                     "version_added": null
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1776,7 +2090,7 @@
             "title": "ReadableStreamDefaultController.close()"
         }
     ],
-    "ref-for-rs-default-controller-desired-size②": [
+    "rs-default-controller-desired-size": [
         {
             "engines": [
                 "gecko"
@@ -1795,12 +2109,46 @@
                 "edge": {
                     "version_added": null
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1829,7 +2177,7 @@
             "title": "ReadableStreamDefaultController.desiredSize"
         }
     ],
-    "ref-for-rs-default-controller-enqueue①": [
+    "rs-default-controller-enqueue": [
         {
             "engines": [
                 "gecko"
@@ -1848,12 +2196,46 @@
                 "edge": {
                     "version_added": null
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1901,12 +2283,46 @@
                 "edge": {
                     "version_added": null
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1955,12 +2371,46 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -1989,7 +2439,7 @@
             "title": "ReadableStreamDefaultController"
         }
     ],
-    "ref-for-default-reader-constructor①": [
+    "default-reader-constructor": [
         {
             "engines": [
                 "gecko"
@@ -2006,14 +2456,48 @@
                     "version_added": null
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": null
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -2042,7 +2526,181 @@
             "title": "ReadableStreamDefaultReader.ReadableStreamDefaultReader()"
         }
     ],
-    "ref-for-default-reader-read①": [
+    "default-reader-cancel": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/ReadableStreamDefaultReader.json",
+            "name": "cancel",
+            "slug": "API/ReadableStreamDefaultReader/cancel",
+            "summary": "The cancel() method of the ReadableStreamDefaultReader interface returns a Promise that resolves when the stream is canceled. Calling this method signals a loss of interest in the stream by a consumer.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "ReadableStreamDefaultReader.cancel()"
+        }
+    ],
+    "default-reader-closed": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/ReadableStreamDefaultReader.json",
+            "name": "closed",
+            "slug": "API/ReadableStreamDefaultReader/closed",
+            "summary": "The closed read-only property of the ReadableStreamDefaultReader interface returns a Promise that fulfills when the stream closes or the reader's lock is released, or rejects if the stream throws an error. This property enables you to write code that responds to an end to the streaming process.",
+            "support": {
+                "chrome": {
+                    "version_added": null
+                },
+                "chrome_android": {
+                    "version_added": null
+                },
+                "edge": {
+                    "version_added": null
+                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": null
+                },
+                "webview_android": {
+                    "version_added": null
+                },
+                "edge_blink": {
+                    "version_added": null
+                }
+            },
+            "title": "ReadableStreamDefaultReader.closed"
+        }
+    ],
+    "default-reader-read": [
         {
             "engines": [
                 "gecko"
@@ -2059,14 +2717,48 @@
                     "version_added": null
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": null
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -2095,7 +2787,7 @@
             "title": "ReadableStreamDefaultReader.read()"
         }
     ],
-    "ref-for-default-reader-release-lock②": [
+    "default-reader-release-lock": [
         {
             "engines": [
                 "gecko"
@@ -2112,14 +2804,48 @@
                     "version_added": null
                 },
                 "edge": {
-                    "version_added": false
+                    "version_added": null
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -2146,6 +2872,57 @@
                 }
             },
             "title": "ReadableStreamDefaultReader.releaseLock()"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/WritableStreamDefaultWriter.json",
+            "name": "releaseLock",
+            "slug": "API/WritableStreamDefaultWriter/releaseLock",
+            "summary": "The releaseLock() method of the WritableStreamDefaultWriter interface releases the writer's lock on the corresponding stream. After the lock is released, the writer is no longer active. If the associated stream is errored when the lock is released, the writer will appear errored in the same way from now on; otherwise, the writer will appear closed.",
+            "support": {
+                "chrome": {
+                    "version_added": "59"
+                },
+                "chrome_android": {
+                    "version_added": "59"
+                },
+                "edge": {
+                    "version_added": "16"
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "46"
+                },
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "7.0"
+                },
+                "webview_android": {
+                    "version_added": "59"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "WritableStreamDefaultWriter.releaseLock()"
         }
     ],
     "default-reader-class": [
@@ -2168,12 +2945,46 @@
                 "edge": {
                     "version_added": false
                 },
-                "firefox": {
-                    "version_added": "65"
-                },
-                "firefox_android": {
-                    "version_added": "65"
-                },
+                "firefox": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "firefox_android": [
+                    {
+                        "version_added": "65"
+                    },
+                    {
+                        "version_added": "57",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "dom.streams.enabled",
+                                "value_to_set": "true"
+                            },
+                            {
+                                "type": "preference",
+                                "name": "javascript.options.streams",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -2202,223 +3013,10 @@
             "title": "ReadableStreamDefaultReader"
         }
     ],
-    "dom-generictransformstream-readable": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextDecoderStream.json",
-            "name": "readable",
-            "slug": "API/TextDecoderStream/readable",
-            "summary": "The readable read-only property of the TextDecoderStream interface returns a ReadableStream.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextDecoderStream.readable"
-        },
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextEncoderStream.json",
-            "name": "readable",
-            "slug": "API/TextEncoderStream/readable",
-            "summary": "The readable read-only property of the TextEncoderStream interface returns a ReadableStream.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextEncoderStream.readable"
-        }
-    ],
-    "dom-generictransformstream-writable": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextDecoderStream.json",
-            "name": "writable",
-            "slug": "API/TextDecoderStream/writable",
-            "summary": "The writable read-only property of the TextDecoderStream interface returns a WritableStream.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextDecoderStream.writable"
-        },
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextEncoderStream.json",
-            "name": "writable",
-            "slug": "API/TextEncoderStream/writable",
-            "summary": "The writable read-only property of the TextEncoderStream interface returns a WritableStream.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextEncoderStream.writable"
-        }
-    ],
     "ts-class": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/TransformStream.json",
             "name": "TransformStream",
@@ -2450,10 +3048,10 @@
                     "version_added": "48"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "9.0"
@@ -2468,11 +3066,10 @@
             "title": "TransformStream"
         }
     ],
-    "ref-for-ws-constructor④": [
+    "ws-constructor": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStream.json",
             "name": "WritableStream",
@@ -2504,10 +3101,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2522,11 +3119,10 @@
             "title": "WritableStream.WritableStream()"
         }
     ],
-    "ref-for-ws-abort③": [
+    "ws-abort": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStream.json",
             "name": "abort",
@@ -2558,10 +3154,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2576,11 +3172,10 @@
             "title": "WritableStream.abort()"
         }
     ],
-    "ref-for-ws-get-writer①": [
+    "ws-get-writer": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStream.json",
             "name": "getWriter",
@@ -2612,10 +3207,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2630,11 +3225,10 @@
             "title": "WritableStream.getWriter()"
         }
     ],
-    "ref-for-ws-locked②": [
+    "ws-locked": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStream.json",
             "name": "locked",
@@ -2666,10 +3260,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2687,8 +3281,7 @@
     "ws-class": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStream.json",
             "name": "WritableStream",
@@ -2720,10 +3313,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2738,11 +3331,9 @@
             "title": "WritableStream"
         }
     ],
-    "ref-for-ws-default-controller-error①": [
+    "ws-default-controller-error": [
         {
-            "engines": [
-                "webkit"
-            ],
+            "engines": [],
             "filename": "api/WritableStreamDefaultController.json",
             "name": "error",
             "slug": "API/WritableStreamDefaultController/error",
@@ -2773,10 +3364,10 @@
                     "version_added": null
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": null
@@ -2794,8 +3385,7 @@
     "ws-default-controller-class": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultController.json",
             "name": "WritableStreamDefaultController",
@@ -2827,10 +3417,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2845,7 +3435,7 @@
             "title": "WritableStreamDefaultController"
         }
     ],
-    "ref-for-default-writer-constructor①": [
+    "default-writer-constructor": [
         {
             "engines": [
                 "blink"
@@ -2898,11 +3488,10 @@
             "title": "WritableStreamDefaultWriter.WritableStreamDefaultWriter()"
         }
     ],
-    "ref-for-default-writer-abort④": [
+    "default-writer-abort": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "abort",
@@ -2934,10 +3523,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -2952,11 +3541,10 @@
             "title": "WritableStreamDefaultWriter.abort()"
         }
     ],
-    "ref-for-default-writer-close⑦": [
+    "default-writer-close": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "close",
@@ -2988,10 +3576,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -3006,11 +3594,10 @@
             "title": "WritableStreamDefaultWriter.close()"
         }
     ],
-    "ref-for-default-writer-closed②": [
+    "default-writer-closed": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "closed",
@@ -3042,10 +3629,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -3060,11 +3647,10 @@
             "title": "WritableStreamDefaultWriter.closed"
         }
     ],
-    "ref-for-default-writer-desired-size⑥": [
+    "default-writer-desired-size": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "desiredSize",
@@ -3096,10 +3682,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -3114,11 +3700,10 @@
             "title": "WritableStreamDefaultWriter.desiredSize"
         }
     ],
-    "ref-for-default-writer-ready⑨": [
+    "default-writer-ready": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "ready",
@@ -3150,10 +3735,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -3168,65 +3753,10 @@
             "title": "WritableStreamDefaultWriter.ready"
         }
     ],
-    "ref-for-default-writer-release-lock②": [
+    "default-writer-write": [
         {
             "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/WritableStreamDefaultWriter.json",
-            "name": "releaseLock",
-            "slug": "API/WritableStreamDefaultWriter/releaseLock",
-            "summary": "The releaseLock() method of the WritableStreamDefaultWriter interface releases the writer's lock on the corresponding stream. After the lock is released, the writer is no longer active. If the associated stream is errored when the lock is released, the writer will appear errored in the same way from now on; otherwise, the writer will appear closed.",
-            "support": {
-                "chrome": {
-                    "version_added": "59"
-                },
-                "chrome_android": {
-                    "version_added": "59"
-                },
-                "edge": {
-                    "version_added": "16"
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "46"
-                },
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "7.0"
-                },
-                "webview_android": {
-                    "version_added": "59"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "WritableStreamDefaultWriter.releaseLock()"
-        }
-    ],
-    "ref-for-default-writer-write①②": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "write",
@@ -3258,10 +3788,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"
@@ -3279,8 +3809,7 @@
     "default-writer-class": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/WritableStreamDefaultWriter.json",
             "name": "WritableStreamDefaultWriter",
@@ -3312,10 +3841,10 @@
                     "version_added": "43"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "7.0"

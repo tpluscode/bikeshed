@@ -1,14 +1,14 @@
 {
  "notes": "",
  "support": {
-  "Android Browser": "n 91",
+  "Android Browser": "n 89",
   "Baidu Browser": "n 7.12",
   "Blackberry Browser": "n 10",
   "Chrome": "y 61",
-  "Chrome for Android": "y 91",
+  "Chrome for Android": "y 89",
   "Edge": "y 79",
-  "Firefox": "n 91",
-  "Firefox for Android": "n 89",
+  "Firefox": "n 89",
+  "Firefox for Android": "n 86",
   "IE": "n 11",
   "IE Mobile": "n 11",
   "KaiOS Browser": "n 2.5",
@@ -17,7 +17,7 @@
   "Opera Mobile": "n 62",
   "QQ Browser": "y 10.4",
   "Safari": "n TP",
-  "Safari on iOS": "n 14.5",
+  "Safari on iOS": "n 14.0",
   "Samsung Internet": "y 8.2",
   "UC Browser for Android": "n 12.12"
  },

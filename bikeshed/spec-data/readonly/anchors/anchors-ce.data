@@ -118,8 +118,8 @@ https://www.w3.org/TR/webrtc/#dfn-certificate
 -
 [cereactions]
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-cereactions
@@ -158,8 +158,8 @@ https://www.w3.org/TR/remote-playback/#dfn-cereactions
 -
 ceiling expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#ceiling-expression
@@ -168,8 +168,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#ceiling-expression
 -
 ceiling expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#ceiling-expression
@@ -677,8 +677,8 @@ perspective-origin
 -
 center
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-background-position-center
@@ -688,8 +688,8 @@ background-position
 -
 center
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-align-center
@@ -699,8 +699,8 @@ text-align
 -
 center
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-background-position-center
@@ -710,8 +710,8 @@ background-position
 -
 center
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-align-center
@@ -1024,8 +1024,8 @@ XRMediaEquirectLayerInit
 -
 cereactions
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-cereactions

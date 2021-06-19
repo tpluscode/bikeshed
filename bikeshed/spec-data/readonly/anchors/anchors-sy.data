@@ -102,8 +102,8 @@ https://www.w3.org/TR/css-color-4/#typedef-system-color
 -
 SYNTAX_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-syntax_err
@@ -154,8 +154,8 @@ https://wicg.github.io/background-sync/spec/#syncmanager
 -
 SyntaxError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#syntaxerror
@@ -212,8 +212,8 @@ DOMMatrix/skewYSelf()
 -
 symbol
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#elementdef-symbol
@@ -222,8 +222,8 @@ https://svgwg.org/svg2-draft/struct.html#elementdef-symbol
 -
 symbol
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#elementdef-symbol
@@ -232,8 +232,8 @@ https://www.w3.org/TR/SVG2/struct.html#elementdef-symbol
 -
 symbol
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-symbol
@@ -495,8 +495,8 @@ RTCEncodedAudioFrameMetadata
 -
 synchronized
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermSynchronize
@@ -505,8 +505,8 @@ https://svgwg.org/svg2-draft/types.html#TermSynchronize
 -
 synchronized
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#TermSynchronizeList
@@ -515,8 +515,8 @@ https://svgwg.org/svg2-draft/types.html#TermSynchronizeList
 -
 synchronized
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermSynchronize
@@ -525,8 +525,8 @@ https://www.w3.org/TR/SVG2/types.html#TermSynchronize
 -
 synchronized
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#TermSynchronizeList
@@ -555,8 +555,8 @@ https://xhr.spec.whatwg.org/#synchronous-flag
 -
 synchronous read method
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#read-method-sync
@@ -565,8 +565,8 @@ https://w3c.github.io/FileAPI/#read-method-sync
 -
 synchronous read method
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#read-method-sync
@@ -751,8 +751,8 @@ https://www.w3.org/TR/css-properties-values-api-1/#syntax-string
 -
 syntax_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-syntax_err
@@ -761,8 +761,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-syntax_err
 -
 syntaxerror
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-syntaxerror
@@ -771,8 +771,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-syntaxerror
 -
 syntaxerror
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-SyntaxError
@@ -801,8 +801,8 @@ https://www.w3.org/TR/webdriver2/#dfn-syntaxerror
 -
 syntaxerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#syntaxerror
@@ -1050,8 +1050,8 @@ top-level browsing context
 -
 system fonts
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#system-fonts
@@ -1060,8 +1060,8 @@ https://drafts.csswg.org/css2/#system-fonts
 -
 system fonts
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#system-fonts
@@ -1157,8 +1157,8 @@ DocumentType
 -
 systemLanguage
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGTests__systemLanguage
@@ -1168,8 +1168,8 @@ SVGTests
 -
 systemLanguage
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGTests__systemLanguage
@@ -1179,8 +1179,8 @@ SVGTests
 -
 systemid
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-systemid
@@ -1189,8 +1189,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-systemid
 -
 systemlanguage
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#SystemLanguageAttribute
@@ -1223,8 +1223,8 @@ use
 -
 systemlanguage
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#SystemLanguageAttribute

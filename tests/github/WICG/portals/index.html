@@ -1596,7 +1596,7 @@ of the user); or</p>
      </ul>
     </details>
     <h3 class="heading settled" data-level="4.4" id="patch-navigation"><span class="secno">4.4. </span><span class="content">Navigation</span><a class="self-link" href="#patch-navigation"></a></h3>
-    <p>Patch the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate②">navigate</a> algorithm to prevent certain navigations in a
+    <p>Patch the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate">navigate</a> algorithm to prevent certain navigations in a
   portal as follows:</p>
     <div class="algorithm" data-algorithm="process a navigate response patch">
       In <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#process-a-navigate-response" id="ref-for-process-a-navigate-response">process a navigate response</a>, append the following after the step which
@@ -1729,7 +1729,7 @@ this directive’s <a data-link-type="dfn" href="https://w3c.github.io/webappsec
     <h3 class="heading settled" data-level="5.2" id="fetch-metadata"><span class="secno">5.2. </span><span class="content">Fetch Metadata Request Headers</span><a class="self-link" href="#fetch-metadata"></a></h3>
     <p>This specification integrates with <a data-link-type="biblio" href="#biblio-fetch-metadata">[FETCH-METADATA]</a> as follows.</p>
     <section class="algorithm" data-algorithm="fetch-metadata-set-mode">
-      The algorithm to <a href="https://www.w3.org/TR/fetch-metadata/#abstract-opdef-set-mode">set the Sec-Fetch-Mode header</a> for a request <var>r</var> is modified as follows: 
+      The algorithm to <span spec-section="#abstract-opdef-set-mode">set the Sec-Fetch-Mode header</span> for a request <var>r</var> is modified as follows: 
      <ol>
       <li data-md>
        <p>Where the algorithm checks whether <var>r</var>’s <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-reserved-client" id="ref-for-concept-request-reserved-client">reserved client</a>'s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-target-browsing-context" id="ref-for-concept-environment-target-browsing-context">target
@@ -2398,11 +2398,10 @@ browsing context</a> or a <a data-link-type="dfn" href="#portal-browsing-context
     <li><a href="#ref-for-event-load">3. The portal element</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-navigate">
-   <a href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate">https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-dom-navigationtype-navigate">
+   <a href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate">https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-navigate">3. The portal element</a> <a href="#ref-for-navigate①">(2)</a>
-    <li><a href="#ref-for-navigate②">4.4. Navigation</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate">4.4. Navigation</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-nested-browsing-context">
@@ -2822,7 +2821,7 @@ browsing context</a> or a <a data-link-type="dfn" href="#portal-browsing-context
      <li><span class="dfn-paneled" id="term-for-in-parallel">in parallel</span>
      <li><span class="dfn-paneled" id="term-for-limited-to-only-known-values">limited to only known values</span>
      <li><span class="dfn-paneled" id="term-for-event-load">load</span>
-     <li><span class="dfn-paneled" id="term-for-navigate">navigate</span>
+     <li><span class="dfn-paneled" id="term-for-dom-navigationtype-navigate">navigate</span>
      <li><span class="dfn-paneled" id="term-for-nested-browsing-context">nested browsing context</span>
      <li><span class="dfn-paneled" id="term-for-concept-settings-object-origin">origin <small>(for environment settings object)</small></span>
      <li><span class="dfn-paneled" id="term-for-parse-a-url">parse a url</span>
@@ -2877,7 +2876,7 @@ browsing context</a> or a <a data-link-type="dfn" href="#portal-browsing-context
      <li><span class="dfn-paneled" id="term-for-concept-url">url</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
@@ -2897,11 +2896,11 @@ browsing context</a> or a <a data-link-type="dfn" href="#portal-browsing-context
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
    <dt id="biblio-csp">[CSP]
-   <dd>Mike West. <a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a>. 16 June 2021. WD. URL: <a href="https://www.w3.org/TR/CSP3/">https://www.w3.org/TR/CSP3/</a>
+   <dd>Mike West. <a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a>. 24 March 2021. WD. URL: <a href="https://www.w3.org/TR/CSP3/">https://www.w3.org/TR/CSP3/</a>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-fetch">[FETCH]
    <dd>Anne van Kesteren. <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>. Living Standard. URL: <a href="https://fetch.spec.whatwg.org/">https://fetch.spec.whatwg.org/</a>
    <dt id="biblio-html">[HTML]
@@ -2916,13 +2915,13 @@ browsing context</a> or a <a data-link-type="dfn" href="#portal-browsing-context
    <dd>Alex Russell; et al. <a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a>. 19 November 2019. CR. URL: <a href="https://www.w3.org/TR/service-workers-1/">https://www.w3.org/TR/service-workers-1/</a>
    <dt id="biblio-url">[URL]
    <dd>Anne van Kesteren. <a href="https://url.spec.whatwg.org/">URL Standard</a>. Living Standard. URL: <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
    <dt id="biblio-fetch-metadata">[FETCH-METADATA]
-   <dd>Mike West. <a href="https://www.w3.org/TR/fetch-metadata/">Fetch Metadata Request Headers</a>. 4 June 2021. WD. URL: <a href="https://www.w3.org/TR/fetch-metadata/">https://www.w3.org/TR/fetch-metadata/</a>
+   <dd>Mike West. <a href="https://www.w3.org/TR/fetch-metadata/">Fetch Metadata Request Headers</a>. 13 March 2021. WD. URL: <a href="https://www.w3.org/TR/fetch-metadata/">https://www.w3.org/TR/fetch-metadata/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->, <a class="idl-code" data-link-type="extended-attribute" href="https://html.spec.whatwg.org/multipage/dom.html#htmlconstructor"><c- g>HTMLConstructor</c-></a>]

@@ -74,8 +74,8 @@ https://www.w3.org/TR/selectors-4/#valid-pseudo
 -
 VALIDATION_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-validation_err
@@ -955,8 +955,8 @@ https://url.spec.whatwg.org/#valid-ipv6-address-string
 -
 valid key path
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#valid-key-path
@@ -965,8 +965,8 @@ https://w3c.github.io/IndexedDB/#valid-key-path
 -
 valid key path
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#valid-key-path
@@ -1325,8 +1325,8 @@ https://html.spec.whatwg.org/multipage/images.html#valid-source-size-list
 -
 valid style sheet
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valid-style-sheet
@@ -1335,8 +1335,8 @@ https://drafts.csswg.org/css2/#valid-style-sheet
 -
 valid style sheet
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valid-style-sheet
@@ -2316,8 +2316,8 @@ ElementInternals
 -
 validity
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valid-style-sheet
@@ -2326,8 +2326,8 @@ https://drafts.csswg.org/css2/#valid-style-sheet
 -
 validity
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valid-style-sheet
@@ -3198,8 +3198,8 @@ https://www.w3.org/TR/beacon/#concept-header-value
 -
 value
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-value
@@ -3209,8 +3209,8 @@ directive
 -
 value
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-value
@@ -4282,8 +4282,8 @@ CSSStyleDeclaration/setPropertyValue(property, value)
 -
 value
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-value
@@ -4314,8 +4314,8 @@ GamepadButton
 -
 value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#value
@@ -4324,8 +4324,8 @@ https://w3c.github.io/IndexedDB/#value
 -
 value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#key-value
@@ -4335,8 +4335,8 @@ key
 -
 value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor-value
@@ -4346,8 +4346,8 @@ cursor
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-put-value-key-value
@@ -4358,8 +4358,8 @@ IDBObjectStore/put(value)
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-add-value-key-value
@@ -4370,8 +4370,8 @@ IDBObjectStore/add(value)
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-only-value-value
@@ -4381,8 +4381,8 @@ IDBKeyRange/only(value)
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursor-update-value-value
@@ -4392,8 +4392,8 @@ IDBCursor/update(value)
 -
 value
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursorwithvalue-value
@@ -4403,8 +4403,8 @@ IDBCursorWithValue
 -
 value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#value
@@ -4413,8 +4413,8 @@ https://www.w3.org/TR/IndexedDB-3/#value
 -
 value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#key-value
@@ -4424,8 +4424,8 @@ key
 -
 value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor-value
@@ -4435,8 +4435,8 @@ cursor
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-put-value-key-value
@@ -4447,8 +4447,8 @@ IDBObjectStore/put(value)
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-add-value-key-value
@@ -4459,8 +4459,8 @@ IDBObjectStore/add(value)
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-only-value-value
@@ -4470,8 +4470,8 @@ IDBKeyRange/only(value)
 -
 value
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-update-value-value
@@ -4481,8 +4481,8 @@ IDBCursor/update(value)
 -
 value
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursorwithvalue-value
@@ -4547,8 +4547,8 @@ NavigationPreloadManager/setHeaderValue(value)
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#NumberValue
@@ -4557,8 +4557,8 @@ https://svgwg.org/svg2-draft/types.html#NumberValue
 -
 value
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGNumber__value
@@ -4568,8 +4568,8 @@ SVGNumber
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#LengthValue
@@ -4578,8 +4578,8 @@ https://svgwg.org/svg2-draft/types.html#LengthValue
 -
 value
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__value
@@ -4589,8 +4589,8 @@ SVGLength
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#AngleValue
@@ -4599,8 +4599,8 @@ https://svgwg.org/svg2-draft/types.html#AngleValue
 -
 value
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__value
@@ -4610,8 +4610,8 @@ SVGAngle
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TransformValue
@@ -4620,8 +4620,8 @@ https://svgwg.org/svg2-draft/coords.html#TransformValue
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#NumberValue
@@ -4630,8 +4630,8 @@ https://www.w3.org/TR/SVG2/types.html#NumberValue
 -
 value
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGNumber__value
@@ -4641,8 +4641,8 @@ SVGNumber
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#LengthValue
@@ -4651,8 +4651,8 @@ https://www.w3.org/TR/SVG2/types.html#LengthValue
 -
 value
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGLength__value
@@ -4662,8 +4662,8 @@ SVGLength
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#AngleValue
@@ -4672,8 +4672,8 @@ https://www.w3.org/TR/SVG2/types.html#AngleValue
 -
 value
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGAngle__value
@@ -4683,8 +4683,8 @@ SVGAngle
 -
 value
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TransformValue
@@ -4960,8 +4960,8 @@ https://www.w3.org/TR/webdriver2/#dfn-value
 -
 value
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#value-pair-value
@@ -5077,8 +5077,8 @@ https://www.w3.org/TR/css-values-4/#addition
 -
 value asynchronously iterable declaration
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#value-asynchronously-iterable-declaration
@@ -5171,8 +5171,8 @@ https://www.w3.org/TR/css-values-4/#interpolation
 -
 value iterator
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-value-iterator
@@ -5181,8 +5181,8 @@ https://heycam.github.io/webidl/#dfn-value-iterator
 -
 value iterator
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-value-iterator
@@ -5211,8 +5211,8 @@ https://www.w3.org/TR/webdriver2/#dfn-value-mode-flag
 -
 value of string literal tokens
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#value-of-string-literal-tokens
@@ -5221,8 +5221,8 @@ https://heycam.github.io/webidl/#value-of-string-literal-tokens
 -
 value pair
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#value-pair
@@ -5231,8 +5231,8 @@ https://heycam.github.io/webidl/#value-pair
 -
 value pairs to iterate over
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over
@@ -5241,8 +5241,8 @@ https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over
 -
 value pairs to iterate over
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-value-pairs-to-iterate-over
@@ -5313,8 +5313,8 @@ HTMLInputElement
 -
 valueAsString
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__valueAsString
@@ -5324,8 +5324,8 @@ SVGLength
 -
 valueAsString
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__valueAsString
@@ -5335,8 +5335,8 @@ SVGAngle
 -
 valueAsString
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGLength__valueAsString
@@ -5346,8 +5346,8 @@ SVGLength
 -
 valueAsString
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGAngle__valueAsString
@@ -5357,8 +5357,8 @@ SVGAngle
 -
 valueInSpecifiedUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits
@@ -5368,8 +5368,8 @@ SVGLength
 -
 valueInSpecifiedUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGAngle__valueInSpecifiedUnits
@@ -5379,8 +5379,8 @@ SVGAngle
 -
 valueInSpecifiedUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGLength__valueInSpecifiedUnits
@@ -5390,8 +5390,8 @@ SVGLength
 -
 valueInSpecifiedUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGAngle__valueInSpecifiedUnits
@@ -5760,8 +5760,8 @@ CSSMathMax
 -
 values
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#values
@@ -5770,8 +5770,8 @@ https://drafts.csswg.org/css2/#values
 -
 values
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#values
@@ -5824,8 +5824,8 @@ SVGFEColorMatrixElement
 -
 values
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-values
@@ -5835,8 +5835,8 @@ index
 -
 values
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-values
@@ -6010,8 +6010,8 @@ BitrateMode
 -
 variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#variable
@@ -6020,8 +6020,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#variable
 -
 variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#variable
@@ -6030,8 +6030,8 @@ https://www.w3.org/TR/WGSL/#variable
 -
 variable declaration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#variable-declaration
@@ -6040,8 +6040,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#variable-declaration
 -
 variable declaration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#variable-declaration
@@ -6050,8 +6050,8 @@ https://www.w3.org/TR/WGSL/#variable-declaration
 -
 variadic
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-variadic
@@ -6060,8 +6060,8 @@ https://heycam.github.io/webidl/#dfn-variadic
 -
 variadic
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-variadic

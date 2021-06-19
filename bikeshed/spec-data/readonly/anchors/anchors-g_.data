@@ -69,8 +69,8 @@ CSSRGB
 -
 g
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#elementdef-g
@@ -79,8 +79,8 @@ https://svgwg.org/svg2-draft/struct.html#elementdef-g
 -
 g
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#elementdef-g

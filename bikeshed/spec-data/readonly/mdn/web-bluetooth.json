@@ -1,111 +1,4 @@
 {
-    "dom-bluetooth-getavailability": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Bluetooth.json",
-            "name": "getAvailability",
-            "slug": "API/Bluetooth/getAvailability",
-            "summary": "The getAvailability() method of Bluetooth interface of Web Bluetooth API interface exposes the Bluetooth capabilities of the current device. For a returns a Boolean which is true if the device has a Bluetooth adapter and false otherwise (unless user configured User Agent not to expose a real value).",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "Bluetooth.getAvailability()"
-        }
-    ],
     "dom-bluetooth-getdevices": [
         {
             "engines": [
@@ -188,325 +81,6 @@
                 }
             },
             "title": "Bluetooth.getDevices()"
-        }
-    ],
-    "bluetooth": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Bluetooth.json",
-            "name": "onavailabilitychanged",
-            "slug": "API/Bluetooth/onavailabilitychanged",
-            "summary": "The onavailabilitychanged property of the Bluetooth interface is an event handler that processes availabilitychanged events that fire when the Bluetooth system as a whole becomes available or unavailable to the User Agent.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "Bluetooth.onavailabilitychanged"
-        },
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Bluetooth.json",
-            "name": "Bluetooth",
-            "slug": "API/Bluetooth",
-            "summary": "The Bluetooth interface of the Web Bluetooth API returns a Promise to a BluetoothDevice object with the specified options.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "Bluetooth"
-        }
-    ],
-    "dom-bluetooth-referringdevice": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/Bluetooth.json",
-            "name": "referringDevice",
-            "slug": "API/Bluetooth/referringDevice",
-            "summary": "The Bluetooth.referringDevice attribute of the Bluetooth interface returns a BluetoothDevice if the current document was opened in response to an instruction sent by this device and null otherwise.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "Bluetooth.referringDevice"
         }
     ],
     "dom-bluetooth-requestdevice": [
@@ -616,20 +190,20 @@
             "title": "Bluetooth.requestDevice()"
         }
     ],
-    "dom-bluetoothcharacteristicproperties-authenticatedsignedwrites": [
+    "bluetooth": [
         {
             "engines": [
                 "blink"
             ],
-            "filename": "api/BluetoothCharacteristicProperties.json",
-            "name": "authenticatedSignedWrites",
-            "slug": "API/BluetoothCharacteristicProperties/authenticatedSignedWrites",
-            "summary": "The authenticatedSignedWrites read-only property of the BluetoothCharacteristicProperties interface returns a boolean that is true if signed writing to the characteristic value is permitted.",
+            "filename": "api/Bluetooth.json",
+            "name": "Bluetooth",
+            "slug": "API/Bluetooth",
+            "summary": "The Bluetooth interface of the Web Bluetooth API returns a Promise to a BluetoothDevice object with the specified options.",
             "support": {
                 "chrome": [
                     {
                         "version_added": "56",
-                        "notes": "ChromeOS and macOS only."
+                        "notes": "macOS only."
                     },
                     {
                         "version_added": "56",
@@ -701,116 +275,9 @@
                 "edge_blink": [
                     {
                         "version_added": "79",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "BluetoothCharacteristicProperties.authenticatedSignedWrites"
-        }
-    ],
-    "dom-bluetoothcharacteristicproperties-broadcast": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/BluetoothCharacteristicProperties.json",
-            "name": "broadcast",
-            "slug": "API/BluetoothCharacteristicProperties/broadcast",
-            "summary": "The broadcast read-only property of the BluetoothCharacteristicProperties interface returns a boolean that is true if the broadcast of the characteristic value is permitted using the Server Characteristic Configuration Descriptor.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
                         "notes": "macOS only."
                     },
                     {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
                         "version_added": "79",
                         "notes": "Linux and versions of Windows earlier than 10.",
                         "flags": [
@@ -827,542 +294,7 @@
                     }
                 ]
             },
-            "title": "BluetoothCharacteristicProperties.broadcast"
-        }
-    ],
-    "dom-bluetoothcharacteristicproperties-indicate": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/BluetoothCharacteristicProperties.json",
-            "name": "indicate",
-            "slug": "API/BluetoothCharacteristicProperties/indicate",
-            "summary": "The indicate read-only property of the BluetoothCharacteristicProperties interface returns a boolean that is true if indications of the characteristic value with acknowledgement is permitted.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "BluetoothCharacteristicProperties.indicate"
-        }
-    ],
-    "dom-bluetoothcharacteristicproperties-notify": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/BluetoothCharacteristicProperties.json",
-            "name": "notify",
-            "slug": "API/BluetoothCharacteristicProperties/notify",
-            "summary": "The notify read-only property of the BluetoothCharacteristicProperties interface returns a boolean that is true if notifications of the characteristic value without acknowledgement is permitted.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "BluetoothCharacteristicProperties.notify"
-        }
-    ],
-    "dom-bluetoothcharacteristicproperties-read": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/BluetoothCharacteristicProperties.json",
-            "name": "read",
-            "slug": "API/BluetoothCharacteristicProperties/read",
-            "summary": "The read read-only property of the BluetoothCharacteristicProperties interface returns a boolean that is true if the reading of the characteristic value is permitted.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "BluetoothCharacteristicProperties.read"
-        }
-    ],
-    "dom-bluetoothcharacteristicproperties-reliablewrite": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/BluetoothCharacteristicProperties.json",
-            "name": "reliableWrite",
-            "slug": "API/BluetoothCharacteristicProperties/reliableWrite",
-            "summary": "The reliableWrite read-only property of the BluetoothCharacteristicProperties interface returns a boolean that is true if reliable writes to the characteristic is permitted.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "BluetoothCharacteristicProperties.reliableWrite"
-        }
-    ],
-    "dom-bluetoothcharacteristicproperties-write": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/BluetoothCharacteristicProperties.json",
-            "name": "write",
-            "slug": "API/BluetoothCharacteristicProperties/write",
-            "summary": "The write read-only property of the BluetoothCharacteristicProperties interface returns a boolean that is true if the writing to the characteristic with response is permitted.",
-            "support": {
-                "chrome": [
-                    {
-                        "version_added": "56",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "56",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "70",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "chrome_android": {
-                    "version_added": "56"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": [
-                    {
-                        "version_added": "43",
-                        "notes": "macOS only."
-                    },
-                    {
-                        "version_added": "43",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "57",
-                        "notes": "Windows 10."
-                    }
-                ],
-                "opera_android": {
-                    "version_added": "43"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "6.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": [
-                    {
-                        "version_added": "79",
-                        "notes": "ChromeOS and macOS only."
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Linux and versions of Windows earlier than 10.",
-                        "flags": [
-                            {
-                                "type": "preference",
-                                "name": "#enable-experimental-web-platform-features",
-                                "value_to_set": "enabled"
-                            }
-                        ]
-                    },
-                    {
-                        "version_added": "79",
-                        "notes": "Windows 10."
-                    }
-                ]
-            },
-            "title": "BluetoothCharacteristicProperties.write"
+            "title": "Bluetooth"
         }
     ],
     "characteristicproperties-interface": [
@@ -1575,7 +507,7 @@
                     "version_added": "79"
                 }
             },
-            "title": "BluetoothDevice.id"
+            "title": "id"
         }
     ],
     "dom-bluetoothdevice-name": [
@@ -1631,7 +563,7 @@
             "title": "BluetoothDevice.name"
         }
     ],
-    "bluetoothdevice-interface": [
+    "bluetoothdevice": [
         {
             "engines": [
                 "blink"
@@ -2647,7 +1579,7 @@
             "title": "BluetoothRemoteGATTCharacteristic.value"
         }
     ],
-    "bluetoothgattcharacteristic-interface": [
+    "bluetoothremotegattcharacteristic": [
         {
             "engines": [
                 "blink"
@@ -2858,7 +1790,7 @@
                     }
                 ]
             },
-            "title": "BluetoothRemoteGATTDescriptor.characteristic"
+            "title": "characteristic"
         }
     ],
     "dom-bluetoothremotegattdescriptor-readvalue": [
@@ -2965,7 +1897,7 @@
                     }
                 ]
             },
-            "title": "BluetoothRemoteGATTDescriptor.readValue()"
+            "title": "readValue()"
         }
     ],
     "dom-bluetoothremotegattdescriptor-uuid": [
@@ -3072,7 +2004,7 @@
                     }
                 ]
             },
-            "title": "BluetoothRemoteGATTDescriptor.uuid"
+            "title": "uuid"
         }
     ],
     "dom-bluetoothremotegattdescriptor-value": [
@@ -3179,7 +2111,7 @@
                     }
                 ]
             },
-            "title": "BluetoothRemoteGATTDescriptor.value"
+            "title": "value"
         }
     ],
     "dom-bluetoothremotegattdescriptor-writevalue": [
@@ -3286,10 +2218,10 @@
                     }
                 ]
             },
-            "title": "BluetoothRemoteGATTDescriptor.writeValue()"
+            "title": "writeValue()"
         }
     ],
-    "bluetoothgattdescriptor-interface": [
+    "bluetoothremotegattdescriptor": [
         {
             "engines": [
                 "blink"
@@ -4038,7 +2970,7 @@
             "title": "BluetoothRemoteGATTServer.getPrimaryServices()"
         }
     ],
-    "bluetoothgattremoteserver-interface": [
+    "bluetoothremotegattserver": [
         {
             "engines": [
                 "blink"
@@ -4211,7 +3143,7 @@
                     "version_added": false
                 }
             },
-            "title": "BluetoothRemoteGATTService.device"
+            "title": "device"
         }
     ],
     "dom-bluetoothremotegattservice-getcharacteristic": [
@@ -4318,7 +3250,7 @@
                     }
                 ]
             },
-            "title": "BluetoothRemoteGATTService.getCharacteristic()"
+            "title": "getCharacteristic()"
         }
     ],
     "dom-bluetoothremotegattservice-getcharacteristics": [
@@ -4369,7 +3301,165 @@
                     "version_added": false
                 }
             },
-            "title": "BluetoothRemoteGATTService.getCharacteristics()"
+            "title": "getCharacteristics()"
+        }
+    ],
+    "dom-bluetoothremotegattservice-getincludedservice": [
+        {
+            "engines": [],
+            "filename": "api/BluetoothRemoteGATTService.json",
+            "name": "getIncludedService",
+            "slug": "API/BluetoothRemoteGATTService/getIncludedService",
+            "summary": "The BluetoothGATTService.getIncludedService() method returns a Promise to an instance of BluetoothRemoteGATTService for a given universally unique identifier (UUID).",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "getIncludedService()"
+        }
+    ],
+    "dom-bluetoothremotegattservice-getincludedservices": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/BluetoothRemoteGATTService.json",
+            "name": "getIncludedServices",
+            "slug": "API/BluetoothRemoteGATTService/getIncludedServices",
+            "summary": "The BluetoothGATTService.getIncludedServices() method returns a Promise to an Array of BluetoothRemoteGATTService instances for an optional universally unique identifier (UUID).",
+            "support": {
+                "chrome": [
+                    {
+                        "version_added": "56",
+                        "notes": "macOS only."
+                    },
+                    {
+                        "version_added": "56",
+                        "notes": "Linux and versions of Windows earlier than 10.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "70",
+                        "notes": "Windows 10."
+                    }
+                ],
+                "chrome_android": {
+                    "version_added": "56"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": [
+                    {
+                        "version_added": "43",
+                        "notes": "macOS only."
+                    },
+                    {
+                        "version_added": "43",
+                        "notes": "Linux and versions of Windows earlier than 10.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "57",
+                        "notes": "Windows 10."
+                    }
+                ],
+                "opera_android": {
+                    "version_added": "43"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "6.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": [
+                    {
+                        "version_added": "79",
+                        "notes": "macOS only."
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "Linux and versions of Windows earlier than 10.",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "#enable-experimental-web-platform-features",
+                                "value_to_set": "enabled"
+                            }
+                        ]
+                    },
+                    {
+                        "version_added": "79",
+                        "notes": "Windows 10."
+                    }
+                ]
+            },
+            "title": "getIncludedServices()"
         }
     ],
     "dom-bluetoothremotegattservice-isprimary": [
@@ -4420,7 +3510,7 @@
                     "version_added": false
                 }
             },
-            "title": "BluetoothRemoteGATTService.isPrimary"
+            "title": "isPrimary"
         }
     ],
     "dom-bluetoothremotegattservice-uuid": [
@@ -4527,10 +3617,10 @@
                     }
                 ]
             },
-            "title": "BluetoothRemoteGATTService.uuid"
+            "title": "uuid"
         }
     ],
-    "bluetoothgattservice-interface": [
+    "bluetoothremotegattservice": [
         {
             "engines": [
                 "blink"

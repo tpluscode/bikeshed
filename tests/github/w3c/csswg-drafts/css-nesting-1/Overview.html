@@ -859,7 +859,7 @@ table.colortable th <c- p>{</c->
    <div class="note" role="note">
      The <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector①">nesting selector</a> can be desugared
 		by replacing it with the parent style rule’s selector,
-		wrapped in a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#matches-pseudo" id="ref-for-matches-pseudo">:is()</a> selector.
+		wrapped in a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#matches-pseudo" id="ref-for-matches-pseudo">:is()</a> selector.
 		For example, 
 <pre class="lang-css highlight">a<c- p>,</c-> b <c- p>{</c->
   &amp; c <c- p>{</c-> <c- k>color</c-><c- p>:</c-> blue<c- p>;</c-> <c- p>}</c->
@@ -869,7 +869,7 @@ table.colortable th <c- p>{</c->
 <pre class="lang-css highlight"><c- nf>:is</c-><c- p>(</c->a<c- p>,</c-> b<c- p>)</c-> c <c- p>{</c-> <c- k>color</c-><c- p>:</c-> blue<c- p>;</c-> <c- p>}</c->
 </pre>
    </div>
-   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#specificity" id="ref-for-specificity">specificity</a> of the <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector②">nesting selector</a> is equal to the largest specificity among the parent style rule’s selector
+   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#specificity" id="ref-for-specificity">specificity</a> of the <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector②">nesting selector</a> is equal to the largest specificity among the parent style rule’s selector
 	that match the given element.</p>
    <div class="example" id="example-1353884a">
     <a class="self-link" href="#example-1353884a"></a> For example, given the following style rules: 
@@ -884,16 +884,16 @@ table.colortable th <c- p>{</c->
 </pre>
     <p>the <a class="css" data-link-type="maybe" href="#selectordef-" id="ref-for-selectordef-①">&amp;</a> selector has specificity [1,0,0]
 		because it matches due to the <span class="css">#a</span> selector,
-		giving the entire <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color">color: blue</a> rule a specificity of [1,0,1].</p>
+		giving the entire <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color">color: blue</a> rule a specificity of [1,0,1].</p>
    </div>
    <p class="note" role="note"><span>Note:</span> This specificity is intentionally equivalent to that of the desugaring described above.</p>
-   <p>The <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector③">nesting selector</a> is allowed anywhere in a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#compound" id="ref-for-compound">compound selector</a>,
-	even before a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#type-selector" id="ref-for-type-selector">type selector</a>,
+   <p>The <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector③">nesting selector</a> is allowed anywhere in a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#compound" id="ref-for-compound">compound selector</a>,
+	even before a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#type-selector" id="ref-for-type-selector">type selector</a>,
 	violating the normal restrictions on ordering within a <span id="ref-for-compound①">compound selector</span>.</p>
    <p class="note" role="note"><span>Note:</span> This is required to allow direct nesting.
 	Also, the "type selectors must come first" has no <em>intrinsic</em> reason behind it;
 	it exists because we need to be able to tell simple selectors apart unambiguously
-	when they’re directly appended together in a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#compound" id="ref-for-compound②">compound selector</a>,
+	when they’re directly appended together in a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#compound" id="ref-for-compound②">compound selector</a>,
 	and it’s not clear from <span class="css">.foodiv</span> that it should mean the same as <span class="css">div.foo</span>.
 	An ampersand is unambiguously separable from an ident, tho,
 	so there is no problem with it preceding a type selector,
@@ -919,9 +919,9 @@ table.colortable th <c- p>{</c->
    <h3 class="heading settled" data-level="3.1" id="direct"><span class="secno">3.1. </span><span class="content">Direct Nesting</span><a class="self-link" href="#direct"></a></h3>
    <p>A style rule can be <dfn class="dfn-paneled" data-dfn-type="dfn" data-lt="direct nesting|directly nested" data-noexport id="direct-nesting">directly nested</dfn> within another style rule if its selector is <a data-link-type="dfn" href="#nest-prefixed" id="ref-for-nest-prefixed">nest-prefixed</a>.</p>
    <p>To be <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="nest-prefixed">nest-prefixed</dfn>,
-	a <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector④">nesting selector</a> must be the first <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#simple" id="ref-for-simple">simple selector</a> in the first <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#compound" id="ref-for-compound③">compound selector</a> of the selector.
+	a <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector④">nesting selector</a> must be the first <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#simple" id="ref-for-simple">simple selector</a> in the first <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#compound" id="ref-for-compound③">compound selector</a> of the selector.
 	If the selector is a list of selectors,
-	every <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#complex" id="ref-for-complex">complex selector</a> in the list must be <a data-link-type="dfn" href="#nest-prefixed" id="ref-for-nest-prefixed①">nest-prefixed</a> for the selector as a whole to <span id="ref-for-nest-prefixed②">nest-prefixed</span>.</p>
+	every <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#complex" id="ref-for-complex">complex selector</a> in the list must be <a data-link-type="dfn" href="#nest-prefixed" id="ref-for-nest-prefixed①">nest-prefixed</a> for the selector as a whole to <span id="ref-for-nest-prefixed②">nest-prefixed</span>.</p>
    <div class="example" id="example-ea9c9742">
     <a class="self-link" href="#example-ea9c9742"></a> For example, the following nestings are valid: 
 <pre class="lang-css highlight">.foo <c- p>{</c->
@@ -1076,7 +1076,7 @@ main <c- p>{</c->
 	this specification defines the <a class="css" data-link-type="maybe" href="#at-ruledef-nest" id="ref-for-at-ruledef-nest②">@nest</a> rule,
 	which imposes fewer restrictions on how to validly nest style rules.
 	Its syntax is:</p>
-<pre class="prod"><dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-nest">@nest</dfn> = @nest <a class="production" data-link-type="type">&lt;selector></a> { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list">&lt;declaration-list></a> }
+<pre class="prod"><dfn class="dfn-paneled" data-dfn-type="at-rule" data-export id="at-ruledef-nest">@nest</dfn> = @nest <a class="production" data-link-type="type">&lt;selector></a> { <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list">&lt;declaration-list></a> }
 </pre>
    <p>The <a class="css" data-link-type="maybe" href="#at-ruledef-nest" id="ref-for-at-ruledef-nest③">@nest</a> rule functions identically to a style rule:
 	it starts with a selector,
@@ -1084,7 +1084,7 @@ main <c- p>{</c->
 	The only difference is that the selector used in a <span class="css" id="ref-for-at-ruledef-nest④">@nest</span> rule
 	must be <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="nest-containing">nest-containing</dfn>,
 	which means it contains a <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector⑤">nesting selector</a> in it somewhere.
-	A list of selectors is <a data-link-type="dfn" href="#nest-containing" id="ref-for-nest-containing">nest-containing</a> if all of its individual <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#complex" id="ref-for-complex①">complex selectors</a> are <span id="ref-for-nest-containing①">nest-containing</span>.</p>
+	A list of selectors is <a data-link-type="dfn" href="#nest-containing" id="ref-for-nest-containing">nest-containing</a> if all of its individual <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#complex" id="ref-for-complex①">complex selectors</a> are <span id="ref-for-nest-containing①">nest-containing</span>.</p>
    <div class="example" id="example-cf01f63a">
     <a class="self-link" href="#example-cf01f63a"></a> For example, the following nestings are valid: 
 <pre class="lang-css highlight">.foo <c- p>{</c->
@@ -1263,7 +1263,7 @@ main <c- p>{</c->
   color: red<c- p>;</c->
 <c- p>}</c->
 </pre>
-    <p>The <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color①">color: red</a> declaration is invalid and ignored,
+    <p>The <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color①">color: red</a> declaration is invalid and ignored,
 		since it occurs after the <a data-link-type="dfn" href="#nested-style-rule" id="ref-for-nested-style-rule②">nested style rule</a>.</p>
     <p>However, further nested rules are still valid,
 		as in this example:</p>
@@ -1279,7 +1279,7 @@ main <c- p>{</c->
 	it’s possible for a given style rule and a <span id="ref-for-nested-style-rule④">nested style rule</span> within it to match the same element,
 	and if the specificity of the two rules is otherwise equivalent,
 	the relative order in the stylesheet of the applicable declarations
-	determines which declaration "wins" the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade" id="ref-for-cascade">cascade</a>.
+	determines which declaration "wins" the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade" id="ref-for-cascade">cascade</a>.
 	For this purpose,
 	a nested rule is considered to come <em>after</em> its parent rule.</p>
    <div class="example" id="example-3dce8c58">
@@ -1310,88 +1310,88 @@ main <c- p>{</c->
 </pre>
     <p>Both declarations have the same specificity (0,0,1),
 		but the nested rule is considered to come <em>after</em> its parent rule,
-		so the <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color②">color: red</a> declarations wins.</p>
+		so the <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color②">color: red</a> declarations wins.</p>
     <p>On the other hand, in this example:</p>
 <pre class="highlight">article <c- p>{</c->
   <c- k>color</c-><c- p>:</c-> blue<c- p>;</c->
   <c- nf>:where</c-><c- p>(</c->&amp;<c- p>)</c-> <c- p>{</c-> <c- k>color</c-><c- p>:</c-> red<c- p>;</c-> <c- p>}</c->
 <c- p>}</c->
 </pre>
-    <p>The <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#where-pseudo" id="ref-for-where-pseudo">:where()</a> pseudoclass reduces the specificity of the <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector⑦">nesting selector</a> to 0,
-		so the <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color③">color: red</a> declaration now has a specificity of (0,0,0),
+    <p>The <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#where-pseudo" id="ref-for-where-pseudo">:where()</a> pseudoclass reduces the specificity of the <a data-link-type="dfn" href="#nesting-selector" id="ref-for-nesting-selector⑦">nesting selector</a> to 0,
+		so the <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color③">color: red</a> declaration now has a specificity of (0,0,0),
 		and loses to the <span class="css" id="ref-for-propdef-color④">color: blue</span> declaration.</p>
    </div>
    <h2 class="heading settled" data-level="4" id="cssom"><span class="secno">4. </span><span class="content">CSSOM</span><a class="self-link" href="#cssom"></a></h2>
-   <h3 class="heading settled" data-level="4.1" id="cssom-style"><span class="secno">4.1. </span><span class="content">Modifications to <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#cssstylerule" id="ref-for-cssstylerule">CSSStyleRule</a></code></span><a class="self-link" href="#cssom-style"></a></h3>
+   <h3 class="heading settled" data-level="4.1" id="cssom-style"><span class="secno">4.1. </span><span class="content">Modifications to <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#cssstylerule" id="ref-for-cssstylerule">CSSStyleRule</a></code></span><a class="self-link" href="#cssom-style"></a></h3>
    <p>CSS style rules gain the ability to have nested rules:</p>
-<pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://drafts.csswg.org/cssom-1/#cssstylerule" id="ref-for-cssstylerule①"><c- g>CSSStyleRule</c-></a> {
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssrulelist" id="ref-for-cssrulelist"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssstylerule-cssrules" id="ref-for-dom-cssstylerule-cssrules"><c- g>cssRules</c-></a>;
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssstylerule-insertrule" id="ref-for-dom-cssstylerule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="CSSStyleRule/insertRule(rule, index), CSSStyleRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssstylerule-insertrule-rule-index-rule"><code><c- g>rule</c-></code><a class="self-link" href="#dom-cssstylerule-insertrule-rule-index-rule"></a></dfn>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long①"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="idl-code" data-dfn-for="CSSStyleRule/insertRule(rule, index), CSSStyleRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssstylerule-insertrule-rule-index-index"><code><c- g>index</c-></code><a class="self-link" href="#dom-cssstylerule-insertrule-rule-index-index"></a></dfn> = 0);
+<pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://drafts.csswg.org/cssom/#cssstylerule" id="ref-for-cssstylerule①"><c- g>CSSStyleRule</c-></a> {
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssrulelist" id="ref-for-cssrulelist"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssstylerule-cssrules" id="ref-for-dom-cssstylerule-cssrules"><c- g>cssRules</c-></a>;
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssstylerule-insertrule" id="ref-for-dom-cssstylerule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="CSSStyleRule/insertRule(rule, index), CSSStyleRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssstylerule-insertrule-rule-index-rule"><code><c- g>rule</c-></code><a class="self-link" href="#dom-cssstylerule-insertrule-rule-index-rule"></a></dfn>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long①"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="idl-code" data-dfn-for="CSSStyleRule/insertRule(rule, index), CSSStyleRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssstylerule-insertrule-rule-index-index"><code><c- g>index</c-></code><a class="self-link" href="#dom-cssstylerule-insertrule-rule-index-index"></a></dfn> = 0);
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-undefined" id="ref-for-idl-undefined"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssstylerule-deleterule" id="ref-for-dom-cssstylerule-deleterule"><c- g>deleteRule</c-></a>(<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long②"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="idl-code" data-dfn-for="CSSStyleRule/deleteRule(index)" data-dfn-type="argument" data-export id="dom-cssstylerule-deleterule-index-index"><code><c- g>index</c-></code><a class="self-link" href="#dom-cssstylerule-deleterule-index-index"></a></dfn>);
 };
 </pre>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSStyleRule" data-dfn-type="attribute" data-export id="dom-cssstylerule-cssrules"><code>cssRules</code></dfn> attribute
-must return a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#cssrulelist" id="ref-for-cssrulelist①">CSSRuleList</a></code> object for the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules">child CSS rules</a>.</p>
+must return a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#cssrulelist" id="ref-for-cssrulelist①">CSSRuleList</a></code> object for the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules">child CSS rules</a>.</p>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSStyleRule" data-dfn-type="method" data-export data-lt="insertRule(rule, index)|insertRule(rule)" id="dom-cssstylerule-insertrule"><code>insertRule(<var>rule</var>, <var>index</var>)</code></dfn> method
 must return the result of
-invoking <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#insert-a-css-rule" id="ref-for-insert-a-css-rule">insert a CSS rule</a> <var>rule</var> into the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules①">child CSS rules</a> at <var>index</var>.</p>
+invoking <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#insert-a-css-rule" id="ref-for-insert-a-css-rule">insert a CSS rule</a> <var>rule</var> into the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules①">child CSS rules</a> at <var>index</var>.</p>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSStyleRule" data-dfn-type="method" data-export id="dom-cssstylerule-deleterule"><code>deleteRule(<var>index</var>)</code></dfn> method
-must <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#remove-a-css-rule" id="ref-for-remove-a-css-rule">remove a CSS rule</a> from the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules②">child CSS rules</a> at <var>index</var>.</p>
+must <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#remove-a-css-rule" id="ref-for-remove-a-css-rule">remove a CSS rule</a> from the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules②">child CSS rules</a> at <var>index</var>.</p>
    <h3 class="heading settled" data-level="4.2" id="cssom-nesting"><span class="secno">4.2. </span><span class="content">The <code class="idl"><a data-link-type="idl" href="#cssnestingrule" id="ref-for-cssnestingrule">CSSNestingRule</a></code> Interface</span><a class="self-link" href="#cssom-nesting"></a></h3>
    <p>The <code class="idl"><a data-link-type="idl" href="#cssnestingrule" id="ref-for-cssnestingrule①">CSSNestingRule</a></code> interfaces represents a <a class="css" data-link-type="maybe" href="#at-ruledef-nest" id="ref-for-at-ruledef-nest⑥">@nest</a> rule:</p>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
-<c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="cssnestingrule"><code><c- g>CSSNestingRule</c-></code></dfn> : <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssrule" id="ref-for-cssrule"><c- n>CSSRule</c-></a> {
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-cssnestingrule-selectortext" id="ref-for-dom-cssnestingrule-selectortext"><c- g>selectorText</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject①"><c- g>SameObject</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#PutForwards" id="ref-for-PutForwards"><c- g>PutForwards</c-></a>=<a class="idl-code" data-link-type="attribute" href="https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext" id="ref-for-dom-cssstyledeclaration-csstext"><c- n>cssText</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration" id="ref-for-cssstyledeclaration"><c- n>CSSStyleDeclaration</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSStyleDeclaration" href="#dom-cssnestingrule-style" id="ref-for-dom-cssnestingrule-style"><c- g>style</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject②"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssrulelist" id="ref-for-cssrulelist②"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssnestingrule-cssrules" id="ref-for-dom-cssnestingrule-cssrules"><c- g>cssRules</c-></a>;
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long③"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssnestingrule-insertrule" id="ref-for-dom-cssnestingrule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="CSSNestingRule/insertRule(rule, index), CSSNestingRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssnestingrule-insertrule-rule-index-rule"><code><c- g>rule</c-></code><a class="self-link" href="#dom-cssnestingrule-insertrule-rule-index-rule"></a></dfn>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long④"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="idl-code" data-dfn-for="CSSNestingRule/insertRule(rule, index), CSSNestingRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssnestingrule-insertrule-rule-index-index"><code><c- g>index</c-></code><a class="self-link" href="#dom-cssnestingrule-insertrule-rule-index-index"></a></dfn> = 0);
+<c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="cssnestingrule"><code><c- g>CSSNestingRule</c-></code></dfn> : <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssrule" id="ref-for-cssrule"><c- n>CSSRule</c-></a> {
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-cssnestingrule-selectortext" id="ref-for-dom-cssnestingrule-selectortext"><c- g>selectorText</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject①"><c- g>SameObject</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#PutForwards" id="ref-for-PutForwards"><c- g>PutForwards</c-></a>=<a class="idl-code" data-link-type="attribute" href="https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext" id="ref-for-dom-cssstyledeclaration-csstext"><c- n>cssText</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssstyledeclaration" id="ref-for-cssstyledeclaration"><c- n>CSSStyleDeclaration</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSStyleDeclaration" href="#dom-cssnestingrule-style" id="ref-for-dom-cssnestingrule-style"><c- g>style</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject②"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssrulelist" id="ref-for-cssrulelist②"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssnestingrule-cssrules" id="ref-for-dom-cssnestingrule-cssrules"><c- g>cssRules</c-></a>;
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long③"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssnestingrule-insertrule" id="ref-for-dom-cssnestingrule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="CSSNestingRule/insertRule(rule, index), CSSNestingRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssnestingrule-insertrule-rule-index-rule"><code><c- g>rule</c-></code><a class="self-link" href="#dom-cssnestingrule-insertrule-rule-index-rule"></a></dfn>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long④"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="idl-code" data-dfn-for="CSSNestingRule/insertRule(rule, index), CSSNestingRule/insertRule(rule)" data-dfn-type="argument" data-export id="dom-cssnestingrule-insertrule-rule-index-index"><code><c- g>index</c-></code><a class="self-link" href="#dom-cssnestingrule-insertrule-rule-index-index"></a></dfn> = 0);
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-undefined" id="ref-for-idl-undefined①"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssnestingrule-deleterule" id="ref-for-dom-cssnestingrule-deleterule"><c- g>deleteRule</c-></a>(<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long⑤"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="idl-code" data-dfn-for="CSSNestingRule/deleteRule(index)" data-dfn-type="argument" data-export id="dom-cssnestingrule-deleterule-index-index"><code><c- g>index</c-></code><a class="self-link" href="#dom-cssnestingrule-deleterule-index-index"></a></dfn>);
 };
 </pre>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSNestingRule" data-dfn-type="attribute" data-export id="dom-cssnestingrule-selectortext"><code>selectorText</code></dfn> attribute,
 on getting,
-must return the result of <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors" id="ref-for-serialize-a-group-of-selectors">serializing</a> the associated <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#selector-list" id="ref-for-selector-list">selector list</a>.
-On setting the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext" id="ref-for-dom-cssstylerule-selectortext">selectorText</a></code> attribute these steps must be run:</p>
+must return the result of <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#serialize-a-group-of-selectors" id="ref-for-serialize-a-group-of-selectors">serializing</a> the associated <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#selector-list" id="ref-for-selector-list">selector list</a>.
+On setting the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#dom-cssstylerule-selectortext" id="ref-for-dom-cssstylerule-selectortext">selectorText</a></code> attribute these steps must be run:</p>
    <ol>
     <li data-md>
-     <p>Run the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors" id="ref-for-parse-a-group-of-selectors">parse a group of selectors</a> algorithm on the given value.</p>
+     <p>Run the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#parse-a-group-of-selectors" id="ref-for-parse-a-group-of-selectors">parse a group of selectors</a> algorithm on the given value.</p>
     <li data-md>
-     <p>If the algorithm returns a non-null value replace the associated <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#selector-list" id="ref-for-selector-list①">selector list</a> with the returned value.</p>
+     <p>If the algorithm returns a non-null value replace the associated <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#selector-list" id="ref-for-selector-list①">selector list</a> with the returned value.</p>
     <li data-md>
      <p>Otherwise, if the algorithm returns a null value, do nothing.</p>
    </ol>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSNestingRule" data-dfn-type="attribute" data-export id="dom-cssnestingrule-style"><code>style</code></dfn> attribute
-must return a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration" id="ref-for-cssstyledeclaration①">CSSStyleDeclaration</a></code> object for the style rule,
+must return a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#cssstyledeclaration" id="ref-for-cssstyledeclaration①">CSSStyleDeclaration</a></code> object for the style rule,
 with the following properties:</p>
    <dl>
-    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag" id="ref-for-cssstyledeclaration-computed-flag">computed flag</a>
+    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#cssstyledeclaration-computed-flag" id="ref-for-cssstyledeclaration-computed-flag">computed flag</a>
     <dd data-md>
      <p>Unset.</p>
-    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations" id="ref-for-cssstyledeclaration-declarations">declarations</a>
+    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#cssstyledeclaration-declarations" id="ref-for-cssstyledeclaration-declarations">declarations</a>
     <dd data-md>
-     <p>The declared declarations in the rule, in <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order" id="ref-for-concept-declarations-specified-order">specified order</a>.</p>
-    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule" id="ref-for-cssstyledeclaration-parent-css-rule">parent CSS rule</a>
+     <p>The declared declarations in the rule, in <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#concept-declarations-specified-order" id="ref-for-concept-declarations-specified-order">specified order</a>.</p>
+    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#cssstyledeclaration-parent-css-rule" id="ref-for-cssstyledeclaration-parent-css-rule">parent CSS rule</a>
     <dd data-md>
      <p>The <a data-link-type="dfn">context object</a>.</p>
-    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node" id="ref-for-cssstyledeclaration-owner-node">owner node</a>
+    <dt data-md><a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#cssstyledeclaration-owner-node" id="ref-for-cssstyledeclaration-owner-node">owner node</a>
     <dd data-md>
      <p>Null.</p>
    </dl>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSNestingRule" data-dfn-type="attribute" data-export id="dom-cssnestingrule-cssrules"><code>cssRules</code></dfn> attribute
-must return a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#cssrulelist" id="ref-for-cssrulelist③">CSSRuleList</a></code> object for the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules③">child CSS rules</a>.</p>
+must return a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#cssrulelist" id="ref-for-cssrulelist③">CSSRuleList</a></code> object for the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules③">child CSS rules</a>.</p>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSNestingRule" data-dfn-type="method" data-export data-lt="insertRule(rule, index)|insertRule(rule)" id="dom-cssnestingrule-insertrule"><code>insertRule(<var>rule</var>, <var>index</var>)</code></dfn> method
 must return the result of
-invoking <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#insert-a-css-rule" id="ref-for-insert-a-css-rule①">insert a CSS rule</a> <var>rule</var> into the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules④">child CSS rules</a> at <var>index</var>.</p>
+invoking <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#insert-a-css-rule" id="ref-for-insert-a-css-rule①">insert a CSS rule</a> <var>rule</var> into the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules④">child CSS rules</a> at <var>index</var>.</p>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="CSSNestingRule" data-dfn-type="method" data-export id="dom-cssnestingrule-deleterule"><code>deleteRule(<var>index</var>)</code></dfn> method
-must <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#remove-a-css-rule" id="ref-for-remove-a-css-rule①">remove a CSS rule</a> from the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules⑤">child CSS rules</a> at <var>index</var>.</p>
+must <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#remove-a-css-rule" id="ref-for-remove-a-css-rule①">remove a CSS rule</a> from the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules" id="ref-for-concept-css-rule-child-css-rules⑤">child CSS rules</a> at <var>index</var>.</p>
    <p>To serialize a <code class="idl"><a data-link-type="idl" href="#cssnestingrule" id="ref-for-cssnestingrule②">CSSNestingRule</a></code>:
 return the result of the following steps:</p>
    <ol>
     <li>Let <var>s</var> initially be the string "<code>@nest</code>" followed by a single SPACE (U+0020). 
-    <li>Append to <var>s</var> the result of performing <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors" id="ref-for-serialize-a-group-of-selectors①">serialize a group of selectors</a> on the rule’s associated selectors,
+    <li>Append to <var>s</var> the result of performing <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#serialize-a-group-of-selectors" id="ref-for-serialize-a-group-of-selectors①">serialize a group of selectors</a> on the rule’s associated selectors,
 		followed by the string "<code> {</code>", i.e., a single SPACE (U+0020), followed by LEFT CURLY BRACKET (U+007B). 
-    <li>Let <var>decls</var> be the result of performing <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block" id="ref-for-serialize-a-css-declaration-block">serialize a CSS declaration block</a> on the rule’s associated declarations, or null if there are no such declarations. 
-    <li>Let <var>rules</var> be the result of performing <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#serialize-a-css-rule" id="ref-for-serialize-a-css-rule">serialize a CSS rule</a> on each rule in the rule’s <code class="idl"><a data-link-type="idl" href="#dom-cssstylerule-cssrules" id="ref-for-dom-cssstylerule-cssrules①">cssRules</a></code> list, or null if there are no such rules. 
+    <li>Let <var>decls</var> be the result of performing <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#serialize-a-css-declaration-block" id="ref-for-serialize-a-css-declaration-block">serialize a CSS declaration block</a> on the rule’s associated declarations, or null if there are no such declarations. 
+    <li>Let <var>rules</var> be the result of performing <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#serialize-a-css-rule" id="ref-for-serialize-a-css-rule">serialize a CSS rule</a> on each rule in the rule’s <code class="idl"><a data-link-type="idl" href="#dom-cssstylerule-cssrules" id="ref-for-dom-cssstylerule-cssrules①">cssRules</a></code> list, or null if there are no such rules. 
     <li>If <var>decls</var> and <var>rules</var> are both null, append " }" to <var>s</var> (i.e. a single SPACE (U+0020) followed by RIGHT CURLY BRACKET (U+007D)) and return <var>s</var>. 
     <li>
      If <var>rules</var> is null: 
@@ -1550,189 +1550,189 @@ return the result of the following steps:</p>
    <li><a href="#dom-cssnestingrule-style">style</a><span>, in §4.2</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-cascade">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade">https://drafts.csswg.org/css-cascade-5/#cascade</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade">https://drafts.csswg.org/css-cascade/#cascade</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade">3.4. Mixing Nesting Rules and Declarations</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-color">
-   <a href="https://drafts.csswg.org/css-color-4/#propdef-color">https://drafts.csswg.org/css-color-4/#propdef-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#propdef-color">https://drafts.csswg.org/css-color/#propdef-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-color">2. Nesting Selector: the &amp; selector</a>
     <li><a href="#ref-for-propdef-color①">3.4. Mixing Nesting Rules and Declarations</a> <a href="#ref-for-propdef-color②">(2)</a> <a href="#ref-for-propdef-color③">(3)</a> <a href="#ref-for-propdef-color④">(4)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-declaration-list">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list">https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list">https://drafts.csswg.org/css-syntax/#typedef-declaration-list</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-declaration-list">3.2. The Nesting At-Rule: @nest</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssomstring">
-   <a href="https://drafts.csswg.org/cssom-1/#cssomstring">https://drafts.csswg.org/cssom-1/#cssomstring</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssomstring">https://drafts.csswg.org/cssom/#cssomstring</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssomstring">4.1. Modifications to CSSStyleRule</a>
     <li><a href="#ref-for-cssomstring①">4.2. The CSSNestingRule Interface</a> <a href="#ref-for-cssomstring②">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssrule">
-   <a href="https://drafts.csswg.org/cssom-1/#cssrule">https://drafts.csswg.org/cssom-1/#cssrule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssrule">https://drafts.csswg.org/cssom/#cssrule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssrule">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssrulelist">
-   <a href="https://drafts.csswg.org/cssom-1/#cssrulelist">https://drafts.csswg.org/cssom-1/#cssrulelist</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssrulelist">https://drafts.csswg.org/cssom/#cssrulelist</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssrulelist">4.1. Modifications to CSSStyleRule</a> <a href="#ref-for-cssrulelist①">(2)</a>
     <li><a href="#ref-for-cssrulelist②">4.2. The CSSNestingRule Interface</a> <a href="#ref-for-cssrulelist③">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssstyledeclaration">
-   <a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration">https://drafts.csswg.org/cssom-1/#cssstyledeclaration</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssstyledeclaration">https://drafts.csswg.org/cssom/#cssstyledeclaration</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssstyledeclaration">4.2. The CSSNestingRule Interface</a> <a href="#ref-for-cssstyledeclaration①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssstylerule">
-   <a href="https://drafts.csswg.org/cssom-1/#cssstylerule">https://drafts.csswg.org/cssom-1/#cssstylerule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssstylerule">https://drafts.csswg.org/cssom/#cssstylerule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssstylerule">4.1. Modifications to CSSStyleRule</a> <a href="#ref-for-cssstylerule①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-concept-css-rule-child-css-rules">
-   <a href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules">https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules">https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-concept-css-rule-child-css-rules">4.1. Modifications to CSSStyleRule</a> <a href="#ref-for-concept-css-rule-child-css-rules①">(2)</a> <a href="#ref-for-concept-css-rule-child-css-rules②">(3)</a>
     <li><a href="#ref-for-concept-css-rule-child-css-rules③">4.2. The CSSNestingRule Interface</a> <a href="#ref-for-concept-css-rule-child-css-rules④">(2)</a> <a href="#ref-for-concept-css-rule-child-css-rules⑤">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssstyledeclaration-computed-flag">
-   <a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag">https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssstyledeclaration-computed-flag">https://drafts.csswg.org/cssom/#cssstyledeclaration-computed-flag</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssstyledeclaration-computed-flag">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-cssstyledeclaration-csstext">
-   <a href="https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext">https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext">https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-cssstyledeclaration-csstext">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssstyledeclaration-declarations">
-   <a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations">https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssstyledeclaration-declarations">https://drafts.csswg.org/cssom/#cssstyledeclaration-declarations</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssstyledeclaration-declarations">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-insert-a-css-rule">
-   <a href="https://drafts.csswg.org/cssom-1/#insert-a-css-rule">https://drafts.csswg.org/cssom-1/#insert-a-css-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#insert-a-css-rule">https://drafts.csswg.org/cssom/#insert-a-css-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-insert-a-css-rule">4.1. Modifications to CSSStyleRule</a>
     <li><a href="#ref-for-insert-a-css-rule①">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssstyledeclaration-owner-node">
-   <a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node">https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssstyledeclaration-owner-node">https://drafts.csswg.org/cssom/#cssstyledeclaration-owner-node</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssstyledeclaration-owner-node">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssstyledeclaration-parent-css-rule">
-   <a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule">https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssstyledeclaration-parent-css-rule">https://drafts.csswg.org/cssom/#cssstyledeclaration-parent-css-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssstyledeclaration-parent-css-rule">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-parse-a-group-of-selectors">
-   <a href="https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors">https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#parse-a-group-of-selectors">https://drafts.csswg.org/cssom/#parse-a-group-of-selectors</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-parse-a-group-of-selectors">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-remove-a-css-rule">
-   <a href="https://drafts.csswg.org/cssom-1/#remove-a-css-rule">https://drafts.csswg.org/cssom-1/#remove-a-css-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#remove-a-css-rule">https://drafts.csswg.org/cssom/#remove-a-css-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-remove-a-css-rule">4.1. Modifications to CSSStyleRule</a>
     <li><a href="#ref-for-remove-a-css-rule①">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-cssstylerule-selectortext">
-   <a href="https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext">https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#dom-cssstylerule-selectortext">https://drafts.csswg.org/cssom/#dom-cssstylerule-selectortext</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-cssstylerule-selectortext">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-serialize-a-css-declaration-block">
-   <a href="https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block">https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#serialize-a-css-declaration-block">https://drafts.csswg.org/cssom/#serialize-a-css-declaration-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-serialize-a-css-declaration-block">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-serialize-a-css-rule">
-   <a href="https://drafts.csswg.org/cssom-1/#serialize-a-css-rule">https://drafts.csswg.org/cssom-1/#serialize-a-css-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#serialize-a-css-rule">https://drafts.csswg.org/cssom/#serialize-a-css-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-serialize-a-css-rule">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-serialize-a-group-of-selectors">
-   <a href="https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors">https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#serialize-a-group-of-selectors">https://drafts.csswg.org/cssom/#serialize-a-group-of-selectors</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-serialize-a-group-of-selectors">4.2. The CSSNestingRule Interface</a> <a href="#ref-for-serialize-a-group-of-selectors①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-concept-declarations-specified-order">
-   <a href="https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order">https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#concept-declarations-specified-order">https://drafts.csswg.org/cssom/#concept-declarations-specified-order</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-concept-declarations-specified-order">4.2. The CSSNestingRule Interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-matches-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#matches-pseudo">https://drafts.csswg.org/selectors-4/#matches-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#matches-pseudo">https://drafts.csswg.org/selectors/#matches-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-matches-pseudo">2. Nesting Selector: the &amp; selector</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-where-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#where-pseudo">https://drafts.csswg.org/selectors-4/#where-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#where-pseudo">https://drafts.csswg.org/selectors/#where-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-where-pseudo">3.4. Mixing Nesting Rules and Declarations</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-complex">
-   <a href="https://drafts.csswg.org/selectors-4/#complex">https://drafts.csswg.org/selectors-4/#complex</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#complex">https://drafts.csswg.org/selectors/#complex</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-complex">3.1. Direct Nesting</a>
     <li><a href="#ref-for-complex①">3.2. The Nesting At-Rule: @nest</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-compound">
-   <a href="https://drafts.csswg.org/selectors-4/#compound">https://drafts.csswg.org/selectors-4/#compound</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#compound">https://drafts.csswg.org/selectors/#compound</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-compound">2. Nesting Selector: the &amp; selector</a> <a href="#ref-for-compound①">(2)</a> <a href="#ref-for-compound②">(3)</a>
     <li><a href="#ref-for-compound③">3.1. Direct Nesting</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-selector-list">
-   <a href="https://drafts.csswg.org/selectors-4/#selector-list">https://drafts.csswg.org/selectors-4/#selector-list</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#selector-list">https://drafts.csswg.org/selectors/#selector-list</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-selector-list">4.2. The CSSNestingRule Interface</a> <a href="#ref-for-selector-list①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-simple">
-   <a href="https://drafts.csswg.org/selectors-4/#simple">https://drafts.csswg.org/selectors-4/#simple</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#simple">https://drafts.csswg.org/selectors/#simple</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-simple">3.1. Direct Nesting</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-specificity">
-   <a href="https://drafts.csswg.org/selectors-4/#specificity">https://drafts.csswg.org/selectors-4/#specificity</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#specificity">https://drafts.csswg.org/selectors/#specificity</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-specificity">2. Nesting Selector: the &amp; selector</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-type-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#type-selector">https://drafts.csswg.org/selectors-4/#type-selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#type-selector">https://drafts.csswg.org/selectors/#type-selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-type-selector">2. Nesting Selector: the &amp; selector</a>
    </ul>
@@ -1773,7 +1773,7 @@ return the result of the following steps:</p>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-cascade">cascade</span>
     </ul>
@@ -1823,7 +1823,7 @@ return the result of the following steps:</p>
      <li><span class="dfn-paneled" id="term-for-type-selector">type selector</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
      <li><span class="dfn-paneled" id="term-for-PutForwards">PutForwards</span>
@@ -1835,10 +1835,10 @@ return the result of the following steps:</p>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-color-4">[CSS-COLOR-4]
-   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
+   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 12 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
    <dd>Tab Atkins Jr.; Simon Sapin. <a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a>. 16 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-syntax-3/">https://www.w3.org/TR/css-syntax-3/</a>
    <dt id="biblio-css21">[CSS21]
@@ -1849,8 +1849,8 @@ return the result of the following steps:</p>
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-selectors4">[SELECTORS4]
    <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/selectors-4/">Selectors Level 4</a>. 21 November 2018. WD. URL: <a href="https://www.w3.org/TR/selectors-4/">https://www.w3.org/TR/selectors-4/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
@@ -1858,18 +1858,18 @@ return the result of the following steps:</p>
    <dd>Tantek Çelik; Chris Lilley; David Baron. <a href="https://www.w3.org/TR/css-color-3/">CSS Color Module Level 3</a>. 19 June 2018. REC. URL: <a href="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
-<pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://drafts.csswg.org/cssom-1/#cssstylerule"><c- g>CSSStyleRule</c-></a> {
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssrulelist"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssstylerule-cssrules"><c- g>cssRules</c-></a>;
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssstylerule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-cssstylerule-insertrule-rule-index-rule"><code><c- g>rule</c-></code></a>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a href="#dom-cssstylerule-insertrule-rule-index-index"><code><c- g>index</c-></code></a> = 0);
+<pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://drafts.csswg.org/cssom/#cssstylerule"><c- g>CSSStyleRule</c-></a> {
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssrulelist"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssstylerule-cssrules"><c- g>cssRules</c-></a>;
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssstylerule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-cssstylerule-insertrule-rule-index-rule"><code><c- g>rule</c-></code></a>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a href="#dom-cssstylerule-insertrule-rule-index-index"><code><c- g>index</c-></code></a> = 0);
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-undefined"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssstylerule-deleterule"><c- g>deleteRule</c-></a>(<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a href="#dom-cssstylerule-deleterule-index-index"><code><c- g>index</c-></code></a>);
 };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
-<c- b>interface</c-> <a href="#cssnestingrule"><code><c- g>CSSNestingRule</c-></code></a> : <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssrule"><c- n>CSSRule</c-></a> {
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-cssnestingrule-selectortext"><c- g>selectorText</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#PutForwards"><c- g>PutForwards</c-></a>=<a class="idl-code" data-link-type="attribute" href="https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext"><c- n>cssText</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration"><c- n>CSSStyleDeclaration</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSStyleDeclaration" href="#dom-cssnestingrule-style"><c- g>style</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssrulelist"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssnestingrule-cssrules"><c- g>cssRules</c-></a>;
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssnestingrule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-cssnestingrule-insertrule-rule-index-rule"><code><c- g>rule</c-></code></a>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a href="#dom-cssnestingrule-insertrule-rule-index-index"><code><c- g>index</c-></code></a> = 0);
+<c- b>interface</c-> <a href="#cssnestingrule"><code><c- g>CSSNestingRule</c-></code></a> : <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssrule"><c- n>CSSRule</c-></a> {
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-cssnestingrule-selectortext"><c- g>selectorText</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#PutForwards"><c- g>PutForwards</c-></a>=<a class="idl-code" data-link-type="attribute" href="https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext"><c- n>cssText</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssstyledeclaration"><c- n>CSSStyleDeclaration</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSStyleDeclaration" href="#dom-cssnestingrule-style"><c- g>style</c-></a>;
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssrulelist"><c- n>CSSRuleList</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSRuleList" href="#dom-cssnestingrule-cssrules"><c- g>cssRules</c-></a>;
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssnestingrule-insertrule"><c- g>insertRule</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-cssnestingrule-insertrule-rule-index-rule"><code><c- g>rule</c-></code></a>, <c- b>optional</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a href="#dom-cssnestingrule-insertrule-rule-index-index"><code><c- g>index</c-></code></a> = 0);
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-undefined"><c- b>undefined</c-></a> <a class="idl-code" data-link-type="method" href="#dom-cssnestingrule-deleterule"><c- g>deleteRule</c-></a>(<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a href="#dom-cssnestingrule-deleterule-index-index"><code><c- g>index</c-></code></a>);
 };
 

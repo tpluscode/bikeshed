@@ -2330,7 +2330,7 @@ which enables sites
 to continue to function when the browser goes offline.
 Because of this,
 a maliciously-injected service worker
-could compromise the user (as documented in <a href="https://www.w3.org/TR/service-workers-1/#security-considerations">Service Workers §6 Security Considerations</a>).</p>
+could compromise the user (as documented in <span spec-section="#security-considerations"></span>).</p>
     <p>The spec mitigates the risks
 an <a data-link-type="dfn" href="#active-network-attacker" id="ref-for-active-network-attacker">active network attacker</a> or <a data-link-type="dfn" href="#cross-site-scripting-attacks" id="ref-for-cross-site-scripting-attacks①">XSS</a> vulnerability present
 by limiting service worker registration to <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#secure-context" id="ref-for-secure-context">secure contexts</a>. <a data-link-type="biblio" href="#biblio-service-workers">[SERVICE-WORKERS]</a></p>
@@ -2475,7 +2475,7 @@ evaluating an application’s attack surface. The working group notes this
 risk, and ensured that they required reasonable interactions with Content
 Security Policy’s <a data-link-type="dfn" href="https://w3c.github.io/webappsec-csp/#script-src" id="ref-for-script-src">script-src</a> directive.</p>
     <li data-md>
-     <p>New string-to-script mechanism? (e.g. <code class="idl"><a data-link-type="idl" href="https://tc39.github.io/ecma262/#sec-eval-x" id="ref-for-sec-eval-x">eval()</a></code> or <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout" id="ref-for-dom-settimeout">setTimeout()</a></code>)</p>
+     <p>New string-to-script mechanism? (e.g. <code class="idl"><a data-link-type="idl" href="https://tc39.github.io/ecma262/#sec-eval-x" id="ref-for-sec-eval-x">eval()</a></code> or <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-windoworworkerglobalscope-settimeout" id="ref-for-dom-windoworworkerglobalscope-settimeout">setTimeout()</a></code>)</p>
     <li data-md>
      <p>What about style?</p>
    </ul>
@@ -2513,11 +2513,11 @@ same-origin checks in an early U2F API. <a data-link-type="biblio" href="#biblio
 preflights before granting access to a device, and requires user agents to
 involve the user with a permission request of some kind. </p>
    <p class="example" id="example-01b5b20a"><a class="self-link" href="#example-01b5b20a"></a> Likewise, the Web Bluetooth <a data-link-type="biblio" href="#biblio-web-bluetooth">[WEB-BLUETOOTH]</a> has an extensive discussion of
-such issues in <a href="https://webbluetoothcg.github.io/web-bluetooth/#security-and-privacy">Web Bluetooth §2 Security and privacy considerations</a>, which is worth
+such issues in <span spec-section="#security-and-privacy"></span>, which is worth
 reading as an example for similar work. </p>
    <p class="example" id="example-38bdd3d3"><a class="self-link" href="#example-38bdd3d3"></a> <a data-link-type="biblio" href="#biblio-webusb">[WEBUSB]</a> addresses these risks through a combination of user mediation /
 prompting, secure origins, and feature policy.
-See <a href="https://wicg.github.io/webusb/#security-and-privacy">WebUSB §3 Security and Privacy Considerations</a> for more. </p>
+See <span spec-section="#security-and-privacy"></span> for more. </p>
    <h3 class="question heading settled" data-level="2.12" id="native-ui"><span class="secno">2.12. </span><span class="content"> Do features in this specification allow an origin some measure of control over
   a user agent’s native UI? </span><a class="self-link" href="#native-ui"></a></h3>
    <p>Features that allow for control over a user agent’s UI (e.g. full screen
@@ -3132,14 +3132,6 @@ practices before the site prompted for location.</p>
   that persists across browsing sessions? </a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-dom-settimeout">
-   <a href="https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout">https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dom-settimeout">2.10. 
-  Do features in this specification enable new script execution/loading
-  mechanisms? </a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-dom-windoworworkerglobalscope-indexeddb">
    <a href="https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb">https://w3c.github.io/IndexedDB/#dom-windoworworkerglobalscope-indexeddb</a><b>Referenced in:</b>
    <ul>
@@ -3170,6 +3162,14 @@ practices before the site prompted for location.</p>
     <li><a href="#ref-for-third-party-context">2.5. 
   Do the features in your specification introduce new state for an origin
   that persists across browsing sessions? </a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-dom-windoworworkerglobalscope-settimeout">
+   <a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-windoworworkerglobalscope-settimeout">https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-windoworworkerglobalscope-settimeout</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dom-windoworworkerglobalscope-settimeout">2.10. 
+  Do features in this specification enable new script execution/loading
+  mechanisms? </a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-formdata">
@@ -3208,10 +3208,9 @@ practices before the site prompted for location.</p>
      <li><span class="dfn-paneled" id="term-for-dom-localstorage">localStorage</span>
      <li><span class="dfn-paneled" id="term-for-script">script</span>
      <li><span class="dfn-paneled" id="term-for-secure-context">secure context</span>
-     <li><span class="dfn-paneled" id="term-for-dom-settimeout">setTimeout(handler, timeout, ...arguments)</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[IndexedDB-2]</a> defines the following terms:
+    <a data-link-type="biblio">[IndexedDB-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dom-windoworworkerglobalscope-indexeddb">indexedDB</span>
     </ul>
@@ -3227,6 +3226,11 @@ practices before the site prompted for location.</p>
      <li><span class="dfn-paneled" id="term-for-third-party-context">third-party context</span>
     </ul>
    <li>
+    <a data-link-type="biblio">[TRUSTED-TYPES]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-dom-windoworworkerglobalscope-settimeout">setTimeout(handler)</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[XHR]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-formdata">FormData</span>
@@ -3236,22 +3240,26 @@ practices before the site prompted for location.</p>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
    <dt id="biblio-csp">[CSP]
-   <dd>Mike West. <a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a>. 16 June 2021. WD. URL: <a href="https://www.w3.org/TR/CSP3/">https://www.w3.org/TR/CSP3/</a>
+   <dd>Mike West. <a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a>. 24 March 2021. WD. URL: <a href="https://www.w3.org/TR/CSP3/">https://www.w3.org/TR/CSP3/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
-   <dt id="biblio-indexeddb-2">[IndexedDB-2]
-   <dd>Ali Alabbas; Joshua Bell. <a href="https://www.w3.org/TR/IndexedDB-2/">Indexed Database API 2.0</a>. 30 January 2018. REC. URL: <a href="https://www.w3.org/TR/IndexedDB-2/">https://www.w3.org/TR/IndexedDB-2/</a>
+   <dt id="biblio-indexeddb-3">[IndexedDB-3]
+   <dd>Ali Alabbas; Joshua Bell. <a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a>. 11 March 2021. WD. URL: <a href="https://www.w3.org/TR/IndexedDB-3/">https://www.w3.org/TR/IndexedDB-3/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
+   <dt id="biblio-storage-access">[STORAGE-ACCESS]
+   <dd>The Storage Access API URL: <a href="https://privacycg.github.io/storage-access/">https://privacycg.github.io/storage-access/</a>
+   <dt id="biblio-trusted-types">[TRUSTED-TYPES]
+   <dd>Krzysztof Kotowicz; Mike West. <a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a>. ED. URL: <a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">https://w3c.github.io/webappsec-trusted-types/dist/spec/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
    <dt id="biblio-adding-permission">[ADDING-PERMISSION]
    <dd>Nick Doty. <a href="https://github.com/w3cping/adding-permissions">Adding another permission? A guide</a>. URL: <a href="https://github.com/w3cping/adding-permissions">https://github.com/w3cping/adding-permissions</a>
    <dt id="biblio-battery-status">[BATTERY-STATUS]
-   <dd>Anssi Kostiainen; Mounir Lamouri. <a href="https://www.w3.org/TR/battery-status/">Battery Status API</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/battery-status/">https://www.w3.org/TR/battery-status/</a>
+   <dd>Anssi Kostiainen; Mounir Lamouri. <a href="https://www.w3.org/TR/battery-status/">Battery Status API</a>. 7 July 2016. CR. URL: <a href="https://www.w3.org/TR/battery-status/">https://www.w3.org/TR/battery-status/</a>
    <dt id="biblio-beacon">[BEACON]
    <dd>Ilya Grigorik; et al. <a href="https://www.w3.org/TR/beacon/">Beacon</a>. 13 April 2017. CR. URL: <a href="https://www.w3.org/TR/beacon/">https://www.w3.org/TR/beacon/</a>
    <dt id="biblio-comcast">[COMCAST]
@@ -3273,7 +3281,7 @@ practices before the site prompted for location.</p>
    <dt id="biblio-fullscreen">[FULLSCREEN]
    <dd>Philip Jägenstedt. <a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a>. Living Standard. URL: <a href="https://fullscreen.spec.whatwg.org/">https://fullscreen.spec.whatwg.org/</a>
    <dt id="biblio-gamepad">[GAMEPAD]
-   <dd>Steve Agoston; et al. <a href="https://www.w3.org/TR/gamepad/">Gamepad</a>. 8 April 2021. WD. URL: <a href="https://www.w3.org/TR/gamepad/">https://www.w3.org/TR/gamepad/</a>
+   <dd>Steve Agoston; et al. <a href="https://www.w3.org/TR/gamepad/">Gamepad</a>. 25 March 2021. WD. URL: <a href="https://www.w3.org/TR/gamepad/">https://www.w3.org/TR/gamepad/</a>
    <dt id="biblio-generic-sensor">[GENERIC-SENSOR]
    <dd>Rick Waldron. <a href="https://www.w3.org/TR/generic-sensor/">Generic Sensor API</a>. 12 December 2019. CR. URL: <a href="https://www.w3.org/TR/generic-sensor/">https://www.w3.org/TR/generic-sensor/</a>
    <dt id="biblio-geolocation-api">[GEOLOCATION-API]
@@ -3291,7 +3299,7 @@ practices before the site prompted for location.</p>
    <dt id="biblio-olejnik-payments">[OLEJNIK-PAYMENTS]
    <dd>Lukasz Olejnik. <a href="https://blog.lukaszolejnik.com/privacy-of-web-request-api/">Privacy of Web Request API</a>. URL: <a href="https://blog.lukaszolejnik.com/privacy-of-web-request-api/">https://blog.lukaszolejnik.com/privacy-of-web-request-api/</a>
    <dt id="biblio-permissions">[PERMISSIONS]
-   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 15 June 2021. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
+   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 20 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
    <dt id="biblio-permissions-policy">[PERMISSIONS-POLICY]
    <dd>Ian Clelland. <a href="https://www.w3.org/TR/permissions-policy-1/">Permissions Policy</a>. 16 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions-policy-1/">https://www.w3.org/TR/permissions-policy-1/</a>
    <dt id="biblio-rfc3552">[RFC3552]

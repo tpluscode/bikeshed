@@ -1152,8 +1152,8 @@ MediaKeySession
 -
 update(value)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursor-update
@@ -1163,8 +1163,8 @@ IDBCursor
 -
 update(value)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-update
@@ -1663,8 +1663,8 @@ https://html.spec.whatwg.org/multipage/images.html#upgrade-the-pending-request-t
 -
 upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#database-upgrade-transaction
@@ -1674,8 +1674,8 @@ database
 -
 upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#upgrade-transaction
@@ -1684,8 +1684,8 @@ https://w3c.github.io/IndexedDB/#upgrade-transaction
 -
 upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#database-upgrade-transaction
@@ -1695,8 +1695,8 @@ database
 -
 upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#upgrade-transaction
@@ -1766,8 +1766,8 @@ https://w3c.github.io/webappsec-mixed-content/#upgradeable-mixed-content
 -
 upgradeneeded
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#eventdef-request-upgradeneeded
@@ -1777,8 +1777,8 @@ request
 -
 upgradeneeded
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#eventdef-request-upgradeneeded
@@ -1965,8 +1965,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-upon-fulfillment
 -
 upon fulfillment
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#upon-fulfillment
@@ -2005,8 +2005,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-upon-rejection
 -
 upon rejection
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#upon-rejection
@@ -2038,8 +2038,8 @@ CSSMathClamp
 -
 upper
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperbound-upper-open-upper
@@ -2050,8 +2050,8 @@ IDBKeyRange/upperBound(upper)
 -
 upper
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upper
@@ -2063,8 +2063,8 @@ IDBKeyRange/bound(lower, upper)
 -
 upper
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upper
@@ -2074,8 +2074,8 @@ IDBKeyRange
 -
 upper
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperbound-upper-open-upper
@@ -2086,8 +2086,8 @@ IDBKeyRange/upperBound(upper)
 -
 upper
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upper
@@ -2099,8 +2099,8 @@ IDBKeyRange/bound(lower, upper)
 -
 upper
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upper
@@ -2110,8 +2110,8 @@ IDBKeyRange
 -
 upper bound
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#key-range-upper-bound
@@ -2121,8 +2121,8 @@ key range
 -
 upper bound
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#key-range-upper-bound
@@ -2142,8 +2142,8 @@ https://wicg.github.io/netinfo/#dfn-upper-bound-on-the-downlink-speed-of-the-fir
 -
 upper open flag
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#key-range-upper-open-flag
@@ -2153,8 +2153,8 @@ key range
 -
 upper open flag
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#key-range-upper-open-flag
@@ -2196,8 +2196,8 @@ https://www.w3.org/TR/css-counter-styles-3/#upper-alpha
 -
 upper-alpha
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-upper-alpha
@@ -2207,8 +2207,8 @@ list-style-type
 -
 upper-alpha
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-upper-alpha
@@ -2282,8 +2282,8 @@ https://www.w3.org/TR/css-counter-styles-3/#upper-latin
 -
 upper-latin
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-upper-latin
@@ -2293,8 +2293,8 @@ list-style-type
 -
 upper-latin
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-upper-latin
@@ -2336,8 +2336,8 @@ https://www.w3.org/TR/css-counter-styles-3/#upper-roman
 -
 upper-roman
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-upper-roman
@@ -2347,8 +2347,8 @@ list-style-type
 -
 upper-roman
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-upper-roman
@@ -2358,8 +2358,8 @@ list-style-type
 -
 upperBound(upper)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperbound
@@ -2369,8 +2369,8 @@ IDBKeyRange
 -
 upperBound(upper)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperbound
@@ -2380,8 +2380,8 @@ IDBKeyRange
 -
 upperBound(upper, open)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperbound
@@ -2391,8 +2391,8 @@ IDBKeyRange
 -
 upperBound(upper, open)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperbound
@@ -2402,8 +2402,8 @@ IDBKeyRange
 -
 upperOpen
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upperopen
@@ -2415,8 +2415,8 @@ IDBKeyRange/bound(lower, upper)
 -
 upperOpen
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbkeyrange-upperopen
@@ -2426,8 +2426,8 @@ IDBKeyRange
 -
 upperOpen
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upperopen
@@ -2439,8 +2439,8 @@ IDBKeyRange/bound(lower, upper)
 -
 upperOpen
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperopen
@@ -2538,8 +2538,8 @@ text-transform
 -
 uppercase
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-transform-uppercase
@@ -2549,8 +2549,8 @@ text-transform
 -
 uppercase
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-transform-uppercase

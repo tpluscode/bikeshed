@@ -808,8 +808,8 @@ CSSGroupingRule/insertRule(rule, index)
 -
 rule set
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#rule-sets-dfn
@@ -818,8 +818,8 @@ https://drafts.csswg.org/css2/#rule-sets-dfn
 -
 rule set
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#rule-sets-dfn
@@ -1141,8 +1141,8 @@ https://html.spec.whatwg.org/multipage/media.html#rules-for-updating-the-text-tr
 -
 rules on anonymous table objects
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#rules-on-anonymous-table-objects
@@ -1151,8 +1151,8 @@ https://drafts.csswg.org/css2/#rules-on-anonymous-table-objects
 -
 rules on anonymous table objects
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#rules-on-anonymous-table-objects
@@ -1231,8 +1231,8 @@ https://html.spec.whatwg.org/multipage/workers.html#run-a-worker
 -
 run an upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#run-an-upgrade-transaction
@@ -1241,8 +1241,8 @@ https://w3c.github.io/IndexedDB/#run-an-upgrade-transaction
 -
 run an upgrade transaction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#run-an-upgrade-transaction
@@ -1281,8 +1281,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#run-csp-initializatio
 -
 run csp initialization for a document
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#run-document-csp-initialization
@@ -1291,8 +1291,8 @@ https://w3c.github.io/webappsec-csp/#run-document-csp-initialization
 -
 run csp initialization for a document
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#run-document-csp-initialization
@@ -1311,8 +1311,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#run-csp-initializatio
 -
 run csp initialization for a global object.
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#run-global-object-csp-initialization
@@ -1321,8 +1321,8 @@ https://w3c.github.io/webappsec-csp/#run-global-object-csp-initialization
 -
 run csp initialization for a global object.
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#run-global-object-csp-initialization
@@ -1851,8 +1851,8 @@ https://www.w3.org/TR/css-gcpm-3/#funcdef-running
 -
 runtime-sized
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#runtime-sized
@@ -1861,8 +1861,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#runtime-sized
 -
 runtime-sized
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#runtime-sized

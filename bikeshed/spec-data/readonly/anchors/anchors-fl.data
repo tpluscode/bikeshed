@@ -448,8 +448,8 @@ AudioSampleFormat
 -
 Float32Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Float32Array
@@ -458,8 +458,8 @@ https://heycam.github.io/webidl/#idl-Float32Array
 -
 Float64Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Float64Array
@@ -646,8 +646,8 @@ https://drafts.csswg.org/css-scoping/#flat-tree
 -
 flattened member types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-flattened-union-member-types
@@ -657,8 +657,8 @@ union
 -
 flattened member types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-flattened-union-member-types
@@ -1588,17 +1588,6 @@ value
 css-images-3
 css-images
 3
-current
-https://drafts.csswg.org/css-images-3/#valdef-image-orientation-angle
-1
-1
-image-orientation
--
-flip
-value
-css-images-3
-css-images
-3
 snapshot
 https://www.w3.org/TR/css-images-3/#valdef-image-orientation-angle
 1
@@ -1713,8 +1702,8 @@ https://www.w3.org/TR/css-page-floats-3/#propdef-float
 -
 float
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-float
@@ -1723,8 +1712,8 @@ https://drafts.csswg.org/css2/#propdef-float
 -
 float
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-float
@@ -1733,8 +1722,8 @@ https://drafts.csswg.org/css2/#propdef-float
 -
 float
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-float
@@ -1743,8 +1732,8 @@ https://www.w3.org/TR/CSS22/visuren.html#propdef-float
 -
 float
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-float
@@ -1863,8 +1852,8 @@ https://www.w3.org/TR/css-page-floats-3/#float-reference
 -
 float rules
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#float-rules
@@ -1873,8 +1862,8 @@ https://drafts.csswg.org/css2/#float-rules
 -
 float rules
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#float-rules
@@ -2034,8 +2023,8 @@ https://www.w3.org/TR/webdriver2/#dfn-floor
 -
 floor expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#floor-expression
@@ -2044,8 +2033,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#floor-expression
 -
 floor expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#floor-expression
@@ -2170,8 +2159,8 @@ https://www.w3.org/TR/css-display-3/#flow-layout
 -
 flow of an element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#flow-of-an-element
@@ -2180,8 +2169,8 @@ https://drafts.csswg.org/css2/#flow-of-an-element
 -
 flow of an element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#flow-of-an-element

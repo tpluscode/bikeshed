@@ -1,7 +1,7 @@
 iv
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesCbcParams-iv
@@ -11,8 +11,8 @@ AesCbcParams
 -
 iv
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesGcmParams-iv
@@ -22,8 +22,8 @@ AesGcmParams
 -
 iv
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCbcParams-iv
@@ -32,8 +32,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCbcParams-iv
 -
 iv
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesGcmParams-iv

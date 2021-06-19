@@ -2,7 +2,11 @@
     "dom-navigator-presentation": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/Navigator.json",
             "name": "presentation",
@@ -20,7 +24,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -31,7 +34,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -72,7 +74,11 @@
     "dom-presentation-defaultrequest": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/Presentation.json",
             "name": "defaultRequest",
@@ -90,7 +96,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -101,7 +106,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -141,7 +145,11 @@
     "dom-presentation-receiver": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/Presentation.json",
             "name": "receiver",
@@ -159,7 +167,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -170,7 +177,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -210,7 +216,11 @@
     "interface-presentation": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/Presentation.json",
             "name": "Presentation",
@@ -228,7 +238,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -239,7 +248,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -276,148 +284,14 @@
             "title": "Presentation"
         }
     ],
-    "dom-presentationavailability-onchange": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationAvailability.json",
-            "name": "onchange",
-            "slug": "API/PresentationAvailability/onchange",
-            "summary": "The onchange attribute is an event handler whose corresponding event handler event type is change.",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationAvailability.onchange"
-        }
-    ],
-    "dom-presentationavailability-value": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationAvailability.json",
-            "name": "value",
-            "slug": "API/PresentationAvailability/value",
-            "summary": "The value attribute MUST return the last value from which it was set. The value is updated by the monitor the list of available presentation displays algorithm.",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationAvailability.value"
-        }
-    ],
     "interface-presentationavailability": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationAvailability.json",
             "name": "PresentationAvailability",
@@ -435,7 +309,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -446,7 +319,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -483,217 +355,14 @@
             "title": "PresentationAvailability"
         }
     ],
-    "dom-presentationconnection-binarytype": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationConnection.json",
-            "name": "binaryType",
-            "slug": "API/PresentationConnection/binaryType",
-            "summary": "When a PresentationConnection object is created, its binaryType IDL attribute MUST be set to the string \"arraybuffer\". Upon getting, the attribute MUST return its most recent value (the value it was last set as). Upon setting, the user agent MUST set the IDL attribute to the new value.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "PresentationConnection.binaryType"
-        }
-    ],
-    "dom-presentationconnection-close": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationConnection.json",
-            "name": "close",
-            "slug": "API/PresentationConnection/close",
-            "summary": "When the close() method is called on a PresentationConnection, the user agent begins the process of closing the connection by sending an empty closeMessage with the closeReason set to closed.",
-            "support": {
-                "chrome": {
-                    "version_added": "49"
-                },
-                "chrome_android": {
-                    "version_added": "49"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationConnection.close()"
-        }
-    ],
-    "dom-presentationconnection-id": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationConnection.json",
-            "name": "id",
-            "slug": "API/PresentationConnection/id",
-            "summary": "The id attribute specifies the presentation identifier of a presentation connection.",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationConnection.id"
-        }
-    ],
     "dom-presentationconnection-send": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationConnection.json",
             "name": "send",
@@ -711,7 +380,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -722,7 +390,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -759,148 +426,14 @@
             "title": "PresentationConnection.send()"
         }
     ],
-    "dom-presentationconnection-state": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationConnection.json",
-            "name": "state",
-            "slug": "API/PresentationConnection/state",
-            "summary": "The state attribute reflects the presentation connection's current state. Depending on the current PresentationConnectionState, the state attribute can hold one of the following values.",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationConnection.state"
-        }
-    ],
-    "dom-presentationconnection-terminate": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationConnection.json",
-            "name": "terminate",
-            "slug": "API/PresentationConnection/terminate",
-            "summary": "When the terminate() method is called on a PresentationConnection, the user agent begins the process of terminating the presentation. The exact process differs depending on whether terminate() is called in the controlling or the presenting context.",
-            "support": {
-                "chrome": {
-                    "version_added": true
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": true
-                }
-            },
-            "title": "PresentationConnection.terminate()"
-        }
-    ],
     "dom-presentationconnection-url": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationConnection.json",
             "name": "url",
@@ -918,7 +451,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -929,7 +461,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -969,7 +500,11 @@
     "interface-presentationconnection": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationConnection.json",
             "name": "PresentationConnection",
@@ -987,7 +522,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -998,7 +532,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1035,148 +568,14 @@
             "title": "PresentationConnection"
         }
     ],
-    "dom-presentationconnectionavailableevent-constructor": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationConnectionAvailableEvent.json",
-            "name": "PresentationConnectionAvailableEvent",
-            "slug": "API/PresentationConnectionAvailableEvent/PresentationConnectionAvailableEvent",
-            "summary": "The PresentationConnectionAvailableInit() constructor creates a new PresentationConnectionAvailableEvent.",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": null
-                },
-                "opera_android": {
-                    "version_added": null
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationConnectionAvailableEvent"
-        }
-    ],
-    "dom-presentationconnectionavailableevent-connection": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationConnectionAvailableEvent.json",
-            "name": "connection",
-            "slug": "API/PresentationConnectionAvailableEvent/connection",
-            "summary": "When an incoming connection is created, a receiving user agent fires a trusted event, named connectionavailable, on a PresentationReceiver. The trusted event is fired at the presentation controller's monitor, using the PresentationConnectionAvailableEvent interface, with the connection attribute set to the PresentationConnection object that was created.",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationConnectionAvailableEvent.connection"
-        }
-    ],
     "interface-presentationconnectionavailableevent": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationConnectionAvailableEvent.json",
             "name": "PresentationConnectionAvailableEvent",
@@ -1194,7 +593,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1205,7 +603,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1245,7 +642,11 @@
     "interface-presentationconnectioncloseevent": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationConnectionCloseEvent.json",
             "name": "PresentationConnectionCloseEvent",
@@ -1263,7 +664,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1274,7 +674,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1314,7 +713,11 @@
     "interface-presentationconnectionlist": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationConnectionList.json",
             "name": "PresentationConnectionList",
@@ -1332,7 +735,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1343,7 +745,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1383,7 +784,11 @@
     "interface-presentationreceiver": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationReceiver.json",
             "name": "PresentationReceiver",
@@ -1401,7 +806,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1412,7 +816,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1452,7 +855,11 @@
     "constructing-a-presentationrequest": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationRequest.json",
             "name": "PresentationRequest",
@@ -1470,7 +877,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1481,7 +887,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1518,79 +923,14 @@
             "title": "PresentationRequest.PresentationRequest()"
         }
     ],
-    "getting-the-presentation-displays-availability-information": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PresentationRequest.json",
-            "name": "getAvailability",
-            "slug": "API/PresentationRequest/getAvailability",
-            "summary": "When the getAvailability() method is called, the user agent MUST run the following steps:",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "35"
-                },
-                "opera_android": {
-                    "version_added": "35"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationRequest.getAvailability()"
-        }
-    ],
     "dom-presentationrequest-onconnectionavailable": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationRequest.json",
             "name": "onconnectionavailable",
@@ -1608,7 +948,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1619,7 +958,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1653,82 +991,17 @@
                     "version_added": "79"
                 }
             },
-            "title": "PresentationRequest.onconnectionavailable"
+            "title": "onconnectionavailable"
         }
     ],
-    "reconnecting-to-a-presentation": [
+    "dom-presentationrequest-start": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
             ],
-            "filename": "api/PresentationRequest.json",
-            "name": "reconnect",
-            "slug": "API/PresentationRequest/reconnect",
-            "summary": "When the reconnect(presentationId) method is called on a PresentationRequest presentationRequest, the user agent MUST run the following steps to reconnect to a presentation:",
-            "support": {
-                "chrome": {
-                    "version_added": "48"
-                },
-                "chrome_android": {
-                    "version_added": "48"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "51",
-                    "version_removed": "88",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "firefox_android": {
-                    "version_added": "51",
-                    "version_removed": "79",
-                    "flags": [
-                        {
-                            "type": "preference",
-                            "name": "dom.presentation.controller.enabled",
-                            "value_to_set": "true"
-                        }
-                    ]
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "35"
-                },
-                "opera_android": {
-                    "version_added": "35"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": "5.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PresentationRequest.reconnect()"
-        }
-    ],
-    "selecting-a-presentation-display": [
-        {
-            "engines": [
-                "blink"
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationRequest.json",
             "name": "start",
@@ -1746,7 +1019,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1757,7 +1029,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",
@@ -1797,7 +1068,11 @@
     "interface-presentationrequest": [
         {
             "engines": [
-                "blink"
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
             ],
             "filename": "api/PresentationRequest.json",
             "name": "PresentationRequest",
@@ -1815,7 +1090,6 @@
                 },
                 "firefox": {
                     "version_added": "51",
-                    "version_removed": "88",
                     "flags": [
                         {
                             "type": "preference",
@@ -1826,7 +1100,6 @@
                 },
                 "firefox_android": {
                     "version_added": "51",
-                    "version_removed": "79",
                     "flags": [
                         {
                             "type": "preference",

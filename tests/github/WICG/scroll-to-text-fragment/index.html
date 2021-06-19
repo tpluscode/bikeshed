@@ -1491,7 +1491,7 @@ the following:</p>
       <p>Otherwise:</p>
       <ol>
        <li data-md>
-        <p><a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view">Scroll target
+        <p><a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view">Scroll target
   into view</a>, with <em>behavior</em> set to "auto", <em>block</em> set to "start", and <em>inline</em> set to "nearest".</p>
         <div class="note" role="note"> This otherwise case is the same as the current step 3.3. </div>
       </ol>
@@ -1552,18 +1552,18 @@ ancestor</a> of <var>nodeB</var>, let <var>commonAncestor</var> be <var>commonAn
     </ol>
    </div>
    <h4 class="heading settled" data-level="3.5.1" id="scroll-rect-into-view"><span class="secno">3.5.1. </span><span class="content">Scroll a DOMRect into view</span><a class="self-link" href="#scroll-rect-into-view"></a></h4>
-   <div class="note" role="note"> This section describes a refactoring of the CSSOMVIEW’s <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view①">scroll an element into view</a> algorithm
+   <div class="note" role="note"> This section describes a refactoring of the CSSOMVIEW’s <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view①">scroll an element into view</a> algorithm
   to separate the steps for scrolling a DOMRect into view, so it can be used to
   scroll a Range into view. </div>
-   <p>Move the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view②">scroll an element into view</a> algorithm’s steps
-3-14 into a new algorithm <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="scroll-a-domrect-into-view">scroll a DOMRect into view</dfn>, with input <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#domrect" id="ref-for-domrect">DOMRect</a></code> <var>bounding box</var>, <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view-1/#dictdef-scrollintoviewoptions" id="ref-for-dictdef-scrollintoviewoptions">ScrollIntoViewOptions</a></code> dictionary <var>options</var>, and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element" id="ref-for-concept-element②">element</a> <var>startingElement</var>.</p>
-   <p>Also move the recursive behavior described at the top of the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view③">scroll an element into view</a> algorithm to the <a data-link-type="dfn" href="#scroll-a-domrect-into-view" id="ref-for-scroll-a-domrect-into-view">scroll a
+   <p>Move the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view②">scroll an element into view</a> algorithm’s steps
+3-14 into a new algorithm <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="scroll-a-domrect-into-view">scroll a DOMRect into view</dfn>, with input <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#domrect" id="ref-for-domrect">DOMRect</a></code> <var>bounding box</var>, <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions" id="ref-for-dictdef-scrollintoviewoptions">ScrollIntoViewOptions</a></code> dictionary <var>options</var>, and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element" id="ref-for-concept-element②">element</a> <var>startingElement</var>.</p>
+   <p>Also move the recursive behavior described at the top of the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view③">scroll an element into view</a> algorithm to the <a data-link-type="dfn" href="#scroll-a-domrect-into-view" id="ref-for-scroll-a-domrect-into-view">scroll a
 DOMRect into view</a> algorithm: "run these steps for each ancestor element or
 viewport <b>of <var>startingElement</var></b> that establishes a scrolling box <var>scrolling box</var>, in order of innermost to outermost scrolling box".</p>
    <div class="note" role="note"> <var>bounding box</var> is renamed from <var>element bounding border box</var>. </div>
    <blockquote>
     <p><strong>Monkeypatching <a data-link-type="biblio" href="#biblio-cssom-view">[CSSOM-VIEW]</a>:</strong></p>
-    <p>To scroll a DOMRect into view given a <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#domrect" id="ref-for-domrect①">DOMRect</a></code> <var>bounding box</var>,
+    <p>To scroll a DOMRect into view given a <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#domrect" id="ref-for-domrect①">DOMRect</a></code> <var>bounding box</var>,
   a scroll behavior <var>behavior</var>,
   a block flow direction position <var>block</var>,
   and an inline base direction position <var>inline</var>,
@@ -1573,7 +1573,7 @@ viewport <b>of <var>startingElement</var></b> that establishes a scrolling box <
     <div class="note" role="note"> TODO: There’s more to do here since the <var>bounding box</var> needs to be
     transformed with each step to an ancestor element or viewport. </div>
    </blockquote>
-   <p>Replace steps 3-14 of the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view④">scroll an element into view</a> algorithm with a call to <a data-link-type="dfn" href="#scroll-a-domrect-into-view" id="ref-for-scroll-a-domrect-into-view①">scroll a DOMRect into view</a>:</p>
+   <p>Replace steps 3-14 of the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-view/#scroll-an-element-into-view" id="ref-for-scroll-an-element-into-view④">scroll an element into view</a> algorithm with a call to <a data-link-type="dfn" href="#scroll-a-domrect-into-view" id="ref-for-scroll-a-domrect-into-view①">scroll a DOMRect into view</a>:</p>
    <blockquote>
     <p><strong>Monkeypatching <a data-link-type="biblio" href="#biblio-cssom-view">[CSSOM-VIEW]</a>:</strong></p>
     <p>To scroll an element into view <var>element</var>,
@@ -1585,7 +1585,7 @@ viewport <b>of <var>startingElement</var></b> that establishes a scrolling box <
      <li data-md>
       <p>If the <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document">Document</a></code> associated with <var>element</var> is not same origin with the <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document①">Document</a></code> associated with the element or viewport associated with <var>box</var>, terminate these steps.</p>
      <li data-md>
-      <p>Let <var>element bounding border box</var> be the box that the return value of invoking <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect" id="ref-for-dom-element-getboundingclientrect">getBoundingClientRect()</a></code> on <var>element</var> represents.</p>
+      <p>Let <var>element bounding border box</var> be the box that the return value of invoking <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect" id="ref-for-dom-element-getboundingclientrect">getBoundingClientRect()</a></code> on <var>element</var> represents.</p>
      <li data-md>
       <p>Perform <a data-link-type="dfn" href="#scroll-a-domrect-into-view" id="ref-for-scroll-a-domrect-into-view②">scroll a DOMRect into view</a> given <var>element bounding border box</var>, <var>options</var> and <var>element</var>.</p>
     </ol>
@@ -1600,8 +1600,8 @@ viewport <b>of <var>startingElement</var></b> that establishes a scrolling box <
   and an <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element" id="ref-for-concept-element④">element</a> <var>containingElement</var>:</p>
     <ol>
      <li data-md>
-      <p>Let <var>bounding rect</var> be the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#domrect" id="ref-for-domrect②">DOMRect</a></code> that is the return value of
-  invoking <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view-1/#dom-range-getboundingclientrect" id="ref-for-dom-range-getboundingclientrect">getBoundingClientRect()</a></code> on <var>range</var>.</p>
+      <p>Let <var>bounding rect</var> be the <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#domrect" id="ref-for-domrect②">DOMRect</a></code> that is the return value of
+  invoking <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view/#dom-range-getboundingclientrect" id="ref-for-dom-range-getboundingclientrect">getBoundingClientRect()</a></code> on <var>range</var>.</p>
      <li data-md>
       <p>Perform <a data-link-type="dfn" href="#scroll-a-domrect-into-view" id="ref-for-scroll-a-domrect-into-view③">scroll a DOMRect into view</a> given <var>bounding rect</var>, <var>behavior</var>, <var>block</var>, <var>inline</var>, and <var>containingElement</var>.</p>
     </ol>
@@ -1949,7 +1949,7 @@ order</a>, that isn’t a <a data-link-type="dfn" href="https://dom.spec.whatwg.
 namespace</a> and meets any of the following conditions:</p>
    <ol>
     <li data-md>
-     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed value</a> of its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display</a> property is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-none" id="ref-for-valdef-display-none">none</a>.</p>
+     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed value</a> of its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display</a> property is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-none" id="ref-for-valdef-display-none">none</a>.</p>
     <li data-md>
      <p>If the node <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/parsing.html#serializes-as-void" id="ref-for-serializes-as-void">serializes as void</a>.</p>
     <li data-md>
@@ -1958,8 +1958,8 @@ namespace</a> and meets any of the following conditions:</p>
      <p>Is a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element" id="ref-for-the-select-element">select</a></code> element whose <code><a data-link-type="element-sub" href="https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple" id="ref-for-attr-select-multiple">multiple</a></code> content attribute is absent.</p>
    </ol>
    <p>A node is part of a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="non-searchable-subtree">non-searchable subtree</dfn> if it is or has a <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-shadow-including-ancestor" id="ref-for-concept-shadow-including-ancestor">shadow-including ancestor</a> that is <a data-link-type="dfn" href="#search-invisible" id="ref-for-search-invisible①">search invisible</a>.</p>
-   <p>A node is a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="visible-text-node">visible text node</dfn> if it is a <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#text" id="ref-for-text②">Text</a></code> node, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed value</a> of its <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#parent-element" id="ref-for-parent-element">parent element</a>'s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility">visibility</a> property is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#valdef-visibility-visible" id="ref-for-valdef-visibility-visible">visible</a>, and it is <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/rendering.html#being-rendered" id="ref-for-being-rendered">being rendered</a>.</p>
-   <p>A node <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="has-block-level-display">has block-level display</dfn> if it is an <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element" id="ref-for-concept-element⑥">element</a> and the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed value</a> of its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display</a> property is any of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-block" id="ref-for-valdef-display-block">block</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table" id="ref-for-valdef-display-table">table</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-flow-root" id="ref-for-valdef-display-flow-root">flow-root</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-grid" id="ref-for-valdef-display-grid">grid</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-flex" id="ref-for-valdef-display-flex">flex</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-list-item" id="ref-for-valdef-display-list-item">list-item</a>.</p>
+   <p>A node is a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="visible-text-node">visible text node</dfn> if it is a <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#text" id="ref-for-text②">Text</a></code> node, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed value</a> of its <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#parent-element" id="ref-for-parent-element">parent element</a>'s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility">visibility</a> property is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#valdef-visibility-visible" id="ref-for-valdef-visibility-visible">visible</a>, and it is <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/rendering.html#being-rendered" id="ref-for-being-rendered">being rendered</a>.</p>
+   <p>A node <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="has-block-level-display">has block-level display</dfn> if it is an <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element" id="ref-for-concept-element⑥">element</a> and the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed value</a> of its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display</a> property is any of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-block" id="ref-for-valdef-display-block">block</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table" id="ref-for-valdef-display-table">table</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-flow-root" id="ref-for-valdef-display-flow-root">flow-root</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-grid" id="ref-for-valdef-display-grid">grid</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-flex" id="ref-for-valdef-display-flex">flex</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-list-item" id="ref-for-valdef-display-list-item">list-item</a>.</p>
    <div class="algorithm" data-algorithm="nearest block ancestor">
      To find the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="nearest-block-ancestor">nearest block ancestor</dfn> of a <var>node</var> follow the steps: 
     <ol class="algorithm">
@@ -2471,55 +2471,55 @@ match based on whether the element-id was scrolled.</p>
    <li><a href="#word-bounded">word bounded</a><span>, in §3.5.3</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">3.5.2. Finding Ranges in a Document</a> <a href="#ref-for-computed-value①">(2)</a> <a href="#ref-for-computed-value②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-block">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-block">https://drafts.csswg.org/css-display-3/#valdef-display-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-block">https://drafts.csswg.org/css-display/#valdef-display-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-block">3.5.2. Finding Ranges in a Document</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">3.5.2. Finding Ranges in a Document</a> <a href="#ref-for-propdef-display①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-flex">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-flex">https://drafts.csswg.org/css-display-3/#valdef-display-flex</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-flex">https://drafts.csswg.org/css-display/#valdef-display-flex</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-flex">3.5.2. Finding Ranges in a Document</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-flow-root">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-flow-root">https://drafts.csswg.org/css-display-3/#valdef-display-flow-root</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-flow-root">https://drafts.csswg.org/css-display/#valdef-display-flow-root</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-flow-root">3.5.2. Finding Ranges in a Document</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-grid">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-grid">https://drafts.csswg.org/css-display-3/#valdef-display-grid</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-grid">https://drafts.csswg.org/css-display/#valdef-display-grid</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-grid">3.5.2. Finding Ranges in a Document</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-list-item">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-list-item">https://drafts.csswg.org/css-display-3/#valdef-display-list-item</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-list-item">https://drafts.csswg.org/css-display/#valdef-display-list-item</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-list-item">3.5.2. Finding Ranges in a Document</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-none">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-none">https://drafts.csswg.org/css-display-3/#valdef-display-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-none">https://drafts.csswg.org/css-display/#valdef-display-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-none">3.5.2. Finding Ranges in a Document</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table">https://drafts.csswg.org/css-display-3/#valdef-display-table</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table">https://drafts.csswg.org/css-display/#valdef-display-table</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table">3.5.2. Finding Ranges in a Document</a>
    </ul>
@@ -2537,19 +2537,19 @@ match based on whether the element-id was scrolled.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dictdef-scrollintoviewoptions">
-   <a href="https://drafts.csswg.org/cssom-view-1/#dictdef-scrollintoviewoptions">https://drafts.csswg.org/cssom-view-1/#dictdef-scrollintoviewoptions</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions">https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dictdef-scrollintoviewoptions">3.5.1. Scroll a DOMRect into view</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-range-getboundingclientrect">
-   <a href="https://drafts.csswg.org/cssom-view-1/#dom-range-getboundingclientrect">https://drafts.csswg.org/cssom-view-1/#dom-range-getboundingclientrect</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom-view/#dom-range-getboundingclientrect">https://drafts.csswg.org/cssom-view/#dom-range-getboundingclientrect</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-range-getboundingclientrect">3.5.1. Scroll a DOMRect into view</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-scroll-an-element-into-view">
-   <a href="https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view">https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom-view/#scroll-an-element-into-view">https://drafts.csswg.org/cssom-view/#scroll-an-element-into-view</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-scroll-an-element-into-view">3.5. Navigating to a Text Fragment</a>
     <li><a href="#ref-for-scroll-an-element-into-view①">3.5.1. Scroll a DOMRect into view</a> <a href="#ref-for-scroll-an-element-into-view②">(2)</a> <a href="#ref-for-scroll-an-element-into-view③">(3)</a> <a href="#ref-for-scroll-an-element-into-view④">(4)</a>
@@ -2762,7 +2762,7 @@ match based on whether the element-id was scrolled.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-domrect">
-   <a href="https://drafts.fxtf.org/geometry-1/#domrect">https://drafts.fxtf.org/geometry-1/#domrect</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#domrect">https://drafts.fxtf.org/geometry/#domrect</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-domrect">3.5.1. Scroll a DOMRect into view</a> <a href="#ref-for-domrect①">(2)</a> <a href="#ref-for-domrect②">(3)</a>
    </ul>
@@ -3074,7 +3074,7 @@ match based on whether the element-id was scrolled.</p>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
     </ul>
@@ -3208,7 +3208,7 @@ match based on whether the element-id was scrolled.</p>
      <li><span class="dfn-paneled" id="term-for-url-code-points">url code point</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
      <li><span class="dfn-paneled" id="term-for-SameObject">SameObject</span>
@@ -3217,8 +3217,8 @@ match based on whether the element-id was scrolled.</p>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
    <dt id="biblio-css21">[CSS21]
@@ -3245,8 +3245,8 @@ match based on whether the element-id was scrolled.</p>
    <dd>Anne van Kesteren. <a href="https://url.spec.whatwg.org/">URL Standard</a>. Living Standard. URL: <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
    <dt id="biblio-uts10">[UTS10]
    <dd>Ken Whistler; Markus Scherer. <a href="https://www.unicode.org/reports/tr10/tr10-43.html">Unicode Collation Algorithm</a>. 7 February 2020. Unicode Technical Standard #10. URL: <a href="https://www.unicode.org/reports/tr10/tr10-43.html">https://www.unicode.org/reports/tr10/tr10-43.html</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

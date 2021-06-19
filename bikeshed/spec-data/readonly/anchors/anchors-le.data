@@ -196,8 +196,8 @@ https://www.w3.org/TR/css-page-3/#valdef-page-left
 -
 :left
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-left
@@ -206,8 +206,8 @@ https://drafts.csswg.org/css2/#selectordef-left
 -
 :left
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-left
@@ -257,8 +257,8 @@ https://www.w3.org/TR/css-masking-1/#typedef-left
 -
 <left>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-left
@@ -267,8 +267,8 @@ https://drafts.csswg.org/css2/#value-def-left
 -
 <left>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-left
@@ -1046,8 +1046,8 @@ https://www.w3.org/TR/css-values-4/#length-value
 -
 <length>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-length
@@ -1056,8 +1056,8 @@ https://drafts.csswg.org/css2/#value-def-length
 -
 <length>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-padding-width-length
@@ -1067,8 +1067,8 @@ https://drafts.csswg.org/css2/#valdef-padding-width-length
 -
 <length>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-border-width-length
@@ -1083,8 +1083,8 @@ border-width
 -
 <length>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-top-length
@@ -1097,8 +1097,8 @@ left
 -
 <length>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-length
@@ -1108,8 +1108,8 @@ vertical-align
 -
 <length>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-length
@@ -1118,8 +1118,8 @@ https://drafts.csswg.org/css2/#value-def-length
 -
 <length>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-padding-width-length
@@ -1129,8 +1129,8 @@ https://drafts.csswg.org/css2/#valdef-padding-width-length
 -
 <length>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-border-width-length
@@ -1145,8 +1145,8 @@ border-width
 -
 <length>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-top-length
@@ -1159,8 +1159,8 @@ left
 -
 <length>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-vertical-align-length
@@ -1230,8 +1230,8 @@ https://www.w3.org/TR/css-page-3/#at-ruledef-left-top
 -
 LENGTHADJUST_SPACING
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__LENGTHADJUST_SPACING
@@ -1241,8 +1241,8 @@ SVGTextContentElement
 -
 LENGTHADJUST_SPACING
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextContentElement__LENGTHADJUST_SPACING
@@ -1252,8 +1252,8 @@ SVGTextContentElement
 -
 LENGTHADJUST_SPACINGANDGLYPHS
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__LENGTHADJUST_SPACINGANDGLYPHS
@@ -1263,8 +1263,8 @@ SVGTextContentElement
 -
 LENGTHADJUST_SPACINGANDGLYPHS
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextContentElement__LENGTHADJUST_SPACINGANDGLYPHS
@@ -1274,8 +1274,8 @@ SVGTextContentElement
 -
 LENGTHADJUST_UNKNOWN
 const
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__LENGTHADJUST_UNKNOWN
@@ -1285,8 +1285,8 @@ SVGTextContentElement
 -
 LENGTHADJUST_UNKNOWN
 const
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextContentElement__LENGTHADJUST_UNKNOWN
@@ -1296,8 +1296,8 @@ SVGTextContentElement
 -
 LegacyFactoryFunction
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyFactoryFunction
@@ -1306,8 +1306,8 @@ https://heycam.github.io/webidl/#LegacyFactoryFunction
 -
 LegacyLenientSetter
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyLenientSetter
@@ -1316,8 +1316,8 @@ https://heycam.github.io/webidl/#LegacyLenientSetter
 -
 LegacyLenientThis
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyLenientThis
@@ -1326,8 +1326,8 @@ https://heycam.github.io/webidl/#LegacyLenientThis
 -
 LegacyNamespace
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyNamespace
@@ -1336,8 +1336,8 @@ https://heycam.github.io/webidl/#LegacyNamespace
 -
 LegacyNoInterfaceObject
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyNoInterfaceObject
@@ -1346,8 +1346,8 @@ https://heycam.github.io/webidl/#LegacyNoInterfaceObject
 -
 LegacyNullToEmptyString
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyNullToEmptyString
@@ -1356,8 +1356,8 @@ https://heycam.github.io/webidl/#LegacyNullToEmptyString
 -
 LegacyOverrideBuiltIns
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyOverrideBuiltIns
@@ -1366,8 +1366,8 @@ https://heycam.github.io/webidl/#LegacyOverrideBuiltIns
 -
 LegacyPlatformObjectGetOwnProperty
 abstract-op
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyPlatformObjectGetOwnProperty
@@ -1376,8 +1376,8 @@ https://heycam.github.io/webidl/#LegacyPlatformObjectGetOwnProperty
 -
 LegacyTreatNonObjectAsNull
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyTreatNonObjectAsNull
@@ -1386,8 +1386,8 @@ https://heycam.github.io/webidl/#LegacyTreatNonObjectAsNull
 -
 LegacyUnenumerableNamedProperties
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyUnenumerableNamedProperties
@@ -1396,8 +1396,8 @@ https://heycam.github.io/webidl/#LegacyUnenumerableNamedProperties
 -
 LegacyUnforgeable
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyUnforgeable
@@ -1406,8 +1406,8 @@ https://heycam.github.io/webidl/#LegacyUnforgeable
 -
 LegacyWindowAlias
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#LegacyWindowAlias
@@ -1468,8 +1468,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#legacynulltoemptystri
 -
 [legacynulltoemptystring]
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-legacynulltoemptystring
@@ -2141,8 +2141,8 @@ https://www.w3.org/TR/css-writing-modes-4/#physical-left
 -
 left
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-left
@@ -2151,8 +2151,8 @@ https://drafts.csswg.org/css2/#propdef-left
 -
 left
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-float-left
@@ -2162,8 +2162,8 @@ float
 -
 left
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-clear-left
@@ -2173,8 +2173,8 @@ clear
 -
 left
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-page-break-left
@@ -2186,8 +2186,8 @@ page-break-inside
 -
 left
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-background-position-left
@@ -2197,8 +2197,8 @@ background-position
 -
 left
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-align-left
@@ -2208,8 +2208,8 @@ text-align
 -
 left
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-left
@@ -2218,8 +2218,8 @@ https://drafts.csswg.org/css2/#propdef-left
 -
 left
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-float-left
@@ -2229,8 +2229,8 @@ float
 -
 left
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-clear-left
@@ -2240,8 +2240,8 @@ clear
 -
 left
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-page-break-left
@@ -2253,8 +2253,8 @@ page-break-inside
 -
 left
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-background-position-left
@@ -2264,8 +2264,8 @@ background-position
 -
 left
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-align-left
@@ -2275,8 +2275,8 @@ text-align
 -
 left
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-left
@@ -2448,8 +2448,8 @@ https://www.w3.org/TR/css-page-3/#left-page
 -
 left-hand side
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#left-hand-side
@@ -2458,8 +2458,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#left-hand-side
 -
 left-hand side
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#left-hand-side
@@ -2554,8 +2554,8 @@ min-intrinsic-size
 -
 legacy callback interface object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-legacy-callback-interface-object
@@ -2564,8 +2564,8 @@ https://heycam.github.io/webidl/#dfn-legacy-callback-interface-object
 -
 legacy callers
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-legacy-caller
@@ -2574,8 +2574,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-legacy-caller
 -
 legacy factory function
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-legacy-factory-function
@@ -2634,8 +2634,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#legacy-platform-objec
 -
 legacy platform objects
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-legacy-platform-object
@@ -2756,8 +2756,8 @@ https://xhr.spec.whatwg.org/#legacy-uppercased-byte-less-than
 -
 legacyfactoryfunction identifier
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#legacyfactoryfunction-identifier
@@ -2766,8 +2766,8 @@ https://heycam.github.io/webidl/#legacyfactoryfunction-identifier
 -
 legacynulltoemptystring
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-legacynulltoemptystring
@@ -2776,8 +2776,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-legacynulltoemptystring
 -
 legacywindowalias identifier
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#legacywindowalias-identifier
@@ -3468,8 +3468,8 @@ CSSStyleDeclaration
 -
 length
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-length
@@ -3479,8 +3479,8 @@ FileList
 -
 length
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-length
@@ -3743,8 +3743,8 @@ ImageTrackList
 -
 length
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesCtrParams-length
@@ -3754,8 +3754,8 @@ AesCtrParams
 -
 length
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesKeyAlgorithm-length
@@ -3765,8 +3765,8 @@ AesKeyAlgorithm
 -
 length
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesKeyGenParams-length
@@ -3776,8 +3776,8 @@ AesKeyGenParams
 -
 length
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-AesDerivedKeyParams-length
@@ -3787,8 +3787,8 @@ AesDerivedKeyParams
 -
 length
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-HmacImportParams-length
@@ -3798,8 +3798,8 @@ HmacImportParams
 -
 length
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-HmacKeyAlgorithm-length
@@ -3809,8 +3809,8 @@ HmacKeyAlgorithm
 -
 length
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-HmacKeyGenParams-length
@@ -3820,8 +3820,8 @@ HmacKeyGenParams
 -
 length
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCtrParams-length
@@ -3830,8 +3830,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-AesCtrParams-length
 -
 length
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyAlgorithm-length
@@ -3840,8 +3840,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyAlgorithm-length
 -
 length
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyGenParams-length
@@ -3850,8 +3850,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-AesKeyGenParams-length
 -
 length
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AesDerivedKeyParams-length
@@ -3860,8 +3860,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-AesDerivedKeyParams-length
 -
 length
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacImportParams-length
@@ -3870,8 +3870,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacImportParams-length
 -
 length
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyAlgorithm-length
@@ -3880,8 +3880,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyAlgorithm-length
 -
 length
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-HmacKeyGenParams-length
@@ -3955,8 +3955,8 @@ https://w3c.github.io/mathml-core/#dfn-length-percentage
 -
 lengthAdjust
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextContentElement__lengthAdjust
@@ -3966,8 +3966,8 @@ SVGTextContentElement
 -
 lengthAdjust
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextContentElement__lengthAdjust
@@ -3999,8 +3999,8 @@ ProgressEvent
 -
 lengthadjust
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextElementLengthAdjustAttribute
@@ -4010,8 +4010,8 @@ text
 -
 lengthadjust
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextElementLengthAdjustAttribute
@@ -4064,8 +4064,8 @@ TaskPriority
 -
 less than
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#less-than
@@ -4074,8 +4074,8 @@ https://w3c.github.io/IndexedDB/#less-than
 -
 less than
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#less-than
@@ -4084,8 +4084,8 @@ https://www.w3.org/TR/IndexedDB-3/#less-than
 -
 let declaration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#let-declaration
@@ -4094,8 +4094,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#let-declaration
 -
 let declaration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#let-declaration
@@ -4206,8 +4206,8 @@ https://www.w3.org/TR/css-text-3/#propdef-letter-spacing
 -
 letter-spacing
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-letter-spacing
@@ -4216,8 +4216,8 @@ https://drafts.csswg.org/css2/#propdef-letter-spacing
 -
 letter-spacing
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-letter-spacing
@@ -4226,8 +4226,8 @@ https://drafts.csswg.org/css2/#propdef-letter-spacing
 -
 letter-spacing
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/text.html#propdef-letter-spacing

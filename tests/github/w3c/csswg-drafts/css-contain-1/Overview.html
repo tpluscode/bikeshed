@@ -1172,11 +1172,11 @@ on screen, on paper, etc.
 	affect what they are introducing,
 	and include in their specification any effect not described here.</strong></p>
    <h3 class="heading settled" data-level="3.1" id="containment-size"><span class="secno">3.1. </span><span class="content"> Size Containment</span><a class="self-link" href="#containment-size"></a></h3>
-   <p>If the element does not generate a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#principal-box" id="ref-for-principal-box">principal box</a> (as is the case with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display: contents</a> or <span class="css" id="ref-for-propdef-display①">display: none</span>),
-	or its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table" id="ref-for-valdef-display-table">table</a>,
-	or its principal box is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#internal-table-box" id="ref-for-internal-table-box">internal table box</a>,
-	or an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#internal-ruby-box" id="ref-for-internal-ruby-box">internal ruby box</a>,
-	or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#atomic-inline" id="ref-for-atomic-inline">non-atomic</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level">inline-level</a> box,
+   <p>If the element does not generate a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#principal-box" id="ref-for-principal-box">principal box</a> (as is the case with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display: contents</a> or <span class="css" id="ref-for-propdef-display①">display: none</span>),
+	or its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table" id="ref-for-valdef-display-table">table</a>,
+	or its principal box is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#internal-table-box" id="ref-for-internal-table-box">internal table box</a>,
+	or an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#internal-ruby-box" id="ref-for-internal-ruby-box">internal ruby box</a>,
+	or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#atomic-inline" id="ref-for-atomic-inline">non-atomic</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level">inline-level</a> box,
 	size containment has no effect.</p>
    <details class="wpt-tests-block" dir="ltr" lang="en">
     <summary>Tests</summary>
@@ -1215,7 +1215,7 @@ on screen, on paper, etc.
      <li class="wpt-test"><a class="wpt-name" href="https://wpt.fyi/results/css/css-contain/contain-size-056.html">contain-size-056.html</a> <a class="wpt-live" href="http://wpt.live/css/css-contain/contain-size-056.html" title="css/css-contain/contain-size-056.html"><small>(live test)</small></a> <a class="wpt-source" href="https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-size-056.html"><small>(source)</small></a>
     </ul>
    </details>
-   <p>Otherwise, giving an element <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="size-containment">size containment</dfn> makes its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#principal-box" id="ref-for-principal-box①">principal box</a> a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="size-containment-box">size containment box</dfn> and has the following effects:</p>
+   <p>Otherwise, giving an element <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="size-containment">size containment</dfn> makes its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#principal-box" id="ref-for-principal-box①">principal box</a> a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="size-containment-box">size containment box</dfn> and has the following effects:</p>
    <ol>
     <li>
       When calculating the size of <a data-link-type="dfn" href="#size-containment-box" id="ref-for-size-containment-box①">size containment box</a>,
@@ -1321,7 +1321,7 @@ on screen, on paper, etc.
          <dl>
           <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="sizing-as-if-empty">Sizing as if empty</dfn> 
           <dd>
-            The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a> of the <a data-link-type="dfn" href="#size-containment-box" id="ref-for-size-containment-box⑤">containment box</a> are determined as if performing a normal layout of the box,
+            The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a> of the <a data-link-type="dfn" href="#size-containment-box" id="ref-for-size-containment-box⑤">containment box</a> are determined as if performing a normal layout of the box,
 									except that it is treated as having no content—<wbr>not even through pseudo elements such as <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-before" id="ref-for-selectordef-before">::before</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-after" id="ref-for-selectordef-after">::after</a>, or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker">::marker</a>. 
            <details class="wpt-tests-block" dir="ltr" lang="en">
             <summary>Tests</summary>
@@ -1348,7 +1348,7 @@ on screen, on paper, etc.
              <li class="wpt-test"><a class="wpt-name" href="https://wpt.fyi/results/css/css-contain/contain-size-grid-001.html">contain-size-grid-001.html</a> <a class="wpt-live" href="http://wpt.live/css/css-contain/contain-size-grid-001.html" title="css/css-contain/contain-size-grid-001.html"><small>(live test)</small></a> <a class="wpt-source" href="https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-size-grid-001.html"><small>(source)</small></a>
             </ul>
            </details>
-           <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element">Replaced elements</a> must be treated as having a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-dimensions" id="ref-for-natural-dimensions">natural</a> width and height of 0
+           <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element">Replaced elements</a> must be treated as having a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-dimensions" id="ref-for-natural-dimensions">natural</a> width and height of 0
 									and no <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio">natural aspect ratio</a>.</p>
            <p class="note" role="note"><span>Note:</span> Size containment only suppresses the <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio①">natural aspect ratio</a>,
 									so properties like <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-4/#propdef-aspect-ratio" id="ref-for-propdef-aspect-ratio">aspect-ratio</a> which affect that <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio">preferred aspect ratio</a> directly
@@ -1469,7 +1469,7 @@ on screen, on paper, etc.
 				referencing part of this clarified text.</p>
      </div>
     <li>
-      <a data-link-type="dfn" href="#size-containment-box" id="ref-for-size-containment-box⑨">Size containment boxes</a> are <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#monolithic" id="ref-for-monolithic">monolithic</a> (See <a href="https://www.w3.org/TR/css-break-3/#possible-breaks">CSS Fragmentation 3 §4.1 Possible Break Points</a>). 
+      <a data-link-type="dfn" href="#size-containment-box" id="ref-for-size-containment-box⑨">Size containment boxes</a> are <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#monolithic" id="ref-for-monolithic">monolithic</a> (See <a href="https://www.w3.org/TR/css-break-3/#possible-breaks">CSS Fragmentation 3 §4.1 Possible Break Points</a>). 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1520,10 +1520,10 @@ the layout of its contents
      </p>
    </ol>
    <h3 class="heading settled" data-level="3.2" id="containment-layout"><span class="secno">3.2. </span><span class="content"> Layout Containment</span><a class="self-link" href="#containment-layout"></a></h3>
-   <p>If the element does not generate a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#principal-box" id="ref-for-principal-box②">principal box</a> (as is the case with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②">display</a> values of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-contents" id="ref-for-valdef-display-contents">contents</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-none" id="ref-for-valdef-display-none">none</a>),
-	or its <span id="ref-for-principal-box③">principal box</span> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#internal-table-box" id="ref-for-internal-table-box①">internal table box</a> other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell">table-cell</a>,
-	or an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#internal-ruby-box" id="ref-for-internal-ruby-box①">internal ruby box</a>,
-	or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#atomic-inline" id="ref-for-atomic-inline①">non-atomic</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level①">inline-level</a> box,
+   <p>If the element does not generate a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#principal-box" id="ref-for-principal-box②">principal box</a> (as is the case with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②">display</a> values of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-contents" id="ref-for-valdef-display-contents">contents</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-none" id="ref-for-valdef-display-none">none</a>),
+	or its <span id="ref-for-principal-box③">principal box</span> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#internal-table-box" id="ref-for-internal-table-box①">internal table box</a> other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell">table-cell</a>,
+	or an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#internal-ruby-box" id="ref-for-internal-ruby-box①">internal ruby box</a>,
+	or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#atomic-inline" id="ref-for-atomic-inline①">non-atomic</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level①">inline-level</a> box,
 	layout containment has no effect.
 	Otherwise, giving an element <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="layout-containment">layout containment</dfn> makes its <span id="ref-for-principal-box④">principal box</span> a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="layout-containment-box">layout containment box</dfn> and has the following effects:</p>
    <details class="wpt-tests-block" dir="ltr" lang="en">
@@ -1545,7 +1545,7 @@ the layout of its contents
    </details>
    <ol>
     <li data-md>
-     <p>The <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box①">layout containment box</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context">establishes an independent formatting context</a>.</p>
+     <p>The <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box①">layout containment box</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context">establishes an independent formatting context</a>.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1556,13 +1556,13 @@ the layout of its contents
       </ul>
      </details>
     <li data-md>
-     <p>If at least one <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragmentation-container" id="ref-for-fragmentation-container">fragmentation container</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragmentation-context" id="ref-for-fragmentation-context">fragmentation context</a> has <a data-link-type="dfn" href="#layout-containment" id="ref-for-layout-containment④">layout containment</a>,
+     <p>If at least one <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragmentation-container" id="ref-for-fragmentation-container">fragmentation container</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragmentation-context" id="ref-for-fragmentation-context">fragmentation context</a> has <a data-link-type="dfn" href="#layout-containment" id="ref-for-layout-containment④">layout containment</a>,
 or if at least one <span id="ref-for-fragmentation-container①">fragmentation container</span> of a <span id="ref-for-fragmentation-context①">fragmentation context</span> is a descendant of <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box②">layout containment box</a> <strong>and</strong> at least one subsequent <span id="ref-for-fragmentation-container②">fragmentation container</span> of the same <span id="ref-for-fragmentation-context②">fragmentation context</span> is not a descendant of that same element with layout containment,
 then the first <span id="ref-for-layout-containment-box③">layout containment box</span> which is either a <span id="ref-for-fragmentation-container③">fragmentation container</span> itself
-or is an ancestor of a <span id="ref-for-fragmentation-container④">fragmentation container</span> must “trap” the remainder of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragmented-flow" id="ref-for-fragmented-flow">fragmented flow</a>: <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragmentation" id="ref-for-fragmentation">fragmentation</a> must not continue past the <span id="ref-for-layout-containment⑤">layout containment</span> boundary,
+or is an ancestor of a <span id="ref-for-fragmentation-container④">fragmentation container</span> must “trap” the remainder of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragmented-flow" id="ref-for-fragmented-flow">fragmented flow</a>: <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragmentation" id="ref-for-fragmentation">fragmentation</a> must not continue past the <span id="ref-for-layout-containment⑤">layout containment</span> boundary,
 and the last <span id="ref-for-fragmentation-container⑤">fragmentation container</span> within the first <span id="ref-for-layout-containment⑥">layout containment</span> boundary
 is treated as if it is the last <span id="ref-for-fragmentation-container⑥">fragmentation container</span> in its <span id="ref-for-fragmentation-context③">fragmentation context</span>.</p>
-     <p>If subsequent <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragmentation-container" id="ref-for-fragmentation-container⑦">fragmentation containers</a> in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragmentation-context" id="ref-for-fragmentation-context④">fragmentation context</a> are only generated when more content remains in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragmented-flow" id="ref-for-fragmented-flow①">fragmented flow</a>,
+     <p>If subsequent <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragmentation-container" id="ref-for-fragmentation-container⑦">fragmentation containers</a> in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragmentation-context" id="ref-for-fragmentation-context④">fragmentation context</a> are only generated when more content remains in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragmented-flow" id="ref-for-fragmented-flow①">fragmented flow</a>,
 then they are not generated.
 If they would exist regardless,
 they remain part of the <span id="ref-for-fragmentation-context⑤">fragmentation context</span>,
@@ -1620,7 +1620,7 @@ any overflow must be treated as <a data-link-type="dfn" href="https://drafts.css
       </ul>
      </details>
     <li data-md>
-     <p>The <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box⑤">layout containment box</a> establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block" id="ref-for-absolute-positioning-containing-block">absolute positioning containing block</a> and a <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#fixed-positioning-containing-block" id="ref-for-fixed-positioning-containing-block">fixed positioning containing block</a>.</p>
+     <p>The <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box⑤">layout containment box</a> establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#absolute-positioning-containing-block" id="ref-for-absolute-positioning-containing-block">absolute positioning containing block</a> and a <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#fixed-positioning-containing-block" id="ref-for-fixed-positioning-containing-block">fixed positioning containing block</a>.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1631,7 +1631,7 @@ any overflow must be treated as <a data-link-type="dfn" href="https://drafts.css
       </ul>
      </details>
     <li data-md>
-     <p>The <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box⑥">layout containment box</a> creates a <a data-link-type="dfn" href="https://drafts.csswg.org/css2/#stacking-context" id="ref-for-stacking-context">stacking context</a>.</p>
+     <p>The <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box⑥">layout containment box</a> creates a <a data-link-type="dfn">stacking context</a>.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1641,7 +1641,7 @@ any overflow must be treated as <a data-link-type="dfn" href="https://drafts.css
       </ul>
      </details>
     <li data-md>
-     <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#forced-break" id="ref-for-forced-break">Forced breaks</a> are allowed within <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box⑦">layout containment boxes</a> but do not propagate to the parent as otherwise described in <a href="https://www.w3.org/TR/css-break-3/#break-between">CSS Fragmentation 3 §3.1 Breaks Between Boxes: the break-before and break-after properties</a>.</p>
+     <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#forced-break" id="ref-for-forced-break">Forced breaks</a> are allowed within <a data-link-type="dfn" href="#layout-containment-box" id="ref-for-layout-containment-box⑦">layout containment boxes</a> but do not propagate to the parent as otherwise described in <a href="https://www.w3.org/TR/css-break-3/#break-between">CSS Fragmentation 3 §3.1 Breaks Between Boxes: the break-before and break-after properties</a>.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1649,7 +1649,7 @@ any overflow must be treated as <a data-link-type="dfn" href="https://drafts.css
        <li class="wpt-test"><a class="wpt-name" href="https://wpt.fyi/results/css/css-contain/contain-layout-breaks-002.html">contain-layout-breaks-002.html</a> <a class="wpt-live" href="http://wpt.live/css/css-contain/contain-layout-breaks-002.html" title="css/css-contain/contain-layout-breaks-002.html"><small>(live test)</small></a> <a class="wpt-source" href="https://github.com/web-platform-tests/wpt/blob/master/css/css-contain/contain-layout-breaks-002.html"><small>(source)</small></a>
       </ul>
      </details>
-     <p class="note" role="note"><span>Note:</span> This introduces the previously non-existent possibility that <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#forced-break" id="ref-for-forced-break①">forced breaks</a> may occur between a box and its container (See <a href="https://www.w3.org/TR/css-break-3/#possible-breaks">CSS Fragmentation 3 §4.1 Possible Break Points</a>).</p>
+     <p class="note" role="note"><span>Note:</span> This introduces the previously non-existent possibility that <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#forced-break" id="ref-for-forced-break①">forced breaks</a> may occur between a box and its container (See <a href="https://www.w3.org/TR/css-break-3/#possible-breaks">CSS Fragmentation 3 §4.1 Possible Break Points</a>).</p>
     <li data-md>
      <p>For the purpose of the <a class="property" data-link-type="propdesc" href="https://www.w3.org/TR/CSS2/visudet.html#propdef-vertical-align" id="ref-for-propdef-vertical-align">vertical-align</a> property,
 or any other property whose effects
@@ -1686,10 +1686,10 @@ the layout of the <span id="ref-for-layout-containment-box①④">containment bo
 this optimization can be applied more liberally.)</p>
    </ol>
    <h3 class="heading settled" data-level="3.3" id="containment-paint"><span class="secno">3.3. </span><span class="content"> Paint Containment</span><a class="self-link" href="#containment-paint"></a></h3>
-   <p>If the element does not generate a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#principal-box" id="ref-for-principal-box⑤">principal box</a> (as is the case with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display③">display</a> values of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-contents" id="ref-for-valdef-display-contents①">contents</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-none" id="ref-for-valdef-display-none①">none</a>),
-	or its <span id="ref-for-principal-box⑥">principal box</span> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#internal-table-box" id="ref-for-internal-table-box②">internal table box</a> other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell①">table-cell</a>,
-	or an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#internal-ruby-box" id="ref-for-internal-ruby-box②">internal ruby box</a>,
-	or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#atomic-inline" id="ref-for-atomic-inline②">non-atomic</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level②">inline-level</a> box,
+   <p>If the element does not generate a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#principal-box" id="ref-for-principal-box⑤">principal box</a> (as is the case with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display③">display</a> values of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-contents" id="ref-for-valdef-display-contents①">contents</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-none" id="ref-for-valdef-display-none①">none</a>),
+	or its <span id="ref-for-principal-box⑥">principal box</span> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#internal-table-box" id="ref-for-internal-table-box②">internal table box</a> other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell①">table-cell</a>,
+	or an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#internal-ruby-box" id="ref-for-internal-ruby-box②">internal ruby box</a>,
+	or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#atomic-inline" id="ref-for-atomic-inline②">non-atomic</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level②">inline-level</a> box,
 	paint containment has no effect.
 	Otherwise, giving an element <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="paint-containment">paint containment</dfn> makes its <span id="ref-for-principal-box⑦">principal box</span> a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="paint-containment-box">paint containment box</dfn> and has the following effects:</p>
    <details class="wpt-tests-block" dir="ltr" lang="en">
@@ -1718,7 +1718,7 @@ including any <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflo
 taking <a data-link-type="dfn" href="https://drafts.csswg.org/css-backgrounds-3/#corner-clipping" id="ref-for-corner-clipping">corner clipping</a> into account.
 This does not include the creation of any mechanism
 to access or indicate the presence of the clipped content;
-nor does it inhibit the creation of any such mechanism through other properties, <span class="informative">such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow①">overflow</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-ui-4/#propdef-resize" id="ref-for-propdef-resize">resize</a>, or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-ui-3/#propdef-text-overflow" id="ref-for-propdef-text-overflow">text-overflow</a></span>.</p>
+nor does it inhibit the creation of any such mechanism through other properties, <span class="informative">such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow①">overflow</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-ui-4/#propdef-resize" id="ref-for-propdef-resize">resize</a>, or <a class="property" data-link-type="propdesc">text-overflow</a></span>.</p>
      <p class="note" role="note"><span>Note:</span> The next level of this specification <a data-link-type="biblio" href="#biblio-css-contain-2">[CSS-CONTAIN-2]</a> refines this effect
 to apply to the <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#overflow-clip-edge" id="ref-for-overflow-clip-edge">overflow clip edge</a> rather than the <a data-link-type="dfn" href="https://www.w3.org/TR/CSS2/box.html#padding-edge" id="ref-for-padding-edge①">padding edge</a>,
 in order to take the new <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow-clip-margin" id="ref-for-propdef-overflow-clip-margin">overflow-clip-margin</a> property into account.
@@ -1749,7 +1749,7 @@ while leaving other values of <span class="property" id="ref-for-propdef-overflo
       </ul>
      </details>
     <li data-md>
-     <p>The <a data-link-type="dfn" href="#paint-containment-box" id="ref-for-paint-containment-box②">paint containment box</a> establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block" id="ref-for-absolute-positioning-containing-block①">absolute positioning containing block</a> and a <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#fixed-positioning-containing-block" id="ref-for-fixed-positioning-containing-block①">fixed positioning containing block</a>.</p>
+     <p>The <a data-link-type="dfn" href="#paint-containment-box" id="ref-for-paint-containment-box②">paint containment box</a> establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#absolute-positioning-containing-block" id="ref-for-absolute-positioning-containing-block①">absolute positioning containing block</a> and a <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#fixed-positioning-containing-block" id="ref-for-fixed-positioning-containing-block①">fixed positioning containing block</a>.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1761,7 +1761,7 @@ while leaving other values of <span class="property" id="ref-for-propdef-overflo
       </ul>
      </details>
     <li data-md>
-     <p>The <a data-link-type="dfn" href="#paint-containment-box" id="ref-for-paint-containment-box③">paint containment box</a> creates a <a data-link-type="dfn" href="https://drafts.csswg.org/css2/#stacking-context" id="ref-for-stacking-context①">stacking context</a>.</p>
+     <p>The <a data-link-type="dfn" href="#paint-containment-box" id="ref-for-paint-containment-box③">paint containment box</a> creates a <a data-link-type="dfn">stacking context</a>.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1772,7 +1772,7 @@ while leaving other values of <span class="property" id="ref-for-propdef-overflo
       </ul>
      </details>
     <li data-md>
-     <p>The <a data-link-type="dfn" href="#paint-containment-box" id="ref-for-paint-containment-box④">paint containment box</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context①">establishes an independent formatting context</a>.</p>
+     <p>The <a data-link-type="dfn" href="#paint-containment-box" id="ref-for-paint-containment-box④">paint containment box</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context①">establishes an independent formatting context</a>.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1797,7 +1797,7 @@ the UA can directly skip trying to paint its contents,
 as they’re guaranteed to be off-screen/obscured as well.</p>
      <li data-md>
       <p>Unless the clipped content is made accessible via a separate mechanism
-such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow②">overflow</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-ui-4/#propdef-resize" id="ref-for-propdef-resize①">resize</a>, or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-ui-3/#propdef-text-overflow" id="ref-for-propdef-text-overflow①">text-overflow</a> properties,
+such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow②">overflow</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-ui-4/#propdef-resize" id="ref-for-propdef-resize①">resize</a>, or <a class="property" data-link-type="propdesc">text-overflow</a> properties,
 the UA can reserve "canvas" space for the box exactly the box’s size.
 (In similar, scrollable, situations, like <span class="css" id="ref-for-propdef-overflow③">overflow: hidden</span>,
 it’s possible to scroll to the currently-clipped content,
@@ -2173,49 +2173,49 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-forced-break">
-   <a href="https://drafts.csswg.org/css-break-3/#forced-break">https://drafts.csswg.org/css-break-3/#forced-break</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#forced-break">https://drafts.csswg.org/css-break/#forced-break</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-forced-break">3.2. 
 Layout Containment</a> <a href="#ref-for-forced-break①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fragmentation">
-   <a href="https://drafts.csswg.org/css-break-3/#fragmentation">https://drafts.csswg.org/css-break-3/#fragmentation</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#fragmentation">https://drafts.csswg.org/css-break/#fragmentation</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fragmentation">3.2. 
 Layout Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fragmentation-container">
-   <a href="https://drafts.csswg.org/css-break-3/#fragmentation-container">https://drafts.csswg.org/css-break-3/#fragmentation-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#fragmentation-container">https://drafts.csswg.org/css-break/#fragmentation-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fragmentation-container">3.2. 
 Layout Containment</a> <a href="#ref-for-fragmentation-container①">(2)</a> <a href="#ref-for-fragmentation-container②">(3)</a> <a href="#ref-for-fragmentation-container③">(4)</a> <a href="#ref-for-fragmentation-container④">(5)</a> <a href="#ref-for-fragmentation-container⑤">(6)</a> <a href="#ref-for-fragmentation-container⑥">(7)</a> <a href="#ref-for-fragmentation-container⑦">(8)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fragmentation-context">
-   <a href="https://drafts.csswg.org/css-break-3/#fragmentation-context">https://drafts.csswg.org/css-break-3/#fragmentation-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#fragmentation-context">https://drafts.csswg.org/css-break/#fragmentation-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fragmentation-context">3.2. 
 Layout Containment</a> <a href="#ref-for-fragmentation-context①">(2)</a> <a href="#ref-for-fragmentation-context②">(3)</a> <a href="#ref-for-fragmentation-context③">(4)</a> <a href="#ref-for-fragmentation-context④">(5)</a> <a href="#ref-for-fragmentation-context⑤">(6)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fragmented-flow">
-   <a href="https://drafts.csswg.org/css-break-3/#fragmented-flow">https://drafts.csswg.org/css-break-3/#fragmented-flow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#fragmented-flow">https://drafts.csswg.org/css-break/#fragmented-flow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fragmented-flow">3.2. 
 Layout Containment</a> <a href="#ref-for-fragmented-flow①">(2)</a> <a href="#ref-for-fragmented-flow②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-monolithic">
-   <a href="https://drafts.csswg.org/css-break-3/#monolithic">https://drafts.csswg.org/css-break-3/#monolithic</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#monolithic">https://drafts.csswg.org/css-break/#monolithic</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-monolithic">3.1. 
 Size Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">3.1. 
 Size Containment</a>
@@ -2229,7 +2229,7 @@ Candidate Recommendation of 08 November 2018</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-atomic-inline">
-   <a href="https://drafts.csswg.org/css-display-3/#atomic-inline">https://drafts.csswg.org/css-display-3/#atomic-inline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#atomic-inline">https://drafts.csswg.org/css-display/#atomic-inline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-atomic-inline">3.1. 
 Size Containment</a>
@@ -2240,7 +2240,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-contents">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-contents">https://drafts.csswg.org/css-display-3/#valdef-display-contents</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-contents">https://drafts.csswg.org/css-display/#valdef-display-contents</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-contents">3.2. 
 Layout Containment</a>
@@ -2249,7 +2249,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">3.1. 
 Size Containment</a> <a href="#ref-for-propdef-display①">(2)</a>
@@ -2260,7 +2260,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-establish-an-independent-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-establish-an-independent-formatting-context">3.2. 
 Layout Containment</a>
@@ -2269,7 +2269,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-level">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-level">https://drafts.csswg.org/css-display-3/#inline-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-level">https://drafts.csswg.org/css-display/#inline-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-level">3.1. 
 Size Containment</a>
@@ -2280,14 +2280,14 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inner-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#inner-display-type">https://drafts.csswg.org/css-display-3/#inner-display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inner-display-type">https://drafts.csswg.org/css-display/#inner-display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inner-display-type">3.1. 
 Size Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-internal-ruby-box">
-   <a href="https://drafts.csswg.org/css-display-3/#internal-ruby-box">https://drafts.csswg.org/css-display-3/#internal-ruby-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#internal-ruby-box">https://drafts.csswg.org/css-display/#internal-ruby-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-internal-ruby-box">3.1. 
 Size Containment</a>
@@ -2298,7 +2298,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-internal-table-box">
-   <a href="https://drafts.csswg.org/css-display-3/#internal-table-box">https://drafts.csswg.org/css-display-3/#internal-table-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#internal-table-box">https://drafts.csswg.org/css-display/#internal-table-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-internal-table-box">3.1. 
 Size Containment</a>
@@ -2309,7 +2309,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-none">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-none">https://drafts.csswg.org/css-display-3/#valdef-display-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-none">https://drafts.csswg.org/css-display/#valdef-display-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-none">3.2. 
 Layout Containment</a>
@@ -2318,7 +2318,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-principal-box">
-   <a href="https://drafts.csswg.org/css-display-3/#principal-box">https://drafts.csswg.org/css-display-3/#principal-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#principal-box">https://drafts.csswg.org/css-display/#principal-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-principal-box">3.1. 
 Size Containment</a> <a href="#ref-for-principal-box①">(2)</a>
@@ -2329,21 +2329,21 @@ Paint Containment</a> <a href="#ref-for-principal-box⑥">(2)</a> <a href="#ref-
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-replaced-element">
-   <a href="https://drafts.csswg.org/css-display-3/#replaced-element">https://drafts.csswg.org/css-display-3/#replaced-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#replaced-element">https://drafts.csswg.org/css-display/#replaced-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-replaced-element">3.1. 
 Size Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table">https://drafts.csswg.org/css-display-3/#valdef-display-table</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table">https://drafts.csswg.org/css-display/#valdef-display-table</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table">3.1. 
 Size Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-cell">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-cell">https://drafts.csswg.org/css-display-3/#valdef-display-table-cell</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-cell">https://drafts.csswg.org/css-display/#valdef-display-table-cell</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-cell">3.2. 
 Layout Containment</a>
@@ -2454,7 +2454,7 @@ Layout Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-absolute-positioning-containing-block">
-   <a href="https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block">https://drafts.csswg.org/css-position-3/#absolute-positioning-containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#absolute-positioning-containing-block">https://drafts.csswg.org/css-position/#absolute-positioning-containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-absolute-positioning-containing-block">3.2. 
 Layout Containment</a>
@@ -2463,7 +2463,7 @@ Paint Containment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fixed-positioning-containing-block">
-   <a href="https://drafts.csswg.org/css-position-3/#fixed-positioning-containing-block">https://drafts.csswg.org/css-position-3/#fixed-positioning-containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#fixed-positioning-containing-block">https://drafts.csswg.org/css-position/#fixed-positioning-containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fixed-positioning-containing-block">3.2. 
 Layout Containment</a>
@@ -2555,13 +2555,6 @@ Size Containment</a> <a href="#ref-for-propdef-width①">(2)</a>
 Size Containment</a> <a href="#ref-for-propdef-aspect-ratio①">(2)</a> <a href="#ref-for-propdef-aspect-ratio②">(3)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-text-overflow">
-   <a href="https://drafts.csswg.org/css-ui-3/#propdef-text-overflow">https://drafts.csswg.org/css-ui-3/#propdef-text-overflow</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-text-overflow">3.3. 
-Paint Containment</a> <a href="#ref-for-propdef-text-overflow①">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-resize">
    <a href="https://drafts.csswg.org/css-ui-4/#propdef-resize">https://drafts.csswg.org/css-ui-4/#propdef-resize</a><b>Referenced in:</b>
    <ul>
@@ -2597,15 +2590,6 @@ Strong Containment: the contain property</a> <a href="#ref-for-comb-any①">(2)<
 Paint Containment</a> <a href="#ref-for-padding-edge①">(2)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-stacking-context">
-   <a href="https://drafts.csswg.org/css2/#stacking-context">https://drafts.csswg.org/css2/#stacking-context</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-stacking-context">3.2. 
-Layout Containment</a>
-    <li><a href="#ref-for-stacking-context①">3.3. 
-Paint Containment</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-vertical-align">
    <a href="https://www.w3.org/TR/CSS2/visudet.html#propdef-vertical-align">https://www.w3.org/TR/CSS2/visudet.html#propdef-vertical-align</a><b>Referenced in:</b>
    <ul>
@@ -2638,7 +2622,7 @@ Strong Containment: the contain property</a>
      <li><span class="dfn-paneled" id="term-for-monolithic">monolithic</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-used-value">used value</span>
     </ul>
@@ -2725,11 +2709,6 @@ Strong Containment: the contain property</a>
      <li><span class="dfn-paneled" id="term-for-propdef-aspect-ratio">aspect-ratio</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-ui-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-text-overflow">text-overflow</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[css-ui-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-propdef-resize">resize</span>
@@ -2745,7 +2724,6 @@ Strong Containment: the contain property</a>
     <a data-link-type="biblio">[CSS2]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-padding-edge">padding edge</span>
-     <li><span class="dfn-paneled" id="term-for-stacking-context">stacking context</span>
      <li><span class="dfn-paneled" id="term-for-propdef-vertical-align">vertical-align</span>
     </ul>
    <li>
@@ -2761,8 +2739,8 @@ Strong Containment: the contain property</a>
    <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="https://www.w3.org/TR/css-backgrounds-3/">CSS Backgrounds and Borders Module Level 3</a>. 22 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-backgrounds-3/">https://www.w3.org/TR/css-backgrounds-3/</a>
    <dt id="biblio-css-break-3">[CSS-BREAK-3]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/css-break-3/">https://www.w3.org/TR/css-break-3/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-contain-2">[CSS-CONTAIN-2]
    <dd>Tab Atkins Jr.; Florian Rivoal; Vladimir Levin. <a href="https://www.w3.org/TR/css-contain-2/">CSS Containment Module Level 2</a>. 16 December 2020. WD. URL: <a href="https://www.w3.org/TR/css-contain-2/">https://www.w3.org/TR/css-contain-2/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
@@ -2803,9 +2781,7 @@ Strong Containment: the contain property</a>
    <dt id="biblio-css-regions-1">[CSS-REGIONS-1]
    <dd>Rossen Atanassov; Alan Stearns. <a href="https://www.w3.org/TR/css-regions-1/">CSS Regions Module Level 1</a>. 9 October 2014. WD. URL: <a href="https://www.w3.org/TR/css-regions-1/">https://www.w3.org/TR/css-regions-1/</a>
    <dt id="biblio-css-sizing-4">[CSS-SIZING-4]
-   <dd>Tab Atkins Jr.; Elika Etemad; Jen Simmons. <a href="https://www.w3.org/TR/css-sizing-4/">CSS Box Sizing Module Level 4</a>. 20 May 2021. WD. URL: <a href="https://www.w3.org/TR/css-sizing-4/">https://www.w3.org/TR/css-sizing-4/</a>
-   <dt id="biblio-css-ui-3">[CSS-UI-3]
-   <dd>Tantek Çelik; Florian Rivoal. <a href="https://www.w3.org/TR/css-ui-3/">CSS Basic User Interface Module Level 3 (CSS3 UI)</a>. 21 June 2018. REC. URL: <a href="https://www.w3.org/TR/css-ui-3/">https://www.w3.org/TR/css-ui-3/</a>
+   <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-sizing-4/">CSS Box Sizing Module Level 4</a>. 20 October 2020. WD. URL: <a href="https://www.w3.org/TR/css-sizing-4/">https://www.w3.org/TR/css-sizing-4/</a>
    <dt id="biblio-css-ui-4">[CSS-UI-4]
    <dd>Florian Rivoal. <a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a>. 16 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-ui-4/">https://www.w3.org/TR/css-ui-4/</a>
   </dl>

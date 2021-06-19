@@ -1290,7 +1290,7 @@ in the inline progression direction of its block container element ("the block")
 that has <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow⑨">overflow</a> other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-overflow-3/#valdef-overflow-visible" id="ref-for-valdef-overflow-visible②">visible</a>.</p>
    <p>Even though this property is not inherited,
 anonymous block container boxes generated to
-establish the line box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a> (see <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block container</a>)
+establish the line box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a> (see <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block container</a>)
 are ignored,
 and the value of the property that applies is the one
 on the non anonymous box. <span class="note">This can be seen in the “nested paragraph” part of <a href="#example-44082941">example 7</a>:
@@ -1314,7 +1314,7 @@ Values have the following meanings:</p>
     <dd> Render the given string to represent clipped inline content.
 		The given string is treated as an independent paragraph
 		for bidi purposes. 
-    <dt><dfn class="dfn-paneled css" data-dfn-for="text-overflow" data-dfn-type="function" data-export data-lt="fade()" id="funcdef-text-overflow-fade">fade( <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a> )</dfn> 
+    <dt><dfn class="dfn-paneled css" data-dfn-for="text-overflow" data-dfn-type="function" data-export data-lt="fade()" id="funcdef-text-overflow-fade">fade( <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a> )</dfn> 
     <dd>
       Clip inline content that overflows its line box.
 		Characters may be only partially rendered.
@@ -1503,11 +1503,11 @@ CSS IS AWESOME, YES
         <div style="width:3.1em; border:solid .1em black; padding:.2em; font-family:Helvetica,sans-serif; line-height:1.1; overflow:hidden;text-overflow:clip;">CSS IS AWESOME, YES</div>
     </table>
    </div>
-   <p class="note" role="note"><span>Note:</span> the side of the line that the ellipsis is placed depends on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction">direction</a> of the block.
+   <p class="note" role="note"><span>Note:</span> the side of the line that the ellipsis is placed depends on the <a class="property" data-link-type="propdesc">direction</a> of the block.
 E.g. an overflow hidden right-to-left
 (<code class="lang-css highlight"><c- k>direction</c-><c- p>:</c-> rtl</code>)
-block clips inline content on the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-3/#physical-left" id="ref-for-physical-left">left</a> side,
-thus would place a text-overflow ellipsis on the <span id="ref-for-physical-left①">left</span> to represent that clipped content.</p>
+block clips inline content on the <span>left</span> side,
+thus would place a text-overflow ellipsis on the <span>left</span> to represent that clipped content.</p>
    <p class="issue" id="issue-4b5212a2"><a class="self-link" href="#issue-4b5212a2"></a> insert RTL example diagram here to illustrate note.</p>
    <h3 class="no-num no-toc heading settled" id="ellipsis-scrolling"><span class="content">ellipsis interaction with scrolling interfaces</span><a class="self-link" href="#ellipsis-scrolling"></a></h3>
    <p>This section applies to elements with text-overflow other than <span class="css">text-overflow:clip</span> (non-clip text-overflow)
@@ -1622,7 +1622,7 @@ This was initially proposed as
 "fragmentation: auto | none | break | clone | page"
 in <a href="https://lists.w3.org/Archives/Public/www-style/2015Jan/0357.html">https://lists.w3.org/Archives/Public/www-style/2015Jan/0357.html</a>,
 and there is not yet wide agreement as to which naming is better.</p>
-   <p class="issue" id="issue-b201bbf9"><a class="self-link" href="#issue-b201bbf9"></a> This property is meant to generalize and replace <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-regions-1/#propdef-region-fragment" id="ref-for-propdef-region-fragment">region-fragment</a>.
+   <p class="issue" id="issue-b201bbf9"><a class="self-link" href="#issue-b201bbf9"></a> This property is meant to generalize and replace <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-regions/#propdef-region-fragment" id="ref-for-propdef-region-fragment">region-fragment</a>.
 Once it is sufficiently stable in this specification, <span class="property" id="ref-for-propdef-region-fragment①">region-fragment</span> should be removed from the regions specification in favor of this.</p>
    <p class="note" role="note"><span>Note:</span> <a class="css" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue①">continue: fragments</a> replaces "overflow:fragments"
 from earlier versions of this specification,
@@ -1631,7 +1631,7 @@ while <span class="css" id="ref-for-propdef-continue②">continue: paginate</spa
     <dt><dfn class="dfn-paneled css" data-dfn-for="continue" data-dfn-type="value" data-export id="valdef-continue-auto">auto</dfn> 
     <dd>
      <a class="css" data-link-type="maybe" href="#valdef-continue-auto" id="ref-for-valdef-continue-auto">auto</a> may only occur as a computed value
-		if the element is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions-1/#css-region" id="ref-for-css-region">CSS Region</a> other than the last one in a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions-1/#region-chain" id="ref-for-region-chain">region chain</a>.
+		if the element is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions/#css-region" id="ref-for-css-region">CSS Region</a> other than the last one in a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions/#region-chain" id="ref-for-region-chain">region chain</a>.
 		Content that doesn’t fit is pushed to the next region of the chain. 
      <p>In all other cases, <a class="css" data-link-type="maybe" href="#valdef-continue-auto" id="ref-for-valdef-continue-auto①">auto</a> computes to one of the other values.</p>
     <dt><dfn class="dfn-paneled css" data-dfn-for="continue" data-dfn-type="value" data-export id="valdef-continue-overflow">overflow</dfn> 
@@ -1662,7 +1662,7 @@ while <span class="css" id="ref-for-propdef-continue②">continue: paginate</spa
     <li>
      Otherwise, if the specified value is <a class="css" data-link-type="maybe" href="#valdef-continue-auto" id="ref-for-valdef-continue-auto③">auto</a> 
      <ol>
-      <li>On a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions-1/#css-region" id="ref-for-css-region①">CSS Region</a> other than the last one in a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions-1/#region-chain" id="ref-for-region-chain①">region chain</a>,
+      <li>On a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions/#css-region" id="ref-for-css-region①">CSS Region</a> other than the last one in a <a data-link-type="dfn" href="https://drafts.csswg.org/css-regions/#region-chain" id="ref-for-region-chain①">region chain</a>,
 		the computed value is <a class="css" data-link-type="maybe" href="#valdef-continue-auto" id="ref-for-valdef-continue-auto④">auto</a> 
       <li>On a page
 		the computed value is <a class="css" data-link-type="maybe" href="#valdef-continue-paginate" id="ref-for-valdef-continue-paginate">paginate</a> 
@@ -1740,7 +1740,7 @@ the <a class="css" data-link-type="maybe" href="#valdef-continue-fragments" id="
 		the element?  Need to figure out exactly how this interacts with
 		other box-level fixup.</span> Additionally, if the <span id="ref-for-fragment-box⑥">fragment box</span> is also
 		a multi-column box (as defined in <a data-link-type="biblio" href="#biblio-css3col">[CSS3COL]</a> <span class="issue" id="issue-6629852d"><a class="self-link" href="#issue-6629852d"></a>though it defines <i>multi-column container</i></span>)
-		any content that would lead to the creation of <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol-1/#overflow-columns" id="ref-for-overflow-columns">overflow columns</a> <span>[CSS3COL]</span> instead is flown into an additional fragment box.
+		any content that would lead to the creation of <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol/#overflow-columns" id="ref-for-overflow-columns">overflow columns</a> <span>[CSS3COL]</span> instead is flown into an additional fragment box.
 		However, fragment boxes may themselves be broken
 		(due to fragmentation in a fragmentation context outside of them,
 		such as pages, columns, or other fragment boxes);
@@ -1899,16 +1899,16 @@ the <a class="css" data-link-type="maybe" href="#valdef-continue-fragments" id="
    <p> Styling an <a class="css" data-link-type="maybe" href="#selectordef-nth-fragment" id="ref-for-selectordef-nth-fragment⑦">::nth-fragment()</a> pseudo-element with the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content">content</a> property has no effect;
 		the computed value of <span class="property" id="ref-for-propdef-content①">content</span> for the fragment box
 		remains the same as the computed value of content for the element. </p>
-   <p> Specifying <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display: none</a> for a <a data-link-type="dfn" href="#fragment-box" id="ref-for-fragment-box①⑦">fragment box</a> causes
+   <p> Specifying <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display: none</a> for a <a data-link-type="dfn" href="#fragment-box" id="ref-for-fragment-box①⑦">fragment box</a> causes
 		the fragment box with that index not to be generated.
 		However, in terms of the indices
 		used for matching <a class="css" data-link-type="maybe" href="#selectordef-nth-fragment" id="ref-for-selectordef-nth-fragment⑧">::nth-fragment()</a> pseudo-elements
 		of later fragment boxes,
 		it still counts as though it was generated.
 		However, since it is not generated, it does not contain any content. </p>
-   <p> Specifying other values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a>,
-		or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a> is permitted, but is not allowed to change
-		the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inner-display-type" id="ref-for-inner-display-type">inner display type</a>.
+   <p> Specifying other values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a>,
+		or <a class="property" data-link-type="propdesc">float</a> is permitted, but is not allowed to change
+		the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inner-display-type" id="ref-for-inner-display-type">inner display type</a>.
 		(Since <a class="property" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue①④">continue</a> only
 		applies to block containers, flex containers, and grid containers). <span class="issue" id="issue-d723335f"><a class="self-link" href="#issue-d723335f"></a>Need to specify exactly how this works</span> </p>
    <p> To match the model for other pseudo-elements
@@ -1925,7 +1925,7 @@ the <a class="css" data-link-type="maybe" href="#valdef-continue-fragments" id="
 		This means that elements split between fragment boxes may
 		have different styles for different parts of the element. </p>
    <p class="issue" id="issue-0fc783b4"><a class="self-link" href="#issue-0fc783b4"></a> This inheritance rule allows specifying styles indirectly
-		(by using explicit <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a> or using default inheritance
+		(by using explicit <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a> or using default inheritance
 		on properties that don’t apply to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter" id="ref-for-selectordef-first-letter">::first-letter</a>)
 		that can’t be specified directly
 		(based on the rules in the next section).
@@ -2299,8 +2299,8 @@ Answers are provided below.</p>
 <script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script>
   <aside class="caniuse-status" data-deco data-dfn-id="text-overflow">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>7+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie yes"><span>IE</span><span>6+</span></span><span class="ie_mob yes"><span>IE Mobile</span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11+</span></span><span class="op_mini yes"><span>Opera Mini</span><span>All</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12.1+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=text-overflow">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>7+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie yes"><span>IE</span><span>6+</span></span><span class="ie_mob yes"><span>IE Mobile</span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11+</span></span><span class="op_mini yes"><span>Opera Mini</span><span>All</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12.1+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=text-overflow">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="#index"></a></h2>
   <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="#index-defined-here"></a></h3>
@@ -2342,7 +2342,7 @@ Answers are provided below.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-all-inherit">
-   <a href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit">https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit">https://drafts.csswg.org/css-cascade/#valdef-all-inherit</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-all-inherit">8.1.2. Styling of fragments</a>
    </ul>
@@ -2360,25 +2360,25 @@ Answers are provided below.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">5. Overflow Ellipsis: the text-overflow property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">8.1.2. Styling of fragments</a> <a href="#ref-for-propdef-display①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-formatting-context">https://drafts.csswg.org/css-display-3/#inline-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-formatting-context">https://drafts.csswg.org/css-display/#inline-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-formatting-context">5. Overflow Ellipsis: the text-overflow property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inner-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#inner-display-type">https://drafts.csswg.org/css-display-3/#inner-display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inner-display-type">https://drafts.csswg.org/css-display/#inner-display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inner-display-type">8.1.2. Styling of fragments</a>
    </ul>
@@ -2437,7 +2437,7 @@ Reserving space for the scrollbar: the scrollbar-gutter property</a> <a href="#r
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">8.1.2. Styling of fragments</a>
    </ul>
@@ -2522,18 +2522,6 @@ Reserving space for the scrollbar: the scrollbar-gutter property</a> <a href="#r
     <li><a href="#ref-for-comb-one①⓪">8.2. The max-lines property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-direction">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction">https://drafts.csswg.org/css-writing-modes-3/#propdef-direction</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-direction">user interaction with ellipsis</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-physical-left">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#physical-left">https://drafts.csswg.org/css-writing-modes-3/#physical-left</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-physical-left">user interaction with ellipsis</a> <a href="#ref-for-physical-left①">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-block-end">
    <a href="https://drafts.csswg.org/css-writing-modes-4/#block-end">https://drafts.csswg.org/css-writing-modes-4/#block-end</a><b>Referenced in:</b>
    <ul>
@@ -2588,32 +2576,26 @@ Reserving space for the scrollbar: the scrollbar-gutter property</a> <a href="#r
     <li><a href="#ref-for-css-start①">ellipsis interaction with scrolling interfaces</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">8.1.2. Styling of fragments</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-css-region">
-   <a href="https://drafts.csswg.org/css-regions-1/#css-region">https://drafts.csswg.org/css-regions-1/#css-region</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-regions/#css-region">https://drafts.csswg.org/css-regions/#css-region</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-css-region">6. Fragmentation of overflow</a> <a href="#ref-for-css-region①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-region-chain">
-   <a href="https://drafts.csswg.org/css-regions-1/#region-chain">https://drafts.csswg.org/css-regions-1/#region-chain</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-regions/#region-chain">https://drafts.csswg.org/css-regions/#region-chain</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-region-chain">6. Fragmentation of overflow</a> <a href="#ref-for-region-chain①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-region-fragment">
-   <a href="https://drafts.csswg.org/css-regions-1/#propdef-region-fragment">https://drafts.csswg.org/css-regions-1/#propdef-region-fragment</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-regions/#propdef-region-fragment">https://drafts.csswg.org/css-regions/#propdef-region-fragment</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-region-fragment">6. Fragmentation of overflow</a> <a href="#ref-for-propdef-region-fragment①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-overflow-columns">
-   <a href="https://drafts.csswg.org/css-multicol-1/#overflow-columns">https://drafts.csswg.org/css-multicol-1/#overflow-columns</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#overflow-columns">https://drafts.csswg.org/css-multicol/#overflow-columns</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-overflow-columns">8. Fragment overflow</a>
    </ul>
@@ -2626,7 +2608,7 @@ Reserving space for the scrollbar: the scrollbar-gutter property</a> <a href="#r
      <li><span class="dfn-paneled" id="term-for-fragmentation-container">fragmentation container</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-valdef-all-inherit">inherit</span>
     </ul>
@@ -2697,12 +2679,6 @@ Reserving space for the scrollbar: the scrollbar-gutter property</a> <a href="#r
      <li><span class="dfn-paneled" id="term-for-comb-one">|</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[CSS-WRITING-MODES-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-direction">direction</span>
-     <li><span class="dfn-paneled" id="term-for-physical-left">left</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[css-writing-modes-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-block-end">block end</span>
@@ -2713,11 +2689,6 @@ Reserving space for the scrollbar: the scrollbar-gutter property</a> <a href="#r
      <li><span class="dfn-paneled" id="term-for-line-left">line-left</span>
      <li><span class="dfn-paneled" id="term-for-line-right">line-right</span>
      <li><span class="dfn-paneled" id="term-for-css-start">start</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS2]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
     </ul>
    <li>
     <a data-link-type="biblio">[CSS3-REGIONS]</a> defines the following terms:
@@ -2737,8 +2708,8 @@ Reserving space for the scrollbar: the scrollbar-gutter property</a> <a href="#r
   <dl>
    <dt id="biblio-css-break-4">[CSS-BREAK-4]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a>. 18 December 2018. WD. URL: <a href="https://www.w3.org/TR/css-break-4/">https://www.w3.org/TR/css-break-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-contain-1">[CSS-CONTAIN-1]
    <dd>Tab Atkins Jr.; Florian Rivoal. <a href="https://www.w3.org/TR/css-contain-1/">CSS Containment Module Level 1</a>. 22 December 2020. REC. URL: <a href="https://www.w3.org/TR/css-contain-1/">https://www.w3.org/TR/css-contain-1/</a>
    <dt id="biblio-css-contain-2">[CSS-CONTAIN-2]
@@ -2883,7 +2854,7 @@ This was initially proposed as
 "fragmentation: auto | none | break | clone | page"
 in <a href="https://lists.w3.org/Archives/Public/www-style/2015Jan/0357.html">https://lists.w3.org/Archives/Public/www-style/2015Jan/0357.html</a>,
 and there is not yet wide agreement as to which naming is better.<a href="#issue-70dec9cf"> ↵ </a></div>
-   <div class="issue"> This property is meant to generalize and replace <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-regions-1/#propdef-region-fragment">region-fragment</a>.
+   <div class="issue"> This property is meant to generalize and replace <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-regions/#propdef-region-fragment">region-fragment</a>.
 Once it is sufficiently stable in this specification, <span class="property">region-fragment</span> should be removed from the regions specification in favor of this.<a href="#issue-b201bbf9"> ↵ </a></div>
    <div class="issue"> When the element isn’t a <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-container">fragmentation container</a> already,
 		should this work by turning it directly into one,
@@ -2974,7 +2945,7 @@ fragment overflow, which also deals with displaying multiple pages. <a href="htt
 		the cascading module as well?<a href="#issue-40daaa94"> ↵ </a></div>
    <div class="issue">Need to specify exactly how this works<a href="#issue-d723335f"> ↵ </a></div>
    <div class="issue"> This inheritance rule allows specifying styles indirectly
-		(by using explicit <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit">inherit</a> or using default inheritance
+		(by using explicit <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit">inherit</a> or using default inheritance
 		on properties that don’t apply to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter">::first-letter</a>)
 		that can’t be specified directly
 		(based on the rules in the next section).

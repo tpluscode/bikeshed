@@ -236,8 +236,8 @@ https://www.w3.org/TR/webgpu/#slice
 -
 slice()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-slice
@@ -247,8 +247,8 @@ Blob
 -
 slice()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-slice
@@ -258,8 +258,8 @@ Blob
 -
 slice(start)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-slice
@@ -269,8 +269,8 @@ Blob
 -
 slice(start)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-slice
@@ -280,8 +280,8 @@ Blob
 -
 slice(start, end)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-slice
@@ -291,8 +291,8 @@ Blob
 -
 slice(start, end)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-slice
@@ -302,8 +302,8 @@ Blob
 -
 slice(start, end, contentType)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-slice
@@ -313,8 +313,8 @@ Blob
 -
 slice(start, end, contentType)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-slice
@@ -324,8 +324,8 @@ Blob
 -
 slice(start, end, contentType), slice(start, end), slice(start), slice()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-slice
@@ -335,8 +335,8 @@ Blob
 -
 slice(start, end, contentType), slice(start, end), slice(start), slice()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-slice

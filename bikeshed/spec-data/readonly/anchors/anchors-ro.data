@@ -367,8 +367,8 @@ https://www.w3.org/TR/svg-aam-1.0/#dfn-role
 -
 role
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#RoleAttribute
@@ -377,8 +377,8 @@ https://svgwg.org/svg2-draft/struct.html#RoleAttribute
 -
 role
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#RoleAttribute
@@ -802,8 +802,8 @@ FileSystem
 -
 root
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#root
@@ -812,8 +812,8 @@ https://drafts.csswg.org/css2/#root
 -
 root
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#root
@@ -1318,8 +1318,8 @@ https://www.w3.org/TR/css-transforms-2/#propdef-rotate
 -
 rotate
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextElementRotateAttribute
@@ -1329,8 +1329,8 @@ text
 -
 rotate
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__rotate
@@ -1340,8 +1340,8 @@ SVGTextPositioningElement
 -
 rotate
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextElementRotateAttribute
@@ -1351,8 +1351,8 @@ text
 -
 rotate
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPositioningElement__rotate
@@ -2252,8 +2252,8 @@ https://www.w3.org/TR/css-values-4/#funcdef-round
 -
 round-tripping
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-round-tripping
@@ -2348,8 +2348,8 @@ https://www.w3.org/TR/webxr/#rounding
 -
 roundup
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#roundup
@@ -2358,8 +2358,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#roundup
 -
 roundup
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#roundup
@@ -2463,8 +2463,8 @@ https://html.spec.whatwg.org/multipage/tables.html#concept-row-group
 -
 row group box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#row-group-box
@@ -2473,8 +2473,8 @@ https://drafts.csswg.org/css2/#row-group-box
 -
 row group box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#row-group-box
@@ -2493,8 +2493,8 @@ https://html.spec.whatwg.org/multipage/tables.html#row-group-header
 -
 row groups
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#row-groups
@@ -2503,8 +2503,8 @@ https://drafts.csswg.org/css2/#row-groups
 -
 row groups
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#row-groups

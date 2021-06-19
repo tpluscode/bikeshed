@@ -175,8 +175,8 @@ https://www.w3.org/TR/css-page-3/#valdef-page-right
 -
 :right
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-right
@@ -185,8 +185,8 @@ https://drafts.csswg.org/css2/#selectordef-right
 -
 :right
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-right
@@ -216,8 +216,8 @@ https://www.w3.org/TR/css-masking-1/#typedef-right
 -
 <right>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-right
@@ -226,8 +226,8 @@ https://drafts.csswg.org/css2/#value-def-right
 -
 <right>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-right
@@ -351,8 +351,8 @@ XRHand
 -
 richness
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-richness
@@ -439,8 +439,8 @@ border
 -
 ridge
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-ridge
@@ -455,8 +455,8 @@ border-style
 -
 ridge
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-ridge
@@ -881,8 +881,8 @@ https://www.w3.org/TR/css-writing-modes-4/#physical-right
 -
 right
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-right
@@ -891,8 +891,8 @@ https://drafts.csswg.org/css2/#propdef-right
 -
 right
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-float-right
@@ -902,8 +902,8 @@ float
 -
 right
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-clear-right
@@ -913,8 +913,8 @@ clear
 -
 right
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-page-break-right
@@ -926,8 +926,8 @@ page-break-inside
 -
 right
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-background-position-right
@@ -937,8 +937,8 @@ background-position
 -
 right
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-text-align-right
@@ -948,8 +948,8 @@ text-align
 -
 right
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-right
@@ -958,8 +958,8 @@ https://drafts.csswg.org/css2/#propdef-right
 -
 right
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-float-right
@@ -969,8 +969,8 @@ float
 -
 right
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-clear-right
@@ -980,8 +980,8 @@ clear
 -
 right
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-page-break-right
@@ -993,8 +993,8 @@ page-break-inside
 -
 right
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-background-position-right
@@ -1004,8 +1004,8 @@ background-position
 -
 right
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-text-align-right
@@ -1015,8 +1015,8 @@ text-align
 -
 right
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-right
@@ -1122,8 +1122,8 @@ https://www.w3.org/TR/css-page-3/#right-page
 -
 right-hand side
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#right-hand-side
@@ -1132,8 +1132,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#right-hand-side
 -
 right-hand side
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#right-hand-side

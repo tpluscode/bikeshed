@@ -2409,7 +2409,7 @@ directive-value   = <a data-link-type="dfn" href="#source-list①" id="ref-for-s
       when processing the <code>href</code> attribute of a <code><a data-link-type="element" href="http://www.w3.org/TR/html5/document-metadata.html#the-link-element" id="ref-for-the-link-element③">link</a></code> element with a <code>rel</code> attribute containing the token <code>import</code>. <a data-link-type="biblio" href="#biblio-html-imports">[HTML-IMPORTS]</a>
       <li>Requesting an Extensible Stylesheet Language Transformations
       (XSLT) <a data-link-type="biblio" href="#biblio-xslt">[XSLT]</a>, such as when processing the <code>&lt;?xml-stylesheet?></code> processing directive in an XML
-      document <a data-link-type="biblio" href="#biblio-xml11">[XML11]</a>, the <code><a data-link-type="element-attr">href</a></code> attributes
+      document <a data-link-type="biblio" href="#biblio-xml11">[XML11]</a>, the <code><a data-link-type="element-attr" href="http://www.w3.org/TR/html5/document-metadata.html#attr-link-href" id="ref-for-attr-link-href①">href</a></code> attributes
       on <code>&lt;xsl:include></code> and <code>&lt;xsl:import></code> elements.
      </ul>
      <section class="informative">
@@ -2530,7 +2530,7 @@ directive-value   = <a data-link-type="dfn" href="#source-list①" id="ref-for-s
     sources</a>, then:</p>
      <ul>
       <li>Whenever the user agent would invoke the Cascading Style Sheets
-      Object Model algorithms <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#insert-a-css-rule" id="ref-for-insert-a-css-rule">insert a CSS rule</a>, <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#parse-a-css-rule" id="ref-for-parse-a-css-rule">parse a CSS rule</a>, <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block" id="ref-for-parse-a-css-declaration-block">parse a CSS declaration block</a>, or <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors" id="ref-for-parse-a-group-of-selectors">parse a group of selectors</a> instead the user agent MUST throw a <a data-link-type="dfn">SecurityError</a> exception <em>and</em> terminate the algorithm. This would include,
+      Object Model algorithms <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#insert-a-css-rule" id="ref-for-insert-a-css-rule">insert a CSS rule</a>, <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#parse-a-css-rule" id="ref-for-parse-a-css-rule">parse a CSS rule</a>, <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#parse-a-css-declaration-block" id="ref-for-parse-a-css-declaration-block">parse a CSS declaration block</a>, or <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#parse-a-group-of-selectors" id="ref-for-parse-a-group-of-selectors">parse a group of selectors</a> instead the user agent MUST throw a <a data-link-type="dfn">SecurityError</a> exception <em>and</em> terminate the algorithm. This would include,
       for example, all invocations of CSSOM’s various <code>cssText</code> setters and <code>insertRule</code> methods. <a data-link-type="biblio" href="#biblio-cssom">[CSSOM]</a> <a data-link-type="biblio" href="#biblio-html5">[HTML5]</a>
      </ul>
      <p>Whenever the user agent <a data-link-type="dfn" href="http://www.w3.org/TR/html5/infrastructure.html#fetch" id="ref-for-fetch①⓪">fetches</a> a URL in the course of one of the
@@ -2538,7 +2538,7 @@ directive-value   = <a data-link-type="dfn" href="#source-list①" id="ref-for-s
     a fatal network error and no resource was obtained, <em>and</em> <a data-link-type="dfn" href="#report-a-violation" id="ref-for-report-a-violation①⑦">report
     a violation</a>:</p>
      <ul>
-      <li> Requesting an external stylesheet when processing the <a data-link-type="element-attr" href="http://www.w3.org/TR/html5/document-metadata.html#attr-link-href" id="ref-for-attr-link-href①">href</a> of a <a data-link-type="element" href="http://www.w3.org/TR/html5/document-metadata.html#the-link-element" id="ref-for-the-link-element④">link</a> element
+      <li> Requesting an external stylesheet when processing the <a data-link-type="element-attr" href="http://www.w3.org/TR/html5/document-metadata.html#attr-link-href" id="ref-for-attr-link-href②">href</a> of a <a data-link-type="element" href="http://www.w3.org/TR/html5/document-metadata.html#the-link-element" id="ref-for-the-link-element④">link</a> element
         whose <a data-link-type="element-attr" href="http://www.w3.org/TR/html5/document-metadata.html#attr-link-rel" id="ref-for-attr-link-rel①">rel</a> attribute contains the token <code><a data-link-type="dfn" href="http://www.w3.org/TR/html5/links.html#link-type-stylesheet" id="ref-for-link-type-stylesheet">stylesheet</a></code>. 
       <li> Requesting an external stylesheet when processing the &lt;&lt;@import>>
         directive. 
@@ -3025,25 +3025,25 @@ Content-Security-Policy: style-src 'none'
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-insert-a-css-rule">
-   <a href="https://drafts.csswg.org/cssom-1/#insert-a-css-rule">https://drafts.csswg.org/cssom-1/#insert-a-css-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#insert-a-css-rule">https://drafts.csswg.org/cssom/#insert-a-css-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-insert-a-css-rule">7.16. style-src</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-parse-a-css-declaration-block">
-   <a href="https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block">https://drafts.csswg.org/cssom-1/#parse-a-css-declaration-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#parse-a-css-declaration-block">https://drafts.csswg.org/cssom/#parse-a-css-declaration-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-parse-a-css-declaration-block">7.16. style-src</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-parse-a-css-rule">
-   <a href="https://drafts.csswg.org/cssom-1/#parse-a-css-rule">https://drafts.csswg.org/cssom-1/#parse-a-css-rule</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#parse-a-css-rule">https://drafts.csswg.org/cssom/#parse-a-css-rule</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-parse-a-css-rule">7.16. style-src</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-parse-a-group-of-selectors">
-   <a href="https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors">https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#parse-a-group-of-selectors">https://drafts.csswg.org/cssom/#parse-a-group-of-selectors</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-parse-a-group-of-selectors">7.16. style-src</a>
    </ul>
@@ -3076,7 +3076,7 @@ Content-Security-Policy: style-src 'none'
      <li><span class="dfn-paneled" id="term-for-parse-a-group-of-selectors">parse a group of selectors</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
     </ul>
@@ -3095,7 +3095,7 @@ Content-Security-Policy: style-src 'none'
    <dt id="biblio-cssom">[CSSOM]
    <dd>Simon Pieters; Glenn Adams. <a href="https://www.w3.org/TR/cssom-1/">CSS Object Model (CSSOM)</a>. 17 March 2016. WD. URL: <a href="https://www.w3.org/TR/cssom-1/">https://www.w3.org/TR/cssom-1/</a>
    <dt id="biblio-ecma-262">[ECMA-262]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-eventsource">[EVENTSOURCE]
    <dd>Ian Hickson. <a href="https://www.w3.org/TR/eventsource/">Server-Sent Events</a>. 28 January 2021. REC. URL: <a href="https://www.w3.org/TR/eventsource/">https://www.w3.org/TR/eventsource/</a>
    <dt id="biblio-fips180">[FIPS180]
@@ -3128,6 +3128,8 @@ Content-Security-Policy: style-src 'none'
    <dd>Anne van Kesteren; Sam Ruby. <a href="http://www.w3.org/TR/url/">URL</a>. WD. URL: <a href="http://www.w3.org/TR/url/">http://www.w3.org/TR/url/</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
    <dt id="biblio-websockets">[WEBSOCKETS]
    <dd>Ian Hickson. <a href="https://www.w3.org/TR/websockets/">The WebSocket API</a>. 28 January 2021. NOTE. URL: <a href="https://www.w3.org/TR/websockets/">https://www.w3.org/TR/websockets/</a>
    <dt id="biblio-workers">[WORKERS]

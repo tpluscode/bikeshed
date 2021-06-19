@@ -451,62 +451,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -1304,7 +1248,7 @@ regardless of the height of that item’s description.</p>
     </figure>
    </div>
    <h3 class="heading settled" data-level="1.2" id="placement"><span class="secno">1.2. </span><span class="content"> Module interactions</span><a class="self-link" href="#placement"></a></h3>
-   <p>This module extends the definition of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>,
+   <p>This module extends the definition of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>,
 	adding a new block-level and new inline-level display type,
 	and defining a new type of formatting context
 	along with properties to control its layout.
@@ -1322,7 +1266,7 @@ regardless of the height of that item’s description.</p>
 	For readability they have not been repeated explicitly.</p>
    <h2 class="heading settled" data-level="2" id="box-model"><span class="secno">2. </span><span class="content"> Flex Layout Box Model and Terminology</span><a class="self-link" href="#box-model"></a></h2>
    <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="flex-container">flex container</dfn> is the box generated by an element with a
-	computed <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display</a> of <a class="css" data-link-type="maybe" href="#valdef-display-flex" id="ref-for-valdef-display-flex">flex</a> or <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex">inline-flex</a>.
+	computed <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display</a> of <a class="css" data-link-type="maybe" href="#valdef-display-flex" id="ref-for-valdef-display-flex">flex</a> or <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex">inline-flex</a>.
 	In-flow children of a flex container are called <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="flex item" id="flex-item">flex items</dfn> and are laid out using the flex layout model.</p>
    <p>Unlike block and inline layout,
 	whose layout calculations are biased to the <a href="https://www.w3.org/TR/css3-writing-modes/#abstract-box">block and inline flow directions</a>,
@@ -1354,7 +1298,7 @@ regardless of the height of that item’s description.</p>
 			Its <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="main-size-property">main size property</dfn> is
 			thus either its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width">width</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a> property,
 			whichever is in the <span id="ref-for-main-dimension①">main dimension</span>.
-			Similarly, its <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="min main size property" id="min-main-size-property">min</dfn> and <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="max main size property" id="max-main-size-property">max main size properties</dfn> are its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width">min-width</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width">max-width</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height">min-height</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height">max-height</a> properties,
+			Similarly, its <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="min main size property" id="min-main-size-property">min</dfn> and <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="max main size property" id="max-main-size-property">max main size properties</dfn> are its <a class="property" data-link-type="propdesc">min-width</a>/<span class="property">max-width</span> or <span class="property">min-height</span>/<span class="property">max-height</span> properties,
 			whichever is in the <span id="ref-for-main-dimension②">main dimension</span>,
 			and determine its <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="min main size" id="min-main-size">min</dfn>/<dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="max-main-size">max main size</dfn>. 
    </dl>
@@ -1376,18 +1320,18 @@ regardless of the height of that item’s description.</p>
 			Its <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="cross-size-property">cross size property</dfn> is
 			thus either its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a> property,
 			whichever is in the <span id="ref-for-cross-dimension①">cross dimension</span>.
-			Similarly, its <dfn data-dfn-type="dfn" data-export data-lt="min cross size property" id="min-cross-size-property">min<a class="self-link" href="#min-cross-size-property"></a></dfn> and <dfn data-dfn-type="dfn" data-export data-lt="max cross size property" id="max-cross-size-property">max cross size properties<a class="self-link" href="#max-cross-size-property"></a></dfn> are its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width①">min-width</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width①">max-width</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height①">min-height</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height①">max-height</a> properties,
+			Similarly, its <dfn data-dfn-type="dfn" data-export data-lt="min cross size property" id="min-cross-size-property">min<a class="self-link" href="#min-cross-size-property"></a></dfn> and <dfn data-dfn-type="dfn" data-export data-lt="max cross size property" id="max-cross-size-property">max cross size properties<a class="self-link" href="#max-cross-size-property"></a></dfn> are its <a class="property" data-link-type="propdesc">min-width</a>/<span class="property">max-width</span> or <span class="property">min-height</span>/<span class="property">max-height</span> properties,
 			whichever is in the <span id="ref-for-cross-dimension②">cross dimension</span>,
 			and determine its <dfn data-dfn-type="dfn" data-export data-lt="min cross size" id="min-cross-size">min<a class="self-link" href="#min-cross-size"></a></dfn>/<dfn data-dfn-type="dfn" data-export id="max-cross-size">max cross size<a class="self-link" href="#max-cross-size"></a></dfn>. 
    </dl>
    <p>Additional sizing terminology used in this specification
 	is defined in <a href="http://www.w3.org/TR/CSS-SIZING-3/">CSS Intrinsic and Extrinsic Sizing</a>. <a data-link-type="biblio" href="#biblio-css-sizing-3">[CSS-SIZING-3]</a></p>
-   <h2 class="heading settled" data-level="3" id="flex-containers"><span class="secno">3. </span><span class="content"> Flex Containers: the <a class="css" data-link-type="maybe" href="#valdef-display-flex" id="ref-for-valdef-display-flex①">flex</a> and <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex①">inline-flex</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②">display</a> values</span><a class="self-link" href="#flex-containers"></a></h2>
+   <h2 class="heading settled" data-level="3" id="flex-containers"><span class="secno">3. </span><span class="content"> Flex Containers: the <a class="css" data-link-type="maybe" href="#valdef-display-flex" id="ref-for-valdef-display-flex①">flex</a> and <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex①">inline-flex</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②">display</a> values</span><a class="self-link" href="#flex-containers"></a></h2>
    <table class="def propdef partial" data-link-for-hint="display">
     <tbody>
      <tr>
       <th>Name:
-      <td><a class="css" data-link-type="property" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display③">display</a>
+      <td><a class="css" data-link-type="property" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display③">display</a>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">New values:</a>
       <td class="prod">flex <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> inline-flex 
@@ -1396,7 +1340,7 @@ regardless of the height of that item’s description.</p>
     <dt><dfn class="dfn-paneled css" data-dfn-for="display" data-dfn-type="value" data-export id="valdef-display-flex">flex</dfn> 
     <dd>
       This value causes an element to generate a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container②">flex container</a> box
-			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level" id="ref-for-block-level">block-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#flow-layout" id="ref-for-flow-layout">flow layout</a>. 
+			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level" id="ref-for-block-level">block-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#flow-layout" id="ref-for-flow-layout">flow layout</a>. 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1407,7 +1351,7 @@ regardless of the height of that item’s description.</p>
     <dt><dfn class="dfn-paneled css" data-dfn-for="display" data-dfn-type="value" data-export id="valdef-display-inline-flex">inline-flex</dfn> 
     <dd>
       This value causes an element to generate a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container③">flex container</a> box
-			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level">inline-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#flow-layout" id="ref-for-flow-layout①">flow layout</a>. 
+			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level">inline-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#flow-layout" id="ref-for-flow-layout①">flow layout</a>. 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1425,7 +1369,7 @@ regardless of the height of that item’s description.</p>
 	In particular:</p>
    <ul>
     <li data-md>
-     <p><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear">clear</a> do not create floating or clearance of <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item④">flex item</a>,
+     <p><a class="property" data-link-type="propdesc">float</a> and <span class="property">clear</span> do not create floating or clearance of <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item④">flex item</a>,
 and do not take it out-of-flow.</p>
     <li data-md>
      <p><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-inline-3/#propdef-vertical-align" id="ref-for-propdef-vertical-align">vertical-align</a> has no effect on a flex item.</p>
@@ -1433,7 +1377,7 @@ and do not take it out-of-flow.</p>
      <p>the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-line" id="ref-for-selectordef-first-line①">::first-line</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter" id="ref-for-selectordef-first-letter①">::first-letter</a> pseudo-elements do not apply to <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container⑦">flex containers</a>,
 and <span id="ref-for-flex-container⑧">flex containers</span> do not contribute a <a data-link-type="dfn" href="https://drafts.csswg.org/css-pseudo-4/#first-formatted-line" id="ref-for-first-formatted-line">first formatted line</a> or <a data-link-type="dfn">first letter</a> to their ancestors.</p>
    </ul>
-   <p>If an element’s specified <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display④">display</a> is <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex②">inline-flex</a>,
+   <p>If an element’s specified <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display④">display</a> is <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex②">inline-flex</a>,
 	then its <span class="property" id="ref-for-propdef-display⑤">display</span> property computes to <a class="css" data-link-type="maybe" href="#valdef-display-flex" id="ref-for-valdef-display-flex②">flex</a> in certain circumstances:
 	the table in <a href="https://www.w3.org/TR/CSS2/visuren.html#dis-pos-flo">CSS 2.1 Section 9.7</a> is amended to contain an additional row,
 	with <span class="css" id="ref-for-valdef-display-inline-flex③">inline-flex</span> in the "Specified Value" column
@@ -1441,9 +1385,9 @@ and <span id="ref-for-flex-container⑧">flex containers</span> do not contribut
    <h2 class="heading settled" data-level="4" id="flex-items"><span class="secno">4. </span><span class="content"> Flex Items</span><a class="self-link" href="#flex-items"></a></h2>
    <p>Loosely speaking, the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑤">flex items</a> of a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container⑨">flex container</a> are boxes representing its in-flow contents.</p>
    <p>Each in-flow child of a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container①⓪">flex container</a> becomes a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑥">flex item</a>,
-	and each contiguous sequence of child <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#text-run" id="ref-for-text-run">text runs</a> is wrapped in an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#anonymous" id="ref-for-anonymous">anonymous</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block container</a> <span id="ref-for-flex-item⑦">flex item</span>.
+	and each contiguous sequence of child <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#text-run" id="ref-for-text-run">text runs</a> is wrapped in an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#anonymous" id="ref-for-anonymous">anonymous</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block container</a> <span id="ref-for-flex-item⑦">flex item</span>.
 	However, if the entire sequence of child <span id="ref-for-text-run①">text runs</span> contains only <a href="https://www.w3.org/TR/CSS2/text.html#white-space-prop">white space</a> (i.e. characters that can be affected by the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-4/#propdef-white-space" id="ref-for-propdef-white-space">white-space</a> property)
-	it is instead not rendered (just as if its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#text-nodes" id="ref-for-text-nodes">text nodes</a> were <span class="css">display:none</span>).</p>
+	it is instead not rendered (just as if its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#text-nodes" id="ref-for-text-nodes">text nodes</a> were <span class="css">display:none</span>).</p>
    <details class="wpt-tests-block" dir="ltr" lang="en">
     <summary>Tests</summary>
     <ul class="wpt-tests-list">
@@ -1489,26 +1433,26 @@ and <span id="ref-for-flex-container⑧">flex containers</span> do not contribut
 		since there is no element to assign style rules to.
 		Its contents will however inherit styles (such as font settings) from the flex container.</p>
    </div>
-   <p>A <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑧">flex item</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context">establishes an independent formatting context</a> for its contents.
+   <p>A <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑧">flex item</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context">establishes an independent formatting context</a> for its contents.
 	However, flex items themselves are <dfn data-dfn-type="dfn" data-export id="flex-level">flex-level<a class="self-link" href="#flex-level"></a></dfn> boxes, not block-level boxes:
 	they participate in their container’s flex formatting context,
 	not in a block formatting context.</p>
    <hr>
    <p class="note" role="note"><span>Note:</span> Authors reading this spec may want to <a href="#item-margins">skip past the following box-generation and static position details</a>.</p>
-   <p>If the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display⑥">display</a> value of an element’s nearest ancestor element
+   <p>If the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display⑥">display</a> value of an element’s nearest ancestor element
 	(skipping <span class="css">display:contents</span> ancestors)
 	is <a class="css" data-link-type="maybe" href="#valdef-display-flex" id="ref-for-valdef-display-flex④">flex</a> or <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex④">inline-flex</a>,
-	the element’s own <span class="property" id="ref-for-propdef-display⑦">display</span> value is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#blockify" id="ref-for-blockify">blockified</a>.
+	the element’s own <span class="property" id="ref-for-propdef-display⑦">display</span> value is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#blockify" id="ref-for-blockify">blockified</a>.
 	(See <a href="https://www.w3.org/TR/CSS2/visuren.html#dis-pos-flo">CSS2.1§9.7</a> <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> and <a href="https://www.w3.org/TR/css-display-3/#transformations">CSS Display 3 §2.7 Automatic Box Type Transformations</a> for details on this type of <span class="property" id="ref-for-propdef-display⑧">display</span> value conversion.)</p>
    <p class="note" role="note"><span>Note:</span> Blockification still occurs even when the <a class="css" data-link-type="maybe" href="#valdef-display-flex" id="ref-for-valdef-display-flex⑤">flex</a> or <a class="css" data-link-type="maybe" href="#valdef-display-inline-flex" id="ref-for-valdef-display-inline-flex⑤">inline-flex</a> element does not end up generating a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container①①">flex container</a> box,
-	e.g. when it is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element">replaced</a> or in a <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display⑨">display: none</a> subtree.</p>
-   <p class="note" role="note"><span>Note:</span> Some values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①⓪">display</a> normally trigger the creation of anonymous boxes around the original box.
+	e.g. when it is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element">replaced</a> or in a <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display⑨">display: none</a> subtree.</p>
+   <p class="note" role="note"><span>Note:</span> Some values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①⓪">display</a> normally trigger the creation of anonymous boxes around the original box.
 	If such a box is a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑨">flex item</a>,
 	it is blockified first,
 	and so anonymous box creation will not happen.
 	For example, two contiguous <span id="ref-for-flex-item①⓪">flex items</span> with <span class="css" id="ref-for-propdef-display①①">display: table-cell</span> will become two separate <span class="css" id="ref-for-propdef-display①②">display: block</span> <span id="ref-for-flex-item①①">flex items</span>,
 	instead of being wrapped into a single anonymous table.</p>
-   <p>In the case of flex items with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①③">display: table</a>,
+   <p>In the case of flex items with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①③">display: table</a>,
 	the table wrapper box becomes the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①②">flex item</a>,
 	and the <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order①">order</a> and <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self④">align-self</a> properties apply to it.
 	The contents of any caption boxes contribute to the calculation of
@@ -1534,7 +1478,7 @@ and <span id="ref-for-flex-container⑧">flex containers</span> do not contribut
    <div class="note" role="note">
      In other words,
 		the <a data-link-type="dfn" href="#static-position-rectangle" id="ref-for-static-position-rectangle">static-position rectangle</a> of an absolutely-positioned child of a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container①⑤">flex container</a> is the <span id="ref-for-flex-container①⑥">flex container’s</span> content box,
-		where the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="static-position-rectangle">static-position rectangle</dfn> is the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#alignment-container" id="ref-for-alignment-container">alignment container</a> used to determine the static-position offsets of an absolutely-positioned box. 
+		where the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="static-position-rectangle">static-position rectangle</dfn> is the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#alignment-container" id="ref-for-alignment-container">alignment container</a> used to determine the static-position offsets of an absolutely-positioned box. 
     <p>(In block layout the static position rectangle corresponds to the position of the “hypothetical box”
 		described in <a href="https://www.w3.org/TR/CSS2/visudet.html#abs-non-replaced-width">CSS2.1§10.3.7</a>.
 		Since it has no alignment properties,
@@ -1551,8 +1495,8 @@ and <span id="ref-for-flex-container⑧">flex containers</span> do not contribut
    <h3 class="heading settled" data-level="4.2" id="item-margins"><span class="secno">4.2. </span><span class="content"> Flex Item Margins and Paddings</span><a class="self-link" href="#item-margins"></a></h3>
    <p>The margins of adjacent <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑥">flex items</a> do not <a href="https://www.w3.org/TR/CSS2/box.html#collapsing-margins">collapse</a>.</p>
    <p>Percentage margins and paddings on <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑦">flex items</a>,
-	like those on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-box" id="ref-for-block-box">block boxes</a>,
-	are resolved against the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#inline-size" id="ref-for-inline-size">inline size</a> of their <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a>,
+	like those on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-box" id="ref-for-block-box">block boxes</a>,
+	are resolved against the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#inline-size" id="ref-for-inline-size">inline size</a> of their <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block">containing block</a>,
 	e.g. left/right/top/bottom percentages
 	all resolve against their <span id="ref-for-containing-block①">containing block</span>’s <em>width</em> in horizontal <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#writing-mode" id="ref-for-writing-mode①">writing modes</a>.</p>
    <p>Auto margins expand to absorb extra space in the corresponding dimension.
@@ -1563,7 +1507,7 @@ and <span id="ref-for-flex-container⑧">flex containers</span> do not contribut
    <p><a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑧">Flex items</a> paint exactly the same as inline blocks <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>,
 	except that <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order②">order</a>-modified document order is used in place of raw document order,
 	and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-z-index" id="ref-for-propdef-z-index">z-index</a> values other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#valdef-z-index-auto" id="ref-for-valdef-z-index-auto">auto</a> create a stacking context
-	even if <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-static" id="ref-for-valdef-position-static">static</a> (behaving exactly as if <span class="property" id="ref-for-propdef-position①">position</span> were <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-relative" id="ref-for-valdef-position-relative">relative</a>).</p>
+	even if <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-static" id="ref-for-valdef-position-static">static</a> (behaving exactly as if <span class="property" id="ref-for-propdef-position①">position</span> were <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-relative" id="ref-for-valdef-position-relative">relative</a>).</p>
    <p class="note" role="note"><span>Note:</span> Descendants that are positioned outside a flex item still participate
 	in any stacking context established by the flex item.</p>
    <h3 class="heading settled" data-level="4.4" id="visibility-collapse"><span class="secno">4.4. </span><span class="content"> Collapsed Items</span><a class="self-link" href="#visibility-collapse"></a></h3>
@@ -1618,7 +1562,7 @@ and <span id="ref-for-flex-container⑧">flex containers</span> do not contribut
       </nav>
       <article> Hover over the menu to the left:
 			    each section expands to show its sub-items.
-			    In order to keep the sidebar width (and this main area width) stable, <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility①">visibility: collapse</a> is used instead of <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①④">display: none</a>.
+			    In order to keep the sidebar width (and this main area width) stable, <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility①">visibility: collapse</a> is used instead of <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①④">display: none</a>.
 			    This results in a sidebar that is always wide enough for the word “Architecture”,
 			    even though it is not always visible. </article>
      </div>
@@ -1680,14 +1624,14 @@ nav > ul > li<c- nf>:not</c-><c- p>(</c->:target<c- p>)</c-><c- nf>:not</c-><c- 
    <h3 class="heading settled" data-level="4.5" id="min-size-auto"><span class="secno">4.5. </span><span class="content"> Automatic Minimum Size of Flex Items</span><a class="self-link" href="#min-size-auto"></a></h3>
    <p class="note" role="note"><span>Note:</span> The <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto">auto</a> keyword,
 	representing an <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-minimum-size" id="ref-for-automatic-minimum-size">automatic minimum size</a>,
-	is the new initial value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width②">min-width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height②">min-height</a> properties.
+	is the new initial value of the <a class="property" data-link-type="propdesc">min-width</a> and <span class="property">min-height</span> properties.
 	The keyword was previously defined in this specification,
 	but is now defined in the <a data-link-type="biblio" href="#biblio-css-sizing-3">CSS Sizing</a> module.</p>
    <p>To provide a more reasonable default <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-width" id="ref-for-min-width">minimum size</a> for <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑨">flex items</a>,
 	the used value of a <a data-link-type="dfn" href="#main-axis" id="ref-for-main-axis③">main axis</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-minimum-size" id="ref-for-automatic-minimum-size①">automatic minimum size</a> on a <span id="ref-for-flex-item②⓪">flex item</span> that is not a <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scroll-container" id="ref-for-scroll-container">scroll container</a> is its <a data-link-type="dfn" href="#content-based-minimum-size" id="ref-for-content-based-minimum-size">content-based minimum size</a>;
 	for <span id="ref-for-scroll-container①">scroll containers</span> the <span id="ref-for-automatic-minimum-size②">automatic minimum size</span> is zero, as usual.</p>
    <p>The <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="content-based-minimum-size">content-based minimum size</dfn> of a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item②①">flex item</a> is the smaller of its <a data-link-type="dfn" href="#specified-size-suggestion" id="ref-for-specified-size-suggestion">specified size suggestion</a> and its <a data-link-type="dfn" href="#content-size-suggestion" id="ref-for-content-size-suggestion">content size suggestion</a> if its <span id="ref-for-specified-size-suggestion①">specified size suggestion</span> exists;
-	otherwise, the smaller of its <a data-link-type="dfn" href="#transferred-size-suggestion" id="ref-for-transferred-size-suggestion">transferred size suggestion</a> and its <span id="ref-for-content-size-suggestion①">content size suggestion</span> if the element is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element①">replaced</a> and its <span id="ref-for-transferred-size-suggestion①">transferred size suggestion</span> exists;
+	otherwise, the smaller of its <a data-link-type="dfn" href="#transferred-size-suggestion" id="ref-for-transferred-size-suggestion">transferred size suggestion</a> and its <span id="ref-for-content-size-suggestion①">content size suggestion</span> if the element is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element①">replaced</a> and its <span id="ref-for-transferred-size-suggestion①">transferred size suggestion</span> exists;
 	otherwise its <span id="ref-for-content-size-suggestion②">content size suggestion</span>.
 	In all cases, the size is clamped by the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#max-width" id="ref-for-max-width">maximum</a> <a data-link-type="dfn" href="#main-size" id="ref-for-main-size①">main size</a> if it’s <a data-link-type="dfn" href="#definite" id="ref-for-definite">definite</a>.</p>
    <p>The <a data-link-type="dfn" href="#content-size-suggestion" id="ref-for-content-size-suggestion③">content size suggestion</a>, <a data-link-type="dfn" href="#specified-size-suggestion" id="ref-for-specified-size-suggestion②">specified size suggestion</a>, and <a data-link-type="dfn" href="#transferred-size-suggestion" id="ref-for-transferred-size-suggestion②">transferred size suggestion</a> used in this calculation account for the relevant min/max/preferred size properties
@@ -1726,7 +1670,7 @@ nav > ul > li<c- nf>:not</c-><c- p>(</c->:target<c- p>)</c-><c- nf>:not</c-><c- 
 		and helps prevent content from overlapping or spilling outside its container,
 		in some cases it is not: 
     <p>In particular, if flex sizing is being used for a major content area of a document,
-		it is better to set an explicit font-relative minimum width such as <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width③">min-width: 12em</a>.
+		it is better to set an explicit font-relative minimum width such as <a class="css" data-link-type="propdesc">min-width: 12em</a>.
 		A content-based minimum width could result in a large table or large image
 		stretching the size of the entire content area into an overflow zone,
 		and thereby making lines of text gratuitously long and hard to read.</p>
@@ -1739,7 +1683,7 @@ nav > ul > li<c- nf>:not</c-><c- p>(</c->:target<c- p>)</c-><c- nf>:not</c-><c- 
    <h2 class="heading settled" data-level="5" id="flow-order"><span class="secno">5. </span><span class="content"> Ordering and Orientation</span><a class="self-link" href="#flow-order"></a></h2>
    <p>The contents of a flex container can be laid out in any direction and in any order.
 	This allows an author to trivially achieve effects that would previously have required complex or fragile methods,
-	such as hacks using the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float①">float</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear①">clear</a> properties.
+	such as hacks using the <a class="property" data-link-type="propdesc">float</a> and <span class="property">clear</span> properties.
 	This functionality is exposed through the <a class="property" data-link-type="propdesc" href="#propdef-flex-direction" id="ref-for-propdef-flex-direction">flex-direction</a>, <a class="property" data-link-type="propdesc" href="#propdef-flex-wrap" id="ref-for-propdef-flex-wrap">flex-wrap</a>, and <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order③">order</a> properties.</p>
    <p class="note" role="note"><span>Note:</span> The reordering capabilities of flex layout intentionally affect <em>only the visual rendering</em>,
 	leaving speech order and navigation based on the source order.
@@ -1751,21 +1695,6 @@ nav > ul > li<c- nf>:not</c-><c- p>(</c->:target<c- p>)</c-><c- nf>:not</c-><c- 
    <p><strong class="advisement"> Authors <em>must not</em> use <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order④">order</a> or the <span class="css">*-reverse</span> values of <a class="property" data-link-type="propdesc" href="#propdef-flex-flow" id="ref-for-propdef-flex-flow①">flex-flow</a>/<a class="property" data-link-type="propdesc" href="#propdef-flex-direction" id="ref-for-propdef-flex-direction①">flex-direction</a> as a substitute for correct source ordering,
 	as that can ruin the accessibility of the document.</strong></p>
    <h3 class="heading settled" data-level="5.1" id="flex-direction-property"><span class="secno">5.1. </span><span class="content"> Flex Flow Direction: the <a class="property" data-link-type="propdesc" href="#propdef-flex-direction" id="ref-for-propdef-flex-direction②">flex-direction</a> property</span><a class="self-link" href="#flex-direction-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction" title="The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).">flex-direction</a></p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>?</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>?</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="flex-direction">
     <tbody>
      <tr>
@@ -1845,27 +1774,11 @@ nav > ul > li<c- nf>:not</c-><c- p>(</c->:target<c- p>)</c-><c- nf>:not</c-><c- 
      </details>
    </dl>
    <p class="note" role="note"><span>Note:</span> The reverse values do not reverse box ordering:
-	like <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode" id="ref-for-propdef-writing-mode">writing-mode</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction">direction</a> <a data-link-type="biblio" href="#biblio-css3-writing-modes">[CSS3-WRITING-MODES]</a>,
+	like <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode" id="ref-for-propdef-writing-mode">writing-mode</a> and <a class="property" data-link-type="propdesc">direction</a> <a data-link-type="biblio" href="#biblio-css3-writing-modes">[CSS3-WRITING-MODES]</a>,
 	they only change the direction of flow.
 	Painting order, speech order, and sequential navigation orders
 	are not affected.</p>
    <h3 class="heading settled" data-level="5.2" id="flex-wrap-property"><span class="secno">5.2. </span><span class="content"> Flex Line Wrapping: the <a class="property" data-link-type="propdesc" href="#propdef-flex-wrap" id="ref-for-propdef-flex-wrap①">flex-wrap</a> property</span><a class="self-link" href="#flex-wrap-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap" title="The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.">flex-wrap</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>28+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>17+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>52+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>18+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="flex-wrap">
     <tbody>
      <tr>
@@ -1939,22 +1852,6 @@ nav > ul > li<c- nf>:not</c-><c- p>(</c->:target<c- p>)</c-><c- nf>:not</c-><c- 
 	the <span id="ref-for-cross-start②">cross-start</span> and <span id="ref-for-cross-end①">cross-end</span> directions
 	are swapped.</p>
    <h3 class="heading settled" data-level="5.3" id="flex-flow-property"><span class="secno">5.3. </span><span class="content"> Flex Direction and Wrap: the <a class="property" data-link-type="propdesc" href="#propdef-flex-flow" id="ref-for-propdef-flex-flow②">flex-flow</a> shorthand</span><a class="self-link" href="#flex-flow-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow" title="The flex-flow CSS shorthand property specifies the direction of a flex container, as well as its wrapping behavior.">flex-flow</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>28+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>28+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="flex-flow">
     <tbody>
      <tr>
@@ -2040,22 +1937,6 @@ nav > ul > li<c- nf>:not</c-><c- p>(</c->:target<c- p>)</c-><c- nf>:not</c-><c- 
     </table>
    </div>
    <h3 class="heading settled" data-level="5.4" id="order-property"><span class="secno">5.4. </span><span class="content"> Display Order: the <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order⑤">order</a> property</span><a class="self-link" href="#order-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order" title="The order CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending order value and then by their source code order.">order</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>20+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>20+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p><a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item②③">Flex items</a> are, by default, displayed and laid out in the same order as they appear in the source document.
 	The <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order⑥">order</a> property can be used to change this ordering.</p>
    <table class="def propdef" data-link-for-hint="order">
@@ -2306,22 +2187,6 @@ unless the flex container itself is completely empty.</p>
    <p>A <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item③③">flex item</a> is <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="fully-inflexible">fully inflexible</dfn> if both its <a class="property" data-link-type="propdesc" href="#propdef-flex-grow" id="ref-for-propdef-flex-grow">flex-grow</a> and <a class="property" data-link-type="propdesc" href="#propdef-flex-shrink" id="ref-for-propdef-flex-shrink">flex-shrink</a> values are zero,
 	and <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="flexible">flexible</dfn> otherwise.</p>
    <h3 class="heading settled" data-level="7.1" id="flex-property"><span class="secno">7.1. </span><span class="content"> The <a class="property" data-link-type="propdesc" href="#propdef-flex" id="ref-for-propdef-flex④">flex</a> Shorthand</span><a class="self-link" href="#flex-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" title="The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container.">flex</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>20+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>20+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="flex">
     <tbody>
      <tr>
@@ -2496,7 +2361,7 @@ unless the flex container itself is completely empty.</p>
     <dd> Equivalent to <a class="css" data-link-type="propdesc" href="#propdef-flex" id="ref-for-propdef-flex②③">flex: 0 0 auto</a>.
 			This value sizes the item according to the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①⓪">width</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑧">height</a> properties,
 			but makes the flex item <a data-link-type="dfn" href="#fully-inflexible" id="ref-for-fully-inflexible">fully inflexible</a>.
-			This is similar to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#valdef-all-initial" id="ref-for-valdef-all-initial">initial</a>,
+			This is similar to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#valdef-all-initial" id="ref-for-valdef-all-initial">initial</a>,
 			except that flex items are not allowed to shrink,
 			even in overflow situations. 
     <dt>''flex: <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value②">&lt;number [1,∞]></a>'' 
@@ -2508,7 +2373,7 @@ unless the flex container itself is completely empty.</p>
    </dl>
    <p>By default, flex items won’t shrink below their minimum content size
 	(the length of the longest word or fixed-size element).
-	To change this, set the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width④">min-width</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height③">min-height</a> property.
+	To change this, set the <a class="property" data-link-type="propdesc">min-width</a> or <span class="property">min-height</span> property.
 	(See <a href="#min-size-auto">§ 4.5 Automatic Minimum Size of Flex Items</a>.)</p>
    <h3 class="heading settled" data-level="7.2" id="flex-components"><span class="secno">7.2. </span><span class="content"> Components of Flexibility</span><a class="self-link" href="#flex-components"></a></h3>
    <p>Individual components of flexibility can be controlled by independent longhand properties.</p>
@@ -2517,22 +2382,6 @@ unless the flex container itself is completely empty.</p>
 	as the shorthand correctly resets any unspecified components
 	to accommodate <a href="#flex-common">common uses</a>.</strong></p>
    <h4 class="heading settled" data-level="7.2.1" id="flex-grow-property"><span class="secno">7.2.1. </span><span class="content"> The <a class="property" data-link-type="propdesc" href="#propdef-flex-grow" id="ref-for-propdef-flex-grow①②">flex-grow</a> property</span><a class="self-link" href="#flex-grow-property"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow" title="The flex-grow CSS property sets the flex grow factor of a flex item&apos;s main size.">flex-grow</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>20+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>20+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="flex-grow">
     <tbody>
      <tr>
@@ -2570,22 +2419,6 @@ unless the flex container itself is completely empty.</p>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-flex-grow" id="ref-for-propdef-flex-grow①④">flex-grow</a> property sets the <a data-link-type="dfn" href="#flex-flex-grow-factor" id="ref-for-flex-flex-grow-factor②">flex grow factor</a> to the provided <dfn class="css" data-dfn-for="flex-grow" data-dfn-type="value" data-export id="valdef-flex-grow-number"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value⑤">&lt;number></a><a class="self-link" href="#valdef-flex-grow-number"></a></dfn>.
 	Negative values are not allowed.</p>
    <h4 class="heading settled" data-level="7.2.2" id="flex-shrink-property"><span class="secno">7.2.2. </span><span class="content"> The <a class="property" data-link-type="propdesc" href="#propdef-flex-shrink" id="ref-for-propdef-flex-shrink④">flex-shrink</a> property</span><a class="self-link" href="#flex-shrink-property"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink" title="The flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink.">flex-shrink</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>20+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>20+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="flex-shrink">
     <tbody>
      <tr>
@@ -2623,22 +2456,6 @@ unless the flex container itself is completely empty.</p>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-flex-shrink" id="ref-for-propdef-flex-shrink⑥">flex-shrink</a> property sets the <a data-link-type="dfn" href="#flex-flex-shrink-factor" id="ref-for-flex-flex-shrink-factor③">flex shrink factor</a> to the provided <dfn class="css" data-dfn-for="flex-shrink" data-dfn-type="value" data-export id="valdef-flex-shrink-number"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value⑦">&lt;number></a><a class="self-link" href="#valdef-flex-shrink-number"></a></dfn>.
 	Negative values are not allowed.</p>
    <h4 class="heading settled" data-level="7.2.3" id="flex-basis-property"><span class="secno">7.2.3. </span><span class="content"> The <a class="property" data-link-type="propdesc" href="#propdef-flex-basis" id="ref-for-propdef-flex-basis⑧">flex-basis</a> property</span><a class="self-link" href="#flex-basis-property"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" title="The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing.">flex-basis</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>22+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="flex-basis">
     <tbody>
      <tr>
@@ -2689,7 +2506,7 @@ unless the flex container itself is completely empty.</p>
    <p>After a flex container’s contents have finished their flexing
 	and the dimensions of all flex items are finalized,
 	they can then be aligned within the flex container.</p>
-   <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-margin" id="ref-for-propdef-margin">margin</a> properties can be used to align items in a manner similar to, but more powerful than, what margins can do in block layout. <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item④⑦">Flex items</a> also respect the alignment properties from <a href="https://www.w3.org/TR/css3-align/">CSS Box Alignment</a>,
+   <p>The <a class="property" data-link-type="propdesc">margin</a> properties can be used to align items in a manner similar to, but more powerful than, what margins can do in block layout. <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item④⑦">Flex items</a> also respect the alignment properties from <a href="https://www.w3.org/TR/css3-align/">CSS Box Alignment</a>,
 	which allow easy keyword-based alignment of items in both the <a data-link-type="dfn" href="#main-axis" id="ref-for-main-axis①⓪">main axis</a> and <a data-link-type="dfn" href="#cross-axis" id="ref-for-cross-axis⑥">cross axis</a>.
 	These properties make many common types of alignment trivial,
 	including some things that were very difficult in CSS 2.1,
@@ -2715,7 +2532,7 @@ unless the flex container itself is completely empty.</p>
      <p>Prior to alignment via <a class="property" data-link-type="propdesc" href="#propdef-justify-content" id="ref-for-propdef-justify-content②">justify-content</a> and <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self⑧">align-self</a>,
 any positive free space is distributed to auto margins in that dimension.</p>
     <li data-md>
-     <p>Overflowing boxes ignore their auto margins and overflow in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-3/#css-end" id="ref-for-css-end">end</a> direction.</p>
+     <p>Overflowing boxes ignore their auto margins and overflow in the <a data-link-type="dfn">end</a> direction.</p>
    </ul>
    <details class="wpt-tests-block" dir="ltr" lang="en">
     <summary>Tests</summary>
@@ -2787,35 +2604,6 @@ nav > ul > #login <c- p>{</c->
     </figure>
    </div>
    <h3 class="heading settled" data-level="8.2" id="justify-content-property"><span class="secno">8.2. </span><span class="content"> Axis Alignment: the <a class="property" data-link-type="propdesc" href="#propdef-justify-content" id="ref-for-propdef-justify-content③">justify-content</a> property</span><a class="self-link" href="#justify-content-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" title="The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.">justify-content</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>20+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>52+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>20+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>52+</span></span><span class="webview_android yes"><span>Android WebView</span><span>52+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" title="The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.">justify-content</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>52+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>52+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>52+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.2+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="justify-content">
     <tbody>
      <tr>
@@ -2905,61 +2693,6 @@ nav > ul > #login <c- p>{</c->
     <p class="caption">An illustration of the five <a class="property" data-link-type="propdesc" href="#propdef-justify-content" id="ref-for-propdef-justify-content⑤">justify-content</a> keywords and their effects on a flex container with three colored items. </p>
    </div>
    <h3 class="heading settled" data-level="8.3" id="align-items-property"><span class="secno">8.3. </span><span class="content"> Cross-axis Alignment: the <a class="property" data-link-type="propdesc" href="#propdef-align-items" id="ref-for-propdef-align-items②">align-items</a> and <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self①⓪">align-self</a> properties</span><a class="self-link" href="#align-items-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" title="The CSS align-items property sets the align-self value on all direct children as a group.">align-items</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>20+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>52+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>20+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>52+</span></span><span class="webview_android yes"><span>Android WebView</span><span>52+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" title="The CSS align-items property sets the align-self value on all direct children as a group.">align-items</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>52+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>52+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>52+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.2+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self" title="The align-self CSS property overrides a grid or flex item&apos;s align-items value. In Grid, it aligns the item inside the grid area. In Flexbox, it aligns the item on the cross axis.">align-self</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>20+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>36+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>20+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>36+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>3.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self" title="The align-self CSS property overrides a grid or flex item&apos;s align-items value. In Grid, it aligns the item inside the grid area. In Flexbox, it aligns the item on the cross axis.">align-self</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>52+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>52+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>52+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.2+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="align-items">
     <tbody>
      <tr>
@@ -3089,7 +2822,7 @@ nav > ul > #login <c- p>{</c->
 			and the item with the largest distance between its baseline and its <a data-link-type="dfn" href="#cross-start" id="ref-for-cross-start⑤">cross-start</a> margin edge
 			is placed flush against the <span id="ref-for-cross-start⑥">cross-start</span> edge of the line.
 			If the item does not have a baseline in the necessary axis,
-			then one is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#synthesize-baseline" id="ref-for-synthesize-baseline">synthesized</a> from the <span id="ref-for-flex-item⑧②">flex item</span>’s border box. 
+			then one is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#synthesize-baseline" id="ref-for-synthesize-baseline">synthesized</a> from the <span id="ref-for-flex-item⑧②">flex item</span>’s border box. 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -3102,7 +2835,7 @@ nav > ul > #login <c- p>{</c->
 			and neither of the <a data-link-type="dfn" href="#cross-axis" id="ref-for-cross-axis①⓪">cross-axis</a> margins are <span class="css">auto</span>,
 			the <span id="ref-for-flex-item⑧④">flex item</span> is <dfn class="dfn-paneled" data-dfn-for data-dfn-type="dfn" data-noexport id="stretched">stretched</dfn>.
 			Its used value is the length necessary to make the <a data-link-type="dfn" href="#cross-size" id="ref-for-cross-size⑨">cross size</a> of the item’s margin box as close to the same size as the line as possible,
-			while still respecting the constraints imposed by <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height④">min-height</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑤">min-width</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height②">max-height</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width②">max-width</a>. 
+			while still respecting the constraints imposed by <a class="property" data-link-type="propdesc">min-height</a>/<span class="property">min-width</span>/<span class="property">max-height</span>/<span class="property">max-width</span>. 
      <p class="note" role="note"><span>Note:</span> If the flex container’s height is constrained
 			this value may cause the contents of the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑧⑤">flex item</a> to overflow the item.</p>
      <p>The <a data-link-type="dfn" href="#cross-start" id="ref-for-cross-start⑦">cross-start</a> margin edge of the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑧⑥">flex item</a> is placed flush with the <span id="ref-for-cross-start⑧">cross-start</span> edge of the line.</p>
@@ -3121,35 +2854,6 @@ nav > ul > #login <c- p>{</c->
     <p class="caption">An illustration of the five <a class="property" data-link-type="propdesc" href="#propdef-align-items" id="ref-for-propdef-align-items⑥">align-items</a> keywords and their effects on a flex container with four colored items. </p>
    </div>
    <h3 class="heading settled" data-level="8.4" id="align-content-property"><span class="secno">8.4. </span><span class="content"> Packing Flex Lines: the <a class="property" data-link-type="propdesc" href="#propdef-align-content" id="ref-for-propdef-align-content③">align-content</a> property</span><a class="self-link" href="#align-content-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" title="The CSS align-content property sets the distribution of space between and around content items along a flexbox&apos;s cross-axis or a grid&apos;s block axis.">align-content</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>28+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>12.1+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>11</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>28+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>29+</span></span><span class="webview_android yes"><span>Android WebView</span><span>4.4+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>2.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content" title="The CSS align-content property sets the distribution of space between and around content items along a flexbox&apos;s cross-axis or a grid&apos;s block axis.">align-content</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>52+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>52+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>52+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.2+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="align-content">
     <tbody>
      <tr>
@@ -3258,18 +2962,18 @@ nav > ul > #login <c- p>{</c->
      <ol>
       <li data-md>
        <p>If any of the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑧⑧">flex items</a> on the flex container’s startmost/endmost <a data-link-type="dfn" href="#flex-line" id="ref-for-flex-line③">flex line</a> <a href="#baseline-participation" id="ref-for-baseline-participation①">participate in baseline alignment</a>,
-the flex container’s first/last <a data-link-type="dfn" href="#main-axis-baseline" id="ref-for-main-axis-baseline">main-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#generate-baselines" id="ref-for-generate-baselines">generated</a> from
-the shared <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#alignment-baseline" id="ref-for-alignment-baseline">alignment baseline</a> of those <span id="ref-for-flex-item⑧⑨">flex items</span>.</p>
+the flex container’s first/last <a data-link-type="dfn" href="#main-axis-baseline" id="ref-for-main-axis-baseline">main-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#generate-baselines" id="ref-for-generate-baselines">generated</a> from
+the shared <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#alignment-baseline" id="ref-for-alignment-baseline">alignment baseline</a> of those <span id="ref-for-flex-item⑧⑨">flex items</span>.</p>
       <li data-md>
        <p>Otherwise, if the flex container has at least one <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑨⓪">flex item</a>,
-the flex container’s first/last <a data-link-type="dfn" href="#main-axis-baseline" id="ref-for-main-axis-baseline①">main-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#generate-baselines" id="ref-for-generate-baselines①">generated</a> from
-the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#alignment-baseline" id="ref-for-alignment-baseline①">alignment baseline</a> of the startmost/endmost <span id="ref-for-flex-item⑨①">flex item</span>.
+the flex container’s first/last <a data-link-type="dfn" href="#main-axis-baseline" id="ref-for-main-axis-baseline①">main-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#generate-baselines" id="ref-for-generate-baselines①">generated</a> from
+the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#alignment-baseline" id="ref-for-alignment-baseline①">alignment baseline</a> of the startmost/endmost <span id="ref-for-flex-item⑨①">flex item</span>.
 (If that item has no <span id="ref-for-alignment-baseline②">alignment baseline</span> parallel to the flex container’s <a data-link-type="dfn" href="#main-axis" id="ref-for-main-axis①④">main axis</a>,
-then one is first <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#synthesize-baseline" id="ref-for-synthesize-baseline①">synthesized</a> from its border edges.)</p>
+then one is first <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#synthesize-baseline" id="ref-for-synthesize-baseline①">synthesized</a> from its border edges.)</p>
       <li data-md>
-       <p>Otherwise, the flex container has no first/last main-axis <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#baseline-set" id="ref-for-baseline-set">baseline set</a>,
-and one is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#synthesize-baseline" id="ref-for-synthesize-baseline②">synthesized</a> if needed
-according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#shared-alignment-context" id="ref-for-shared-alignment-context">alignment context</a>.</p>
+       <p>Otherwise, the flex container has no first/last main-axis <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#baseline-set" id="ref-for-baseline-set">baseline set</a>,
+and one is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#synthesize-baseline" id="ref-for-synthesize-baseline②">synthesized</a> if needed
+according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#shared-alignment-context" id="ref-for-shared-alignment-context">alignment context</a>.</p>
      </ol>
     <dt>first/last <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="cross-axis baseline set|first cross-axis baseline set|last cross-axis baseline set" id="cross-axis-baseline"> cross-axis baseline set</dfn> 
     <dd>
@@ -3278,14 +2982,14 @@ according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg
      <ol>
       <li data-md>
        <p>If the flex container has at least one <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑨②">flex item</a>,
-the flex container’s first/last <a data-link-type="dfn" href="#cross-axis-baseline" id="ref-for-cross-axis-baseline">cross-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#generate-baselines" id="ref-for-generate-baselines②">generated</a> from
-the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#alignment-baseline" id="ref-for-alignment-baseline③">alignment baseline</a> of the startmost/endmost <span id="ref-for-flex-item⑨③">flex item</span>.
+the flex container’s first/last <a data-link-type="dfn" href="#cross-axis-baseline" id="ref-for-cross-axis-baseline">cross-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#generate-baselines" id="ref-for-generate-baselines②">generated</a> from
+the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#alignment-baseline" id="ref-for-alignment-baseline③">alignment baseline</a> of the startmost/endmost <span id="ref-for-flex-item⑨③">flex item</span>.
 (If that item has no <span id="ref-for-alignment-baseline④">alignment baseline</span> parallel to the flex container’s <a data-link-type="dfn" href="#cross-axis" id="ref-for-cross-axis①④">cross axis</a>,
-then one is first <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#synthesize-baseline" id="ref-for-synthesize-baseline③">synthesized</a> from its border edges.)</p>
+then one is first <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#synthesize-baseline" id="ref-for-synthesize-baseline③">synthesized</a> from its border edges.)</p>
       <li data-md>
-       <p>Otherwise, the flex container has no first/last cross-axis <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#baseline-set" id="ref-for-baseline-set①">baseline set</a>,
-and one is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#synthesize-baseline" id="ref-for-synthesize-baseline④">synthesized</a> if needed
-according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#shared-alignment-context" id="ref-for-shared-alignment-context①">alignment context</a>.</p>
+       <p>Otherwise, the flex container has no first/last cross-axis <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#baseline-set" id="ref-for-baseline-set①">baseline set</a>,
+and one is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#synthesize-baseline" id="ref-for-synthesize-baseline④">synthesized</a> if needed
+according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#shared-alignment-context" id="ref-for-shared-alignment-context①">alignment context</a>.</p>
      </ol>
    </dl>
    <p>When calculating the baseline according to the above rules,
@@ -3294,7 +2998,7 @@ according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg
 	for the purpose of determining its baseline.</p>
    <p>When <a href="https://www.w3.org/TR/CSS2/tables.html#height-layout">determining the baseline of a table cell</a>,
 	a flex container provides a baseline just as a line box or table-row does. <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a></p>
-   <p>See <a href="https://www.w3.org/TR/css-writing-modes-3/#intro-baselines">CSS Writing Modes 3 §4.1 Introduction to Baselines</a> and <a href="https://www.w3.org/TR/css-align-3/#baseline-rules">CSS Box Alignment 3 §9 Baseline Alignment Details</a> for more information on baselines.</p>
+   <p>See <a href="https://www.w3.org/TR/css-writing-modes-3/#intro-baselines">CSS Writing Modes Level 3 §intro-baselines</a> and <a href="https://www.w3.org/TR/css-align-3/#baseline-rules">CSS Box Alignment 3 §9 Baseline Alignment Details</a> for more information on baselines.</p>
    <h2 class="heading settled" data-level="9" id="layout-algorithm"><span class="secno">9. </span><span class="content"> Flex Layout Algorithm</span><a class="self-link" href="#layout-algorithm"></a></h2>
    <p>This section contains normative algorithms
 	detailing the exact layout behavior of a flex container and its contents.
@@ -3343,7 +3047,7 @@ according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg
         <li>a <a data-link-type="dfn" href="#definite" id="ref-for-definite⑨">definite</a> <a data-link-type="dfn" href="#cross-size" id="ref-for-cross-size①⓪">cross size</a>, 
        </ul>
         then the <a data-link-type="dfn" href="#flex-base-size" id="ref-for-flex-base-size②">flex base size</a> is calculated from
-					its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used</a> <a data-link-type="dfn" href="#cross-size" id="ref-for-cross-size①①">cross size</a> and the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑨⑤">flex item</a>’s aspect ratio. 
+					its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used</a> <a data-link-type="dfn" href="#cross-size" id="ref-for-cross-size①①">cross size</a> and the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item⑨⑤">flex item</a>’s aspect ratio. 
       <li> If the used <a data-link-type="dfn" href="#flex-flex-basis" id="ref-for-flex-flex-basis⑤">flex basis</a> is <a class="css" data-link-type="maybe" href="#valdef-flex-basis-content" id="ref-for-valdef-flex-basis-content⑦">content</a> or depends on its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#available" id="ref-for-available①">available space</a>,
 					and the flex container is being sized under a min-content or max-content constraint
 					(e.g. when performing <a href="https://www.w3.org/TR/CSS2/tables.html#auto-table-layout">automatic table layout</a> <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>),
@@ -3383,11 +3087,11 @@ according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg
 			when applying <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing" id="ref-for-propdef-box-sizing①">box-sizing</a> are also ignored.
 			(For example, an item with a specified size of zero,
 			positive padding, and <span class="css" id="ref-for-propdef-box-sizing②">box-sizing: border-box</span> will have an outer <span id="ref-for-flex-base-size⑦">flex base size</span> of zero—<wbr>and hence a negative inner <span id="ref-for-flex-base-size⑧">flex base size</span>.)</p>
-     <p>The <a data-link-type="dfn" href="#hypothetical-main-size" id="ref-for-hypothetical-main-size">hypothetical main size</a> is the item’s <a data-link-type="dfn" href="#flex-base-size" id="ref-for-flex-base-size⑨">flex base size</a> clamped according to its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used</a> min and max <a data-link-type="dfn" href="#main-size" id="ref-for-main-size①⑤">main sizes</a> (and flooring the content box size at zero).</p>
+     <p>The <a data-link-type="dfn" href="#hypothetical-main-size" id="ref-for-hypothetical-main-size">hypothetical main size</a> is the item’s <a data-link-type="dfn" href="#flex-base-size" id="ref-for-flex-base-size⑨">flex base size</a> clamped according to its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used</a> min and max <a data-link-type="dfn" href="#main-size" id="ref-for-main-size①⑤">main sizes</a> (and flooring the content box size at zero).</p>
     <li id="algo-main-container">
      <a class="self-link" href="#algo-main-container"></a> <strong>Determine the <a data-link-type="dfn" href="#main-size" id="ref-for-main-size①⑥">main size</a> of the flex container</strong> using the rules of the formatting context in which it participates. 
      <div class="note" role="note">
-       The <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-block-size" id="ref-for-automatic-block-size">automatic block size</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level" id="ref-for-block-level①">block-level</a> <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container④⑥">flex container</a> is its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#max-content" id="ref-for-max-content①">max-content size</a>. 
+       The <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-block-size" id="ref-for-automatic-block-size">automatic block size</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level" id="ref-for-block-level①">block-level</a> <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container④⑥">flex container</a> is its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#max-content" id="ref-for-max-content①">max-content size</a>. 
       <p>The Block Layout spec should define this equivalency, but it doesn’t exist yet.</p>
      </div>
    </ol>
@@ -3420,7 +3124,7 @@ according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg
    </ol>
    <h3 class="heading settled" data-level="9.4" id="cross-sizing"><span class="secno">9.4. </span><span class="content"> Cross Size Determination</span><a class="self-link" href="#cross-sizing"></a></h3>
    <ol class="continue">
-    <li id="algo-cross-item"><a class="self-link" href="#algo-cross-item"></a> <strong>Determine the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="hypothetical-cross-size">hypothetical cross size</dfn> of each item</strong> by performing layout as if it were an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#in-flow" id="ref-for-in-flow">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level-box" id="ref-for-block-level-box">block-level box</a> with the used <a data-link-type="dfn" href="#main-size" id="ref-for-main-size①⑧">main size</a> and the given available space,
+    <li id="algo-cross-item"><a class="self-link" href="#algo-cross-item"></a> <strong>Determine the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="hypothetical-cross-size">hypothetical cross size</dfn> of each item</strong> by performing layout as if it were an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#in-flow" id="ref-for-in-flow">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level-box" id="ref-for-block-level-box">block-level box</a> with the used <a data-link-type="dfn" href="#main-size" id="ref-for-main-size①⑧">main size</a> and the given available space,
 			treating <a class="css" data-link-type="value" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑥">auto</a> as <span class="css">fit-content</span>. 
     <li id="algo-cross-line">
      <a class="self-link" href="#algo-cross-line"></a> <strong>Calculate the cross size of each flex line.</strong> 
@@ -3508,7 +3212,7 @@ according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg
      </ul>
     <li id="algo-cross-align"><a class="self-link" href="#algo-cross-align"></a> <strong>Align all flex items along the cross-axis</strong> per <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self①⑧">align-self</a>,
 			if neither of the item’s cross-axis margins are <a class="css" data-link-type="value">auto</a>. 
-    <li id="algo-cross-container"><a class="self-link" href="#algo-cross-container"></a> <strong>Determine the flex container’s used cross size</strong> using the rules of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#formatting-context" id="ref-for-formatting-context">formatting context</a> in which it participates.
+    <li id="algo-cross-container"><a class="self-link" href="#algo-cross-container"></a> <strong>Determine the flex container’s used cross size</strong> using the rules of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#formatting-context" id="ref-for-formatting-context">formatting context</a> in which it participates.
 			If a content-based <a data-link-type="dfn" href="#cross-size" id="ref-for-cross-size①⑨">cross size</a> is needed,
 			use the sum of the <a data-link-type="dfn" href="#flex-line" id="ref-for-flex-line⑥">flex lines</a>' <span id="ref-for-cross-size②⓪">cross sizes</span>. 
     <li id="algo-line-align"><a class="self-link" href="#algo-line-align"></a> <strong>Align all flex lines</strong> per <a class="property" data-link-type="propdesc" href="#propdef-align-content" id="ref-for-propdef-align-content⑦">align-content</a>. 
@@ -3566,7 +3270,7 @@ according to the rules of its <a data-link-type="dfn" href="https://drafts.csswg
 							it will be corrected in the next step.</span> 
        </dl>
       <li> <strong>Fix min/max violations.</strong> Clamp each non-frozen item’s <a data-link-type="dfn" href="#target-main-size" id="ref-for-target-main-size⑤">target main size</a> by
-					its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value②">used</a> min and max <a data-link-type="dfn" href="#main-size" id="ref-for-main-size②④">main sizes</a> and floor its content-box size at zero.
+					its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value②">used</a> min and max <a data-link-type="dfn" href="#main-size" id="ref-for-main-size②④">main sizes</a> and floor its content-box size at zero.
 					If the item’s <span id="ref-for-target-main-size⑥">target main size</span> was made smaller by this,
 					it’s a max violation.
 					If the item’s <span id="ref-for-target-main-size⑦">target main size</span> was made larger by this,
@@ -3700,7 +3404,7 @@ as determined by its flexibility).</p>
 		between items,
 		between lines of items (in <a data-link-type="dfn" href="#multi-line-flex-container" id="ref-for-multi-line-flex-container①⓪">multi-line</a> mode),
 		and inside items.
-		The <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before">break-*</a> properties apply to flex containers as normal for block-level or inline-level boxes.
+		The <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before">break-*</a> properties apply to flex containers as normal for block-level or inline-level boxes.
 		This section defines how they apply to flex items
 		and the contents of flex items.
 		See the <a href="http://www.w3.org/TR/css-break/">CSS Fragmentation Module</a> for more context <a data-link-type="biblio" href="#biblio-css3-break">[CSS3-BREAK]</a>. </p>
@@ -3717,17 +3421,17 @@ as determined by its flexibility).</p>
    <ul>
     <li>
       In a row flex container,
-			the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before①">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> values on flex items
+			the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before①">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> values on flex items
 			are propagated to the flex line.
 			The <span class="property" id="ref-for-propdef-break-before②">break-before</span> values on the first line
 			and the <span class="property" id="ref-for-propdef-break-after①">break-after</span> values on the last line
 			are propagated to the flex container. 
      <p class="note" role="note"><span>Note:</span> Break propagation
 			(like <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration" id="ref-for-propdef-text-decoration">text-decoration</a> propagation)
-			does not affect <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed values</a>.</p>
+			does not affect <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed values</a>.</p>
     <li> In a column flex container,
-			the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before③">break-before</a> values on the first item
-			and the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-after" id="ref-for-propdef-break-after②">break-after</a> values on the last item
+			the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before③">break-before</a> values on the first item
+			and the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-after" id="ref-for-propdef-break-after②">break-after</a> values on the last item
 			are propagated to the flex container.
 			Forced breaks on other items are applied to the item itself. 
     <li> A forced break inside a flex item effectively increases the size of its contents;
@@ -3919,11 +3623,11 @@ as determined by its flexibility).</p>
      <tr>
       <th><a class="property" data-link-type="propdesc" href="#propdef-flex-flow" id="ref-for-propdef-flex-flow⑦">flex-flow</a> 
       <th><a data-link-type="dfn" href="#main-axis" id="ref-for-main-axis①⑤">main axis</a> 
-      <th><a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-3/#css-start" id="ref-for-css-start">start</a>
-      <th><a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-3/#css-end" id="ref-for-css-end①">end</a>
+      <th><a data-link-type="dfn">start</a> 
+      <th><a data-link-type="dfn">end</a> 
       <th><a data-link-type="dfn" href="#cross-axis" id="ref-for-cross-axis①⑦">cross axis</a> 
-      <th><a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-3/#css-start" id="ref-for-css-start①">start</a>
-      <th><a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-3/#css-end" id="ref-for-css-end②">end</a>
+      <th><a data-link-type="dfn">start</a> 
+      <th><a data-link-type="dfn">end</a> 
     <tbody>
      <tr>
       <th><a class="css" data-link-type="maybe" href="#valdef-flex-direction-row" id="ref-for-valdef-flex-direction-row③">row</a> + <a class="css" data-link-type="maybe" href="#valdef-flex-wrap-nowrap" id="ref-for-valdef-flex-wrap-nowrap">nowrap</a>/<a class="css" data-link-type="maybe" href="#valdef-flex-wrap-wrap" id="ref-for-valdef-flex-wrap-wrap②">wrap</a> 
@@ -4125,7 +3829,7 @@ Boris Zbarsky.</p>
    <ul>
     <li id="change-2018-bracket-range-notation"><a class="self-link" href="#change-2018-bracket-range-notation"></a> Changed syntax to use <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#css-bracketed-range-notation" id="ref-for-css-bracketed-range-notation">CSS bracketed range notation</a> to reflect the prose restrictions on negative values. 
     <li id="change-2018-preferred-aspect-ratio"><a class="self-link" href="#change-2018-preferred-aspect-ratio"></a> Update aspect ratio terminology to use the term <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio⑥">preferred aspect ratio</a>,
-			and clarify any uses that are specific to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element②">replaced elements</a>. 
+			and clarify any uses that are specific to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element②">replaced elements</a>. 
     <li id="change-2018-used-cross-size">
      <a class="self-link" href="#change-2018-used-cross-size"></a> Clarified that the <a data-link-type="dfn" href="#flex-base-size" id="ref-for-flex-base-size②②">flex base size</a> calculations
 			rely on the <em>used</em> <a data-link-type="dfn" href="#cross-size" id="ref-for-cross-size②⑨">cross size</a>.
@@ -4147,7 +3851,7 @@ Boris Zbarsky.</p>
       <p>
        <strong>Determine the hypothetical cross size of each item</strong> by performing layout 
        <ins>
-        as if it were an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#in-flow" id="ref-for-in-flow①">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level-box" id="ref-for-block-level-box①">block-level box</a> with the used <a data-link-type="dfn" href="#main-size" id="ref-for-main-size③①">main size</a> and the 
+        as if it were an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#in-flow" id="ref-for-in-flow①">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level-box" id="ref-for-block-level-box①">block-level box</a> with the used <a data-link-type="dfn" href="#main-size" id="ref-for-main-size③①">main size</a> and the 
         <ins>given</ins>
          available space … 
        </ins>
@@ -4160,7 +3864,7 @@ Boris Zbarsky.</p>
 			(<a href="https://github.com/w3c/csswg-drafts/issues/5190">Issue 5190</a>) 
      <blockquote>
        <strong>Determine the flex container’s used cross size</strong> 
-      <ins>using the rules of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#formatting-context" id="ref-for-formatting-context①">formatting context</a> in which it participates.
+      <ins>using the rules of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#formatting-context" id="ref-for-formatting-context①">formatting context</a> in which it participates.
 				If a content-based <a data-link-type="dfn" href="#cross-size" id="ref-for-cross-size③⓪">cross size</a> is needed,
 				use the sum of the <a data-link-type="dfn" href="#flex-line" id="ref-for-flex-line⑧">flex lines</a>' <span id="ref-for-cross-size③①">cross sizes</span>.</ins>
       <del>
@@ -4176,7 +3880,7 @@ Boris Zbarsky.</p>
      </blockquote>
     <li id="change-2018-aspect-ratio-box">
      <a class="self-link" href="#change-2018-aspect-ratio-box"></a> Removed explicit mention of which box to use for calculating aspect-ratio,
-			to allow for behavior introduced by the new <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-contain-3/#descdef-container-aspect-ratio" id="ref-for-descdef-container-aspect-ratio">aspect-ratio</a> property in <a data-link-type="biblio" href="#biblio-css-sizing-4">[css-sizing-4]</a>.
+			to allow for behavior introduced by the new <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/mediaqueries-5/#descdef-media-aspect-ratio" id="ref-for-descdef-media-aspect-ratio">aspect-ratio</a> property in <a data-link-type="biblio" href="#biblio-css-sizing-4">[css-sizing-4]</a>.
 			(<a href="https://github.com/w3c/csswg-drafts/issues/5246/">Issue 5246</a>) 
      <blockquote>
        then the flex base size is calculated from
@@ -4243,12 +3947,12 @@ Boris Zbarsky.</p>
 				see <a href="#algo-main-item">details</a> in <a href="#layout-algorithm">§ 9 Flex Layout Algorithm</a>.)</ins>
       </p>
      </blockquote>
-    <li id="change-2017-min-size-auto"><a class="self-link" href="#change-2017-min-size-auto"></a> Moved the definition of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①①">auto</a> keyword for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑥">min-width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height⑤">min-height</a> to <a data-link-type="biblio" href="#biblio-css-sizing-3">[CSS-SIZING-3]</a>.
+    <li id="change-2017-min-size-auto"><a class="self-link" href="#change-2017-min-size-auto"></a> Moved the definition of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①①">auto</a> keyword for <a class="property" data-link-type="propdesc">min-width</a> and <span class="property">min-height</span> to <a data-link-type="biblio" href="#biblio-css-sizing-3">[CSS-SIZING-3]</a>.
 			The definition of what an <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-minimum-size" id="ref-for-automatic-minimum-size③">automatic minimum size</a> for flex items is remains here.
 			(<a href="https://github.com/w3c/csswg-drafts/issues/1920">Issue 1920</a>, <a href="https://github.com/w3c/csswg-drafts/issues/2103">Issue 2103</a>) 
-    <li id="change-2017-min-size-auto-computation"><a class="self-link" href="#change-2017-min-size-auto-computation"></a> Altered the computation of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①②">auto</a> in <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑦">min-width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height⑥">min-height</a> such that it always computes to itself—<wbr>although its <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#resolved-value" id="ref-for-resolved-value">resolved value</a> remains zero on CSS2 display types.
+    <li id="change-2017-min-size-auto-computation"><a class="self-link" href="#change-2017-min-size-auto-computation"></a> Altered the computation of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①②">auto</a> in <a class="property" data-link-type="propdesc">min-width</a> and <span class="property">min-height</span> such that it always computes to itself—<wbr>although its <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#resolved-value" id="ref-for-resolved-value">resolved value</a> remains zero on CSS2 display types.
 			(<a href="https://github.com/w3c/csswg-drafts/issues/2230">Issue 2230</a>, <a href="https://github.com/w3c/csswg-drafts/issues/2248">Issue 2248</a>) 
-    <li id="change-2017-used-min-sizes"><a class="self-link" href="#change-2017-used-min-sizes"></a> Clarified that min/max clamping is according to the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value③">used value</a> of the min/max size properties—<wbr>which in the case of tables with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#valdef-table-layout-auto" id="ref-for-valdef-table-layout-auto">auto</a> layout,
+    <li id="change-2017-used-min-sizes"><a class="self-link" href="#change-2017-used-min-sizes"></a> Clarified that min/max clamping is according to the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value③">used value</a> of the min/max size properties—<wbr>which in the case of tables with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#valdef-table-layout-auto" id="ref-for-valdef-table-layout-auto">auto</a> layout,
 			is floored by the table’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-content" id="ref-for-min-content⑦">min-content size</a>.
 			(<a href="https://github.com/w3c/csswg-drafts/issues/2442">Issue 2442</a>) 
     <li id="change-2017-break-propagation">
@@ -4266,7 +3970,7 @@ Boris Zbarsky.</p>
       <ul>
        <li>
          In a row flex container,
-						the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before④">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-after" id="ref-for-propdef-break-after③">break-after</a> values on flex items
+						the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before④">break-before</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-after" id="ref-for-propdef-break-after③">break-after</a> values on flex items
 						are propagated to the flex line.
 						The <span class="property" id="ref-for-propdef-break-before⑤">break-before</span> values on the first line
 						and the <span class="property" id="ref-for-propdef-break-after④">break-after</span> values on the last line
@@ -4274,7 +3978,7 @@ Boris Zbarsky.</p>
         <ins>
          <p class="note" role="note"><span>Note:</span> Break propagation
 						(like <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration" id="ref-for-propdef-text-decoration①">text-decoration</a> propagation)
-						does not affect <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed values</a>.</p>
+						does not affect <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed values</a>.</p>
         </ins>
       </ul>
      </blockquote>
@@ -4411,7 +4115,7 @@ Boris Zbarsky.</p>
 			(<a href="https://github.com/w3c/csswg-drafts/issues/547">Issue 547</a>) 
      <blockquote>
       <ins>
-       <p>In the case of flex items with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①⑤">display: table</a>,
+       <p>In the case of flex items with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①⑤">display: table</a>,
 				the table wrapper box becomes the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①②⑧">flex item</a>,
 				and the <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order②②">order</a> and <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self②④">align-self</a> properties apply to it.
 				The contents of any caption boxes contribute to the calculation of
@@ -4431,7 +4135,7 @@ Boris Zbarsky.</p>
      <blockquote>
       <p>
        For this purpose,
-				a value of <a class="css" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self②⑤">align-self: auto</a> is treated identically to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align-3/#valdef-self-position-start" id="ref-for-valdef-self-position-start">start</a>
+				a value of <a class="css" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self②⑤">align-self: auto</a> is treated identically to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align/#valdef-self-position-start" id="ref-for-valdef-self-position-start">start</a>
        <ins>,
 				and <span class="css">auto</span> margins are treated as zero</ins>
        .
@@ -4513,20 +4217,20 @@ Boris Zbarsky.</p>
 						the flex container’s first/last <a data-link-type="dfn" href="#main-axis-baseline" id="ref-for-main-axis-baseline②">main-axis baseline set</a> … 
        <li>
          Otherwise, if the flex container has at least one <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①③⑥">flex item</a>,
-						the flex container’s first/last <a data-link-type="dfn" href="#main-axis-baseline" id="ref-for-main-axis-baseline③">main-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#generate-baselines" id="ref-for-generate-baselines③">generated</a> from
-						the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#alignment-baseline" id="ref-for-alignment-baseline⑤">alignment baseline</a> of the 
+						the flex container’s first/last <a data-link-type="dfn" href="#main-axis-baseline" id="ref-for-main-axis-baseline③">main-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#generate-baselines" id="ref-for-generate-baselines③">generated</a> from
+						the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#alignment-baseline" id="ref-for-alignment-baseline⑤">alignment baseline</a> of the 
         <del>first/last</del>
         <ins>startmost/endmost</ins>
          <span id="ref-for-flex-item①③⑦">flex item</span>.
 						… 
-       <li> Otherwise, the flex container has no first/last main-axis <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#baseline-set" id="ref-for-baseline-set②">baseline set</a>, … 
+       <li> Otherwise, the flex container has no first/last main-axis <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#baseline-set" id="ref-for-baseline-set②">baseline set</a>, … 
       </ol>
       <p>…</p>
       <ol>
        <li>
          If the flex container has at least one <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①③⑧">flex item</a>,
-						the flex container’s first/last <a data-link-type="dfn" href="#cross-axis-baseline" id="ref-for-cross-axis-baseline②">cross-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#generate-baselines" id="ref-for-generate-baselines④">generated</a> from
-						the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#alignment-baseline" id="ref-for-alignment-baseline⑥">alignment baseline</a> of the 
+						the flex container’s first/last <a data-link-type="dfn" href="#cross-axis-baseline" id="ref-for-cross-axis-baseline②">cross-axis baseline set</a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#generate-baselines" id="ref-for-generate-baselines④">generated</a> from
+						the <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#alignment-baseline" id="ref-for-alignment-baseline⑥">alignment baseline</a> of the 
         <del>first/last</del>
         <ins>startmost/endmost</ins>
          <span id="ref-for-flex-item①③⑨">flex item</span>.
@@ -4534,7 +4238,7 @@ Boris Zbarsky.</p>
       </ol>
      </blockquote>
     <li id="change-2016-space-between-single-line">
-     <a class="self-link" href="#change-2016-space-between-single-line"></a> Define <a class="css" data-link-type="propdesc" href="#propdef-align-content" id="ref-for-propdef-align-content⑨">align-content: space-between</a> handling of a single <a data-link-type="dfn" href="#flex-line" id="ref-for-flex-line①⓪">flex line</a> as equivalent to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align-3/#valdef-self-position-start" id="ref-for-valdef-self-position-start①">start</a>.
+     <a class="self-link" href="#change-2016-space-between-single-line"></a> Define <a class="css" data-link-type="propdesc" href="#propdef-align-content" id="ref-for-propdef-align-content⑨">align-content: space-between</a> handling of a single <a data-link-type="dfn" href="#flex-line" id="ref-for-flex-line①⓪">flex line</a> as equivalent to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align/#valdef-self-position-start" id="ref-for-valdef-self-position-start①">start</a>.
 			(<a href="https://github.com/w3c/csswg-drafts/issues/718">Issue 718</a>) 
      <blockquote>
       <p>
@@ -4605,7 +4309,7 @@ Boris Zbarsky.</p>
 			(<a href="https://drafts.csswg.org/css-flexbox-1/issues-cr-20160301#issue-10">Issue 10</a>) 
     <li id="change-2016-abspos-no-order"><a class="self-link" href="#change-2016-abspos-no-order"></a> Abspos children of a flexbox no longer respond to the <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order③⓪">order</a> property.
 			(<a href="https://drafts.csswg.org/css-flexbox-1/issues-cr-20160301#issue-12">Issue 12</a>) 
-    <li id="change-2016-baseline-sets"><a class="self-link" href="#change-2016-baseline-sets"></a> Updated <a href="#flex-baselines">§ 8.5 Flex Container Baselines</a> to account for <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#baseline-set" id="ref-for-baseline-set③">baseline sets</a> and <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#last-baseline-alignment" id="ref-for-last-baseline-alignment">last-baseline alignment</a>.
+    <li id="change-2016-baseline-sets"><a class="self-link" href="#change-2016-baseline-sets"></a> Updated <a href="#flex-baselines">§ 8.5 Flex Container Baselines</a> to account for <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#baseline-set" id="ref-for-baseline-set③">baseline sets</a> and <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#last-baseline-alignment" id="ref-for-last-baseline-alignment">last-baseline alignment</a>.
 			(<a href="https://drafts.csswg.org/css-flexbox-1/issues-cr-20160301#issue-13">Issue 13</a>)) 
    </ul>
    <h4 class="heading settled" id="change-201603-clarify"><span class="content"> Clarifications</span><a class="self-link" href="#change-201603-clarify"></a></h4>
@@ -4711,21 +4415,21 @@ Boris Zbarsky.</p>
      <blockquote>
       <ul>
        <li>
-        <del><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float②">float</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear②">clear</a> have no effect on a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①④④">flex item</a>,</del>
-        <ins><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float③">float</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear③">clear</a> do not create floating or clearance of <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①④⑤">flex item</a>,</ins>
+        <del><a class="property" data-link-type="propdesc">float</a> and <span class="property">clear</span> have no effect on a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①④④">flex item</a>,</del>
+        <ins><a class="property" data-link-type="propdesc">float</a> and <span class="property">clear</span> do not create floating or clearance of <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①④⑤">flex item</a>,</ins>
          and do not take it out-of-flow. 
-        <del>However, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float④">float</a> property can still affect box generation
-					    by influencing the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①⑥">display</a> property’s computed value.</del>
+        <del>However, the <a class="property" data-link-type="propdesc">float</a> property can still affect box generation
+					    by influencing the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①⑥">display</a> property’s computed value.</del>
       </ul>
      </blockquote>
      <blockquote>
       <del>
-       <p>Some values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①⑦">display</a> trigger the creation of anonymous boxes around the original box.
+       <p>Some values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①⑦">display</a> trigger the creation of anonymous boxes around the original box.
 					It’s the outermost box—the direct child of the <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container⑦⑦">flex container</a> box—that
 					becomes a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①④⑥">flex item</a>.
 					For example, given two contiguous child elements with <span class="css" id="ref-for-propdef-display①⑧">display: table-cell</span>,
 					the <a href="https://www.w3.org/TR/CSS21/tables.html#anonymous-boxes">anonymous table wrapper box generated around them</a> <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> becomes the <span id="ref-for-flex-item①④⑦">flex item</span>.</p>
-       <p>In the case of flex items with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①⑨">display: table</a>,
+       <p>In the case of flex items with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①⑨">display: table</a>,
 					the table wrapper box becomes the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①④⑧">flex item</a>,
 					and the <a class="property" data-link-type="propdesc" href="#propdef-order" id="ref-for-propdef-order③④">order</a> and <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self②⑥">align-self</a> properties apply to it.
 					The contents of any caption boxes contribute to the calculation of
@@ -4738,7 +4442,7 @@ Boris Zbarsky.</p>
 					and the table box were the <span id="ref-for-flex-item①⑤⓪">flex item</span>.</p>
       </del>
       <ins>
-       <p class="note" role="note"> Note: Some values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②⓪">display</a> normally trigger the creation of anonymous boxes around the original box.
+       <p class="note" role="note"> Note: Some values of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②⓪">display</a> normally trigger the creation of anonymous boxes around the original box.
 					If such a box is a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑤①">flex item</a>,
 					it is blockified first,
 					and so anonymous box creation will not happen.
@@ -4752,13 +4456,13 @@ Boris Zbarsky.</p>
      <blockquote>
       <p>
        <del>In order to prevent cycling sizing,
-				the <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto⑥">auto</a> value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height⑦">min-height</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height③">max-height</a> does not factor into the percentage size resolution of the box’s contents.
+				the <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto⑥">auto</a> value of <a class="property" data-link-type="propdesc">min-height</a> and <span class="property">max-height</span> does not factor into the percentage size resolution of the box’s contents.
 				For example, a percentage-height block whose flex item parent has <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①⑧">height: 120em; min-height: auto</a> will size itself against <span class="css" id="ref-for-propdef-height①⑨">height: 120em</span> regardless of the impact
-				that <span class="property" id="ref-for-propdef-min-height⑧">min-height</span> might have on the used size of the flex item.</del>
+				that <span class="property">min-height</span> might have on the used size of the flex item.</del>
       </p>
       <p>
        <ins>Although this may require an additional layout pass to re-resolve percentages in some cases,
-				the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①⑦">auto</a> value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑧">min-width</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height⑨">min-height</a> (like the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content" id="ref-for-valdef-width-min-content②">min-content</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-max-content" id="ref-for-valdef-width-max-content③">max-content</a>, and <span class="css">fit-content</span> values defined in <a data-link-type="biblio" href="#biblio-css-sizing-3">[CSS-SIZING-3]</a>)
+				the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①⑦">auto</a> value of <a class="property" data-link-type="propdesc">min-width</a> and <span class="property">min-height</span> (like the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content" id="ref-for-valdef-width-min-content②">min-content</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-max-content" id="ref-for-valdef-width-max-content③">max-content</a>, and <span class="css">fit-content</span> values defined in <a data-link-type="biblio" href="#biblio-css-sizing-3">[CSS-SIZING-3]</a>)
 				does not prevent the resolution of percentage sizes within the item.</ins>
       </p>
      </blockquote>
@@ -4855,7 +4559,7 @@ Boris Zbarsky.</p>
       </ins>
      </blockquote>
     <li id="change-2015-align-self-auto">
-     <a class="self-link" href="#change-2015-align-self-auto"></a> Defined that an <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self②⑦">align-self</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-justify-self" id="ref-for-propdef-justify-self">justify-self</a> value of <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto⑦">auto</a> computes to itself on absolutely-positioned elements,
+     <a class="self-link" href="#change-2015-align-self-auto"></a> Defined that an <a class="property" data-link-type="propdesc" href="#propdef-align-self" id="ref-for-propdef-align-self②⑦">align-self</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-justify-self" id="ref-for-propdef-justify-self">justify-self</a> value of <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto⑦">auto</a> computes to itself on absolutely-positioned elements,
 			for consistency with future extensions of these properties in <a data-link-type="biblio" href="#biblio-css-align-3">[CSS-ALIGN-3]</a>.
 			(<a href="https://drafts.csswg.org/css-flexbox-1/issues-lc-20150514#issue-5">Issue 5</a>) 
      <blockquote>
@@ -4908,7 +4612,7 @@ Boris Zbarsky.</p>
      </blockquote>
     <li id="changes-2015-first-fragment">
      <a class="self-link" href="#changes-2015-first-fragment"></a> Correct negation in flex container fragmentation rule:
-			previous definition implied <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside: avoid</a> behavior in all cases.
+			previous definition implied <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside: avoid</a> behavior in all cases.
 			(<a href="https://drafts.csswg.org/css-flexbox-1/issues-lc-20150514#issue-5">Issue 5</a>) 
      <blockquote>
       <ul>
@@ -5000,7 +4704,7 @@ Boris Zbarsky.</p>
        <ins>, see <a href="#pagination">§ 10 Fragmenting Flex Layout</a>)</ins>
        .
 				[...] 
-       <del>A break is forced wherever the CSS2.1 <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-before" id="ref-for-propdef-page-break-before">page-break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-after" id="ref-for-propdef-page-break-after">page-break-after</a> <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> or the CSS3 <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before⑥">break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-after" id="ref-for-propdef-break-after⑤">break-after</a> <a data-link-type="biblio" href="#biblio-css3-break">[CSS3-BREAK]</a> properties specify a fragmentation break.</del>
+       <del>A break is forced wherever the CSS2.1 <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-before" id="ref-for-propdef-page-break-before">page-break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-page-break-after" id="ref-for-propdef-page-break-after">page-break-after</a> <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> or the CSS3 <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before⑥">break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-after" id="ref-for-propdef-break-after⑤">break-after</a> <a data-link-type="biblio" href="#biblio-css3-break">[CSS3-BREAK]</a> properties specify a fragmentation break.</del>
       </p>
      </blockquote>
     <li id="change-201409-inner-base-size">
@@ -5050,7 +4754,7 @@ Boris Zbarsky.</p>
        computed <a data-link-type="dfn" href="#main-size-property" id="ref-for-main-size-property③">main size property</a> is <a data-link-type="dfn" href="#definite" id="ref-for-definite④③">definite</a>,
 				then the <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#specified-size" id="ref-for-specified-size②">specified size</a> is that size 
      </blockquote>
-    <li id="change-2014-blockify"><a class="self-link" href="#change-2014-blockify"></a> Remove the requirement that anonymous block creation (for things like <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②③">display: table-cell</a>)
+    <li id="change-2014-blockify"><a class="self-link" href="#change-2014-blockify"></a> Remove the requirement that anonymous block creation (for things like <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②③">display: table-cell</a>)
 			occur <em>before</em> <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑥⑨">flex item</a> blockification.
 			(Instead, all children now blockify immediately,
 				consistent with abspos/float behavior.) 
@@ -5071,7 +4775,7 @@ Boris Zbarsky.</p>
     <li id="change-201409-table-wrappers"><a class="self-link" href="#change-201409-table-wrappers"></a> Restored normative status of note about table wrapper boxes normative;
 			it had been accidentally changed in the previous draft.
 			(Issue <a href="https://drafts.csswg.org/css-flexbox-1/issues-lc-20140925#issue-2">2</a>) 
-    <li id="change-201409-display-longhands"><a class="self-link" href="#change-201409-display-longhands"></a> Removed references to <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②④">display</a> property longhands,
+    <li id="change-201409-display-longhands"><a class="self-link" href="#change-201409-display-longhands"></a> Removed references to <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②④">display</a> property longhands,
 			since they will be removed from CSS Display Level 3. 
     <li id="change-201409-layout-vs-size">
      <a class="self-link" href="#change-201409-layout-vs-size"></a> Change wording to not imply an unnecessary layout pass.
@@ -5137,9 +4841,9 @@ Boris Zbarsky.</p>
 			This change was later reverted with an <a href="#change-2015-min-auto-intrinsic-percentages">opposite definition</a>. 
      <blockquote>
       <p>In order to prevent cycling sizing,
-				the <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto①①">auto</a> value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height①⓪">min-height</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height④">max-height</a> does not factor into the percentage size resolution of the box’s contents.
+				the <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto①①">auto</a> value of <a class="property" data-link-type="propdesc">min-height</a> and <span class="property">max-height</span> does not factor into the percentage size resolution of the box’s contents.
 				For example, a percentage-height block whose flex item parent has <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height②①">height: 120em; min-height: auto</a> will size itself against <span class="css" id="ref-for-propdef-height②②">height: 120em</span> regardless of the impact
-				that <span class="property" id="ref-for-propdef-min-height①①">min-height</span> might have on the used size of the flex item. </p>
+				that <span class="property">min-height</span> might have on the used size of the flex item. </p>
      </blockquote>
     <li id="change-201403-flex-basis-auto"><a class="self-link" href="#change-201403-flex-basis-auto"></a> Introduced extra <span class="css">main-size</span> keyword to <a class="property" data-link-type="propdesc" href="#propdef-flex-basis" id="ref-for-propdef-flex-basis②⑥">flex-basis</a> so that “lookup from main-size property” and “automatic sizing” behaviors
 			could each be explicitly specified.
@@ -5271,7 +4975,7 @@ Boris Zbarsky.</p>
    <p>The following significant changes were made since the <a href="https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/">18 September 2012 Candidate Recommendation</a>:</p>
    <ul>
     <li id="change-2012-min-width">
-     <a class="self-link" href="#change-2012-min-width"></a> Changed the behavior of the new <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto②⓪">auto</a> initial value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width⑨">min-width</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height①②">min-height</a> to 
+     <a class="self-link" href="#change-2012-min-width"></a> Changed the behavior of the new <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto②⓪">auto</a> initial value of <a class="property" data-link-type="propdesc">min-width</a>/<span class="property">min-height</span> to 
      <ul>
       <li>Take into account whether <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow⑤">overflow</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-overflow-3/#valdef-overflow-visible" id="ref-for-valdef-overflow-visible③">visible</a>,
 					since when <span class="property" id="ref-for-propdef-overflow⑥">overflow</span> is explicitly handled, it is confusing (and unnecessary)
@@ -5467,15 +5171,15 @@ Boris Zbarsky.</p>
        An absolutely-positioned child of a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container①⓪④">flex container</a> does not participate in flex layout
 				beyond the reordering step. 
       <del>
-       <p> However, if both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-left" id="ref-for-propdef-left">left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-right" id="ref-for-propdef-right">right</a> or both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-top" id="ref-for-propdef-top">top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-bottom" id="ref-for-propdef-bottom">bottom</a> are <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto①④">auto</a>,
+       <p> However, if both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-left" id="ref-for-propdef-left">left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-right" id="ref-for-propdef-right">right</a> or both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-top" id="ref-for-propdef-top">top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-bottom" id="ref-for-propdef-bottom">bottom</a> are <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto①④">auto</a>,
 						then the used value of those properties
 						are computed from its static position, as follows: </p>
-       <p> If both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-left" id="ref-for-propdef-left①">left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-right" id="ref-for-propdef-right①">right</a> are <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto①⑤">auto</a>,
+       <p> If both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-left" id="ref-for-propdef-left①">left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-right" id="ref-for-propdef-right①">right</a> are <a class="css" data-link-type="maybe" href="#valdef-align-items-auto" id="ref-for-valdef-align-items-auto①⑤">auto</a>,
 						the <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑧④">flex item</a> must be positioned so that
 						its <a data-link-type="dfn" href="#main-start" id="ref-for-main-start①①">main-start</a> or <a data-link-type="dfn" href="#cross-start" id="ref-for-cross-start①⑥">cross-start</a> edge
 						(whichever is in the horizontal axis)
 						is aligned with the <a data-link-type="dfn">static position</a>.
-						If both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-top" id="ref-for-propdef-top①">top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-bottom" id="ref-for-propdef-bottom①">bottom</a> are <span class="css" id="ref-for-valdef-align-items-auto①⑥">auto</span>,
+						If both <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-top" id="ref-for-propdef-top①">top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-bottom" id="ref-for-propdef-bottom①">bottom</a> are <span class="css" id="ref-for-valdef-align-items-auto①⑥">auto</span>,
 						the <span id="ref-for-flex-item①⑧⑤">flex item</span> must be positioned so that
 						its <span id="ref-for-main-start①②">main-start</span> or <span id="ref-for-cross-start①⑦">cross-start</span> edge
 						(whichever is in the vertical axis)
@@ -5547,15 +5251,15 @@ Boris Zbarsky.</p>
       </p>
      </blockquote>
     <li id="clarify-2012-float-display">
-     <a class="self-link" href="#clarify-2012-float-display"></a> Clarified that <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float⑤">float</a> still affects the computed <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②⑤">display</a> (which may affect box-fixup rules that run prior to flex item determination).
+     <a class="self-link" href="#clarify-2012-float-display"></a> Clarified that <a class="property" data-link-type="propdesc">float</a> still affects the computed <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②⑤">display</a> (which may affect box-fixup rules that run prior to flex item determination).
 			(<a href="https://drafts.csswg.org/css-flexbox-1/issues-cr-2012#issue-7">Issue 7</a>) 
      <blockquote>
       <p>
-       <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float⑥">float</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear④">clear</a> have no effect on a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑨③">flex item</a>
+       <a class="property" data-link-type="propdesc">float</a> and <span class="property">clear</span> have no effect on a <a data-link-type="dfn" href="#flex-item" id="ref-for-flex-item①⑨③">flex item</a>
        <ins>,
 				and do not take it out-of-flow.
-				However, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float⑦">float</a> property can still affect box generation
-				by influencing the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②⑥">display</a> property’s computed value.</ins>
+				However, the <a class="property" data-link-type="propdesc">float</a> property can still affect box generation
+				by influencing the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②⑥">display</a> property’s computed value.</ins>
       </p>
      </blockquote>
     <li id="clarify-2012-white-space">
@@ -5570,12 +5274,12 @@ Boris Zbarsky.</p>
     <li id="clarify-2012-table-anon-boxes"><a class="self-link" href="#clarify-2012-table-anon-boxes"></a> Clarified that table anonymous box generation occurs
 			in place of computed value conversion for internal table elements. 
     <li id="clarify-2012-display-blockification">
-     <a class="self-link" href="#clarify-2012-display-blockification"></a> Clarified interaction of flex item determination with <span class="css">display-inside</span> / <span class="css">display-outside</span> (the new longhands of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②⑦">display</a> defined in the <a href="https://www.w3.org/TR/css-display/">CSS Display Module Level 3</a>). 
+     <a class="self-link" href="#clarify-2012-display-blockification"></a> Clarified interaction of flex item determination with <span class="css">display-inside</span> / <span class="css">display-outside</span> (the new longhands of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②⑦">display</a> defined in the <a href="https://www.w3.org/TR/css-display/">CSS Display Module Level 3</a>). 
      <blockquote>
       <ins>
        <p>If the specified <span class="css">display-outside</span> of an in-flow child of an element that generates a <a data-link-type="dfn" href="#flex-container" id="ref-for-flex-container①①①">flex container</a> is <span class="css">inline-level</span>,
 					it computes to <span class="css">block-level</span>.
-					(This effectively converts any inline <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②⑧">display</a> values to their block equivalents.)</p>
+					(This effectively converts any inline <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②⑧">display</a> values to their block equivalents.)</p>
       </ins>
      </blockquote>
       Note: This change was <a href="#change-201409-display-longhands">reverted</a>. 
@@ -5923,7 +5627,7 @@ Boris Zbarsky.</p>
    <li><a href="#valdef-flex-wrap-wrap-reverse">wrap-reverse</a><span>, in §5.2</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-alignment-baseline">
-   <a href="https://drafts.csswg.org/css-align-3/#alignment-baseline">https://drafts.csswg.org/css-align-3/#alignment-baseline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#alignment-baseline">https://drafts.csswg.org/css-align/#alignment-baseline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-alignment-baseline">8.5. 
 Flex Container Baselines</a> <a href="#ref-for-alignment-baseline①">(2)</a> <a href="#ref-for-alignment-baseline②">(3)</a> <a href="#ref-for-alignment-baseline③">(4)</a> <a href="#ref-for-alignment-baseline④">(5)</a>
@@ -5931,21 +5635,21 @@ Flex Container Baselines</a> <a href="#ref-for-alignment-baseline①">(2)</a> <a
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-alignment-container">
-   <a href="https://drafts.csswg.org/css-align-3/#alignment-container">https://drafts.csswg.org/css-align-3/#alignment-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#alignment-container">https://drafts.csswg.org/css-align/#alignment-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-alignment-container">4.1. 
 Absolutely-Positioned Flex Children</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-shared-alignment-context">
-   <a href="https://drafts.csswg.org/css-align-3/#shared-alignment-context">https://drafts.csswg.org/css-align-3/#shared-alignment-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#shared-alignment-context">https://drafts.csswg.org/css-align/#shared-alignment-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-shared-alignment-context">8.5. 
 Flex Container Baselines</a> <a href="#ref-for-shared-alignment-context①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-baseline-set">
-   <a href="https://drafts.csswg.org/css-align-3/#baseline-set">https://drafts.csswg.org/css-align-3/#baseline-set</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#baseline-set">https://drafts.csswg.org/css-align/#baseline-set</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-baseline-set">8.5. 
 Flex Container Baselines</a> <a href="#ref-for-baseline-set①">(2)</a>
@@ -5953,7 +5657,7 @@ Flex Container Baselines</a> <a href="#ref-for-baseline-set①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-generate-baselines">
-   <a href="https://drafts.csswg.org/css-align-3/#generate-baselines">https://drafts.csswg.org/css-align-3/#generate-baselines</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#generate-baselines">https://drafts.csswg.org/css-align/#generate-baselines</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-generate-baselines">8.5. 
 Flex Container Baselines</a> <a href="#ref-for-generate-baselines①">(2)</a> <a href="#ref-for-generate-baselines②">(3)</a>
@@ -5961,25 +5665,25 @@ Flex Container Baselines</a> <a href="#ref-for-generate-baselines①">(2)</a> <a
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-justify-self">
-   <a href="https://drafts.csswg.org/css-align-3/#propdef-justify-self">https://drafts.csswg.org/css-align-3/#propdef-justify-self</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#propdef-justify-self">https://drafts.csswg.org/css-align/#propdef-justify-self</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-justify-self"> Substantive Changes and Bugfixes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-last-baseline-alignment">
-   <a href="https://drafts.csswg.org/css-align-3/#last-baseline-alignment">https://drafts.csswg.org/css-align-3/#last-baseline-alignment</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#last-baseline-alignment">https://drafts.csswg.org/css-align/#last-baseline-alignment</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-last-baseline-alignment"> Substantive Changes and Bugfixes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-self-position-start">
-   <a href="https://drafts.csswg.org/css-align-3/#valdef-self-position-start">https://drafts.csswg.org/css-align-3/#valdef-self-position-start</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#valdef-self-position-start">https://drafts.csswg.org/css-align/#valdef-self-position-start</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-self-position-start"> Substantive Changes and Bugfixes</a> <a href="#ref-for-valdef-self-position-start①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-synthesize-baseline">
-   <a href="https://drafts.csswg.org/css-align-3/#synthesize-baseline">https://drafts.csswg.org/css-align-3/#synthesize-baseline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#synthesize-baseline">https://drafts.csswg.org/css-align/#synthesize-baseline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-synthesize-baseline">8.3. 
 Cross-axis Alignment: the align-items and align-self properties</a>
@@ -5988,7 +5692,7 @@ Flex Container Baselines</a> <a href="#ref-for-synthesize-baseline②">(2)</a> <
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-synthesize-baseline">
-   <a href="https://drafts.csswg.org/css-align-3/#synthesize-baseline">https://drafts.csswg.org/css-align-3/#synthesize-baseline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#synthesize-baseline">https://drafts.csswg.org/css-align/#synthesize-baseline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-synthesize-baseline">8.3. 
 Cross-axis Alignment: the align-items and align-self properties</a>
@@ -6011,7 +5715,7 @@ Fragmenting Flex Layout</a> <a href="#ref-for-fragmentation-context①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">4. 
 Flex Items</a>
@@ -6021,14 +5725,14 @@ Fragmenting Flex Layout</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-all-initial">
-   <a href="https://drafts.csswg.org/css-cascade-5/#valdef-all-initial">https://drafts.csswg.org/css-cascade-5/#valdef-all-initial</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#valdef-all-initial">https://drafts.csswg.org/css-cascade/#valdef-all-initial</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-all-initial">7.1.1. 
 Basic Values of flex</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">9.2. 
 Line Length Determination</a> <a href="#ref-for-used-value①">(2)</a>
@@ -6037,35 +5741,29 @@ Resolving Flexible Lengths</a>
     <li><a href="#ref-for-used-value③"> Changes since the 16 October 2017 CR</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-descdef-container-aspect-ratio">
-   <a href="https://drafts.csswg.org/css-contain-3/#descdef-container-aspect-ratio">https://drafts.csswg.org/css-contain-3/#descdef-container-aspect-ratio</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-descdef-container-aspect-ratio"> Changes since the 19 November 2018 CR</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-anonymous">
-   <a href="https://drafts.csswg.org/css-display-3/#anonymous">https://drafts.csswg.org/css-display-3/#anonymous</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#anonymous">https://drafts.csswg.org/css-display/#anonymous</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-anonymous">4. 
 Flex Items</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-box">
-   <a href="https://drafts.csswg.org/css-display-3/#block-box">https://drafts.csswg.org/css-display-3/#block-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-box">https://drafts.csswg.org/css-display/#block-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-box">4.2. 
 Flex Item Margins and Paddings</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">4. 
 Flex Items</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-level">
-   <a href="https://drafts.csswg.org/css-display-3/#block-level">https://drafts.csswg.org/css-display-3/#block-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-level">https://drafts.csswg.org/css-display/#block-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-level">3. 
 Flex Containers: the flex and inline-flex display values</a>
@@ -6074,7 +5772,7 @@ Line Length Determination</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-level-box">
-   <a href="https://drafts.csswg.org/css-display-3/#block-level-box">https://drafts.csswg.org/css-display-3/#block-level-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-level-box">https://drafts.csswg.org/css-display/#block-level-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-level-box">9.4. 
 Cross Size Determination</a>
@@ -6082,21 +5780,21 @@ Cross Size Determination</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-blockify">
-   <a href="https://drafts.csswg.org/css-display-3/#blockify">https://drafts.csswg.org/css-display-3/#blockify</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#blockify">https://drafts.csswg.org/css-display/#blockify</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-blockify">4. 
 Flex Items</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#containing-block">https://drafts.csswg.org/css-display-3/#containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#containing-block">https://drafts.csswg.org/css-display/#containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-containing-block">4.2. 
 Flex Item Margins and Paddings</a> <a href="#ref-for-containing-block①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">1.2. 
 Module interactions</a>
@@ -6113,21 +5811,21 @@ Collapsed Items</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-establish-an-independent-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-establish-an-independent-formatting-context">4. 
 Flex Items</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-flow-layout">
-   <a href="https://drafts.csswg.org/css-display-3/#flow-layout">https://drafts.csswg.org/css-display-3/#flow-layout</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#flow-layout">https://drafts.csswg.org/css-display/#flow-layout</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-flow-layout">3. 
 Flex Containers: the flex and inline-flex display values</a> <a href="#ref-for-flow-layout①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#formatting-context">https://drafts.csswg.org/css-display-3/#formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#formatting-context">https://drafts.csswg.org/css-display/#formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-formatting-context">9.6. 
 Cross-Axis Alignment</a>
@@ -6135,7 +5833,7 @@ Cross-Axis Alignment</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-in-flow">
-   <a href="https://drafts.csswg.org/css-display-3/#in-flow">https://drafts.csswg.org/css-display-3/#in-flow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#in-flow">https://drafts.csswg.org/css-display/#in-flow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-in-flow">9.4. 
 Cross Size Determination</a>
@@ -6143,14 +5841,14 @@ Cross Size Determination</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-level">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-level">https://drafts.csswg.org/css-display-3/#inline-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-level">https://drafts.csswg.org/css-display/#inline-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-level">3. 
 Flex Containers: the flex and inline-flex display values</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-replaced-element">
-   <a href="https://drafts.csswg.org/css-display-3/#replaced-element">https://drafts.csswg.org/css-display-3/#replaced-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#replaced-element">https://drafts.csswg.org/css-display/#replaced-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-replaced-element">4. 
 Flex Items</a>
@@ -6160,14 +5858,14 @@ Automatic Minimum Size of Flex Items</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-text-nodes">
-   <a href="https://drafts.csswg.org/css-display-3/#text-nodes">https://drafts.csswg.org/css-display-3/#text-nodes</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#text-nodes">https://drafts.csswg.org/css-display/#text-nodes</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-text-nodes">4. 
 Flex Items</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-text-run">
-   <a href="https://drafts.csswg.org/css-display-3/#text-run">https://drafts.csswg.org/css-display-3/#text-run</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#text-run">https://drafts.csswg.org/css-display/#text-run</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-text-run">4. 
 Flex Items</a> <a href="#ref-for-text-run①">(2)</a>
@@ -6212,46 +5910,46 @@ Automatic Minimum Size of Flex Items</a> <a href="#ref-for-scroll-container①">
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-bottom">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-bottom">https://drafts.csswg.org/css-position-3/#propdef-bottom</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-bottom">https://drafts.csswg.org/css-position/#propdef-bottom</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-bottom"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-bottom①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-left">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-left">https://drafts.csswg.org/css-position-3/#propdef-left</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-left">https://drafts.csswg.org/css-position/#propdef-left</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-left"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-left①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">4.3. 
 Flex Item Z-Ordering</a> <a href="#ref-for-propdef-position①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-position-relative">
-   <a href="https://drafts.csswg.org/css-position-3/#valdef-position-relative">https://drafts.csswg.org/css-position-3/#valdef-position-relative</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#valdef-position-relative">https://drafts.csswg.org/css-position/#valdef-position-relative</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-position-relative">4.3. 
 Flex Item Z-Ordering</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-right">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-right">https://drafts.csswg.org/css-position-3/#propdef-right</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-right">https://drafts.csswg.org/css-position/#propdef-right</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-right"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-right①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-position-static">
-   <a href="https://drafts.csswg.org/css-position-3/#valdef-position-static">https://drafts.csswg.org/css-position-3/#valdef-position-static</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#valdef-position-static">https://drafts.csswg.org/css-position/#valdef-position-static</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-position-static">4.3. 
 Flex Item Z-Ordering</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-top">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-top">https://drafts.csswg.org/css-position-3/#propdef-top</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-top">https://drafts.csswg.org/css-position/#propdef-top</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-top"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-top①">(2)</a>
    </ul>
@@ -6800,84 +6498,6 @@ Flex Flow Direction: the flex-direction property</a>
 Flex Item Z-Ordering</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-clear">
-   <a href="https://drafts.csswg.org/css2/#propdef-clear">https://drafts.csswg.org/css2/#propdef-clear</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-clear">3. 
-Flex Containers: the flex and inline-flex display values</a>
-    <li><a href="#ref-for-propdef-clear①">5. 
-Ordering and Orientation</a>
-    <li><a href="#ref-for-propdef-clear②"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-clear③">(2)</a>
-    <li><a href="#ref-for-propdef-clear④"> Clarifications</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">3. 
-Flex Containers: the flex and inline-flex display values</a>
-    <li><a href="#ref-for-propdef-float①">5. 
-Ordering and Orientation</a>
-    <li><a href="#ref-for-propdef-float②"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-float③">(2)</a> <a href="#ref-for-propdef-float④">(3)</a>
-    <li><a href="#ref-for-propdef-float⑤"> Clarifications</a> <a href="#ref-for-propdef-float⑥">(2)</a> <a href="#ref-for-propdef-float⑦">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-margin">
-   <a href="https://drafts.csswg.org/css2/#propdef-margin">https://drafts.csswg.org/css2/#propdef-margin</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-margin">8. 
-Alignment</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-height">https://drafts.csswg.org/css2/#propdef-max-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-height">2. 
-Flex Layout Box Model and Terminology</a> <a href="#ref-for-propdef-max-height①">(2)</a>
-    <li><a href="#ref-for-propdef-max-height②">8.3. 
-Cross-axis Alignment: the align-items and align-self properties</a>
-    <li><a href="#ref-for-propdef-max-height③"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-max-height④">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-width">https://drafts.csswg.org/css2/#propdef-max-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-width">2. 
-Flex Layout Box Model and Terminology</a> <a href="#ref-for-propdef-max-width①">(2)</a>
-    <li><a href="#ref-for-propdef-max-width②">8.3. 
-Cross-axis Alignment: the align-items and align-self properties</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-height">https://drafts.csswg.org/css2/#propdef-min-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-height">2. 
-Flex Layout Box Model and Terminology</a> <a href="#ref-for-propdef-min-height①">(2)</a>
-    <li><a href="#ref-for-propdef-min-height②">4.5. 
-Automatic Minimum Size of Flex Items</a>
-    <li><a href="#ref-for-propdef-min-height③">7.1.1. 
-Basic Values of flex</a>
-    <li><a href="#ref-for-propdef-min-height④">8.3. 
-Cross-axis Alignment: the align-items and align-self properties</a>
-    <li><a href="#ref-for-propdef-min-height⑤"> Changes since the 16 October 2017 CR</a> <a href="#ref-for-propdef-min-height⑥">(2)</a>
-    <li><a href="#ref-for-propdef-min-height⑦"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-min-height⑧">(2)</a> <a href="#ref-for-propdef-min-height⑨">(3)</a> <a href="#ref-for-propdef-min-height①⓪">(4)</a> <a href="#ref-for-propdef-min-height①①">(5)</a> <a href="#ref-for-propdef-min-height①②">(6)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-width">https://drafts.csswg.org/css2/#propdef-min-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-width">2. 
-Flex Layout Box Model and Terminology</a> <a href="#ref-for-propdef-min-width①">(2)</a>
-    <li><a href="#ref-for-propdef-min-width②">4.5. 
-Automatic Minimum Size of Flex Items</a> <a href="#ref-for-propdef-min-width③">(2)</a>
-    <li><a href="#ref-for-propdef-min-width④">7.1.1. 
-Basic Values of flex</a>
-    <li><a href="#ref-for-propdef-min-width⑤">8.3. 
-Cross-axis Alignment: the align-items and align-self properties</a>
-    <li><a href="#ref-for-propdef-min-width⑥"> Changes since the 16 October 2017 CR</a> <a href="#ref-for-propdef-min-width⑦">(2)</a>
-    <li><a href="#ref-for-propdef-min-width⑧"> Substantive Changes and Bugfixes</a> <a href="#ref-for-propdef-min-width⑨">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-page-break-after">
    <a href="https://drafts.csswg.org/css2/#propdef-page-break-after">https://drafts.csswg.org/css2/#propdef-page-break-after</a><b>Referenced in:</b>
    <ul>
@@ -6907,7 +6527,7 @@ Flex Item Z-Ordering</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-after">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-after">https://drafts.csswg.org/css-break-3/#propdef-break-after</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-after">https://drafts.csswg.org/css-break/#propdef-break-after</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-after">10. 
 Fragmenting Flex Layout</a> <a href="#ref-for-propdef-break-after①">(2)</a> <a href="#ref-for-propdef-break-after②">(3)</a>
@@ -6916,7 +6536,7 @@ Fragmenting Flex Layout</a> <a href="#ref-for-propdef-break-after①">(2)</a> <a
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-before">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-before">https://drafts.csswg.org/css-break-3/#propdef-break-before</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-before">https://drafts.csswg.org/css-break/#propdef-break-before</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-before">10. 
 Fragmenting Flex Layout</a> <a href="#ref-for-propdef-break-before①">(2)</a> <a href="#ref-for-propdef-break-before②">(3)</a> <a href="#ref-for-propdef-break-before③">(4)</a>
@@ -6925,36 +6545,21 @@ Fragmenting Flex Layout</a> <a href="#ref-for-propdef-break-before①">(2)</a> <
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-inside">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-inside">https://drafts.csswg.org/css-break-3/#propdef-break-inside</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-inside">https://drafts.csswg.org/css-break/#propdef-break-inside</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-inside"> Substantive Changes and Bugfixes</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-direction">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction">https://drafts.csswg.org/css-writing-modes-3/#propdef-direction</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-direction">5.1. 
-Flex Flow Direction: the flex-direction property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-css-end">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#css-end">https://drafts.csswg.org/css-writing-modes-3/#css-end</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-css-end">8.1.
-Aligning with auto margins</a>
-    <li><a href="#ref-for-css-end①"> Appendix A: Axis Mappings</a> <a href="#ref-for-css-end②">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-css-start">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#css-start">https://drafts.csswg.org/css-writing-modes-3/#css-start</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-css-start"> Appendix A: Axis Mappings</a> <a href="#ref-for-css-start①">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-resolved-value">
-   <a href="https://drafts.csswg.org/cssom-1/#resolved-value">https://drafts.csswg.org/cssom-1/#resolved-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#resolved-value">https://drafts.csswg.org/cssom/#resolved-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-resolved-value"> Changes since the 16 October 2017 CR</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-descdef-media-aspect-ratio">
+   <a href="https://drafts.csswg.org/mediaqueries-5/#descdef-media-aspect-ratio">https://drafts.csswg.org/mediaqueries-5/#descdef-media-aspect-ratio</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-descdef-media-aspect-ratio"> Changes since the 19 November 2018 CR</a>
    </ul>
   </aside>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
@@ -6980,16 +6585,11 @@ Aligning with auto margins</a>
      <li><span class="dfn-paneled" id="term-for-fragmentation-context">fragmentation context</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
      <li><span class="dfn-paneled" id="term-for-valdef-all-initial">initial</span>
      <li><span class="dfn-paneled" id="term-for-used-value">used value</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-contain-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-descdef-container-aspect-ratio">aspect-ratio</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-display-3]</a> defines the following terms:
@@ -7124,13 +6724,6 @@ Aligning with auto margins</a>
     <a data-link-type="biblio">[CSS2]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-valdef-z-index-auto">auto <small>(for z-index)</small></span>
-     <li><span class="dfn-paneled" id="term-for-propdef-clear">clear</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-margin">margin</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-height">max-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-width">max-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-height">min-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-width">min-width</span>
      <li><span class="dfn-paneled" id="term-for-propdef-page-break-after">page-break-after</span>
      <li><span class="dfn-paneled" id="term-for-propdef-page-break-before">page-break-before</span>
      <li><span class="dfn-paneled" id="term-for-propdef-visibility">visibility</span>
@@ -7144,16 +6737,14 @@ Aligning with auto margins</a>
      <li><span class="dfn-paneled" id="term-for-propdef-break-inside">break-inside</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[CSS3-WRITING-MODES]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-direction">direction</span>
-     <li><span class="dfn-paneled" id="term-for-css-end">end</span>
-     <li><span class="dfn-paneled" id="term-for-css-start">start</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[cssom-1]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-resolved-value">resolved value</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[mediaqueries-5]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-descdef-media-aspect-ratio">aspect-ratio</span>
     </ul>
   </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
@@ -7163,10 +6754,8 @@ Aligning with auto margins</a>
    <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-align-3/">CSS Box Alignment Module Level 3</a>. 21 April 2020. WD. URL: <a href="https://www.w3.org/TR/css-align-3/">https://www.w3.org/TR/css-align-3/</a>
    <dt id="biblio-css-break-4">[CSS-BREAK-4]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a>. 18 December 2018. WD. URL: <a href="https://www.w3.org/TR/css-break-4/">https://www.w3.org/TR/css-break-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
-   <dt id="biblio-css-contain-3">[CSS-CONTAIN-3]
-   <dd>CSS Containment Module Level 3 URL: <a href="https://drafts.csswg.org/css-contain-3/">https://drafts.csswg.org/css-contain-3/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
    <dt id="biblio-css-images-3">[CSS-IMAGES-3]
@@ -7197,13 +6786,15 @@ Aligning with auto margins</a>
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 10 December 2019. REC. URL: <a href="https://www.w3.org/TR/css-writing-modes-3/">https://www.w3.org/TR/css-writing-modes-3/</a>
    <dt id="biblio-cssom-1">[CSSOM-1]
    <dd>Simon Pieters; Glenn Adams. <a href="https://www.w3.org/TR/cssom-1/">CSS Object Model (CSSOM)</a>. 17 March 2016. WD. URL: <a href="https://www.w3.org/TR/cssom-1/">https://www.w3.org/TR/cssom-1/</a>
+   <dt id="biblio-mediaqueries-5">[MEDIAQUERIES-5]
+   <dd>Dean Jackson; Florian Rivoal; Tab Atkins Jr.. <a href="https://www.w3.org/TR/mediaqueries-5/">Media Queries Level 5</a>. 31 July 2020. WD. URL: <a href="https://www.w3.org/TR/mediaqueries-5/">https://www.w3.org/TR/mediaqueries-5/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
    <dt id="biblio-css-sizing-4">[CSS-SIZING-4]
-   <dd>Tab Atkins Jr.; Elika Etemad; Jen Simmons. <a href="https://www.w3.org/TR/css-sizing-4/">CSS Box Sizing Module Level 4</a>. 20 May 2021. WD. URL: <a href="https://www.w3.org/TR/css-sizing-4/">https://www.w3.org/TR/css-sizing-4/</a>
+   <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-sizing-4/">CSS Box Sizing Module Level 4</a>. 20 October 2020. WD. URL: <a href="https://www.w3.org/TR/css-sizing-4/">https://www.w3.org/TR/css-sizing-4/</a>
    <dt id="biblio-css-text-decor-4">[CSS-TEXT-DECOR-4]
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-text-decor-4/">CSS Text Decoration Module Level 4</a>. 6 May 2020. WD. URL: <a href="https://www.w3.org/TR/css-text-decor-4/">https://www.w3.org/TR/css-text-decor-4/</a>
    <dt id="biblio-css3ui">[CSS3UI]
@@ -8445,11 +8036,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

@@ -359,7 +359,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "Blob(blobParts)": {
       "args": [
@@ -368,7 +368,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "Blob(blobParts, options)": {
       "args": [
@@ -378,7 +378,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "BlobEvent()": {
@@ -1353,7 +1353,7 @@
       "for": [
         "DOMException"
       ],
-      "shortname": "WebIDL"
+      "shortname": "webidl"
     },
     "DOMException(message)": {
       "args": [
@@ -1362,7 +1362,7 @@
       "for": [
         "DOMException"
       ],
-      "shortname": "WebIDL"
+      "shortname": "webidl"
     },
     "DOMException(message, name)": {
       "args": [
@@ -1372,7 +1372,7 @@
       "for": [
         "DOMException"
       ],
-      "shortname": "WebIDL"
+      "shortname": "webidl"
     }
   },
   "DOMMatrix()": {
@@ -2019,7 +2019,7 @@
       "for": [
         "File"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "File(fileBits, fileName, options)": {
       "args": [
@@ -2030,7 +2030,7 @@
       "for": [
         "File"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "FileReader()": {
@@ -2039,7 +2039,7 @@
       "for": [
         "FileReader"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "FileReaderSync()": {
@@ -2048,7 +2048,7 @@
       "for": [
         "FileReaderSync"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "FocusEvent()": {
@@ -2396,7 +2396,7 @@
       "for": [
         "IDBVersionChangeEvent"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "IDBVersionChangeEvent(type, eventInitDict)": {
       "args": [
@@ -2406,7 +2406,7 @@
       "for": [
         "IDBVersionChangeEvent"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "IIRFilterNode()": {
@@ -3510,7 +3510,7 @@
       "for": [
         "SecurityPolicyViolationEvent"
       ],
-      "shortname": "CSP"
+      "shortname": "csp"
     },
     "SecurityPolicyViolationEvent(type, eventInitDict)": {
       "args": [
@@ -3520,7 +3520,7 @@
       "for": [
         "SecurityPolicyViolationEvent"
       ],
-      "shortname": "CSP"
+      "shortname": "csp"
     }
   },
   "SensorErrorEvent()": {
@@ -4960,7 +4960,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "addAll()": {
@@ -5347,7 +5347,7 @@
       "for": [
         "IDBCursor"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "after()": {
@@ -5916,7 +5916,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "bound(lower, upper, lowerOpen)": {
       "args": [
@@ -5927,7 +5927,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "bound(lower, upper, lowerOpen, upperOpen)": {
       "args": [
@@ -5939,7 +5939,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "btoa()": {
@@ -6403,7 +6403,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     },
     "clearWatch(watchId)": {
       "args": [
@@ -6412,7 +6412,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     }
   },
   "click()": {
@@ -6584,7 +6584,7 @@
       "for": [
         "IDBFactory"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "collapse()": {
@@ -6649,7 +6649,7 @@
       "for": [
         "IDBTransaction"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "commitStyles()": {
@@ -7169,7 +7169,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "constructor(blobParts, options)": {
       "args": [
@@ -7179,7 +7179,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "constructor(body)": {
       "args": [
@@ -7578,7 +7578,7 @@
       "for": [
         "File"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "constructor(fileBits, fileName, options)": {
       "args": [
@@ -7589,7 +7589,7 @@
       "for": [
         "File"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "constructor(form)": {
       "args": [
@@ -7919,7 +7919,7 @@
       "for": [
         "DOMException"
       ],
-      "shortname": "WebIDL"
+      "shortname": "webidl"
     },
     "constructor(messageInit)": {
       "args": [
@@ -9020,7 +9020,7 @@
       "for": [
         "IDBCursor"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "continue(key)": {
       "args": [
@@ -9029,7 +9029,7 @@
       "for": [
         "IDBCursor"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "continuePrimaryKey()": {
@@ -9041,7 +9041,7 @@
       "for": [
         "IDBCursor"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "controlTransferIn()": {
@@ -9321,7 +9321,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "countReset()": {
@@ -9655,7 +9655,7 @@
       "for": [
         "Range"
       ],
-      "shortname": "DOM-Parsing"
+      "shortname": "dom-parsing"
     },
     "createContextualFragment(fragment)": {
       "args": [
@@ -10077,7 +10077,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "createIndex(name, keyPath, options)": {
       "args": [
@@ -10088,7 +10088,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "createLinearGradient()": {
@@ -10207,7 +10207,7 @@
       "for": [
         "IDBDatabase"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "createObjectStore(name, options)": {
       "args": [
@@ -10217,7 +10217,7 @@
       "for": [
         "IDBDatabase"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "createObjectURL()": {
@@ -10228,7 +10228,7 @@
       "for": [
         "URL"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "createOffer!overload-1()": {
@@ -10811,7 +10811,7 @@
       "for": [
         "IDBFactory"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "debug()": {
@@ -10930,7 +10930,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "decrypt(algorithm, key, data)": {
       "args": [
@@ -10941,7 +10941,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "defaultConfig()": {
@@ -11061,7 +11061,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "delete(request)": {
       "args": [
@@ -11132,7 +11132,7 @@
       "for": [
         "IDBFactory"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "deleteFromDocument()": {
@@ -11152,7 +11152,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "deleteMedium()": {
@@ -11174,7 +11174,7 @@
       "for": [
         "IDBDatabase"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "deleteRow()": {
@@ -11236,7 +11236,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "deriveBits(algorithm, baseKey, length)": {
       "args": [
@@ -11247,7 +11247,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "deriveKey()": {
@@ -11256,7 +11256,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "deriveKey(algorithm, baseKey, derivedKeyType, extractable, keyUsages)": {
       "args": [
@@ -11269,7 +11269,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "destroy()": {
@@ -11314,7 +11314,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "digest(algorithm, data)": {
       "args": [
@@ -11324,7 +11324,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "dir()": {
@@ -11883,7 +11883,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "encrypt(algorithm, key, data)": {
       "args": [
@@ -11894,7 +11894,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "end()": {
@@ -12237,7 +12237,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "exportKey(format, key)": {
       "args": [
@@ -12247,7 +12247,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "exports()": {
@@ -12719,7 +12719,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "generateKey(algorithm, extractable, keyUsages)": {
       "args": [
@@ -12730,7 +12730,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "generateRequest()": {
@@ -12860,7 +12860,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "getAll()": {
@@ -12912,7 +12912,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "getAll(query, count)": {
       "args": [
@@ -12923,7 +12923,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "getAllKeys()": {
@@ -12933,7 +12933,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "getAllKeys(query)": {
       "args": [
@@ -12943,7 +12943,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "getAllKeys(query, count)": {
       "args": [
@@ -12954,7 +12954,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "getAllResponseHeaders()": {
@@ -13457,7 +13457,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     },
     "getCurrentPosition(successCallback)": {
       "args": [
@@ -13466,7 +13466,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     },
     "getCurrentPosition(successCallback, errorCallback)": {
       "args": [
@@ -13476,7 +13476,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     },
     "getCurrentPosition(successCallback, errorCallback, options)": {
       "args": [
@@ -13487,7 +13487,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     }
   },
   "getCurrentTexture()": {
@@ -14085,7 +14085,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "getKeyframes()": {
@@ -14491,7 +14491,7 @@
       "for": [
         "Crypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "getRandomValues(array)": {
       "args": [
@@ -14500,7 +14500,7 @@
       "for": [
         "Crypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "getRangeAt()": {
@@ -15377,7 +15377,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "importKey(format, keyData, algorithm, extractable, keyUsages)": {
       "args": [
@@ -15390,7 +15390,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "importNode()": {
@@ -15483,7 +15483,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "index()": {
@@ -15494,7 +15494,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "info()": {
@@ -16266,7 +16266,7 @@
       "for": [
         "Element"
       ],
-      "shortname": "DOM-Parsing"
+      "shortname": "dom-parsing"
     },
     "insertAdjacentHTML(position, text)": {
       "args": [
@@ -17058,7 +17058,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "lowerBound(lower, open)": {
       "args": [
@@ -17068,7 +17068,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "makeXRCompatible()": {
@@ -17603,7 +17603,7 @@
       "for": [
         "IDBTransaction"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "observe()": {
@@ -17664,7 +17664,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "open()": {
@@ -17740,7 +17740,7 @@
       "for": [
         "IDBFactory"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "open(name, version)": {
       "args": [
@@ -17750,7 +17750,7 @@
       "for": [
         "IDBFactory"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "open(options)": {
       "args": [
@@ -17801,7 +17801,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "openCursor(query)": {
       "args": [
@@ -17811,7 +17811,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "openCursor(query, direction)": {
       "args": [
@@ -17822,7 +17822,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "openKeyCursor()": {
@@ -17832,7 +17832,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "openKeyCursor(query)": {
       "args": [
@@ -17842,7 +17842,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "openKeyCursor(query, direction)": {
       "args": [
@@ -17853,7 +17853,7 @@
         "IDBIndex",
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "openWindow()": {
@@ -18564,7 +18564,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "put(value, key)": {
       "args": [
@@ -18574,7 +18574,7 @@
       "for": [
         "IDBObjectStore"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "putImageData()": {
@@ -18739,7 +18739,7 @@
         "FileReader",
         "FileReaderSync"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "readAsBinaryString()": {
@@ -18751,7 +18751,7 @@
         "FileReader",
         "FileReaderSync"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "readAsDataURL()": {
@@ -18763,7 +18763,7 @@
         "FileReader",
         "FileReaderSync"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "readAsText()": {
@@ -18775,7 +18775,7 @@
         "FileReader",
         "FileReaderSync"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "readAsText(blob, encoding)": {
       "args": [
@@ -18786,7 +18786,7 @@
         "FileReader",
         "FileReaderSync"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "readEntries()": {
@@ -20261,7 +20261,7 @@
       "for": [
         "URL"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "rlh()": {
@@ -21300,7 +21300,7 @@
       "for": [
         "XMLSerializer"
       ],
-      "shortname": "DOM-Parsing"
+      "shortname": "dom-parsing"
     },
     "serializeToString(root)": {
       "args": [
@@ -21309,7 +21309,7 @@
       "for": [
         "XMLSerializer"
       ],
-      "shortname": "DOM-Parsing"
+      "shortname": "dom-parsing"
     }
   },
   "set()": {
@@ -22748,7 +22748,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "sign(algorithm, key, data)": {
       "args": [
@@ -22759,7 +22759,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "skewX()": {
@@ -22849,7 +22849,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "slice(start)": {
       "args": [
@@ -22858,7 +22858,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "slice(start, end)": {
       "args": [
@@ -22868,7 +22868,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "slice(start, end, contentType)": {
       "args": [
@@ -22879,7 +22879,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     },
     "slice(start, end, contentType), slice(start, end), slice(start), slice()": {
       "args": [
@@ -22894,7 +22894,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "snapshotItem()": {
@@ -23218,7 +23218,7 @@
       "for": [
         "Blob"
       ],
-      "shortname": "FileAPI"
+      "shortname": "fileapi"
     }
   },
   "stringifier()": {
@@ -23803,7 +23803,7 @@
       "for": [
         "IDBDatabase"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "transaction(storeNames, mode)": {
       "args": [
@@ -23813,7 +23813,7 @@
       "for": [
         "IDBDatabase"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "transaction(storeNames, mode, options)": {
       "args": [
@@ -23824,7 +23824,7 @@
       "for": [
         "IDBDatabase"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "transferControlToOffscreen()": {
@@ -24150,7 +24150,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "unwrapKey(format, wrappedKey, unwrappingKey, unwrapAlgorithm, unwrappedKeyAlgorithm, extractable, keyUsages)": {
       "args": [
@@ -24165,7 +24165,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "update()": {
@@ -24193,7 +24193,7 @@
       "for": [
         "IDBCursor"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "updatePlaybackRate()": {
@@ -24307,7 +24307,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     },
     "upperBound(upper, open)": {
       "args": [
@@ -24317,7 +24317,7 @@
       "for": [
         "IDBKeyRange"
       ],
-      "shortname": "IndexedDB"
+      "shortname": "indexeddb"
     }
   },
   "validate()": {
@@ -24357,7 +24357,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "verify(algorithm, key, signature, data)": {
       "args": [
@@ -24369,7 +24369,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "vh()": {
@@ -24516,7 +24516,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     },
     "watchPosition(successCallback)": {
       "args": [
@@ -24525,7 +24525,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     },
     "watchPosition(successCallback, errorCallback)": {
       "args": [
@@ -24535,7 +24535,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     },
     "watchPosition(successCallback, errorCallback, options)": {
       "args": [
@@ -24546,7 +24546,7 @@
       "for": [
         "Geolocation"
       ],
-      "shortname": "geolocation-API"
+      "shortname": "geolocation-api"
     }
   },
   "webkitGetAsEntry()": {
@@ -24586,7 +24586,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     },
     "wrapKey(format, key, wrappingKey, wrapAlgorithm)": {
       "args": [
@@ -24598,7 +24598,7 @@
       "for": [
         "SubtleCrypto"
       ],
-      "shortname": "WebCryptoAPI"
+      "shortname": "webcryptoapi"
     }
   },
   "write()": {

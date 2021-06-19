@@ -311,8 +311,8 @@ https://www.w3.org/TR/css-display-3/#out-of-flow
 -
 out of flow
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#out-of-flow
@@ -321,8 +321,8 @@ https://drafts.csswg.org/css2/#out-of-flow
 -
 out of flow
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#out-of-flow
@@ -401,8 +401,8 @@ https://www.w3.org/TR/css-display-3/#out-of-flow
 -
 out-of-line keys
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-out-of-line-keys
@@ -412,8 +412,8 @@ object-store
 -
 out-of-line keys
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-out-of-line-keys
@@ -555,8 +555,8 @@ https://www.w3.org/TR/css-box-4/#outer-edge
 -
 outer edge
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#outer-edge
@@ -565,8 +565,8 @@ https://drafts.csswg.org/css2/#outer-edge
 -
 outer edge
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#outer-edge
@@ -788,8 +788,8 @@ Element
 -
 outerHTML
 attribute
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml
@@ -904,8 +904,8 @@ https://www.w3.org/TR/webdriver2/#dfn-outerhtml-idl-attribute
 -
 outermost svg element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermOutermostSVGElement
@@ -914,8 +914,8 @@ https://svgwg.org/svg2-draft/struct.html#TermOutermostSVGElement
 -
 outermost svg element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermOutermostSVGElement
@@ -1007,8 +1007,8 @@ https://www.w3.org/TR/css-ui-4/#propdef-outline
 -
 outline
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-outline
@@ -1017,8 +1017,8 @@ https://drafts.csswg.org/css2/#propdef-outline
 -
 outline
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-outline
@@ -1027,8 +1027,8 @@ https://drafts.csswg.org/css2/#propdef-outline
 -
 outline
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/ui.html#propdef-outline
@@ -1067,8 +1067,8 @@ https://www.w3.org/TR/css-ui-4/#propdef-outline-color
 -
 outline-color
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-outline-color
@@ -1077,8 +1077,8 @@ https://drafts.csswg.org/css2/#propdef-outline-color
 -
 outline-color
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-outline-color
@@ -1087,8 +1087,8 @@ https://drafts.csswg.org/css2/#propdef-outline-color
 -
 outline-color
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/ui.html#propdef-outline-color
@@ -1137,8 +1137,8 @@ https://www.w3.org/TR/css-ui-4/#propdef-outline-style
 -
 outline-style
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-outline-style
@@ -1147,8 +1147,8 @@ https://drafts.csswg.org/css2/#propdef-outline-style
 -
 outline-style
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-outline-style
@@ -1157,8 +1157,8 @@ https://drafts.csswg.org/css2/#propdef-outline-style
 -
 outline-style
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/ui.html#propdef-outline-style
@@ -1187,8 +1187,8 @@ https://www.w3.org/TR/css-ui-4/#propdef-outline-width
 -
 outline-width
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-outline-width
@@ -1197,8 +1197,8 @@ https://drafts.csswg.org/css2/#propdef-outline-width
 -
 outline-width
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-outline-width
@@ -1207,8 +1207,8 @@ https://drafts.csswg.org/css2/#propdef-outline-width
 -
 outline-width
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/ui.html#propdef-outline-width
@@ -2018,8 +2018,8 @@ border
 -
 outset
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-outset
@@ -2034,8 +2034,8 @@ border-style
 -
 outset
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-outset
@@ -2094,8 +2094,8 @@ list-style-position
 -
 outside
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-list-style-position-outside
@@ -2105,8 +2105,8 @@ list-style-position
 -
 outside
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-list-style-position-outside

@@ -511,8 +511,8 @@ https://wicg.github.io/webusb/#enumdef-usbtransferstatus
 -
 USVString
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-USVString
@@ -583,8 +583,8 @@ GPUBuffer
 -
 [[usages]]
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-usages
@@ -626,8 +626,8 @@ IdleDetector
 -
 [usages_cached]
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-usages_cached
@@ -768,8 +768,8 @@ GPUPresentationConfiguration
 -
 usage intersection
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#concept-usage-intersection
@@ -778,8 +778,8 @@ https://w3c.github.io/webcrypto/#concept-usage-intersection
 -
 usage intersection
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-usage-intersection
@@ -894,8 +894,8 @@ HIDReportItem
 -
 usages
 attribute
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-cryptokey-usages
@@ -905,8 +905,8 @@ CryptoKey
 -
 usages
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-usages
@@ -915,8 +915,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-usages
 -
 usages_cached
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-usages_cached
@@ -1056,8 +1056,8 @@ USBDevice
 -
 use
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#elementdef-use
@@ -1066,8 +1066,8 @@ https://svgwg.org/svg2-draft/struct.html#elementdef-use
 -
 use
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#elementdef-use
@@ -1076,8 +1076,8 @@ https://www.w3.org/TR/SVG2/struct.html#elementdef-use
 -
 use
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-jsonwebkey-use
@@ -1183,8 +1183,8 @@ script/crossorigin
 -
 use-element shadow tree
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermUseElementShadowTree
@@ -1427,8 +1427,8 @@ https://www.w3.org/TR/css-cascade-5/#used-value
 -
 used value
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#usedValue
@@ -1437,8 +1437,8 @@ https://drafts.csswg.org/css2/#usedValue
 -
 used value
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 snapshot
 https://www.w3.org/TR/CSS21/cascade.html#usedValue
@@ -1447,8 +1447,8 @@ https://www.w3.org/TR/CSS21/cascade.html#usedValue
 -
 used value
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#usedValue
@@ -1457,8 +1457,8 @@ https://drafts.csswg.org/css2/#usedValue
 -
 used value
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/cascade.html#usedValue
@@ -1467,8 +1467,8 @@ https://www.w3.org/TR/CSS22/cascade.html#usedValue
 -
 used values
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#used-value
@@ -1477,8 +1477,8 @@ https://drafts.csswg.org/css2/#used-value
 -
 used values
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#used-value
@@ -1551,8 +1551,8 @@ fetch
 -
 user
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#user
@@ -1561,8 +1561,8 @@ https://drafts.csswg.org/css2/#user
 -
 user
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#user
@@ -2017,8 +2017,8 @@ https://www.w3.org/TR/css-speech-1/#user-agent
 -
 user agent
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#ua
@@ -2027,8 +2027,8 @@ https://drafts.csswg.org/css2/#ua
 -
 user agent
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#ua
@@ -2549,8 +2549,8 @@ https://www.w3.org/TR/svg-aam-1.0/#dfn-user-agent
 -
 user agent
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/conform.html#TermUserAgent
@@ -2759,8 +2759,8 @@ https://www.w3.org/TR/webrtc/#dfn-user-agent
 -
 user agent (ua)
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#user-agent
@@ -2769,8 +2769,8 @@ https://drafts.csswg.org/css2/#user-agent
 -
 user agent (ua)
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#user-agent
@@ -3069,8 +3069,8 @@ https://www.w3.org/TR/css-transforms-1/#user-coordinate-system
 -
 user coordinate system
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermUserCoordinateSystem
@@ -3079,8 +3079,8 @@ https://svgwg.org/svg2-draft/coords.html#TermUserCoordinateSystem
 -
 user coordinate system
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermUserCoordinateSystem
@@ -3189,8 +3189,8 @@ https://www.w3.org/TR/credential-management-1/#user-mediated
 -
 user object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-user-object
@@ -3479,8 +3479,8 @@ https://www.w3.org/TR/user-timing-3/#dfn-user-timing
 -
 user units
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermUserUnits
@@ -3489,8 +3489,8 @@ https://svgwg.org/svg2-draft/coords.html#TermUserUnits
 -
 user units
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermUserUnits
@@ -3711,8 +3711,8 @@ TaskPriority
 -
 user-defined function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#user-defined-function
@@ -3721,8 +3721,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#user-defined-function
 -
 user-defined function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#user-defined-function

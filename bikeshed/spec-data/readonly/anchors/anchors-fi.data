@@ -180,8 +180,8 @@ https://www.w3.org/TR/css-page-3/#valdef-page-first
 -
 :first
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-first
@@ -190,8 +190,8 @@ https://drafts.csswg.org/css2/#selectordef-first
 -
 :first
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-first
@@ -200,8 +200,8 @@ https://drafts.csswg.org/css2/#selectordef-first
 -
 :first-child
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-first-child
@@ -210,8 +210,8 @@ https://drafts.csswg.org/css2/#selectordef-first-child
 -
 :first-child
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-first-child
@@ -240,8 +240,8 @@ https://www.w3.org/TR/selectors-4/#first-child-pseudo
 -
 :first-letter
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-first-letter
@@ -250,8 +250,8 @@ https://drafts.csswg.org/css2/#selectordef-first-letter
 -
 :first-letter
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-first-letter
@@ -260,8 +260,8 @@ https://drafts.csswg.org/css2/#selectordef-first-letter
 -
 :first-line
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-first-line
@@ -270,8 +270,8 @@ https://drafts.csswg.org/css2/#selectordef-first-line
 -
 :first-line
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-first-line
@@ -516,8 +516,8 @@ XPathResult
 -
 File
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-file
@@ -526,8 +526,8 @@ https://w3c.github.io/FileAPI/#dfn-file
 -
 File
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-file
@@ -536,8 +536,8 @@ https://www.w3.org/TR/FileAPI/#dfn-file
 -
 File(fileBits, fileName)
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-file-file
@@ -547,8 +547,8 @@ File
 -
 File(fileBits, fileName)
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-file-file
@@ -558,8 +558,8 @@ File
 -
 File(fileBits, fileName, options)
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-file-file
@@ -569,8 +569,8 @@ File
 -
 File(fileBits, fileName, options)
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-file-file
@@ -590,8 +590,8 @@ https://wicg.github.io/entries-api/#callbackdef-filecallback
 -
 FileList
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-filelist
@@ -600,8 +600,8 @@ https://w3c.github.io/FileAPI/#dfn-filelist
 -
 FileList
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-filelist
@@ -630,8 +630,8 @@ https://wicg.github.io/file-system-access/#dictdef-filepickeroptions
 -
 FilePropertyBag
 dictionary
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-FilePropertyBag
@@ -640,8 +640,8 @@ https://w3c.github.io/FileAPI/#dfn-FilePropertyBag
 -
 FilePropertyBag
 dictionary
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-FilePropertyBag
@@ -650,8 +650,8 @@ https://www.w3.org/TR/FileAPI/#dfn-FilePropertyBag
 -
 FileReader
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-filereader
@@ -660,8 +660,8 @@ https://w3c.github.io/FileAPI/#dfn-filereader
 -
 FileReader
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-filereader
@@ -670,8 +670,8 @@ https://www.w3.org/TR/FileAPI/#dfn-filereader
 -
 FileReader()
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#filereaderConstrctr
@@ -681,8 +681,8 @@ FileReader
 -
 FileReader()
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#filereaderConstrctr
@@ -692,8 +692,8 @@ FileReader
 -
 FileReaderSync
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-FileReaderSync
@@ -702,8 +702,8 @@ https://w3c.github.io/FileAPI/#dfn-FileReaderSync
 -
 FileReaderSync
 interface
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-FileReaderSync
@@ -712,8 +712,8 @@ https://www.w3.org/TR/FileAPI/#dfn-FileReaderSync
 -
 FileReaderSync()
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-filereadersync-filereadersync
@@ -723,8 +723,8 @@ FileReaderSync
 -
 FileReaderSync()
 constructor
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-filereadersync-filereadersync
@@ -1045,8 +1045,8 @@ https://www.w3.org/TR/css-pseudo-4/#fictional-tag-sequence
 -
 fictional tag sequence
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#fictional-tag-sequence
@@ -1055,8 +1055,8 @@ https://drafts.csswg.org/css2/#fictional-tag-sequence
 -
 fictional tag sequence
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#fictional-tag-sequence
@@ -1272,8 +1272,8 @@ https://url.spec.whatwg.org/#file-host-state
 -
 file read error
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#file-error-read
@@ -1282,8 +1282,8 @@ https://w3c.github.io/FileAPI/#file-error-read
 -
 file read error
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#file-error-read
@@ -1292,8 +1292,8 @@ https://www.w3.org/TR/FileAPI/#file-error-read
 -
 file reading task source
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#fileReadingTaskSource
@@ -1302,8 +1302,8 @@ https://w3c.github.io/FileAPI/#fileReadingTaskSource
 -
 file reading task source
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#fileReadingTaskSource
@@ -1353,8 +1353,8 @@ entry
 -
 file type guidelines
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#file-type-guidelines
@@ -1363,8 +1363,8 @@ https://w3c.github.io/FileAPI/#file-type-guidelines
 -
 file type guidelines
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#file-type-guidelines
@@ -1445,8 +1445,8 @@ FileSystemFileEntry
 -
 fileBits
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-fileBits
@@ -1456,8 +1456,8 @@ File/File(fileBits, fileName, options)
 -
 fileBits
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-fileBits
@@ -1467,8 +1467,8 @@ File/File(fileBits, fileName, options)
 -
 fileName
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-fileName
@@ -1478,8 +1478,8 @@ File/File(fileBits, fileName, options)
 -
 fileName
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-fileName
@@ -1539,8 +1539,8 @@ https://www.w3.org/TR/webdriver2/#dfn-filelist
 -
 filelock
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#FileLockFR
@@ -1549,8 +1549,8 @@ https://w3c.github.io/FileAPI/#FileLockFR
 -
 filelock
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#FileLockFR
@@ -1809,8 +1809,8 @@ https://www.w3.org/TR/fill-stroke-3/#propdef-fill
 -
 fill
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermFill
@@ -1819,8 +1819,8 @@ https://svgwg.org/svg2-draft/painting.html#TermFill
 -
 fill
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#FillProperty
@@ -1829,8 +1829,8 @@ https://svgwg.org/svg2-draft/painting.html#FillProperty
 -
 fill
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermFill
@@ -1839,8 +1839,8 @@ https://www.w3.org/TR/SVG2/painting.html#TermFill
 -
 fill
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#FillProperty
@@ -2268,8 +2268,8 @@ https://www.w3.org/TR/fill-stroke-3/#propdef-fill-opacity
 -
 fill-opacity
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#FillOpacityProperty
@@ -2278,8 +2278,8 @@ https://svgwg.org/svg2-draft/painting.html#FillOpacityProperty
 -
 fill-opacity
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#FillOpacityProperty
@@ -2368,8 +2368,8 @@ https://www.w3.org/TR/fill-stroke-3/#propdef-fill-rule
 -
 fill-rule
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#FillRuleProperty
@@ -2378,8 +2378,8 @@ https://svgwg.org/svg2-draft/painting.html#FillRuleProperty
 -
 fill-rule
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#FillRuleProperty
@@ -3507,8 +3507,8 @@ https://html.spec.whatwg.org/multipage/webappapis.html#finding-the-first-parse-e
 -
 find the intersecting or enclosed descendants
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermFindIntersectingOrEnclosedDescendants
@@ -3517,8 +3517,8 @@ https://svgwg.org/svg2-draft/struct.html#TermFindIntersectingOrEnclosedDescendan
 -
 find the intersecting or enclosed descendants
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermFindIntersectingOrEnclosedDescendants
@@ -3547,8 +3547,8 @@ https://www.w3.org/TR/css-font-loading-3/#find-the-matching-font-faces
 -
 find the non-container graphics elements
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermFindNonContainerGraphicsElements
@@ -3557,8 +3557,8 @@ https://svgwg.org/svg2-draft/struct.html#TermFindNonContainerGraphicsElements
 -
 find the non-container graphics elements
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermFindNonContainerGraphicsElements
@@ -3617,8 +3617,8 @@ https://www.w3.org/TR/css-nav-1/#find-the-shortest-distance
 -
 find the typographic character for a character
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermFindTypographicCharacterForCharacter
@@ -3627,8 +3627,8 @@ https://svgwg.org/svg2-draft/text.html#TermFindTypographicCharacterForCharacter
 -
 find the typographic character for a character
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TermFindTypographicCharacterForCharacter
@@ -4152,8 +4152,8 @@ https://www.w3.org/TR/encoding/#finished
 -
 finished
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-finished
@@ -4163,8 +4163,8 @@ transaction
 -
 finished
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-finished
@@ -4510,8 +4510,8 @@ https://www.w3.org/TR/pointerevents3/#dfn-fire-a-pointer-event
 -
 fire a progress event
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#fire-a-progress-event
@@ -4520,8 +4520,8 @@ https://w3c.github.io/FileAPI/#fire-a-progress-event
 -
 fire a progress event
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#fire-a-progress-event
@@ -4580,8 +4580,8 @@ https://www.w3.org/TR/webrtc-identity/#dfn-fire-a-simple-event
 -
 fire a success event
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#fire-a-success-event
@@ -4590,8 +4590,8 @@ https://w3c.github.io/IndexedDB/#fire-a-success-event
 -
 fire a success event
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#fire-a-success-event
@@ -4630,8 +4630,8 @@ https://www.w3.org/TR/mediacapture-streams/#dfn-fire-a-track-event
 -
 fire a version change event
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#fire-a-version-change-event
@@ -4640,8 +4640,8 @@ https://w3c.github.io/IndexedDB/#fire-a-version-change-event
 -
 fire a version change event
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#fire-a-version-change-event
@@ -4660,8 +4660,8 @@ https://webbluetoothcg.github.io/web-bluetooth/#fire-an-advertisementreceived-ev
 -
 fire an error event
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#fire-an-error-event
@@ -4670,8 +4670,8 @@ https://w3c.github.io/IndexedDB/#fire-an-error-event
 -
 fire an error event
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#fire-an-error-event
@@ -5176,8 +5176,8 @@ hanging-punctuation
 -
 first
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbfactory-cmp-first-second-first
@@ -5187,8 +5187,8 @@ IDBFactory/cmp(first, second)
 -
 first
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-cmp-first-second-first
@@ -5341,8 +5341,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#first-child
 -
 first child
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-first-child
@@ -5603,8 +5603,8 @@ https://www.w3.org/TR/css-align-3/#baseline-self-alignment
 -
 first-child
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-first-child
@@ -5613,8 +5613,8 @@ https://drafts.csswg.org/css2/#selectordef-first-child
 -
 first-child
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-first-child
@@ -6215,8 +6215,8 @@ position
 -
 fixed
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-position-fixed
@@ -6226,8 +6226,8 @@ position
 -
 fixed
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-background-attachment-fixed
@@ -6237,8 +6237,8 @@ background-attachment
 -
 fixed
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-table-layout-fixed
@@ -6248,8 +6248,8 @@ table-layout
 -
 fixed
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-position-fixed
@@ -6259,8 +6259,8 @@ position
 -
 fixed
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-background-attachment-fixed
@@ -6270,8 +6270,8 @@ background-attachment
 -
 fixed
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-table-layout-fixed

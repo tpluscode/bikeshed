@@ -50,8 +50,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-p
 -
 p
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-jsonwebkey-p

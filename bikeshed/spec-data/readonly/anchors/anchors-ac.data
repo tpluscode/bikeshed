@@ -199,8 +199,8 @@ https://html.spec.whatwg.org/multipage/semantics-other.html#selector-active
 -
 :active
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-active
@@ -209,8 +209,8 @@ https://drafts.csswg.org/css2/#selectordef-active
 -
 :active
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-active
@@ -1164,8 +1164,8 @@ https://html.spec.whatwg.org/multipage/interactive-elements.html#command-facet-a
 -
 access mode
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#access-mode
@@ -1174,8 +1174,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#access-mode
 -
 access mode
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#access-mode
@@ -2682,8 +2682,8 @@ https://www.w3.org/TR/css-values-4/#accumulation
 -
 accuracy
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-accuracy
@@ -2693,8 +2693,8 @@ GeolocationCoordinates
 -
 accuracy
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-accuracy
@@ -2810,8 +2810,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-rel-acquaintance
 -
 acquire a position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-acquire-position
@@ -2820,8 +2820,8 @@ https://w3c.github.io/geolocation-api/#dfn-acquire-position
 -
 acquire a position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-acquire-position
@@ -2850,8 +2850,8 @@ https://www.w3.org/TR/screen-wake-lock/#dfn-acquire-a-wake-lock
 -
 acquire position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-acquire-position
@@ -2860,8 +2860,8 @@ https://w3c.github.io/geolocation-api/#dfn-acquire-position
 -
 acquire position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-acquire-position
@@ -2990,8 +2990,8 @@ https://www.w3.org/TR/screen-wake-lock/#dfn-acquire-wake-lock
 -
 acquiring a position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-acquire-position
@@ -3000,8 +3000,8 @@ https://w3c.github.io/geolocation-api/#dfn-acquire-position
 -
 acquiring a position
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-acquire-position
@@ -3645,8 +3645,8 @@ https://streams.spec.whatwg.org/#active
 -
 active
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-active
@@ -3656,8 +3656,8 @@ transaction
 -
 active
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-active
@@ -3991,8 +3991,8 @@ https://www.w3.org/TR/battery-status/#dfn-active-document
 -
 active document
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-active-document
@@ -5006,8 +5006,8 @@ https://www.w3.org/TR/css-cascade-5/#actual-value
 -
 actual values
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#actual-value
@@ -5016,8 +5016,8 @@ https://drafts.csswg.org/css2/#actual-value
 -
 actual values
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#actual-value

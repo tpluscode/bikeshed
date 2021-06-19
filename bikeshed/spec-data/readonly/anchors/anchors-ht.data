@@ -891,8 +891,8 @@ https://dom.spec.whatwg.org/#html-document
 -
 html document
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-html-document
@@ -951,8 +951,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-parsing-algori
 -
 html fragment parsing algorithm
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-html-fragment-parsing-algorithm
@@ -971,8 +971,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#html-fragment-serialisation-
 -
 html fragment serialization algorithm
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-html-fragment-serialization-algorithm
@@ -1031,8 +1031,8 @@ https://infra.spec.whatwg.org/#html-namespace
 -
 html namespace
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-html-namespace
@@ -1051,8 +1051,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#html-parser
 -
 html parser
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-html-parser
@@ -1081,8 +1081,8 @@ https://www.w3.org/TR/webdriver2/#dfn-unpaused
 -
 html serialization
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-html-serialization
@@ -1091,8 +1091,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-html-serialization
 -
 html-ns
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 snapshot
 https://www.w3.org/TR/DOM-Parsing/#dfn-html-ns

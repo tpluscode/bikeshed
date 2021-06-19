@@ -171,14 +171,14 @@ the local name <var>foo</var> and having no namespace. </p>
 element</a>, since the latter can be a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/obsolete.html#frameset" id="ref-for-frameset">frameset</a></code> element. </p>
    <h2 class="heading settled" data-level="3" id="css"><span class="secno">3. </span><span class="content">CSS</span><a class="self-link" href="#css"></a></h2>
    <h3 class="heading settled algorithm" data-algorithm="The hashless hex color quirk" data-level="3.1" id="the-hashless-hex-color-quirk"><span class="secno">3.1. </span><span class="content">The hashless hex color quirk</span><a class="self-link" href="#the-hashless-hex-color-quirk"></a></h3>
-   <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="quirky color" id="quirky-color">Quirky colors</dfn> are denoted by <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="quirky-color-value">&lt;quirky-color></dfn>. A <a data-link-type="dfn" href="#quirky-color" id="ref-for-quirky-color①">quirky color</a> corresponds to a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-number-token" id="ref-for-typedef-number-token">&lt;number-token></a>, a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token" id="ref-for-typedef-dimension-token">&lt;dimension-token></a> or an <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-ident-token" id="ref-for-typedef-ident-token">&lt;ident-token></a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#component-value" id="ref-for-component-value">component value</a> in the syntax.
-The value of a <a data-link-type="dfn" href="#quirky-color" id="ref-for-quirky-color②">quirky color</a> is obtained from the possible <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#component-value" id="ref-for-component-value①">component values</a> using the
+   <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="quirky color" id="quirky-color">Quirky colors</dfn> are denoted by <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="quirky-color-value">&lt;quirky-color></dfn>. A <a data-link-type="dfn" href="#quirky-color" id="ref-for-quirky-color①">quirky color</a> corresponds to a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-number-token" id="ref-for-typedef-number-token">&lt;number-token></a>, a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-dimension-token" id="ref-for-typedef-dimension-token">&lt;dimension-token></a> or an <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-ident-token" id="ref-for-typedef-ident-token">&lt;ident-token></a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#component-value" id="ref-for-component-value">component value</a> in the syntax.
+The value of a <a data-link-type="dfn" href="#quirky-color" id="ref-for-quirky-color②">quirky color</a> is obtained from the possible <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#component-value" id="ref-for-component-value①">component values</a> using the
 following algorithm, aborting on the first step that returns a value: </p>
    <ol>
     <li>
-     <p>Let <var>cv</var> be the <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#component-value" id="ref-for-component-value②">component value</a>. </p>
+     <p>Let <var>cv</var> be the <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#component-value" id="ref-for-component-value②">component value</a>. </p>
     <li>
-     <p>If <var>cv</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-number-token" id="ref-for-typedef-number-token①">&lt;number-token></a> or a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token" id="ref-for-typedef-dimension-token①">&lt;dimension-token></a>, follow these substeps: </p>
+     <p>If <var>cv</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-number-token" id="ref-for-typedef-number-token①">&lt;number-token></a> or a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-dimension-token" id="ref-for-typedef-dimension-token①">&lt;dimension-token></a>, follow these substeps: </p>
      <ol>
       <li>
        <p>If <var>cv</var>’s type flag is not "integer", return an error. </p>
@@ -189,13 +189,13 @@ following algorithm, aborting on the first step that returns a value: </p>
        <p>Let <var>serialization</var> be the serialization of <var>cv</var>’s value, as a base-ten integer using
    digits 0-9 (U+0030 to U+0039) in the shortest form possible. </p>
       <li>
-       <p>If <var>cv</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token" id="ref-for-typedef-dimension-token②">&lt;dimension-token></a>, append the unit to <var>serialization</var>. </p>
+       <p>If <var>cv</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-dimension-token" id="ref-for-typedef-dimension-token②">&lt;dimension-token></a>, append the unit to <var>serialization</var>. </p>
       <li>
        <p>If <var>serialization</var> consists of fewer than six characters, prepend zeros (U+0030) so that
    it becomes six characters. </p>
      </ol>
     <li>
-     <p>Otherwise, <var>cv</var> is an <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-ident-token" id="ref-for-typedef-ident-token①">&lt;ident-token></a>; let <var>serialization</var> be <var>cv</var>’s value. </p>
+     <p>Otherwise, <var>cv</var> is an <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-ident-token" id="ref-for-typedef-ident-token①">&lt;ident-token></a>; let <var>serialization</var> be <var>cv</var>’s value. </p>
     <li>
      <p>If <var>serialization</var> does not consist of three or six characters, return an error. </p>
     <li>
@@ -206,19 +206,19 @@ following algorithm, aborting on the first step that returns a value: </p>
    </ol>
    <p>If the value of a <a data-link-type="dfn" href="#quirky-color" id="ref-for-quirky-color③">quirky color</a> is an error, it is an <a data-link-type="dfn" href="https://drafts.csswg.org/css2/conform.html#illegal" id="ref-for-illegal">illegal</a> value.
 Otherwise, the value of a <a data-link-type="dfn" href="#quirky-color" id="ref-for-quirky-color④">quirky color</a> must be interpreted as an RGB value in hexadecimal
-notation using the same rules as for <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a>. </p>
+notation using the same rules as for <a class="production css" data-link-type="type">&lt;color></a>. </p>
    <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①">quirks mode</a>, the following properties must have
-their "Value" grammar changed by replacing <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color①" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> with: </p>
-<pre class="prod">[ <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color②" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> <a class="production" data-link-type="type" href="#quirky-color-value" id="ref-for-quirky-color-value">&lt;quirky-color></a> ]
+their "Value" grammar changed by replacing <a class="production css" data-link-type="type">&lt;color></a> with: </p>
+<pre class="prod">[ <a class="production" data-link-type="type">&lt;color></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> <a class="production" data-link-type="type" href="#quirky-color-value" id="ref-for-quirky-color-value">&lt;quirky-color></a> ]
 </pre>
    <ul class="brief">
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-color" id="ref-for-propdef-background-color">background-color</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-color" id="ref-for-propdef-border-color">border-color</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-color" id="ref-for-propdef-border-top-color">border-top-color</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-right-color" id="ref-for-propdef-border-right-color">border-right-color</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-color" id="ref-for-propdef-border-bottom-color">border-bottom-color</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-left-color" id="ref-for-propdef-border-left-color">border-left-color</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color">color</a>
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-color" id="ref-for-propdef-background-color">background-color</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-color" id="ref-for-propdef-border-color">border-color</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-color" id="ref-for-propdef-border-top-color">border-top-color</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-right-color" id="ref-for-propdef-border-right-color">border-right-color</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-color" id="ref-for-propdef-border-bottom-color">border-bottom-color</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-left-color" id="ref-for-propdef-border-left-color">border-left-color</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color">color</a> 
    </ul>
    <p>Any property not listed above must not support <a class="production css" data-link-type="type" href="#quirky-color-value" id="ref-for-quirky-color-value①">&lt;quirky-color></a> even if it references one of the
 above properties in its "Value" grammar. </p>
@@ -228,47 +228,47 @@ supported in the <code><a class="idl-code" data-link-type="method" href="https:/
 method of the <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/cssom-1/#css" id="ref-for-css">CSS</a></code> interface.</p>
    <h3 class="heading settled" data-level="3.2" id="the-unitless-length-quirk"><span class="secno">3.2. </span><span class="content">The unitless length quirk</span><a class="self-link" href="#the-unitless-length-quirk"></a></h3>
    <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="quirky length" id="quirky-length">Quirky lengths</dfn> are denoted by <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="quirky-length-value">&lt;quirky-length></dfn>. A <a data-link-type="dfn" href="#quirky-length" id="ref-for-quirky-length">quirky length</a> is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#number" id="ref-for-number">number</a> and
-corresponds to a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-number-token" id="ref-for-typedef-number-token②">&lt;number-token></a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#component-value" id="ref-for-component-value③">component value</a> in the syntax. The value of a <a data-link-type="dfn" href="#quirky-length" id="ref-for-quirky-length①">quirky
-length</a> is obtained from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#component-value" id="ref-for-component-value④">component value</a>’s value. </p>
-   <p>The value of a <a data-link-type="dfn" href="#quirky-length" id="ref-for-quirky-length②">quirky length</a> must be interpreted as a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> where the unit is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#px" id="ref-for-px">px</a>. </p>
+corresponds to a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-number-token" id="ref-for-typedef-number-token②">&lt;number-token></a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#component-value" id="ref-for-component-value③">component value</a> in the syntax. The value of a <a data-link-type="dfn" href="#quirky-length" id="ref-for-quirky-length①">quirky
+length</a> is obtained from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#component-value" id="ref-for-component-value④">component value</a>’s value. </p>
+   <p>The value of a <a data-link-type="dfn" href="#quirky-length" id="ref-for-quirky-length②">quirky length</a> must be interpreted as a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> where the unit is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#px" id="ref-for-px">px</a>. </p>
    <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks②">quirks mode</a>, the following properties must have
-their "Value" grammar changed by replacing <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> with: </p>
-<pre class="prod">[ <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> <a class="production" data-link-type="type" href="#quirky-length-value" id="ref-for-quirky-length-value">&lt;quirky-length></a> ]
+their "Value" grammar changed by replacing <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> with: </p>
+<pre class="prod">[ <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> <a class="production" data-link-type="type" href="#quirky-length-value" id="ref-for-quirky-length-value">&lt;quirky-length></a> ]
 </pre>
    <ul class="brief">
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position" id="ref-for-propdef-background-position">background-position</a>
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-position" id="ref-for-propdef-background-position">background-position</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-tables-3/#propdef-border-spacing" id="ref-for-propdef-border-spacing">border-spacing</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width" id="ref-for-propdef-border-top-width">border-top-width</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-right-width" id="ref-for-propdef-border-right-width">border-right-width</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width">border-bottom-width</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-left-width" id="ref-for-propdef-border-left-width">border-left-width</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width" id="ref-for-propdef-border-width">border-width</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-bottom" id="ref-for-propdef-bottom">bottom</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width" id="ref-for-propdef-border-top-width">border-top-width</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-right-width" id="ref-for-propdef-border-right-width">border-right-width</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width">border-bottom-width</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-left-width" id="ref-for-propdef-border-left-width">border-left-width</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-width" id="ref-for-propdef-border-width">border-width</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-bottom" id="ref-for-propdef-bottom">bottom</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/css-masking-1/#propdef-clip" id="ref-for-propdef-clip">clip</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size">font-size</a> 
+    <li><a class="property" data-link-type="propdesc">font-size</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-left" id="ref-for-propdef-left">left</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing">letter-spacing</a>
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-left" id="ref-for-propdef-left">left</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing">letter-spacing</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-right" id="ref-for-propdef-margin-right">margin-right</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-left" id="ref-for-propdef-margin-left">margin-left</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top">margin-top</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom">margin-bottom</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin">margin</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height">max-height</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width">max-width</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height">min-height</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width">min-width</a> 
+    <li><a class="property" data-link-type="propdesc">max-height</a> 
+    <li><a class="property" data-link-type="propdesc">max-width</a> 
+    <li><a class="property" data-link-type="propdesc">min-height</a> 
+    <li><a class="property" data-link-type="propdesc">min-width</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-top" id="ref-for-propdef-padding-top">padding-top</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-right" id="ref-for-propdef-padding-right">padding-right</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-bottom" id="ref-for-propdef-padding-bottom">padding-bottom</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-left" id="ref-for-propdef-padding-left">padding-left</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding" id="ref-for-propdef-padding">padding</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-right" id="ref-for-propdef-right">right</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-indent" id="ref-for-propdef-text-indent">text-indent</a>
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-top" id="ref-for-propdef-top">top</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-right" id="ref-for-propdef-right">right</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-indent" id="ref-for-propdef-text-indent">text-indent</a> 
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-top" id="ref-for-propdef-top">top</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-inline-3/#propdef-vertical-align" id="ref-for-propdef-vertical-align">vertical-align</a> 
     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width">width</a> 
-    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing" id="ref-for-propdef-word-spacing">word-spacing</a>
+    <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing" id="ref-for-propdef-word-spacing">word-spacing</a> 
    </ul>
    <p>Any property not listed above must not support <a class="production css" data-link-type="type" href="#quirky-length-value" id="ref-for-quirky-length-value①">&lt;quirky-length></a> even if it references one of the
 above properties in its "Value" grammar. </p>
@@ -277,33 +277,33 @@ above properties in its "Value" grammar. </p>
    <h3 class="heading settled algorithm" data-algorithm="The line height calculation quirk" data-level="3.3" id="the-line-height-calculation-quirk"><span class="secno">3.3. </span><span class="content">The line height calculation quirk</span><a class="self-link" href="#the-line-height-calculation-quirk"></a></h3>
    <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks③">quirks mode</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-limited-quirks" id="ref-for-concept-document-limited-quirks①">limited-quirks mode</a>, an inline box that
 matches the following conditions, must, for the purpose of line height calculation, act as if the
-box had a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height">line-height</a> of zero. </p>
+box had a <a class="property" data-link-type="propdesc">line-height</a> of zero. </p>
    <ul>
     <li>
-     <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width" id="ref-for-propdef-border-top-width①">border-top-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width①">border-bottom-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-top" id="ref-for-propdef-padding-top①">padding-top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-bottom" id="ref-for-propdef-padding-bottom①">padding-bottom</a> properties
- have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used value</a> of zero and the box has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode">vertical writing mode</a>, or the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-right-width" id="ref-for-propdef-border-right-width①">border-right-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-left-width" id="ref-for-propdef-border-left-width①">border-left-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-right" id="ref-for-propdef-padding-right①">padding-right</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-left" id="ref-for-propdef-padding-left①">padding-left</a> properties have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used value</a> of zero and the box has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#horizontal-writing-mode" id="ref-for-horizontal-writing-mode">horizontal writing mode</a>. </p>
+     <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width" id="ref-for-propdef-border-top-width①">border-top-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width" id="ref-for-propdef-border-bottom-width①">border-bottom-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-top" id="ref-for-propdef-padding-top①">padding-top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-bottom" id="ref-for-propdef-padding-bottom①">padding-bottom</a> properties
+ have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used value</a> of zero and the box has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode">vertical writing mode</a>, or the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-right-width" id="ref-for-propdef-border-right-width①">border-right-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-left-width" id="ref-for-propdef-border-left-width①">border-left-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-right" id="ref-for-propdef-padding-right①">padding-right</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding-left" id="ref-for-propdef-padding-left①">padding-left</a> properties have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used value</a> of zero and the box has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#horizontal-writing-mode" id="ref-for-horizontal-writing-mode">horizontal writing mode</a>. </p>
     <li>
      <p>It either contains no text or it contains only collapsed whitespace. </p>
    </ul>
    <h3 class="heading settled" data-level="3.4" id="the-blocks-ignore-line-height-quirk"><span class="secno">3.4. </span><span class="content">The blocks ignore line-height quirk</span><a class="self-link" href="#the-blocks-ignore-line-height-quirk"></a></h3>
    <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks④">quirks mode</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-limited-quirks" id="ref-for-concept-document-limited-quirks②">limited-quirks mode</a>, for a <a data-link-type="dfn" href="https://drafts.csswg.org/css2/visuren.html#block-container-element" id="ref-for-block-container-element">block container
-element</a> whose content is composed of <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level">inline-level</a> elements, the element’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height①">line-height</a> must be ignored for the purpose of calculating the minimal height of line boxes within the element. </p>
+element</a> whose content is composed of <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level">inline-level</a> elements, the element’s <a class="property" data-link-type="propdesc">line-height</a> must be ignored for the purpose of calculating the minimal height of line boxes within the element. </p>
    <p class="note" role="note">This means that the "strut" is not created.</p>
    <h3 class="heading settled algorithm" data-algorithm="The percentage height calculation
 quirk" data-level="3.5" id="the-percentage-height-calculation-quirk"><span class="secno">3.5. </span><span class="content">The percentage height calculation
 quirk</span><a class="self-link" href="#the-percentage-height-calculation-quirk"></a></h3>
-   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks⑤">quirks mode</a>, for the purpose of calculating the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a> of an element <var>element</var>, if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a> property of <var>element</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-relative" id="ref-for-valdef-position-relative">relative</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-static" id="ref-for-valdef-position-static">static</a>, the specified value for the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height②">height</a> property of <var>element</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a>, and <var>element</var> does not have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-row" id="ref-for-valdef-display-table-row">table-row</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-row-group" id="ref-for-valdef-display-table-row-group">table-row-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-header-group" id="ref-for-valdef-display-table-header-group">table-header-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-footer-group" id="ref-for-valdef-display-table-footer-group">table-footer-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell">table-cell</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-caption" id="ref-for-valdef-display-table-caption">table-caption</a>, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a> of <var>element</var> must be calculated using the following algorithm, aborting on
+   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks⑤">quirks mode</a>, for the purpose of calculating the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a> of an element <var>element</var>, if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a> property of <var>element</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-relative" id="ref-for-valdef-position-relative">relative</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-static" id="ref-for-valdef-position-static">static</a>, the specified value for the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height②">height</a> property of <var>element</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a>, and <var>element</var> does not have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-row" id="ref-for-valdef-display-table-row">table-row</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-row-group" id="ref-for-valdef-display-table-row-group">table-row-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-header-group" id="ref-for-valdef-display-table-header-group">table-header-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-footer-group" id="ref-for-valdef-display-table-footer-group">table-footer-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell">table-cell</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-caption" id="ref-for-valdef-display-table-caption">table-caption</a>, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block">containing block</a> of <var>element</var> must be calculated using the following algorithm, aborting on
 the first step that returns a value: </p>
    <ol>
     <li>
-     <p>Let <var>element</var> be the nearest ancestor <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block①">containing block</a> of <var>element</var>, if there is
- one. Otherwise, return the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#initial-containing-block" id="ref-for-initial-containing-block">initial containing block</a>. </p>
+     <p>Let <var>element</var> be the nearest ancestor <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block①">containing block</a> of <var>element</var>, if there is
+ one. Otherwise, return the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#initial-containing-block" id="ref-for-initial-containing-block">initial containing block</a>. </p>
     <li>
-     <p>If <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell①">table-cell</a>, then return a UA-defined value. </p>
+     <p>If <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell①">table-cell</a>, then return a UA-defined value. </p>
     <li>
-     <p>If <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value③">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height③">height</a> property that is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto">auto</a>, then return <var>element</var>. </p>
+     <p>If <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value③">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height③">height</a> property that is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto">auto</a>, then return <var>element</var>. </p>
     <li>
-     <p>If <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value④">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position①">position</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-absolute" id="ref-for-valdef-position-absolute">absolute</a>, or if <var>element</var> is a not a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block container</a> or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-tables-3/#table-wrapper-box" id="ref-for-table-wrapper-box">table wrapper box</a>, then return <var>element</var>. </p>
+     <p>If <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value④">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position①">position</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-absolute" id="ref-for-valdef-position-absolute">absolute</a>, or if <var>element</var> is a not a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block container</a> or a <a data-link-type="dfn" href="https://drafts.csswg.org/css-tables-3/#table-wrapper-box" id="ref-for-table-wrapper-box">table wrapper box</a>, then return <var>element</var>. </p>
     <li>
      <p>Jump to the first step. </p>
    </ol>
@@ -320,17 +320,17 @@ following conditions: </p>
     <li>
      <p><var>element</var> is an <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element" id="ref-for-the-html-element②">html</a></code> element. </p>
     <li>
-     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value⑤">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a> property of <var>element</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①">auto</a> and <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode①">vertical writing mode</a>, or the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value⑥">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height④">height</a> property
+     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value⑤">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a> property of <var>element</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①">auto</a> and <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode①">vertical writing mode</a>, or the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value⑥">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height④">height</a> property
  of <var>element</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto②">auto</a> and <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#horizontal-writing-mode" id="ref-for-horizontal-writing-mode①">horizontal writing mode</a>. <a data-link-type="biblio" href="#biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]</a> </p>
    </ul>
    <p>...then <var>element</var> must have its <a data-link-type="dfn" href="https://drafts.csswg.org/css2/box.html#border-edge" id="ref-for-border-edge">border box</a> size in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction" id="ref-for-block-flow-direction">block flow direction</a> set
 using the following algorithm: </p>
    <ol>
     <li>
-     <p>Let <var>margins</var> be sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value②">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-left" id="ref-for-propdef-margin-left①">margin-left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-right" id="ref-for-propdef-margin-right①">margin-right</a> properties of <var>element</var> if <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode②">vertical writing mode</a>, otherwise let <var>margins</var> be
- the sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value③">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top①">margin-top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom①">margin-bottom</a> properties of <var>element</var>. </p>
+     <p>Let <var>margins</var> be sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value②">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-left" id="ref-for-propdef-margin-left①">margin-left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-right" id="ref-for-propdef-margin-right①">margin-right</a> properties of <var>element</var> if <var>element</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode②">vertical writing mode</a>, otherwise let <var>margins</var> be
+ the sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value③">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top①">margin-top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom①">margin-bottom</a> properties of <var>element</var>. </p>
     <li>
-     <p>Let <var>size</var> be the size of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#initial-containing-block" id="ref-for-initial-containing-block①">initial containing block</a> in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction" id="ref-for-block-flow-direction①">block flow
+     <p>Let <var>size</var> be the size of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#initial-containing-block" id="ref-for-initial-containing-block①">initial containing block</a> in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction" id="ref-for-block-flow-direction①">block flow
  direction</a> minus <var>margins</var>. </p>
     <li>
      <p>Return the bigger value of <var>size</var> and the normal <a data-link-type="dfn" href="https://drafts.csswg.org/css2/box.html#border-edge" id="ref-for-border-edge①">border box</a> size the element would
@@ -342,23 +342,23 @@ quirk</span><a class="self-link" href="#the-body-element-fills-the-html-element-
 it matches the following conditions: </p>
    <ul>
     <li>
-     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value⑦">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width②">width</a> property of <var>body</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto③">auto</a> and <var>body</var> has
- a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode③">vertical writing mode</a>, or the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value⑧">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑤">height</a> property of <var>body</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto④">auto</a> and <var>body</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#horizontal-writing-mode" id="ref-for-horizontal-writing-mode②">horizontal writing mode</a>. <a data-link-type="biblio" href="#biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]</a> </p>
+     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value⑦">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width②">width</a> property of <var>body</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto③">auto</a> and <var>body</var> has
+ a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode③">vertical writing mode</a>, or the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value⑧">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑤">height</a> property of <var>body</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto④">auto</a> and <var>body</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#horizontal-writing-mode" id="ref-for-horizontal-writing-mode②">horizontal writing mode</a>. <a data-link-type="biblio" href="#biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]</a> </p>
     <li>
-     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value⑨">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position②">position</a> property of <var>body</var> is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-absolute" id="ref-for-valdef-position-absolute①">absolute</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position-3/#valdef-position-fixed" id="ref-for-valdef-position-fixed">fixed</a>. </p>
+     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value⑨">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position②">position</a> property of <var>body</var> is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-absolute" id="ref-for-valdef-position-absolute①">absolute</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-position/#valdef-position-fixed" id="ref-for-valdef-position-fixed">fixed</a>. </p>
     <li>
-     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①⓪">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a> property of <var>body</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-page-floats-3/#valdef-float-none" id="ref-for-valdef-float-none">none</a>. </p>
+     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①⓪">computed value</a> of the <a class="property" data-link-type="propdesc">float</a> property of <var>body</var> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-page-floats/#valdef-float-none" id="ref-for-valdef-float-none">none</a>. </p>
     <li>
-     <p><var>body</var> is not an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level①">inline-level</a> element. </p>
+     <p><var>body</var> is not an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level①">inline-level</a> element. </p>
     <li>
-     <p><var>body</var> is not a <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol-1/#spanning-element" id="ref-for-spanning-element">spanning element</a>. <a data-link-type="biblio" href="#biblio-css3-multicol">[CSS3-MULTICOL]</a> </p>
+     <p><var>body</var> is not a <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol/#spanning-element" id="ref-for-spanning-element">spanning element</a>. <a data-link-type="biblio" href="#biblio-css3-multicol">[CSS3-MULTICOL]</a> </p>
    </ul>
    <p>...then <var>body</var> must have its <a data-link-type="dfn" href="https://drafts.csswg.org/css2/box.html#border-edge" id="ref-for-border-edge②">border box</a> size in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction" id="ref-for-block-flow-direction②">block flow direction</a> set using
 the following algorithm: </p>
    <ol>
     <li>
-     <p>Let <var>margins</var> be the sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value④">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-left" id="ref-for-propdef-margin-left②">margin-left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-right" id="ref-for-propdef-margin-right②">margin-right</a> properties of <var>body</var> if <var>body</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode④">vertical writing mode</a>, otherwise let <var>margins</var> be the
- sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑤">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top②">margin-top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom②">margin-bottom</a> properties of <var>body</var>. </p>
+     <p>Let <var>margins</var> be the sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value④">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-left" id="ref-for-propdef-margin-left②">margin-left</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-right" id="ref-for-propdef-margin-right②">margin-right</a> properties of <var>body</var> if <var>body</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#vertical-writing-mode" id="ref-for-vertical-writing-mode④">vertical writing mode</a>, otherwise let <var>margins</var> be the
+ sum of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑤">used values</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-top" id="ref-for-propdef-margin-top②">margin-top</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin-bottom" id="ref-for-propdef-margin-bottom②">margin-bottom</a> properties of <var>body</var>. </p>
     <li>
      <p>Let <var>size</var> be the size of <var>body</var>’s parent element’s <a data-link-type="dfn" href="https://drafts.csswg.org/css2/box.html#content-edge" id="ref-for-content-edge">content box</a> in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-flow-direction" id="ref-for-block-flow-direction③">block flow
  direction</a> minus <var>margins</var>. </p>
@@ -369,33 +369,33 @@ the following algorithm: </p>
    <p class="big-issue">What should happen if the <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element" id="ref-for-the-html-element④">html</a></code> and the <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" id="ref-for-the-body-element②">body</a></code> have different writing modes? </p>
    <h3 class="heading settled" data-level="3.8" id="the-table-cell-width-calculation-quirk"><span class="secno">3.8. </span><span class="content">The table cell width calculation quirk</span><a class="self-link" href="#the-table-cell-width-calculation-quirk"></a></h3>
    <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks⑧">quirks mode</a>, for the purpose of calculating the <a data-link-type="dfn" href="https://dbaron.org/css/intrinsic/#inline-intrinsic-min" id="ref-for-inline-intrinsic-min">min-content width of an
-inline formatting context</a> for which a table cell <var>cell</var> is the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block②">containing block</a>, if <var>cell</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①①">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width③">width</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑤">auto</a>, <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" id="ref-for-the-img-element">img</a></code> elements
-that are <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level②">inline-level</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css2/conform.html#replaced-element" id="ref-for-replaced-element">replaced elements</a> in that <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a> must
+inline formatting context</a> for which a table cell <var>cell</var> is the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block②">containing block</a>, if <var>cell</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①①">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width③">width</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑤">auto</a>, <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" id="ref-for-the-img-element">img</a></code> elements
+that are <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level②">inline-level</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css2/conform.html#replaced-element" id="ref-for-replaced-element">replaced elements</a> in that <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a> must
 not have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#soft-wrap-opportunity" id="ref-for-soft-wrap-opportunity">soft wrap opportunity</a> before or after them. <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a> <a data-link-type="biblio" href="#biblio-intrinsic">[INTRINSIC]</a></p>
    <h3 class="heading settled" data-level="3.9" id="the-table-cell-nowrap-minimum-width-calculation-quirk"><span class="secno">3.9. </span><span class="content">The table cell nowrap minimum width
 calculation quirk</span><a class="self-link" href="#the-table-cell-nowrap-minimum-width-calculation-quirk"></a></h3>
    <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks⑨">quirks mode</a>, an element <var>cell</var> that matches the following conditions must act
 as if it had an <a data-link-type="dfn" href="https://dbaron.org/css/intrinsic/#autotable" id="ref-for-autotable">outer min-content width of a table cell</a> in the automatic table layout
-algorithm that is the bigger value of <var>cell</var>’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①②">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width④">width</a> property and the <a data-link-type="dfn" href="https://dbaron.org/css/intrinsic/#autotable" id="ref-for-autotable①">outer min-content width of a table cell</a>. <a data-link-type="biblio" href="#biblio-intrinsic">[INTRINSIC]</a> </p>
+algorithm that is the bigger value of <var>cell</var>’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①②">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width④">width</a> property and the <a data-link-type="dfn" href="https://dbaron.org/css/intrinsic/#autotable" id="ref-for-autotable①">outer min-content width of a table cell</a>. <a data-link-type="biblio" href="#biblio-intrinsic">[INTRINSIC]</a> </p>
    <ul>
     <li>
      <p><var>cell</var> is a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/tables.html#the-td-element" id="ref-for-the-td-element">td</a></code> element or a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/tables.html#the-th-element" id="ref-for-the-th-element">th</a></code> element. </p>
     <li>
      <p><var>cell</var> has a <code>nowrap</code> attribute. </p>
     <li>
-     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①③">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width⑤">width</a> property of <var>cell</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> that is not
+     <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①③">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width⑤">width</a> property of <var>cell</var> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> that is not
  zero. </p>
    </ul>
    <h3 class="heading settled" data-level="3.10" id="the-collapsing-table-quirk"><span class="secno">3.10. </span><span class="content">The collapsing table quirk</span><a class="self-link" href="#the-collapsing-table-quirk"></a></h3>
    <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①⓪">quirks mode</a>, an element <var>table</var> that matches the following conditions must
-have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑥">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑥">height</a> property of <span class="css">0</span> and a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑦">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style" id="ref-for-propdef-border-style">border-style</a> property of <span class="css">none</span>. </p>
+have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑥">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑥">height</a> property of <span class="css">0</span> and a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑦">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-style" id="ref-for-propdef-border-style">border-style</a> property of <span class="css">none</span>. </p>
    <ul>
     <li>
-     <p><var>table</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①④">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②">display</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table" id="ref-for-valdef-display-table">table</a>. </p>
+     <p><var>table</var> has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①④">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②">display</a> property that is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table" id="ref-for-valdef-display-table">table</a>. </p>
     <li>
-     <p><var>table</var> has no child <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-row-group" id="ref-for-valdef-display-table-row-group①">table-row-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-header-group" id="ref-for-valdef-display-table-header-group①">table-header-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-footer-group" id="ref-for-valdef-display-table-footer-group①">table-footer-group</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-caption" id="ref-for-valdef-display-table-caption①">table-caption</a> box. </p>
+     <p><var>table</var> has no child <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-row-group" id="ref-for-valdef-display-table-row-group①">table-row-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-header-group" id="ref-for-valdef-display-table-header-group①">table-header-group</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-footer-group" id="ref-for-valdef-display-table-footer-group①">table-footer-group</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-caption" id="ref-for-valdef-display-table-caption①">table-caption</a> box. </p>
     <li>
-     <p><var>table</var> has no child <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-column-group" id="ref-for-valdef-display-table-column-group">table-column-group</a> box that itself has a child <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-column" id="ref-for-valdef-display-table-column">table-column</a> box. </p>
+     <p><var>table</var> has no child <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-column-group" id="ref-for-valdef-display-table-column-group">table-column-group</a> box that itself has a child <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-column" id="ref-for-valdef-display-table-column">table-column</a> box. </p>
    </ul>
    <h3 class="heading settled" data-level="3.11" id="the-text-decoration-doesnt-propagate-into-tables-quirk"><span class="secno">3.11. </span><span class="content">The text decoration doesn’t propagate
 into tables quirk</span><a class="self-link" href="#the-text-decoration-doesnt-propagate-into-tables-quirk"></a></h3>
@@ -404,49 +404,49 @@ into <code><a data-link-type="element" href="https://html.spec.whatwg.org/multip
    <h3 class="heading settled algorithm" data-algorithm="The tables inherit color from body
 quirk" data-level="3.12" id="the-tables-inherit-color-from-body-quirk"><span class="secno">3.12. </span><span class="content">The tables inherit color from body
 quirk</span><a class="self-link" href="#the-tables-inherit-color-from-body-quirk"></a></h3>
-   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①②">quirks mode</a>, the initial value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color①">color</a> property must be <span class="css">quirk-inherit</span>, a special value that has no keyword mapping to it. </p>
-   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①⑤">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color②">color</a> property of an element <var>element</var> must be calculated
+   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①②">quirks mode</a>, the initial value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color①">color</a> property must be <span class="css">quirk-inherit</span>, a special value that has no keyword mapping to it. </p>
+   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①⑤">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color②">color</a> property of an element <var>element</var> must be calculated
 using the following algorithm: </p>
    <ol>
     <li>
-     <p>If the specified value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color③">color</a> property of <var>element</var> is not <span class="css">quirk-inherit</span>, jump to the last step. </p>
+     <p>If the specified value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color③">color</a> property of <var>element</var> is not <span class="css">quirk-inherit</span>, jump to the last step. </p>
     <li>
      <p>If <var>element</var> is not a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/tables.html#the-table-element" id="ref-for-the-table-element①">table</a></code> element, jump to the last step. </p>
     <li>
      <p>If the <a data-link-type="dfn" href="#documents-body-element" id="ref-for-documents-body-element②">document’s body element</a> is null, jump to the last step. </p>
     <li>
-     <p>Return the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑧">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color④">color</a> property of the <a data-link-type="dfn" href="#documents-body-element" id="ref-for-documents-body-element③">document’s body element</a>.
+     <p>Return the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑧">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color④">color</a> property of the <a data-link-type="dfn" href="#documents-body-element" id="ref-for-documents-body-element③">document’s body element</a>.
  Abort these steps. </p>
     <li>
-     <p>If the specified value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color⑤">color</a> property of <var>element</var> is <span class="css">quirk-inherit</span>, let the
- specified value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color⑥">color</a> property of <var>element</var> be the initial value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color⑦">color</a> property
- according to the CSS specification. Return the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①⑥">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color⑧">color</a> property of <var>element</var> as specified in the CSS specification. </p>
+     <p>If the specified value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color⑤">color</a> property of <var>element</var> is <span class="css">quirk-inherit</span>, let the
+ specified value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color⑥">color</a> property of <var>element</var> be the initial value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color⑦">color</a> property
+ according to the CSS specification. Return the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①⑥">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color⑧">color</a> property of <var>element</var> as specified in the CSS specification. </p>
    </ol>
    <h3 class="heading settled" data-level="3.13" id="the-table-cell-height-box-sizing-quirk"><span class="secno">3.13. </span><span class="content">The table cell height box sizing quirk</span><a class="self-link" href="#the-table-cell-height-box-sizing-quirk"></a></h3>
-   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①③">quirks mode</a>, elements that have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①⑦">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display③">display</a> property of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell②">table-cell</a> must act as they have <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value⑨">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing" id="ref-for-propdef-box-sizing">box-sizing</a> property of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-box-sizing-border-box" id="ref-for-valdef-box-sizing-border-box">border-box</a>, but only for the purpose of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑦">height</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height①">min-height</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height①">max-height</a> properties. </p>
+   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①③">quirks mode</a>, elements that have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①⑦">computed value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display③">display</a> property of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table-cell" id="ref-for-valdef-display-table-cell②">table-cell</a> must act as they have <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value⑨">used value</a> of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing" id="ref-for-propdef-box-sizing">box-sizing</a> property of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-box-sizing-border-box" id="ref-for-valdef-box-sizing-border-box">border-box</a>, but only for the purpose of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑦">height</a>, <a class="property" data-link-type="propdesc">min-height</a> and <a class="property" data-link-type="propdesc">max-height</a> properties. </p>
    <h2 class="heading settled" data-level="4" id="selectors"><span class="secno">4. </span><span class="content">Selectors</span><a class="self-link" href="#selectors"></a></h2>
    <p class="big-issue">The following test appears to be invalid. See <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=733682#c20">chromium issue
 733682</a>.</p>
    <h3 class="heading settled algorithm" data-algorithm="The :active and :hover quirk" data-level="4.1" id="the-active-and-hover-quirk"><span class="secno">4.1. </span><span class="content">The :active and :hover quirk</span><a class="self-link" href="#the-active-and-hover-quirk"></a></h3>
-   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①④">quirks mode</a>, a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#compound" id="ref-for-compound">compound selector</a> <var>selector</var> that matches the following
-conditions must not match elements that would not also match the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#any-link-pseudo" id="ref-for-any-link-pseudo">:any-link</a> selector. <a data-link-type="biblio" href="#biblio-selectors4">[SELECTORS4]</a> </p>
+   <p>In <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-document-quirks" id="ref-for-concept-document-quirks①④">quirks mode</a>, a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#compound" id="ref-for-compound">compound selector</a> <var>selector</var> that matches the following
+conditions must not match elements that would not also match the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#any-link-pseudo" id="ref-for-any-link-pseudo">:any-link</a> selector. <a data-link-type="biblio" href="#biblio-selectors4">[SELECTORS4]</a> </p>
    <ul>
     <li>
-     <p><var>selector</var> uses the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#active-pseudo" id="ref-for-active-pseudo">:active</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#hover-pseudo" id="ref-for-hover-pseudo">:hover</a> <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#pseudo-class" id="ref-for-pseudo-class">pseudo-classes</a>. </p>
+     <p><var>selector</var> uses the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#active-pseudo" id="ref-for-active-pseudo">:active</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#hover-pseudo" id="ref-for-hover-pseudo">:hover</a> <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#pseudo-class" id="ref-for-pseudo-class">pseudo-classes</a>. </p>
     <li>
-     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#type-selector" id="ref-for-type-selector">type selector</a>. </p>
+     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#type-selector" id="ref-for-type-selector">type selector</a>. </p>
     <li>
-     <p><var>selector</var> does not use an <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#attribute-selector" id="ref-for-attribute-selector">attribute selector</a>. </p>
+     <p><var>selector</var> does not use an <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#attribute-selector" id="ref-for-attribute-selector">attribute selector</a>. </p>
     <li>
-     <p><var>selector</var> does not use an <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#id-selector" id="ref-for-id-selector">ID selector</a>. </p>
+     <p><var>selector</var> does not use an <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#id-selector" id="ref-for-id-selector">ID selector</a>. </p>
     <li>
-     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#class-selector" id="ref-for-class-selector">class selector</a>. </p>
+     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#class-selector" id="ref-for-class-selector">class selector</a>. </p>
     <li>
-     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#pseudo-class" id="ref-for-pseudo-class①">pseudo-class</a> selector other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#active-pseudo" id="ref-for-active-pseudo①">:active</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#hover-pseudo" id="ref-for-hover-pseudo①">:hover</a>. </p>
+     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#pseudo-class" id="ref-for-pseudo-class①">pseudo-class</a> selector other than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#active-pseudo" id="ref-for-active-pseudo①">:active</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#hover-pseudo" id="ref-for-hover-pseudo①">:hover</a>. </p>
     <li>
-     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#pseudo-element" id="ref-for-pseudo-element">pseudo-element</a> selector. </p>
+     <p><var>selector</var> does not use a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#pseudo-element" id="ref-for-pseudo-element">pseudo-element</a> selector. </p>
     <li>
-     <p><var>selector</var> is not part of an argument to a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#functional-pseudo-class" id="ref-for-functional-pseudo-class">functional pseudo-class</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#pseudo-element" id="ref-for-pseudo-element①">pseudo-element</a>. </p>
+     <p><var>selector</var> is not part of an argument to a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#functional-pseudo-class" id="ref-for-functional-pseudo-class">functional pseudo-class</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#pseudo-element" id="ref-for-pseudo-element①">pseudo-element</a>. </p>
    </ul>
    <h2 class="no-num heading settled" id="security-privacy"><span class="content">Security and Privacy Considerations</span><a class="self-link" href="#security-privacy"></a></h2>
    <p>There are no known security or privacy impacts in this specification.</p>
@@ -489,83 +489,83 @@ if ("serviceWorker" in navigator) {
    <li><a href="#quirky-length">quirky length</a><span>, in §3.2</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-propdef-background-color">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-color">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-color">https://drafts.csswg.org/css-backgrounds/#propdef-background-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-color">3.1. The hashless hex color quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-position">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-position">https://drafts.csswg.org/css-backgrounds/#propdef-background-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-position">3.2. The unitless length quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-bottom-color">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-color">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-color">https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-bottom-color">3.1. The hashless hex color quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-bottom-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-bottom-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-bottom-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-bottom-width">3.2. The unitless length quirk</a>
     <li><a href="#ref-for-propdef-border-bottom-width①">3.3. The line height calculation quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-color">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-color">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-color">https://drafts.csswg.org/css-backgrounds/#propdef-border-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-color">3.1. The hashless hex color quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-left-color">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-left-color">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-left-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-left-color">https://drafts.csswg.org/css-backgrounds/#propdef-border-left-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-left-color">3.1. The hashless hex color quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-left-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-left-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-left-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-left-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-left-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-left-width">3.2. The unitless length quirk</a>
     <li><a href="#ref-for-propdef-border-left-width①">3.3. The line height calculation quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-right-color">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-right-color">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-right-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-right-color">https://drafts.csswg.org/css-backgrounds/#propdef-border-right-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-right-color">3.1. The hashless hex color quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-right-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-right-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-right-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-right-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-right-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-right-width">3.2. The unitless length quirk</a>
     <li><a href="#ref-for-propdef-border-right-width①">3.3. The line height calculation quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-style">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-style">https://drafts.csswg.org/css-backgrounds/#propdef-border-style</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-style">3.10. The collapsing table quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-top-color">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-color">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-color">https://drafts.csswg.org/css-backgrounds/#propdef-border-top-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-top-color">3.1. The hashless hex color quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-top-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-top-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-top-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-top-width">3.2. The unitless length quirk</a>
     <li><a href="#ref-for-propdef-border-top-width①">3.3. The line height calculation quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-width">3.2. The unitless length quirk</a>
    </ul>
@@ -651,7 +651,7 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">3.5. The percentage height calculation
 quirk</a> <a href="#ref-for-computed-value①">(2)</a> <a href="#ref-for-computed-value②">(3)</a> <a href="#ref-for-computed-value③">(4)</a> <a href="#ref-for-computed-value④">(5)</a>
@@ -669,7 +669,7 @@ quirk</a> <a href="#ref-for-computed-value①⑥">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">3.3. The line height calculation quirk</a> <a href="#ref-for-used-value①">(2)</a>
     <li><a href="#ref-for-used-value②">3.6. The html element fills the viewport
@@ -682,14 +682,8 @@ quirk</a>
     <li><a href="#ref-for-used-value⑨">3.13. The table cell height box sizing quirk</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-valuea-def-color">
-   <a href="https://drafts.csswg.org/css-color-3/#valuea-def-color">https://drafts.csswg.org/css-color-3/#valuea-def-color</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valuea-def-color">3.1. The hashless hex color quirk</a> <a href="#ref-for-valuea-def-color①">(2)</a> <a href="#ref-for-valuea-def-color②">(3)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-color">
-   <a href="https://drafts.csswg.org/css-color-4/#propdef-color">https://drafts.csswg.org/css-color-4/#propdef-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#propdef-color">https://drafts.csswg.org/css-color/#propdef-color</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-color">3.1. The hashless hex color quirk</a>
     <li><a href="#ref-for-propdef-color①">3.12. The tables inherit color from body
@@ -711,14 +705,14 @@ quirk</a> <a href="#ref-for-propdef-color②">(2)</a> <a href="#ref-for-propdef-
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">3.5. The percentage height calculation
 quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#containing-block">https://drafts.csswg.org/css-display-3/#containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#containing-block">https://drafts.csswg.org/css-display/#containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-containing-block">3.5. The percentage height calculation
 quirk</a> <a href="#ref-for-containing-block①">(2)</a>
@@ -726,7 +720,7 @@ quirk</a> <a href="#ref-for-containing-block①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">3.5. The percentage height calculation
 quirk</a> <a href="#ref-for-propdef-display①">(2)</a>
@@ -735,7 +729,7 @@ quirk</a> <a href="#ref-for-propdef-display①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-initial-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#initial-containing-block">https://drafts.csswg.org/css-display-3/#initial-containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#initial-containing-block">https://drafts.csswg.org/css-display/#initial-containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-initial-containing-block">3.5. The percentage height calculation
 quirk</a>
@@ -744,13 +738,13 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-formatting-context">https://drafts.csswg.org/css-display-3/#inline-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-formatting-context">https://drafts.csswg.org/css-display/#inline-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-formatting-context">3.8. The table cell width calculation quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-level">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-level">https://drafts.csswg.org/css-display-3/#inline-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-level">https://drafts.csswg.org/css-display/#inline-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-level">3.4. The blocks ignore line-height quirk</a>
     <li><a href="#ref-for-inline-level①">3.7. The body element fills the html element
@@ -759,13 +753,13 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table">https://drafts.csswg.org/css-display-3/#valdef-display-table</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table">https://drafts.csswg.org/css-display/#valdef-display-table</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table">3.10. The collapsing table quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-caption">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-caption">https://drafts.csswg.org/css-display-3/#valdef-display-table-caption</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-caption">https://drafts.csswg.org/css-display/#valdef-display-table-caption</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-caption">3.5. The percentage height calculation
 quirk</a>
@@ -773,7 +767,7 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-cell">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-cell">https://drafts.csswg.org/css-display-3/#valdef-display-table-cell</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-cell">https://drafts.csswg.org/css-display/#valdef-display-table-cell</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-cell">3.5. The percentage height calculation
 quirk</a> <a href="#ref-for-valdef-display-table-cell①">(2)</a>
@@ -781,19 +775,19 @@ quirk</a> <a href="#ref-for-valdef-display-table-cell①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-column">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-column">https://drafts.csswg.org/css-display-3/#valdef-display-table-column</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-column">https://drafts.csswg.org/css-display/#valdef-display-table-column</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-column">3.10. The collapsing table quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-column-group">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-column-group">https://drafts.csswg.org/css-display-3/#valdef-display-table-column-group</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-column-group">https://drafts.csswg.org/css-display/#valdef-display-table-column-group</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-column-group">3.10. The collapsing table quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-footer-group">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-footer-group">https://drafts.csswg.org/css-display-3/#valdef-display-table-footer-group</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-footer-group">https://drafts.csswg.org/css-display/#valdef-display-table-footer-group</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-footer-group">3.5. The percentage height calculation
 quirk</a>
@@ -801,7 +795,7 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-header-group">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-header-group">https://drafts.csswg.org/css-display-3/#valdef-display-table-header-group</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-header-group">https://drafts.csswg.org/css-display/#valdef-display-table-header-group</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-header-group">3.5. The percentage height calculation
 quirk</a>
@@ -809,24 +803,18 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-row">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-row">https://drafts.csswg.org/css-display-3/#valdef-display-table-row</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-row">https://drafts.csswg.org/css-display/#valdef-display-table-row</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-row">3.5. The percentage height calculation
 quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table-row-group">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table-row-group">https://drafts.csswg.org/css-display-3/#valdef-display-table-row-group</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table-row-group">https://drafts.csswg.org/css-display/#valdef-display-table-row-group</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table-row-group">3.5. The percentage height calculation
 quirk</a>
     <li><a href="#ref-for-valdef-display-table-row-group①">3.10. The collapsing table quirk</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-font-size">
-   <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size">https://drafts.csswg.org/css-fonts-3/#propdef-font-size</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-font-size">3.2. The unitless length quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-vertical-align">
@@ -848,14 +836,14 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-float-none">
-   <a href="https://drafts.csswg.org/css-page-floats-3/#valdef-float-none">https://drafts.csswg.org/css-page-floats-3/#valdef-float-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-page-floats/#valdef-float-none">https://drafts.csswg.org/css-page-floats/#valdef-float-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-float-none">3.7. The body element fills the html element
 quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-position-absolute">
-   <a href="https://drafts.csswg.org/css-position-3/#valdef-position-absolute">https://drafts.csswg.org/css-position-3/#valdef-position-absolute</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#valdef-position-absolute">https://drafts.csswg.org/css-position/#valdef-position-absolute</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-position-absolute">3.5. The percentage height calculation
 quirk</a>
@@ -864,26 +852,26 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-bottom">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-bottom">https://drafts.csswg.org/css-position-3/#propdef-bottom</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-bottom">https://drafts.csswg.org/css-position/#propdef-bottom</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-bottom">3.2. The unitless length quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-position-fixed">
-   <a href="https://drafts.csswg.org/css-position-3/#valdef-position-fixed">https://drafts.csswg.org/css-position-3/#valdef-position-fixed</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#valdef-position-fixed">https://drafts.csswg.org/css-position/#valdef-position-fixed</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-position-fixed">3.7. The body element fills the html element
 quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-left">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-left">https://drafts.csswg.org/css-position-3/#propdef-left</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-left">https://drafts.csswg.org/css-position/#propdef-left</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-left">3.2. The unitless length quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">3.5. The percentage height calculation
 quirk</a> <a href="#ref-for-propdef-position①">(2)</a>
@@ -892,27 +880,27 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-position-relative">
-   <a href="https://drafts.csswg.org/css-position-3/#valdef-position-relative">https://drafts.csswg.org/css-position-3/#valdef-position-relative</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#valdef-position-relative">https://drafts.csswg.org/css-position/#valdef-position-relative</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-position-relative">3.5. The percentage height calculation
 quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-right">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-right">https://drafts.csswg.org/css-position-3/#propdef-right</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-right">https://drafts.csswg.org/css-position/#propdef-right</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-right">3.2. The unitless length quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-position-static">
-   <a href="https://drafts.csswg.org/css-position-3/#valdef-position-static">https://drafts.csswg.org/css-position-3/#valdef-position-static</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#valdef-position-static">https://drafts.csswg.org/css-position/#valdef-position-static</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-position-static">3.5. The percentage height calculation
 quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-top">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-top">https://drafts.csswg.org/css-position-3/#propdef-top</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-top">https://drafts.csswg.org/css-position/#propdef-top</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-top">3.2. The unitless length quirk</a>
    </ul>
@@ -969,26 +957,26 @@ calculation quirk</a> <a href="#ref-for-propdef-width⑤">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-dimension-token">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token">https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-dimension-token">https://drafts.csswg.org/css-syntax/#typedef-dimension-token</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-dimension-token">3.1. The hashless hex color quirk</a> <a href="#ref-for-typedef-dimension-token①">(2)</a> <a href="#ref-for-typedef-dimension-token②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-ident-token">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-ident-token">https://drafts.csswg.org/css-syntax-3/#typedef-ident-token</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-ident-token">https://drafts.csswg.org/css-syntax/#typedef-ident-token</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-ident-token">3.1. The hashless hex color quirk</a> <a href="#ref-for-typedef-ident-token①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-number-token">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-number-token">https://drafts.csswg.org/css-syntax-3/#typedef-number-token</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-number-token">https://drafts.csswg.org/css-syntax/#typedef-number-token</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-number-token">3.1. The hashless hex color quirk</a> <a href="#ref-for-typedef-number-token①">(2)</a>
     <li><a href="#ref-for-typedef-number-token②">3.2. The unitless length quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-component-value">
-   <a href="https://drafts.csswg.org/css-syntax-3/#component-value">https://drafts.csswg.org/css-syntax-3/#component-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#component-value">https://drafts.csswg.org/css-syntax/#component-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-component-value">3.1. The hashless hex color quirk</a> <a href="#ref-for-component-value①">(2)</a> <a href="#ref-for-component-value②">(3)</a>
     <li><a href="#ref-for-component-value③">3.2. The unitless length quirk</a> <a href="#ref-for-component-value④">(2)</a>
@@ -1116,50 +1104,10 @@ quirk</a> <a href="#ref-for-border-edge③">(2)</a>
 quirk</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">3.7. The body element fills the html element
-quirk</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-illegal">
    <a href="https://drafts.csswg.org/css2/conform.html#illegal">https://drafts.csswg.org/css2/conform.html#illegal</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-illegal">3.1. The hashless hex color quirk</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-line-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-line-height">https://drafts.csswg.org/css2/#propdef-line-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-line-height">3.3. The line height calculation quirk</a>
-    <li><a href="#ref-for-propdef-line-height①">3.4. The blocks ignore line-height quirk</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-height">https://drafts.csswg.org/css2/#propdef-max-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-height">3.2. The unitless length quirk</a>
-    <li><a href="#ref-for-propdef-max-height①">3.13. The table cell height box sizing quirk</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-width">https://drafts.csswg.org/css2/#propdef-max-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-width">3.2. The unitless length quirk</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-height">https://drafts.csswg.org/css2/#propdef-min-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-height">3.2. The unitless length quirk</a>
-    <li><a href="#ref-for-propdef-min-height①">3.13. The table cell height box sizing quirk</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-width">https://drafts.csswg.org/css2/#propdef-min-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-width">3.2. The unitless length quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-replaced-element">
@@ -1169,7 +1117,7 @@ quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-spanning-element">
-   <a href="https://drafts.csswg.org/css-multicol-1/#spanning-element">https://drafts.csswg.org/css-multicol-1/#spanning-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#spanning-element">https://drafts.csswg.org/css-multicol/#spanning-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-spanning-element">3.7. The body element fills the html element
 quirk</a>
@@ -1296,67 +1244,67 @@ calculation quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-active-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#active-pseudo">https://drafts.csswg.org/selectors-4/#active-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#active-pseudo">https://drafts.csswg.org/selectors/#active-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-active-pseudo">4.1. The :active and :hover quirk</a> <a href="#ref-for-active-pseudo①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-any-link-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#any-link-pseudo">https://drafts.csswg.org/selectors-4/#any-link-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#any-link-pseudo">https://drafts.csswg.org/selectors/#any-link-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-any-link-pseudo">4.1. The :active and :hover quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-hover-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#hover-pseudo">https://drafts.csswg.org/selectors-4/#hover-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#hover-pseudo">https://drafts.csswg.org/selectors/#hover-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-hover-pseudo">4.1. The :active and :hover quirk</a> <a href="#ref-for-hover-pseudo①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-attribute-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#attribute-selector">https://drafts.csswg.org/selectors-4/#attribute-selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#attribute-selector">https://drafts.csswg.org/selectors/#attribute-selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-attribute-selector">4.1. The :active and :hover quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-class-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#class-selector">https://drafts.csswg.org/selectors-4/#class-selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#class-selector">https://drafts.csswg.org/selectors/#class-selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-class-selector">4.1. The :active and :hover quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-compound">
-   <a href="https://drafts.csswg.org/selectors-4/#compound">https://drafts.csswg.org/selectors-4/#compound</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#compound">https://drafts.csswg.org/selectors/#compound</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-compound">4.1. The :active and :hover quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-functional-pseudo-class">
-   <a href="https://drafts.csswg.org/selectors-4/#functional-pseudo-class">https://drafts.csswg.org/selectors-4/#functional-pseudo-class</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#functional-pseudo-class">https://drafts.csswg.org/selectors/#functional-pseudo-class</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-functional-pseudo-class">4.1. The :active and :hover quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-id-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#id-selector">https://drafts.csswg.org/selectors-4/#id-selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#id-selector">https://drafts.csswg.org/selectors/#id-selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-id-selector">4.1. The :active and :hover quirk</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-pseudo-class">
-   <a href="https://drafts.csswg.org/selectors-4/#pseudo-class">https://drafts.csswg.org/selectors-4/#pseudo-class</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#pseudo-class">https://drafts.csswg.org/selectors/#pseudo-class</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-pseudo-class">4.1. The :active and :hover quirk</a> <a href="#ref-for-pseudo-class①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-pseudo-element">
-   <a href="https://drafts.csswg.org/selectors-4/#pseudo-element">https://drafts.csswg.org/selectors-4/#pseudo-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#pseudo-element">https://drafts.csswg.org/selectors/#pseudo-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-pseudo-element">4.1. The :active and :hover quirk</a> <a href="#ref-for-pseudo-element①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-type-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#type-selector">https://drafts.csswg.org/selectors-4/#type-selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#type-selector">https://drafts.csswg.org/selectors/#type-selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-type-selector">4.1. The :active and :hover quirk</a>
    </ul>
@@ -1395,15 +1343,10 @@ calculation quirk</a>
      <li><span class="dfn-paneled" id="term-for-propdef-padding-top">padding-top</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
      <li><span class="dfn-paneled" id="term-for-used-value">used value</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-color-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-valuea-def-color">&lt;color></span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-color-4]</a> defines the following terms:
@@ -1434,11 +1377,6 @@ calculation quirk</a>
      <li><span class="dfn-paneled" id="term-for-valdef-display-table-header-group">table-header-group</span>
      <li><span class="dfn-paneled" id="term-for-valdef-display-table-row">table-row</span>
      <li><span class="dfn-paneled" id="term-for-valdef-display-table-row-group">table-row-group</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-fonts-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-font-size">font-size</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-inline-3]</a> defines the following terms:
@@ -1526,13 +1464,7 @@ calculation quirk</a>
      <li><span class="dfn-paneled" id="term-for-block-container-element">block container element</span>
      <li><span class="dfn-paneled" id="term-for-border-edge">border box</span>
      <li><span class="dfn-paneled" id="term-for-content-edge">content box</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
      <li><span class="dfn-paneled" id="term-for-illegal">illegal</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-line-height">line-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-height">max-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-width">max-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-height">min-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-width">min-width</span>
      <li><span class="dfn-paneled" id="term-for-replaced-element">replaced element</span>
     </ul>
    <li>
@@ -1589,18 +1521,14 @@ calculation quirk</a>
    <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="https://drafts.csswg.org/css-backgrounds/">CSS Backgrounds and Borders Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-backgrounds/">https://drafts.csswg.org/css-backgrounds/</a>
    <dt id="biblio-css-box-4">[CSS-BOX-4]
    <dd>Elika Etemad. <a href="https://drafts.csswg.org/css-box-4/">CSS Box Model Module Level 4</a>. URL: <a href="https://drafts.csswg.org/css-box-4/">https://drafts.csswg.org/css-box-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://drafts.csswg.org/css-cascade/">CSS Cascading and Inheritance Level 5</a>. URL: <a href="https://drafts.csswg.org/css-cascade/">https://drafts.csswg.org/css-cascade/</a>
-   <dt id="biblio-css-color-3">[CSS-COLOR-3]
-   <dd>Tantek Çelik; Chris Lilley; David Baron. <a href="https://drafts.csswg.org/css-color-3/">CSS Color Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-color-3/">https://drafts.csswg.org/css-color-3/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://drafts.csswg.org/css-cascade/">CSS Cascading and Inheritance Level 4</a>. URL: <a href="https://drafts.csswg.org/css-cascade/">https://drafts.csswg.org/css-cascade/</a>
    <dt id="biblio-css-color-4">[CSS-COLOR-4]
    <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://drafts.csswg.org/css-color/">CSS Color Module Level 4</a>. URL: <a href="https://drafts.csswg.org/css-color/">https://drafts.csswg.org/css-color/</a>
    <dt id="biblio-css-conditional-3">[CSS-CONDITIONAL-3]
    <dd>David Baron; Elika Etemad; Chris Lilley. <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-conditional-3/">https://drafts.csswg.org/css-conditional-3/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://drafts.csswg.org/css-display/">CSS Display Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-display/">https://drafts.csswg.org/css-display/</a>
-   <dt id="biblio-css-fonts-3">[CSS-FONTS-3]
-   <dd>John Daggett; Myles Maxfield; Chris Lilley. <a href="https://drafts.csswg.org/css-fonts-3/">CSS Fonts Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-fonts-3/">https://drafts.csswg.org/css-fonts-3/</a>
    <dt id="biblio-css-inline-3">[CSS-INLINE-3]
    <dd>Dave Cramer; Elika Etemad; Steve Zilles. <a href="https://drafts.csswg.org/css-inline-3/">CSS Inline Layout Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-inline-3/">https://drafts.csswg.org/css-inline-3/</a>
    <dt id="biblio-css-masking-1">[CSS-MASKING-1]

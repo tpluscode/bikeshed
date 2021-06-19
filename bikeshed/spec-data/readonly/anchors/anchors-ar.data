@@ -107,8 +107,8 @@ https://www.w3.org/TR/wai-aria-1.2/#dom-ariaattributes
 -
 ArrayBuffer
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-ArrayBuffer
@@ -117,8 +117,8 @@ https://heycam.github.io/webidl/#idl-ArrayBuffer
 -
 ArrayBufferView
 typedef
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#ArrayBufferView
@@ -697,8 +697,8 @@ WindowOrWorkerGlobalScope/setInterval(handler)
 -
 arguments
 argument
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-function-arguments
@@ -718,8 +718,8 @@ https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#ar
 -
 aria attributes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermARIAAttribute
@@ -728,8 +728,8 @@ https://svgwg.org/svg2-draft/struct.html#TermARIAAttribute
 -
 aria attributes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermARIAAttribute
@@ -1740,8 +1740,8 @@ https://www.w3.org/TR/css-counter-styles-3/#armenian
 -
 armenian
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-armenian
@@ -1751,8 +1751,8 @@ list-style-type
 -
 armenian
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-armenian
@@ -1998,8 +1998,8 @@ https://www.w3.org/TR/webdriver2/#dfn-array
 -
 array
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#array
@@ -2008,8 +2008,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#array
 -
 array
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#array
@@ -2048,8 +2048,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#array-index-property-
 -
 array index property name
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-array-index-property-name
@@ -2058,8 +2058,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-array-index-property-name
 -
 array key
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#array-key
@@ -2068,8 +2068,8 @@ https://w3c.github.io/IndexedDB/#array-key
 -
 array key
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#array-key
@@ -2118,8 +2118,8 @@ https://www.w3.org/TR/webgpu/#abstract-opdef-array-layer-count
 -
 array size
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#array-size
@@ -2128,8 +2128,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#array-size
 -
 array size
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#array-size
@@ -2237,8 +2237,8 @@ Body
 -
 arrayBuffer()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-blob-arraybuffer
@@ -2248,8 +2248,8 @@ Blob
 -
 arrayBuffer()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-blob-arraybuffer
@@ -2356,8 +2356,8 @@ https://www.w3.org/TR/beacon/#arraybuffer
 -
 arraybuffer
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ArrayBuffer
@@ -2386,8 +2386,8 @@ https://www.w3.org/TR/beacon/#arraybufferview
 -
 arraybufferview
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ArrayBufferView
@@ -2406,8 +2406,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#arraycreate
 -
 arrayed texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#arrayed-texture
@@ -2416,8 +2416,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#arrayed-texture
 -
 arrayed texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#arrayed-texture

@@ -88,8 +88,8 @@ SVGFEOffsetElement
 -
 dx
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextElementDXAttribute
@@ -99,8 +99,8 @@ text
 -
 dx
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPositioningElement__dx
@@ -110,8 +110,8 @@ SVGTextPositioningElement
 -
 dx
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextElementDXAttribute
@@ -121,8 +121,8 @@ text
 -
 dx
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPositioningElement__dx

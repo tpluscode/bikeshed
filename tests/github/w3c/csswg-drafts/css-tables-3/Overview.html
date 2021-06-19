@@ -1085,15 +1085,15 @@ on screen, on paper, etc.
    <p>The CSS model does not require that the document language include elements that correspond to each of these components.
 	For document languages (such as XML applications) that do not have pre-defined table elements,
 		authors must map document language elements to table elements.
-	This is done with the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display</a> property.</p>
-   <p>The following <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display</a> values assign table formatting rules to an arbitrary element:</p>
+	This is done with the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display</a> property.</p>
+   <p>The following <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display</a> values assign table formatting rules to an arbitrary element:</p>
    <dl id="display-types">
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="table">table</dfn> (equivalent to HTML: &lt;table>) 
     <dd>Specifies that an element defines a table
-			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level" id="ref-for-block-level">block-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#flow-layout" id="ref-for-flow-layout">flow layout</a>. 
+			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level" id="ref-for-block-level">block-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#flow-layout" id="ref-for-flow-layout">flow layout</a>. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="inline-table">inline-table</dfn> (equivalent to HTML: &lt;table>) 
     <dd>Specifies that an element defines a table
-			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level">inline-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#flow-layout" id="ref-for-flow-layout①">flow layout</a>. 
+			that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level">inline-level</a> when placed in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#flow-layout" id="ref-for-flow-layout①">flow layout</a>. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="table-row">table-row</dfn> (equivalent to HTML: &lt;tr>) 
     <dd>Specifies that an element is a row of cells. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="table-row-group">table-row-group</dfn> (equivalent to HTML: &lt;tbody>) 
@@ -1125,7 +1125,7 @@ on screen, on paper, etc.
 			Table captions are positioned between the table margins and its borders. 
    </dl>
    <p class="advisement"> Authors should not assign a display type from the previous list to replaced elements (eg: input fields or images).
-		When the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display②">display</a> property of a replaced element computes to one of these values,
+		When the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display②">display</a> property of a replaced element computes to one of these values,
 			it is handled instead as though the author had declared either <code>block</code> (for <a data-link-type="dfn" href="#table" id="ref-for-table">table</a> display) or <code>inline</code> (for all other values).
 		Whitespace collapsing and box generation must happen around those replaced elements
 			like if they never had any table-internal display value applied to them,
@@ -1140,7 +1140,7 @@ on screen, on paper, etc.
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-local-lt="table-grid" data-lt="table grid box | table-grid box" id="table-grid-box">table grid box</dfn> 
     <dd> A block-level box containing the table-internal boxes, excluding its captions. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="table-root-element">table-root</dfn> element 
-    <dd> An element whose <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-table" id="ref-for-valdef-display-table">table</a>. 
+    <dd> An element whose <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-table" id="ref-for-valdef-display-table">table</a>. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="table-non-root-element">table-non-root</dfn> box or element 
     <dd> A <a data-link-type="dfn" href="#proper-table-child-element" id="ref-for-proper-table-child-element">proper table child</a>, or a <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell②⑥">table-cell</a> box. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="table-track">table-track</dfn> box or element 
@@ -1269,7 +1269,7 @@ on screen, on paper, etc.
    </ol>
    <div class="note" role="note"> Please note that some layout modes such as flexbox and grid <a href="http://www.w3.org/TR/css-display-3/#blockify">override the display type</a> of their children.
 				These transformations happen before the table fixup. </div>
-   <div class="note" role="note"> Please note that the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a> properties sometimes <a href="http://www.w3.org/TR/CSS22/visuren.html#dis-pos-flo">affect the computed value</a> of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display③">display</a>.
+   <div class="note" role="note"> Please note that the <a class="property" data-link-type="propdesc">float</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a> properties sometimes <a href="http://www.w3.org/TR/CSS22/visuren.html#dis-pos-flo">affect the computed value</a> of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display③">display</a>.
 				When those properties are used on what should have been table internal boxes, they switch to <code>block</code> instead.
 				This transformation happen before the table fixup. </div>
    <div class="note" role="note"> We have modified the text of this section from CSS 2.2 to make it easier to read.
@@ -1283,7 +1283,7 @@ on screen, on paper, etc.
 					their computed background is “transparent”,
 					their computed padding is “0px”,
 					their computed border-style is “none”.</p>
-    <p>It is also worth reminding that an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#anonymous" id="ref-for-anonymous">anonymous box</a> inherits property values through the box tree.</p>
+    <p>It is also worth reminding that an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#anonymous" id="ref-for-anonymous">anonymous box</a> inherits property values through the box tree.</p>
    </div>
    <h4 class="heading settled" data-level="2.2.3" id="fixup-examples"><span class="secno">2.2.3. </span><span class="content">Examples</span><a class="self-link" href="#fixup-examples"></a></h4>
    <div class="example" id="example-6896a3aa">
@@ -1579,7 +1579,7 @@ on screen, on paper, etc.
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-border-spacing">border-spacing</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{1,2}</a> 
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{1,2}</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>0px 0px 
@@ -1670,10 +1670,10 @@ on screen, on paper, etc.
    <h4 class="heading settled" data-level="3.6.1" id="global-style-overrides"><span class="secno">3.6.1. </span><span class="content">Overrides applying in all modes</span><a class="self-link" href="#global-style-overrides"></a></h4>
    <p>The following rules apply to all tables, irrespective of the layout mode in use.</p>
    <ul>
-    <li>The computed values of properties <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position①">position</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float①">float</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin">margin</a>-*, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-top" id="ref-for-propdef-top">top</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-right" id="ref-for-propdef-right">right</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-bottom" id="ref-for-propdef-bottom">bottom</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-left" id="ref-for-propdef-left">left</a> on the table
+    <li>The computed values of properties <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position①">position</a>, <a class="property" data-link-type="propdesc">float</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin">margin</a>-*, <span class="property">top</span>, <span class="property">right</span>, <span class="property">bottom</span>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-left" id="ref-for-propdef-left">left</a> on the table
 					are used on the table-wrapper box and not the table grid box;
 					the same holds true for the properties whose use could force the used value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-transforms-2/#propdef-transform-style" id="ref-for-propdef-transform-style">transform-style</a> to <code>flat</code> (see <a href="https://drafts.csswg.org/css-transforms/#grouping-property-values">list</a>) and their shorthands/longhands relatives:
-						this list currently includes <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow">overflow</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-opacity" id="ref-for-propdef-opacity">opacity</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/filter-effects-1/#propdef-filter" id="ref-for-propdef-filter">filter</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/css-masking-1/#propdef-clip" id="ref-for-propdef-clip">clip</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/css-masking-1/#propdef-clip-path" id="ref-for-propdef-clip-path">clip-path</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/compositing-2/#propdef-isolation" id="ref-for-propdef-isolation">isolation</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/css-masking-1/#propdef-mask" id="ref-for-propdef-mask">mask</a>-*, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/compositing-2/#propdef-mix-blend-mode" id="ref-for-propdef-mix-blend-mode">mix-blend-mode</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-transforms-1/#propdef-transform" id="ref-for-propdef-transform">transform</a>-* and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-transforms-2/#propdef-perspective" id="ref-for-propdef-perspective">perspective</a>. <br> Where the specified values are not applied on the table grid and/or wrapper boxes,
+						this list currently includes <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow">overflow</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-opacity" id="ref-for-propdef-opacity">opacity</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/filter-effects-1/#propdef-filter" id="ref-for-propdef-filter">filter</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/css-masking-1/#propdef-clip" id="ref-for-propdef-clip">clip</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/css-masking-1/#propdef-clip-path" id="ref-for-propdef-clip-path">clip-path</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/compositing-2/#propdef-isolation" id="ref-for-propdef-isolation">isolation</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/css-masking-1/#propdef-mask" id="ref-for-propdef-mask">mask</a>-*, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/compositing-2/#propdef-mix-blend-mode" id="ref-for-propdef-mix-blend-mode">mix-blend-mode</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-transforms/#propdef-transform" id="ref-for-propdef-transform">transform</a>-* and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-transforms-2/#propdef-perspective" id="ref-for-propdef-perspective">perspective</a>. <br> Where the specified values are not applied on the table grid and/or wrapper boxes,
 						the unset values are used instead for that box (inherit or initial, depending on the property). 
     <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow①">overflow</a> property on the <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element①①">table-root</a> and <a data-link-type="dfn" href="#table-wrapper-box" id="ref-for-table-wrapper-box①">table-wrapper</a> box, when its value is not either <code>visible</code> or <code>hidden</code>,
 					is ignored and treated as if its value was <code>visible</code>. 
@@ -1681,7 +1681,7 @@ on screen, on paper, etc.
 					except when explicitly specified by this specification. 
     <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin①">margin</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding" id="ref-for-propdef-padding">padding</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-overflow-3/#propdef-overflow" id="ref-for-propdef-overflow②">overflow</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-z-index" id="ref-for-propdef-z-index">z-index</a> of <a data-link-type="dfn" href="#table-track" id="ref-for-table-track②">table-track</a> and <a data-link-type="dfn" href="#table-track-group-element" id="ref-for-table-track-group-element②">table-track-group</a> are ignored. 
     <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin②">margin</a> of <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell①⓪">table-cell</a> boxes is ignored (as if it was set to 0px). 
-    <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background" id="ref-for-propdef-background">background</a> of <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell①①">table-cell</a> boxes
+    <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background" id="ref-for-propdef-background">background</a> of <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell①①">table-cell</a> boxes
 					are painted using a special background painting algorithm described in <a href="#drawing-cell-backgrounds">§ 5.3.2 Drawing cell backgrounds</a>. 
    </ul>
    <h4 class="heading settled" data-level="3.6.2" id="collapsed-style-overrides"><span class="secno">3.6.2. </span><span class="content">Overrides applying in collapsed-borders mode</span><a class="self-link" href="#collapsed-style-overrides"></a></h4>
@@ -1689,7 +1689,7 @@ on screen, on paper, etc.
    <ul>
     <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding" id="ref-for-propdef-padding①">padding</a> of the <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element①②">table-root</a> is ignored (as if it was set to 0px). 
     <li>The <a class="property" data-link-type="propdesc" href="#propdef-border-spacing" id="ref-for-propdef-border-spacing②">border-spacing</a> of the <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element①③">table-root</a> is ignored (as if it was set to 0px). 
-    <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-radius" id="ref-for-propdef-border-radius">border-radius</a> of both <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element①④">table-root</a> and <a data-link-type="dfn" href="#table-non-root-element" id="ref-for-table-non-root-element②">table-non-root</a> boxes
+    <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-radius" id="ref-for-propdef-border-radius">border-radius</a> of both <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element①④">table-root</a> and <a data-link-type="dfn" href="#table-non-root-element" id="ref-for-table-non-root-element②">table-non-root</a> boxes
 					is ignored (as if it was set to 0px). 
     <li>The values used for the layout and rendering of the borders of the <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element①⑤">table-root</a> and the <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell①②">table-cell</a> boxes it owns are
 						determined using a special conflict resolution algorithm described in <a href="#border-collapsing">§ 3.7 Border-collapsing</a>. 
@@ -1720,7 +1720,7 @@ on screen, on paper, etc.
    <div class="note" role="note"> For the purpose of this algorithm, “harmonizing” a set of borders means
 				applying the <a href="#border-style-harmonization-algorithm">“Harmonization Algorithm for Collapsed Borders”</a> on the given set of borders, and
 				set those borders' used values to the value resulting from the algorithm,
-				except for cells having a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image-source" id="ref-for-propdef-border-image-source">border-image-source</a> different from none:
+				except for cells having a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-image-source" id="ref-for-propdef-border-image-source">border-image-source</a> different from none:
 				those keep their initial values. </div>
    <p><b>For any <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell①④">table-cell</a> C° of a <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element①⑦">table-root</a>:</b></p>
    <ul>
@@ -1820,10 +1820,10 @@ on screen, on paper, etc.
      <h5 class="heading settled" data-level="3.7.1.3" id="border-specificity"><span class="secno">3.7.1.3. </span><span class="content">Specificity of a border style</span><a class="self-link" href="#border-specificity"></a></h5>
      <p>Given two borders styles, the border style having the most specificity is the border style which…</p>
      <ol>
-      <li>… has the value "hidden" as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style" id="ref-for-propdef-border-style">border-style</a>, if only one does
-      <li>… has the biggest <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width" id="ref-for-propdef-border-width">border-width</a>, once converted into css pixels
+      <li>… has the value "hidden" as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-style" id="ref-for-propdef-border-style">border-style</a>, if only one does 
+      <li>… has the biggest <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-width" id="ref-for-propdef-border-width">border-width</a>, once converted into css pixels 
       <li>
-       … has the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style" id="ref-for-propdef-border-style①">border-style</a> which comes first in the following list:
+       … has the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-style" id="ref-for-propdef-border-style①">border-style</a> which comes first in the following list: 
 <pre>double, solid, dashed, dotted, ridge, outset, groove, inset, none</pre>
      </ol>
      <p>If none of these criterion matches, then both borders share the same specificity.</p>
@@ -2773,10 +2773,10 @@ img[title] { float: none; }
      <div class="note" role="note"> <a class="hint" href="https://jsfiddle.net/3pox7b4f/" id="spanning-ghost-rows">~Testcase</a> <a class="hint" href="https://jsfiddle.net/3pox7b4f/1/">!!Testcase</a> <a class="hint" href="https://jsfiddle.net/3pox7b4f/3/">!!Testcase</a> <a class="hint" href="https://jsfiddle.net/3pox7b4f/4/">!!Testcase</a> <a class="hint" href="https://jsfiddle.net/3pox7b4f/5/">Testcase</a> </div>
      <h2 class="heading settled" data-level="4" id="abspos"><span class="secno">4. </span><span class="content"> Absolute Positioning</span><a class="self-link" href="#abspos"></a></h2>
      <h3 class="heading settled" data-level="4.1" id="abspos-boxes-in-table-root"><span class="secno">4.1. </span><span class="content"> With a table-root as containing block</span><a class="self-link" href="#abspos-boxes-in-table-root"></a></h3>
-     <p>If an absolutely positioned element’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a> is generated by a <a data-link-type="dfn" href="#table-wrapper-box" id="ref-for-table-wrapper-box③">table-wrapper</a> box,
+     <p>If an absolutely positioned element’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block">containing block</a> is generated by a <a data-link-type="dfn" href="#table-wrapper-box" id="ref-for-table-wrapper-box③">table-wrapper</a> box,
 	the containing block corresponds to the area around which the table margins are applied,
 	including the area where the table border is drawn and the margin area of any table-caption.
-	The offset properties (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-top" id="ref-for-propdef-top①">top</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-right" id="ref-for-propdef-right①">right</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-bottom" id="ref-for-propdef-bottom①">bottom</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-left" id="ref-for-propdef-left①">left</a>)
+	The offset properties (<a class="property" data-link-type="propdesc">top</a>/<span class="property">right</span>/<span class="property">bottom</span>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-left" id="ref-for-propdef-left①">left</a>)
 	then indicate offsets inwards from the corresponding edges
 	of this <span id="ref-for-containing-block①">containing block</span>, as normal.</p>
      <p>Absolute positioning occurs after layout of the <a data-link-type="dfn" href="#table" id="ref-for-table⑤">table</a> and its in-flow contents,
@@ -2790,13 +2790,13 @@ img[title] { float: none; }
       </figure>
      </div>
      <h3 class="heading settled" data-level="4.2" id="abspos-boxes-in-table-internal"><span class="secno">4.2. </span><span class="content"> With a table-internal as containing block</span><a class="self-link" href="#abspos-boxes-in-table-internal"></a></h3>
-     <p>If an absolutely positioned element’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block②">containing block</a> is generated by a <a data-link-type="dfn" href="#table-internal-element" id="ref-for-table-internal-element①">table-internal</a>,
+     <p>If an absolutely positioned element’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block②">containing block</a> is generated by a <a data-link-type="dfn" href="#table-internal-element" id="ref-for-table-internal-element①">table-internal</a>,
 	the containing block corresponds to the area starting at the top left corner of the <a href="#bounding-box-assignment">the area that would be assigned to the box during layout</a> but whose size is computed to be  the one of <a href="#bounding-box-assignment">the area that would be assigned to the box during layout</a> if all tracks were considered visible (irrespective of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility①">visibility</a> being set co collapse on some boxes),
 	not including borders and paddings as appropriate.</p>
      <div class="note" role="note"> This is done so that hiding column does not trigger a layout in the absolutely-positioned boxes, and the content being clipped doesn’t seem to be moving. <a class="hint" href="https://wptest.center/#/uxin57">!!Testcase</a> <a class="hint" href="https://wptest.center/#/vcmy48">!!Testcase</a> </div>
-     <p>The offset properties (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-top" id="ref-for-propdef-top②">top</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-right" id="ref-for-propdef-right②">right</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-bottom" id="ref-for-propdef-bottom②">bottom</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-left" id="ref-for-propdef-left②">left</a>)
+     <p>The offset properties (<a class="property" data-link-type="propdesc">top</a>/<span class="property">right</span>/<span class="property">bottom</span>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-left" id="ref-for-propdef-left②">left</a>)
 	then indicate offsets inwards from the corresponding edges
-	of this <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block③">containing block</a>, as normal.</p>
+	of this <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block③">containing block</a>, as normal.</p>
      <p class="issue" id="issue-b01ba738"><a class="self-link" href="#issue-b01ba738"></a> This only works in Firefox. It would make it easier to implement position:sticky in the future, though. <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=417223">[Chrome bug]</a> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1289682">[Interop risk: Firefox bug]</a> <a href="https://github.com/w3c/csswg-drafts/issues/858">&lt;https://github.com/w3c/csswg-drafts/issues/858></a></p>
      <h3 class="heading settled" data-level="4.3" id="static-position"><span class="secno">4.3. </span><span class="content"> With a table-internal box as non-containing block parent</span><a class="self-link" href="#static-position"></a></h3>
      <p>The only influence of non-containing block parent of an absolutely-positioned box is to define its static position,
@@ -2898,7 +2898,7 @@ td <c- p>{</c-> <c- k>padding</c-><c- p>:</c-> <c- m>0</c-><c- p>;</c-> <c- p>}<
 			The following rules describe in which way.</p>
      <p class="note" role="note"> The rules for background and borders painting defined in <a href="#drawing-backgrounds-and-borders">§ 5.3 Drawing backgrounds and borders</a> still apply if they are not overridden. </p>
      <p>Borders of a non-<a href="#empty-table" id="ref-for-empty-table">empty</a> <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element②⑤">table-root</a> are not painted <a data-link-type="dfn" href="#in-collapsed-borders-mode" id="ref-for-in-collapsed-borders-mode⑦">in collapsed-borders mode</a>,
-				except if the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image" id="ref-for-propdef-border-image">border-image</a> property is set.</p>
+				except if the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-image" id="ref-for-propdef-border-image">border-image</a> property is set.</p>
      <p>In this latter case, the border is drawn as if the table border was twice as big as its used value specify,
 				and as if that excess was rendered inside the padding area of the <a data-link-type="dfn" href="#table-root-element" id="ref-for-table-root-element②⑥">table-root</a>.</p>
      <p class="note" role="note"> Even if they are not drawn by the table, the table borders still occupy their space in the layout.
@@ -2906,10 +2906,10 @@ td <c- p>{</c-> <c- k>padding</c-><c- p>:</c-> <c- m>0</c-><c- p>;</c-> <c- p>}<
      <h4 class="heading settled" data-level="5.3.2" id="drawing-cell-backgrounds"><span class="secno">5.3.2. </span><span class="content">Drawing cell backgrounds</span><a class="self-link" href="#drawing-cell-backgrounds"></a></h4>
      <p class="advisement"> Anonymous table-cells added by the <a href="#missing-cells-fixup">missing cells fixup</a> step
 					do not render any of their backgrounds. </p>
-     <p>In addition to its own <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background" id="ref-for-propdef-background①">background</a>, <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell①⑨">table-cell</a> boxes also
+     <p>In addition to its own <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background" id="ref-for-propdef-background①">background</a>, <a data-link-type="dfn" href="#table-cell" id="ref-for-table-cell①⑨">table-cell</a> boxes also
 				render the backgrounds of the <a data-link-type="dfn" href="#table-track" id="ref-for-table-track④">table-track</a> and <a data-link-type="dfn" href="#table-track-group-element" id="ref-for-table-track-group-element④">table-track-group</a> boxes in which they belong.
 			This is actually different from simply inheriting their background
-				because the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-origin" id="ref-for-propdef-background-origin">background-origin</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-size" id="ref-for-propdef-background-size">background-size</a> computations will actually be done
+				because the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-origin" id="ref-for-propdef-background-origin">background-origin</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-size" id="ref-for-propdef-background-size">background-size</a> computations will actually be done
 				on the bounds of the grouping boxes, and not on those of the cell.</p>
      <p>For the purposes of finding the background of each table cell,
 				the different table boxes may be thought of as being on six superimposed layers.
@@ -2959,14 +2959,14 @@ td <c- p>{</c-> <c- k>padding</c-><c- p>:</c-> <c- m>0</c-><c- p>;</c-> <c- p>}<
 				with the added constraint that
 					for each side of the border which isn’t located at one of the table edges,
 					the border is actually clipped to the border-box drawing area as its real used value define
-					except if the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image" id="ref-for-propdef-border-image①">border-image</a> property is set.</p>
+					except if the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-image" id="ref-for-propdef-border-image①">border-image</a> property is set.</p>
      <p>If applying the previously-mentioned clipping behavior results in clipping a border over a non-integer amount of device pixels,
 				browsers may decide to snap the clipping area to a device pixel instead by ceiling the x- and y-values of the clipping area.
 			Ceiling the values ensures that in a normal writing mode,
 				the cell which gets the contested pixels between multiple cells is actually the most top left one,
 				which has a greater specificity than the other ones according to this spec. <span class="hint">See <a href="#paint-order">§ 5.1 Paint order of cells</a> and <a href="#border-conflict-resolution-algorithm">§ 3.7.1.1 Conflict Resolution Algorithm for Collapsed Borders</a>.</span></p>
      <h4 class="heading settled" data-level="5.3.4" id="border-style-overrides"><span class="secno">5.3.4. </span><span class="content">Border styles (collapsed-borders mode)</span><a class="self-link" href="#border-style-overrides"></a></h4>
-     <p>Some of the values of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style" id="ref-for-propdef-border-style②">border-style</a> have different meanings for tables <a data-link-type="dfn" href="#in-collapsed-borders-mode" id="ref-for-in-collapsed-borders-mode⑨">in collapsed-borders mode</a> than usual.
+     <p>Some of the values of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-style" id="ref-for-propdef-border-style②">border-style</a> have different meanings for tables <a data-link-type="dfn" href="#in-collapsed-borders-mode" id="ref-for-in-collapsed-borders-mode⑨">in collapsed-borders mode</a> than usual.
 			Those definitions override the default behavior for <span class="property" id="ref-for-propdef-border-style③">border-style</span> values.</p>
      <dl>
       <dt data-md>hidden
@@ -3027,7 +3027,7 @@ td <c- p>{</c-> <c- k>padding</c-><c- p>:</c-> <c- m>0</c-><c- p>;</c-> <c- p>}<
        <img alt="[see-caption-below]" src="./images/CSS-Tables-Fragmentation-2.svg" style="width:100%; max-width: 500px;"> 
       <figcaption>Expected rendering of table containing a tall row fragmented across two pages</figcaption>
      </figure>
-     <p>When <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> is applied
+     <p>When <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> is applied
 		to a <a data-link-type="dfn" href="#table-row-group" id="ref-for-table-row-group⑧">table-row-group</a> or a <a data-link-type="dfn" href="#table-row" id="ref-for-table-row①②">table-row</a> box,
 			the user agent has to insert some vertical gap
 			between the rows located before and after the breaking point
@@ -3040,7 +3040,7 @@ td <c- p>{</c-> <c- k>padding</c-><c- p>:</c-> <c- m>0</c-><c- p>;</c-> <c- p>}<
      <p>When rendering the document into a <a data-link-type="dfn" href="https://drafts.csswg.org/mediaqueries-5/#paged-media" id="ref-for-paged-media">paged media</a>,
 			user agents must repeat <a href="#table-header-group" id="ref-for-table-header-group①">header rows</a> and <a href="#table-footer-group" id="ref-for-table-footer-group①">footer rows</a> on each page spanned by a table
 			if the page is the table’s fragmentainer,
-			if the header/footer has avoid <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside</a> applied to it,
+			if the header/footer has avoid <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside</a> applied to it,
 			if the height required to do so is inferior to
 				two quarters of the page height
 				(up to one quarter for header rows, and
@@ -3523,52 +3523,52 @@ caption<c- p>[</c->align=bottom i<c- p>]</c-> <c- p>{</c-> <c- k>caption-side</c
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background">https://drafts.csswg.org/css-backgrounds-3/#propdef-background</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background">https://drafts.csswg.org/css-backgrounds/#propdef-background</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background">3.6.1. Overrides applying in all modes</a>
     <li><a href="#ref-for-propdef-background①">5.3.2. Drawing cell backgrounds</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-origin">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-origin">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-origin</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-origin">https://drafts.csswg.org/css-backgrounds/#propdef-background-origin</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-origin">5.3.2. Drawing cell backgrounds</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-size">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-size">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-size</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-size">https://drafts.csswg.org/css-backgrounds/#propdef-background-size</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-size">5.3.2. Drawing cell backgrounds</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-image">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-image">https://drafts.csswg.org/css-backgrounds/#propdef-border-image</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-image">5.3.1.1. Changes in collapsed-borders mode</a>
     <li><a href="#ref-for-propdef-border-image①">5.3.3.1. Changes in collapsed-borders mode</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-image-source">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image-source">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image-source</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-image-source">https://drafts.csswg.org/css-backgrounds/#propdef-border-image-source</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-image-source">3.7.1.1. Conflict Resolution Algorithm for Collapsed Borders</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-radius">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-radius">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-radius</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-radius">https://drafts.csswg.org/css-backgrounds/#propdef-border-radius</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-radius">3.6.2. Overrides applying in collapsed-borders mode</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-style">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-style</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-style">https://drafts.csswg.org/css-backgrounds/#propdef-border-style</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-style">3.7.1.3. Specificity of a border style</a> <a href="#ref-for-propdef-border-style①">(2)</a>
     <li><a href="#ref-for-propdef-border-style②">5.3.4. Border styles (collapsed-borders mode)</a> <a href="#ref-for-propdef-border-style③">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-width">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-width">https://drafts.csswg.org/css-backgrounds/#propdef-border-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-width">3.7.1.3. Specificity of a border style</a>
    </ul>
@@ -3587,43 +3587,43 @@ caption<c- p>[</c->align=bottom i<c- p>]</c-> <c- p>{</c-> <c- k>caption-side</c
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-after">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-after">https://drafts.csswg.org/css-break-3/#propdef-break-after</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-after">https://drafts.csswg.org/css-break/#propdef-break-after</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-after">6.1. Breaking across fragmentainers</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-before">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-before">https://drafts.csswg.org/css-break-3/#propdef-break-before</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-before">https://drafts.csswg.org/css-break/#propdef-break-before</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-before">6.1. Breaking across fragmentainers</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-inside">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-inside">https://drafts.csswg.org/css-break-3/#propdef-break-inside</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-inside">https://drafts.csswg.org/css-break/#propdef-break-inside</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-inside">6.2. Repeating headers across pages</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-opacity">
-   <a href="https://drafts.csswg.org/css-color-4/#propdef-opacity">https://drafts.csswg.org/css-color-4/#propdef-opacity</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#propdef-opacity">https://drafts.csswg.org/css-color/#propdef-opacity</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-opacity">3.6.1. Overrides applying in all modes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-anonymous">
-   <a href="https://drafts.csswg.org/css-display-3/#anonymous">https://drafts.csswg.org/css-display-3/#anonymous</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#anonymous">https://drafts.csswg.org/css-display/#anonymous</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-anonymous">2.2.2. Characteristics of fixup boxes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-level">
-   <a href="https://drafts.csswg.org/css-display-3/#block-level">https://drafts.csswg.org/css-display-3/#block-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-level">https://drafts.csswg.org/css-display/#block-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-level">2.1. Table Structure</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#containing-block">https://drafts.csswg.org/css-display-3/#containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#containing-block">https://drafts.csswg.org/css-display/#containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-containing-block">4.1. 
 With a table-root as containing block</a> <a href="#ref-for-containing-block①">(2)</a>
@@ -3632,32 +3632,32 @@ With a table-internal as containing block</a> <a href="#ref-for-containing-block
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">2.1. Table Structure</a> <a href="#ref-for-propdef-display①">(2)</a> <a href="#ref-for-propdef-display②">(3)</a>
     <li><a href="#ref-for-propdef-display③">2.2.1. Fixup Algorithm</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-flow-layout">
-   <a href="https://drafts.csswg.org/css-display-3/#flow-layout">https://drafts.csswg.org/css-display-3/#flow-layout</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#flow-layout">https://drafts.csswg.org/css-display/#flow-layout</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-flow-layout">2.1. Table Structure</a> <a href="#ref-for-flow-layout①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-level">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-level">https://drafts.csswg.org/css-display-3/#inline-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-level">https://drafts.csswg.org/css-display/#inline-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-level">2.1. Table Structure</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inner-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#inner-display-type">https://drafts.csswg.org/css-display-3/#inner-display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inner-display-type">https://drafts.csswg.org/css-display/#inner-display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inner-display-type">2.1.1. Terminology</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-table">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-table">https://drafts.csswg.org/css-display-3/#valdef-display-table</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-table">https://drafts.csswg.org/css-display/#valdef-display-table</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-table">2.1.1. Terminology</a>
    </ul>
@@ -3700,7 +3700,7 @@ With a table-internal as containing block</a> <a href="#ref-for-containing-block
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-left">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-left">https://drafts.csswg.org/css-position-3/#propdef-left</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-left">https://drafts.csswg.org/css-position/#propdef-left</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-left">3.6.1. Overrides applying in all modes</a>
     <li><a href="#ref-for-propdef-left①">4.1. 
@@ -3710,7 +3710,7 @@ With a table-internal as containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">2.2.1. Fixup Algorithm</a>
     <li><a href="#ref-for-propdef-position①">3.6.1. Overrides applying in all modes</a>
@@ -3789,7 +3789,7 @@ With a table-internal as containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-transform">
-   <a href="https://drafts.csswg.org/css-transforms-1/#propdef-transform">https://drafts.csswg.org/css-transforms-1/#propdef-transform</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-transforms/#propdef-transform">https://drafts.csswg.org/css-transforms/#propdef-transform</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-transform">3.6.1. Overrides applying in all modes</a>
    </ul>
@@ -3839,47 +3839,10 @@ With a table-internal as containing block</a>
     <li><a href="#ref-for-comb-one③">5.2. Empty cell rendering (separated-borders mode)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-bottom">
-   <a href="https://drafts.csswg.org/css2/#propdef-bottom">https://drafts.csswg.org/css2/#propdef-bottom</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-bottom">3.6.1. Overrides applying in all modes</a>
-    <li><a href="#ref-for-propdef-bottom①">4.1. 
-With a table-root as containing block</a>
-    <li><a href="#ref-for-propdef-bottom②">4.2. 
-With a table-internal as containing block</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">2.2.1. Fixup Algorithm</a>
-    <li><a href="#ref-for-propdef-float①">3.6.1. Overrides applying in all modes</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-right">
-   <a href="https://drafts.csswg.org/css2/#propdef-right">https://drafts.csswg.org/css2/#propdef-right</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-right">3.6.1. Overrides applying in all modes</a>
-    <li><a href="#ref-for-propdef-right①">4.1. 
-With a table-root as containing block</a>
-    <li><a href="#ref-for-propdef-right②">4.2. 
-With a table-internal as containing block</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-border-collapse-separate">
    <a href="https://drafts.csswg.org/css2/#valdef-border-collapse-separate">https://drafts.csswg.org/css2/#valdef-border-collapse-separate</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-border-collapse-separate">3.5.2.1. The Border-Spacing property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-top">
-   <a href="https://drafts.csswg.org/css2/#propdef-top">https://drafts.csswg.org/css2/#propdef-top</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-top">3.6.1. Overrides applying in all modes</a>
-    <li><a href="#ref-for-propdef-top①">4.1. 
-With a table-root as containing block</a>
-    <li><a href="#ref-for-propdef-top②">4.2. 
-With a table-internal as containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-visibility">
@@ -4035,11 +3998,7 @@ With a table-internal as containing block</a>
    <li>
     <a data-link-type="biblio">[CSS2]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-bottom">bottom</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-right">right</span>
      <li><span class="dfn-paneled" id="term-for-valdef-border-collapse-separate">separate</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-top">top</span>
      <li><span class="dfn-paneled" id="term-for-propdef-visibility">visibility</span>
      <li><span class="dfn-paneled" id="term-for-propdef-z-index">z-index</span>
     </ul>
@@ -4066,7 +4025,7 @@ With a table-internal as containing block</a>
    <dt id="biblio-css-break-3">[CSS-BREAK-3]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/css-break-3/">https://www.w3.org/TR/css-break-3/</a>
    <dt id="biblio-css-color-4">[CSS-COLOR-4]
-   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
+   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 12 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
    <dt id="biblio-css-grid-2">[CSS-GRID-2]
@@ -4103,7 +4062,7 @@ With a table-internal as containing block</a>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
    <dt id="biblio-css-text-3">[CSS-TEXT-3]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="property-index"><span class="content">Property Index</span><a class="self-link" href="#property-index"></a></h2>
   <div class="big-element-wrapper">

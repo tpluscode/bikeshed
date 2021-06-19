@@ -823,7 +823,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
    </ul>
    <p>The transformation from the Earth coordinate frame to the device coordinate frame must use the following system of rotations.</p>
    <p>Rotations must use the right-hand convention, such that positive rotation around an axis is clockwise when viewed along the positive direction of the axis.</p>
-   <p class="note" role="note"><span>Note:</span> the coordinate system used by this specification differs from <a href="https://www.w3.org/TR/css-transforms-2/#transform-rendering">CSS Transforms 2 §4 The Transform Rendering Model</a>, where the y axis is positive to the bottom and rotations follow the left-hand convention. Additionally, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself" id="ref-for-dom-dommatrix-rotateself">rotateSelf()</a></code> and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate" id="ref-for-dom-dommatrixreadonly-rotate">rotate()</a></code>, specified in <a data-link-type="biblio" href="#biblio-geometry-1">[GEOMETRY-1]</a>, apply rotations in an Z - Y' - X'' order, which differs from the order specified here.</p>
+   <p class="note" role="note"><span>Note:</span> the coordinate system used by this specification differs from <a href="https://www.w3.org/TR/css-transforms-2/#transform-rendering">CSS Transforms 2 §4 The Transform Rendering Model</a>, where the y axis is positive to the bottom and rotations follow the left-hand convention. Additionally, <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dommatrix-rotateself" id="ref-for-dom-dommatrix-rotateself">rotateSelf()</a></code> and <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-rotate" id="ref-for-dom-dommatrixreadonly-rotate">rotate()</a></code>, specified in <a data-link-type="biblio" href="#biblio-geometry-1">[GEOMETRY-1]</a>, apply rotations in an Z - Y' - X'' order, which differs from the order specified here.</p>
    <p>Starting with the two frames aligned, the rotations are applied in the following order:</p>
    <ol id="rotations">
     <li>
@@ -1320,13 +1320,13 @@ for the application to ask for <a data-link-type="dfn" href="#permission" id="re
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dommatrixreadonly-rotate">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate">https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-rotate">https://drafts.fxtf.org/geometry/#dom-dommatrixreadonly-rotate</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dommatrixreadonly-rotate">4.1. deviceorientation Event</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-dommatrix-rotateself">
-   <a href="https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself">https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dom-dommatrix-rotateself">https://drafts.fxtf.org/geometry/#dom-dommatrix-rotateself</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-dommatrix-rotateself">4.1. deviceorientation Event</a>
    </ul>
@@ -1506,7 +1506,7 @@ for the application to ask for <a data-link-type="dfn" href="#permission" id="re
      <li><span class="dfn-paneled" id="term-for-dom-visibilitystate-visible">visible</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
@@ -1533,6 +1533,8 @@ for the application to ask for <a data-link-type="dfn" href="#permission" id="re
    <dd>Mike West. <a href="https://www.w3.org/TR/secure-contexts/">Secure Contexts</a>. 15 September 2016. CR. URL: <a href="https://www.w3.org/TR/secure-contexts/">https://www.w3.org/TR/secure-contexts/</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

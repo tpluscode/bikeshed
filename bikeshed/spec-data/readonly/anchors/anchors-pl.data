@@ -309,8 +309,8 @@ https://www.w3.org/TR/css-align-3/#propdef-place-self
 -
 placed
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request-placed
@@ -320,8 +320,8 @@ request
 -
 placed
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request-placed
@@ -445,8 +445,8 @@ https://html.spec.whatwg.org/multipage/form-elements.html#placeholder-label-opti
 -
 plain type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#plain-type
@@ -455,8 +455,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#plain-type
 -
 plain type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#plain-type
@@ -865,8 +865,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#platform-object
 -
 platform object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-platform-object
@@ -875,8 +875,8 @@ https://heycam.github.io/webidl/#dfn-platform-object
 -
 platform object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-platform-object
@@ -1095,8 +1095,8 @@ AnimationTimeline
 -
 play-during
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-play-during

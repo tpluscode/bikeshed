@@ -271,62 +271,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -910,7 +854,7 @@ on screen, on paper, etc.
   <main>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content"> Introduction</span><a class="self-link" href="#intro"></a></h2>
    <p>This specification defines the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker">::marker</a> pseudo-element,
-	the <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item">list-item</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#display-type" id="ref-for-display-type">display type</a> that generates markers,
+	the <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item">list-item</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#display-type" id="ref-for-display-type">display type</a> that generates markers,
 	and several properties controlling the placement and styling of markers.</p>
    <p>It also defines <a data-link-type="dfn" href="#counter" id="ref-for-counter">counters</a>,
 	which are special numerical objects
@@ -947,11 +891,11 @@ on screen, on paper, etc.
 	also accept the <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#css-wide-keywords" id="ref-for-css-wide-keywords">CSS-wide keywords</a> as their property value.
 	For readability they have not been repeated explicitly.</p>
    <h2 class="heading settled" data-level="2" id="declaring-a-list-item"><span class="secno">2. </span><span class="content"> Declaring a List Item</span><a class="self-link" href="#declaring-a-list-item"></a></h2>
-   <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="list-item">list item</dfn> is any element with its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display</a> property set to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-list-item" id="ref-for-valdef-display-list-item">list-item</a>. <a data-link-type="dfn" href="#list-item" id="ref-for-list-item">List items</a> generate <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①">::marker</a> pseudo-elements;
+   <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="list-item">list item</dfn> is any element with its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display</a> property set to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-list-item" id="ref-for-valdef-display-list-item">list-item</a>. <a data-link-type="dfn" href="#list-item" id="ref-for-list-item">List items</a> generate <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①">::marker</a> pseudo-elements;
 	no other elements do.
 	Additionally, <span id="ref-for-list-item①">list items</span> automatically increment an implied <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item①">list-item</a> <a data-link-type="dfn" href="#counter" id="ref-for-counter①">counter</a> (see <a href="#list-item-counter">§ 4.6 The Implicit list-item Counter</a>).</p>
    <h2 class="heading settled" data-level="3" id="markers"><span class="secno">3. </span><span class="content"> Markers</span><a class="self-link" href="#markers"></a></h2>
-   <p>The defining feature of the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item②">list item</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#display-type" id="ref-for-display-type①">display type</a> is its <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="marker | marker box" id="marker">marker</dfn>,
+   <p>The defining feature of the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item②">list item</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#display-type" id="ref-for-display-type①">display type</a> is its <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="marker | marker box" id="marker">marker</dfn>,
 	a symbol or ordinal that helps denote the beginning of each <span id="ref-for-list-item③">list item</span> in a list.
 	In the CSS layout model, <span id="ref-for-list-item④">list item</span> <a data-link-type="dfn" href="#marker" id="ref-for-marker">markers</a> are represented by
 	a <span id="ref-for-marker①">marker box</span> associated with each <span id="ref-for-list-item⑤">list item</span>.
@@ -1028,29 +972,29 @@ Note 1: This is a very short
 	which suppresses its creation.</p>
    <h4 class="heading settled" data-level="3.1.1" id="marker-properties"><span class="secno">3.1.1. </span><span class="content"> Properties Applying to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker⑦">::marker</a></span><a class="self-link" href="#marker-properties"></a></h4>
    <p>All properties can be set on a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker⑧">::marker</a> pseudo-element
-	and will have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed value</a> which will then inherit to its text content.</p>
+	and will have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed value</a> which will then inherit to its text content.</p>
    <div class="example" id="example-e21ee84f">
     <a class="self-link" href="#example-e21ee84f"></a> Inheritable properties that apply to text
 		can be set on the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker⑨">::marker</a> pseudo-element:
 		these will inherit to and take effect on its text contents.
 		Some examples of such properties include: 
     <ul>
-     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-transform" id="ref-for-propdef-text-transform">text-transform</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing">letter-spacing</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing" id="ref-for-propdef-word-spacing">word-spacing</a> (see <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a>)
+     <li><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-transform" id="ref-for-propdef-text-transform">text-transform</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing">letter-spacing</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing" id="ref-for-propdef-word-spacing">word-spacing</a> (see <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a>) 
      <li>all the font properties (see <a data-link-type="biblio" href="#biblio-css-fonts-3">[CSS-FONTS-3]</a> and its successors) 
-     <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-4/#propdef-color" id="ref-for-propdef-color">color</a> property (see <a data-link-type="biblio" href="#biblio-css-color-3">[CSS-COLOR-3]</a>)
+     <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color/#propdef-color" id="ref-for-propdef-color">color</a> property (see <a data-link-type="biblio" href="#biblio-css-color-3">[CSS-COLOR-3]</a>) 
     </ul>
    </div>
    <p>However,
 	only the following CSS properties
 	actually apply to a <a data-link-type="dfn" href="#marker" id="ref-for-marker⑤">marker box</a>:</p>
    <ul>
-    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-text-combine-upright" id="ref-for-propdef-text-combine-upright">text-combine-upright</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi">unicode-bidi</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction">direction</a> properties (see <a data-link-type="biblio" href="#biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]</a>)
+    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-text-combine-upright" id="ref-for-propdef-text-combine-upright">text-combine-upright</a>, <a class="property" data-link-type="propdesc">unicode-bidi</a>, and <span class="property">direction</span> properties (see <a data-link-type="biblio" href="#biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]</a>) 
     <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content①">content</a> property (see <a href="#content-property">§ 3.2 Generating Marker Contents</a>, below) 
     <li>all animation and transition properties (see <a data-link-type="biblio" href="#biblio-css-animations-1">[CSS-ANIMATIONS-1]</a> and <a data-link-type="biblio" href="#biblio-css-transitions-1">[CSS-TRANSITIONS-1]</a>) 
    </ul>
-   <p>Other properties should not have an effect on the <a data-link-type="dfn" href="#marker" id="ref-for-marker⑥">marker box</a> when declared directly on <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⓪">::marker</a> in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-author" id="ref-for-cascade-origin-author">author</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-user" id="ref-for-cascade-origin-user">user origin</a> of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade" id="ref-for-cascade">cascade</a>.
+   <p>Other properties should not have an effect on the <a data-link-type="dfn" href="#marker" id="ref-for-marker⑥">marker box</a> when declared directly on <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⓪">::marker</a> in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-author" id="ref-for-cascade-origin-author">author</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-user" id="ref-for-cascade-origin-user">user origin</a> of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade" id="ref-for-cascade">cascade</a>.
 	UAs may either treat such properties as not applying,
-	or enforce their value or inheritance from the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#originating-element" id="ref-for-originating-element">originating element</a> by setting a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua" id="ref-for-cascade-origin-ua">user-agent origin</a> <span class="css">!important</span> rule.</p>
+	or enforce their value or inheritance from the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#originating-element" id="ref-for-originating-element">originating element</a> by setting a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-ua" id="ref-for-cascade-origin-ua">user-agent origin</a> <span class="css">!important</span> rule.</p>
    <p class="note" role="note"><span>NOTE:</span> It is expected that future specifications will extend this list of properties
 	and relax the restriction on which properties can take effect.
 	However at the moment outside marker box layout is not fully defined,
@@ -1068,9 +1012,9 @@ Note 1: This is a very short
 	See discussion in <a href="https://github.com/w3c/csswg-drafts/issues/4448">Issue 4448</a> and <a href="https://github.com/w3c/csswg-drafts/issues/4891">Issue 4891</a>.</p>
    <p class="note" role="note"><span>Note:</span> Although the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①①">::marker</a> pseudo-element can represent
 	the <a data-link-type="dfn" href="#marker" id="ref-for-marker⑦">marker box</a> of a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-before" id="ref-for-selectordef-before①">::before</a> or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-after" id="ref-for-selectordef-after">::after</a> pseudo-element,
-	the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#compound" id="ref-for-compound">compound selector</a> <span class="css" id="ref-for-selectordef-marker①②">::marker</span>,
+	the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#compound" id="ref-for-compound">compound selector</a> <span class="css" id="ref-for-selectordef-marker①②">::marker</span>,
 	which expands to <span class="css">*::marker</span> <a data-link-type="biblio" href="#biblio-selectors-4">[SELECTORS-4]</a>,
-	will not select these markers—<wbr>an <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#originating-element" id="ref-for-originating-element①">originating element</a> that is a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#pseudo-element" id="ref-for-pseudo-element">pseudo-element</a> needs to be explicitly specified in the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#selector" id="ref-for-selector">selector</a>,
+	will not select these markers—<wbr>an <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#originating-element" id="ref-for-originating-element①">originating element</a> that is a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#pseudo-element" id="ref-for-pseudo-element">pseudo-element</a> needs to be explicitly specified in the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#selector" id="ref-for-selector">selector</a>,
 	e.g. <span class="css">::before::marker</span>.</p>
    <h3 class="heading settled" data-level="3.2" id="content-property"><span class="secno">3.2. </span><span class="content"> Generating Marker Contents</span><a class="self-link" href="#content-property"></a></h3>
    <p>The contents of a <a data-link-type="dfn" href="#marker" id="ref-for-marker⑧">marker box</a> are determined by the first of these conditions that is true:</p>
@@ -1078,13 +1022,13 @@ Note 1: This is a very short
     <dt><a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content②">content</a> on the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①③">::marker</a> itself is not <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-normal" id="ref-for-valdef-content-normal">normal</a> 
     <dd> The contents of the <a data-link-type="dfn" href="#marker" id="ref-for-marker⑨">marker box</a> are determined as defined by the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content③">content</a> property,
 			exactly as for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-before" id="ref-for-selectordef-before②">::before</a>. 
-    <dt><a class="property" data-link-type="propdesc" href="#propdef-list-style-image" id="ref-for-propdef-list-style-image①">list-style-image</a> on the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#originating-element" id="ref-for-originating-element②">originating element</a> defines a <a data-link-type="dfn" href="#marker-image" id="ref-for-marker-image">marker image</a> 
+    <dt><a class="property" data-link-type="propdesc" href="#propdef-list-style-image" id="ref-for-propdef-list-style-image①">list-style-image</a> on the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#originating-element" id="ref-for-originating-element②">originating element</a> defines a <a data-link-type="dfn" href="#marker-image" id="ref-for-marker-image">marker image</a> 
     <dd> The <a data-link-type="dfn" href="#marker" id="ref-for-marker①⓪">marker box</a> contains
-			an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#anonymous" id="ref-for-anonymous">anonymous</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline" id="ref-for-inline">inline</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element">replaced element</a> representing the specified <a data-link-type="dfn" href="#marker-image" id="ref-for-marker-image①">marker image</a>,
-			followed by a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#text-run" id="ref-for-text-run">text run</a> consisting of a single space (U+0020 SPACE). 
-    <dt><a class="property" data-link-type="propdesc" href="#propdef-list-style-type" id="ref-for-propdef-list-style-type①">list-style-type</a> on the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#originating-element" id="ref-for-originating-element③">originating element</a> defines a <a data-link-type="dfn" href="#marker-string" id="ref-for-marker-string">marker string</a> 
+			an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#anonymous" id="ref-for-anonymous">anonymous</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline" id="ref-for-inline">inline</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element">replaced element</a> representing the specified <a data-link-type="dfn" href="#marker-image" id="ref-for-marker-image①">marker image</a>,
+			followed by a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#text-run" id="ref-for-text-run">text run</a> consisting of a single space (U+0020 SPACE). 
+    <dt><a class="property" data-link-type="propdesc" href="#propdef-list-style-type" id="ref-for-propdef-list-style-type①">list-style-type</a> on the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#originating-element" id="ref-for-originating-element③">originating element</a> defines a <a data-link-type="dfn" href="#marker-string" id="ref-for-marker-string">marker string</a> 
     <dd> The <a data-link-type="dfn" href="#marker" id="ref-for-marker①①">marker box</a> contains
-			a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#text-run" id="ref-for-text-run①">text run</a> consisting of the specified <a data-link-type="dfn" href="#marker-string" id="ref-for-marker-string①">marker string</a>. 
+			a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#text-run" id="ref-for-text-run①">text run</a> consisting of the specified <a data-link-type="dfn" href="#marker-string" id="ref-for-marker-string①">marker string</a>. 
     <dt>otherwise 
     <dd> The <a data-link-type="dfn" href="#marker" id="ref-for-marker①②">marker box</a> has no contents
 			and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①④">::marker</a> does not generate a box. 
@@ -1092,22 +1036,6 @@ Note 1: This is a very short
    <p>Additionally, the UA may transform into spaces or discard
 	any preserved <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#forced-line-break" id="ref-for-forced-line-break">forced line breaks</a>.</p>
    <h3 class="heading settled" data-level="3.3" id="image-markers"><span class="secno">3.3. </span><span class="content"> Image Markers: the <a class="property" data-link-type="propdesc" href="#propdef-list-style-image" id="ref-for-propdef-list-style-image②">list-style-image</a> property</span><a class="self-link" href="#image-markers"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image" title="The list-style-image CSS property sets an image to be used as the list item marker.">list-style-image</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="list-style-image">
     <tbody>
      <tr>
@@ -1158,22 +1086,6 @@ Note 1: This is a very short
 <pre class="highlight">li <c- p>{</c-> <c- k>list-style-image</c-><c- p>:</c-> <c- nf>url</c-><c- p>(</c-><c- s>"http://www.example.com/ellipse.png"</c-><c- p>)</c-> <c- p>}</c-></pre>
    </div>
    <h3 class="heading settled" data-level="3.4" id="text-markers"><span class="secno">3.4. </span><span class="content"> Text-based Markers: the <a class="property" data-link-type="propdesc" href="#propdef-list-style-type" id="ref-for-propdef-list-style-type②">list-style-type</a> property</span><a class="self-link" href="#text-markers"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" title="The list-style-type CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.">list-style-type</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>3.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="list-style-type">
     <tbody>
      <tr>
@@ -1181,7 +1093,7 @@ Note 1: This is a very short
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-list-style-type">list-style-type</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value">&lt;string></a> <span id="ref-for-comb-one②">|</span> none 
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value">&lt;string></a> <span id="ref-for-comb-one②">|</span> none 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>disc 
@@ -1208,18 +1120,18 @@ Note 1: This is a very short
 	which is used to fill the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item①③">list item</a>’s <a data-link-type="dfn" href="#marker" id="ref-for-marker①④">marker</a> when its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content⑤">content</a> value is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-normal" id="ref-for-valdef-content-normal②">normal</a> and there is no <a data-link-type="dfn" href="#marker-image" id="ref-for-marker-image⑥">marker image</a>.
 	The values are as follows:</p>
    <dl>
-    <dt><dfn class="css" data-dfn-for="list-style-type" data-dfn-type="value" data-export id="valdef-list-style-type-counter-style"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style①" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a><a class="self-link" href="#valdef-list-style-type-counter-style"></a></dfn> 
+    <dt><dfn class="css" data-dfn-for="list-style-type" data-dfn-type="value" data-export id="valdef-list-style-type-counter-style"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style①" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a><a class="self-link" href="#valdef-list-style-type-counter-style"></a></dfn> 
     <dd>
       Specifies the element’s <a data-link-type="dfn" href="#marker-string" id="ref-for-marker-string②">marker string</a> as
 			the value of the <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item②">list-item</a> counter
-			represented using the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style②" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>. 
+			represented using the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style②" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>. 
      <p>Specifically,
 			the <a data-link-type="dfn" href="#marker-string" id="ref-for-marker-string③">marker string</a> is
-			the result of <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter" id="ref-for-generate-a-counter">generating a counter representation</a> of the <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item③">list-item</a> counter value
-			using the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style③" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>,
-			prefixed by the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-prefix" id="ref-for-descdef-counter-style-prefix">prefix</a> of the <span class="production" id="ref-for-typedef-counter-style④" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></span>,
-			and followed by the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-suffix" id="ref-for-descdef-counter-style-suffix">suffix</a> of the <span class="production" id="ref-for-typedef-counter-style⑤" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></span>.
-			If the specified <span class="production" id="ref-for-typedef-counter-style⑥" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></span> does not exist, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-counter-styles-3/#decimal" id="ref-for-decimal">decimal</a> is assumed.</p>
+			the result of <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles/#generate-a-counter" id="ref-for-generate-a-counter">generating a counter representation</a> of the <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item③">list-item</a> counter value
+			using the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style③" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>,
+			prefixed by the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-prefix" id="ref-for-descdef-counter-style-prefix">prefix</a> of the <span class="production" id="ref-for-typedef-counter-style④" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></span>,
+			and followed by the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-suffix" id="ref-for-descdef-counter-style-suffix">suffix</a> of the <span class="production" id="ref-for-typedef-counter-style⑤" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></span>.
+			If the specified <span class="production" id="ref-for-typedef-counter-style⑥" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></span> does not exist, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-counter-styles/#decimal" id="ref-for-decimal">decimal</a> is assumed.</p>
     <dt><dfn class="css" data-dfn-for="list-style-type" data-dfn-type="value" data-export id="valdef-list-style-type-string"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value①">&lt;string></a><a class="self-link" href="#valdef-list-style-type-string"></a></dfn> 
     <dd> The element’s <a data-link-type="dfn" href="#marker-string" id="ref-for-marker-string④">marker string</a> is the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value②">&lt;string></a>. 
     <dt><dfn class="css" data-dfn-for="list-style-type" data-dfn-type="value" data-export id="valdef-list-style-type-none">none<a class="self-link" href="#valdef-list-style-type-none"></a></dfn> 
@@ -1251,22 +1163,6 @@ ul <c- p>{</c-> <c- k>list-style-type</c-><c- p>:</c-> none<c- p>;</c-> <c- p>}<
 </pre>
    </div>
    <h3 class="heading settled" data-level="3.5" id="list-style-position-property"><span class="secno">3.5. </span><span class="content"> Positioning Markers: The <a class="property" data-link-type="propdesc" href="#propdef-list-style-position" id="ref-for-propdef-list-style-position">list-style-position</a> property</span><a class="self-link" href="#list-style-position-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position" title="The list-style-position CSS property sets the position of the ::marker relative to a list item.">list-style-position</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>3.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="list-style-position">
     <tbody>
      <tr>
@@ -1306,8 +1202,8 @@ ul <c- p>{</c-> <c- k>list-style-type</c-><c- p>:</c-> none<c- p>;</c-> <c- p>}<
 			(The <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⑥">::marker</a> is an inline element at the start of the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item①⑥">list item’s</a> contents.) 
     <dt><dfn class="dfn-paneled css" data-dfn-for="list-style-position" data-dfn-type="value" data-export id="list-style-position-outside">outside</dfn> 
     <dd>
-      If the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item①⑦">list item</a> is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block container</a>:
-			the marker box is a <span id="ref-for-block-container①">block container</span> and is placed outside the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#principal-box" id="ref-for-principal-box">principal block box</a>;
+      If the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item①⑦">list item</a> is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block container</a>:
+			the marker box is a <span id="ref-for-block-container①">block container</span> and is placed outside the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#principal-box" id="ref-for-principal-box">principal block box</a>;
 			however, the position of the list-item marker adjacent to floats is undefined.
 			CSS does not specify the precise location of the marker box
 			or its position in the painting order,
@@ -1323,7 +1219,7 @@ ul <c- p>{</c-> <c- k>list-style-type</c-><c- p>:</c-> none<c- p>;</c-> <c- p>}<
 			and in some cases may cause the creation of a new line box;
 			this interaction is also not defined. 
      <p class="issue" id="issue-ffa70ac6"><a class="self-link" href="#issue-ffa70ac6"></a> This is handwavey nonsense from CSS2, and needs a real definition.</p>
-     <p>If the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item①⑧">list item</a> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box">inline box</a>:
+     <p>If the <a data-link-type="dfn" href="#list-item" id="ref-for-list-item①⑧">list item</a> is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box">inline box</a>:
 			this value is equivalent to <a class="css" data-link-type="maybe" href="#valdef-list-style-position-inside" id="ref-for-valdef-list-style-position-inside">inside</a>.</p>
      <p class="issue" id="issue-bf311ada"><a class="self-link" href="#issue-bf311ada"></a> Alternatively, <a class="css" data-link-type="maybe" href="#list-style-position-outside" id="ref-for-list-style-position-outside">outside</a> could lay out the marker as a previous sibling of the principal inline box.</p>
    </dl>
@@ -1357,22 +1253,6 @@ ul <c- p>{</c-> <c- k>list-style-type</c-><c- p>:</c-> none<c- p>;</c-> <c- p>}<
   item comes second</pre>
    </div>
    <h3 class="heading settled" data-level="3.6" id="list-style-property"><span class="secno">3.6. </span><span class="content"> Styling Markers: the <a class="property" data-link-type="propdesc" href="#propdef-list-style" id="ref-for-propdef-list-style">list-style</a> shorthand property</span><a class="self-link" href="#list-style-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style" title="The list-style CSS shorthand property allows you to set all the list style properties at once.">list-style</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="list-style">
     <tbody>
      <tr>
@@ -1430,7 +1310,7 @@ list-style: none disc <c- nf>url</c-><c- p>(</c-><c- s>bullet.png</c-><c- p>);</
 <c- c>/* Syntax error */</c->
 </pre>
    </div>
-   <p class="note" role="note"><span>Note:</span> The <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style⑦" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> values of <a class="property" data-link-type="propdesc" href="#propdef-list-style-type" id="ref-for-propdef-list-style-type⑥">list-style-type</a> can also create grammatical ambiguities.
+   <p class="note" role="note"><span>Note:</span> The <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style⑦" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> values of <a class="property" data-link-type="propdesc" href="#propdef-list-style-type" id="ref-for-propdef-list-style-type⑥">list-style-type</a> can also create grammatical ambiguities.
 	As such values are ultimately <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#identifier-value" id="ref-for-identifier-value">&lt;custom-ident></a> values,
 	the parsing rules in <a data-link-type="biblio" href="#biblio-css-values-3">[CSS-VALUES-3]</a> apply.</p>
    <div class="example" id="example-4d590fca">
@@ -1487,7 +1367,7 @@ ul       <c- p>{</c-> <c- k>list-style</c-><c- p>:</c-> disc<c- p>;</c-> <c- p>}
    </table>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-marker-side" id="ref-for-propdef-marker-side②">marker-side</a> property specifies
 	whether an <a class="css" data-link-type="maybe" href="#list-style-position-outside" id="ref-for-list-style-position-outside①">outside</a> <a data-link-type="dfn" href="#marker" id="ref-for-marker①⑤">marker box</a> is positioned
-	based on the directionality of the list item itself (i.e. its <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#originating-element" id="ref-for-originating-element④">originating element</a>)
+	based on the directionality of the list item itself (i.e. its <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#originating-element" id="ref-for-originating-element④">originating element</a>)
 	or the directionality of the list container (i.e. the <span id="ref-for-originating-element⑤">originating element</span>’s parent).
 	In the first case, the position of the marker can vary across items in the same list,
 	based on the directionality assigned to each list item individually;
@@ -1496,10 +1376,10 @@ ul       <c- p>{</c-> <c- k>list-style</c-><c- p>:</c-> disc<c- p>;</c-> <c- p>}
    <dl>
     <dt><dfn class="dfn-paneled css" data-dfn-for="marker-side" data-dfn-type="value" data-export id="valdef-marker-side-match-self">match-self</dfn> 
     <dd> The <a data-link-type="dfn" href="#marker" id="ref-for-marker①⑥">marker box</a> is positioned
-			using the directionality of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⑦">::marker</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#originating-element" id="ref-for-originating-element⑥">originating element</a>. 
+			using the directionality of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⑦">::marker</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#originating-element" id="ref-for-originating-element⑥">originating element</a>. 
     <dt><dfn class="dfn-paneled css" data-dfn-for="marker-side" data-dfn-type="value" data-export id="valdef-marker-side-match-parent">match-parent</dfn> 
     <dd> The <a data-link-type="dfn" href="#marker" id="ref-for-marker①⑦">marker box</a> is positioned
-			using the directionality of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⑧">::marker</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#originating-element" id="ref-for-originating-element⑦">originating element’s</a> parent element. 
+			using the directionality of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⑧">::marker</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#originating-element" id="ref-for-originating-element⑦">originating element’s</a> parent element. 
    </dl>
    <div class="example" id="example-305896a3">
     <a class="self-link" href="#example-305896a3"></a> By default, elements or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①⑨">::marker</a> pseudo-elements
@@ -1538,7 +1418,7 @@ ul       <c- p>{</c-> <c- k>list-style</c-><c- p>:</c-> disc<c- p>;</c-> <c- p>}
     </table>
    </div>
    <p class="issue" id="issue-91830b42"><a class="self-link" href="#issue-91830b42"></a> For this order punctuation inside the marker correctly,
-	it would also need to take the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction①">direction</a> value of the parent. <a href="https://github.com/w3c/csswg-drafts/issues/4202">&lt;https://github.com/w3c/csswg-drafts/issues/4202></a></p>
+	it would also need to take the <a class="property" data-link-type="propdesc">direction</a> value of the parent. <a href="https://github.com/w3c/csswg-drafts/issues/4202">&lt;https://github.com/w3c/csswg-drafts/issues/4202></a></p>
    <p class="issue" id="issue-69d20ea1"><a class="self-link" href="#issue-69d20ea1"></a> There are issues open on <a href="https://github.com/w3c/csswg-drafts/issues/5308">renaming the keywords</a> and on <a href="https://github.com/w3c/csswg-drafts/issues/4209">merging with <span class="css">list-style-position</span></a>.</p>
    <h2 class="heading settled" data-level="4" id="auto-numbering"><span class="secno">4. </span><span class="content"> Automatic Numbering With Counters</span><a class="self-link" href="#auto-numbering"></a></h2>
    <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="counter">counter</dfn> is a special numeric tracker
@@ -1554,7 +1434,7 @@ ul       <c- p>{</c-> <c- k>list-style</c-><c- p>:</c-> disc<c- p>;</c-> <c- p>}
 	using the <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="typedef-counter-name"><a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name">&lt;counter-name></a></dfn> type,
 	which represents their name as a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#identifier-value" id="ref-for-identifier-value①">&lt;custom-ident></a>.
 	A <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①">&lt;counter-name></a> name cannot match the keyword <a class="css" data-link-type="maybe" href="#valdef-counter-reset-none" id="ref-for-valdef-counter-reset-none">none</a>;
-	such an identifier is <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#css-invalid" id="ref-for-css-invalid">invalid</a> as a <span class="production" id="ref-for-typedef-counter-name②">&lt;counter-name></span>.</p>
+	such an identifier is <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#css-invalid" id="ref-for-css-invalid">invalid</a> as a <span class="production" id="ref-for-typedef-counter-name②">&lt;counter-name></span>.</p>
    <p>Resolving <a data-link-type="dfn" href="#counter" id="ref-for-counter③">counter</a> values on a given element is a multi-step process:</p>
    <ol>
     <li data-md>
@@ -1574,22 +1454,6 @@ ul       <c- p>{</c-> <c- k>list-style</c-><c- p>:</c-> disc<c- p>;</c-> <c- p>}
 	would push the value outside of that range,
 	the value must be clamped to that range.</p>
    <h3 class="heading settled" data-level="4.1" id="counter-reset"><span class="secno">4.1. </span><span class="content"> Creating Counters: the <a class="property" data-link-type="propdesc" href="#propdef-counter-reset" id="ref-for-propdef-counter-reset②">counter-reset</a> property</span><a class="self-link" href="#counter-reset"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset" title="The counter-reset CSS property resets a CSS counter to a given value.">counter-reset</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>2+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>25+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="counter-reset">
     <tbody>
      <tr>
@@ -1632,7 +1496,7 @@ ul       <c- p>{</c-> <c- k>list-style</c-><c- p>:</c-> disc<c- p>;</c-> <c- p>}
 			defaulting to <span class="css">0</span>. 
    </dl>
    <div class="example" id="example-2636b37c">
-    <a class="self-link" href="#example-2636b37c"></a> Note that counter properties follow the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade" id="ref-for-cascade①">cascading</a> rules as normal.
+    <a class="self-link" href="#example-2636b37c"></a> Note that counter properties follow the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade" id="ref-for-cascade①">cascading</a> rules as normal.
 		Thus, due to cascading, the following style sheet: 
 <pre class="highlight">h1 <c- p>{</c-> <c- k>counter-reset</c-><c- p>:</c-> section <c- m>-1</c-> <c- p>}</c->
 h1 <c- p>{</c-> <c- k>counter-reset</c-><c- p>:</c-> imagenum <c- m>99</c-> <c- p>}</c->
@@ -1647,22 +1511,6 @@ h1 <c- p>{</c-> <c- k>counter-reset</c-><c- p>:</c-> imagenum <c- m>99</c-> <c- 
    <p>If multiple instances of the same <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name⑥">&lt;counter-name></a> occur in the property value,
 	only the last one is honored.</p>
    <h3 class="heading settled" data-level="4.2" id="increment-set"><span class="secno">4.2. </span><span class="content"> Manipulating Counter Values: the <a class="property" data-link-type="propdesc" href="#propdef-counter-increment" id="ref-for-propdef-counter-increment③">counter-increment</a> and <a class="property" data-link-type="propdesc" href="#propdef-counter-set" id="ref-for-propdef-counter-set③">counter-set</a> properties</span><a class="self-link" href="#increment-set"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment" title="The counter-increment CSS property increases or decreases the value of a CSS counter by a given value.">counter-increment</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>2+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>25+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="counter-increment">
     <tbody>
      <tr>
@@ -1698,23 +1546,7 @@ h1 <c- p>{</c-> <c- k>counter-reset</c-><c- p>:</c-> imagenum <c- m>99</c-> <c- 
     <tbody>
      <tr>
       <th>Name:
-      <td>
-       <div class="mdn-anno wrapped">
-        <button class="mdn-anno-btn"><span>MDN</span></button>
-        <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set" title="The counter-set CSS property sets a CSS counter to a given value. It manipulates the value of existing counters, and will only create new counters if there isn&apos;t already a counter of the given name on the element.">counter-set</a></p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>68+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>85+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>71+</span></span><span class="edge_blink yes"><span>Edge</span><span>85+</span></span>
-          <hr>
-          <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>68+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>85+</span></span><span class="webview_android yes"><span>Android WebView</span><span>85+</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>60+</span></span>
-         </div>
-        </div>
-       </div>
-       <dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-counter-set">counter-set</dfn>
+      <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-counter-set">counter-set</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
       <td class="prod">[ <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name⑧">&lt;counter-name></a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#integer-value" id="ref-for-integer-value④">&lt;integer></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt②">?</a> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-one-plus" id="ref-for-mult-one-plus②">+</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑦">|</a> none 
@@ -1934,7 +1766,7 @@ to <var>source counter</var>’s <span id="ref-for-css-counter-value②">value</
 		continuously incrementing,
 		without the author having to worry about the nested structure of their document.</p>
    </div>
-   <p class="note" role="note"><span>Note:</span> Counter inheritance, like regular CSS <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#inheritance" id="ref-for-inheritance">inheritance</a>,
+   <p class="note" role="note"><span>Note:</span> Counter inheritance, like regular CSS <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#inheritance" id="ref-for-inheritance">inheritance</a>,
 	operates on the “flattened element tree”
 	in the context of the <a data-link-type="biblio" href="#biblio-dom">[DOM]</a>.</p>
    <h4 class="heading settled" data-level="4.4.2" id="instantiating-counters"><span class="secno">4.4.2. </span><span class="content"> Instantiating Counters</span><a class="self-link" href="#instantiating-counters"></a></h4>
@@ -1960,7 +1792,7 @@ and initial value <var>value</var></p>
    </div>
    <h3 class="heading settled" data-level="4.5" id="counters-without-boxes"><span class="secno">4.5. </span><span class="content"> Counters in elements that do not generate boxes</span><a class="self-link" href="#counters-without-boxes"></a></h3>
    <p>An element that does not generate a box
-	(for example, an element with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display</a> set to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-none" id="ref-for-valdef-display-none">none</a>, or a pseudo-element with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content⑥">content</a> set to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-none" id="ref-for-valdef-content-none①">none</a>)
+	(for example, an element with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display</a> set to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-none" id="ref-for-valdef-display-none">none</a>, or a pseudo-element with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-content-3/#propdef-content" id="ref-for-propdef-content⑥">content</a> set to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-none" id="ref-for-valdef-content-none①">none</a>)
 	cannot set, reset, or increment  a counter.
 	The counter properties are still valid on such an element,
 	but they must have no effect.</p>
@@ -1975,12 +1807,12 @@ h2.secret <c- p>{</c-> <c- k>display</c-><c- p>:</c-> none<c- p>;</c-> <c- p>}</
 	such as setting <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility">visibility</a> to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css2/#valdef-visibility-hidden" id="ref-for-valdef-visibility-hidden">hidden</a>,
 	still cause the element to generate a box,
 	and so are not excepted here.</p>
-   <p>Whether a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element①">replaced element’s</a> descendants
+   <p>Whether a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element①">replaced element’s</a> descendants
 	(such as HTML <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element" id="ref-for-the-option-element">option</a></code>,
 	or SVG <code><a data-link-type="element" href="https://svgwg.org/svg2-draft/shapes.html#elementdef-rect" id="ref-for-elementdef-rect">rect</a></code>)
 	can set, reset, or increment a counter
 	is undefined.</p>
-   <p class="note" role="note"><span>Note:</span> The behavior on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element②">replaced element</a> descendants is currently undefined
+   <p class="note" role="note"><span>Note:</span> The behavior on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element②">replaced element</a> descendants is currently undefined
 	due to a lack of interoperability across implementations.</p>
    <h3 class="heading settled" data-level="4.6" id="list-item-counter"><span class="secno">4.6. </span><span class="content"> The Implicit <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item④">list-item</a> Counter</span><a class="self-link" href="#list-item-counter"></a></h3>
    <p>In addition to any explicitly defined <a data-link-type="dfn" href="#counter" id="ref-for-counter①⑦">counters</a> that authors write in their styles, <a data-link-type="dfn" href="#list-item" id="ref-for-list-item②①">list items</a> automatically increment
@@ -1993,7 +1825,7 @@ h2.secret <c- p>{</c-> <c- k>display</c-><c- p>:</c-> none<c- p>;</c-> <c- p>}</
 	at the same time that <a data-link-type="dfn" href="#counter" id="ref-for-counter①⑨">counters</a> are normally incremented
 	(exactly as if the <span id="ref-for-list-item②④">list item</span> had <span class="css">list-item 1</span> appended to their <span class="property" id="ref-for-propdef-counter-increment⑨">counter-increment</span> value,
 	including side-effects such as possibly <a data-link-type="dfn" href="#instantiate-counter" id="ref-for-instantiate-counter⑨">instantiating</a> a new <span id="ref-for-counter②⓪">counter</span>, etc).
-	This does not affect the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#specified-value" id="ref-for-specified-value">specified</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed values</a> of <span class="property" id="ref-for-propdef-counter-increment①⓪">counter-increment</span>.</p>
+	This does not affect the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#specified-value" id="ref-for-specified-value">specified</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed values</a> of <span class="property" id="ref-for-propdef-counter-increment①⓪">counter-increment</span>.</p>
    <div class="example" id="example-60f85b38">
     <a class="self-link" href="#example-60f85b38"></a> Because each <a data-link-type="dfn" href="#list-item" id="ref-for-list-item②⑤">list item</a> automatically increments
 		the <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item⑥">list-item</a> counter by 1,
@@ -2070,56 +1902,27 @@ h2.secret <c- p>{</c-> <c- k>display</c-><c- p>:</c-> none<c- p>;</c-> <c- p>}</
 </pre>
    </div>
    <h3 class="heading settled" data-level="4.7" id="counter-functions"><span class="secno">4.7. </span><span class="content"> Outputting Counters: the <a class="css" data-link-type="maybe" href="#funcdef-counter" id="ref-for-funcdef-counter④">counter()</a> and <a class="css" data-link-type="maybe" href="#funcdef-counters" id="ref-for-funcdef-counters④">counters()</a> functions</span><a class="self-link" href="#counter-functions"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter()" title="The counter() CSS function returns a string representing the current value of the named counter, if there is one. It is generally used with pseudo-elements, but can be used, theoretically, anywhere a <string> value is supported.">counter()</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counters()" title="The counters() CSS function enables nested counters, returning a concatenated string representing the current values of the named counters, if there are any. The counters() function has two forms: counters(name, string) or counters(name, string, style). It is generally used with pseudo-elements, but can be used, theoretically, anywhere a <string> value is supported. The generated text is the value of all counters with the given name, from outermost to innermost, separated by the specified string. The counters are rendered in the style indicated, defaulting to decimal if no style is specified.">counters()</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1.5+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>10+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>8+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p><a data-link-type="dfn" href="#counter" id="ref-for-counter②③">Counters</a> have no visible effect by themselves,
 	but their values can be used
 	with the <a class="css" data-link-type="maybe" href="#funcdef-counter" id="ref-for-funcdef-counter⑤">counter()</a> and <a class="css" data-link-type="maybe" href="#funcdef-counters" id="ref-for-funcdef-counters⑤">counters()</a> functions,
-	whose <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used values</a> represent counter values as strings or images.
+	whose <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used values</a> represent counter values as strings or images.
 	They are defined as follows:</p>
 <pre><dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-counter"><a class="production" data-link-type="type" href="#typedef-counter" id="ref-for-typedef-counter">&lt;counter></a></dfn> = <a class="production" data-link-type="function" href="#funcdef-counter" id="ref-for-funcdef-counter⑥">&lt;counter()></a> | <a class="production" data-link-type="function" href="#funcdef-counters" id="ref-for-funcdef-counters⑥">&lt;counters()></a>
-<dfn class="dfn-paneled" data-dfn-type="function" data-export id="funcdef-counter">counter()</dfn>  =  counter( <a class="production" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①①">&lt;counter-name></a>, <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style⑧" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>? )
-<dfn class="dfn-paneled" data-dfn-type="function" data-export id="funcdef-counters">counters()</dfn> = counters( <a class="production" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①②">&lt;counter-name></a>, <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value③">&lt;string></a>, <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style⑨" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>? )
+<dfn class="dfn-paneled" data-dfn-type="function" data-export id="funcdef-counter">counter()</dfn>  =  counter( <a class="production" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①①">&lt;counter-name></a>, <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style⑧" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>? )
+<dfn class="dfn-paneled" data-dfn-type="function" data-export id="funcdef-counters">counters()</dfn> = counters( <a class="production" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①②">&lt;counter-name></a>, <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value③">&lt;string></a>, <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style⑨" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>? )
 </pre>
-   <p>where <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style①⓪" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> specifies the <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles-3/#counter-style" id="ref-for-counter-style">counter style</a> for <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter" id="ref-for-generate-a-counter①">generating a representation</a> of the named counter(s)
+   <p>where <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style①⓪" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> specifies the <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles/#counter-style" id="ref-for-counter-style">counter style</a> for <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles/#generate-a-counter" id="ref-for-generate-a-counter①">generating a representation</a> of the named counter(s)
 	as defined in <a data-link-type="biblio" href="#biblio-css-counter-styles-3">[css-counter-styles-3]</a> and</p>
    <dl>
     <dt>counter() 
-    <dd> Represents the value of the <a data-link-type="dfn" href="#innermost" id="ref-for-innermost①">innermost</a> <a data-link-type="dfn" href="#counter" id="ref-for-counter②④">counter</a> in the element’s <a data-link-type="dfn" href="#css-counters-set" id="ref-for-css-counters-set⑦">CSS counters set</a> named <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①③">&lt;counter-name></a> using the <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles-3/#counter-style" id="ref-for-counter-style①">counter style</a> named <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style①①" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>. 
+    <dd> Represents the value of the <a data-link-type="dfn" href="#innermost" id="ref-for-innermost①">innermost</a> <a data-link-type="dfn" href="#counter" id="ref-for-counter②④">counter</a> in the element’s <a data-link-type="dfn" href="#css-counters-set" id="ref-for-css-counters-set⑦">CSS counters set</a> named <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①③">&lt;counter-name></a> using the <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles/#counter-style" id="ref-for-counter-style①">counter style</a> named <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style①①" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>. 
     <dt>counters() 
-    <dd> Represents the values of all the <a data-link-type="dfn" href="#counter" id="ref-for-counter②⑤">counters</a> in the element’s <a data-link-type="dfn" href="#css-counters-set" id="ref-for-css-counters-set⑧">CSS counters set</a> named <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①④">&lt;counter-name></a> using the <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles-3/#counter-style" id="ref-for-counter-style②">counter style</a> named <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style①②" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>,
+    <dd> Represents the values of all the <a data-link-type="dfn" href="#counter" id="ref-for-counter②⑤">counters</a> in the element’s <a data-link-type="dfn" href="#css-counters-set" id="ref-for-css-counters-set⑧">CSS counters set</a> named <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①④">&lt;counter-name></a> using the <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles/#counter-style" id="ref-for-counter-style②">counter style</a> named <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style①②" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a>,
 			sorted in outermost-first to <a data-link-type="dfn" href="#innermost" id="ref-for-innermost②">innermost</a>-last order
 			and joined by the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value④">&lt;string></a>. 
    </dl>
    <p>In both cases,
-	if the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style①③" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> argument is omitted it defaults to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-counter-styles-3/#decimal" id="ref-for-decimal①">decimal</a>.</p>
+	if the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style①③" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> argument is omitted it defaults to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-counter-styles/#decimal" id="ref-for-decimal①">decimal</a>.</p>
    <p>If no <a data-link-type="dfn" href="#counter" id="ref-for-counter②⑥">counter</a> named <a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①⑤">&lt;counter-name></a> exists
 	on an element where <a class="css" data-link-type="maybe" href="#funcdef-counter" id="ref-for-funcdef-counter⑦">counter()</a> or <a class="css" data-link-type="maybe" href="#funcdef-counters" id="ref-for-funcdef-counters⑦">counters()</a> is used,
 	one is first <a data-link-type="dfn" href="#instantiate-counter" id="ref-for-instantiate-counter①⓪">instantiated</a> with a starting value of <span class="css">0</span>.</p>
@@ -2224,7 +2027,7 @@ B.1 First H2 in H1
 		Today you have to use a preprocessor to do this in a reasonable way,
 		but a counter would make it work well in "plain" CSS.</p>
     <p>(You can built up successive values in the nested case today
-		by using <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property" id="ref-for-custom-property">custom properties</a> and stacking up nested <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#funcdef-calc" id="ref-for-funcdef-calc">calc()</a>s,
+		by using <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property" id="ref-for-custom-property">custom properties</a> and stacking up nested <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#funcdef-calc" id="ref-for-funcdef-calc">calc()</a>s,
 		but this is a *little bit* clumsy,
 		and doesn’t work for siblings.)</p>
     <p>Suggestion is to add a <span class="css">counter-value(<a class="production css" data-link-type="type" href="#typedef-counter-name" id="ref-for-typedef-counter-name①⑥">&lt;counter-name></a>)</span> function,
@@ -2316,8 +2119,8 @@ li {
    </ul>
    <h3 class="heading settled" id="changes-20190817"><span class="content">Changes since the 17 August 2019 WD</span><a class="self-link" href="#changes-20190817"></a></h3>
    <ul>
-    <li>Specified that <a class="css" data-link-type="maybe" href="#list-style-position-outside" id="ref-for-list-style-position-outside②">outside</a> list markers <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container②">block containers</a>.
-		(Their <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#outer-display-type" id="ref-for-outer-display-type">outer display type</a> remains undefined.) 
+    <li>Specified that <a class="css" data-link-type="maybe" href="#list-style-position-outside" id="ref-for-list-style-position-outside②">outside</a> list markers <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container②">block containers</a>.
+		(Their <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#outer-display-type" id="ref-for-outer-display-type">outer display type</a> remains undefined.) 
     <li>Stole list of properties applying to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker②③">::marker</a> from <a data-link-type="biblio" href="#biblio-css-pseudo-4">[CSS-PSEUDO-4]</a> and added animations, transitions, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-4/#propdef-white-space" id="ref-for-propdef-white-space①">white-space</a>. 
     <li>Added <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-4/#propdef-white-space" id="ref-for-propdef-white-space②">white-space: pre</a> to UA default style sheet for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker②④">::marker</a>.
 		(<a href="https://github.com/w3c/csswg-drafts/issues/4448">Issue 4448</a>)
@@ -2331,7 +2134,7 @@ li {
    <h3 class="heading settled" id="changes-20140320"><span class="content">Changes since the 20 March 2014 WD</span><a class="self-link" href="#changes-20140320"></a></h3>
    <ul>
     <li>Use <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#identifier-value" id="ref-for-identifier-value②">&lt;custom-ident></a> consistently for counter names. 
-    <li>Dropped <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position: marker</a> (marker positioning is now mostly undefined, as in CSS2). 
+    <li>Dropped <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position: marker</a> (marker positioning is now mostly undefined, as in CSS2). 
     <li>Completely rewrote chapter on markers to tighten it up,
 		    align with current expectations, and make editorial improvements. 
     <li>Pulled the <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item①⑤">list-item</a> counter definition
@@ -2348,10 +2151,10 @@ li {
 	there are significant changes in this module when compared to CSS2.1. </p>
    <ol>
     <li>The <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker②⑤">::marker</a> pseudo-element has been introduced to allow styling of the list marker directly. 
-    <li><a class="property" data-link-type="propdesc" href="#propdef-list-style-type" id="ref-for-propdef-list-style-type①⓪">list-style-type</a> now accepts a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value⑤">&lt;string></a> as well as the extended <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style" id="ref-for-typedef-counter-style①④" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> values from <a data-link-type="biblio" href="#biblio-css-counter-styles-3">[css-counter-styles-3]</a>.. 
+    <li><a class="property" data-link-type="propdesc" href="#propdef-list-style-type" id="ref-for-propdef-list-style-type①⓪">list-style-type</a> now accepts a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value⑤">&lt;string></a> as well as the extended <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style" id="ref-for-typedef-counter-style①④" title="Expands to: cjk-ideographic | japanese-formal | japanese-informal | simp-chinese-formal | simp-chinese-informal | trad-chinese-formal | trad-chinese-informal">&lt;counter-style></a> values from <a data-link-type="biblio" href="#biblio-css-counter-styles-3">[css-counter-styles-3]</a>.. 
     <li>The <a class="css" data-link-type="maybe" href="#valdef-counter-increment-list-item" id="ref-for-valdef-counter-increment-list-item①⑥">list-item</a> predefined counter identifier has been introduced. 
     <li>The <a class="property" data-link-type="propdesc" href="#propdef-counter-set" id="ref-for-propdef-counter-set⑨">counter-set</a> property has been added. 
-    <li>Allowed for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level">inline-level</a> <a data-link-type="dfn" href="#list-item" id="ref-for-list-item②⑨">list items</a>, as introduced in <a data-link-type="biblio" href="#biblio-css-display-3">[CSS-DISPLAY-3]</a>. 
+    <li>Allowed for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level">inline-level</a> <a data-link-type="dfn" href="#list-item" id="ref-for-list-item②⑨">list items</a>, as introduced in <a data-link-type="biblio" href="#biblio-css-display-3">[CSS-DISPLAY-3]</a>. 
    </ol>
   </main>
   <h2 class="no-ref no-num heading settled" id="w3c-conformance"><span class="content"> Conformance</span><a class="self-link" href="#w3c-conformance"></a></h2>
@@ -2503,14 +2306,14 @@ li {
    <li><a href="#css-counter-value">value</a><span>, in §4</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-cascade-origin-author">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-author">https://drafts.csswg.org/css-cascade-5/#cascade-origin-author</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade-origin-author">https://drafts.csswg.org/css-cascade/#cascade-origin-author</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade-origin-author">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade">https://drafts.csswg.org/css-cascade-5/#cascade</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade">https://drafts.csswg.org/css-cascade/#cascade</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade">3.1.1. 
 Properties Applying to ::marker</a>
@@ -2519,7 +2322,7 @@ Creating Counters: the counter-reset property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">3.1.1. 
 Properties Applying to ::marker</a>
@@ -2528,44 +2331,44 @@ The Implicit list-item Counter</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inheritance">
-   <a href="https://drafts.csswg.org/css-cascade-5/#inheritance">https://drafts.csswg.org/css-cascade-5/#inheritance</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#inheritance">https://drafts.csswg.org/css-cascade/#inheritance</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inheritance">4.4.1. 
 Inheriting Counters</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-specified-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#specified-value">https://drafts.csswg.org/css-cascade-5/#specified-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#specified-value">https://drafts.csswg.org/css-cascade/#specified-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-specified-value">4.6. 
 The Implicit list-item Counter</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">4.7. 
 Outputting Counters: the counter() and counters() functions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade-origin-user">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-user">https://drafts.csswg.org/css-cascade-5/#cascade-origin-user</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade-origin-user">https://drafts.csswg.org/css-cascade/#cascade-origin-user</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade-origin-user">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade-origin-ua">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua">https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade-origin-ua">https://drafts.csswg.org/css-cascade/#cascade-origin-ua</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade-origin-ua">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-color">
-   <a href="https://drafts.csswg.org/css-color-4/#propdef-color">https://drafts.csswg.org/css-color-4/#propdef-color</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#propdef-color">https://drafts.csswg.org/css-color/#propdef-color</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-color">3.1.1.
+    <li><a href="#ref-for-propdef-color">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
@@ -2609,7 +2412,7 @@ Text-based Markers: the list-style-type property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-counter-style">
-   <a href="https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style">https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-counter-styles/#typedef-counter-style">https://drafts.csswg.org/css-counter-styles/#typedef-counter-style</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-counter-style">3.4. 
 Text-based Markers: the list-style-type property</a> <a href="#ref-for-typedef-counter-style①">(2)</a> <a href="#ref-for-typedef-counter-style②">(3)</a> <a href="#ref-for-typedef-counter-style③">(4)</a> <a href="#ref-for-typedef-counter-style④">(5)</a> <a href="#ref-for-typedef-counter-style⑤">(6)</a> <a href="#ref-for-typedef-counter-style⑥">(7)</a>
@@ -2621,14 +2424,14 @@ Outputting Counters: the counter() and counters() functions</a> <a href="#ref-fo
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-counter-style">
-   <a href="https://drafts.csswg.org/css-counter-styles-3/#counter-style">https://drafts.csswg.org/css-counter-styles-3/#counter-style</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-counter-styles/#counter-style">https://drafts.csswg.org/css-counter-styles/#counter-style</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-counter-style">4.7. 
 Outputting Counters: the counter() and counters() functions</a> <a href="#ref-for-counter-style①">(2)</a> <a href="#ref-for-counter-style②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-decimal">
-   <a href="https://drafts.csswg.org/css-counter-styles-3/#decimal">https://drafts.csswg.org/css-counter-styles-3/#decimal</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-counter-styles/#decimal">https://drafts.csswg.org/css-counter-styles/#decimal</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-decimal">3.4. 
 Text-based Markers: the list-style-type property</a>
@@ -2637,7 +2440,7 @@ Outputting Counters: the counter() and counters() functions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-generate-a-counter">
-   <a href="https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter">https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-counter-styles/#generate-a-counter">https://drafts.csswg.org/css-counter-styles/#generate-a-counter</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-generate-a-counter">3.4. 
 Text-based Markers: the list-style-type property</a>
@@ -2646,28 +2449,28 @@ Outputting Counters: the counter() and counters() functions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-descdef-counter-style-prefix">
-   <a href="https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-prefix">https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-prefix</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-prefix">https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-prefix</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-descdef-counter-style-prefix">3.4. 
 Text-based Markers: the list-style-type property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-descdef-counter-style-suffix">
-   <a href="https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-suffix">https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-suffix</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-suffix">https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-suffix</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-descdef-counter-style-suffix">3.4. 
 Text-based Markers: the list-style-type property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-anonymous">
-   <a href="https://drafts.csswg.org/css-display-3/#anonymous">https://drafts.csswg.org/css-display-3/#anonymous</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#anonymous">https://drafts.csswg.org/css-display/#anonymous</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-anonymous">3.2. 
 Generating Marker Contents</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">3.5. 
 Positioning Markers: The list-style-position property</a> <a href="#ref-for-block-container①">(2)</a>
@@ -2675,7 +2478,7 @@ Positioning Markers: The list-style-position property</a> <a href="#ref-for-bloc
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">2. 
 Declaring a List Item</a>
@@ -2684,7 +2487,7 @@ Counters in elements that do not generate boxes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#display-type">https://drafts.csswg.org/css-display-3/#display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#display-type">https://drafts.csswg.org/css-display/#display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-display-type">1. 
 Introduction</a>
@@ -2693,54 +2496,54 @@ Markers</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline">
-   <a href="https://drafts.csswg.org/css-display-3/#inline">https://drafts.csswg.org/css-display-3/#inline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline">https://drafts.csswg.org/css-display/#inline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline">3.2. 
 Generating Marker Contents</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-box">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-box">https://drafts.csswg.org/css-display-3/#inline-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-box">https://drafts.csswg.org/css-display/#inline-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-box">3.5. 
 Positioning Markers: The list-style-position property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-level">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-level">https://drafts.csswg.org/css-display-3/#inline-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-level">https://drafts.csswg.org/css-display/#inline-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-level">Changes From CSS Level 2</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-list-item">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-list-item">https://drafts.csswg.org/css-display-3/#valdef-display-list-item</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-list-item">https://drafts.csswg.org/css-display/#valdef-display-list-item</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-list-item">2. 
 Declaring a List Item</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-none">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-none">https://drafts.csswg.org/css-display-3/#valdef-display-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-none">https://drafts.csswg.org/css-display/#valdef-display-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-none">4.5. 
 Counters in elements that do not generate boxes</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-outer-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#outer-display-type">https://drafts.csswg.org/css-display-3/#outer-display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#outer-display-type">https://drafts.csswg.org/css-display/#outer-display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-outer-display-type">Changes since the 17 August 2019 WD</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-principal-box">
-   <a href="https://drafts.csswg.org/css-display-3/#principal-box">https://drafts.csswg.org/css-display-3/#principal-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#principal-box">https://drafts.csswg.org/css-display/#principal-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-principal-box">3.5. 
 Positioning Markers: The list-style-position property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-replaced-element">
-   <a href="https://drafts.csswg.org/css-display-3/#replaced-element">https://drafts.csswg.org/css-display-3/#replaced-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#replaced-element">https://drafts.csswg.org/css-display/#replaced-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-replaced-element">3.2. 
 Generating Marker Contents</a>
@@ -2749,7 +2552,7 @@ Counters in elements that do not generate boxes</a> <a href="#ref-for-replaced-e
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-text-run">
-   <a href="https://drafts.csswg.org/css-display-3/#text-run">https://drafts.csswg.org/css-display-3/#text-run</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#text-run">https://drafts.csswg.org/css-display/#text-run</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-text-run">3.2. 
 Generating Marker Contents</a> <a href="#ref-for-text-run①">(2)</a>
@@ -2812,7 +2615,7 @@ Positioning Markers: The list-style-position property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">Changes since the 20 March 2014 WD</a>
    </ul>
@@ -2860,7 +2663,7 @@ The marker-side property</a> <a href="#ref-for-selectordef-marker①⑧">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-css-invalid">
-   <a href="https://drafts.csswg.org/css-syntax-3/#css-invalid">https://drafts.csswg.org/css-syntax-3/#css-invalid</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#css-invalid">https://drafts.csswg.org/css-syntax/#css-invalid</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-css-invalid">4. 
 Automatic Numbering With Counters</a>
@@ -2876,14 +2679,14 @@ Generating Marker Contents</a>
   <aside class="dfn-panel" data-for="term-for-propdef-letter-spacing">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing">https://drafts.csswg.org/css-text-3/#propdef-letter-spacing</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-letter-spacing">3.1.1.
+    <li><a href="#ref-for-propdef-letter-spacing">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-text-transform">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-text-transform">https://drafts.csswg.org/css-text-3/#propdef-text-transform</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-text-transform">3.1.1.
+    <li><a href="#ref-for-propdef-text-transform">3.1.1. 
 Properties Applying to ::marker</a>
     <li><a href="#ref-for-propdef-text-transform①">Changes since the 9 July 2020 WD</a>
    </ul>
@@ -2891,7 +2694,7 @@ Properties Applying to ::marker</a>
   <aside class="dfn-panel" data-for="term-for-propdef-word-spacing">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing">https://drafts.csswg.org/css-text-3/#propdef-word-spacing</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-word-spacing">3.1.1.
+    <li><a href="#ref-for-propdef-word-spacing">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
@@ -3010,26 +2813,10 @@ Styling Markers: the list-style shorthand property</a> <a href="#ref-for-comb-an
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-custom-property">
-   <a href="https://drafts.csswg.org/css-variables-1/#custom-property">https://drafts.csswg.org/css-variables-1/#custom-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-variables/#custom-property">https://drafts.csswg.org/css-variables/#custom-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-custom-property">4.7. 
 Outputting Counters: the counter() and counters() functions</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-direction">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction">https://drafts.csswg.org/css-writing-modes-3/#propdef-direction</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-direction">3.1.1. 
-Properties Applying to ::marker</a>
-    <li><a href="#ref-for-propdef-direction①">3.7. 
-The marker-side property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-unicode-bidi">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi">https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-unicode-bidi">3.1.1. 
-Properties Applying to ::marker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-start">
@@ -3170,14 +2957,14 @@ Creating and Inheriting Counters</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-compound">
-   <a href="https://drafts.csswg.org/selectors-4/#compound">https://drafts.csswg.org/selectors-4/#compound</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#compound">https://drafts.csswg.org/selectors/#compound</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-compound">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-originating-element">
-   <a href="https://drafts.csswg.org/selectors-4/#originating-element">https://drafts.csswg.org/selectors-4/#originating-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#originating-element">https://drafts.csswg.org/selectors/#originating-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-originating-element">3.1.1. 
 Properties Applying to ::marker</a> <a href="#ref-for-originating-element①">(2)</a>
@@ -3188,14 +2975,14 @@ The marker-side property</a> <a href="#ref-for-originating-element⑤">(2)</a> <
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-pseudo-element">
-   <a href="https://drafts.csswg.org/selectors-4/#pseudo-element">https://drafts.csswg.org/selectors-4/#pseudo-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#pseudo-element">https://drafts.csswg.org/selectors/#pseudo-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-pseudo-element">3.1.1. 
 Properties Applying to ::marker</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#selector">https://drafts.csswg.org/selectors-4/#selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#selector">https://drafts.csswg.org/selectors/#selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-selector">3.1.1. 
 Properties Applying to ::marker</a>
@@ -3211,7 +2998,7 @@ Counters in elements that do not generate boxes</a>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-cascade-origin-author">author origin</span>
      <li><span class="dfn-paneled" id="term-for-cascade">cascade</span>
@@ -3341,12 +3128,6 @@ Counters in elements that do not generate boxes</a>
      <li><span class="dfn-paneled" id="term-for-custom-property">custom property</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[CSS-WRITING-MODES-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-direction">direction</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-unicode-bidi">unicode-bidi</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[css-writing-modes-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-inline-start">inline-start</span>
@@ -3402,8 +3183,8 @@ Counters in elements that do not generate boxes</a>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-content-3">[CSS-CONTENT-3]
    <dd>Elika Etemad; Dave Cramer. <a href="https://www.w3.org/TR/css-content-3/">CSS Generated Content Module Level 3</a>. 2 August 2019. WD. URL: <a href="https://www.w3.org/TR/css-content-3/">https://www.w3.org/TR/css-content-3/</a>
    <dt id="biblio-css-counter-styles-3">[CSS-COUNTER-STYLES-3]
@@ -3425,7 +3206,7 @@ Counters in elements that do not generate boxes</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
    <dd>Tab Atkins Jr.; Simon Sapin. <a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a>. 16 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-syntax-3/">https://www.w3.org/TR/css-syntax-3/</a>
    <dt id="biblio-css-text-3">[CSS-TEXT-3]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
    <dt id="biblio-css-text-4">[CSS-TEXT-4]
    <dd>Elika Etemad; et al. <a href="https://www.w3.org/TR/css-text-4/">CSS Text Module Level 4</a>. 13 November 2019. WD. URL: <a href="https://www.w3.org/TR/css-text-4/">https://www.w3.org/TR/css-text-4/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
@@ -3434,8 +3215,6 @@ Counters in elements that do not generate boxes</a>
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a>. 11 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-values-4/">https://www.w3.org/TR/css-values-4/</a>
    <dt id="biblio-css-variables-1">[CSS-VARIABLES-1]
    <dd>Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-variables-1/">CSS Custom Properties for Cascading Variables Module Level 1</a>. 3 December 2015. CR. URL: <a href="https://www.w3.org/TR/css-variables-1/">https://www.w3.org/TR/css-variables-1/</a>
-   <dt id="biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]
-   <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 10 December 2019. REC. URL: <a href="https://www.w3.org/TR/css-writing-modes-3/">https://www.w3.org/TR/css-writing-modes-3/</a>
    <dt id="biblio-css-writing-modes-4">[CSS-WRITING-MODES-4]
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-4/">CSS Writing Modes Level 4</a>. 30 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-writing-modes-4/">https://www.w3.org/TR/css-writing-modes-4/</a>
    <dt id="biblio-css2">[CSS2]
@@ -3457,16 +3236,16 @@ Counters in elements that do not generate boxes</a>
   <dl>
    <dt id="biblio-css-animations-1">[CSS-ANIMATIONS-1]
    <dd>Dean Jackson; et al. <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>. 11 October 2018. WD. URL: <a href="https://www.w3.org/TR/css-animations-1/">https://www.w3.org/TR/css-animations-1/</a>
-   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
-   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-color-3">[CSS-COLOR-3]
    <dd>Tantek Çelik; Chris Lilley; David Baron. <a href="https://www.w3.org/TR/css-color-3/">CSS Color Module Level 3</a>. 19 June 2018. REC. URL: <a href="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</a>
    <dt id="biblio-css-color-4">[CSS-COLOR-4]
-   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
+   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 12 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
    <dt id="biblio-css-fonts-3">[CSS-FONTS-3]
    <dd>John Daggett; Myles Maxfield; Chris Lilley. <a href="https://www.w3.org/TR/css-fonts-3/">CSS Fonts Module Level 3</a>. 20 September 2018. REC. URL: <a href="https://www.w3.org/TR/css-fonts-3/">https://www.w3.org/TR/css-fonts-3/</a>
    <dt id="biblio-css-transitions-1">[CSS-TRANSITIONS-1]
    <dd>David Baron; et al. <a href="https://www.w3.org/TR/css-transitions-1/">CSS Transitions</a>. 11 October 2018. WD. URL: <a href="https://www.w3.org/TR/css-transitions-1/">https://www.w3.org/TR/css-transitions-1/</a>
+   <dt id="biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]
+   <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 10 December 2019. REC. URL: <a href="https://www.w3.org/TR/css-writing-modes-3/">https://www.w3.org/TR/css-writing-modes-3/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="property-index"><span class="content">Property Index</span><a class="self-link" href="#property-index"></a></h2>
   <div class="big-element-wrapper">
@@ -3572,7 +3351,7 @@ Counters in elements that do not generate boxes</a>
    <div class="issue"> This is handwavey nonsense from CSS2, and needs a real definition.<a href="#issue-ffa70ac6"> ↵ </a></div>
    <div class="issue"> Alternatively, <a class="css" data-link-type="maybe" href="#list-style-position-outside">outside</a> could lay out the marker as a previous sibling of the principal inline box.<a href="#issue-bf311ada"> ↵ </a></div>
    <div class="issue"> For this order punctuation inside the marker correctly,
-	it would also need to take the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction">direction</a> value of the parent. <a href="https://github.com/w3c/csswg-drafts/issues/4202">&lt;https://github.com/w3c/csswg-drafts/issues/4202></a><a href="#issue-91830b42"> ↵ </a></div>
+	it would also need to take the <a class="property" data-link-type="propdesc">direction</a> value of the parent. <a href="https://github.com/w3c/csswg-drafts/issues/4202">&lt;https://github.com/w3c/csswg-drafts/issues/4202></a><a href="#issue-91830b42"> ↵ </a></div>
    <div class="issue"> There are issues open on <a href="https://github.com/w3c/csswg-drafts/issues/5308">renaming the keywords</a> and on <a href="https://github.com/w3c/csswg-drafts/issues/4209">merging with <span class="css">list-style-position</span></a>.<a href="#issue-69d20ea1"> ↵ </a></div>
    <div class="issue">
      Counters are sometimes useful for things other than printing markers.
@@ -3586,7 +3365,7 @@ Counters in elements that do not generate boxes</a>
 		Today you have to use a preprocessor to do this in a reasonable way,
 		but a counter would make it work well in "plain" CSS.</p>
     <p>(You can built up successive values in the nested case today
-		by using <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property">custom properties</a> and stacking up nested <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#funcdef-calc">calc()</a>s,
+		by using <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property">custom properties</a> and stacking up nested <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#funcdef-calc">calc()</a>s,
 		but this is a *little bit* clumsy,
 		and doesn’t work for siblings.)</p>
     <p>Suggestion is to add a <span class="css">counter-value(<a class="production css" data-link-type="type" href="#typedef-counter-name">&lt;counter-name></a>)</span> function,
@@ -4041,14 +3820,6 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>
 <script>/* script-var-click-highlighting */
 
     document.addEventListener("click", e=>{

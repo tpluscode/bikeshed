@@ -916,7 +916,7 @@ by specifying the permissions policy in an HTTP response header:</p>
   <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-useridlestate" id="ref-for-enumdef-useridlestate①"><c- n>UserIdleState</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="UserIdleState?" href="#dom-idledetector-userstate" id="ref-for-dom-idledetector-userstate"><c- g>userState</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-screenidlestate" id="ref-for-enumdef-screenidlestate①"><c- n>ScreenIdleState</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="ScreenIdleState?" href="#dom-idledetector-screenstate" id="ref-for-dom-idledetector-screenstate"><c- g>screenState</c-></a>;
   <c- b>attribute</c-> <a data-link-type="idl-name" href="https://html.spec.whatwg.org/multipage/webappapis.html#eventhandler" id="ref-for-eventhandler"><c- n>EventHandler</c-></a> <a class="idl-code" data-link-type="attribute" data-type="EventHandler" href="#dom-idledetector-onchange" id="ref-for-dom-idledetector-onchange"><c- g>onchange</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed①"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>static</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise"><c- b>Promise</c-></a>&lt;<a data-link-type="idl-name" href="https://w3c.github.io/permissions/#enumdef-permissionstate" id="ref-for-enumdef-permissionstate"><c- n>PermissionState</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-idledetector-requestpermission" id="ref-for-dom-idledetector-requestpermission"><c- g>requestPermission</c-></a>();
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed①"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>static</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise"><c- b>Promise</c-></a>&lt;<a data-link-type="idl-name" href="https://w3c.github.io/deviceorientation/#enumdef-permissionstate" id="ref-for-enumdef-permissionstate"><c- n>PermissionState</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-idledetector-requestpermission" id="ref-for-dom-idledetector-requestpermission"><c- g>requestPermission</c-></a>();
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise①"><c- b>Promise</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-undefined" id="ref-for-idl-undefined"><c- b>undefined</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-idledetector-start" id="ref-for-dom-idledetector-start"><c- g>start</c-></a>(<c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-idleoptions" id="ref-for-dictdef-idleoptions"><c- n>IdleOptions</c-></a> <dfn class="idl-code" data-dfn-for="IdleDetector/start(options), IdleDetector/start()" data-dfn-type="argument" data-export id="dom-idledetector-start-options-options"><code><c- g>options</c-></code><a class="self-link" href="#dom-idledetector-start-options-options"></a></dfn> = {});
 };
 </pre>
@@ -1347,6 +1347,12 @@ for their help in crafting this proposal.</p>
    <li><a href="#dom-idledetector-userstate-slot">[[userState]]</a><span>, in §2.4</span>
    <li><a href="#dom-idledetector-userstate">userState</a><span>, in §2.4.1</span>
   </ul>
+  <aside class="dfn-panel" data-for="term-for-enumdef-permissionstate">
+   <a href="https://w3c.github.io/deviceorientation/#enumdef-permissionstate">https://w3c.github.io/deviceorientation/#enumdef-permissionstate</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-enumdef-permissionstate">2.4. The IdleDetector interface</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-abortsignal">
    <a href="https://dom.spec.whatwg.org/#abortsignal">https://dom.spec.whatwg.org/#abortsignal</a><b>Referenced in:</b>
    <ul>
@@ -1491,12 +1497,6 @@ for their help in crafting this proposal.</p>
    <a href="https://www.w3.org/TR/page-visibility-2/#dom-document-onvisibilitychange">https://www.w3.org/TR/page-visibility-2/#dom-document-onvisibilitychange</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-document-onvisibilitychange">1. Introduction</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-enumdef-permissionstate">
-   <a href="https://w3c.github.io/permissions/#enumdef-permissionstate">https://w3c.github.io/permissions/#enumdef-permissionstate</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-enumdef-permissionstate">2.4. The IdleDetector interface</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-boolean-feature">
@@ -1645,6 +1645,11 @@ for their help in crafting this proposal.</p>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
+    <a data-link-type="biblio">[DEVICE-ORIENTATION]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-enumdef-permissionstate">PermissionState</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[DOM]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-abortsignal">AbortSignal</span>
@@ -1694,7 +1699,6 @@ for their help in crafting this proposal.</p>
    <li>
     <a data-link-type="biblio">[permissions]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-enumdef-permissionstate">PermissionState</span>
      <li><span class="dfn-paneled" id="term-for-boolean-feature">boolean feature</span>
      <li><span class="dfn-paneled" id="term-for-permission-state">permission state</span>
      <li><span class="dfn-paneled" id="term-for-permission-task-source">permission task source</span>
@@ -1708,7 +1712,7 @@ for their help in crafting this proposal.</p>
      <li><span class="dfn-paneled" id="term-for-policy-controlled-feature">policy-controlled feature</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-aborterror">AbortError</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
@@ -1730,35 +1734,35 @@ for their help in crafting this proposal.</p>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-device-orientation">[DEVICE-ORIENTATION]
+   <dd>Rich Tibbett; et al. <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a>. 16 April 2019. WD. URL: <a href="https://www.w3.org/TR/orientation-event/">https://www.w3.org/TR/orientation-event/</a>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-infra">[INFRA]
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
    <dt id="biblio-page-visibility-2">[PAGE-VISIBILITY-2]
-   <dd>Ilya Grigorik; Marcos Caceres. <a href="https://www.w3.org/TR/page-visibility-2/">Page Visibility Level 2</a>. 18 May 2021. CR. URL: <a href="https://www.w3.org/TR/page-visibility-2/">https://www.w3.org/TR/page-visibility-2/</a>
+   <dd>Ilya Grigorik; Arvind Jain; Jatinder Mann. <a href="https://www.w3.org/TR/page-visibility-2/">Page Visibility Level 2</a>. 17 October 2017. PR. URL: <a href="https://www.w3.org/TR/page-visibility-2/">https://www.w3.org/TR/page-visibility-2/</a>
    <dt id="biblio-permissions">[PERMISSIONS]
-   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 15 June 2021. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
+   <dd>Mounir Lamouri; Marcos Caceres; Jeffrey Yasskin. <a href="https://www.w3.org/TR/permissions/">Permissions</a>. 20 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions/">https://www.w3.org/TR/permissions/</a>
    <dt id="biblio-permissions-policy">[PERMISSIONS-POLICY]
    <dd>Ian Clelland. <a href="https://www.w3.org/TR/permissions-policy-1/">Permissions Policy</a>. 16 July 2020. WD. URL: <a href="https://www.w3.org/TR/permissions-policy-1/">https://www.w3.org/TR/permissions-policy-1/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
-   <dt id="biblio-device-orientation">[DEVICE-ORIENTATION]
-   <dd>Rich Tibbett; et al. <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a>. 16 April 2019. WD. URL: <a href="https://www.w3.org/TR/orientation-event/">https://www.w3.org/TR/orientation-event/</a>
    <dt id="biblio-fetch">[FETCH]
    <dd>Anne van Kesteren. <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>. Living Standard. URL: <a href="https://fetch.spec.whatwg.org/">https://fetch.spec.whatwg.org/</a>
    <dt id="biblio-geolocation-api">[GEOLOCATION-API]
    <dd>Andrei Popescu. <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a>. 8 November 2016. REC. URL: <a href="https://www.w3.org/TR/geolocation-API/">https://www.w3.org/TR/geolocation-API/</a>
    <dt id="biblio-push-api">[PUSH-API]
-   <dd>Peter Beverloo; Martin Thomson. <a href="https://www.w3.org/TR/push-api/">Push API</a>. 16 June 2021. WD. URL: <a href="https://www.w3.org/TR/push-api/">https://www.w3.org/TR/push-api/</a>
+   <dd>Peter Beverloo; Martin Thomson. <a href="https://www.w3.org/TR/push-api/">Push API</a>. 4 February 2020. WD. URL: <a href="https://www.w3.org/TR/push-api/">https://www.w3.org/TR/push-api/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
 <pre class="idl highlight def"><c- b>enum</c-> <a href="#enumdef-useridlestate"><code><c- g>UserIdleState</c-></code></a> {
@@ -1784,7 +1788,7 @@ for their help in crafting this proposal.</p>
   <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-useridlestate"><c- n>UserIdleState</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="UserIdleState?" href="#dom-idledetector-userstate"><c- g>userState</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-screenidlestate"><c- n>ScreenIdleState</c-></a>? <a class="idl-code" data-link-type="attribute" data-readonly data-type="ScreenIdleState?" href="#dom-idledetector-screenstate"><c- g>screenState</c-></a>;
   <c- b>attribute</c-> <a data-link-type="idl-name" href="https://html.spec.whatwg.org/multipage/webappapis.html#eventhandler"><c- n>EventHandler</c-></a> <a class="idl-code" data-link-type="attribute" data-type="EventHandler" href="#dom-idledetector-onchange"><c- g>onchange</c-></a>;
-  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>static</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise"><c- b>Promise</c-></a>&lt;<a data-link-type="idl-name" href="https://w3c.github.io/permissions/#enumdef-permissionstate"><c- n>PermissionState</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-idledetector-requestpermission"><c- g>requestPermission</c-></a>();
+  [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>static</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise"><c- b>Promise</c-></a>&lt;<a data-link-type="idl-name" href="https://w3c.github.io/deviceorientation/#enumdef-permissionstate"><c- n>PermissionState</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-idledetector-requestpermission"><c- g>requestPermission</c-></a>();
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise"><c- b>Promise</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-undefined"><c- b>undefined</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-idledetector-start"><c- g>start</c-></a>(<c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-idleoptions"><c- n>IdleOptions</c-></a> <a href="#dom-idledetector-start-options-options"><code><c- g>options</c-></code></a> = {});
 };
 

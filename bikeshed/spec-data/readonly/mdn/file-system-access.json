@@ -1,5 +1,109 @@
 {
-    "api-filesystemdirectoryhandle-getdirectoryhandle": [
+    "api-filesystemdirectoryhandle": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/FileSystemDirectoryHandle.json",
+            "name": "entries",
+            "slug": "API/FileSystemDirectoryHandle/entries",
+            "summary": "The entries() method of the FileSystemDirectoryHandle interface returns an array of a given object's own enumerable property [key, value] pairs, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).",
+            "support": {
+                "chrome": {
+                    "version_added": "86"
+                },
+                "chrome_android": {
+                    "version_added": "86"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "72"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "86"
+                }
+            },
+            "title": "FileSystemDirectoryHandle.entries()"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/FileSystemDirectoryHandle.json",
+            "name": "FileSystemDirectoryHandle",
+            "slug": "API/FileSystemDirectoryHandle",
+            "summary": "The FileSystemDirectoryHandle interface of the File System Access API provides a handle to a file system directory. The interface is accessed via the window.showDirectoryPicker() method.",
+            "support": {
+                "chrome": {
+                    "version_added": "86"
+                },
+                "chrome_android": {
+                    "version_added": "86"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "72"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "86"
+                }
+            },
+            "title": "FileSystemDirectoryHandle"
+        }
+    ],
+    "dom-filesystemdirectoryhandle-getdirectoryhandle": [
         {
             "engines": [
                 "blink"
@@ -40,7 +144,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -93,7 +197,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -103,6 +207,57 @@
                 }
             },
             "title": "FileSystemDirectoryHandle.getFileHandle()"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/FileSystemDirectoryHandle.json",
+            "name": "keys",
+            "slug": "API/FileSystemDirectoryHandle/keys",
+            "summary": "The keys() method of the FileSystemDirectoryHandle interface returns a new Array Iterator containing the keys for each item in FileSystemDirectoryHandle.",
+            "support": {
+                "chrome": {
+                    "version_added": "86"
+                },
+                "chrome_android": {
+                    "version_added": "86"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "72"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "86"
+                }
+            },
+            "title": "FileSystemDirectoryHandle.keys()"
         }
     ],
     "api-filesystemdirectoryhandle-removeentry": [
@@ -146,7 +301,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -158,7 +313,7 @@
             "title": "FileSystemDirectoryHandle.removeEntry()"
         }
     ],
-    "api-filesystemdirectoryhandle-resolve": [
+    "dom-filesystemdirectoryhandle-resolve": [
         {
             "engines": [
                 "blink"
@@ -199,7 +354,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -209,17 +364,15 @@
                 }
             },
             "title": "FileSystemDirectoryHandle.resolve()"
-        }
-    ],
-    "api-filesystemdirectoryhandle": [
+        },
         {
             "engines": [
                 "blink"
             ],
             "filename": "api/FileSystemDirectoryHandle.json",
-            "name": "FileSystemDirectoryHandle",
-            "slug": "API/FileSystemDirectoryHandle",
-            "summary": "The FileSystemDirectoryHandle interface of the File System Access API provides a handle to a file system directory. The interface is accessed via the window.showDirectoryPicker() method.",
+            "name": "values",
+            "slug": "API/FileSystemDirectoryHandle/values",
+            "summary": "The values() method of the FileSystemDirectoryHandle interface returns a new Array Iterator containing the values for each index in the FileSystemDirectoryHandle object.",
             "support": {
                 "chrome": {
                     "version_added": "86"
@@ -252,7 +405,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -261,10 +414,10 @@
                     "version_added": "86"
                 }
             },
-            "title": "FileSystemDirectoryHandle"
+            "title": "FileSystemDirectoryHandle.values()"
         }
     ],
-    "api-filesystemfilehandle-createwritable": [
+    "dom-filesystemfilehandle-createwritable": [
         {
             "engines": [
                 "blink"
@@ -305,7 +458,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -358,7 +511,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -411,7 +564,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -423,7 +576,7 @@
             "title": "FileSystemFileHandle"
         }
     ],
-    "api-filesystemhandle-issameentry": [
+    "dom-filesystemhandle-issameentry": [
         {
             "engines": [
                 "blink"
@@ -464,7 +617,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -476,7 +629,7 @@
             "title": "FileSystemHandle.isSameEntry()"
         }
     ],
-    "ref-for-dom-filesystemhandle-kind①": [
+    "dom-filesystemhandle-kind": [
         {
             "engines": [
                 "blink"
@@ -517,7 +670,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -529,7 +682,7 @@
             "title": "FileSystemHandle.kind"
         }
     ],
-    "ref-for-dom-filesystemhandle-name①": [
+    "dom-filesystemhandle-name": [
         {
             "engines": [
                 "blink"
@@ -570,7 +723,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -623,7 +776,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -676,7 +829,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false
@@ -729,7 +882,7 @@
                     "version_added": false
                 },
                 "samsunginternet_android": {
-                    "version_added": "14.0"
+                    "version_added": false
                 },
                 "webview_android": {
                     "version_added": false

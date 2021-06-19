@@ -81,8 +81,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#a-promise-rejected-wi
 -
 a promise rejected with
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#a-promise-rejected-with
@@ -91,8 +91,8 @@ https://heycam.github.io/webidl/#a-promise-rejected-with
 -
 a promise resolved with
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#a-promise-resolved-with
@@ -382,8 +382,8 @@ set
 -
 append
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-append
@@ -996,8 +996,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#other-applicable-spec
 -
 applicable specification
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-applicable-specification
@@ -1006,8 +1006,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-applicable-specification
 -
 applicable specification
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-applicable-specification
@@ -1016,8 +1016,8 @@ https://w3c.github.io/webcrypto/#dfn-applicable-specification
 -
 applicable specification
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-applicable-specification
@@ -1037,8 +1037,8 @@ extended attributes
 -
 applicable to types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#extended-attributes-applicable-to-types

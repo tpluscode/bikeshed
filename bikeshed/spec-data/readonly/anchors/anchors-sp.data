@@ -104,8 +104,8 @@ https://www.w3.org/TR/mst-content-hint/#idl-def-AudioContentHint.speech-recognit
 -
 'speech' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#speech-media-group
@@ -114,8 +114,8 @@ https://drafts.csswg.org/css2/#speech-media-group
 -
 'speech' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#speech-media-group
@@ -1052,8 +1052,8 @@ https://w3c.github.io/mathml-core/#dfn-space-like
 -
 space-separated matching
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#space-separated-matching
@@ -1062,8 +1062,8 @@ https://drafts.csswg.org/css2/#space-separated-matching
 -
 space-separated matching
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#space-separated-matching
@@ -1198,8 +1198,8 @@ XRFrame/fillPoses(spaces, baseSpace, transforms)
 -
 spacing
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextPathElementSpacingAttribute
@@ -1209,8 +1209,8 @@ textPath
 -
 spacing
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__spacing
@@ -1220,8 +1220,8 @@ SVGTextPathElement
 -
 spacing
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextPathElementSpacingAttribute
@@ -1231,8 +1231,8 @@ textPath
 -
 spacing
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__spacing
@@ -1737,8 +1737,8 @@ https://www.w3.org/TR/css-speech-1/#speak
 -
 speak
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-speak
@@ -1800,8 +1800,8 @@ https://www.w3.org/TR/css-speech-1/#speak-as
 -
 speak-header
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-speak-header
@@ -1810,8 +1810,8 @@ https://www.w3.org/TR/CSS22/aural.html#propdef-speak-header
 -
 speak-numeral
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-speak-numeral
@@ -1820,8 +1820,8 @@ https://www.w3.org/TR/CSS22/aural.html#propdef-speak-numeral
 -
 speak-punctuation
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-speak-punctuation
@@ -1915,8 +1915,8 @@ https://url.spec.whatwg.org/#special-authority-slashes-state
 -
 special keyword
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-special-keyword
@@ -1925,8 +1925,8 @@ https://heycam.github.io/webidl/#dfn-special-keyword
 -
 special keywords
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-special-keyword
@@ -1935,8 +1935,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-special-keyword
 -
 special operation
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-special-operation
@@ -1945,8 +1945,8 @@ https://heycam.github.io/webidl/#dfn-special-operation
 -
 special operation
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-special-operation
@@ -2005,8 +2005,8 @@ https://www.w3.org/TR/generic-sensor/#specific-conditions
 -
 specific type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-specific-type
@@ -2015,8 +2015,8 @@ https://heycam.github.io/webidl/#dfn-specific-type
 -
 specific type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-specific-type
@@ -2286,8 +2286,8 @@ https://www.w3.org/TR/css-cascade-5/#specified-value
 -
 specified values
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#specified-value
@@ -2296,8 +2296,8 @@ https://drafts.csswg.org/css2/#specified-value
 -
 specified values
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#specified-value
@@ -2468,8 +2468,8 @@ https://www.w3.org/TR/resource-hints/#dfn-speculative-fetch
 -
 speech
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-media-speech
@@ -2479,8 +2479,8 @@ https://drafts.csswg.org/css2/#valdef-media-speech
 -
 speech
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-media-speech
@@ -2534,8 +2534,8 @@ https://www.w3.org/TR/mediaqueries-5/#valdef-media-speech
 -
 speech-rate
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-speech-rate
@@ -2577,8 +2577,8 @@ SpeechRecognition
 -
 speed
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-speed
@@ -2588,8 +2588,8 @@ GeolocationCoordinates
 -
 speed
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-speed
@@ -2793,8 +2793,8 @@ https://www.w3.org/TR/vibration/#dfn-spin-the-event-loop
 -
 spki
 enum-value
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-keyformat-spki
@@ -2987,8 +2987,8 @@ https://www.w3.org/TR/css-backgrounds-3/#spread-distance
 -
 spreadMethod
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#__svg__SVGGradientElement__spreadMethod
@@ -2998,8 +2998,8 @@ SVGGradientElement
 -
 spreadMethod
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#__svg__SVGGradientElement__spreadMethod
@@ -3009,8 +3009,8 @@ SVGGradientElement
 -
 spreadmethod
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementSpreadMethodAttribute
@@ -3020,8 +3020,8 @@ linearGradient
 -
 spreadmethod
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#RadialGradientElementSpreadMethodAttribute
@@ -3031,8 +3031,8 @@ radialGradient
 -
 spreadmethod
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#LinearGradientElementSpreadMethodAttribute
@@ -3042,8 +3042,8 @@ linearGradient
 -
 spreadmethod
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#RadialGradientElementSpreadMethodAttribute

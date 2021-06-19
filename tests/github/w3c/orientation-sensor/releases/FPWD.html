@@ -439,7 +439,7 @@ beyond those described in the Generic Sensor API <a data-link-type="biblio" href
    <h2 class="heading settled" data-level="5" id="model"><span class="secno">5. </span><span class="content">Model</span><a class="self-link" href="#model"></a></h2>
    <p>The <code class="idl"><a data-link-type="idl" href="#orientationsensor" id="ref-for-orientationsensor④">OrientationSensor</a></code> class extends the <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/generic-sensor/#sensor" id="ref-for-sensor">Sensor</a></code> class and provides generic interface
 representing device orientation data.</p>
-   <p>To access the orientation sensor’s <a data-link-type="dfn" href="https://w3c.github.io/sensors#latest-reading" id="ref-for-latest-reading">latest reading</a>, the user agent must invoke <a data-link-type="dfn" href="https://www.w3.org/TR/generic-sensor/#request-sensor-access" id="ref-for-request-sensor-access">request sensor access</a> abstract operation for each of the <a data-link-type="dfn" href="https://w3c.github.io/sensors#low-level" id="ref-for-low-level①">low-level</a> sensors used by the concrete orientation sensor. The table below
+   <p>To access the orientation sensor’s <a data-link-type="dfn" href="https://w3c.github.io/sensors#latest-reading" id="ref-for-latest-reading">latest reading</a>, the user agent must invoke <a data-link-type="dfn">request sensor access</a> abstract operation for each of the <a data-link-type="dfn" href="https://w3c.github.io/sensors#low-level" id="ref-for-low-level①">low-level</a> sensors used by the concrete orientation sensor. The table below
 describes mapping between concrete orientation sensors and permission tokens defined by <a data-link-type="dfn" href="https://w3c.github.io/sensors#low-level" id="ref-for-low-level②">low-level</a> sensors.</p>
    <table class="def">
     <thead>
@@ -711,12 +711,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
     <li><a href="#ref-for-low-level①">5. Model</a> <a href="#ref-for-low-level②">(2)</a> <a href="#ref-for-low-level③">(3)</a> <a href="#ref-for-low-level④">(4)</a> <a href="#ref-for-low-level⑤">(5)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-request-sensor-access">
-   <a href="https://www.w3.org/TR/generic-sensor/#request-sensor-access">https://www.w3.org/TR/generic-sensor/#request-sensor-access</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-request-sensor-access">5. Model</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-sensor">
    <a href="https://w3c.github.io/sensors#sensor">https://w3c.github.io/sensors#sensor</a><b>Referenced in:</b>
    <ul>
@@ -852,7 +846,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
      <li><span class="dfn-paneled" id="term-for-high-level">high-level</span>
      <li><span class="dfn-paneled" id="term-for-latest-reading">latest reading</span>
      <li><span class="dfn-paneled" id="term-for-low-level">low-level</span>
-     <li><span class="dfn-paneled" id="term-for-request-sensor-access">request sensor access</span>
      <li><span class="dfn-paneled" id="term-for-sensor①">sensor</span>
      <li><span class="dfn-paneled" id="term-for-sensor-fusion">sensor-fusion</span>
     </ul>
@@ -885,7 +878,7 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
      <li><span class="dfn-paneled" id="term-for-absolute-orientation">absolute orientation sensor</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-idl-Float32Array">Float32Array</span>
@@ -916,6 +909,8 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

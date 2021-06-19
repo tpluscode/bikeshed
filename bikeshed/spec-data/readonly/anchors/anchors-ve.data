@@ -11,8 +11,8 @@ USBRequestType
 -
 "versionchange"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransactionmode-versionchange
@@ -22,8 +22,8 @@ IDBTransactionMode
 -
 "versionchange"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactionmode-versionchange
@@ -186,8 +186,8 @@ GPUShaderStage
 -
 VersionError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#versionerror
@@ -218,8 +218,8 @@ GPURenderEncoderBase
 -
 vector
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#vector
@@ -228,8 +228,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#vector
 -
 vector
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#vector
@@ -238,8 +238,8 @@ https://www.w3.org/TR/WGSL/#vector
 -
 vector-effect
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#VectorEffectProperty
@@ -248,8 +248,8 @@ https://svgwg.org/svg2-draft/coords.html#VectorEffectProperty
 -
 vector-effect
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#VectorEffectProperty
@@ -436,8 +436,8 @@ https://www.w3.org/TR/openscreenprotocol/#verified-display-name
 -
 verify
 enum-value
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-keyusage-verify
@@ -447,8 +447,8 @@ KeyUsage
 -
 verify
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-verify
@@ -477,8 +477,8 @@ https://www.w3.org/TR/webtransport/#verify-a-certificate-fingerprint
 -
 verify()
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify
@@ -488,8 +488,8 @@ SubtleCrypto
 -
 verify(algorithm, key, signature, data)
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify
@@ -565,8 +565,8 @@ NavigatorUABrandVersion
 -
 version
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#database-version
@@ -576,8 +576,8 @@ database
 -
 version
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#connection-version
@@ -587,8 +587,8 @@ connection
 -
 version
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbfactory-open-name-version-version
@@ -599,8 +599,8 @@ IDBFactory/open(name)
 -
 version
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabaseinfo-version
@@ -610,8 +610,8 @@ IDBDatabaseInfo
 -
 version
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-version
@@ -621,8 +621,8 @@ IDBDatabase
 -
 version
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#database-version
@@ -632,8 +632,8 @@ database
 -
 version
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#connection-version
@@ -643,8 +643,8 @@ connection
 -
 version
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-open-name-version-version
@@ -655,8 +655,8 @@ IDBFactory/open(name)
 -
 version
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabaseinfo-version
@@ -666,8 +666,8 @@ IDBDatabaseInfo
 -
 version
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-version
@@ -688,8 +688,8 @@ MIDIPort
 -
 versionchange
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#eventdef-connection-versionchange
@@ -699,8 +699,8 @@ connection
 -
 versionchange
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#eventdef-connection-versionchange
@@ -710,8 +710,8 @@ connection
 -
 versionerror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#versionerror
@@ -812,8 +812,8 @@ GPURenderPipelineDescriptor
 -
 vertex
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#vertex
@@ -822,8 +822,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#vertex
 -
 vertex
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#vertex
@@ -852,8 +852,8 @@ https://www.w3.org/TR/webgpu/#vertex-buffer
 -
 vertex markers
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermVertexMarker
@@ -862,8 +862,8 @@ https://svgwg.org/svg2-draft/painting.html#TermVertexMarker
 -
 vertex markers
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermVertexMarker
@@ -872,8 +872,8 @@ https://www.w3.org/TR/SVG2/painting.html#TermVertexMarker
 -
 vertex shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#vertex-shader-stage
@@ -882,8 +882,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#vertex-shader-stage
 -
 vertex shader stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#vertex-shader-stage
@@ -1138,8 +1138,8 @@ https://www.w3.org/TR/css-inline-3/#propdef-vertical-align
 -
 vertical-align
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-vertical-align
@@ -1148,8 +1148,8 @@ https://drafts.csswg.org/css2/#propdef-vertical-align
 -
 vertical-align
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-vertical-align
@@ -1158,8 +1158,8 @@ https://drafts.csswg.org/css2/#propdef-vertical-align
 -
 vertical-align
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visudet.html#propdef-vertical-align

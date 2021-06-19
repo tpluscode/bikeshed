@@ -256,62 +256,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -769,43 +713,11 @@ For example, developers could monitor the time it takes for a widget to show up 
    <h2 class="heading settled" data-level="2" id="sec-element-timing"><span class="secno">2. </span><span class="content">Element Timing</span><a class="self-link" href="#sec-element-timing"></a></h2>
    <p>Element Timing involves the following new interfaces:</p>
    <h3 class="heading settled" data-level="2.1" id="sec-performance-element-timing"><span class="secno">2.1. </span><span class="content"><code class="idl"><a data-link-type="idl" href="#performanceelementtiming" id="ref-for-performanceelementtiming">PerformanceElementTiming</a></code> interface</span><a class="self-link" href="#sec-performance-element-timing"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming" title="The PerformanceElementTiming interface of the Element Timing API reports timing information on a specific element identified by the page author. For example it could report timing information about the main image in an article.">PerformanceElementTiming</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/toJSON" title="The toJSON() method of the PerformanceElementTiming interface is a standard serializer. It returns a JSON representation of the object&apos;s properties.">PerformanceElementTiming/toJSON</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="performanceelementtiming"><code class="highlight"><c- g>PerformanceElementTiming</c-></code></dfn> : <a data-link-type="idl-name" href="https://w3c.github.io/performance-timeline/#the-performanceentry-interface" id="ref-for-the-performanceentry-interface"><c- n>PerformanceEntry</c-></a> {
     <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://w3c.github.io/hr-time#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="PerformanceElementTiming" data-dfn-type="attribute" data-export data-readonly data-type="DOMHighResTimeStamp" id="dom-performanceelementtiming-rendertime"><code class="highlight"><c- g>renderTime</c-></code></dfn>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://w3c.github.io/hr-time#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp①"><c- n>DOMHighResTimeStamp</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="PerformanceElementTiming" data-dfn-type="attribute" data-export data-readonly data-type="DOMHighResTimeStamp" id="dom-performanceelementtiming-loadtime"><code class="highlight"><c- g>loadTime</c-></code></dfn>;
-    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#domrectreadonly" id="ref-for-domrectreadonly"><c- n>DOMRectReadOnly</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="PerformanceElementTiming" data-dfn-type="attribute" data-export data-readonly data-type="DOMRectReadOnly" id="dom-performanceelementtiming-intersectionrect"><code class="highlight"><c- g>intersectionRect</c-></code></dfn>;
+    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#domrectreadonly" id="ref-for-domrectreadonly"><c- n>DOMRectReadOnly</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="PerformanceElementTiming" data-dfn-type="attribute" data-export data-readonly data-type="DOMRectReadOnly" id="dom-performanceelementtiming-intersectionrect"><code class="highlight"><c- g>intersectionRect</c-></code></dfn>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString" id="ref-for-idl-DOMString"><c- b>DOMString</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="PerformanceElementTiming" data-dfn-type="attribute" data-export data-readonly data-type="DOMString" id="dom-performanceelementtiming-identifier"><code class="highlight"><c- g>identifier</c-></code></dfn>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="PerformanceElementTiming" data-dfn-type="attribute" data-export data-readonly data-type="unsigned long" id="dom-performanceelementtiming-naturalwidth"><code class="highlight"><c- g>naturalWidth</c-></code></dfn>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long" id="ref-for-idl-unsigned-long①"><c- b>unsigned</c-> <c- b>long</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="PerformanceElementTiming" data-dfn-type="attribute" data-export data-readonly data-type="unsigned long" id="dom-performanceelementtiming-naturalheight"><code class="highlight"><c- g>naturalHeight</c-></code></dfn>;
@@ -828,159 +740,15 @@ For example, developers could monitor the time it takes for a widget to show up 
    <p>The <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/performance-timeline/#dom-performanceentry-name" id="ref-for-dom-performanceentry-name">name</a></code> attribute’s getter must return the value it was initialized to.</p>
    <p>The <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime" id="ref-for-dom-performanceentry-starttime">startTime</a></code> attribute’s getter must return the value of the <a data-link-type="dfn">context object</a>’s <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-rendertime" id="ref-for-dom-performanceelementtiming-rendertime">renderTime</a></code> if it is not 0, and the value of the <a data-link-type="dfn">context object</a>’s <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-loadtime" id="ref-for-dom-performanceelementtiming-loadtime">loadTime</a></code> otherwise.</p>
    <p>The <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/performance-timeline/#dom-performanceentry-duration" id="ref-for-dom-performanceentry-duration">duration</a></code> attribute’s getter must return 0.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/renderTime" title="The renderTime read-only property of the PerformanceElementTiming interface returns the render time of the associated element.">PerformanceElementTiming/renderTime</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-rendertime" id="ref-for-dom-performanceelementtiming-rendertime①">renderTime</a></code> attribute must return the value it was initialized to.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/loadTime" title="The loadTime read-only property of the PerformanceElementTiming interface always returns 0 for text. For images it returns the time which is the latest between the time the image resource is loaded and the time it is attached to the element.">PerformanceElementTiming/loadTime</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-loadtime" id="ref-for-dom-performanceelementtiming-loadtime①">loadTime</a></code> attribute’s getter must return the the value it was initialized to.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/intersectionRect" title="The intersectionRect read-only property of the PerformanceElementTiming interface returns the rectangle of the element within the viewport.">PerformanceElementTiming/intersectionRect</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-intersectionrect" id="ref-for-dom-performanceelementtiming-intersectionrect">intersectionRect</a></code> attribute must return the value it was initialized to.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/identifier" title="The identifier read-only property of the PerformanceElementTiming interface returns the value of the elementtiming attribute on the element.">PerformanceElementTiming/identifier</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-identifier" id="ref-for-dom-performanceelementtiming-identifier">identifier</a></code> attribute’s getter must return the value it was initialized to.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/naturalWidth" title="The naturalWidth read-only property of the PerformanceElementTiming interface returns the intrinsic width of the image element.">PerformanceElementTiming/naturalWidth</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-naturalwidth" id="ref-for-dom-performanceelementtiming-naturalwidth">naturalWidth</a></code> attribute must return the value it was initialized to.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/naturalHeight" title="The naturalHeight read-only property of the PerformanceElementTiming interface returns the intrinsic height of the image element.">PerformanceElementTiming/naturalHeight</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-naturalheight" id="ref-for-dom-performanceelementtiming-naturalheight">naturalHeight</a></code> attribute must return the value it was initialized to.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/id" title="The id read-only property of the PerformanceElementTiming interface returns the id of the associated element.">PerformanceElementTiming/id</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-id" id="ref-for-dom-performanceelementtiming-id">id</a></code> attribute’s getter must return the value it was initialized to.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/element" title="The element read-only property of the PerformanceElementTiming interface returns an Element which is a literal representation of the associated element.">PerformanceElementTiming/element</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-element" id="ref-for-dom-performanceelementtiming-element">element</a></code> attribute’s getter must run the <a data-link-type="dfn" href="#get-an-element" id="ref-for-get-an-element">get an element</a> algorithm with <a data-link-type="dfn">context object</a>’s <a data-link-type="dfn" href="#element" id="ref-for-element②">element</a> and null as inputs.</p>
    <p class="note" role="note"><span>Note:</span> This means that an element that is no longer <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-tree-descendant" id="ref-for-concept-tree-descendant">descendant</a> of the <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document">Document</a></code> will no longer be returned by <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-element" id="ref-for-dom-performanceelementtiming-element①">element</a></code>'s attribute getter.</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceElementTiming/url" title="The url read-only property of the PerformanceElementTiming interface returns the initial URL of the resource request when the element is an image.">PerformanceElementTiming/url</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>77+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>64+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>77+</span></span><span class="webview_android yes"><span>Android WebView</span><span>77+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>12.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>55+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-performanceelementtiming-url" id="ref-for-dom-performanceelementtiming-url">url</a></code> attribute’s getter must perform the following steps:</p>
    <div class="algorithm" data-algorithm="PerformanceElementTiming url">
     <ol>
@@ -1022,7 +790,7 @@ When an <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.
      <li data-md>
       <p>If a <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#text" id="ref-for-text">Text</a></code> object <var>text</var> will not be painted due to the font face being in its <a data-link-type="dfn" href="https://drafts.csswg.org/css-fonts-4/#font-block-period" id="ref-for-font-block-period">font block period</a>, then it is not <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#set-append" id="ref-for-set-append">appended</a> to the <a data-link-type="dfn" href="#set-of-owned-text-nodes" id="ref-for-set-of-owned-text-nodes①">set of owned text nodes</a> of any <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#element" id="ref-for-element①②">Element</a></code>.</p>
      <li data-md>
-      <p>Otherwise, <var>text</var> is <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#set-append" id="ref-for-set-append①">appended</a> to the <a data-link-type="dfn" href="#set-of-owned-text-nodes" id="ref-for-set-of-owned-text-nodes②">set of owned text nodes</a> of the <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#element" id="ref-for-element①③">Element</a></code> which determines the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a> of <var>text</var>.</p>
+      <p>Otherwise, <var>text</var> is <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#set-append" id="ref-for-set-append①">appended</a> to the <a data-link-type="dfn" href="#set-of-owned-text-nodes" id="ref-for-set-of-owned-text-nodes②">set of owned text nodes</a> of the <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#element" id="ref-for-element①③">Element</a></code> which determines the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block">containing block</a> of <var>text</var>.</p>
     </ul>
    </div>
    <p class="note" role="note"><span>NOTE:</span> A user agent might want to use a stack to efficiently compute the <a data-link-type="dfn" href="#set-of-owned-text-nodes" id="ref-for-set-of-owned-text-nodes③">set of owned text nodes</a> while implementing the <a data-link-type="dfn" href="https://drafts.csswg.org/css2/zindex.html#painting-order" id="ref-for-painting-order①">painting order</a>.</p>
@@ -1034,7 +802,7 @@ So, for example, if there is a style with two URLs affecting all <code class="hi
 This means that a single <a data-link-type="dfn" href="https://drafts.csswg.org/css-backgrounds-3#propdef-background-image" id="ref-for-propdef-background-image③">background-image</a> property could produce multiple <code class="idl"><a data-link-type="idl" href="#performanceelementtiming" id="ref-for-performanceelementtiming④">PerformanceElementTiming</a></code> entries because it can affect multiple elements and because it can specify multiple URLs.</p>
    <h3 class="heading settled" data-level="3.3" id="sec-modifications-HTML"><span class="secno">3.3. </span><span class="content">Modifications to the HTML specification</span><a class="self-link" href="#sec-modifications-HTML"></a></h3>
    <p><em>This section will be removed once the <a data-link-type="biblio" href="#biblio-html">[HTML]</a> specification has been modified.</em></p>
-   <p>In the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering" id="ref-for-update-the-rendering">update the rendering</a> step of the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model" id="ref-for-event-loop-processing-model">event loop processing model</a>, add the following substep at the end:</p>
+   <p>In the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#update-the-rendering" id="ref-for-update-the-rendering">update the rendering</a> step of the <a data-link-type="dfn">event loop processing model</a>, add the following substep at the end:</p>
    <ol>
     <li data-md>
      <p>For each <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#fully-active" id="ref-for-fully-active">fully active</a> <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document③">Document</a></code> in <em>docs</em>, run the <a data-link-type="dfn" href="#element-timing-processing" id="ref-for-element-timing-processing">element timing processing</a> algorithm passing in the <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document④">Document</a></code> and <em>now</em>.</p>
@@ -1325,7 +1093,7 @@ This would unintentionally leak some of the display timing of the image.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#containing-block">https://drafts.csswg.org/css-display-3/#containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#containing-block">https://drafts.csswg.org/css-display/#containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-containing-block">3.2. Modifications to the CSS specification</a>
    </ul>
@@ -1401,7 +1169,7 @@ This would unintentionally leak some of the display timing of the image.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-domrectreadonly">
-   <a href="https://drafts.fxtf.org/geometry-1/#domrectreadonly">https://drafts.fxtf.org/geometry-1/#domrectreadonly</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#domrectreadonly">https://drafts.fxtf.org/geometry/#domrectreadonly</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-domrectreadonly">2.1. PerformanceElementTiming interface</a>
    </ul>
@@ -1454,12 +1222,6 @@ This would unintentionally leak some of the display timing of the image.</p>
    <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element">https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-the-div-element">3.2. Modifications to the CSS specification</a> <a href="#ref-for-the-div-element①">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-event-loop-processing-model">
-   <a href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model">https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-event-loop-processing-model">3.3. Modifications to the HTML specification</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fully-active">
@@ -1733,7 +1495,7 @@ This would unintentionally leak some of the display timing of the image.</p>
      <li><span class="dfn-paneled" id="term-for-domrectreadonly">DOMRectReadOnly</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[hr-time-3]</a> defines the following terms:
+    <a data-link-type="biblio">[hr-time-2]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dom-domhighrestimestamp">DOMHighResTimeStamp</span>
      <li><span class="dfn-paneled" id="term-for-dfn-current-high-resolution-time">current high resolution time</span>
@@ -1747,7 +1509,6 @@ This would unintentionally leak some of the display timing of the image.</p>
      <li><span class="dfn-paneled" id="term-for-window">Window</span>
      <li><span class="dfn-paneled" id="term-for-img-all">completely available</span>
      <li><span class="dfn-paneled" id="term-for-the-div-element">div</span>
-     <li><span class="dfn-paneled" id="term-for-event-loop-processing-model">event loop processing model</span>
      <li><span class="dfn-paneled" id="term-for-fully-active">fully active</span>
      <li><span class="dfn-paneled" id="term-for-image-request">image request</span>
      <li><span class="dfn-paneled" id="term-for-the-img-element">img</span>
@@ -1792,7 +1553,7 @@ This would unintentionally leak some of the display timing of the image.</p>
      <li><span class="dfn-paneled" id="term-for-supportedentrytypes-attribute">supportedEntryTypes</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[resource-timing-2]</a> defines the following terms:
+    <a data-link-type="biblio">[resource-timing-1]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dfn-timing-allow-check">timing allow check</span>
     </ul>
@@ -1809,7 +1570,7 @@ This would unintentionally leak some of the display timing of the image.</p>
      <li><span class="dfn-paneled" id="term-for-concept-url-scheme">scheme</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
      <li><span class="dfn-paneled" id="term-for-Default">Default</span>
@@ -1831,8 +1592,8 @@ This would unintentionally leak some of the display timing of the image.</p>
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-geometry-1">[GEOMETRY-1]
    <dd>Simon Pieters; Chris Harrelson. <a href="https://www.w3.org/TR/geometry-1/">Geometry Interfaces Module Level 1</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/geometry-1/">https://www.w3.org/TR/geometry-1/</a>
-   <dt id="biblio-hr-time-3">[HR-TIME-3]
-   <dd>Yoav Weiss; et al. <a href="https://www.w3.org/TR/hr-time-3/">High Resolution Time</a>. 7 June 2021. WD. URL: <a href="https://www.w3.org/TR/hr-time-3/">https://www.w3.org/TR/hr-time-3/</a>
+   <dt id="biblio-hr-time-2">[HR-TIME-2]
+   <dd>Ilya Grigorik. <a href="https://www.w3.org/TR/hr-time-2/">High Resolution Time Level 2</a>. 21 November 2019. REC. URL: <a href="https://www.w3.org/TR/hr-time-2/">https://www.w3.org/TR/hr-time-2/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-infra">[INFRA]
@@ -1843,16 +1604,16 @@ This would unintentionally leak some of the display timing of the image.</p>
    <dd><a href="https://wicg.github.io/largest-contentful-paint/">Largest Contentful Paint</a>. cg-draft. URL: <a href="https://wicg.github.io/largest-contentful-paint/">https://wicg.github.io/largest-contentful-paint/</a>
    <dt id="biblio-performance-timeline-2">[PERFORMANCE-TIMELINE-2]
    <dd>Ilya Grigorik. <a href="https://www.w3.org/TR/performance-timeline-2/">Performance Timeline Level 2</a>. 24 October 2019. WD. URL: <a href="https://www.w3.org/TR/performance-timeline-2/">https://www.w3.org/TR/performance-timeline-2/</a>
-   <dt id="biblio-resource-timing-2">[RESOURCE-TIMING-2]
-   <dd>Yoav Weiss; et al. <a href="https://www.w3.org/TR/resource-timing-2/">Resource Timing Level 2</a>. 14 April 2021. WD. URL: <a href="https://www.w3.org/TR/resource-timing-2/">https://www.w3.org/TR/resource-timing-2/</a>
+   <dt id="biblio-resource-timing-1">[RESOURCE-TIMING-1]
+   <dd>Arvind Jain; et al. <a href="https://www.w3.org/TR/resource-timing-1/">Resource Timing Level 1</a>. 30 March 2017. CR. URL: <a href="https://www.w3.org/TR/resource-timing-1/">https://www.w3.org/TR/resource-timing-1/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-svg2">[SVG2]
    <dd>Amelia Bellamy-Royds; et al. <a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>. 4 October 2018. CR. URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a>
    <dt id="biblio-url">[URL]
    <dd>Anne van Kesteren. <a href="https://url.spec.whatwg.org/">URL Standard</a>. Living Standard. URL: <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
@@ -1864,7 +1625,7 @@ This would unintentionally leak some of the display timing of the image.</p>
 <c- b>interface</c-> <a href="#performanceelementtiming"><code class="highlight"><c- g>PerformanceElementTiming</c-></code></a> : <a data-link-type="idl-name" href="https://w3c.github.io/performance-timeline/#the-performanceentry-interface"><c- n>PerformanceEntry</c-></a> {
     <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://w3c.github.io/hr-time#dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <a data-readonly data-type="DOMHighResTimeStamp" href="#dom-performanceelementtiming-rendertime"><code class="highlight"><c- g>renderTime</c-></code></a>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://w3c.github.io/hr-time#dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <a data-readonly data-type="DOMHighResTimeStamp" href="#dom-performanceelementtiming-loadtime"><code class="highlight"><c- g>loadTime</c-></code></a>;
-    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#domrectreadonly"><c- n>DOMRectReadOnly</c-></a> <a data-readonly data-type="DOMRectReadOnly" href="#dom-performanceelementtiming-intersectionrect"><code class="highlight"><c- g>intersectionRect</c-></code></a>;
+    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#domrectreadonly"><c- n>DOMRectReadOnly</c-></a> <a data-readonly data-type="DOMRectReadOnly" href="#dom-performanceelementtiming-intersectionrect"><code class="highlight"><c- g>intersectionRect</c-></code></a>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString"><c- b>DOMString</c-></a> <a data-readonly data-type="DOMString" href="#dom-performanceelementtiming-identifier"><code class="highlight"><c- g>identifier</c-></code></a>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a data-readonly data-type="unsigned long" href="#dom-performanceelementtiming-naturalwidth"><code class="highlight"><c- g>naturalWidth</c-></code></a>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long"><c- b>unsigned</c-> <c- b>long</c-></a> <a data-readonly data-type="unsigned long" href="#dom-performanceelementtiming-naturalheight"><code class="highlight"><c- g>naturalHeight</c-></code></a>;
@@ -2108,14 +1869,6 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>
 <script>/* script-var-click-highlighting */
 
     document.addEventListener("click", e=>{

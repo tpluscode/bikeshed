@@ -511,8 +511,8 @@ HTMLAreaElement
 -
 ping
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#AElementPingAttribute
@@ -522,8 +522,8 @@ a
 -
 ping
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__ping
@@ -533,8 +533,8 @@ SVGAElement
 -
 ping
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#AElementPingAttribute
@@ -544,8 +544,8 @@ a
 -
 ping
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#__svg__SVGAElement__ping
@@ -781,8 +781,8 @@ GPURenderEncoderBase/setPipeline(pipeline)
 -
 pipeline
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline
@@ -791,8 +791,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline
 -
 pipeline
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline
@@ -801,8 +801,8 @@ https://www.w3.org/TR/WGSL/#pipeline
 -
 pipeline constant id
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-constant-id
@@ -811,8 +811,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-constant-id
 -
 pipeline constant id
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-constant-id
@@ -821,8 +821,8 @@ https://www.w3.org/TR/WGSL/#pipeline-constant-id
 -
 pipeline creation
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-creation
@@ -831,8 +831,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-creation
 -
 pipeline creation
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-creation
@@ -841,8 +841,8 @@ https://www.w3.org/TR/WGSL/#pipeline-creation
 -
 pipeline input
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-input
@@ -851,8 +851,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-input
 -
 pipeline input
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-input
@@ -861,8 +861,8 @@ https://www.w3.org/TR/WGSL/#pipeline-input
 -
 pipeline output
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-output
@@ -871,8 +871,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-output
 -
 pipeline output
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-output
@@ -881,8 +881,8 @@ https://www.w3.org/TR/WGSL/#pipeline-output
 -
 pipeline-creation error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-creation-error
@@ -891,8 +891,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-creation-error
 -
 pipeline-creation error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-creation-error
@@ -901,8 +901,8 @@ https://www.w3.org/TR/WGSL/#pipeline-creation-error
 -
 pipeline-overridable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable
@@ -911,8 +911,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable
 -
 pipeline-overridable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-overridable
@@ -921,8 +921,8 @@ https://www.w3.org/TR/WGSL/#pipeline-overridable
 -
 pipeline-overridable constant has a default value
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-has-a-default-value
@@ -931,8 +931,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-has-a-defaul
 -
 pipeline-overridable constant has a default value
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-overridable-constant-has-a-default-value
@@ -941,8 +941,8 @@ https://www.w3.org/TR/WGSL/#pipeline-overridable-constant-has-a-default-value
 -
 pipeline-overridable constant identifier string
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-identifier-string
@@ -951,8 +951,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#pipeline-overridable-constant-identifier-s
 -
 pipeline-overridable constant identifier string
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#pipeline-overridable-constant-identifier-string
@@ -1048,8 +1048,8 @@ SpeechSynthesisUtterance
 -
 pitch
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-pitch
@@ -1058,8 +1058,8 @@ https://www.w3.org/TR/CSS22/aural.html#propdef-pitch
 -
 pitch-range
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-pitch-range
@@ -1068,8 +1068,8 @@ https://www.w3.org/TR/CSS22/aural.html#propdef-pitch-range
 -
 pixel
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#reference-pixel
@@ -1078,8 +1078,8 @@ https://drafts.csswg.org/css2/#reference-pixel
 -
 pixel
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#reference-pixel

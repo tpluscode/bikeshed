@@ -823,7 +823,7 @@ due to differences in detection method, sensor construction, etc.</p>
 </pre>
    <p>To construct an <code class="idl"><a data-link-type="idl" href="#ambientlightsensor" id="ref-for-ambientlightsensor①">AmbientLightSensor</a></code> object the user agent must invoke the <a data-link-type="dfn" href="#construct-an-ambient-light-sensor-object" id="ref-for-construct-an-ambient-light-sensor-object">construct an ambient light sensor object</a> abstract operation.</p>
    <h4 class="heading settled" data-level="5.1.1" id="ambient-light-sensor-reading-attribute"><span class="secno">5.1.1. </span><span class="content">The illuminance attribute</span><a class="self-link" href="#ambient-light-sensor-reading-attribute"></a></h4>
-   <p>The <a class="idl-code" data-link-type="attribute" href="#dom-ambientlightsensor-illuminance" id="ref-for-dom-ambientlightsensor-illuminance①">illuminance</a> attribute of the <code class="idl"><a data-link-type="idl" href="#ambientlightsensor" id="ref-for-ambientlightsensor②">AmbientLightSensor</a></code> interface represents the <a data-link-type="dfn" href="#current-light-level" id="ref-for-current-light-level">current light level</a> and returns the result of invoking <a data-link-type="dfn" href="https://w3c.github.io/sensors/#get-value-from-latest-reading" id="ref-for-get-value-from-latest-reading">get value from latest reading</a> with <code>this</code> and "illuminance" as arguments.</p>
+   <p>The <a class="idl-code" data-link-type="attribute" href="#dom-ambientlightsensor-illuminance" id="ref-for-dom-ambientlightsensor-illuminance①">illuminance</a> attribute of the <code class="idl"><a data-link-type="idl" href="#ambientlightsensor" id="ref-for-ambientlightsensor②">AmbientLightSensor</a></code> interface represents the <a data-link-type="dfn" href="#current-light-level" id="ref-for-current-light-level">current light level</a> and returns the result of invoking <a data-link-type="dfn">get value from latest reading</a> with <code>this</code> and "illuminance" as arguments.</p>
    <h2 class="heading settled" data-level="6" id="abstract-operations"><span class="secno">6. </span><span class="content">Abstract Operations</span><a class="self-link" href="#abstract-operations"></a></h2>
    <h3 class="heading settled dfn-paneled" data-dfn-type="dfn" data-export data-level="6.1" data-lt="Construct an ambient light sensor object" id="construct-an-ambient-light-sensor-object"><span class="secno">6.1. </span><span class="content">Construct an ambient light sensor object</span><a class="self-link" href="#construct-an-ambient-light-sensor-object" id="ref-for-construct-an-ambient-light-sensor-object①"></a></h3>
    <div class="algorithm" data-algorithm="construct an ambient light sensor object">
@@ -957,12 +957,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
     <li><a href="#ref-for-default-sensor">4. Model</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-get-value-from-latest-reading">
-   <a href="https://w3c.github.io/sensors/#get-value-from-latest-reading">https://w3c.github.io/sensors/#get-value-from-latest-reading</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-get-value-from-latest-reading">5.1.1. The illuminance attribute</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-high-level">
    <a href="https://w3c.github.io/sensors/#high-level">https://w3c.github.io/sensors/#high-level</a><b>Referenced in:</b>
    <ul>
@@ -1083,7 +1077,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
      <li><span class="dfn-paneled" id="term-for-automation">automation</span>
      <li><span class="dfn-paneled" id="term-for-check-sensor-policy-controlled-features">check sensor policy-controlled features</span>
      <li><span class="dfn-paneled" id="term-for-default-sensor">default sensor</span>
-     <li><span class="dfn-paneled" id="term-for-get-value-from-latest-reading">get value from latest reading</span>
      <li><span class="dfn-paneled" id="term-for-high-level">high-level</span>
      <li><span class="dfn-paneled" id="term-for-initialize-a-sensor-object">initialize a sensor object</span>
      <li><span class="dfn-paneled" id="term-for-limit-max-frequency">limit maximum sampling frequency</span>
@@ -1102,7 +1095,7 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
      <li><span class="dfn-paneled" id="term-for-dom-permissionname-ambient-light-sensor">"ambient-light-sensor"</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
@@ -1123,6 +1116,8 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

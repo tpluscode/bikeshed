@@ -632,7 +632,7 @@ dfn > a.self-link::before      { content: "#"; }
      <dd> We know <i lang="la">a posteriori</i> that a <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-response" id="ref-for-concept-response①">response</a> (<var>response</var>) is unauthenticated if <var>response</var>’s <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-response-url" id="ref-for-concept-response-url">URL</a> is not a <a data-link-type="dfn" href="https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url" id="ref-for-potentially-trustworthy-url①">potentially trustworthy URL</a>. 
      <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="embedding-document">embedding document</dfn>
      <dd> Given a <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document">Document</a></code> <var>A</var>, the <strong>embedding
-      document</strong> of <var>A</var> is <var>A</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc" id="ref-for-concept-document-bc">browsing context</a>'s <a data-link-type="dfn">container document</a> <a data-link-type="biblio" href="#biblio-html">[HTML]</a>.
+      document</strong> of <var>A</var> is <var>A</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#concept-document-bc" id="ref-for-concept-document-bc">browsing context</a>'s <a data-link-type="dfn">container document</a> <a data-link-type="biblio" href="#biblio-html">[HTML]</a>. 
      <dt><dfn data-dfn-type="dfn" data-export id="mixed-download">mixed download<a class="self-link" href="#mixed-download"></a></dfn>
      <dd> A mixed download is a resource that a user agent handles as a download,
       which was initiated by a secure context but is downloaded over an
@@ -663,14 +663,14 @@ dfn > a.self-link::before      { content: "#"; }
        <p>Requests whose <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-initiator" id="ref-for-concept-request-initiator">initiator</a> is the empty string, and whose <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-destination" id="ref-for-concept-request-destination">destination</a> is "<code>image</code>".</p>
        <p class="note" role="note"><span>Note:</span> This corresponds to most images loaded via <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" id="ref-for-the-img-element">img</a></code> (including SVG documents loaded as
   images, as those are blocked from executing script or fetching subresources) and CSS
-  (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image" id="ref-for-propdef-border-image">border-image</a>, etc). It does not include <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" id="ref-for-the-img-element①">img</a></code> elements that <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/images.html#use-srcset-or-picture" id="ref-for-use-srcset-or-picture">use
+  (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border-image" id="ref-for-propdef-border-image">border-image</a>, etc). It does not include <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" id="ref-for-the-img-element①">img</a></code> elements that <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/images.html#use-srcset-or-picture" id="ref-for-use-srcset-or-picture">use
   srcset or picture</a>.</p>
       <li data-md>
        <p>Requests whose <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-destination" id="ref-for-concept-request-destination①">destination</a> is "<code>video</code>".</p>
        <p class="note" role="note"><span>Note:</span> This corresponds to video loaded via <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/media.html#video" id="ref-for-video">video</a></code> and <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element" id="ref-for-the-source-element">source</a></code>.</p>
       <li data-md>
        <p>Requests whose <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-destination" id="ref-for-concept-request-destination②">destination</a> is "<code>audio</code>".</p>
-       <p class="note" role="note"><span>Note:</span> This corresponds to audio loaded via <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/media.html#audio" id="ref-for-audio">audio</a></code> and <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element" id="ref-for-the-source-element①">source</a></code>.</p>
+       <p class="note" role="note"><span>Note:</span> This corresponds to audio loaded via <code><a data-link-type="element">audio</a></code> and <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element" id="ref-for-the-source-element①">source</a></code>.</p>
      </ul>
      <p>We further limit this category in <a href="#should-block-fetch" id="ref-for-should-block-fetch">§ 4.4 Should fetching request be blocked as mixed content?</a> by force-failing any CORS-enabled
     request. This means, for example, that mixed content images loaded via <code>&lt;img crossorigin ...></code> will be blocked. This is a good example of the general principle that content falls into this
@@ -724,8 +724,8 @@ dfn > a.self-link::before      { content: "#"; }
      <h3 class="heading settled" data-level="4.2" id="existing-mix-algorithms"><span class="secno">4.2. </span><span class="content">Existing Mixed Content Algorithms and Modifications</span><a class="self-link" href="#existing-mix-algorithms"></a></h3>
      <p class="note" role="note"><span>Note:</span> This section specifies modifications to existing mixed content algorithms to ignore the
     distinction between optionally-blockable and blockable mixed content, since all
-    optionally-blockable mixed content will now be autoupgraded. <a href="http://www.w3.org/TR/mixed-content/#should-block-fetch">Mixed Content §5.3 Should fetching request be blocked as mixed content?</a> and <a href="http://www.w3.org/TR/mixed-content/#should-block-response">Mixed Content §5.4 Should response to request be blocked as mixed content?</a> are
-    replaced by the versions below, while <a href="http://www.w3.org/TR/mixed-content/#categorize-settings-object">Mixed Content §5.1 Does settings prohibit mixed security contexts?</a> is left
+    optionally-blockable mixed content will now be autoupgraded. <span spec-section="#should-block-fetch"></span> and <span spec-section="#should-block-response"></span> are
+    replaced by the versions below, while <span spec-section="#categorize-settings-object"></span> is left
     unmodified (but included below since this will replace the <a data-link-type="biblio" href="#biblio-mixed-content">[mixed-content]</a> spec).</p>
      <p>section></p>
      <h3 class="heading settled" data-level="4.3" id="categorize-settings-object"><span class="secno">4.3. </span><span class="content"> Does <var>settings</var> prohibit mixed security contexts? </span><a class="self-link" href="#categorize-settings-object"></a></h3>
@@ -864,7 +864,7 @@ dfn > a.self-link::before      { content: "#"; }
    <section>
     <h2 class="heading settled" data-level="6" id="obsolescences"><span class="secno">6. </span><span class="content">Obsolescences</span><a class="self-link" href="#obsolescences"></a></h2>
     <h3 class="heading settled" data-level="6.1" id="strict-checking"><span class="secno">6.1. </span><span class="content"><code>Strict Mixed Content Checking</code></span><a class="self-link" href="#strict-checking"></a></h3>
-    <p>This specification renders the <a href="http://www.w3.org/TR/mixed-content/#strict-checking">Mixed Content §4 Strict Mixed Content Checking</a> mode and
+    <p>This specification renders the <span spec-section="#strict-checking"></span> mode and
   the <code>block-all-mixed-content</code> CSP directive obsolete,
   because all mixed content is now blocked if it can’t be autoupgraded.</p>
     <p class="note" role="note"><span>Note:</span> The <code>upgrade-insecure-requests</code> (<a data-link-type="biblio" href="#biblio-upgrade-insecure-requests">[upgrade-insecure-requests]</a>) directive is not
@@ -976,13 +976,13 @@ dfn > a.self-link::before      { content: "#"; }
    <li><a href="#upgrade-algorithm">Upgrade a mixed content request to a potentially trustworthy URL, if appropriate</a><span>, in §4</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-propdef-background-image">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image">https://drafts.csswg.org/css-backgrounds/#propdef-background-image</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-image">3.1. Upgradeable Content</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border-image">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image">https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border-image">https://drafts.csswg.org/css-backgrounds/#propdef-border-image</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-border-image">3.1. Upgradeable Content</a>
    </ul>
@@ -1094,12 +1094,6 @@ dfn > a.self-link::before      { content: "#"; }
    <a href="https://html.spec.whatwg.org/multipage/browsers.html#active-document">https://html.spec.whatwg.org/multipage/browsers.html#active-document</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-active-document">5.2. Modifications to HTML</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-audio">
-   <a href="https://html.spec.whatwg.org/multipage/media.html#audio">https://html.spec.whatwg.org/multipage/media.html#audio</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-audio">3.1. Upgradeable Content</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-concept-document-bc">
@@ -1280,7 +1274,6 @@ dfn > a.self-link::before      { content: "#"; }
     <ul>
      <li><span class="dfn-paneled" id="term-for-attr-fs-action">action</span>
      <li><span class="dfn-paneled" id="term-for-active-document">active document</span>
-     <li><span class="dfn-paneled" id="term-for-audio">audio</span>
      <li><span class="dfn-paneled" id="term-for-concept-document-bc">browsing context</span>
      <li><span class="dfn-paneled" id="term-for-downloading-hyperlinks">download the hyperlink</span>
      <li><span class="dfn-paneled" id="term-for-environment-settings-object">environment settings object</span>

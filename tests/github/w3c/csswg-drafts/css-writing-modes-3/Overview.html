@@ -1029,7 +1029,7 @@ Vertical Scripts in Unicode</span></a>
   with other text operations
   in setting lines of text
   is described in <a href="https://www.w3.org/TR/css-text-3/#order">CSS Text 3 § Text Processing Order of Operations</a>. </p>
-   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed values</a> of the <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②">writing-mode</a>, <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③">direction</a>, and <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation②">text-orientation</a> properties
+   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed values</a> of the <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②">writing-mode</a>, <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③">direction</a>, and <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation②">text-orientation</a> properties
   (even on elements to which these properties themselves don’t apply <a data-link-type="biblio" href="#biblio-css-cascade-4">[CSS-CASCADE-4]</a>)
   are broadly able to influence the computed values of other, unrelated properties
   through calculations such as
@@ -1076,19 +1076,6 @@ Vertical Scripts in Unicode</span></a>
    <h3 class="heading settled" data-level="2.1" id="direction"><span class="secno">2.1. </span><span class="content"> Specifying Directionality: the <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction⑥">direction</a> property</span><a class="self-link" href="#direction"></a></h3>
    <div class="mdn-anno wrapped after">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/direction" title="The direction CSS property sets the direction of text, table columns, and horizontal overflow.">direction</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>2+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>5.5+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/direction" title="The direction attribute specifies the inline-base direction of a <text> or <tspan> element. It defines the start and end points of a line of text as used by the text-anchor and inline-size properties. It also may affect the direction in which characters are positioned if the unicode-bidi property&apos;s value is either embed or bidi-override.">Attribute/direction</a></p>
      <p class="less-than-two-engines-text">In no current engines.</p>
@@ -1161,19 +1148,6 @@ Vertical Scripts in Unicode</span></a>
    <h3 class="heading settled" data-level="2.2" id="unicode-bidi"><span class="secno">2.2. </span><span class="content"> Embeddings and Overrides: the <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi⑥">unicode-bidi</a> property</span><a class="self-link" href="#unicode-bidi"></a></h3>
    <div class="mdn-anno wrapped after">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi" title="The unicode-bidi CSS property, together with the direction property, determines how bidirectional text in a document is handled. For example, if a block of content contains both left-to-right and right-to-left text, the user-agent uses a complex Unicode algorithm to decide how to display the text. The unicode-bidi property overrides this algorithm and allows the developer to control the text embedding.">unicode-bidi</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1.3+</span></span><span class="chrome yes"><span>Chrome</span><span>2+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.2+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>5.5+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/unicode-bidi" title="The unicode-bidi attribute specifies how the accumulation of the background image is managed.">Attribute/unicode-bidi</a></p>
      <p class="less-than-two-engines-text">In no current engines.</p>
@@ -1313,7 +1287,7 @@ Vertical Scripts in Unicode</span></a>
   before passing the paragraph to the Unicode bidirectional algorithm for reordering.
   (See <a href="#bidi-control-codes">§ 2.4.2 CSS–Unicode Bidi Control Translation, Text Reordering</a>.) </p>
    <table class="data" id="bidi-control-codes-injection-table">
-    <caption>Bidi control codes injected by <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi①②">unicode-bidi</a> at the start/end of <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display">display: inline</a> boxes</caption>
+    <caption>Bidi control codes injected by <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi①②">unicode-bidi</a> at the start/end of <a class="css" data-link-type="propdesc">display: inline</a> boxes</caption>
     <colgroup span="1">
     <colgroup span="2">
     <colgroup span="2">
@@ -1331,7 +1305,7 @@ Vertical Scripts in Unicode</span></a>
       <th>end 
     <tbody>
      <tr>
-      <th scope="row"><a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-normal" id="ref-for-valdef-unicode-bidi-normal④">normal</a>
+      <th scope="row"><a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-normal" id="ref-for-valdef-unicode-bidi-normal④">normal</a> 
       <td>— 
       <td>— 
       <td>— 
@@ -1369,7 +1343,7 @@ Vertical Scripts in Unicode</span></a>
     <tfoot>
      <tr>
       <td colspan="5"> <small>* The LRO/RLO+PDF pairs are also applied
-          to the <a data-link-type="dfn" href="https://drafts.csswg.org/css-inline-3/#root-inline-box" id="ref-for-root-inline-box">root inline box</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block container</a> if these values of <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi①④">unicode-bidi</a> were specified on the <span id="ref-for-block-container①">block container</span>. </small>
+          to the <a data-link-type="dfn" href="https://drafts.csswg.org/css-inline-3/#root-inline-box" id="ref-for-root-inline-box">root inline box</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block container</a> if these values of <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi①④">unicode-bidi</a> were specified on the <span id="ref-for-block-container①">block container</span>. </small>
    </table>
    <p class="note" role="note">Because the <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi①⑤">unicode-bidi</a> property does not inherit,
   setting <a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-bidi-override" id="ref-for-valdef-unicode-bidi-bidi-override④">bidi-override</a> or <a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-plaintext" id="ref-for-valdef-unicode-bidi-plaintext②">plaintext</a> on a block box will
@@ -1379,10 +1353,10 @@ Vertical Scripts in Unicode</span></a>
    <p class="note" role="note">Note that <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi①⑥">unicode-bidi</a> does not affect the <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction①⑤">direction</a> property even in the case of <a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-plaintext" id="ref-for-valdef-unicode-bidi-plaintext③">plaintext</a>, and thus does not affect <span class="property" id="ref-for-propdef-direction①⑥">direction</span>-dependent layout calculations. </p>
    <p class="note" role="note"> Because the Unicode algorithm has a limit of 125 levels of embedding,
     care should be taken not to overuse <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi①⑦">unicode-bidi</a> values other than <a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-normal" id="ref-for-valdef-unicode-bidi-normal⑤">normal</a>.
-    In particular, a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a> should be used with extreme caution in deeply nested inline markup.
+    In particular, a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit" id="ref-for-valdef-all-inherit">inherit</a> should be used with extreme caution in deeply nested inline markup.
     However, for elements that are,
     in general, intended to be displayed as blocks, a setting of <span class="css" id="ref-for-propdef-unicode-bidi①⑧">unicode-bidi: isolate</span> is preferred to keep the element together
-    in case the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display①">display</a> is changed to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-inline" id="ref-for-valdef-display-inline">inline</a> (see example below). </p>
+    in case the <a class="property" data-link-type="propdesc">display</a> is changed to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-inline" id="ref-for-valdef-display-inline">inline</a> (see example below). </p>
    <h3 class="heading settled" data-level="2.3" id="bidi-example"><span class="secno">2.3. </span><span class="content"> Example of Bidirectional Text</span><a class="self-link" href="#bidi-example"></a></h3>
    <p>The following example shows an XML document with bidirectional
     text. It illustrates an important design principle: document language
@@ -1494,7 +1468,7 @@ english17 <i data-lt>18WERBEH
     This can split inlines or interfere with bidi start/end control pairing
     in interesting ways. </p>
    <h4 class="heading settled" data-level="2.4.3" id="bidi-atomic-inlines"><span class="secno">2.4.3. </span><span class="content"> Bidi Treatment of Atomic Inlines</span><a class="self-link" href="#bidi-atomic-inlines"></a></h4>
-   <p>In this process, <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element">replaced elements</a> with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display②">display: inline</a> are treated as neutral characters,
+   <p>In this process, <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element">replaced elements</a> with <a class="css" data-link-type="propdesc">display: inline</a> are treated as neutral characters,
     unless their <a class="property" data-link-type="propdesc" href="#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi②②">unicode-bidi</a> property is either <a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-embed" id="ref-for-valdef-unicode-bidi-embed②">embed</a> or <a class="css" data-link-type="maybe" href="#valdef-unicode-bidi-bidi-override" id="ref-for-valdef-unicode-bidi-bidi-override⑤">bidi-override</a>,
     in which case they are treated as strong characters
     in the <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction①⑧">direction</a> specified for the element.
@@ -1525,7 +1499,7 @@ english17 <i data-lt>18WERBEH
    <h4 class="heading settled" data-level="2.4.5" id="bidi-box-model"><span class="secno">2.4.5. </span><span class="content"> Reordering-induced Box Fragmentation</span><a class="self-link" href="#bidi-box-model"></a></h4>
    <p>Since bidi reordering can split apart and reorder text
     that is logically contiguous,
-    bidirectional text can cause an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box">inline box</a> containing such text
+    bidirectional text can cause an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box">inline box</a> containing such text
     to be split and its fragments reordered within a line. </p>
    <p>For each line box, UAs must take the fragments of each inline box
     and assign the margins, borders, and padding in visual order (not logical order).
@@ -1614,19 +1588,6 @@ english17 <i data-lt>18WERBEH
    <div class="mdn-anno wrapped after">
     <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode" title="The writing-mode CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (html element for HTML documents).">writing-mode</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>48+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>35+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>9+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>48+</span></span><span class="webview_android yes"><span>Android WebView</span><span>48+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>35+</span></span>
-     </div>
-    </div>
-    <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/writing-mode" title="The writing-mode attribute specifies whether the initial inline-progression-direction for a <text> element shall be left-to-right, right-to-left, or top-to-bottom. The writing-mode attribute applies only to <text> elements; the attribute is ignored for <tspan>, <tref>, <altGlyph> and <textPath> sub-elements. (Note that the inline-progression-direction can change within a <text> element due to the Unicode bidirectional algorithm and properties direction and unicode-bidi.)">Attribute/writing-mode</a></p>
      <p class="less-than-two-engines-text">In no current engines.</p>
      <div class="support">
@@ -1692,7 +1653,7 @@ english17 <i data-lt>18WERBEH
     the <span class="property" id="ref-for-propdef-writing-mode⑤">writing-mode</span> property also determines whether the line boxes' orientation (and thus the <a data-link-type="dfn" href="#writing-mode" id="ref-for-writing-mode⑤">writing mode</a>)
     is horizontal or vertical.
     The <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation③">text-orientation</a> property then determines how text is laid out within the line box. </p>
-   <p>The content of <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element①">replaced elements</a> do not rotate due to the writing mode:
+   <p>The content of <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element①">replaced elements</a> do not rotate due to the writing mode:
     images and external content such as from <code>&lt;iframe></code>s, for example, remain upright,
     and the <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#default-object-size" id="ref-for-default-object-size">default object size</a> of 300px×150px does not re-orient.
     However embedded replaced content involving text
@@ -1740,15 +1701,15 @@ english17 <i data-lt>18WERBEH
                 in horizontal writing modes." src="images/vertical-form.png"></p>
    </div>
    <p>If a box has a different <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode⑥">writing-mode</a> value than its parent box
-    (i.e. nearest ancestor without <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display③">display: contents</a>): </p>
+    (i.e. nearest ancestor without <a class="css" data-link-type="propdesc">display: contents</a>): </p>
    <ul>
-    <li>If the box would otherwise become an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#in-flow" id="ref-for-in-flow">in-flow</a> box
-     with a computed <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display④">display</a> of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-inline" id="ref-for-valdef-display-inline①">inline</a>,
-     its <span class="property" id="ref-for-propdef-display⑤">display</span> computes instead to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-inline-block" id="ref-for-valdef-display-inline-block">inline-block</a>. 
-    <li>If the box is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container②">block container</a>,
-     then it establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#independent-formatting-context" id="ref-for-independent-formatting-context">independent</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-formatting-context" id="ref-for-block-formatting-context">block formatting context</a>. 
-    <li>More generally, if its specified <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-flow" id="ref-for-valdef-display-flow">flow</a>,
-     then its computed <span id="ref-for-inner-display-type①">inner display type</span> becomes <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-flow-root" id="ref-for-valdef-display-flow-root">flow-root</a>. <a data-link-type="biblio" href="#biblio-css-display-3">[CSS-DISPLAY-3]</a> 
+    <li>If the box would otherwise become an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#in-flow" id="ref-for-in-flow">in-flow</a> box
+     with a computed <a class="property" data-link-type="propdesc">display</a> of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-inline" id="ref-for-valdef-display-inline①">inline</a>,
+     its <span class="property">display</span> computes instead to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-inline-block" id="ref-for-valdef-display-inline-block">inline-block</a>. 
+    <li>If the box is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container②">block container</a>,
+     then it establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#independent-formatting-context" id="ref-for-independent-formatting-context">independent</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-formatting-context" id="ref-for-block-formatting-context">block formatting context</a>. 
+    <li>More generally, if its specified <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inner-display-type" id="ref-for-inner-display-type">inner display type</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-flow" id="ref-for-valdef-display-flow">flow</a>,
+     then its computed <span id="ref-for-inner-display-type①">inner display type</span> becomes <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-flow-root" id="ref-for-valdef-display-flow-root">flow-root</a>. <a data-link-type="biblio" href="#biblio-css-display-3">[CSS-DISPLAY-3]</a> 
    </ul>
    <div class="note" id="embedded-svg-inheritance" role="note">
     <a class="self-link" href="#embedded-svg-inheritance"></a> 
@@ -1987,22 +1948,6 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
     The <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation⑤">text-orientation</a> property’s <a class="css" data-link-type="maybe" href="#valdef-text-orientation-mixed" id="ref-for-valdef-text-orientation-mixed①">mixed</a> and <a class="css" data-link-type="maybe" href="#valdef-text-orientation-upright" id="ref-for-valdef-text-orientation-upright①">upright</a> values
     are provided to specify rotation vs. translation of <a data-link-type="dfn" href="#horizontal-only" id="ref-for-horizontal-only①">horizontal-only</a> text. </p>
    <h3 class="heading settled" data-level="5.1" id="text-orientation"><span class="secno">5.1. </span><span class="content"> Orienting Text: the <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation⑥">text-orientation</a> property</span><a class="self-link" href="#text-orientation"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation" title="The text-orientation CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when writing-mode is not horizontal-tb).">text-orientation</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>14+</span></span><span class="chrome yes"><span>Chrome</span><span>48+</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>14+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>48+</span></span><span class="webview_android yes"><span>Android WebView</span><span>48+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="text-orientation">
     <tbody>
      <tr>
@@ -2053,10 +1998,10 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
       i.e. in their standard horizontal orientation. <span id="ref-for-typographic-character-unit③">Typographic character units</span> from vertical scripts
       are typeset with their intrinsic orientation and shaped normally.
       See <a href="#vertical-orientations">Vertical Orientations</a> for further details. </p>
-     <p>This value causes the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction②①">direction</a> to be <a class="css" data-link-type="maybe" href="#valdef-direction-ltr" id="ref-for-valdef-direction-ltr②">ltr</a>,
+     <p>This value causes the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used value</a> of <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction②①">direction</a> to be <a class="css" data-link-type="maybe" href="#valdef-direction-ltr" id="ref-for-valdef-direction-ltr②">ltr</a>,
       and for the purposes of bidi reordering,
       causes all characters to be treated as strong LTR. </p>
-     <p class="note" role="note"><span>Note:</span> The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used value</a>, rather than the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed value</a>,
+     <p class="note" role="note"><span>Note:</span> The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used value</a>, rather than the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed value</a>,
       of <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction②②">direction</a> is influenced
       so that <a class="css" data-link-type="maybe" href="#valdef-direction-rtl" id="ref-for-valdef-direction-rtl②">rtl</a> can inherit properly
       into any descendants
@@ -2462,7 +2407,7 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
       <td colspan="2">right
       <td colspan="4">bottom
    </table>
-   <p class="note" role="note"><span>Note:</span> The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value②">used</a> <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③⓪">direction</a> depends on the computed <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②①">writing-mode</a> and <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation①②">text-orientation</a>:
+   <p class="note" role="note"><span>Note:</span> The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value②">used</a> <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③⓪">direction</a> depends on the computed <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②①">writing-mode</a> and <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation①②">text-orientation</a>:
   in <a data-link-type="dfn" href="#vertical-writing-mode" id="ref-for-vertical-writing-mode">vertical writing modes</a>,
   a <span class="property" id="ref-for-propdef-text-orientation①③">text-orientation</span> value of <a class="css" data-link-type="maybe" href="#valdef-text-orientation-upright" id="ref-for-valdef-text-orientation-upright⑥">upright</a> forces the used <span class="property" id="ref-for-propdef-direction③①">direction</span> to <a class="css" data-link-type="maybe" href="#valdef-direction-ltr" id="ref-for-valdef-direction-ltr⑦">ltr</a>.</p>
    <h2 class="heading settled" data-level="7" id="abstract-layout"><span class="secno">7. </span><span class="content"> Abstract Box Layout</span><a class="self-link" href="#abstract-layout"></a></h2>
@@ -2528,14 +2473,14 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
    <h3 class="heading settled" data-level="7.2" id="dimension-mapping"><span class="secno">7.2. </span><span class="content"> Dimensional Mapping</span><a class="self-link" href="#dimension-mapping"></a></h3>
    <p>Certain properties behave logically as follows: </p>
    <ul>
-    <li>The first and second values of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-border-spacing" id="ref-for-propdef-border-spacing">border-spacing</a> property
+    <li>The first and second values of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-tables-3/#propdef-border-spacing" id="ref-for-propdef-border-spacing">border-spacing</a> property
       represent spacing between columns and rows respectively, not
       necessarily the horizontal and vertical spacing respectively. <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
-    <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height">line-height</a> property always refers to the logical
+    <li>The <a class="property" data-link-type="propdesc">line-height</a> property always refers to the logical
       height. <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
    </ul>
-   <p>The height properties (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height">min-height</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height">max-height</a>)
-    refer to the physical height, and the width properties (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width">width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width">min-width</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width">max-width</a>) refer to the physical width. However,
+   <p>The height properties (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a>, <a class="property" data-link-type="propdesc">min-height</a>, and <span class="property">max-height</span>)
+    refer to the physical height, and the width properties (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width">width</a>, <span class="property">min-width</span>, and <span class="property">max-width</span>) refer to the physical width. However,
     the rules used to calculate box dimensions and positions are logical. </p>
    <p>For example, the calculation rules in <a href="https://www.w3.org/TR/CSS2/visudet.html#Computing_widths_and_margins">CSS2.1 Section 10.3</a> are used for the inline dimension measurements:
     they apply to the <a data-link-type="dfn" href="#inline-size" id="ref-for-inline-size">inline size</a> (which could be either the physical width or physical height)
@@ -2640,13 +2585,13 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
    </ul>
    <p>See <a data-link-type="biblio" href="#biblio-css-sizing-3">[css-sizing-3]</a> for further details on CSS sizing terminology and concepts. </p>
    <h4 class="heading settled" data-level="7.3.2" id="orthogonal-layout"><span class="secno">7.3.2. </span><span class="content"> Auto-sizing Orthogonal Flow Roots</span><a class="self-link" href="#orthogonal-layout"></a></h4>
-   <p>The <a data-link-type="dfn" href="#inline-axis" id="ref-for-inline-axis⑤">inline-axis</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size">automatic size</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level" id="ref-for-block-level">block-level</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container③">block container</a> <a data-link-type="dfn" href="#establish-an-orthogonal-flow" id="ref-for-establish-an-orthogonal-flow④">orthogonal flow</a> (i.e. the size used when its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#preferred-size-properties" id="ref-for-preferred-size-properties">preferred size property</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①">auto</a>)
+   <p>The <a data-link-type="dfn" href="#inline-axis" id="ref-for-inline-axis⑤">inline-axis</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size">automatic size</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level" id="ref-for-block-level">block-level</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container③">block container</a> <a data-link-type="dfn" href="#establish-an-orthogonal-flow" id="ref-for-establish-an-orthogonal-flow④">orthogonal flow</a> (i.e. the size used when its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#preferred-size-properties" id="ref-for-preferred-size-properties">preferred size property</a> is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①">auto</a>)
   is calculating as its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#fit-content-size" id="ref-for-fit-content-size">fit-content size</a>, i.e. <code>min(<a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#max-content-inline-size" id="ref-for-max-content-inline-size">max-content inline size</a>, max(<a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-content-inline-size" id="ref-for-min-content-inline-size">min-content inline size</a>, <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#stretch-fit-inline-size" id="ref-for-stretch-fit-inline-size">stretch-fit inline size</a>)</code>,
   where the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#available" id="ref-for-available⑥">available space</a> used to calculate the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#stretch-fit-inline-size" id="ref-for-stretch-fit-inline-size①">stretch-fit inline size</a> is
-  either the size of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a> if that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#definite" id="ref-for-definite">definite</a>,
+  either the size of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block">containing block</a> if that is <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#definite" id="ref-for-definite">definite</a>,
   or else the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#fallback" id="ref-for-fallback①">fallback size</a> as defined <a href="#orthogonal-auto">above</a>.</p>
-   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size①">automatic sizing</a> of orthogonal <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol-1/#multi-column-container" id="ref-for-multi-column-container">multi-column containers</a> (in both axes)
-  and of other <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#display-type" id="ref-for-display-type">display types</a> not mentioned above
+   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size①">automatic sizing</a> of orthogonal <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol/#multi-column-container" id="ref-for-multi-column-container">multi-column containers</a> (in both axes)
+  and of other <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#display-type" id="ref-for-display-type">display types</a> not mentioned above
   is not defined in this specification.</p>
    <p class="note" role="note"><span>Note:</span> See also <a href="https://www.w3.org/TR/css-writing-modes-4/#auto-multicol">CSS Writing Modes Level 4</a>.</p>
    <h4 class="heading settled" data-level="7.3.3" id="orthogonal-pagination"><span class="secno">7.3.3. </span><span class="content"> Fragmenting Orthogonal Flows</span><a class="self-link" href="#orthogonal-pagination"></a></h4>
@@ -2675,7 +2620,7 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
     box and used to abstract layout rules related to the
     box properties (margins, borders, padding) and any properties
     related to positioning the box within its containing block
-    (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear">clear</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-top" id="ref-for-propdef-top">top</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-bottom" id="ref-for-propdef-bottom">bottom</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-left" id="ref-for-propdef-left">left</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-right" id="ref-for-propdef-right">right</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-caption-side" id="ref-for-propdef-caption-side">caption-side</a>).
+    (<a class="property" data-link-type="propdesc">float</a>, <span class="property">clear</span>, <span class="property">top</span>, <span class="property">bottom</span>, <span class="property">left</span>, <span class="property">right</span>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-tables-3/#propdef-caption-side" id="ref-for-propdef-caption-side">caption-side</a>).
     For inline-level boxes, the writing mode of the <em>parent
     box</em> is used instead.
     (The left/right/top/bottom-named properties and values themselves are still mapped physically;
@@ -2697,7 +2642,7 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
    <ul>
     <li>The initial value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-align" id="ref-for-propdef-text-align②">text-align</a> property
       aligns to the <a data-link-type="dfn" href="#css-start" id="ref-for-css-start⑤">start</a> edge of the line box. 
-    <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-indent" id="ref-for-propdef-text-indent">text-indent</a> property indents from the <a data-link-type="dfn" href="#css-start" id="ref-for-css-start⑥">start</a> edge of the line box.
+    <li>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-indent" id="ref-for-propdef-text-indent">text-indent</a> property indents from the <a data-link-type="dfn" href="#css-start" id="ref-for-css-start⑥">start</a> edge of the line box. 
     <li>For tables, the ordering of columns begins on the <a data-link-type="dfn" href="#inline-start" id="ref-for-inline-start⑥">inline-start</a> side of the table, and the ordering of rows begins on the <a data-link-type="dfn" href="#block-start" id="ref-for-block-start①②">block-start</a> side of the table. 
    </ul>
    <h3 class="heading settled" data-level="7.5" id="line-mappings"><span class="secno">7.5. </span><span class="content"> Line-Relative Mappings</span><a class="self-link" href="#line-mappings"></a></h3>
@@ -2710,15 +2655,15 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
     to interpret the <span class="css">left</span> and <span class="css">right</span> values of the
     following properties: </p>
    <ul>
-    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-align" id="ref-for-propdef-text-align③">text-align</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>
+    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-align" id="ref-for-propdef-text-align③">text-align</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
    </ul>
    <p>The <a data-link-type="dfn" href="#line-right" id="ref-for-line-right⑦">line-right</a> and <a data-link-type="dfn" href="#line-left" id="ref-for-line-left⑧">line-left</a> directions are calculated
     with respect to the writing mode of the <em>containing
     block</em> of the box and used to interpret the <span class="css">left</span> and <span class="css">right</span> values of the following properties: </p>
    <ul>
-    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float①">float</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
-    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clear" id="ref-for-propdef-clear①">clear</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
-    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-caption-side" id="ref-for-propdef-caption-side②">caption-side</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
+    <li>the <a class="property" data-link-type="propdesc">float</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
+    <li>the <a class="property" data-link-type="propdesc">clear</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
+    <li>the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-tables-3/#propdef-caption-side" id="ref-for-propdef-caption-side②">caption-side</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
    </ul>
    <p>The <a data-link-type="dfn" href="#over" id="ref-for-over④">over</a> and <a data-link-type="dfn" href="#under" id="ref-for-under④">under</a> directions are calculated with respect to
     the writing mode of the box and used to define the
@@ -2740,14 +2685,14 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
    <p>The following values are purely physical in their definitions
     and do not respond to changes in writing mode: </p>
    <ul>
-    <li>the <a class="css" data-link-type="maybe" href="https://drafts.fxtf.org/css-masking-1/#funcdef-clip-rect" id="ref-for-funcdef-clip-rect">rect()</a> notation of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-clip" id="ref-for-propdef-clip">clip</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
+    <li>the <a class="css" data-link-type="maybe" href="https://drafts.fxtf.org/css-masking-1/#funcdef-clip-rect" id="ref-for-funcdef-clip-rect">rect()</a> notation of the <a class="property" data-link-type="propdesc">clip</a> property <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
     <li>the background properties <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> <a data-link-type="biblio" href="#biblio-css3bg">[CSS3BG]</a> 
     <li>the border-image properties <a data-link-type="biblio" href="#biblio-css3bg">[CSS3BG]</a> 
-    <li>the offsets of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-shadow" id="ref-for-propdef-text-shadow">text-shadow</a> properties
+    <li>the offsets of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-shadow" id="ref-for-propdef-text-shadow">text-shadow</a> properties 
    </ul>
    <h2 class="heading settled" data-level="8" id="principal-flow"><span class="secno">8. </span><span class="content"> The Principal Writing Mode</span><a class="self-link" href="#principal-flow"></a></h2>
    <p>The <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="principal-writing-mode">principal writing mode</dfn> of the document
-  is determined by the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value③">used</a> <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②③">writing-mode</a>, <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③③">direction</a>, and <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation①④">text-orientation</a> values
+  is determined by the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value③">used</a> <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②③">writing-mode</a>, <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③③">direction</a>, and <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation①④">text-orientation</a> values
   of the root element.
   This writing mode is used, for example,
   to determine the direction of scrolling
@@ -2755,22 +2700,22 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
    <p>
     As a special case for handling HTML documents,
   if the root element has a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" id="ref-for-the-body-element">body</a></code> child element <a data-link-type="biblio" href="#biblio-html">[HTML]</a> 
-    <ins cite="#correction-display-none-propagation">whose <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display⑥">display</a> value is not <a class="css" data-link-type="maybe" href="#valdef-text-combine-upright-none" id="ref-for-valdef-text-combine-upright-none">none</a></ins>
+    <ins cite="#correction-display-none-propagation">whose <a class="property" data-link-type="propdesc">display</a> value is not <a class="css" data-link-type="maybe" href="#valdef-text-combine-upright-none" id="ref-for-valdef-text-combine-upright-none">none</a></ins>
     ,
-  the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value④">used value</a> of the of <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②④">writing-mode</a> and <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③④">direction</a> properties on root element
+  the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value④">used value</a> of the of <a class="property" data-link-type="propdesc" href="#propdef-writing-mode" id="ref-for-propdef-writing-mode②④">writing-mode</a> and <a class="property" data-link-type="propdesc" href="#propdef-direction" id="ref-for-propdef-direction③④">direction</a> properties on root element
   are taken
-  from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed</a> <span class="property" id="ref-for-propdef-writing-mode②⑤">writing-mode</span> and <span class="property" id="ref-for-propdef-direction③⑤">direction</span> of the first such child element instead of from the root element’s own values.
+  from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed</a> <span class="property" id="ref-for-propdef-writing-mode②⑤">writing-mode</span> and <span class="property" id="ref-for-propdef-direction③⑤">direction</span> of the first such child element instead of from the root element’s own values.
   The UA <em>may</em> also propagate the value of <a class="property" data-link-type="propdesc" href="#propdef-text-orientation" id="ref-for-propdef-text-orientation①⑤">text-orientation</a> in this manner.
   Note that this does not affect the computed values of <span class="property" id="ref-for-propdef-writing-mode②⑥">writing-mode</span>, <span class="property" id="ref-for-propdef-direction③⑥">direction</span>, or <span class="property" id="ref-for-propdef-text-orientation①⑥">text-orientation</span> of the root element itself. 
    </p>
-   <div class="correction" id="correction-display-none-propagation"> <span class="marker">Candidate Correction 1:</span> Specify that the <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" id="ref-for-the-body-element①">body</a></code> element is ignored for determining the <a data-link-type="dfn" href="#principal-writing-mode" id="ref-for-principal-writing-mode">principal writing mode</a> if it has <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display⑦">display: none</a>. <a href="https://github.com/w3c/csswg-drafts/issues/3779">Issue 3779</a> </div>
+   <div class="correction" id="correction-display-none-propagation"> <span class="marker">Candidate Correction 1:</span> Specify that the <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" id="ref-for-the-body-element①">body</a></code> element is ignored for determining the <a data-link-type="dfn" href="#principal-writing-mode" id="ref-for-principal-writing-mode">principal writing mode</a> if it has <a class="css" data-link-type="propdesc">display: none</a>. <a href="https://github.com/w3c/csswg-drafts/issues/3779">Issue 3779</a> </div>
    <p class="note" role="note"><span>Note:</span> Propagation is done on used values rather than computed values
   to avoid disrupting other aspects of style computation,
-  such as <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#inheritance" id="ref-for-inheritance">inheritance</a>, <a href="https://www.w3.org/TR/css-logical-1/#box">logical property mapping logic</a>,
+  such as <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#inheritance" id="ref-for-inheritance">inheritance</a>, <a href="https://www.w3.org/TR/css-logical-1/#box">logical property mapping logic</a>,
   or <a href="https://www.w3.org/TR/css-values-4/#lengths">length value computation</a>.</p>
    <h3 class="heading settled" data-level="8.1" id="icb"><span class="secno">8.1. </span><span class="content"> Propagation to the Initial Containing Block</span><a class="self-link" href="#icb"></a></h3>
    <p>The <a data-link-type="dfn" href="#principal-writing-mode" id="ref-for-principal-writing-mode①">principal writing mode</a> is propagated to
-  the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#initial-containing-block" id="ref-for-initial-containing-block">initial containing block</a> and to the viewport,
+  the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#initial-containing-block" id="ref-for-initial-containing-block">initial containing block</a> and to the viewport,
   thereby affecting the layout of the root element
   and the scrolling direction of the viewport. </p>
    <h3 class="heading settled" data-level="8.2" id="page-direction"><span class="secno">8.2. </span><span class="content"> Page Flow: the page progression direction</span><a class="self-link" href="#page-direction"></a></h3>
@@ -2804,21 +2749,6 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
    <h2 class="heading settled" data-level="9" id="text-combine"><span class="secno">9. </span><span class="content"> Glyph Composition</span><a class="self-link" href="#text-combine"></a></h2>
    <p><span id="text-combine-horizontal"></span></p>
    <h3 class="heading settled" data-level="9.1" id="text-combine-upright"><span class="secno">9.1. </span><span class="content"> Horizontal-in-Vertical Composition: the <a class="property" data-link-type="propdesc" href="#propdef-text-combine-upright" id="ref-for-propdef-text-combine-upright">text-combine-upright</a> property</span><a class="self-link" href="#text-combine-upright"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-combine-upright" title="The text-combine-upright CSS property sets the combination of characters into the space of a single character.">text-combine-upright</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>48+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>48+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>35+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>48+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>48+</span></span><span class="webview_android yes"><span>Android WebView</span><span>48+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>35+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="text-combine-upright">
     <tbody>
      <tr>
@@ -2905,8 +2835,8 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
     the glyphs of the combined text are <a data-link-type="dfn" href="#bidi-isolate" id="ref-for-bidi-isolate①">bidi-isolated</a> and composed horizontally
     (ignoring <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing">letter-spacing</a> and any forced line breaks,
     but using the specified font settings),
-    similar to the contents of an <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-inline-block" id="ref-for-valdef-display-inline-block①">inline-block</a> box
-    with a <a data-link-type="dfn" href="#horizontal-writing-mode" id="ref-for-horizontal-writing-mode①">horizontal writing mode</a> and a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height①">line-height</a> of <span class="css">1em</span>.
+    similar to the contents of an <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-inline-block" id="ref-for-valdef-display-inline-block①">inline-block</a> box
+    with a <a data-link-type="dfn" href="#horizontal-writing-mode" id="ref-for-horizontal-writing-mode①">horizontal writing mode</a> and a <a class="property" data-link-type="propdesc">line-height</a> of <span class="css">1em</span>.
     Processing of <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#white-space" id="ref-for-white-space">document white space</a> included in the combined text
     is not defined in this level.
     The effective size of the composition is assumed to be 1em square;
@@ -2963,7 +2893,7 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
     then any full-width <span id="ref-for-typographic-character-unit②①">typographic character units</span> should first be converted to their non-full-width equivalents
     by reversing the algorithm defined for <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-transform" id="ref-for-propdef-text-transform">text-transform: full-width</a> in <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a> before applying other compression techniques. </p>
    <p class="note" role="note"> Properties that affect glyph selection,
-    such as the <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-variant" id="ref-for-propdef-font-variant">font-variant</a> and <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings" id="ref-for-propdef-font-feature-settings">font-feature-settings</a> properties defined in <a data-link-type="biblio" href="#biblio-css3-fonts">[CSS3-FONTS]</a>,
+    such as the <a class="css" data-link-type="property">font-variant</a> and <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings" id="ref-for-propdef-font-feature-settings">font-feature-settings</a> properties defined in <a data-link-type="biblio" href="#biblio-css3-fonts">[CSS3-FONTS]</a>,
     can potentially affect the selection of variants for characters included in combined text runs.
     Authors are advised to use these properties with care when <a class="property" data-link-type="propdesc" href="#propdef-text-combine-upright" id="ref-for-propdef-text-combine-upright④">text-combine-upright</a> is also used. </p>
    <h2 class="heading settled" data-level="10" id="priv-sec"><span class="secno">10. </span><span class="content">Privacy and Security Considerations</span><a class="self-link" href="#priv-sec"></a></h2>
@@ -2974,10 +2904,10 @@ svg|*<c- p>[</c->writing-mode=tb<c- p>],</c-> svg|*<c- p>[</c->writing-mode=tb-r
    <h3 class="no-num heading settled" id="changes-2019"><span class="content"> Changes since the <a href="https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/">December
   2019 CSS Writing Modes Module Level 4 Recommendation</a></span><a class="self-link" href="#changes-2019"></a></h3>
    <ul class="informative">
-    <li>Specified that a <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display⑧">display: none</a> <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" id="ref-for-the-body-element②">body</a></code> element does not influence the <a data-link-type="dfn" href="#principal-writing-mode" id="ref-for-principal-writing-mode④">principal writing mode</a>.
+    <li>Specified that a <a class="css" data-link-type="propdesc">display: none</a> <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element" id="ref-for-the-body-element②">body</a></code> element does not influence the <a data-link-type="dfn" href="#principal-writing-mode" id="ref-for-principal-writing-mode④">principal writing mode</a>.
       (<a href="https://github.com/w3c/csswg-drafts/issues/3779">Issue 3779</a>) 
     <li>Updated “Applies to” line for <a class="property" data-link-type="propdesc" href="#propdef-text-combine-upright" id="ref-for-propdef-text-combine-upright⑤">text-combine-upright</a> to mention text
-      (since certain effects like <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-display" id="ref-for-propdef-display⑨">display: contents</a> can strip the box itself). 
+      (since certain effects like <a class="css" data-link-type="propdesc">display: contents</a> can strip the box itself). 
    </ul>
    <h2 class="no-num heading settled" id="acknowledgements"><span class="content"> Acknowledgements</span><a class="self-link" href="#acknowledgements"></a></h2>
    <p> L. David Baron,
@@ -3354,7 +3284,7 @@ Reordering-induced Box Fragmentation</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">1.1. 
 Module Interactions</a>
@@ -3365,21 +3295,21 @@ The Principal Writing Mode</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-all-inherit">
-   <a href="https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit">https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#valdef-all-inherit">https://drafts.csswg.org/css-cascade/#valdef-all-inherit</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-all-inherit">2.2. 
 Embeddings and Overrides: the unicode-bidi property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inheritance">
-   <a href="https://drafts.csswg.org/css-cascade-5/#inheritance">https://drafts.csswg.org/css-cascade-5/#inheritance</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#inheritance">https://drafts.csswg.org/css-cascade/#inheritance</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inheritance">8. 
 The Principal Writing Mode</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">5.1. 
 Orienting Text: the text-orientation property</a> <a href="#ref-for-used-value①">(2)</a>
@@ -3390,7 +3320,7 @@ The Principal Writing Mode</a> <a href="#ref-for-used-value④">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">2.2. 
 Embeddings and Overrides: the unicode-bidi property</a> <a href="#ref-for-block-container①">(2)</a>
@@ -3401,70 +3331,70 @@ Auto-sizing Orthogonal Flow Roots</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#block-formatting-context">https://drafts.csswg.org/css-display-3/#block-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-formatting-context">https://drafts.csswg.org/css-display/#block-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-formatting-context">3.2. 
 Block Flow Direction: the writing-mode property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-level">
-   <a href="https://drafts.csswg.org/css-display-3/#block-level">https://drafts.csswg.org/css-display-3/#block-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-level">https://drafts.csswg.org/css-display/#block-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-level">7.3.2. 
 Auto-sizing Orthogonal Flow Roots</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#containing-block">https://drafts.csswg.org/css-display-3/#containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#containing-block">https://drafts.csswg.org/css-display/#containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-containing-block">7.3.2. 
 Auto-sizing Orthogonal Flow Roots</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#display-type">https://drafts.csswg.org/css-display-3/#display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#display-type">https://drafts.csswg.org/css-display/#display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-display-type">7.3.2. 
 Auto-sizing Orthogonal Flow Roots</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-flow">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-flow">https://drafts.csswg.org/css-display-3/#valdef-display-flow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-flow">https://drafts.csswg.org/css-display/#valdef-display-flow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-flow">3.2. 
 Block Flow Direction: the writing-mode property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-flow-root">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-flow-root">https://drafts.csswg.org/css-display-3/#valdef-display-flow-root</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-flow-root">https://drafts.csswg.org/css-display/#valdef-display-flow-root</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-flow-root">3.2. 
 Block Flow Direction: the writing-mode property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-in-flow">
-   <a href="https://drafts.csswg.org/css-display-3/#in-flow">https://drafts.csswg.org/css-display-3/#in-flow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#in-flow">https://drafts.csswg.org/css-display/#in-flow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-in-flow">3.2. 
 Block Flow Direction: the writing-mode property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-independent-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#independent-formatting-context">https://drafts.csswg.org/css-display-3/#independent-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#independent-formatting-context">https://drafts.csswg.org/css-display/#independent-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-independent-formatting-context">3.2. 
 Block Flow Direction: the writing-mode property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-initial-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#initial-containing-block">https://drafts.csswg.org/css-display-3/#initial-containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#initial-containing-block">https://drafts.csswg.org/css-display/#initial-containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-initial-containing-block">8.1. 
 Propagation to the Initial Containing Block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-inline">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-inline">https://drafts.csswg.org/css-display-3/#valdef-display-inline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-inline">https://drafts.csswg.org/css-display/#valdef-display-inline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-inline">2.2. 
 Embeddings and Overrides: the unicode-bidi property</a>
@@ -3473,14 +3403,14 @@ Block Flow Direction: the writing-mode property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-box">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-box">https://drafts.csswg.org/css-display-3/#inline-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-box">https://drafts.csswg.org/css-display/#inline-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-box">2.4.5. 
 Reordering-induced Box Fragmentation</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-inline-block">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-inline-block">https://drafts.csswg.org/css-display-3/#valdef-display-inline-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-inline-block">https://drafts.csswg.org/css-display/#valdef-display-inline-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-inline-block">3.2. 
 Block Flow Direction: the writing-mode property</a>
@@ -3489,14 +3419,14 @@ Layout Rules</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inner-display-type">
-   <a href="https://drafts.csswg.org/css-display-3/#inner-display-type">https://drafts.csswg.org/css-display-3/#inner-display-type</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inner-display-type">https://drafts.csswg.org/css-display/#inner-display-type</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inner-display-type">3.2. 
 Block Flow Direction: the writing-mode property</a> <a href="#ref-for-inner-display-type①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-replaced-element">
-   <a href="https://drafts.csswg.org/css-display-3/#replaced-element">https://drafts.csswg.org/css-display-3/#replaced-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#replaced-element">https://drafts.csswg.org/css-display/#replaced-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-replaced-element">2.4.3. 
 Bidi Treatment of Atomic Inlines</a>
@@ -3713,6 +3643,22 @@ Auto-sizing Orthogonal Flow Roots</a> <a href="#ref-for-stretch-fit-inline-size�
 Dimensional Mapping</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-propdef-border-spacing">
+   <a href="https://drafts.csswg.org/css-tables-3/#propdef-border-spacing">https://drafts.csswg.org/css-tables-3/#propdef-border-spacing</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-propdef-border-spacing">7.2. 
+Dimensional Mapping</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-propdef-caption-side">
+   <a href="https://drafts.csswg.org/css-tables-3/#propdef-caption-side">https://drafts.csswg.org/css-tables-3/#propdef-caption-side</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-propdef-caption-side">7.4. 
+Flow-Relative Mappings</a> <a href="#ref-for-propdef-caption-side①">(2)</a>
+    <li><a href="#ref-for-propdef-caption-side②">7.5. 
+Line-Relative Mappings</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-character">
    <a href="https://drafts.csswg.org/css-text-3/#character">https://drafts.csswg.org/css-text-3/#character</a><b>Referenced in:</b>
    <ul>
@@ -3750,14 +3696,14 @@ Line-Relative Mappings</a>
   <aside class="dfn-panel" data-for="term-for-propdef-text-indent">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-text-indent">https://drafts.csswg.org/css-text-3/#propdef-text-indent</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-text-indent">7.4.
+    <li><a href="#ref-for-propdef-text-indent">7.4. 
 Flow-Relative Mappings</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-text-transform">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-text-transform">https://drafts.csswg.org/css-text-3/#propdef-text-transform</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-text-transform">9.1.3.1.
+    <li><a href="#ref-for-propdef-text-transform">9.1.3.1. 
 Full-width Characters</a>
    </ul>
   </aside>
@@ -3857,117 +3803,10 @@ Mixed Vertical Orientations</a>
 Vertical Scripts in Unicode</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-border-spacing">
-   <a href="https://drafts.csswg.org/css2/#propdef-border-spacing">https://drafts.csswg.org/css2/#propdef-border-spacing</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-border-spacing">7.2. 
-Dimensional Mapping</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-caption-side-bottom">
    <a href="https://drafts.csswg.org/css2/#valdef-caption-side-bottom">https://drafts.csswg.org/css2/#valdef-caption-side-bottom</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-caption-side-bottom">7.4. 
-Flow-Relative Mappings</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-caption-side">
-   <a href="https://drafts.csswg.org/css2/#propdef-caption-side">https://drafts.csswg.org/css2/#propdef-caption-side</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-caption-side">7.4. 
-Flow-Relative Mappings</a> <a href="#ref-for-propdef-caption-side①">(2)</a>
-    <li><a href="#ref-for-propdef-caption-side②">7.5. 
-Line-Relative Mappings</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-clear">
-   <a href="https://drafts.csswg.org/css2/#propdef-clear">https://drafts.csswg.org/css2/#propdef-clear</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-clear">7.4. 
-Flow-Relative Mappings</a>
-    <li><a href="#ref-for-propdef-clear①">7.5. 
-Line-Relative Mappings</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-clip">
-   <a href="https://drafts.csswg.org/css2/#propdef-clip">https://drafts.csswg.org/css2/#propdef-clip</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-clip">7.6. 
-Purely Physical Mappings</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css2/#propdef-display">https://drafts.csswg.org/css2/#propdef-display</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-display">2.2. 
-Embeddings and Overrides: the unicode-bidi property</a> <a href="#ref-for-propdef-display①">(2)</a>
-    <li><a href="#ref-for-propdef-display②">2.4.3. 
-Bidi Treatment of Atomic Inlines</a>
-    <li><a href="#ref-for-propdef-display③">3.2. 
-Block Flow Direction: the writing-mode property</a> <a href="#ref-for-propdef-display④">(2)</a> <a href="#ref-for-propdef-display⑤">(3)</a>
-    <li><a href="#ref-for-propdef-display⑥">8. 
-The Principal Writing Mode</a> <a href="#ref-for-propdef-display⑦">(2)</a>
-    <li><a href="#ref-for-propdef-display⑧"> Changes since the December
-  2019 CSS Writing Modes Module Level 4 Recommendation</a> <a href="#ref-for-propdef-display⑨">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">7.4. 
-Flow-Relative Mappings</a>
-    <li><a href="#ref-for-propdef-float①">7.5. 
-Line-Relative Mappings</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-left">
-   <a href="https://drafts.csswg.org/css2/#propdef-left">https://drafts.csswg.org/css2/#propdef-left</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-left">7.4. 
-Flow-Relative Mappings</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-line-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-line-height">https://drafts.csswg.org/css2/#propdef-line-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-line-height">7.2. 
-Dimensional Mapping</a>
-    <li><a href="#ref-for-propdef-line-height①">9.1.2. 
-Layout Rules</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-height">https://drafts.csswg.org/css2/#propdef-max-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-height">7.2. 
-Dimensional Mapping</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-width">https://drafts.csswg.org/css2/#propdef-max-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-width">7.2. 
-Dimensional Mapping</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-height">https://drafts.csswg.org/css2/#propdef-min-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-height">7.2. 
-Dimensional Mapping</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-width">https://drafts.csswg.org/css2/#propdef-min-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-width">7.2. 
-Dimensional Mapping</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-right">
-   <a href="https://drafts.csswg.org/css2/#propdef-right">https://drafts.csswg.org/css2/#propdef-right</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-right">7.4. 
 Flow-Relative Mappings</a>
    </ul>
   </aside>
@@ -3978,13 +3817,6 @@ Flow-Relative Mappings</a>
 Flow-Relative Mappings</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-font-variant">
-   <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-variant">https://drafts.csswg.org/css-fonts-3/#propdef-font-variant</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-font-variant">9.1.3.1. 
-Full-width Characters</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-text-decoration">
    <a href="https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration">https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration</a><b>Referenced in:</b>
    <ul>
@@ -3993,14 +3825,14 @@ Line-Relative Mappings</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-box-shadow">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-box-shadow">7.6. 
 Purely Physical Mappings</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-multi-column-container">
-   <a href="https://drafts.csswg.org/css-multicol-1/#multi-column-container">https://drafts.csswg.org/css-multicol-1/#multi-column-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#multi-column-container">https://drafts.csswg.org/css-multicol/#multi-column-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-multi-column-container">7.3.2. 
 Auto-sizing Orthogonal Flow Roots</a>
@@ -4047,7 +3879,7 @@ Page Flow: the page progression direction</a>
      <li><span class="dfn-paneled" id="term-for-propdef-box-decoration-break">box-decoration-break</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[CSS-CASCADE-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
      <li><span class="dfn-paneled" id="term-for-valdef-all-inherit">inherit</span>
@@ -4125,6 +3957,12 @@ Page Flow: the page progression direction</a>
      <li><span class="dfn-paneled" id="term-for-propdef-width">width</span>
     </ul>
    <li>
+    <a data-link-type="biblio">[css-tables-3]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-propdef-border-spacing">border-spacing</span>
+     <li><span class="dfn-paneled" id="term-for-propdef-caption-side">caption-side</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[CSS-TEXT-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-character">character</span>
@@ -4163,26 +4001,8 @@ Page Flow: the page progression direction</a>
    <li>
     <a data-link-type="biblio">[CSS2]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-border-spacing">border-spacing</span>
-     <li><span class="dfn-paneled" id="term-for-valdef-caption-side-bottom">bottom <small>(for caption-side)</small></span>
-     <li><span class="dfn-paneled" id="term-for-propdef-caption-side">caption-side</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-clear">clear</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-clip">clip</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-display">display</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-left">left</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-line-height">line-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-height">max-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-width">max-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-height">min-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-width">min-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-right">right</span>
-     <li><span class="dfn-paneled" id="term-for-valdef-caption-side-top">top <small>(for caption-side)</small></span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS3-FONTS]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-font-variant">font-variant</span>
+     <li><span class="dfn-paneled" id="term-for-valdef-caption-side-bottom">bottom</span>
+     <li><span class="dfn-paneled" id="term-for-valdef-caption-side-top">top</span>
     </ul>
    <li>
     <a data-link-type="biblio">[CSS3-TEXT-DECOR]</a> defines the following terms:
@@ -4220,8 +4040,8 @@ Page Flow: the page progression direction</a>
   <dl>
    <dt id="biblio-css-box-4">[CSS-BOX-4]
    <dd>Elika Etemad. <a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a>. 21 April 2020. WD. URL: <a href="https://www.w3.org/TR/css-box-4/">https://www.w3.org/TR/css-box-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
    <dt id="biblio-css-images-3">[CSS-IMAGES-3]
@@ -4234,8 +4054,10 @@ Page Flow: the page progression direction</a>
    <dd>David Baron; Elika Etemad; Florian Rivoal. <a href="https://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a>. 3 June 2020. WD. URL: <a href="https://www.w3.org/TR/css-overflow-3/">https://www.w3.org/TR/css-overflow-3/</a>
    <dt id="biblio-css-sizing-3">[CSS-SIZING-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-sizing-3/">CSS Box Sizing Module Level 3</a>. 17 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-sizing-3/">https://www.w3.org/TR/css-sizing-3/</a>
+   <dt id="biblio-css-tables-3">[CSS-TABLES-3]
+   <dd>François Remy; Greg Whitworth; David Baron. <a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a>. 27 July 2019. WD. URL: <a href="https://www.w3.org/TR/css-tables-3/">https://www.w3.org/TR/css-tables-3/</a>
    <dt id="biblio-css-text-3">[CSS-TEXT-3]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
    <dt id="biblio-css-text-decor-4">[CSS-TEXT-DECOR-4]
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-text-decor-4/">CSS Text Decoration Module Level 4</a>. 6 May 2020. WD. URL: <a href="https://www.w3.org/TR/css-text-decor-4/">https://www.w3.org/TR/css-text-decor-4/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
@@ -4279,8 +4101,6 @@ Page Flow: the page progression direction</a>
   <dl>
    <dt id="biblio-css-break-4">[CSS-BREAK-4]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a>. 18 December 2018. WD. URL: <a href="https://www.w3.org/TR/css-break-4/">https://www.w3.org/TR/css-break-4/</a>
-   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
-   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-flexbox-1">[CSS-FLEXBOX-1]
    <dd>Tab Atkins Jr.; et al. <a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a>. 19 November 2018. CR. URL: <a href="https://www.w3.org/TR/css-flexbox-1/">https://www.w3.org/TR/css-flexbox-1/</a>
    <dt id="biblio-css-fonts-4">[CSS-FONTS-4]
@@ -4539,9 +4359,9 @@ Orienting Text: the text-orientation property</a>
    <ul>
     <li><a href="#ref-for-valdef-unicode-bidi-normal">2.1. 
 Specifying Directionality: the direction property</a>
-    <li><a href="#ref-for-valdef-unicode-bidi-normal①">2.2.
+    <li><a href="#ref-for-valdef-unicode-bidi-normal①">2.2. 
 Embeddings and Overrides: the unicode-bidi property</a> <a href="#ref-for-valdef-unicode-bidi-normal②">(2)</a> <a href="#ref-for-valdef-unicode-bidi-normal③">(3)</a> <a href="#ref-for-valdef-unicode-bidi-normal④">(4)</a> <a href="#ref-for-valdef-unicode-bidi-normal⑤">(5)</a>
-    <li><a href="#ref-for-valdef-unicode-bidi-normal⑥">2.3.
+    <li><a href="#ref-for-valdef-unicode-bidi-normal⑥">2.3. 
 Example of Bidirectional Text</a>
    </ul>
   </aside>
@@ -5200,9 +5020,9 @@ Full-width Characters</a>
   <aside class="dfn-panel" data-for="valdef-text-combine-upright-none">
    <b><a href="#valdef-text-combine-upright-none">#valdef-text-combine-upright-none</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-text-combine-upright-none">8.
+    <li><a href="#ref-for-valdef-text-combine-upright-none">8. 
 The Principal Writing Mode</a>
-    <li><a href="#ref-for-valdef-text-combine-upright-none①">9.1.1.
+    <li><a href="#ref-for-valdef-text-combine-upright-none①">9.1.1. 
 Text Run Rules</a>
    </ul>
   </aside>

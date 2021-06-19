@@ -888,7 +888,7 @@ on screen, on paper, etc.
 	if you are implementing anything, please use Level 3 as a reference.
 	We will merge the Level 3 text into this draft once it reaches CR.</p>
    <h3 class="heading settled" data-level="1.1" id="placement"><span class="secno">1.1. </span><span class="content"> Module interactions</span><a class="self-link" href="#placement"></a></h3>
-   <p>This module extends the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width">width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width">min-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height">min-height</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width">max-width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height">max-height</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-multicol-1/#propdef-column-width" id="ref-for-propdef-column-width">column-width</a> features defined in <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> chapter 10 and in <a data-link-type="biblio" href="#biblio-css3col">[CSS3COL]</a> </p>
+   <p>This module extends the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width">width</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a>, <a class="property" data-link-type="propdesc">min-width</a>, <span class="property">min-height</span>, <span class="property">max-width</span>, <span class="property">max-height</span>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-multicol/#propdef-column-width" id="ref-for-propdef-column-width">column-width</a> features defined in <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> chapter 10 and in <a data-link-type="biblio" href="#biblio-css3col">[CSS3COL]</a> </p>
    <h3 class="heading settled" data-level="1.2" id="values"><span class="secno">1.2. </span><span class="content"> Value Definitions</span><a class="self-link" href="#values"></a></h3>
    <p>This specification follows the <a href="https://www.w3.org/TR/CSS2/about.html#property-defs">CSS property definition conventions</a> from <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> using the <a href="https://www.w3.org/TR/css-values-3/#value-defs">value definition syntax</a> from <a data-link-type="biblio" href="#biblio-css-values-3">[CSS-VALUES-3]</a>.
 	Value types not defined in this specification are defined in CSS Values &amp; Units <span>[CSS-VALUES-3]</span>.
@@ -906,32 +906,6 @@ on screen, on paper, etc.
    <h3 class="heading settled" data-level="3.2" id="sizing-values"><span class="secno">3.2. </span><span class="content"> New Sizing Values: the <a class="css" data-link-type="maybe" href="#valdef-width-stretch" id="ref-for-valdef-width-stretch">stretch</a>, <a class="css" data-link-type="maybe" href="#valdef-width-fit-content" id="ref-for-valdef-width-fit-content">fit-content</a>, and <a class="css" data-link-type="maybe" href="#valdef-width-contain" id="ref-for-valdef-width-contain">contain</a> keywords</span><span id="width-height-keywords"></span><a class="self-link" href="#sizing-values"></a></h3>
    <div class="mdn-anno wrapped after">
     <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content" title="The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.">fit-content</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>52+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>52+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>57+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content" title="The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.">fit-content</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>52+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>52+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>57+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-height" title="The max-height CSS property sets the maximum height of an element. It prevents the used value of the height property from becoming larger than the value specified for max-height.">max-height</a></p>
      <p class="all-engines-text">In all current engines.</p>
@@ -976,7 +950,7 @@ on screen, on paper, etc.
     <tbody>
      <tr>
       <th>Name:
-      <td><a class="css" data-link-type="property" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-inline-size" id="ref-for-propdef-inline-size">inline-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-block-size" id="ref-for-propdef-block-size">block-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width①">min-width</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height①">min-height</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-min-inline-size" id="ref-for-propdef-min-inline-size">min-inline-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-min-block-size" id="ref-for-propdef-min-block-size">min-block-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width①">max-width</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height①">max-height</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-max-inline-size" id="ref-for-propdef-max-inline-size">max-inline-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-max-block-size" id="ref-for-propdef-max-block-size">max-block-size</a>
+      <td><a class="css" data-link-type="property" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①">width</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①">height</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-inline-size" id="ref-for-propdef-inline-size">inline-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-block-size" id="ref-for-propdef-block-size">block-size</a>, <a class="css" data-link-type="property">min-width</a>, <span>min-height</span>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-min-inline-size" id="ref-for-propdef-min-inline-size">min-inline-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-min-block-size" id="ref-for-propdef-min-block-size">min-block-size</a>, <span>max-width</span>, <span>max-height</span>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-max-inline-size" id="ref-for-propdef-max-inline-size">max-inline-size</a>, <a class="css" data-link-type="property" href="https://drafts.csswg.org/css-logical-1/#propdef-max-block-size" id="ref-for-propdef-max-block-size">max-block-size</a>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">New values:</a>
       <td class="prod">stretch <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> fit-content <span id="ref-for-comb-one①">|</span> contain 
@@ -984,9 +958,39 @@ on screen, on paper, etc.
    <dl>
     <dt><dfn class="dfn-paneled css" data-dfn-for="width, height, inline-size, block-size, min-width, min-height, min-inline-size, min-block-size, max-width, max-height, max-inline-size, max-block-size" data-dfn-type="value" data-export id="valdef-width-stretch">stretch</dfn> 
     <dd> Applies <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#stretch-fit-size" id="ref-for-stretch-fit-size">stretch-fit sizing</a>,
-			attempting to match the size of the box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#margin-box" id="ref-for-margin-box">margin box</a> to the size of its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a>.
+			attempting to match the size of the box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#margin-box" id="ref-for-margin-box">margin box</a> to the size of its <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block">containing block</a>.
 			See <a href="#stretch-fit-sizing">§ 6.1 Stretch-fit Sizing: filling the containing block</a>. 
-    <dt><dfn class="dfn-paneled css" data-dfn-for="width, height, inline-size, block-size, min-width, min-height, min-inline-size, min-block-size, max-width, max-height, max-inline-size, max-block-size" data-dfn-type="value" data-export id="valdef-width-fit-content">fit-content</dfn>
+    <dt>
+     <div class="mdn-anno wrapped">
+      <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
+      <div class="feature">
+       <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content" title="The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.">fit-content</a></p>
+       <p class="all-engines-text">In all current engines.</p>
+       <div class="support">
+        <span class="firefox yes"><span>Firefox</span><span>51+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
+        <hr>
+        <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+        <hr>
+        <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+        <hr>
+        <span class="firefox_android yes"><span>Firefox for Android</span><span>51+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>57+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
+       </div>
+      </div>
+      <div class="feature">
+       <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content" title="The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.">fit-content</a></p>
+       <p class="all-engines-text">In all current engines.</p>
+       <div class="support">
+        <span class="firefox yes"><span>Firefox</span><span>51+</span></span><span class="safari yes"><span>Safari</span><span>10.1+</span></span><span class="chrome yes"><span>Chrome</span><span>29+</span></span>
+        <hr>
+        <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+        <hr>
+        <span class="edge yes"><span>Edge (Legacy)</span><span>16+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+        <hr>
+        <span class="firefox_android yes"><span>Firefox for Android</span><span>51+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>57+</span></span><span class="webview_android yes"><span>Android WebView</span><span>57+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>6.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
+       </div>
+      </div>
+     </div>
+     <dfn class="dfn-paneled css" data-dfn-for="width, height, inline-size, block-size, min-width, min-height, min-inline-size, min-block-size, max-width, max-height, max-inline-size, max-block-size" data-dfn-type="value" data-export id="valdef-width-fit-content">fit-content</dfn> 
     <dd> Essentially <span class="css">fit-content(stretch)</span> i.e. min(<a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-max-content" id="ref-for-valdef-width-max-content">max-content</a>, max(<a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content" id="ref-for-valdef-width-min-content">min-content</a>, <a class="css" data-link-type="maybe" href="#valdef-width-stretch" id="ref-for-valdef-width-stretch①">stretch</a>)). 
     <dt><dfn class="dfn-paneled css" data-dfn-for="width, height, inline-size, block-size, min-width, min-height, min-inline-size, min-block-size, max-width, max-height, max-inline-size, max-block-size" data-dfn-type="value" data-export id="valdef-width-contain">contain</dfn> 
     <dd>
@@ -1007,22 +1011,23 @@ on screen, on paper, etc.
 	and for altering the effective aspect ratio of replaced elements.</p>
    <p class="issue" id="issue-cce77cb6"><a class="self-link" href="#issue-cce77cb6"></a> We are still working through the details of this section.
 	If there is any behavior specified here
-	that would cause <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element">replaced elements</a> with a <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio③">preferred aspect ratio</a> to behave differently than they would
+	that would cause <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element">replaced elements</a> with a <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio③">preferred aspect ratio</a> to behave differently than they would
 	under the requirements of the <a href="https://www.w3.org/TR/CSS2/visudet.html">CSS2</a>, <a href="https://www.w3.org/TR/css-flexbox-1/">Flex Layout</a>,
 	and <a href="https://www.w3.org/TR/css-grid-1/">Grid Layout</a> specs combined (without this specification in effect), <strong>this is an error and should be <a href="https://github.com/w3c/csswg-drafts/issues">reported</a> to the CSSWG</strong>.</p>
    <h3 class="heading settled" data-level="4.1" id="aspect-ratio"><span class="secno">4.1. </span><span class="content"> Preferred Aspect Ratios: the <a class="property" data-link-type="propdesc" href="#propdef-aspect-ratio" id="ref-for-propdef-aspect-ratio①">aspect-ratio</a> property</span><a class="self-link" href="#aspect-ratio"></a></h3>
    <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
+    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
     <div class="feature">
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" title="The aspect-ratio CSS property sets a preferred aspect ratio for the box, which will be used in the calculation of auto sizes and some other layout functions.">aspect-ratio</a></p>
+     <p class="less-than-two-engines-text">In only one current engine.</p>
      <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>89+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>88+</span></span>
+      <span class="firefox no"><span>Firefox</span><span>?</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>88+</span></span>
       <hr>
-      <span class="opera yes"><span>Opera</span><span>74+</span></span><span class="edge_blink yes"><span>Edge</span><span>88+</span></span>
+      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>88+</span></span>
       <hr>
       <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>89+</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>88+</span></span><span class="webview_android yes"><span>Android WebView</span><span>88+</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>88+</span></span><span class="webview_android yes"><span>Android WebView</span><span>88+</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -1039,7 +1044,7 @@ on screen, on paper, etc.
       <td>auto 
      <tr>
       <th>Applies to:
-      <td>all elements except <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box">inline boxes</a> and internal ruby or table boxes 
+      <td>all elements except <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box">inline boxes</a> and internal ruby or table boxes 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -1061,7 +1066,7 @@ on screen, on paper, etc.
 	and some other layout functions.</p>
    <dl>
     <dt><dfn class="dfn-paneled css" data-dfn-for="aspect-ratio" data-dfn-type="value" data-export id="valdef-aspect-ratio-auto">auto</dfn> 
-    <dd> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element①">Replaced elements</a> with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio①">natural aspect ratio</a> use that aspect ratio;
+    <dd> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element①">Replaced elements</a> with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio①">natural aspect ratio</a> use that aspect ratio;
 			otherwise the box has no <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio④">preferred aspect ratio</a>.
 			Size calculations involving the aspect ratio
 			work with the <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#content-box" id="ref-for-content-box">content box</a> dimensions always. 
@@ -1077,17 +1082,17 @@ on screen, on paper, etc.
     <dd>
       If both <a class="css" data-link-type="maybe" href="#valdef-aspect-ratio-auto" id="ref-for-valdef-aspect-ratio-auto①">auto</a> and a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#ratio-value" id="ref-for-ratio-value④">&lt;ratio></a> are specified together,
 			the <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio⑥">preferred aspect ratio</a> is the specified ratio
-			of <span class="css">width / height</span> unless it is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element②">replaced element</a> with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio②">natural aspect ratio</a>,
+			of <span class="css">width / height</span> unless it is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element②">replaced element</a> with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio②">natural aspect ratio</a>,
 			in which case that aspect ratio is used instead.
 			In all cases, size calculations involving the aspect ratio
 			work with the <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#content-box" id="ref-for-content-box①">content box</a> dimensions always. 
      <p>If the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#ratio-value" id="ref-for-ratio-value⑤">&lt;ratio></a> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#degenerate-ratio" id="ref-for-degenerate-ratio①">degenerate</a>,
 			the property instead behaves as <a class="css" data-link-type="maybe" href="#valdef-aspect-ratio-auto" id="ref-for-valdef-aspect-ratio-auto②">auto</a>.</p>
    </dl>
-   <p class="note" role="note"><span>Note:</span> Having a <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio⑦">preferred aspect ratio</a> does not make a box into a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element③">replaced element</a>;
-	layout rules specific to <span id="ref-for-replaced-element④">replaced elements</span> do not generally apply to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#non-replaced" id="ref-for-non-replaced">non-replaced</a> boxes with a <span id="ref-for-preferred-aspect-ratio⑧">preferred aspect ratio</span>.
-	For example, a <span id="ref-for-non-replaced①">non-replaced</span> <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#absolute-position" id="ref-for-absolute-position">absolutely-positioned</a> box
-	treats <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-justify-self" id="ref-for-propdef-justify-self">justify-self: normal</a> as <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align-3/#valdef-justify-self-stretch" id="ref-for-valdef-justify-self-stretch">stretch</a>, not as <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align-3/#valdef-self-position-start" id="ref-for-valdef-self-position-start">start</a> (<a href="https://www.w3.org/TR/css-align-3/#justify-abspos">CSS Box Alignment 3 §6.1.2 Absolutely-Positioned Boxes</a>),
+   <p class="note" role="note"><span>Note:</span> Having a <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio⑦">preferred aspect ratio</a> does not make a box into a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element③">replaced element</a>;
+	layout rules specific to <span id="ref-for-replaced-element④">replaced elements</span> do not generally apply to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#non-replaced" id="ref-for-non-replaced">non-replaced</a> boxes with a <span id="ref-for-preferred-aspect-ratio⑧">preferred aspect ratio</span>.
+	For example, a <span id="ref-for-non-replaced①">non-replaced</span> <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#absolute-position" id="ref-for-absolute-position">absolutely-positioned</a> box
+	treats <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-justify-self" id="ref-for-propdef-justify-self">justify-self: normal</a> as <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align/#valdef-justify-self-stretch" id="ref-for-valdef-justify-self-stretch">stretch</a>, not as <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align/#valdef-self-position-start" id="ref-for-valdef-self-position-start">start</a> (<a href="https://www.w3.org/TR/css-align-3/#justify-abspos">CSS Box Alignment 3 §6.1.2 Absolutely-Positioned Boxes</a>),
 	even if it has a <span id="ref-for-preferred-aspect-ratio⑨">preferred aspect ratio</span></p>
    <p class="issue" id="issue-ada2dbb9"><a class="self-link" href="#issue-ada2dbb9"></a> CSS2.1 does not cleanly differentiate between
 	replaced elements vs. elements with an aspect ratio;
@@ -1140,7 +1145,7 @@ li <c- p>{</c->
    <h3 class="heading settled" data-level="4.2" id="aspect-ratio-automatic"><span class="secno">4.2. </span><span class="content"> Effects of Preferred Aspect Ratio on Automatic Sizes</span><a class="self-link" href="#aspect-ratio-automatic"></a></h3>
    <p>When a box has a <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio①②">preferred aspect ratio</a>,
 	its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size">automatic sizes</a> are calculated the same as for
-	a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element⑤">replaced element</a> with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio③">natural aspect ratio</a> and no <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-size" id="ref-for-natural-size">natural size</a> in that axis,
+	a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element⑤">replaced element</a> with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-aspect-ratio" id="ref-for-natural-aspect-ratio③">natural aspect ratio</a> and no <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-size" id="ref-for-natural-size">natural size</a> in that axis,
 	see e.g. <a href="https://www.w3.org/TR/CSS2/visudet.html">CSS2 § 10</a> and <a href="https://www.w3.org/TR/css-flexbox-1/#algo-main-item">CSS Flexible Box Model Level 1 § 9.2</a>.
 	The axis in which the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#preferred-size" id="ref-for-preferred-size">preferred size</a> calculation
 	depends on this aspect ratio
@@ -1161,12 +1166,12 @@ li <c- p>{</c->
 	Min/max constraints get transferred afterwards,
 	and then applied to each axis independently without regards to aspect-ratio.</p>
    <h4 class="heading settled" data-level="4.2.1" id="aspect-ratio-margin-collapse"><span class="secno">4.2.1. </span><span class="content"> Margin-collapsing</span><a class="self-link" href="#aspect-ratio-margin-collapse"></a></h4>
-   <p>For the purpose of margin collapsing (<a href="https://www.w3.org/TR/CSS2/box.html#collapsing-margins">CSS 2 §8.3.1 Collapsing margins</a>),
+   <p>For the purpose of margin collapsing (<a href="https://www.w3.org/TR/CSS21//box#collapsing-margins">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification §box#collapsing-margins</a>),
 	if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-axis" id="ref-for-block-axis">block axis</a> is the <a data-link-type="dfn" href="#ratio-dependent-axis" id="ref-for-ratio-dependent-axis①">ratio-dependent axis</a>,
-	it is not considered to have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-logical-1/#propdef-block-size" id="ref-for-propdef-block-size①">block-size</a> of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①">auto</a>.</p>
+	it is not considered to have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-logical-1/#propdef-block-size" id="ref-for-propdef-block-size①">block-size</a> of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto①">auto</a>.</p>
    <h3 class="heading settled" data-level="4.3" id="aspect-ratio-minimum"><span class="secno">4.3. </span><span class="content"> Automatic Content-based Minimum Sizes</span><a class="self-link" href="#aspect-ratio-minimum"></a></h3>
    <p>In order to avoid unintentional overflow,
-	the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-minimum-size" id="ref-for-automatic-minimum-size">automatic minimum size</a> in the <a data-link-type="dfn" href="#ratio-dependent-axis" id="ref-for-ratio-dependent-axis②">ratio-dependent axis</a> of a box with a <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio①④">preferred aspect ratio</a> that is neither a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element⑥">replaced element</a> nor a <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scroll-container" id="ref-for-scroll-container">scroll container</a> is its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-content" id="ref-for-min-content">min-content size</a> capped by its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#max-width" id="ref-for-max-width">maximum size</a>.</p>
+	the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-minimum-size" id="ref-for-automatic-minimum-size">automatic minimum size</a> in the <a data-link-type="dfn" href="#ratio-dependent-axis" id="ref-for-ratio-dependent-axis②">ratio-dependent axis</a> of a box with a <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio①④">preferred aspect ratio</a> that is neither a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element⑥">replaced element</a> nor a <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scroll-container" id="ref-for-scroll-container">scroll container</a> is its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-content" id="ref-for-min-content">min-content size</a> capped by its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#max-width" id="ref-for-max-width">maximum size</a>.</p>
    <div class="example" id="example-514390d4">
     <a class="self-link" href="#example-514390d4"></a> In the following example,
 		the box is as wide as the container (as usual),
@@ -1201,7 +1206,7 @@ li <c- p>{</c->
 |          |  | ~~~      |  | ~~~~~~~~v|
 +----------+  +----------+  +----------+
 </pre>
-    <p>Overriding the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height②">min-height</a> property also maintains the 1:1 aspect ratio,
+    <p>Overriding the <a class="property" data-link-type="propdesc">min-height</a> property also maintains the 1:1 aspect ratio,
 		but will result in content overflowing the box
 		if it is not otherwise handled.</p>
 <pre class="highlight">div <c- p>{</c->
@@ -1228,10 +1233,10 @@ li <c- p>{</c->
 </pre>
     <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width③">width</a> of the container, being <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto②">auto</a>,
 		resolves through the aspect ratio to 100px.
-		However, its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width②">min-width</a>, being <span class="css" id="ref-for-valdef-width-auto③">auto</span>,
+		However, its <a class="property" data-link-type="propdesc">min-width</a>, being <span class="css" id="ref-for-valdef-width-auto③">auto</span>,
 		resolves to 150px.
 		The resulting width of the container is thus 150px.
-		To ignore the contents when sizing the container, <span class="css" id="ref-for-propdef-min-width③">min-width: 0</span> can be specified.</p>
+		To ignore the contents when sizing the container, <span class="css">min-width: 0</span> can be specified.</p>
    </div>
    <h3 class="heading settled" data-level="4.4" id="aspect-ratio-size-transfers"><span class="secno">4.4. </span><span class="content"> Min/Max Size Transfers</span><a class="self-link" href="#aspect-ratio-size-transfers"></a></h3>
    <p>Sizing constraints in either axis
@@ -1275,7 +1280,7 @@ as well as by the transferred minimum, if any.</p>
 <c- p>&lt;/</c-><c- f>div</c-><c- p>></c->
 </pre>
     <p>In this next example,
-		the percentage height of the item cannot be resolved and <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#behave-as-auto" id="ref-for-behave-as-auto">behaves as auto</a> (see <a href="https://www.w3.org/TR/CSS2/visudet.html#the-height-property">CSS 2 §10.5 Content height: the 'height' property</a>).
+		the percentage height of the item cannot be resolved and <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#behave-as-auto" id="ref-for-behave-as-auto">behaves as auto</a> (see <a href="https://www.w3.org/TR/CSS21//visudet#the-height-property">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification §visudet#the-height-property</a>).
 		Since both axes now have an <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size③">automatic size</a>,
 		the height becomes the <a data-link-type="dfn" href="#ratio-dependent-axis" id="ref-for-ratio-dependent-axis③">ratio-dependent axis</a>.
 		Calculating the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#intrinsic-size-contribution" id="ref-for-intrinsic-size-contribution">intrinsic size contributions</a> of the box
@@ -1296,7 +1301,7 @@ as well as by the transferred minimum, if any.</p>
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-contain-intrinsic-width">contain-intrinsic-width</dfn>, <dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-contain-intrinsic-height">contain-intrinsic-height</dfn>, <dfn class="css" data-dfn-type="property" data-export id="propdef-contain-intrinsic-block-size">contain-intrinsic-block-size<a class="self-link" href="#propdef-contain-intrinsic-block-size"></a></dfn>, <dfn class="css" data-dfn-type="property" data-export id="propdef-contain-intrinsic-inline-size">contain-intrinsic-inline-size<a class="self-link" href="#propdef-contain-intrinsic-inline-size"></a></dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one③">|</span> auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all">&amp;&amp;</a> <span class="production" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></span> 
+      <td class="prod">none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one③">|</span> auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all">&amp;&amp;</a> <span class="production" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></span> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>none 
@@ -1311,7 +1316,7 @@ as well as by the transferred minimum, if any.</p>
       <td>n/a 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>as specified, with <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> values computed 
+      <td>as specified, with <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> values computed 
      <tr>
       <th>Canonical order:
       <td>per grammar 
@@ -1334,14 +1339,14 @@ as well as by the transferred minimum, if any.</p>
     <dt data-md><dfn class="css" data-dfn-for="contain-intrinsic-width, contain-intrinsic-height, contain-intrinsic-block-size, contain-intrinsic-inline-size, contain-intrinsic-size" data-dfn-type="value" data-export id="valdef-contain-intrinsic-width-none">none<a class="self-link" href="#valdef-contain-intrinsic-width-none"></a></dfn>
     <dd data-md>
      <p>The corresponding axis does not have an <a data-link-type="dfn" href="#explicit-intrinsic-inner-size" id="ref-for-explicit-intrinsic-inner-size②">explicit intrinsic inner size</a>.</p>
-    <dt data-md><dfn class="css" data-dfn-for="contain-intrinsic-width, contain-intrinsic-height, contain-intrinsic-block-size, contain-intrinsic-inline-size, contain-intrinsic-size" data-dfn-type="value" data-export id="valdef-contain-intrinsic-width-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-contain-intrinsic-width-length"></a></dfn>
+    <dt data-md><dfn class="css" data-dfn-for="contain-intrinsic-width, contain-intrinsic-height, contain-intrinsic-block-size, contain-intrinsic-inline-size, contain-intrinsic-size" data-dfn-type="value" data-export id="valdef-contain-intrinsic-width-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-contain-intrinsic-width-length"></a></dfn>
     <dd data-md>
-     <p>The corresponding axis has an <a data-link-type="dfn" href="#explicit-intrinsic-inner-size" id="ref-for-explicit-intrinsic-inner-size③">explicit intrinsic inner size</a> of the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a>.</p>
-    <dt data-md><dfn class="css" data-dfn-for="contain-intrinsic-width, contain-intrinsic-height, contain-intrinsic-block-size, contain-intrinsic-inline-size, contain-intrinsic-size" data-dfn-type="value" data-export id="valdef-contain-intrinsic-width-auto--length">auto &amp;&amp; <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑤" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-contain-intrinsic-width-auto--length"></a></dfn>
+     <p>The corresponding axis has an <a data-link-type="dfn" href="#explicit-intrinsic-inner-size" id="ref-for-explicit-intrinsic-inner-size③">explicit intrinsic inner size</a> of the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a>.</p>
+    <dt data-md><dfn class="css" data-dfn-for="contain-intrinsic-width, contain-intrinsic-height, contain-intrinsic-block-size, contain-intrinsic-inline-size, contain-intrinsic-size" data-dfn-type="value" data-export id="valdef-contain-intrinsic-width-auto--length">auto &amp;&amp; <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑤" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-contain-intrinsic-width-auto--length"></a></dfn>
     <dd data-md>
      <p>The corresponding axis has an <a data-link-type="dfn" href="#explicit-intrinsic-inner-size" id="ref-for-explicit-intrinsic-inner-size④">explicit intrinsic inner size</a> of its <a data-link-type="dfn" href="#last-remembered" id="ref-for-last-remembered">last remembered size</a>.
 If a <span id="ref-for-last-remembered①">last remembered size</span> does not yet exist,
-instead use the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑥" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a>.</p>
+instead use the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑥" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a>.</p>
    </dl>
    <p>If an element has an <a data-link-type="dfn" href="#explicit-intrinsic-inner-size" id="ref-for-explicit-intrinsic-inner-size⑤">explicit intrinsic inner size</a> in an axis,
 	then after laying out the element as normal for <a data-link-type="dfn" href="https://drafts.csswg.org/css-contain-2/#size-containment" id="ref-for-size-containment②">size containment</a>,
@@ -1386,7 +1391,7 @@ instead use the specified <a class="production css" data-link-type="type" href="
        <dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-contain-intrinsic-size">contain-intrinsic-size</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">[ none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑦" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one⑤">|</span> auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all①">&amp;&amp;</a> <span class="production" id="ref-for-length-value⑧" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></span> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{1,2}</a> 
+      <td class="prod">[ none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑦" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one⑤">|</span> auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all①">&amp;&amp;</a> <span class="production" id="ref-for-length-value⑧" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></span> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{1,2}</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>see individual properties 
@@ -1520,7 +1525,7 @@ as its <a data-link-type="dfn" href="#last-remembered" id="ref-for-last-remember
       <td>legacy 
      <tr>
       <th>Applies to:
-      <td>all elements except <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box①">inline boxes</a> 
+      <td>all elements except <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box①">inline boxes</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -1538,7 +1543,7 @@ as its <a data-link-type="dfn" href="#last-remembered" id="ref-for-last-remember
       <td>discrete 
    </table>
    <p class="issue" id="issue-b731f1ac"><a class="self-link" href="#issue-b731f1ac"></a> This property seriously needs some name bikeshedding.</p>
-   <p>This property defines whether the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-content-contribution" id="ref-for-min-content-contribution">min-content contribution</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#non-replaced" id="ref-for-non-replaced②">non-replaced</a> box
+   <p>This property defines whether the <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-content-contribution" id="ref-for-min-content-contribution">min-content contribution</a> of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#non-replaced" id="ref-for-non-replaced②">non-replaced</a> box
 	is “compressed” under certain circumstances.
 	Values have the following meanings:</p>
    <dl>
@@ -1549,7 +1554,7 @@ as its <a data-link-type="dfn" href="#last-remembered" id="ref-for-last-remember
     <dt><dfn class="css" data-dfn-for="min-intrinsic-size" data-dfn-type="value" data-export id="valdef-min-intrinsic-size-zero-if-extrinsic">zero-if-extrinsic<a class="self-link" href="#valdef-min-intrinsic-size-zero-if-extrinsic"></a></dfn> 
     <dd>
       The box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#min-content-contribution" id="ref-for-min-content-contribution③">min-content contribution</a> is “compressed” if has an <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#extrinsic-sizing" id="ref-for-extrinsic-sizing">extrinsic</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#preferred-size" id="ref-for-preferred-size⑥">preferred</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#max-width" id="ref-for-max-width④">maximum</a> size. 
-     <p class="note" role="note"><span>Note:</span> This is the default behavior of most <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element⑦">replaced elements</a>.</p>
+     <p class="note" role="note"><span>Note:</span> This is the default behavior of most <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element⑦">replaced elements</a>.</p>
    </dl>
    <div class="example" id="example-3141cd7d">
     <a class="self-link" href="#example-3141cd7d"></a> The following rule will make all <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scroll-container" id="ref-for-scroll-container②">scroll containers</a> essentially ignore their contents
@@ -1572,27 +1577,27 @@ as its <a data-link-type="dfn" href="#last-remembered" id="ref-for-last-remember
    <h3 class="heading settled" data-level="6.1" id="stretch-fit-sizing"><span class="secno">6.1. </span><span class="content"> Stretch-fit Sizing: filling the containing block</span><a class="self-link" href="#stretch-fit-sizing"></a></h3>
    <p>Stretch-fit sizing tries to set the box’s used size
 	to the length necessary
-	to make its outer size as close to filling the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block" id="ref-for-containing-block①">containing block</a> as possible
+	to make its outer size as close to filling the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block" id="ref-for-containing-block①">containing block</a> as possible
 	while still respecting the constraints imposed by min-height/min-width/max-height/max-width.</p>
-   <p>Formally, its behavior is the same as specifying an <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size④">automatic size</a> together with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#self-alignment-properties" id="ref-for-self-alignment-properties">self-alignment property</a> value of <a class="css" data-link-type="maybe" href="#valdef-width-stretch" id="ref-for-valdef-width-stretch②">stretch</a> (in the relevant axis),
+   <p>Formally, its behavior is the same as specifying an <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size④">automatic size</a> together with a <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#self-alignment-properties" id="ref-for-self-alignment-properties">self-alignment property</a> value of <a class="css" data-link-type="maybe" href="#valdef-width-stretch" id="ref-for-valdef-width-stretch②">stretch</a> (in the relevant axis),
 	except that the resulting box,
-	which can end up not exactly fitting its <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#alignment-container" id="ref-for-alignment-container">alignment container</a>,
+	which can end up not exactly fitting its <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#alignment-container" id="ref-for-alignment-container">alignment container</a>,
 	can be subsequently aligned by its actual <span id="ref-for-self-alignment-properties①">self-alignment property</span> value.</p>
    <p>Additionally,
-	in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#formatting-context" id="ref-for-formatting-context">formatting contexts</a> and axes in which the relevant <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#self-alignment-properties" id="ref-for-self-alignment-properties②">self-alignment property</a> does not apply
+	in <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#formatting-context" id="ref-for-formatting-context">formatting contexts</a> and axes in which the relevant <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#self-alignment-properties" id="ref-for-self-alignment-properties②">self-alignment property</a> does not apply
 	(such as the block axis in Block Layout, or the main axis in Flex Layout),
 	in cases where a percentage size in that axis would resolve to a definite value,
 	a <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#stretch-fit-size" id="ref-for-stretch-fit-size②">stretch-fit size</a> causes the box to attempt to fill its containing block—<wbr>behaving as <span class="css">100%</span> but applying the resulting size to its margin box
 	instead of the box indicated by <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing" id="ref-for-propdef-box-sizing①">box-sizing</a>.
 	For this purpose, <span class="css">auto</span> margins are treated as zero,
-	and furthermore, for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level-box" id="ref-for-block-level-box">block-level boxes</a> in particular,
-	if its block-start/block-end <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#margin" id="ref-for-margin">margin</a> would be adjoining to its parent’s block-start/block-end <span id="ref-for-margin①">margin</span> if its parent’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#sizing-property" id="ref-for-sizing-property①">sizing properties</a> all had their <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#initial-value" id="ref-for-initial-value">initial values</a>,
+	and furthermore, for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level-box" id="ref-for-block-level-box">block-level boxes</a> in particular,
+	if its block-start/block-end <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#margin" id="ref-for-margin">margin</a> would be adjoining to its parent’s block-start/block-end <span id="ref-for-margin①">margin</span> if its parent’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#sizing-property" id="ref-for-sizing-property①">sizing properties</a> all had their <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#initial-value" id="ref-for-initial-value">initial values</a>,
 	then its block-start/block-end <span id="ref-for-margin②">margin</span> is treated as zero.</p>
-   <p class="note" role="note"><span>Note:</span> Consequently, if neither <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch" id="ref-for-valdef-align-self-stretch">stretch</a> alignment applies
+   <p class="note" role="note"><span>Note:</span> Consequently, if neither <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align/#valdef-align-self-stretch" id="ref-for-valdef-align-self-stretch">stretch</a> alignment applies
 	nor percentage sizing can resolve,
 	then the box will resolve to its <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#automatic-size" id="ref-for-automatic-size⑤">automatic size</a>.</p>
    <div class="example" id="example-174ae518">
-    <a class="self-link" href="#example-174ae518"></a> For example, given the following HTML representing two <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-box" id="ref-for-block-box">block boxes</a>: 
+    <a class="self-link" href="#example-174ae518"></a> For example, given the following HTML representing two <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-box" id="ref-for-block-box">block boxes</a>: 
 <pre class="html">&lt;div class="outer">
   &lt;div class="inner">&lt;/div>
 &lt;/div>
@@ -1611,7 +1616,7 @@ as its <a data-link-type="dfn" href="#last-remembered" id="ref-for-last-remember
 		but the bottom margins do not collapse
 		(because the bottom margin of a box is not adjoining
 		to the bottom margin of a parent with a non-<a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto④">auto</a> height,
-		see <a href="https://www.w3.org/TR/CSS2/box.html#collapsing-margins">CSS 2 §8.3.1 Collapsing margins</a>),
+		see <a href="https://www.w3.org/TR/CSS21//box#collapsing-margins">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification §box#collapsing-margins</a>),
 		and therefore the inner box’s bottom margin will be truncated.</p>
 <pre>.outer { height: 200px; margin: 0; }
 .inner { height: stretch; margin: 10px; }
@@ -1643,7 +1648,7 @@ some more text
    <p>Contain-fit sizing essentially applies stretch-fit sizing,
 	but reduces the size of the box in one axis
 	to maintain the box’s <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio①⑥">preferred aspect ratio</a>,
-	similar to the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-images-4/#valdef-object-fit-contain" id="ref-for-valdef-object-fit-contain">contain</a> keyword of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-images-4/#propdef-object-fit" id="ref-for-propdef-object-fit">object-fit</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-size" id="ref-for-propdef-background-size">background-size</a> properties.</p>
+	similar to the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-images-4/#valdef-object-fit-contain" id="ref-for-valdef-object-fit-contain">contain</a> keyword of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-images-4/#propdef-object-fit" id="ref-for-propdef-object-fit">object-fit</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-size" id="ref-for-propdef-background-size">background-size</a> properties.</p>
    <p>First, a target rectangle is determined:</p>
    <ol>
     <li> The initial target rectangle is the size of the box’s containing block,
@@ -1651,13 +1656,13 @@ some more text
 			If both dimensions are indefinite,
 			the initial target rectangle is set
 			to match the outer edges of the box were it <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#stretch-fit-size" id="ref-for-stretch-fit-size③">stretch-fit sized</a>. 
-    <li> Next, if the box has a non-<a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-max-width-none" id="ref-for-valdef-max-width-none">none</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-width" id="ref-for-propdef-max-width②">max-width</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height②">max-height</a>,
+    <li> Next, if the box has a non-<a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-max-width-none" id="ref-for-valdef-max-width-none">none</a> <a class="property" data-link-type="propdesc">max-width</a> or <span class="property">max-height</span>,
 			the target rectangle is clamped in the affected dimension
 			to less than or equal to the “maximum size” of the box’s margin box,
 			i.e. the size its margin box would be
 			if the box was sized at its max-width/height.
 			(Note that, consistent with normal <a href="http://www.w3.org/TR/CSS2/visuren.html">box-sizing rules</a>,
-			this “maximum size” is floored by the effects of the box’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-width" id="ref-for-propdef-min-width④">min-width</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-min-height" id="ref-for-propdef-min-height③">min-height</a>.) 
+			this “maximum size” is floored by the effects of the box’s <span class="property">min-width</span>/<span class="property">min-height</span>.) 
     <li> Last, the target rectangle is reduced in one dimension
 			by the minimum necessary for it to match the box’s <a data-link-type="dfn" href="#preferred-aspect-ratio" id="ref-for-preferred-aspect-ratio①⑦">preferred aspect ratio</a>. 
    </ol>
@@ -1726,7 +1731,7 @@ as well as by the transferred minimum, if any.</p>
 	without violating any sizes specified explicitly on that affected axis.</p>
      </blockquote>
     <li data-md>
-     <p>Clarify that <a class="property" data-link-type="propdesc" href="#propdef-aspect-ratio" id="ref-for-propdef-aspect-ratio⑤">aspect-ratio</a> on a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element" id="ref-for-replaced-element⑧">replaced element</a> with only one <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-size" id="ref-for-natural-size①">natural size</a> determines the other dimension.
+     <p>Clarify that <a class="property" data-link-type="propdesc" href="#propdef-aspect-ratio" id="ref-for-propdef-aspect-ratio⑤">aspect-ratio</a> on a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element" id="ref-for-replaced-element⑧">replaced element</a> with only one <a data-link-type="dfn" href="https://drafts.csswg.org/css-images-3/#natural-size" id="ref-for-natural-size①">natural size</a> determines the other dimension.
 (<a href="https://github.com/w3c/csswg-drafts/issues/5306">Issue 5306</a>)</p>
      <blockquote>
       <p>If a replaced element’s only natural dimension
@@ -1740,9 +1745,9 @@ as well as by the transferred minimum, if any.</p>
      <p>Define that <a class="property" data-link-type="propdesc" href="#propdef-aspect-ratio" id="ref-for-propdef-aspect-ratio⑥">aspect-ratio</a> inhibits margin self-collapsing
 (<a href="https://github.com/w3c/csswg-drafts/issues/5328">Issue 5328</a>)</p>
      <blockquote>
-      <p>For the purpose of margin collapsing (<a href="https://www.w3.org/TR/CSS2/box.html#collapsing-margins">CSS 2 §8.3.1 Collapsing margins</a>),
+      <p>For the purpose of margin collapsing (<a href="https://www.w3.org/TR/CSS21//box#collapsing-margins">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification §box#collapsing-margins</a>),
 	if the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-axis" id="ref-for-block-axis①">block axis</a> is the <a data-link-type="dfn" href="#ratio-dependent-axis" id="ref-for-ratio-dependent-axis④">ratio-dependent axis</a>,
-	it is not considered to have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-logical-1/#propdef-block-size" id="ref-for-propdef-block-size②">block-size</a> of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑤">auto</a>. </p>
+	it is not considered to have a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed</a> <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-logical-1/#propdef-block-size" id="ref-for-propdef-block-size②">block-size</a> of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-sizing-3/#valdef-width-auto" id="ref-for-valdef-width-auto⑤">auto</a>. </p>
      </blockquote>
    </ul>
    <h3 class="no-num heading settled" id="additions-L3"><span class="content"> Additions Since Level 3</span><a class="self-link" href="#additions-L3"></a></h3>
@@ -1880,42 +1885,42 @@ as well as by the transferred minimum, if any.</p>
    <li><a href="#valdef-min-intrinsic-size-zero-if-scroll">zero-if-scroll</a><span>, in §5.4</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-alignment-container">
-   <a href="https://drafts.csswg.org/css-align-3/#alignment-container">https://drafts.csswg.org/css-align-3/#alignment-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#alignment-container">https://drafts.csswg.org/css-align/#alignment-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-alignment-container">6.1. 
 Stretch-fit Sizing: filling the containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-justify-self">
-   <a href="https://drafts.csswg.org/css-align-3/#propdef-justify-self">https://drafts.csswg.org/css-align-3/#propdef-justify-self</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#propdef-justify-self">https://drafts.csswg.org/css-align/#propdef-justify-self</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-justify-self">4.1. 
 Preferred Aspect Ratios: the aspect-ratio property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-self-alignment-properties">
-   <a href="https://drafts.csswg.org/css-align-3/#self-alignment-properties">https://drafts.csswg.org/css-align-3/#self-alignment-properties</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#self-alignment-properties">https://drafts.csswg.org/css-align/#self-alignment-properties</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-self-alignment-properties">6.1. 
 Stretch-fit Sizing: filling the containing block</a> <a href="#ref-for-self-alignment-properties①">(2)</a> <a href="#ref-for-self-alignment-properties②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-self-position-start">
-   <a href="https://drafts.csswg.org/css-align-3/#valdef-self-position-start">https://drafts.csswg.org/css-align-3/#valdef-self-position-start</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#valdef-self-position-start">https://drafts.csswg.org/css-align/#valdef-self-position-start</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-self-position-start">4.1. 
 Preferred Aspect Ratios: the aspect-ratio property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-justify-self-stretch">
-   <a href="https://drafts.csswg.org/css-align-3/#valdef-justify-self-stretch">https://drafts.csswg.org/css-align-3/#valdef-justify-self-stretch</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#valdef-justify-self-stretch">https://drafts.csswg.org/css-align/#valdef-justify-self-stretch</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-justify-self-stretch">4.1. 
 Preferred Aspect Ratios: the aspect-ratio property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-size">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-size">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-size</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-size">https://drafts.csswg.org/css-backgrounds/#propdef-background-size</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-size">6.2. 
 Contain-fit Sizing: stretching while maintaining an aspect ratio</a>
@@ -1943,7 +1948,7 @@ New Sizing Values: the stretch, fit-content, and contain keywords</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">4.2.1. 
 Margin-collapsing</a>
@@ -1951,7 +1956,7 @@ Margin-collapsing</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-initial-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#initial-value">https://drafts.csswg.org/css-cascade-5/#initial-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#initial-value">https://drafts.csswg.org/css-cascade/#initial-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-initial-value">6.1. 
 Stretch-fit Sizing: filling the containing block</a>
@@ -1967,21 +1972,21 @@ Last Remembered Size</a> <a href="#ref-for-size-containment⑤">(2)</a> <a href=
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-box">
-   <a href="https://drafts.csswg.org/css-display-3/#block-box">https://drafts.csswg.org/css-display-3/#block-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-box">https://drafts.csswg.org/css-display/#block-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-box">6.1. 
 Stretch-fit Sizing: filling the containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-level-box">
-   <a href="https://drafts.csswg.org/css-display-3/#block-level-box">https://drafts.csswg.org/css-display-3/#block-level-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-level-box">https://drafts.csswg.org/css-display/#block-level-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-level-box">6.1. 
 Stretch-fit Sizing: filling the containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-containing-block">
-   <a href="https://drafts.csswg.org/css-display-3/#containing-block">https://drafts.csswg.org/css-display-3/#containing-block</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#containing-block">https://drafts.csswg.org/css-display/#containing-block</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-containing-block">3.2. 
 New Sizing Values: the stretch, fit-content, and contain keywords</a>
@@ -1990,14 +1995,14 @@ Stretch-fit Sizing: filling the containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#formatting-context">https://drafts.csswg.org/css-display-3/#formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#formatting-context">https://drafts.csswg.org/css-display/#formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-formatting-context">6.1. 
 Stretch-fit Sizing: filling the containing block</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-box">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-box">https://drafts.csswg.org/css-display-3/#inline-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-box">https://drafts.csswg.org/css-display/#inline-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-box">4.1. 
 Preferred Aspect Ratios: the aspect-ratio property</a>
@@ -2006,7 +2011,7 @@ Zeroing Min-Content Size Contributions: the min-intrinsic-sizing property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-non-replaced">
-   <a href="https://drafts.csswg.org/css-display-3/#non-replaced">https://drafts.csswg.org/css-display-3/#non-replaced</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#non-replaced">https://drafts.csswg.org/css-display/#non-replaced</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-non-replaced">4.1. 
 Preferred Aspect Ratios: the aspect-ratio property</a> <a href="#ref-for-non-replaced①">(2)</a>
@@ -2015,7 +2020,7 @@ Zeroing Min-Content Size Contributions: the min-intrinsic-sizing property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-replaced-element">
-   <a href="https://drafts.csswg.org/css-display-3/#replaced-element">https://drafts.csswg.org/css-display-3/#replaced-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#replaced-element">https://drafts.csswg.org/css-display/#replaced-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-replaced-element">4. 
 Aspect Ratios</a>
@@ -2162,7 +2167,7 @@ Zeroing Min-Content Size Contributions: the min-intrinsic-sizing property</a> <a
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-absolute-position">
-   <a href="https://drafts.csswg.org/css-position-3/#absolute-position">https://drafts.csswg.org/css-position-3/#absolute-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#absolute-position">https://drafts.csswg.org/css-position/#absolute-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-absolute-position">4.1. 
 Preferred Aspect Ratios: the aspect-ratio property</a>
@@ -2465,56 +2470,8 @@ Margin-collapsing</a>
     <li><a href="#ref-for-block-axis①"> Recent Changes</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-height">https://drafts.csswg.org/css2/#propdef-max-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-height">1.1. 
-Module interactions</a>
-    <li><a href="#ref-for-propdef-max-height①">3.2. 
-New Sizing Values: the stretch, fit-content, and contain keywords</a>
-    <li><a href="#ref-for-propdef-max-height②">6.2. 
-Contain-fit Sizing: stretching while maintaining an aspect ratio</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-width">https://drafts.csswg.org/css2/#propdef-max-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-width">1.1. 
-Module interactions</a>
-    <li><a href="#ref-for-propdef-max-width①">3.2. 
-New Sizing Values: the stretch, fit-content, and contain keywords</a>
-    <li><a href="#ref-for-propdef-max-width②">6.2. 
-Contain-fit Sizing: stretching while maintaining an aspect ratio</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-height">https://drafts.csswg.org/css2/#propdef-min-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-height">1.1. 
-Module interactions</a>
-    <li><a href="#ref-for-propdef-min-height①">3.2. 
-New Sizing Values: the stretch, fit-content, and contain keywords</a>
-    <li><a href="#ref-for-propdef-min-height②">4.3. 
-Automatic Content-based Minimum Sizes</a>
-    <li><a href="#ref-for-propdef-min-height③">6.2. 
-Contain-fit Sizing: stretching while maintaining an aspect ratio</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-min-width">
-   <a href="https://drafts.csswg.org/css2/#propdef-min-width">https://drafts.csswg.org/css2/#propdef-min-width</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-min-width">1.1. 
-Module interactions</a>
-    <li><a href="#ref-for-propdef-min-width①">3.2. 
-New Sizing Values: the stretch, fit-content, and contain keywords</a>
-    <li><a href="#ref-for-propdef-min-width②">4.3. 
-Automatic Content-based Minimum Sizes</a> <a href="#ref-for-propdef-min-width③">(2)</a>
-    <li><a href="#ref-for-propdef-min-width④">6.2. 
-Contain-fit Sizing: stretching while maintaining an aspect ratio</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-column-width">
-   <a href="https://drafts.csswg.org/css-multicol-1/#propdef-column-width">https://drafts.csswg.org/css-multicol-1/#propdef-column-width</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#propdef-column-width">https://drafts.csswg.org/css-multicol/#propdef-column-width</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-column-width">1.1. 
 Module interactions</a>
@@ -2551,7 +2508,7 @@ Preferred Aspect Ratios: the aspect-ratio property</a>
      <li><span class="dfn-paneled" id="term-for-margin-box">margin box</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
      <li><span class="dfn-paneled" id="term-for-initial-value">initial value</span>
@@ -2664,14 +2621,6 @@ Preferred Aspect Ratios: the aspect-ratio property</a>
      <li><span class="dfn-paneled" id="term-for-block-axis">block axis</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[CSS2]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-height">max-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-width">max-width</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-height">min-height</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-min-width">min-width</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[CSS3COL]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-propdef-column-width">column-width</span>
@@ -2691,8 +2640,8 @@ Preferred Aspect Ratios: the aspect-ratio property</a>
    <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="https://www.w3.org/TR/css-backgrounds-3/">CSS Backgrounds and Borders Module Level 3</a>. 22 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-backgrounds-3/">https://www.w3.org/TR/css-backgrounds-3/</a>
    <dt id="biblio-css-box-4">[CSS-BOX-4]
    <dd>Elika Etemad. <a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a>. 21 April 2020. WD. URL: <a href="https://www.w3.org/TR/css-box-4/">https://www.w3.org/TR/css-box-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-contain-1">[CSS-CONTAIN-1]
    <dd>Tab Atkins Jr.; Florian Rivoal. <a href="https://www.w3.org/TR/css-contain-1/">CSS Containment Module Level 1</a>. 22 December 2020. REC. URL: <a href="https://www.w3.org/TR/css-contain-1/">https://www.w3.org/TR/css-contain-1/</a>
    <dt id="biblio-css-contain-2">[CSS-CONTAIN-2]
@@ -2829,7 +2778,7 @@ Preferred Aspect Ratios: the aspect-ratio property</a>
    <div class="issue"> Add shorthands. <a href="https://github.com/w3c/csswg-drafts/issues/820">&lt;https://github.com/w3c/csswg-drafts/issues/820></a><a href="#issue-0e53565a"> ↵ </a></div>
    <div class="issue"> We are still working through the details of this section.
 	If there is any behavior specified here
-	that would cause <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#replaced-element">replaced elements</a> with a <a data-link-type="dfn" href="#preferred-aspect-ratio">preferred aspect ratio</a> to behave differently than they would
+	that would cause <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#replaced-element">replaced elements</a> with a <a data-link-type="dfn" href="#preferred-aspect-ratio">preferred aspect ratio</a> to behave differently than they would
 	under the requirements of the <a href="https://www.w3.org/TR/CSS2/visudet.html">CSS2</a>, <a href="https://www.w3.org/TR/css-flexbox-1/">Flex Layout</a>,
 	and <a href="https://www.w3.org/TR/css-grid-1/">Grid Layout</a> specs combined (without this specification in effect), <strong>this is an error and should be <a href="https://github.com/w3c/csswg-drafts/issues">reported</a> to the CSSWG</strong>.<a href="#issue-cce77cb6"> ↵ </a></div>
    <div class="issue"> CSS2.1 does not cleanly differentiate between

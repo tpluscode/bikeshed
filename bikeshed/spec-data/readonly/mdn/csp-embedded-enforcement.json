@@ -1,5 +1,5 @@
 {
-    "ref-for-dom-htmliframeelement-csp": [
+    "dom-htmliframeelement-csp": [
         {
             "engines": [
                 "blink"

@@ -238,8 +238,8 @@ cursor
 -
 e-resize
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-e-resize
@@ -249,8 +249,8 @@ cursor
 -
 e-resize
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-e-resize
@@ -473,8 +473,8 @@ https://www.w3.org/TR/encoding/#error
 -
 error
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#filereader-error
@@ -484,8 +484,8 @@ FileReader
 -
 error
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-filereader-error
@@ -495,8 +495,8 @@ FileReader
 -
 error
 event
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-error-event
@@ -506,8 +506,8 @@ FileReader
 -
 error
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#filereader-error
@@ -517,8 +517,8 @@ FileReader
 -
 error
 attribute
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-filereader-error
@@ -528,8 +528,8 @@ FileReader
 -
 error
 event
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-error-event
@@ -583,8 +583,8 @@ SensorErrorEventInit
 -
 error
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-error
@@ -594,8 +594,8 @@ transaction
 -
 error
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request-error
@@ -605,8 +605,8 @@ request
 -
 error
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#eventdef-request-error
@@ -616,8 +616,8 @@ request
 -
 error
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbrequest-error
@@ -627,8 +627,8 @@ IDBRequest
 -
 error
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransaction-error
@@ -638,8 +638,8 @@ IDBTransaction
 -
 error
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-error
@@ -649,8 +649,8 @@ transaction
 -
 error
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request-error
@@ -660,8 +660,8 @@ request
 -
 error
 event
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#eventdef-request-error
@@ -671,8 +671,8 @@ request
 -
 error
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-error
@@ -682,8 +682,8 @@ IDBRequest
 -
 error
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-error
@@ -1241,8 +1241,8 @@ TextDecoderCommon
 -
 error name
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-exception-error-name
@@ -1252,8 +1252,8 @@ exception
 -
 error name
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-exception-error-name
@@ -1262,8 +1262,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-exception-error-name
 -
 error names table
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-error-names-table
@@ -1272,8 +1272,8 @@ https://heycam.github.io/webidl/#dfn-error-names-table
 -
 error names table
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-error-names-table

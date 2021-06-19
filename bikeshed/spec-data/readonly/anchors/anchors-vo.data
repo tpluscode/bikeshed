@@ -21,8 +21,8 @@ https://drafts.csswg.org/selectors/#selectordef-volume-locked
 -
 VoidFunction
 callback
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#VoidFunction
@@ -112,8 +112,8 @@ https://www.w3.org/TR/css-speech-1/#voice-family
 -
 voice-family
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-voice-family
@@ -320,8 +320,8 @@ https://html.spec.whatwg.org/multipage/syntax.html#void-elements
 -
 void elements
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-void-elements
@@ -362,8 +362,8 @@ SpeechSynthesisUtterance
 -
 volume
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-volume

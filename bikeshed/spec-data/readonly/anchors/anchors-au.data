@@ -284,8 +284,8 @@ FrameType
 -
 'audio' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#audio-media-group
@@ -294,8 +294,8 @@ https://drafts.csswg.org/css2/#audio-media-group
 -
 'audio' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#audio-media-group
@@ -3813,8 +3813,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-work-author
 -
 author
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#author
@@ -3823,8 +3823,8 @@ https://drafts.csswg.org/css2/#author
 -
 author
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#author
@@ -4053,8 +4053,8 @@ https://www.w3.org/TR/css-speech-1/#authoring-tool
 -
 authoring tool
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#authoring
@@ -4063,8 +4063,8 @@ https://drafts.csswg.org/css2/#authoring
 -
 authoring tool
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#authoring
@@ -6129,8 +6129,8 @@ will-change
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-top-auto
@@ -6143,8 +6143,8 @@ left
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-z-index-auto
@@ -6154,8 +6154,8 @@ z-index
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-width-auto
@@ -6165,8 +6165,8 @@ width
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-height-auto
@@ -6176,8 +6176,8 @@ height
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-overflow-auto
@@ -6187,8 +6187,8 @@ overflow
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-clip-auto
@@ -6198,8 +6198,8 @@ clip
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-top-auto%E2%91%A0
@@ -6212,8 +6212,8 @@ https://drafts.csswg.org/css2/#valdef-top-auto%E2%91%A0
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-page-break-auto
@@ -6225,8 +6225,8 @@ page-break-inside
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-table-layout-auto
@@ -6236,8 +6236,8 @@ table-layout
 -
 auto
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-auto
@@ -6247,8 +6247,8 @@ cursor
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-top-auto
@@ -6261,8 +6261,8 @@ left
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-z-index-auto
@@ -6272,8 +6272,8 @@ z-index
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-width-auto
@@ -6283,8 +6283,8 @@ width
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-height-auto
@@ -6294,8 +6294,8 @@ height
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-overflow-auto
@@ -6305,8 +6305,8 @@ overflow
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-clip-auto
@@ -6316,8 +6316,8 @@ clip
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-top-auto%E2%91%A0
@@ -6330,8 +6330,8 @@ https://drafts.csswg.org/css2/#valdef-top-auto%E2%91%A0
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-page-break-auto
@@ -6343,8 +6343,8 @@ page-break-inside
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-table-layout-auto
@@ -6354,8 +6354,8 @@ table-layout
 -
 auto
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-auto
@@ -6878,8 +6878,8 @@ MediaTrackSettings
 -
 autoIncrement
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstoreparameters-autoincrement
@@ -6889,8 +6889,8 @@ IDBObjectStoreParameters
 -
 autoIncrement
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-autoincrement
@@ -6900,8 +6900,8 @@ IDBObjectStore
 -
 autoIncrement
 dict-member
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstoreparameters-autoincrement
@@ -6911,8 +6911,8 @@ IDBObjectStoreParameters
 -
 autoIncrement
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-autoincrement
@@ -7140,8 +7140,8 @@ HTMLOrSVGElement
 -
 autofocus
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#SVGElementAutofocusAttribute
@@ -7301,8 +7301,8 @@ https://www.w3.org/TR/css-sizing-3/#automatic-minimum-size
 -
 automatic numbering
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#automatic-numbering
@@ -7311,8 +7311,8 @@ https://drafts.csswg.org/css2/#automatic-numbering
 -
 automatic numbering
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#automatic-numbering

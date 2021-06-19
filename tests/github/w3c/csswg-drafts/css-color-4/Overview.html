@@ -1215,10 +1215,19 @@ em <c- p>{</c-> <c- k>color</c-><c- p>:</c-> <span class="swatch" style="--color
 	such as the <a class="css" data-link-type="maybe" href="#funcdef-hsl" id="ref-for-funcdef-hsl">hsl()</a> and <a class="css" data-link-type="maybe" href="#funcdef-lch" id="ref-for-funcdef-lch">lch()</a> functions,
 	or the long list of <a data-link-type="dfn" href="#named-color" id="ref-for-named-color">named colors</a>.</p>
    <h3 class="heading settled" data-level="4.1" id="color-syntax"><span class="secno">4.1. </span><span class="content">The <a class="production css" data-link-type="type" href="#typedef-color" id="ref-for-typedef-color⑥" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> syntax</span><a class="self-link" href="#color-syntax"></a></h3>
-   <div class="mdn-anno wrapped after">
+   <p>Colors are represented as a list of components,
+	also sometimes called “channels”,
+	representing axises in the color space.
+	Each channel has a minimum and maximum value,
+	and can take any value between those two.
+	Additionally, every color is accompanied by
+	an <dfn data-dfn-type="dfn" data-export data-lt="alpha channel | alpha component" id="alpha-channel">alpha component<a class="self-link" href="#alpha-channel"></a></dfn>,
+	indicating how transparent it is,
+	and thus how much of the backdrop one can see behind the color.</p>
+   <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
     <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" title="The <color> CSS data type represents a color. A <color> may also include an alpha-channel transparency value, indicating how the color should composite with its background.">color_value</a></p>
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" title="The <color> CSS data type represents a color in the sRGB color space. A <color> may also include an alpha-channel transparency value, indicating how the color should composite with its background.">color_value</a></p>
      <p class="all-engines-text">In all current engines.</p>
      <div class="support">
       <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
@@ -1231,15 +1240,6 @@ em <c- p>{</c-> <c- k>color</c-><c- p>:</c-> <span class="swatch" style="--color
      </div>
     </div>
    </div>
-   <p>Colors are represented as a list of components,
-	also sometimes called “channels”,
-	representing axises in the color space.
-	Each channel has a minimum and maximum value,
-	and can take any value between those two.
-	Additionally, every color is accompanied by
-	an <dfn data-dfn-type="dfn" data-export data-lt="alpha channel | alpha component" id="alpha-channel">alpha component<a class="self-link" href="#alpha-channel"></a></dfn>,
-	indicating how transparent it is,
-	and thus how much of the backdrop one can see behind the color.</p>
    <p>Colors in CSS are represented by the <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="typedef-color"><a class="production css" data-link-type="type" href="#typedef-color" id="ref-for-typedef-color⑦" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a></dfn> type:</p>
 <pre class="prod highlight">&lt;color> = <a class="production" data-link-type="type" href="#typedef-hex-color" id="ref-for-typedef-hex-color">&lt;hex-color></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> <a class="production" data-link-type="type" href="#typedef-named-color" id="ref-for-typedef-named-color">&lt;named-color></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> currentcolor <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②">|</a> transparent <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one③">|</a>
     <a class="production" data-link-type="function" href="#funcdef-rgb" id="ref-for-funcdef-rgb①">&lt;<c- nf>rgb</c-><c- p>()</c->></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④">|</a> <a class="production" data-link-type="function" href="#funcdef-rgba" id="ref-for-funcdef-rgba">&lt;<c- nf>rgba</c-><c- p>()</c->></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑤">|</a> <a class="production" data-link-type="function" href="#funcdef-hsl" id="ref-for-funcdef-hsl①">&lt;<c- nf>hsl</c-><c- p>()</c->></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑥">|</a> <a class="production" data-link-type="function" href="#funcdef-hsla" id="ref-for-funcdef-hsla">&lt;<c- nf>hsla</c-><c- p>()</c->></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑦">|</a> <a class="production" data-link-type="function" href="#funcdef-hwb" id="ref-for-funcdef-hwb">&lt;<c- nf>hwb</c-><c- p>()</c->></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑧">|</a>
@@ -1334,8 +1334,8 @@ indicating an action, prompting a response, or distinguishing a visual element</
      <p>At 4k (UHDTV) and above, it is ITU-R BT.2020 <a data-link-type="biblio" href="#biblio-rec2020">[Rec.2020]</a> for SDR video</p>
    </ul>
    <h3 class="heading settled" data-level="4.6" id="resolving-color-values"><span class="secno">4.6. </span><span class="content"> Resolving <a class="production css" data-link-type="type" href="#typedef-color" id="ref-for-typedef-color⑧" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> Values</span><a class="self-link" href="#resolving-color-values"></a></h3>
-   <p>Unless otherwise specified for a particular property, <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#specified-value" id="ref-for-specified-value">specified</a> colors are resolved to <dfn data-dfn-type="dfn" data-export data-lt="computed color" id="computed-color"><a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed</a> colors<a class="self-link" href="#computed-color"></a></dfn> and then further to <dfn data-dfn-type="dfn" data-export data-lt="used color" id="used-color"><a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used</a> colors<a class="self-link" href="#used-color"></a></dfn> as described below.</p>
-   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#resolved-value" id="ref-for-resolved-value">resolved value</a> of a <a class="production css" data-link-type="type" href="#typedef-color" id="ref-for-typedef-color⑨" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> is its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used value</a>.</p>
+   <p>Unless otherwise specified for a particular property, <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#specified-value" id="ref-for-specified-value">specified</a> colors are resolved to <dfn data-dfn-type="dfn" data-export data-lt="computed color" id="computed-color"><a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed</a> colors<a class="self-link" href="#computed-color"></a></dfn> and then further to <dfn data-dfn-type="dfn" data-export data-lt="used color" id="used-color"><a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used</a> colors<a class="self-link" href="#used-color"></a></dfn> as described below.</p>
+   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#resolved-value" id="ref-for-resolved-value">resolved value</a> of a <a class="production css" data-link-type="type" href="#typedef-color" id="ref-for-typedef-color⑨" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> is its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used value</a>.</p>
    <h4 class="heading settled" data-level="4.6.1" id="resolving-sRGB-values"><span class="secno">4.6.1. </span><span class="content">Resolving sRGB values</span><a class="self-link" href="#resolving-sRGB-values"></a></h4>
    <p>This applies to:</p>
    <ul>
@@ -1351,7 +1351,7 @@ indicating an action, prompting a response, or distinguishing a visual element</
      <p><a data-link-type="dfn" href="#named-color" id="ref-for-named-color①">named colors</a></p>
      <p>While the function names and named colors
 are <a href="https://infra.spec.whatwg.org/#ascii-case-insensitive">ASCII case-insensitive</a>,
-the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#specified-value" id="ref-for-specified-value①">specified value</a> does not preserve any mixed casing
+the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#specified-value" id="ref-for-specified-value①">specified value</a> does not preserve any mixed casing
 and is treated as being all lowercase.</p>
    </ul>
    <details class="wpt-tests-block" dir="ltr" lang="en">
@@ -1416,7 +1416,7 @@ and is treated as being all lowercase.</p>
 		paired with the specified alpha channel
 		(as a <span class="production" id="ref-for-number-value④">&lt;number></span>, not a <span class="production" id="ref-for-percentage-value③">&lt;percentage></span>;
 		and defaulting to opaque if unspecified).</p>
-   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#actual-value" id="ref-for-actual-value">actual value</a> can vary based on the operation;
+   <p>The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#actual-value" id="ref-for-actual-value">actual value</a> can vary based on the operation;
 		for rendering to a CMYK-capable device,
 		it may be rendered as a CMYK color;
 		for blending with non-CMYK colors
@@ -1444,7 +1444,7 @@ and is treated as being all lowercase.</p>
    <p>The computed and used value of <a class="css" data-link-type="maybe" href="#valdef-color-transparent" id="ref-for-valdef-color-transparent①">transparent</a> is <a data-link-type="dfn" href="#transparent-black" id="ref-for-transparent-black">transparent black</a>.</p>
    <p>The <a class="css" data-link-type="maybe" href="#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor③">currentcolor</a> keyword computes to itself.</p>
    <p>In the <a class="property" data-link-type="propdesc" href="#propdef-color" id="ref-for-propdef-color①">color</a> property,
-		the used value of <a class="css" data-link-type="maybe" href="#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor④">currentcolor</a> is the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#inherited-value" id="ref-for-inherited-value">inherited value</a>.
+		the used value of <a class="css" data-link-type="maybe" href="#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor④">currentcolor</a> is the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#inherited-value" id="ref-for-inherited-value">inherited value</a>.
 		In any other property,
 		its used value is the used value of the <span class="property" id="ref-for-propdef-color②">color</span> property on the same element.</p>
    <p class="note" role="note"><span>Note:</span> This means that if the <a class="css" data-link-type="maybe" href="#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor⑤">currentcolor</a> value is inherited,
@@ -1534,7 +1534,7 @@ and there shall be no thousands separator.</p>
     <li data-md>
      <p><a data-link-type="dfn" href="#named-color" id="ref-for-named-color②">named colors</a></p>
    </ul>
-   <p>is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed value</a> and thus,
+   <p>is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed value</a> and thus,
 	uses either the <a class="css" data-link-type="maybe" href="#funcdef-rgb" id="ref-for-funcdef-rgb⑤">rgb()</a> or <a class="css" data-link-type="maybe" href="#funcdef-rgba" id="ref-for-funcdef-rgba④">rgba()</a> form
 	(depending on whether the alpha is exactly 1, or not),
 	with lowercase letters for the function name.</p>
@@ -1599,7 +1599,7 @@ and there shall be no thousands separator.</p>
    </div>
    <h4 class="heading settled" data-level="4.7.3" id="serializing-lab-lch"><span class="secno">4.7.3. </span><span class="content">Serializing Lab and LCH values</span><a class="self-link" href="#serializing-lab-lch"></a></h4>
    <p>The serialized form of <a class="css" data-link-type="maybe" href="#funcdef-lch" id="ref-for-funcdef-lch⑤">lch()</a> and <a class="css" data-link-type="maybe" href="#funcdef-lab" id="ref-for-funcdef-lab③">lab()</a> values
-	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed value</a> and uses the <span class="css" id="ref-for-funcdef-lab④">lab()</span> or <span class="css" id="ref-for-funcdef-lch⑥">lch()</span> forms,
+	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed value</a> and uses the <span class="css" id="ref-for-funcdef-lab④">lab()</span> or <span class="css" id="ref-for-funcdef-lch⑥">lch()</span> forms,
 	with lowercase letters for the function name.</p>
    <p>The component values are serialized in base 10;
 	the Lightness component is serialized as <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value⑥">&lt;percentage></a>, while the a and b component values
@@ -1651,7 +1651,7 @@ and there shall be no thousands separator.</p>
    </div>
    <h4 class="heading settled" data-level="4.7.4" id="serializing-color-function-values"><span class="secno">4.7.4. </span><span class="content">Serializing values of the <a class="css" data-link-type="maybe" href="#funcdef-color" id="ref-for-funcdef-color③">color()</a> function</span><a class="self-link" href="#serializing-color-function-values"></a></h4>
    <p>The serialized form of <a class="css" data-link-type="maybe" href="#funcdef-color" id="ref-for-funcdef-color④">color()</a> values
-	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value③">computed value</a> and uses the <span class="css" id="ref-for-funcdef-color⑤">color()</span> form,
+	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value③">computed value</a> and uses the <span class="css" id="ref-for-funcdef-color⑤">color()</span> form,
 	with lowercase letters for the function name
 	and the color space name.</p>
    <p>The component values are serialized in base 10,
@@ -1743,7 +1743,7 @@ and there shall be no thousands separator.</p>
    </div>
    <h4 class="heading settled" data-level="4.7.5" id="serializing-device-cmyk-values"><span class="secno">4.7.5. </span><span class="content">Serializing <span class="css">device-cmyk</span> values</span><a class="self-link" href="#serializing-device-cmyk-values"></a></h4>
    <p>The serialized form of <a class="css" data-link-type="maybe" href="#funcdef-device-cmyk" id="ref-for-funcdef-device-cmyk①">device-cmyk()</a> values
-	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value④">computed value</a> and uses the <span class="css" id="ref-for-funcdef-device-cmyk②">device-cmyk()</span> form,
+	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value④">computed value</a> and uses the <span class="css" id="ref-for-funcdef-device-cmyk②">device-cmyk()</span> form,
 	with lowercase letters for the function name.</p>
    <p>The component values are serialized in base 10,
 	as <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value①①">&lt;number></a>.
@@ -1779,7 +1779,7 @@ and there shall be no thousands separator.</p>
    <h4 class="heading settled" data-level="4.7.6" id="serializing-other-colors"><span class="secno">4.7.6. </span><span class="content">Serializing other colors</span><a class="self-link" href="#serializing-other-colors"></a></h4>
    <p>This applies to <a data-link-type="dfn" href="#css-system-colors" id="ref-for-css-system-colors①">system colors</a>, <a href="#deprecated-system-colors">deprecated-colors</a>, <a class="css" data-link-type="maybe" href="#valdef-color-transparent" id="ref-for-valdef-color-transparent②">transparent</a>, and <a class="css" data-link-type="maybe" href="#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor⑥">currentcolor</a>.</p>
    <p>The serialized form of these values
-	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value⑤">computed value</a> and uses lowercase letters for the color name.</p>
+	is derived from the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value⑤">computed value</a> and uses lowercase letters for the color name.</p>
    <div class="example" id="ex-system-serial">
     <a class="self-link" href="#ex-system-serial"></a> 
     <p>The serialized form of the color</p>
@@ -1806,35 +1806,6 @@ xyz and lab'.</a>.</p>
    <p>CSS provides several methods of directly specifying an sRGB color: <a data-link-type="dfn" href="#hex-color" id="ref-for-hex-color③">hex colors</a>, <a class="css" data-link-type="maybe" href="#funcdef-rgb" id="ref-for-funcdef-rgb⑨">rgb()</a>/<a class="css" data-link-type="maybe" href="#funcdef-rgba" id="ref-for-funcdef-rgba⑦">rgba()</a> <a data-link-type="dfn" href="#color-functions" id="ref-for-color-functions">color-functions</a>, <a class="css" data-link-type="maybe" href="#funcdef-hsl" id="ref-for-funcdef-hsl⑦">hsl()</a>/<a class="css" data-link-type="maybe" href="#funcdef-hsla" id="ref-for-funcdef-hsla⑤">hsla()</a> <span id="ref-for-color-functions①">color-functions</span>, <a class="css" data-link-type="maybe" href="#funcdef-hwb" id="ref-for-funcdef-hwb⑤">hwb()</a> <span id="ref-for-color-functions②">color-function</span>, <a data-link-type="dfn" href="#named-color" id="ref-for-named-color③">named colors</a>,
 	and the <a class="css" data-link-type="maybe" href="#valdef-color-transparent" id="ref-for-valdef-color-transparent④">transparent</a> keyword.</p>
    <h3 class="heading settled" data-level="5.1" id="rgb-functions"><span class="secno">5.1. </span><span class="content"> The RGB functions: <a class="css" data-link-type="maybe" href="#funcdef-rgb" id="ref-for-funcdef-rgb①⓪">rgb()</a> and <a class="css" data-link-type="maybe" href="#funcdef-rgba" id="ref-for-funcdef-rgba⑧">rgba()</a></span><a class="self-link" href="#rgb-functions"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba()" title="The rgba() functional notation expresses a color according to its red, green, and blue components. An optional alpha component represents the color&apos;s transparency.">color_value/rgba()</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>3+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>10+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>9+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb()" title="The rgb() functional notation expresses a color according to its red, green, and blue components. An optional alpha component represents the color&apos;s transparency.">color_value/rgb()</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>3.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <a class="css" data-link-type="maybe" href="#funcdef-rgb" id="ref-for-funcdef-rgb①①">rgb()</a> function defines an sRGB color by specifying the red, green, and blue channels directly.
 	Its syntax is:</p>
 <pre class="prod highlight"><dfn class="dfn-paneled" data-dfn-type="function" data-export id="funcdef-rgb"><c- nf>rgb</c-><c- p>()</c-></dfn> = <c- nf>rgb</c-><c- p>(</c-> <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value⑦">&lt;percentage></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num" id="ref-for-mult-num"><c- p>{</c-><c- m>3</c-><c- p>}</c-></a> <c- p>[</c-> / <a class="production" data-link-type="type" href="#typedef-alpha-value" id="ref-for-typedef-alpha-value">&lt;alpha-value></a> <c- p>]</c-><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a> <c- p>)</c-> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①④">|</a>
@@ -1897,7 +1868,7 @@ xyz and lab'.</a>.</p>
    <p>The CSS <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="hex color | hex color notation" id="hex-color">hex color notation</dfn> allows an sRGB color to be specified by giving the channels as hexadecimal numbers,
 	which is similar to how colors are often written directly in computer code.
 	It’s also shorter than writing the same color out in <a class="css" data-link-type="maybe" href="#funcdef-rgb" id="ref-for-funcdef-rgb①④">rgb()</a> notation.</p>
-   <p>The syntax of a <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="typedef-hex-color">&lt;hex-color></dfn> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-hash-token" id="ref-for-typedef-hash-token">&lt;hash-token></a> token whose value consists of 3, 4, 6, or 8 hexadecimal digits.
+   <p>The syntax of a <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="typedef-hex-color">&lt;hex-color></dfn> is a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-hash-token" id="ref-for-typedef-hash-token">&lt;hash-token></a> token whose value consists of 3, 4, 6, or 8 hexadecimal digits.
 	In other words, a hex color is written as a hash character, "#",
 	followed by some number of digits 0-9 or letters a-f
 	(the case of the letters doesn’t matter - <span class="css">#00ff00</span> is identical to <span class="css">#00FF00</span>).</p>
@@ -3038,7 +3009,7 @@ xyz and lab'.</a>.</p>
    <p>The keyword <dfn class="dfn-paneled css" data-dfn-for="<color>" data-dfn-type="value" data-export id="valdef-color-currentcolor">currentcolor</dfn> represents value of the <a class="property" data-link-type="propdesc" href="#propdef-color" id="ref-for-propdef-color⑤">color</a> property on the same element.
 	Unlike <a class="production css" data-link-type="type" href="#typedef-named-color" id="ref-for-typedef-named-color②">&lt;named-color></a>s, it is <em>not</em> restricted to sRGB;
 	the value can be any <a class="production css" data-link-type="type" href="#typedef-color" id="ref-for-typedef-color①⑤" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a>.
-	Its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value②">used values</a> is determined by <a href="#resolving-other-colors">resolving color values</a>.</p>
+	Its <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value②">used values</a> is determined by <a href="#resolving-other-colors">resolving color values</a>.</p>
    <details class="wpt-tests-block" dir="ltr" lang="en">
     <summary>Tests</summary>
     <ul class="wpt-tests-list">
@@ -3094,22 +3065,6 @@ xyz and lab'.</a>.</p>
 	at which point the capitalization stopped mattering,
 	as CSS keywords are <a href="https://infra.spec.whatwg.org/#ascii-case-insensitive">ASCII case-insensitive</a>.</p>
    <h2 class="heading settled" data-level="7" id="the-hsl-notation"><span class="secno">7. </span><span class="content"> HSL Colors: <a class="css" data-link-type="maybe" href="#funcdef-hsl" id="ref-for-funcdef-hsl⑧">hsl()</a> and <a class="css" data-link-type="maybe" href="#funcdef-hsla" id="ref-for-funcdef-hsla⑥">hsla()</a> functions</span><a class="self-link" href="#the-hsl-notation"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl()" title="The hsl() functional notation expresses a given color according to its hue, saturation, and lightness components. An optional alpha component represents the color&apos;s transparency.">color_value/hsl()</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>9+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The RGB system for specifying colors,
 	while convenient for machines and graphic libraries,
 	is often regarded as very difficult for humans to gain an intuitive grasp on.
@@ -5865,7 +5820,7 @@ and if omitted it defaults to <span class="css">100%</span>.</p>
    <p>The <dfn class="dfn-paneled css" data-dfn-type="at-rule" data-export id="at-ruledef-profile">@color-profile</dfn> rule
 	defines and names a <dfn class="dfn-paneled" data-dfn-type="dfn" data-local-lt="color profile" data-lt="CSS color profile" data-noexport id="css-color-profile">color profile</dfn> which can later be used in the <a class="css" data-link-type="maybe" href="#funcdef-color" id="ref-for-funcdef-color①①">color()</a> function to specify a color.</p>
    <p>It’s defined as:</p>
-<pre class="prod highlight"><c- n>@color-profile</c-> = <c- n>@color-profile</c-> <c- p>[</c-><a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#typedef-dashed-ident" id="ref-for-typedef-dashed-ident⑤">&lt;dashed-ident></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①⑧">|</a> <span class="css">device-cmyk</span><c- p>]</c-> <c- p>{</c-> <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list" id="ref-for-typedef-declaration-list">&lt;declaration-list></a> <c- p>}</c->
+<pre class="prod highlight"><c- n>@color-profile</c-> = <c- n>@color-profile</c-> <c- p>[</c-><a class="production" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#typedef-dashed-ident" id="ref-for-typedef-dashed-ident⑤">&lt;dashed-ident></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①⑧">|</a> <span class="css">device-cmyk</span><c- p>]</c-> <c- p>{</c-> <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list" id="ref-for-typedef-declaration-list">&lt;declaration-list></a> <c- p>}</c->
 </pre>
    <p>The <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#typedef-dashed-ident" id="ref-for-typedef-dashed-ident⑥">&lt;dashed-ident></a> gives the <a data-link-type="dfn" href="#css-color-profile" id="ref-for-css-color-profile①">color profile’s</a> name,
 	by which it will be used in a CSS stylesheet.
@@ -7225,13 +7180,13 @@ and thus do not constitute an increased security risk.</p>
    <li><a href="#valdef-color-yellowgreen">yellowgreen</a><span>, in §6.1</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-actual-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#actual-value">https://drafts.csswg.org/css-cascade-5/#actual-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#actual-value">https://drafts.csswg.org/css-cascade/#actual-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-actual-value">4.6.4. Resolving device-cmyk values</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">4.6. 
 Resolving &lt;color> Values</a>
@@ -7243,13 +7198,13 @@ Resolving &lt;color> Values</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inherited-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#inherited-value">https://drafts.csswg.org/css-cascade-5/#inherited-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#inherited-value">https://drafts.csswg.org/css-cascade/#inherited-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inherited-value">4.6.5. Resolving other colors</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-specified-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#specified-value">https://drafts.csswg.org/css-cascade-5/#specified-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#specified-value">https://drafts.csswg.org/css-cascade/#specified-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-specified-value">4.6. 
 Resolving &lt;color> Values</a>
@@ -7257,7 +7212,7 @@ Resolving &lt;color> Values</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">4.6. 
 Resolving &lt;color> Values</a> <a href="#ref-for-used-value①">(2)</a>
@@ -7273,14 +7228,14 @@ System Colors</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-declaration-list">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list">https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-declaration-list">https://drafts.csswg.org/css-syntax/#typedef-declaration-list</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-declaration-list">10.3. 
 Specifying a color profile: the @color-profile at-rule</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-hash-token">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-hash-token">https://drafts.csswg.org/css-syntax-3/#typedef-hash-token</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-hash-token">https://drafts.csswg.org/css-syntax/#typedef-hash-token</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-hash-token">5.2. 
 The RGB hexadecimal notations: #RRGGBB</a>
@@ -7477,7 +7432,7 @@ Transparency: the opacity property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-resolved-value">
-   <a href="https://drafts.csswg.org/cssom-1/#resolved-value">https://drafts.csswg.org/cssom-1/#resolved-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#resolved-value">https://drafts.csswg.org/cssom/#resolved-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-resolved-value">4.6. 
 Resolving &lt;color> Values</a>
@@ -7514,7 +7469,7 @@ Transparency: the opacity property</a>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-actual-value">actual value</span>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
@@ -7599,10 +7554,10 @@ Transparency: the opacity property</a>
    <dd><a href="http://cie.co.at/publications/colorimetry-part-4-cie-1976-lab-colour-space-1">ISO/CIE 11664-4:2019(E): Colorimetry — Part 4: CIE 1976 L*a*b* colour space</a>. 2019. Published. URL: <a href="http://cie.co.at/publications/colorimetry-part-4-cie-1976-lab-colour-space-1">http://cie.co.at/publications/colorimetry-part-4-cie-1976-lab-colour-space-1</a>
    <dt id="biblio-compositing">[Compositing]
    <dd>Rik Cabanier; Nikos Andronikos. <a href="https://www.w3.org/TR/compositing-1/">Compositing and Blending Level 1</a>. 13 January 2015. CR. URL: <a href="https://www.w3.org/TR/compositing-1/">https://www.w3.org/TR/compositing-1/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-color-adjust-1">[CSS-COLOR-ADJUST-1]
-   <dd>Elika Etemad; et al. <a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a>. 16 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-color-adjust-1/">https://www.w3.org/TR/css-color-adjust-1/</a>
+   <dd>Elika Etemad; et al. <a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a>. 9 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-color-adjust-1/">https://www.w3.org/TR/css-color-adjust-1/</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
    <dd>Tab Atkins Jr.; Simon Sapin. <a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a>. 16 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-syntax-3/">https://www.w3.org/TR/css-syntax-3/</a>
    <dt id="biblio-css-text-decor-4">[CSS-TEXT-DECOR-4]

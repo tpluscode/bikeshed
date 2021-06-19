@@ -44,8 +44,8 @@ https://www.w3.org/TR/css-values-4/#pc
 -
 pc
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-length-pc
@@ -55,8 +55,8 @@ https://drafts.csswg.org/css2/#valdef-length-pc
 -
 pc
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-length-pc

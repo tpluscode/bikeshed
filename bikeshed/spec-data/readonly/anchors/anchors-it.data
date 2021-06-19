@@ -94,8 +94,8 @@ font-style
 -
 italic
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-style-italic
@@ -105,8 +105,8 @@ font-style
 -
 italic
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-style-italic
@@ -459,8 +459,8 @@ CSSStyleDeclaration
 -
 item(index)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-item
@@ -470,8 +470,8 @@ FileList
 -
 item(index)
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-item
@@ -696,8 +696,8 @@ https://www.w3.org/TR/webdriver2/#dfn-iterable
 -
 iterable
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-iterable
@@ -706,8 +706,8 @@ https://heycam.github.io/webidl/#dfn-iterable
 -
 iterable
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-iterable
@@ -716,8 +716,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-iterable
 -
 iterable declaration
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-iterable-declaration
@@ -726,8 +726,8 @@ https://heycam.github.io/webidl/#dfn-iterable-declaration
 -
 iterable declaration
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-iterable-declaration
@@ -779,8 +779,8 @@ map
 -
 iterate a cursor
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#iterate-a-cursor
@@ -789,8 +789,8 @@ https://w3c.github.io/IndexedDB/#iterate-a-cursor
 -
 iterate a cursor
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#iterate-a-cursor
@@ -810,8 +810,8 @@ XPathResult
 -
 iteration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#iteration
@@ -820,8 +820,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#iteration
 -
 iteration
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#iteration
@@ -1091,8 +1091,8 @@ OptionalEffectTiming
 -
 iterations
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-iterations
@@ -1102,8 +1102,8 @@ Pbkdf2Params
 -
 iterations
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params-iterations
@@ -1123,8 +1123,8 @@ NodeIterator
 -
 iterator prototype object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-iterator-prototype-object
@@ -1133,8 +1133,8 @@ https://heycam.github.io/webidl/#dfn-iterator-prototype-object
 -
 iterator prototype object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-iterator-prototype-object
@@ -1143,8 +1143,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-iterator-prototype-object
 -
 iterator result
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#iterator-result

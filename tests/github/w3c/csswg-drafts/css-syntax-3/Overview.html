@@ -1061,7 +1061,7 @@ on screen, on paper, etc.
 		selects any <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element" id="ref-for-the-a-element">a</a></code> elements that are children of a <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element" id="ref-for-the-p-element">p</a></code> element.</p>
     <p>"<code>color: blue</code>" is a declaration specifying that,
 		for the elements that match the selector,
-		their <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#color0" id="ref-for-color0">color</a> property should have the value <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color-4/#valdef-color-blue" id="ref-for-valdef-color-blue">blue</a>.
+		their <a class="property" data-link-type="propdesc">color</a> property should have the value <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color/#valdef-color-blue" id="ref-for-valdef-color-blue">blue</a>.
 		Similarly, their <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration" id="ref-for-propdef-text-decoration">text-decoration</a> property should have the value <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-line-underline" id="ref-for-valdef-text-decoration-line-underline">underline</a>.</p>
    </div>
    <p><a data-link-type="dfn" href="#at-rule" id="ref-for-at-rule①">At-rules</a> are all different, but they have a basic structure in common.
@@ -1080,7 +1080,7 @@ on screen, on paper, etc.
     <a class="self-link" href="#example-42888746"></a> 
     <p>Here are several examples of <a data-link-type="dfn" href="#at-rule" id="ref-for-at-rule④">at-rules</a> that illustrate the varied syntax they may contain.</p>
 <pre>@import "my-styles.css";</pre>
-    <p>The <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade-5/#at-ruledef-import" id="ref-for-at-ruledef-import">@import</a> <a data-link-type="dfn" href="#at-rule" id="ref-for-at-rule⑤">at-rule</a> is a simple statement.
+    <p>The <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-cascade/#at-ruledef-import" id="ref-for-at-ruledef-import">@import</a> <a data-link-type="dfn" href="#at-rule" id="ref-for-at-rule⑤">at-rule</a> is a simple statement.
 		After its name, it takes a single string or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#funcdef-url" id="ref-for-funcdef-url">url()</a> function to indicate the stylesheet that it should import.</p>
 <pre>@page :left {
   margin-left: 4cm;
@@ -1224,7 +1224,7 @@ and return the result.</p>
    <div class="algorithm" data-algorithm="determine the fallback encoding">
      To <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="determine-the-fallback-encoding">determine the fallback encoding</dfn> of a <var>stylesheet</var>: 
     <ol>
-     <li> If HTTP or equivalent protocol provides an <var>encoding label</var> (e.g. via the charset parameter of the Content-Type header) for the <var>stylesheet</var>, <a data-link-type="dfn" href="https://encoding.spec.whatwg.org/#concept-encoding-get" id="ref-for-concept-encoding-get">get an encoding</a> from <var>encoding label</var>.
+     <li> If HTTP or equivalent protocol provides an <var>encoding label</var> (e.g. via the charset parameter of the Content-Type header) for the <var>stylesheet</var>, <a data-link-type="dfn">get an encoding</a> from <var>encoding label</var>.
 				If that does not return failure,
 				return it. 
      <li>
@@ -1233,7 +1233,7 @@ and return the result.</p>
 <pre>40 63 68 61 72 73 65 74 20 22 XX* 22 3B</pre>
       <p>where each <code>XX</code> byte is a value between 0<sub>16</sub> and 21<sub>16</sub> inclusive
 				or a value between 23<sub>16</sub> and 7F<sub>16</sub> inclusive,
-				then <a data-link-type="dfn" href="https://encoding.spec.whatwg.org/#concept-encoding-get" id="ref-for-concept-encoding-get①">get an encoding</a> from a string formed out of
+				then <a data-link-type="dfn">get an encoding</a> from a string formed out of
 				the sequence of <code>XX</code> bytes,
 				interpreted as <code>ASCII</code>.</p>
       <details class="note">
@@ -1293,7 +1293,7 @@ and return the result.</p>
 	so the stylesheet defaults to UTF-8 instead in the absence of more explicit information.</p>
    <p class="note" role="note"><span>Note:</span> <a data-link-type="biblio" href="#biblio-html">[HTML]</a> defines <a href="https://html.spec.whatwg.org/multipage/links.html#link-type-stylesheet">the environment encoding for <code>&lt;link rel=stylesheet></code></a>.</p>
    <p class="note" role="note"><span>Note:</span> <a data-link-type="biblio" href="#biblio-cssom">[CSSOM]</a> defines <a href="https://drafts.csswg.org/cssom/#requirements-on-user-agents-implementing-the-xml-stylesheet-processing-instruction">the environment encoding for <code>&lt;xml-stylesheet?></code></a>.</p>
-   <p class="note" role="note"><span>Note:</span> <a data-link-type="biblio" href="#biblio-css-cascade-3">[CSS-CASCADE-3]</a> defines <a class="css" data-link-type="at-rule" href="https://drafts.csswg.org/css-cascade-5/#at-ruledef-import" id="ref-for-at-ruledef-import①">the environment encoding for <code>@import</code></a>.</p>
+   <p class="note" role="note"><span>Note:</span> <a data-link-type="biblio" href="#biblio-css-cascade-3">[CSS-CASCADE-3]</a> defines <a class="css" data-link-type="at-rule" href="https://drafts.csswg.org/css-cascade/#at-ruledef-import" id="ref-for-at-ruledef-import①">the environment encoding for <code>@import</code></a>.</p>
    <h3 class="heading settled" data-level="3.3" id="input-preprocessing"><span class="secno">3.3. </span><span class="content"> Preprocessing the input stream</span><a class="self-link" href="#input-preprocessing"></a></h3>
    <p>The <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="input-stream">input stream</dfn> consists of the <a data-link-type="dfn" href="#css-filter-code-points" id="ref-for-css-filter-code-points">filtered code points</a> pushed into it as the input byte stream is decoded.</p>
    <div class="algorithm" data-algorithm="filter code points" data-algorithm-for="CSS">
@@ -2988,7 +2988,7 @@ and return the result.</p>
 			and an <var>important</var> flag which is initially unset. 
      <p>Declarations are further categorized
 			as <dfn data-dfn-for="CSS" data-dfn-type="dfn" data-export id="css-property-declarations">property declarations<a class="self-link" href="#css-property-declarations"></a></dfn> or <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export id="css-descriptor-declarations">descriptor declarations</dfn>,
-			with the former setting CSS <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#css-property" id="ref-for-css-property">properties</a> and appearing most often in <a data-link-type="dfn" href="#qualified-rule" id="ref-for-qualified-rule④">qualified rules</a> and the latter setting CSS <a data-link-type="dfn" href="#css-descriptor" id="ref-for-css-descriptor">descriptors</a>,
+			with the former setting CSS <a data-link-type="dfn" href="https://w3c.github.io/aria/#dfn-property" id="ref-for-dfn-property">properties</a> and appearing most often in <a data-link-type="dfn" href="#qualified-rule" id="ref-for-qualified-rule④">qualified rules</a> and the latter setting CSS <a data-link-type="dfn" href="#css-descriptor" id="ref-for-css-descriptor">descriptors</a>,
 			which appear only in <a data-link-type="dfn" href="#at-rule" id="ref-for-at-rule①①">at-rules</a>.
 			(This categorization does not occur at the Syntax level;
 			instead, it is a product of where the declaration appears,
@@ -3822,7 +3822,7 @@ and return the final result.</p>
      <li> "<a data-link-type="dfn" href="#parse-a-rule" id="ref-for-parse-a-rule">Parse a rule</a>" is intended for use by the <code>CSSStyleSheet#insertRule</code> method,
 				and similar functions which might exist,
 				which parse text into a single rule. 
-     <li> "<a data-link-type="dfn" href="#parse-a-declaration" id="ref-for-parse-a-declaration">Parse a declaration</a>" is used in <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports" id="ref-for-at-ruledef-supports">@supports</a> conditions. <a data-link-type="biblio" href="#biblio-css3-conditional">[CSS3-CONDITIONAL]</a>
+     <li> "<a data-link-type="dfn" href="#parse-a-declaration" id="ref-for-parse-a-declaration">Parse a declaration</a>" is used in <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports" id="ref-for-at-ruledef-supports">@supports</a> conditions. <a data-link-type="biblio" href="#biblio-css3-conditional">[CSS3-CONDITIONAL]</a> 
      <li> "<a data-link-type="dfn" href="#parse-a-list-of-declarations" id="ref-for-parse-a-list-of-declarations①">Parse a list of declarations</a>" is for the contents of a <code>style</code> attribute,
 				which parses text into the contents of a single style rule. 
      <li> "<a data-link-type="dfn" href="#parse-a-component-value" id="ref-for-parse-a-component-value">Parse a component value</a>" is for things that need to consume a single value,
@@ -3839,7 +3839,7 @@ and return the final result.</p>
 	and if it does,
 	to destructure it according to the grammar.
 	This section provides a generic hook for this kind of operation.
-	It should be invoked like <span class="informative">"parse <var>foo</var> as a CSS <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a>"</span>, or similar.</p>
+	It should be invoked like <span class="informative">"parse <var>foo</var> as a CSS <a class="production css" data-link-type="type">&lt;color></a>"</span>, or similar.</p>
    <p>This algorithm returns either failure,
 	if the input does not match the provided grammar,
 	or the result of parsing the input according to the grammar,
@@ -4202,7 +4202,7 @@ and return the final result.</p>
    </dl>
    <h2 class="heading settled" data-level="6" id="anb-microsyntax"><span class="secno">6. </span><span class="content"> The <var>An+B</var> microsyntax</span><a class="self-link" href="#anb-microsyntax"></a></h2>
    <p>Several things in CSS,
-	such as the <span class="informative"><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#nth-child-pseudo" id="ref-for-nth-child-pseudo">:nth-child()</a></span> pseudoclass,
+	such as the <span class="informative"><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#nth-child-pseudo" id="ref-for-nth-child-pseudo">:nth-child()</a></span> pseudoclass,
 	need to indicate indexes in a list.
 	The <var>An+B</var> microsyntax is useful for this,
 	allowing an author to easily indicate single elements
@@ -4246,7 +4246,7 @@ even   /* same */
 	(unless the <var>B</var> part is already omitted).
 	When <var>An</var> is not included
 	and <var>B</var> is non-negative,
-	the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#selectordef-adjacent" id="ref-for-selectordef-adjacent">+</a> sign before <var>B</var> (when allowed)
+	the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#selectordef-adjacent" id="ref-for-selectordef-adjacent">+</a> sign before <var>B</var> (when allowed)
 	may also be omitted.
 	In this case the syntax simplifies to just <var>B</var>.</p>
    <div class="example" id="example-335ba750">
@@ -4279,7 +4279,7 @@ n      /* same */</pre>
 
 2n     /* same */</pre>
    </div>
-   <p>When B is negative, its minus sign replaces the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#selectordef-adjacent" id="ref-for-selectordef-adjacent①">+</a> sign.</p>
+   <p>When B is negative, its minus sign replaces the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#selectordef-adjacent" id="ref-for-selectordef-adjacent①">+</a> sign.</p>
    <div class="example" id="example-3d25855e">
     <a class="self-link" href="#example-3d25855e"></a> 
     <p>Valid example: </p>
@@ -4287,7 +4287,7 @@ n      /* same */</pre>
     <p>Invalid example: </p>
 <pre>3n + -6</pre>
    </div>
-   <p>Whitespace is permitted on either side of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors-4/#selectordef-adjacent" id="ref-for-selectordef-adjacent②">+</a> or <span class="css">-</span> that separates the <var>An</var> and <var>B</var> parts when both are present.</p>
+   <p>Whitespace is permitted on either side of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/selectors/#selectordef-adjacent" id="ref-for-selectordef-adjacent②">+</a> or <span class="css">-</span> that separates the <var>An</var> and <var>B</var> parts when both are present.</p>
    <div class="example" id="example-e61d78e8">
     <a class="self-link" href="#example-e61d78e8"></a> 
     <p>Valid Examples with white space: </p>
@@ -4435,9 +4435,9 @@ n      /* same */</pre>
    <p>The <a class="production css" data-link-type="type" href="#typedef-urange" id="ref-for-typedef-urange⑥">&lt;urange></a> type is defined
 	(using the <a href="https://www.w3.org/TR/css3-values/#value-defs">Value Definition Syntax in the Values &amp; Units spec</a>) as:</p>
 <pre class="prod"><a class="production" data-link-type="type" href="#typedef-urange" id="ref-for-typedef-urange⑦">&lt;urange></a> =
-  u '+' <a class="production" data-link-type="type" href="#typedef-ident-token" id="ref-for-typedef-ident-token①③">&lt;ident-token></a> '?'<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus">*</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①⑨">|</a>
-  u <a class="production" data-link-type="type" href="#typedef-dimension-token" id="ref-for-typedef-dimension-token①②">&lt;dimension-token></a> '?'<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus①">*</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②⓪">|</a>
-  u <a class="production" data-link-type="type" href="#typedef-number-token" id="ref-for-typedef-number-token⑧">&lt;number-token></a> '?'<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus②">*</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②①">|</a>
+  u '+' <a class="production" data-link-type="type" href="#typedef-ident-token" id="ref-for-typedef-ident-token①③">&lt;ident-token></a> '?'<a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-">*</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①⑨">|</a>
+  u <a class="production" data-link-type="type" href="#typedef-dimension-token" id="ref-for-typedef-dimension-token①②">&lt;dimension-token></a> '?'<a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-①">*</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②⓪">|</a>
+  u <a class="production" data-link-type="type" href="#typedef-number-token" id="ref-for-typedef-number-token⑧">&lt;number-token></a> '?'<a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-②">*</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②①">|</a>
   u <a class="production" data-link-type="type" href="#typedef-number-token" id="ref-for-typedef-number-token⑨">&lt;number-token></a> <a class="production" data-link-type="type" href="#typedef-dimension-token" id="ref-for-typedef-dimension-token①③">&lt;dimension-token></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②②">|</a>
   u <a class="production" data-link-type="type" href="#typedef-number-token" id="ref-for-typedef-number-token①⓪">&lt;number-token></a> <a class="production" data-link-type="type" href="#typedef-number-token" id="ref-for-typedef-number-token①①">&lt;number-token></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one②③">|</a>
   u '+' '?'<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-one-plus" id="ref-for-mult-one-plus①">+</a>
@@ -4563,7 +4563,7 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 	but if it’s not present in the eventual token stream,
 	it still matches.</p>
    <div class="example" id="example-84a0b91f">
-    <a class="self-link" href="#example-84a0b91f"></a> For example, the syntax of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatex" id="ref-for-funcdef-transform-translatex">translateX()</a> function is: 
+    <a class="self-link" href="#example-84a0b91f"></a> For example, the syntax of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-transforms/#funcdef-transform-translatex" id="ref-for-funcdef-transform-translatex">translateX()</a> function is: 
 <pre>translateX( <a class="production" data-link-type="type">&lt;translation-value></a> )</pre>
     <p>However, the stylesheet may end with the function unclosed, like:</p>
 <pre>.foo { transform: translate(50px</pre>
@@ -4596,10 +4596,10 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 		This is expressed with the following grammar: 
 <pre>@font-face { <a class="production" data-link-type="type" href="#typedef-declaration-list" id="ref-for-typedef-declaration-list②">&lt;declaration-list></a> }</pre>
     <p>This is a complete and sufficient definition of the rule’s grammar.</p>
-    <p>For another example, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes" id="ref-for-at-ruledef-keyframes">@keyframes</a> rules are more complex,
+    <p>For another example, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-animations/#at-ruledef-keyframes" id="ref-for-at-ruledef-keyframes">@keyframes</a> rules are more complex,
 		interpreting their prelude as a name and containing keyframes rules in their block
 		Their grammar is:</p>
-<pre>@keyframes <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-animations-1/#typedef-keyframes-name" id="ref-for-typedef-keyframes-name">&lt;keyframes-name></a> { <a class="production" data-link-type="type" href="#typedef-rule-list" id="ref-for-typedef-rule-list③">&lt;rule-list></a> }</pre>
+<pre>@keyframes <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-animations/#typedef-keyframes-name" id="ref-for-typedef-keyframes-name">&lt;keyframes-name></a> { <a class="production" data-link-type="type" href="#typedef-rule-list" id="ref-for-typedef-rule-list③">&lt;rule-list></a> }</pre>
    </div>
    <p>For rules that use <a class="production css" data-link-type="type" href="#typedef-declaration-list" id="ref-for-typedef-declaration-list③">&lt;declaration-list></a>,
 	the spec for the rule must define which properties, descriptors, and/or at-rules are valid inside the rule;
@@ -4614,7 +4614,7 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 	If they don’t interact with the cascade,
 	properties containing <code>!important</code> are automatically invalid;
 	otherwise using <code>!important</code> is valid
-	and causes the declaration to be <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#important" id="ref-for-important">important</a> for the purposes of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade" id="ref-for-cascade">cascade</a>.
+	and causes the declaration to be <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#important" id="ref-for-important">important</a> for the purposes of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade" id="ref-for-cascade">cascade</a>.
 	See <a data-link-type="biblio" href="#biblio-css-cascade-3">[CSS-CASCADE-3]</a>.</p>
    <div class="example" id="example-69a4f873"><a class="self-link" href="#example-69a4f873"></a> For example, the grammar for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule②">@font-face</a> in the previous example must,
 		in addition to what is written there,
@@ -4624,14 +4624,14 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 	same as <a class="production css" data-link-type="type" href="#typedef-declaration-list" id="ref-for-typedef-declaration-list⑤">&lt;declaration-list></a>,
 	and unrecognized rules must similarly be removed from the rule’s value.</p>
    <div class="example" id="example-9f2a94f9">
-    <a class="self-link" href="#example-9f2a94f9"></a> For example, the grammar for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes" id="ref-for-at-ruledef-keyframes①">@keyframes</a> in the previous example must,
+    <a class="self-link" href="#example-9f2a94f9"></a> For example, the grammar for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-animations/#at-ruledef-keyframes" id="ref-for-at-ruledef-keyframes①">@keyframes</a> in the previous example must,
 		in addition to what is written there,
 		define that the only allowed rules are <a class="production css" data-link-type="type">&lt;keyframe-rule></a>s,
 		which are defined as: 
-<pre><a class="production" data-link-type="type">&lt;keyframe-rule></a> = <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-animations-1/#typedef-keyframe-selector" id="ref-for-typedef-keyframe-selector">&lt;keyframe-selector></a> { <a class="production" data-link-type="type" href="#typedef-declaration-list" id="ref-for-typedef-declaration-list⑥">&lt;declaration-list></a> }</pre>
+<pre><a class="production" data-link-type="type">&lt;keyframe-rule></a> = <a class="production" data-link-type="type" href="https://drafts.csswg.org/css-animations/#typedef-keyframe-selector" id="ref-for-typedef-keyframe-selector">&lt;keyframe-selector></a> { <a class="production" data-link-type="type" href="#typedef-declaration-list" id="ref-for-typedef-declaration-list⑥">&lt;declaration-list></a> }</pre>
     <p>Keyframe rules, then,
 		must further define that they accept as declarations all animatable CSS properties,
-		plus the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-animations-1/#propdef-animation-timing-function" id="ref-for-propdef-animation-timing-function">animation-timing-function</a> property,
+		plus the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-animations/#propdef-animation-timing-function" id="ref-for-propdef-animation-timing-function">animation-timing-function</a> property,
 		but that they do not interact with the cascade.</p>
    </div>
    <p>For rules that use <a class="production css" data-link-type="type" href="#typedef-stylesheet" id="ref-for-typedef-stylesheet②">&lt;stylesheet></a>,
@@ -4651,7 +4651,7 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 	and do more specific error-handling on the contents manually
 	(rather than simply invalidating the construct,
 	as grammar mismatches tend to do).</p>
-   <p><span class="informative">For example, <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables-1/#custom-property" id="ref-for-custom-property">custom properties</a> allow any reasonable value,
+   <p><span class="informative">For example, <a data-link-type="dfn" href="https://drafts.csswg.org/css-variables/#custom-property" id="ref-for-custom-property">custom properties</a> allow any reasonable value,
 	as they can contain arbitrary pieces of other CSS properties,
 	or be used for things that aren’t part of existing CSS at all.
 	For another example, the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed" id="ref-for-typedef-general-enclosed">&lt;general-enclosed></a> production in Media Queries
@@ -4676,10 +4676,10 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 	it’s a <a data-link-type="dfn" href="#parse-error" id="ref-for-parse-error①⑤">parse error</a>.
 	Discard that rule.</p>
    <h3 class="heading settled" data-level="9.1" id="style-rules"><span class="secno">9.1. </span><span class="content"> Style rules</span><a class="self-link" href="#style-rules"></a></h3>
-   <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="style-rule">style rule</dfn> is a <a data-link-type="dfn" href="#qualified-rule" id="ref-for-qualified-rule⑥">qualified rule</a> that associates a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#selector-list" id="ref-for-selector-list">selector list</a> with a list of property declarations.
+   <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="style-rule">style rule</dfn> is a <a data-link-type="dfn" href="#qualified-rule" id="ref-for-qualified-rule⑥">qualified rule</a> that associates a <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#selector-list" id="ref-for-selector-list">selector list</a> with a list of property declarations.
 	They are also called <a href="https://www.w3.org/TR/CSS2/syndata.html#rule-sets">rule sets</a> in <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>.
 	CSS Cascading and Inheritance <a data-link-type="biblio" href="#biblio-css-cascade-3">[CSS-CASCADE-3]</a> defines how the declarations inside of style rules participate in the cascade.</p>
-   <p>The prelude of the qualified rule is <a data-link-type="dfn" href="#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar④">parsed</a> as a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/selectors-4/#typedef-selector-list" id="ref-for-typedef-selector-list">&lt;selector-list></a>.
+   <p>The prelude of the qualified rule is <a data-link-type="dfn" href="#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar④">parsed</a> as a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/selectors/#typedef-selector-list" id="ref-for-typedef-selector-list">&lt;selector-list></a>.
 	If this returns failure,
 	the entire style rule is <a data-link-type="dfn" href="#css-invalid" id="ref-for-css-invalid①">invalid</a>.</p>
    <p>The content of the qualified rule’s block is parsed as a <a data-link-type="dfn" href="#parse-a-list-of-declarations" id="ref-for-parse-a-list-of-declarations③">list of declarations</a>.
@@ -4694,7 +4694,7 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 	Qualified rules in other contexts may or may not be style rules,
 	as defined by the context.</p>
    <p class="example" id="example-417ebc66"><a class="self-link" href="#example-417ebc66"></a> For example, qualified rules inside <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-media" id="ref-for-at-ruledef-media⑥">@media</a> rules <a data-link-type="biblio" href="#biblio-css3-conditional">[CSS3-CONDITIONAL]</a> are style rules,
-		but qualified rules inside <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes" id="ref-for-at-ruledef-keyframes②">@keyframes</a> rules are not <a data-link-type="biblio" href="#biblio-css3-animations">[CSS3-ANIMATIONS]</a>. </p>
+		but qualified rules inside <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-animations/#at-ruledef-keyframes" id="ref-for-at-ruledef-keyframes②">@keyframes</a> rules are not <a data-link-type="biblio" href="#biblio-css3-animations">[CSS3-ANIMATIONS]</a>. </p>
    <h3 class="heading settled" data-level="9.2" id="at-rules"><span class="secno">9.2. </span><span class="content"> At-rules</span><a class="self-link" href="#at-rules"></a></h3>
    <p>An <dfn data-dfn-type="dfn" data-export id="at-rule①">at-rule<a class="self-link" href="#at-rule①"></a></dfn> is a rule that begins with an at-keyword,
 	and can thus be distinguished from <a data-link-type="dfn" href="#style-rule" id="ref-for-style-rule③">style rules</a> in the same context.</p>
@@ -4705,10 +4705,10 @@ the <a class="production css" data-link-type="type" href="#typedef-urange" id="r
 such as in <a data-link-type="dfn">conditional rules</a></p>
     <li data-md>
      <p>declare style information that is not associated with a particular element,
-such as defining <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles-3/#counter-style" id="ref-for-counter-style">counter styles</a></p>
+such as defining <a data-link-type="dfn" href="https://drafts.csswg.org/css-counter-styles/#counter-style" id="ref-for-counter-style">counter styles</a></p>
     <li data-md>
      <p>manage syntactic constructs
-such as <a data-link-type="dfn">imports</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute-namespace" id="ref-for-concept-attribute-namespace">namespace</a> keyword mappings</p>
+such as <a data-link-type="dfn">imports</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element-namespace" id="ref-for-concept-element-namespace">namespace</a> keyword mappings</p>
     <li data-md>
      <p>and serve other miscellaneous purposes not served by a <a data-link-type="dfn" href="#style-rule" id="ref-for-style-rule④">style rule</a></p>
    </ul>
@@ -4716,7 +4716,7 @@ such as <a data-link-type="dfn">imports</a> and <a data-link-type="dfn" href="ht
 	but broadly speaking there are two kinds: <dfn data-dfn-type="dfn" data-export data-lt="statement at-rule" id="statement-at-rule">statement at-rules<a class="self-link" href="#statement-at-rule"></a></dfn> which are simpler constructs that end in a semicolon,
 	and <dfn class="dfn-paneled" data-dfn-type="dfn" data-export data-lt="block at-rule" id="block-at-rule">block at-rules</dfn> which end in a <a data-link-type="dfn">{}-block</a> that can contain nested <span>rules</span> or <a data-link-type="dfn" href="#declaration" id="ref-for-declaration">declarations</a>.</p>
    <p><a data-link-type="dfn" href="#block-at-rule" id="ref-for-block-at-rule">Block at-rules</a> will typically contain a collection of
-	(generic or <a data-link-type="dfn" href="#at-rule" id="ref-for-at-rule①③">at-rule</a>–specific) <span id="ref-for-at-rule①④">at-rules</span>, <a data-link-type="dfn" href="#qualified-rule" id="ref-for-qualified-rule⑧">qualified rules</a>, and/or <a data-link-type="dfn" href="#css-descriptor-declarations" id="ref-for-css-descriptor-declarations">descriptor declarations</a> subject to limitations defined by the <span id="ref-for-at-rule①⑤">at-rule</span>. <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="descriptor" id="css-descriptor">Descriptors</dfn> are similar to <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#css-property" id="ref-for-css-property①">properties</a> (and are declared with the same syntax)
+	(generic or <a data-link-type="dfn" href="#at-rule" id="ref-for-at-rule①③">at-rule</a>–specific) <span id="ref-for-at-rule①④">at-rules</span>, <a data-link-type="dfn" href="#qualified-rule" id="ref-for-qualified-rule⑧">qualified rules</a>, and/or <a data-link-type="dfn" href="#css-descriptor-declarations" id="ref-for-css-descriptor-declarations">descriptor declarations</a> subject to limitations defined by the <span id="ref-for-at-rule①⑤">at-rule</span>. <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="descriptor" id="css-descriptor">Descriptors</dfn> are similar to <a data-link-type="dfn" href="https://w3c.github.io/aria/#dfn-property" id="ref-for-dfn-property①">properties</a> (and are declared with the same syntax)
 	but are associated with a particular type of <span id="ref-for-at-rule①⑥">at-rule</span> rather than with elements and boxes in the tree.</p>
    <h3 class="heading settled" data-level="9.3" id="charset-rule"><span class="secno">9.3. </span><span class="content"> The <a class="css" data-link-type="maybe" href="#at-ruledef-charset" id="ref-for-at-ruledef-charset②">@charset</a> Rule</span><a class="self-link" href="#charset-rule"></a></h3>
    <p>The algorithm used to <a data-link-type="dfn" href="#determine-the-fallback-encoding" id="ref-for-determine-the-fallback-encoding①">determine the fallback encoding</a> for a stylesheet
@@ -5430,8 +5430,15 @@ The three call-sites of the algorithm were changed to use that form.</p>
    <li><a href="#check-if-three-code-points-would-start-an-identifier">would start an identifier</a><span>, in §4.3.9</span>
    <li><a href="#check-if-three-code-points-would-start-a-number">would start a number</a><span>, in §4.3.10</span>
   </ul>
+  <aside class="dfn-panel" data-for="term-for-grammardef-">
+   <a href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-">https://w3c.github.io/webappsec-clear-site-data/#grammardef-</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-grammardef-">7.1. 
+The &lt;urange> type</a> <a href="#ref-for-grammardef-①">(2)</a> <a href="#ref-for-grammardef-②">(3)</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-at-ruledef-import">
-   <a href="https://drafts.csswg.org/css-cascade-5/#at-ruledef-import">https://drafts.csswg.org/css-cascade-5/#at-ruledef-import</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#at-ruledef-import">https://drafts.csswg.org/css-cascade/#at-ruledef-import</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-at-ruledef-import">2. 
 Description of CSS’s Syntax</a>
@@ -5440,51 +5447,28 @@ The input byte stream</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade">https://drafts.csswg.org/css-cascade-5/#cascade</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade">https://drafts.csswg.org/css-cascade/#cascade</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade">8.1. 
 Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;stylesheet> productions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-important">
-   <a href="https://drafts.csswg.org/css-cascade-5/#important">https://drafts.csswg.org/css-cascade-5/#important</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#important">https://drafts.csswg.org/css-cascade/#important</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-important">8.1. 
 Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;stylesheet> productions</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-css-property">
-   <a href="https://drafts.csswg.org/css-cascade-5/#css-property">https://drafts.csswg.org/css-cascade-5/#css-property</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-css-property">5. 
-Parsing</a>
-    <li><a href="#ref-for-css-property①">9.2. 
-At-rules</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-valuea-def-color">
-   <a href="https://drafts.csswg.org/css-color-3/#valuea-def-color">https://drafts.csswg.org/css-color-3/#valuea-def-color</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valuea-def-color">5.3.1. 
-Parse something according to a CSS grammar</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-color0">
-   <a href="https://drafts.csswg.org/css-color-3/#color0">https://drafts.csswg.org/css-color-3/#color0</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-color0">2. 
-Description of CSS’s Syntax</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-color-blue">
-   <a href="https://drafts.csswg.org/css-color-4/#valdef-color-blue">https://drafts.csswg.org/css-color-4/#valdef-color-blue</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#valdef-color-blue">https://drafts.csswg.org/css-color/#valdef-color-blue</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-color-blue">2.
+    <li><a href="#ref-for-valdef-color-blue">2. 
 Description of CSS’s Syntax</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-counter-style">
-   <a href="https://drafts.csswg.org/css-counter-styles-3/#counter-style">https://drafts.csswg.org/css-counter-styles-3/#counter-style</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-counter-styles/#counter-style">https://drafts.csswg.org/css-counter-styles/#counter-style</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-counter-style">9.2. 
 At-rules</a>
@@ -5539,7 +5523,7 @@ Description of CSS’s Syntax</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-funcdef-transform-translatex">
-   <a href="https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatex">https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatex</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-transforms/#funcdef-transform-translatex">https://drafts.csswg.org/css-transforms/#funcdef-transform-translatex</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-funcdef-transform-translatex">8. 
 Defining Grammars for Rules and Other Values</a>
@@ -5557,13 +5541,6 @@ The &lt;urange> type</a> <a href="#ref-for-number-value①">(2)</a> <a href="#re
    <ul>
     <li><a href="#ref-for-string-value">5.3.1. 
 Parse something according to a CSS grammar</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-mult-zero-plus">
-   <a href="https://drafts.csswg.org/css-values-4/#mult-zero-plus">https://drafts.csswg.org/css-values-4/#mult-zero-plus</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-mult-zero-plus">7.1. 
-The &lt;urange> type</a> <a href="#ref-for-mult-zero-plus①">(2)</a> <a href="#ref-for-mult-zero-plus②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-mult-one-plus">
@@ -5613,28 +5590,28 @@ The &lt;urange> type</a> <a href="#ref-for-comb-one②⓪">(2)</a> <a href="#ref
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-custom-property">
-   <a href="https://drafts.csswg.org/css-variables-1/#custom-property">https://drafts.csswg.org/css-variables-1/#custom-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-variables/#custom-property">https://drafts.csswg.org/css-variables/#custom-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-custom-property">8.2. 
 Defining Arbitrary Contents: the &lt;declaration-value> and &lt;any-value> productions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-keyframe-selector">
-   <a href="https://drafts.csswg.org/css-animations-1/#typedef-keyframe-selector">https://drafts.csswg.org/css-animations-1/#typedef-keyframe-selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-animations/#typedef-keyframe-selector">https://drafts.csswg.org/css-animations/#typedef-keyframe-selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-keyframe-selector">8.1. 
 Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;stylesheet> productions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-keyframes-name">
-   <a href="https://drafts.csswg.org/css-animations-1/#typedef-keyframes-name">https://drafts.csswg.org/css-animations-1/#typedef-keyframes-name</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-animations/#typedef-keyframes-name">https://drafts.csswg.org/css-animations/#typedef-keyframes-name</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-keyframes-name">8.1. 
 Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;stylesheet> productions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-at-ruledef-keyframes">
-   <a href="https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes">https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-animations/#at-ruledef-keyframes">https://drafts.csswg.org/css-animations/#at-ruledef-keyframes</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-at-ruledef-keyframes">8.1. 
 Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;stylesheet> productions</a> <a href="#ref-for-at-ruledef-keyframes①">(2)</a>
@@ -5643,7 +5620,7 @@ Style rules</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-animation-timing-function">
-   <a href="https://drafts.csswg.org/css-animations-1/#propdef-animation-timing-function">https://drafts.csswg.org/css-animations-1/#propdef-animation-timing-function</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-animations/#propdef-animation-timing-function">https://drafts.csswg.org/css-animations/#propdef-animation-timing-function</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-animation-timing-function">8.1. 
 Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;stylesheet> productions</a>
@@ -5652,13 +5629,13 @@ Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;styl
   <aside class="dfn-panel" data-for="term-for-at-ruledef-media">
    <a href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-media">https://drafts.csswg.org/css-conditional-3/#at-ruledef-media</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-at-ruledef-media">2.
+    <li><a href="#ref-for-at-ruledef-media">2. 
 Description of CSS’s Syntax</a> <a href="#ref-for-at-ruledef-media①">(2)</a>
-    <li><a href="#ref-for-at-ruledef-media②">5.3.
+    <li><a href="#ref-for-at-ruledef-media②">5.3. 
 Parser Entry Points</a>
-    <li><a href="#ref-for-at-ruledef-media③">8.1.
+    <li><a href="#ref-for-at-ruledef-media③">8.1. 
 Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;stylesheet> productions</a> <a href="#ref-for-at-ruledef-media④">(2)</a> <a href="#ref-for-at-ruledef-media⑤">(3)</a>
-    <li><a href="#ref-for-at-ruledef-media⑥">9.1.
+    <li><a href="#ref-for-at-ruledef-media⑥">9.1. 
 Style rules</a>
    </ul>
   </aside>
@@ -5669,10 +5646,10 @@ Style rules</a>
 Parser Entry Points</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-attribute-namespace">
-   <a href="https://dom.spec.whatwg.org/#concept-attribute-namespace">https://dom.spec.whatwg.org/#concept-attribute-namespace</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-concept-element-namespace">
+   <a href="https://dom.spec.whatwg.org/#concept-element-namespace">https://dom.spec.whatwg.org/#concept-element-namespace</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-concept-attribute-namespace">9.2. 
+    <li><a href="#ref-for-concept-element-namespace">9.2. 
 At-rules</a>
    </ul>
   </aside>
@@ -5681,13 +5658,6 @@ At-rules</a>
    <ul>
     <li><a href="#ref-for-decode">3.2. 
 The input byte stream</a> <a href="#ref-for-decode①">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-encoding-get">
-   <a href="https://encoding.spec.whatwg.org/#concept-encoding-get">https://encoding.spec.whatwg.org/#concept-encoding-get</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-concept-encoding-get">3.2. 
-The input byte stream</a> <a href="#ref-for-concept-encoding-get①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-the-a-element">
@@ -5858,48 +5828,55 @@ Defining Block Contents: the &lt;declaration-list>, &lt;rule-list>, and &lt;styl
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-selectordef-adjacent">
-   <a href="https://drafts.csswg.org/selectors-4/#selectordef-adjacent">https://drafts.csswg.org/selectors-4/#selectordef-adjacent</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#selectordef-adjacent">https://drafts.csswg.org/selectors/#selectordef-adjacent</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-selectordef-adjacent">6.1. 
 Informal Syntax Description</a> <a href="#ref-for-selectordef-adjacent①">(2)</a> <a href="#ref-for-selectordef-adjacent②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-nth-child-pseudo">
-   <a href="https://drafts.csswg.org/selectors-4/#nth-child-pseudo">https://drafts.csswg.org/selectors-4/#nth-child-pseudo</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#nth-child-pseudo">https://drafts.csswg.org/selectors/#nth-child-pseudo</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-nth-child-pseudo">6. 
 The An+B microsyntax</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-selector-list">
-   <a href="https://drafts.csswg.org/selectors-4/#typedef-selector-list">https://drafts.csswg.org/selectors-4/#typedef-selector-list</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#typedef-selector-list">https://drafts.csswg.org/selectors/#typedef-selector-list</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-selector-list">9.1. 
 Style rules</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-selector-list">
-   <a href="https://drafts.csswg.org/selectors-4/#selector-list">https://drafts.csswg.org/selectors-4/#selector-list</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#selector-list">https://drafts.csswg.org/selectors/#selector-list</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-selector-list">9.1. 
 Style rules</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-dfn-property">
+   <a href="https://w3c.github.io/aria/#dfn-property">https://w3c.github.io/aria/#dfn-property</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dfn-property">5. 
+Parsing</a>
+    <li><a href="#ref-for-dfn-property①">9.2. 
+At-rules</a>
+   </ul>
+  </aside>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[clear-site-data]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-grammardef-">*</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-at-ruledef-import">@import</span>
      <li><span class="dfn-paneled" id="term-for-cascade">cascade</span>
      <li><span class="dfn-paneled" id="term-for-important">important</span>
-     <li><span class="dfn-paneled" id="term-for-css-property">property</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-color-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-valuea-def-color">&lt;color></span>
-     <li><span class="dfn-paneled" id="term-for-color0">color</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-color-4]</a> defines the following terms:
@@ -5951,7 +5928,6 @@ Style rules</a>
    <li>
     <a data-link-type="biblio">[css-values-4]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-mult-zero-plus">*</span>
      <li><span class="dfn-paneled" id="term-for-mult-one-plus">+</span>
      <li><span class="dfn-paneled" id="term-for-typedef-dimension">&lt;dimension></span>
      <li><span class="dfn-paneled" id="term-for-mult-opt">?</span>
@@ -5981,13 +5957,12 @@ Style rules</a>
    <li>
     <a data-link-type="biblio">[DOM]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-concept-attribute-namespace">namespace</span>
+     <li><span class="dfn-paneled" id="term-for-concept-element-namespace">namespace</span>
     </ul>
    <li>
     <a data-link-type="biblio">[ENCODING]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-decode">decode</span>
-     <li><span class="dfn-paneled" id="term-for-concept-encoding-get">get an encoding</span>
     </ul>
    <li>
     <a data-link-type="biblio">[HTML]</a> defines the following terms:
@@ -6022,14 +5997,21 @@ Style rules</a>
      <li><span class="dfn-paneled" id="term-for-typedef-selector-list">&lt;selector-list></span>
      <li><span class="dfn-paneled" id="term-for-selector-list">selector list</span>
     </ul>
+   <li>
+    <a data-link-type="biblio">[wai-aria-1.2]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-dfn-property">properties</span>
+    </ul>
   </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-clear-site-data">[CLEAR-SITE-DATA]
+   <dd>Mike West. <a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a>. 30 November 2017. WD. URL: <a href="https://www.w3.org/TR/clear-site-data/">https://www.w3.org/TR/clear-site-data/</a>
    <dt id="biblio-css-cascade-3">[CSS-CASCADE-3]
    <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-3/">CSS Cascading and Inheritance Level 3</a>. 11 February 2021. REC. URL: <a href="https://www.w3.org/TR/css-cascade-3/">https://www.w3.org/TR/css-cascade-3/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-counter-styles-3">[CSS-COUNTER-STYLES-3]
    <dd>Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a>. 14 December 2017. CR. URL: <a href="https://www.w3.org/TR/css-counter-styles-3/">https://www.w3.org/TR/css-counter-styles-3/</a>
    <dt id="biblio-css-page-3">[CSS-PAGE-3]
@@ -6048,17 +6030,17 @@ Style rules</a>
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-selectors-4">[SELECTORS-4]
    <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/selectors-4/">Selectors Level 4</a>. 21 November 2018. WD. URL: <a href="https://www.w3.org/TR/selectors-4/">https://www.w3.org/TR/selectors-4/</a>
+   <dt id="biblio-wai-aria-12">[WAI-ARIA-1.2]
+   <dd>Joanmarie Diggs; James Nurthen; Michael Cooper. <a href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a>. 2 March 2021. CR. URL: <a href="https://www.w3.org/TR/wai-aria-1.2/">https://www.w3.org/TR/wai-aria-1.2/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
-   <dt id="biblio-css-color-3">[CSS-COLOR-3]
-   <dd>Tantek Çelik; Chris Lilley; David Baron. <a href="https://www.w3.org/TR/css-color-3/">CSS Color Module Level 3</a>. 19 June 2018. REC. URL: <a href="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</a>
    <dt id="biblio-css-color-4">[CSS-COLOR-4]
-   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
+   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 12 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
    <dt id="biblio-css-fonts-4">[CSS-FONTS-4]
    <dd>John Daggett; Myles Maxfield; Chris Lilley. <a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a>. 17 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-fonts-4/">https://www.w3.org/TR/css-fonts-4/</a>
    <dt id="biblio-css-fonts-5">[CSS-FONTS-5]
-   <dd>CSS Fonts Module Level 5 URL: <a href="https://www.w3.org/TR/css-fonts-5/">https://www.w3.org/TR/css-fonts-5/</a>
+   <dd>CSS Fonts Module Level 5 URL: <a href="https://drafts.csswg.org/css-fonts-5/">https://drafts.csswg.org/css-fonts-5/</a>
    <dt id="biblio-css-text-decor-3">[CSS-TEXT-DECOR-3]
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-text-decor-3/">CSS Text Decoration Module Level 3</a>. 13 August 2019. CR. URL: <a href="https://www.w3.org/TR/css-text-decor-3/">https://www.w3.org/TR/css-text-decor-3/</a>
    <dt id="biblio-css-text-decor-4">[CSS-TEXT-DECOR-4]

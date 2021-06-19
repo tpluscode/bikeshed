@@ -108,8 +108,8 @@ GPUTextureUsage
 -
 SameObject
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#SameObject
@@ -395,8 +395,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-salmon
 -
 salt
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-HkdfParams-salt
@@ -406,8 +406,8 @@ HkdfParams
 -
 salt
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-salt
@@ -417,8 +417,8 @@ Pbkdf2Params
 -
 salt
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-HkdfParams-salt
@@ -427,8 +427,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-HkdfParams-salt
 -
 salt
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params-salt
@@ -437,8 +437,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-Pbkdf2Params-salt
 -
 saltLength
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RsaPssParams-saltLength
@@ -448,8 +448,8 @@ RsaPssParams
 -
 saltlength
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaPssParams-saltLength
@@ -538,8 +538,8 @@ https://html.spec.whatwg.org/multipage/origin.html#same-site
 -
 same-document url reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#TermSameDocumentURL
@@ -548,8 +548,8 @@ https://svgwg.org/svg2-draft/linking.html#TermSameDocumentURL
 -
 same-document url reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#TermSameDocumentURL
@@ -881,8 +881,8 @@ https://wicg.github.io/js-self-profiling/#dfn-sample
 -
 sample
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-sample
@@ -892,8 +892,8 @@ violation
 -
 sample
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-sample
@@ -903,8 +903,8 @@ CSPViolationReportBody
 -
 sample
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-sample
@@ -914,8 +914,8 @@ SecurityPolicyViolationEvent
 -
 sample
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-sample
@@ -925,8 +925,8 @@ SecurityPolicyViolationEventInit
 -
 sample
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-sample
@@ -936,8 +936,8 @@ violation
 -
 sample
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-sample
@@ -947,8 +947,8 @@ CSPViolationReportBody
 -
 sample
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-sample
@@ -958,8 +958,8 @@ SecurityPolicyViolationEvent
 -
 sample
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-sample
@@ -1591,8 +1591,8 @@ GPUBindGroupLayoutEntry
 -
 sampler
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#sampler
@@ -1601,8 +1601,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#sampler
 -
 sampler
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#sampler
@@ -1864,8 +1864,8 @@ HTMLIFrameElement
 -
 sandbox
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#sandbox
@@ -1874,8 +1874,8 @@ https://w3c.github.io/webappsec-csp/#sandbox
 -
 sandbox
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#sandbox
@@ -2222,8 +2222,8 @@ font-family
 -
 sans-serif
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif
@@ -2233,8 +2233,8 @@ https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif
 -
 sans-serif
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#sans-serif-def
@@ -2243,8 +2243,8 @@ https://drafts.csswg.org/css2/#sans-serif-def
 -
 sans-serif
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif
@@ -2254,8 +2254,8 @@ https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif
 -
 sans-serif
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#sans-serif-def

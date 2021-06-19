@@ -336,8 +336,8 @@ https://www.w3.org/TR/css-cascade-5/#at-ruledef-import
 -
 @import
 at-rule
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#at-ruledef-import
@@ -346,8 +346,8 @@ https://drafts.csswg.org/css2/#at-ruledef-import
 -
 @import
 at-rule
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#at-ruledef-import
@@ -963,8 +963,8 @@ TextDetector/detect(image)
 -
 image
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/embedded.html#elementdef-image
@@ -973,8 +973,8 @@ https://svgwg.org/svg2-draft/embedded.html#elementdef-image
 -
 image
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/embedded.html#elementdef-image
@@ -1325,8 +1325,8 @@ https://www.w3.org/TR/css-images-3/#propdef-image-rendering
 -
 image-rendering
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#ImageRenderingProperty
@@ -1335,8 +1335,8 @@ https://svgwg.org/svg2-draft/painting.html#ImageRenderingProperty
 -
 image-rendering
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#ImageRenderingProperty
@@ -1345,8 +1345,8 @@ https://www.w3.org/TR/SVG2/painting.html#ImageRenderingProperty
 -
 image-rendering rectangle
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/embedded.html#TermImageRenderingRectangle
@@ -1355,8 +1355,8 @@ https://svgwg.org/svg2-draft/embedded.html#TermImageRenderingRectangle
 -
 image-rendering rectangle
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/embedded.html#TermImageRenderingRectangle
@@ -1733,8 +1733,8 @@ https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element
 -
 img-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#img-src
@@ -1743,8 +1743,8 @@ https://w3c.github.io/webappsec-csp/#img-src
 -
 img-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#img-src
@@ -2020,8 +2020,8 @@ https://wicg.github.io/performance-measure-memory/#implementation-defined-memory
 -
 implements
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#implements
@@ -2030,8 +2030,8 @@ https://heycam.github.io/webidl/#implements
 -
 implements statement
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-implements-statement
@@ -2560,8 +2560,8 @@ GPUDevice
 -
 importKey()
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-importKey
@@ -2571,8 +2571,8 @@ SubtleCrypto
 -
 importKey(format, keyData, algorithm, extractable, keyUsages)
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-importKey
@@ -2869,8 +2869,8 @@ https://tc39.es/proposal-import-assertions/#importentry-record
 -
 importkey
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-importKey

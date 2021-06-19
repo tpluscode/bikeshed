@@ -951,7 +951,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
      <p>True if this navigation is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-fragid" id="ref-for-navigate-fragid">fragment navigation</a>; false otherwise. </p>
     <dt><code>event . <code class="idl"><a data-link-type="idl" href="#dom-apphistorynavigateevent-formdata" id="ref-for-dom-apphistorynavigateevent-formdata①">formData</a></code></code> 
     <dd>
-     <p>The <code class="idl"><a data-link-type="idl" href="https://xhr.spec.whatwg.org/#formdata" id="ref-for-formdata②">FormData</a></code> representing the submitted form entries for this navigation, if this navigation is a POST <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit">form submission</a>; null otherwise. </p>
+     <p>The <code class="idl"><a data-link-type="idl" href="https://xhr.spec.whatwg.org/#formdata" id="ref-for-formdata②">FormData</a></code> representing the submitted form entries for this navigation, if this navigation is a POST <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/input.html#attr-input-type-submit-keyword" id="ref-for-attr-input-type-submit-keyword">form submission</a>; null otherwise. </p>
     <dt><code>event . <code class="idl"><a data-link-type="idl" href="#dom-apphistorynavigateevent-info" id="ref-for-dom-apphistorynavigateevent-info①">info</a></code></code> 
     <dd>
      <p>An arbitrary JavaScript value passed via other app history APIs that initiated this navigation, or null if the navigation was initiated by the user or via a non-app history API. </p>
@@ -1200,18 +1200,18 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
    <h3 class="heading settled" data-level="4.1" id="form-patches"><span class="secno">4.1. </span><span class="content">Form submission patches</span><a class="self-link" href="#form-patches"></a></h3>
    <p>To properly thread the form entry list from its creation through to <code class="idl"><a data-link-type="idl" href="#apphistorynavigateevent" id="ref-for-apphistorynavigateevent③">AppHistoryNavigateEvent</a></code>'s <code class="idl"><a data-link-type="idl" href="#dom-apphistorynavigateevent-formdata" id="ref-for-dom-apphistorynavigateevent-formdata③">formData</a></code> property, we need the following modifications:</p>
    <div class="algorithm" data-algorithm="form navigate">
-     Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate">navigate</a> algorithm to take a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list" id="ref-for-list②">list</a> of <a data-link-type="dfn" href="https://xhr.spec.whatwg.org/#concept-formdata-entry" id="ref-for-concept-formdata-entry①">entries</a> or null <dfn class="dfn-paneled" data-dfn-for="navigate" data-dfn-type="dfn" data-noexport id="navigate-entrylist"><var>entryList</var></dfn> (default null), replacing its <var>navigationType</var> parameter. Then insert a step somewhere early in the algorithm to convert this back into the <var>navigationType</var> variable used by the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel">in parallel</a> section that is ultimately passed to <a data-link-type="biblio" href="#biblio-csp">[CSP]</a>: 
+     Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate">navigate</a> algorithm to take a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list" id="ref-for-list②">list</a> of <a data-link-type="dfn" href="https://xhr.spec.whatwg.org/#concept-formdata-entry" id="ref-for-concept-formdata-entry①">entries</a> or null <dfn class="dfn-paneled" data-dfn-for="navigate" data-dfn-type="dfn" data-noexport id="navigate-entrylist"><var>entryList</var></dfn> (default null), replacing its <var>navigationType</var> parameter. Then insert a step somewhere early in the algorithm to convert this back into the <var>navigationType</var> variable used by the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel">in parallel</a> section that is ultimately passed to <a data-link-type="biblio" href="#biblio-csp">[CSP]</a>: 
     <ol>
      <li data-md>
       <p>Let <var>navigationType</var> be "<code>form-submission</code>" if <var>entryList</var> is non-null; otherwise, "<code>other</code>".</p>
     </ol>
    </div>
    <div class="algorithm" data-algorithm="plan to navigate">
-     Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plan-to-navigate" id="ref-for-plan-to-navigate">plan to navigate</a> algorithm to take an additional optional argument <var>entryList</var> (default null). Then, modify the step which calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate①">navigate</a> to pass it along: 
+     Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plan-to-navigate" id="ref-for-plan-to-navigate">plan to navigate</a> algorithm to take an additional optional argument <var>entryList</var> (default null). Then, modify the step which calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate①">navigate</a> to pass it along: 
     <ol>
      <li data-md>
       <p>
-       <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate②">Navigate</a> <var>target browsing context</var> to <var>destination</var>, with <i><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-hh" id="ref-for-navigation-hh">historyHandling</a></i> set to <var>historyHandling</var> 
+       <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate②">Navigate</a> <var>target browsing context</var> to <var>destination</var>, with <i><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-hh" id="ref-for-navigation-hh">historyHandling</a></i> set to <var>historyHandling</var> 
        <del>and <i><a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-navigationtype" id="ref-for-navigation-navigationtype">navigationType</a></i> set to "<code>form-submission</code>"</del>
        <ins><i><a data-link-type="dfn" href="#navigate-entrylist" id="ref-for-navigate-entrylist">entryList</a></i> set to <var>entryList</var></ins>
        .
@@ -1221,7 +1221,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
    <div class="algorithm" data-algorithm="submit as entity body"> Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submit-body" id="ref-for-submit-body">submit as entity body</a> algorithm to pass <var>entry list</var> along to <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plan-to-navigate" id="ref-for-plan-to-navigate①">plan to navigate</a> as a second argument. </div>
    <h3 class="heading settled" data-level="4.2" id="user-initiated-patches"><span class="secno">4.2. </span><span class="content">Browser UI/user-initiated patches</span><a class="self-link" href="#user-initiated-patches"></a></h3>
    <p>To more rigorously specify when a navigation is initiated from browser UI or by the user interacting with <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element" id="ref-for-the-a-element①">a</a></code>, <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element" id="ref-for-the-area-element">area</a></code>, and <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/forms.html#the-form-element" id="ref-for-the-form-element①">form</a></code> elements, both for the purposes of the <code class="idl"><a data-link-type="idl" href="#apphistorynavigateevent" id="ref-for-apphistorynavigateevent④">AppHistoryNavigateEvent</a></code>'s <code class="idl"><a data-link-type="idl" href="#dom-apphistorynavigateevent-userinitiated" id="ref-for-dom-apphistorynavigateevent-userinitiated③">userInitiated</a></code> property and for prohibiting interception of certain types of browser-UI-initiated navigations, we need the following modifications:</p>
-   <p>Introduce (right before the definition of the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate③">navigate</a> algorithm) the concept of a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="user-navigation-involvement">user navigation involvement</dfn>, which is one of the following:</p>
+   <p>Introduce (right before the definition of the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate③">navigate</a> algorithm) the concept of a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="user-navigation-involvement">user navigation involvement</dfn>, which is one of the following:</p>
    <dl>
     <dt data-md>"<dfn class="dfn-paneled" data-dfn-for="user navigation involvement" data-dfn-type="dfn" data-noexport id="user-navigation-involvement-browser-ui"><code>browser UI</code></dfn>"
     <dd data-md>
@@ -1234,13 +1234,13 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
      <p>The navigation was not initiated by the user</p>
    </dl>
    <p>Define the <dfn class="dfn-paneled" data-dfn-for="Event" data-dfn-type="dfn" data-noexport id="event-user-navigation-involvement">user navigation involvement</dfn> for an <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#event" id="ref-for-event①">Event</a></code> <var>event</var> as "<code><a data-link-type="dfn" href="#user-navigation-involvement-activation" id="ref-for-user-navigation-involvement-activation">activation</a></code>" if <var>event</var>’s <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-event-istrusted" id="ref-for-dom-event-istrusted②">isTrusted</a></code> attribute is initialized to true, and "<code><a data-link-type="dfn" href="#user-navigation-involvement-none" id="ref-for-user-navigation-involvement-none②">none</a></code>" otherwise.</p>
-   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate④">navigate</a> algorithm to take an optional named argument <dfn class="dfn-paneled" data-dfn-for="navigate" data-dfn-type="dfn" data-noexport id="navigate-userinvolvement"><var>userInvolvement</var></dfn> (default "<code><a data-link-type="dfn" href="#user-navigation-involvement-none" id="ref-for-user-navigation-involvement-none③">none</a></code>"). Then, update the paragraph talking about browser-UI initiated navigation as follows:</p>
+   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate④">navigate</a> algorithm to take an optional named argument <dfn class="dfn-paneled" data-dfn-for="navigate" data-dfn-type="dfn" data-noexport id="navigate-userinvolvement"><var>userInvolvement</var></dfn> (default "<code><a data-link-type="dfn" href="#user-navigation-involvement-none" id="ref-for-user-navigation-involvement-none③">none</a></code>"). Then, update the paragraph talking about browser-UI initiated navigation as follows:</p>
    <blockquote>
-     A user agent may provide various ways for the user to explicitly cause a browsing context to <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate⑤">navigate</a>, in addition to those defined in this specification.
+     A user agent may provide various ways for the user to explicitly cause a browsing context to <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate⑤">navigate</a>, in addition to those defined in this specification.
     <ins> Such cases must set the <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement">userInvolvement</a></i> argument to "<code><a data-link-type="dfn" href="#user-navigation-involvement-browser-ui" id="ref-for-user-navigation-involvement-browser-ui①">browser UI</a></code>".</ins>
    </blockquote>
    <p class="note" role="note">This infrastructure partially solves <a href="https://github.com/whatwg/html/issues/5381">whatwg/html#5381</a>, and it’d be ideal to update the `<a data-link-type="http-header" href="https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site" id="ref-for-http-headerdef-sec-fetch-site"><code>Sec-Fetch-Site</code></a>` spec at the same time.</p>
-   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-fragid" id="ref-for-navigate-fragid①">navigate to a fragment</a> algorithm to take a new <var>userInvolvement</var> argument. Then, update the call to it from <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate⑥">navigate</a> to set <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement①">userInvolvement</a></i> to this <var>userInvolvement</var> value.</p>
+   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-fragid" id="ref-for-navigate-fragid①">navigate to a fragment</a> algorithm to take a new <var>userInvolvement</var> argument. Then, update the call to it from <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate⑥">navigate</a> to set <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement①">userInvolvement</a></i> to this <var>userInvolvement</var> value.</p>
    <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/history.html#traverse-the-history-by-a-delta" id="ref-for-traverse-the-history-by-a-delta">traverse the history by a delta</a> argument to take an optional named argument <dfn class="dfn-paneled" data-dfn-for="traverse the history by a delta" data-dfn-type="dfn" data-noexport id="traverse-the-history-by-a-delta-userinvolvement"><var>userInvolvement</var></dfn> (default "<code><a data-link-type="dfn" href="#user-navigation-involvement-none" id="ref-for-user-navigation-involvement-none④">none</a></code>"). Then, update the paragraph talking about user-initiated navigation as follows:</p>
    <blockquote>
      When the user navigates through a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context">browsing context</a>, e.g. using a browser’s back and forward buttons, the user agent must <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/history.html#traverse-the-history-by-a-delta" id="ref-for-traverse-the-history-by-a-delta①">traverse the history by a delta</a> with a delta equivalent to the action specified by the user
@@ -1251,7 +1251,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     . 
    </blockquote>
    <hr>
-   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/links.html#following-hyperlinks-2" id="ref-for-following-hyperlinks-2">follow the hyperlink</a> algorithm to take a new <var>userInvolvement</var> argument. Then, update the call to it from <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate⑦">navigate</a> to set <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement②">userInvolvement</a></i> to this <var>userInvolvement</var> value.</p>
+   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/links.html#following-hyperlinks-2" id="ref-for-following-hyperlinks-2">follow the hyperlink</a> algorithm to take a new <var>userInvolvement</var> argument. Then, update the call to it from <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate⑦">navigate</a> to set <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement②">userInvolvement</a></i> to this <var>userInvolvement</var> value.</p>
    <div class="algorithm" data-algorithm="area activation behavior">
      Modify the <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#eventtarget-activation-behavior" id="ref-for-eventtarget-activation-behavior①">activation behavior</a> of <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element" id="ref-for-the-area-element①">area</a></code> elements by introducing the <var>event</var> argument and replacing the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/links.html#following-hyperlinks-2" id="ref-for-following-hyperlinks-2①">follow the hyperlink</a> step with the following: 
     <ol>
@@ -1271,13 +1271,13 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     <ins>Such invocations of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/links.html#following-hyperlinks-2" id="ref-for-following-hyperlinks-2⑤">follow the hyperlink</a> algorithm must set the <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement③">userInvolvement</a></i> argument to "<code><a data-link-type="dfn" href="#user-navigation-involvement-browser-ui" id="ref-for-user-navigation-involvement-browser-ui③">browser UI</a></code>".</ins>
    </blockquote>
    <hr>
-   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plan-to-navigate" id="ref-for-plan-to-navigate②">plan to navigate</a> algorithm to take a <var>userInvolvement</var> argument. Then, update the call to it from <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate⑧">navigate</a> to set <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement④">userInvolvement</a></i> to this <var>userInvolvement</var> value.</p>
-   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit①">submit</a> algorithm to take an optional <var>userInvolvement</var> argument (default "<code><a data-link-type="dfn" href="#user-navigation-involvement-none" id="ref-for-user-navigation-involvement-none⑤">none</a></code>").  Have the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit②">submit</a> algorithm pass along its value to all invocations of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plan-to-navigate" id="ref-for-plan-to-navigate③">plan to navigate</a>.</p>
+   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plan-to-navigate" id="ref-for-plan-to-navigate②">plan to navigate</a> algorithm to take a <var>userInvolvement</var> argument. Then, update the call to it from <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate⑧">navigate</a> to set <i><a data-link-type="dfn" href="#navigate-userinvolvement" id="ref-for-navigate-userinvolvement④">userInvolvement</a></i> to this <var>userInvolvement</var> value.</p>
+   <p>Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit">submit</a> algorithm to take an optional <var>userInvolvement</var> argument (default "<code><a data-link-type="dfn" href="#user-navigation-involvement-none" id="ref-for-user-navigation-involvement-none⑤">none</a></code>").  Have the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit①">submit</a> algorithm pass along its value to all invocations of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#plan-to-navigate" id="ref-for-plan-to-navigate③">plan to navigate</a>.</p>
    <p>Modify the definition of the <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#eventtarget-activation-behavior" id="ref-for-eventtarget-activation-behavior③">activation behavior</a> for <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/input.html#the-input-element" id="ref-for-the-input-element">input</a></code> elements to take an <var>event</var> argument. Then, pass along this argument to the invocation of the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/input.html#input-activation-behavior" id="ref-for-input-activation-behavior">input activation behavior</a>.</p>
-   <p>Modify the Submit Button state’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/input.html#input-activation-behavior" id="ref-for-input-activation-behavior①">input activation behavior</a> by having it take an <var>event<var> argument and pass along the <a data-link-type="dfn" href="#event-user-navigation-involvement" id="ref-for-event-user-navigation-involvement②">user navigation involvement</a> for <var>event</var> as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit③">submit</a>.</var></var></p>
-   <p>Modify the Image Button state’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/input.html#input-activation-behavior" id="ref-for-input-activation-behavior②">input activation behavior</a> by having it take an <var>event<var> argument and pass along the <a data-link-type="dfn" href="#event-user-navigation-involvement" id="ref-for-event-user-navigation-involvement③">user navigation involvement</a> for <var>event</var> as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit④">submit</a>.</var></var></p>
-   <p>Modify the <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element" id="ref-for-the-button-element">button</a></code> element’s <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#eventtarget-activation-behavior" id="ref-for-eventtarget-activation-behavior④">activation behavior</a> by having it take an <var>event</var> argument and, in the Submit Button case, to pass along the <a data-link-type="dfn" href="#event-user-navigation-involvement" id="ref-for-event-user-navigation-involvement④">user navigation involvement</a> for <var>event</var> as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit⑤">submit</a>.</p>
-   <p>Modify the no-<a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button" id="ref-for-concept-submit-button">submit button</a> case for <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission">implicit form submission</a> to pass along "<code><a data-link-type="dfn" href="#user-navigation-involvement-activation" id="ref-for-user-navigation-involvement-activation①">activation</a></code>" as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit⑥">submit</a>.</p>
+   <p>Modify the Submit Button state’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/input.html#input-activation-behavior" id="ref-for-input-activation-behavior①">input activation behavior</a> by having it take an <var>event<var> argument and pass along the <a data-link-type="dfn" href="#event-user-navigation-involvement" id="ref-for-event-user-navigation-involvement②">user navigation involvement</a> for <var>event</var> as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit②">submit</a>.</var></var></p>
+   <p>Modify the Image Button state’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/input.html#input-activation-behavior" id="ref-for-input-activation-behavior②">input activation behavior</a> by having it take an <var>event<var> argument and pass along the <a data-link-type="dfn" href="#event-user-navigation-involvement" id="ref-for-event-user-navigation-involvement③">user navigation involvement</a> for <var>event</var> as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit③">submit</a>.</var></var></p>
+   <p>Modify the <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element" id="ref-for-the-button-element">button</a></code> element’s <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#eventtarget-activation-behavior" id="ref-for-eventtarget-activation-behavior④">activation behavior</a> by having it take an <var>event</var> argument and, in the Submit Button case, to pass along the <a data-link-type="dfn" href="#event-user-navigation-involvement" id="ref-for-event-user-navigation-involvement④">user navigation involvement</a> for <var>event</var> as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit④">submit</a>.</p>
+   <p>Modify the no-<a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/input.html#submit-button-state-(type=submit)" id="ref-for-submit-button-state-(type=submit)">submit button</a> case for <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission">implicit form submission</a> to pass along "<code><a data-link-type="dfn" href="#user-navigation-involvement-activation" id="ref-for-user-navigation-involvement-activation①">activation</a></code>" as the final argument when it calls <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit" id="ref-for-concept-form-submit⑤">submit</a>.</p>
    <p class="note" role="note">The case of implicit submission when a submit button is present is automatically taken care of because it fires a (trusted) click event at the submit button.</p>
    <h3 class="heading settled" data-level="4.3" id="navigate-algorithm-patches"><span class="secno">4.3. </span><span class="content">Navigation algorithm updates</span><a class="self-link" href="#navigate-algorithm-patches"></a></h3>
    <p>With the above infrastructure in place, we can actually fire and handle the <code class="idl"><a data-link-type="idl" href="#eventdef-apphistory-navigate" id="ref-for-eventdef-apphistory-navigate④">navigate</a></code> event in the following locations:</p>
@@ -1308,7 +1308,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     </ol>
    </div>
    <div class="algorithm" data-algorithm="navigate" id="navigate-modifications">
-     Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate⑨">navigate</a> algorithm by inserting the following step right before the step which goes <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel①">in parallel</a>. Recall that per <a href="#user-initiated-patches">§ 4.2 Browser UI/user-initiated patches</a> we have introduced <var>userInvolvement</var> argument, and per <a href="#form-patches">§ 4.1 Form submission patches</a> we have introduced an <var>entryList</var> argument. 
+     Modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate⑨">navigate</a> algorithm by inserting the following step right before the step which goes <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel①">in parallel</a>. Recall that per <a href="#user-initiated-patches">§ 4.2 Browser UI/user-initiated patches</a> we have introduced <var>userInvolvement</var> argument, and per <a href="#form-patches">§ 4.1 Form submission patches</a> we have introduced an <var>entryList</var> argument. 
     <ol>
      <li data-md>
       <p>If none of the following are true:</p>
@@ -1334,7 +1334,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
         <p>If <var>continue</var> is false, return.</p>
       </ol>
       <p class="note" role="note">"<a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#hh-entry-update" id="ref-for-hh-entry-update①"><code>entry update</code></a>" is excluded since <code class="idl"><a data-link-type="idl" href="#eventdef-apphistory-navigate" id="ref-for-eventdef-apphistory-navigate⑤">navigate</a></code> would have fired earlier as part of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/history.html#traverse-the-history-by-a-delta" id="ref-for-traverse-the-history-by-a-delta②">traversing the history by a delta</a>. </p>
-      <p class="note" role="note">"<code><a data-link-type="dfn" href="#user-navigation-involvement-browser-ui" id="ref-for-user-navigation-involvement-browser-ui⑤">browser UI</a></code>" or <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#same-origin-domain" id="ref-for-same-origin-domain①">cross origin-domain</a> navigations that cause <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-fragid" id="ref-for-navigate-fragid③">fragment navigations</a> <em>do</em> fire the <code class="idl"><a data-link-type="idl" href="#eventdef-apphistory-navigate" id="ref-for-eventdef-apphistory-navigate⑥">navigate</a></code> event; those are handled as part of the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-fragid" id="ref-for-navigate-fragid④">navigate to a fragment</a> algorithm called earlier in <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate①⓪">navigate</a>, which is not guarded by this condition. </p>
+      <p class="note" role="note">"<code><a data-link-type="dfn" href="#user-navigation-involvement-browser-ui" id="ref-for-user-navigation-involvement-browser-ui⑤">browser UI</a></code>" or <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/origin.html#same-origin-domain" id="ref-for-same-origin-domain①">cross origin-domain</a> navigations that cause <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-fragid" id="ref-for-navigate-fragid③">fragment navigations</a> <em>do</em> fire the <code class="idl"><a data-link-type="idl" href="#eventdef-apphistory-navigate" id="ref-for-eventdef-apphistory-navigate⑥">navigate</a></code> event; those are handled as part of the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate-fragid" id="ref-for-navigate-fragid④">navigate to a fragment</a> algorithm called earlier in <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate①⓪">navigate</a>, which is not guarded by this condition. </p>
     </ol>
    </div>
    <div class="algorithm" data-algorithm="traverse the history by a delta">
@@ -1610,6 +1610,12 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     <li><a href="#ref-for-concept-document-url">2. The navigate event</a> <a href="#ref-for-concept-document-url①">(2)</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-http-headerdef-sec-fetch-site">
+   <a href="https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site">https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-http-headerdef-sec-fetch-site">4.2. Browser UI/user-initiated patches</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-errorevent">
    <a href="https://html.spec.whatwg.org/multipage/webappapis.html#errorevent">https://html.spec.whatwg.org/multipage/webappapis.html#errorevent</a><b>Referenced in:</b>
    <ul>
@@ -1821,12 +1827,12 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     <li><a href="#ref-for-dom-errorevent-message">2. The navigate event</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-navigate">
-   <a href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate">https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-dom-navigationtype-navigate">
+   <a href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate">https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-navigate">4.1. Form submission patches</a> <a href="#ref-for-navigate①">(2)</a> <a href="#ref-for-navigate②">(3)</a>
-    <li><a href="#ref-for-navigate③">4.2. Browser UI/user-initiated patches</a> <a href="#ref-for-navigate④">(2)</a> <a href="#ref-for-navigate⑤">(3)</a> <a href="#ref-for-navigate⑥">(4)</a> <a href="#ref-for-navigate⑦">(5)</a> <a href="#ref-for-navigate⑧">(6)</a>
-    <li><a href="#ref-for-navigate⑨">4.3. Navigation algorithm updates</a> <a href="#ref-for-navigate①⓪">(2)</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate">4.1. Form submission patches</a> <a href="#ref-for-dom-navigationtype-navigate①">(2)</a> <a href="#ref-for-dom-navigationtype-navigate②">(3)</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate③">4.2. Browser UI/user-initiated patches</a> <a href="#ref-for-dom-navigationtype-navigate④">(2)</a> <a href="#ref-for-dom-navigationtype-navigate⑤">(3)</a> <a href="#ref-for-dom-navigationtype-navigate⑥">(4)</a> <a href="#ref-for-dom-navigationtype-navigate⑦">(5)</a> <a href="#ref-for-dom-navigationtype-navigate⑧">(6)</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate⑨">4.3. Navigation algorithm updates</a> <a href="#ref-for-dom-navigationtype-navigate①⓪">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-navigate-fragid">
@@ -1961,23 +1967,28 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     <li><a href="#ref-for-still-on-its-initial-about:blank-document">1. The AppHistory class</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-attr-input-type-submit-keyword">
+   <a href="https://html.spec.whatwg.org/multipage/input.html#attr-input-type-submit-keyword">https://html.spec.whatwg.org/multipage/input.html#attr-input-type-submit-keyword</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-attr-input-type-submit-keyword">2. The navigate event</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-submit-body">
    <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submit-body">https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submit-body</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-submit-body">4.1. Form submission patches</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-submit-button">
-   <a href="https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button">https://html.spec.whatwg.org/multipage/forms.html#concept-submit-button</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-submit-button-state-(type=submit)">
+   <a href="https://html.spec.whatwg.org/multipage/input.html#submit-button-state-(type=submit)">https://html.spec.whatwg.org/multipage/input.html#submit-button-state-(type=submit)</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-concept-submit-button">4.2. Browser UI/user-initiated patches</a>
+    <li><a href="#ref-for-submit-button-state-(type=submit)">4.2. Browser UI/user-initiated patches</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-concept-form-submit">
    <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit">https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#concept-form-submit</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-concept-form-submit">2. The navigate event</a>
-    <li><a href="#ref-for-concept-form-submit①">4.2. Browser UI/user-initiated patches</a> <a href="#ref-for-concept-form-submit②">(2)</a> <a href="#ref-for-concept-form-submit③">(3)</a> <a href="#ref-for-concept-form-submit④">(4)</a> <a href="#ref-for-concept-form-submit⑤">(5)</a> <a href="#ref-for-concept-form-submit⑥">(6)</a>
+    <li><a href="#ref-for-concept-form-submit">4.2. Browser UI/user-initiated patches</a> <a href="#ref-for-concept-form-submit①">(2)</a> <a href="#ref-for-concept-form-submit②">(3)</a> <a href="#ref-for-concept-form-submit③">(4)</a> <a href="#ref-for-concept-form-submit④">(5)</a> <a href="#ref-for-concept-form-submit⑤">(6)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-traverse-the-history">
@@ -2148,12 +2159,6 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     <li><a href="#ref-for-dfn-generate-a-random-uuid">5.1. New session history entry items</a> <a href="#ref-for-dfn-generate-a-random-uuid①">(2)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-http-headerdef-sec-fetch-site">
-   <a href="https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site">https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-http-headerdef-sec-fetch-site">4.2. Browser UI/user-initiated patches</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-idl-ArrayBuffer">
    <a href="https://heycam.github.io/webidl/#idl-ArrayBuffer">https://heycam.github.io/webidl/#idl-ArrayBuffer</a><b>Referenced in:</b>
    <ul>
@@ -2300,6 +2305,11 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
      <li><span class="dfn-paneled" id="term-for-concept-document-url">url</span>
     </ul>
    <li>
+    <a data-link-type="biblio">[fetch-metadata]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-http-headerdef-sec-fetch-site">sec-fetch-site</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[HTML]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-errorevent">ErrorEvent</span>
@@ -2335,7 +2345,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
      <li><span class="dfn-paneled" id="term-for-uhus-ispush">ispush</span>
      <li><span class="dfn-paneled" id="term-for-dom-errorevent-lineno">lineno</span>
      <li><span class="dfn-paneled" id="term-for-dom-errorevent-message">message</span>
-     <li><span class="dfn-paneled" id="term-for-navigate">navigate</span>
+     <li><span class="dfn-paneled" id="term-for-dom-navigationtype-navigate">navigate</span>
      <li><span class="dfn-paneled" id="term-for-navigate-fragid">navigate to a fragment</span>
      <li><span class="dfn-paneled" id="term-for-navigation-navigationtype">navigationtype</span>
      <li><span class="dfn-paneled" id="term-for-dom-document-open">open(unused1, unused2)</span>
@@ -2355,8 +2365,9 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
      <li><span class="dfn-paneled" id="term-for-source-browsing-context">source browsing context</span>
      <li><span class="dfn-paneled" id="term-for-dom-history-state">state</span>
      <li><span class="dfn-paneled" id="term-for-still-on-its-initial-about:blank-document">still on its initial about:blank document</span>
+     <li><span class="dfn-paneled" id="term-for-attr-input-type-submit-keyword">submit</span>
      <li><span class="dfn-paneled" id="term-for-submit-body">submit as entity body</span>
-     <li><span class="dfn-paneled" id="term-for-concept-submit-button">submit buttons</span>
+     <li><span class="dfn-paneled" id="term-for-submit-button-state-(type=submit)">submit button</span>
      <li><span class="dfn-paneled" id="term-for-concept-form-submit">submitted</span>
      <li><span class="dfn-paneled" id="term-for-traverse-the-history">traverse the history</span>
      <li><span class="dfn-paneled" id="term-for-traverse-the-history-by-a-delta">traverse the history by a delta</span>
@@ -2398,12 +2409,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
      <li><span class="dfn-paneled" id="term-for-dfn-generate-a-random-uuid">generate a random uuid</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[webappsec-fetch-metadata-1]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-http-headerdef-sec-fetch-site">sec-fetch-site</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-ArrayBuffer">ArrayBuffer</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
@@ -2441,8 +2447,8 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
    <dt id="biblio-url">[URL]
    <dd>Anne van Kesteren. <a href="https://url.spec.whatwg.org/">URL Standard</a>. Living Standard. URL: <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
    <dt id="biblio-xhr">[XHR]
    <dd>Anne van Kesteren. <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a>. Living Standard. URL: <a href="https://xhr.spec.whatwg.org/">https://xhr.spec.whatwg.org/</a>
   </dl>
@@ -2450,8 +2456,8 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
   <dl>
    <dt id="biblio-csp">[CSP]
    <dd>Mike West. <a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a>. URL: <a href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a>
-   <dt id="biblio-webappsec-fetch-metadata-1">[WEBAPPSEC-FETCH-METADATA-1]
-   <dd>Fetch Metadata Request Headers URL: <a href="https://w3c.github.io/webappsec-fetch-metadata/">https://w3c.github.io/webappsec-fetch-metadata/</a>
+   <dt id="biblio-fetch-metadata">[FETCH-METADATA]
+   <dd>Mike West. <a href="https://w3c.github.io/webappsec-fetch-metadata/">Fetch Metadata Request Headers</a>. URL: <a href="https://w3c.github.io/webappsec-fetch-metadata/">https://w3c.github.io/webappsec-fetch-metadata/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
 <pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://html.spec.whatwg.org/multipage/window-object.html#window"><c- g>Window</c-></a> {

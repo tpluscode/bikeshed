@@ -1,5 +1,5 @@
 {
-    "sensor-activated": [
+    "dom-sensor-activated": [
         {
             "engines": [
                 "blink"
@@ -52,7 +52,7 @@
             "title": "Sensor.activated"
         }
     ],
-    "sensor-has-reading": [
+    "dom-sensor-hasreading": [
         {
             "engines": [
                 "blink"
@@ -105,7 +105,7 @@
             "title": "Sensor.hasReading"
         }
     ],
-    "sensor-onactivate": [
+    "dom-sensor-onactivate": [
         {
             "engines": [
                 "blink"
@@ -113,7 +113,7 @@
             "filename": "api/Sensor.json",
             "name": "onactivate",
             "slug": "API/Sensor/onactivate",
-            "summary": "The onactivate event handler is called when one of the Sensor interface's child interfaces becomes active.",
+            "summary": "The onactivate EventHandler is called when one of the Sensor interface's child interfaces becomes active.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -158,7 +158,7 @@
             "title": "Sensor.onactivate"
         }
     ],
-    "sensor-onerror": [
+    "dom-sensor-onerror": [
         {
             "engines": [
                 "blink"
@@ -166,7 +166,7 @@
             "filename": "api/Sensor.json",
             "name": "onerror",
             "slug": "API/Sensor/onerror",
-            "summary": "The onerror event handler is called when an error occurs on one of the child interfaces of the Sensor interface.",
+            "summary": "The onerror EventHandler is called when an error occurs on one of the child interfaces of the Sensor interface.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -211,7 +211,7 @@
             "title": "Sensor.onerror"
         }
     ],
-    "sensor-onreading": [
+    "dom-sensor-onreading": [
         {
             "engines": [
                 "blink"
@@ -219,7 +219,7 @@
             "filename": "api/Sensor.json",
             "name": "onreading",
             "slug": "API/Sensor/onreading",
-            "summary": "The onreading event handler is called when a reading is taken on one of the child interfaces of the Sensor interface.",
+            "summary": "The onreading EventHandler is called when a reading is taken on one of the child interfaces of the Sensor interface.",
             "support": {
                 "chrome": {
                     "version_added": "67"
@@ -264,7 +264,7 @@
             "title": "Sensor.onreading"
         }
     ],
-    "sensor-start": [
+    "dom-sensor-start": [
         {
             "engines": [
                 "blink"
@@ -317,7 +317,7 @@
             "title": "Sensor.start()"
         }
     ],
-    "sensor-stop": [
+    "dom-sensor-stop": [
         {
             "engines": [
                 "blink"
@@ -370,7 +370,7 @@
             "title": "Sensor.stop()"
         }
     ],
-    "sensor-timestamp": [
+    "dom-sensor-timestamp": [
         {
             "engines": [
                 "blink"

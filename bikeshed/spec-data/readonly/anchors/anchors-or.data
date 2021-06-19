@@ -340,8 +340,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-orange
 -
 orange
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-orange
@@ -351,8 +351,8 @@ https://drafts.csswg.org/css2/#valdef-color-orange
 -
 orange
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-orange
@@ -925,8 +925,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-org-organization-
 -
 orient
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#OrientAttribute
@@ -936,8 +936,8 @@ marker
 -
 orient
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__orient
@@ -947,8 +947,8 @@ SVGMarkerElement
 -
 orient
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#OrientAttribute
@@ -958,8 +958,8 @@ marker
 -
 orient
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__orient
@@ -969,8 +969,8 @@ SVGMarkerElement
 -
 orientAngle
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__orientAngle
@@ -980,8 +980,8 @@ SVGMarkerElement
 -
 orientAngle
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__orientAngle
@@ -991,8 +991,8 @@ SVGMarkerElement
 -
 orientType
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__orientType
@@ -1002,8 +1002,8 @@ SVGMarkerElement
 -
 orientType
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__orientType
@@ -2032,8 +2032,8 @@ ExtendableMessageEvent
 -
 origin
 dfn
-SRI
-SRI
+sri
+sri
 1
 snapshot
 https://www.w3.org/TR/SRI/#dfn-origin
@@ -3013,8 +3013,8 @@ https://streams.spec.whatwg.org/#original-source
 -
 originalPolicy
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-originalpolicy
@@ -3024,8 +3024,8 @@ CSPViolationReportBody
 -
 originalPolicy
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-originalpolicy
@@ -3035,8 +3035,8 @@ SecurityPolicyViolationEvent
 -
 originalPolicy
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-originalpolicy
@@ -3046,8 +3046,8 @@ SecurityPolicyViolationEventInit
 -
 originalPolicy
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-originalpolicy
@@ -3057,8 +3057,8 @@ CSPViolationReportBody
 -
 originalPolicy
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-originalpolicy
@@ -3068,8 +3068,8 @@ SecurityPolicyViolationEvent
 -
 originalPolicy
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-originalpolicy
@@ -3159,8 +3159,8 @@ https://www.w3.org/TR/css-inline-3/#originating-line
 -
 originating variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#originating-variable
@@ -3169,8 +3169,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#originating-variable
 -
 originating variable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#originating-variable
@@ -3305,8 +3305,8 @@ https://www.w3.org/TR/css-break-4/#propdef-orphans
 -
 orphans
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-orphans
@@ -3315,8 +3315,8 @@ https://drafts.csswg.org/css2/#propdef-orphans
 -
 orphans
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-orphans
@@ -3325,8 +3325,8 @@ https://drafts.csswg.org/css2/#propdef-orphans
 -
 orphans
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/page.html#propdef-orphans

@@ -769,8 +769,8 @@ https://www.w3.org/TR/css-speech-1/#cue
 -
 cue
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-cue
@@ -919,8 +919,8 @@ https://www.w3.org/TR/css-speech-1/#cue-after
 -
 cue-after
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-cue-after
@@ -949,8 +949,8 @@ https://www.w3.org/TR/css-speech-1/#cue-before
 -
 cue-before
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-cue-before
@@ -1387,8 +1387,8 @@ https://www.w3.org/TR/webaudio/#current-frequency-data
 -
 current global environment
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-current-global-environment
@@ -1597,8 +1597,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#current-node
 -
 current number
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#key-generator-current-number
@@ -1608,8 +1608,8 @@ key generator
 -
 current number
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#key-generator-current-number
@@ -1889,8 +1889,8 @@ https://w3c.github.io/webdriver-bidi/#current-stack-trace
 -
 current state
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#sessionmanager-async-iterator-current-state
@@ -1900,8 +1900,8 @@ SessionManager async iterator
 -
 current svg document fragment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermCurrentSVGDocumentFragment
@@ -1910,8 +1910,8 @@ https://svgwg.org/svg2-draft/struct.html#TermCurrentSVGDocumentFragment
 -
 current svg document fragment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermCurrentSVGDocumentFragment
@@ -1940,8 +1940,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#current-template-insertion-m
 -
 current text position
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermCurrentTextPosition
@@ -2070,8 +2070,8 @@ https://drafts.csswg.org/css-transitions-2/#current-transition-generation
 -
 current translate point object
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#CurrentTranslatePointObject
@@ -2080,8 +2080,8 @@ https://svgwg.org/svg2-draft/struct.html#CurrentTranslatePointObject
 -
 current translate point object
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#CurrentTranslatePointObject
@@ -2385,8 +2385,8 @@ RTCIceCandidatePairStats
 -
 currentScale
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__currentScale
@@ -2396,8 +2396,8 @@ SVGSVGElement
 -
 currentScale
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#__svg__SVGSVGElement__currentScale
@@ -2605,8 +2605,8 @@ AudioWorkletGlobalScope
 -
 currentTranslate
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__currentTranslate
@@ -2616,8 +2616,8 @@ SVGSVGElement
 -
 currentTranslate
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#__svg__SVGSVGElement__currentTranslate
@@ -2723,8 +2723,8 @@ font-family
 -
 cursive
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-generic-family-cursive
@@ -2734,8 +2734,8 @@ https://drafts.csswg.org/css2/#valdef-generic-family-cursive
 -
 cursive
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#cursive-def
@@ -2744,8 +2744,8 @@ https://drafts.csswg.org/css2/#cursive-def
 -
 cursive
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-generic-family-cursive
@@ -2755,8 +2755,8 @@ https://drafts.csswg.org/css2/#valdef-generic-family-cursive
 -
 cursive
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#cursive-def
@@ -2805,8 +2805,8 @@ https://www.w3.org/TR/css-ui-4/#propdef-cursor
 -
 cursor
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-cursor
@@ -2815,8 +2815,8 @@ https://drafts.csswg.org/css2/#propdef-cursor
 -
 cursor
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-cursor
@@ -2825,8 +2825,8 @@ https://drafts.csswg.org/css2/#propdef-cursor
 -
 cursor
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/ui.html#propdef-cursor
@@ -2835,8 +2835,8 @@ https://www.w3.org/TR/CSS22/ui.html#propdef-cursor
 -
 cursor
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor
@@ -2845,8 +2845,8 @@ https://w3c.github.io/IndexedDB/#cursor
 -
 cursor
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor

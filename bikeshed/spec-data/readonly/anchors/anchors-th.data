@@ -212,8 +212,8 @@ https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#cu
 -
 the curve name
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-namedcurve-values
@@ -222,8 +222,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-namedcurve-values
 -
 the curve name
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-namedcurve-values
@@ -322,8 +322,8 @@ https://html.spec.whatwg.org/multipage/webappapis.html#the-event-handler-process
 -
 the given value
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#the-given-value
@@ -863,8 +863,8 @@ border
 -
 thick
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-border-width-thick
@@ -879,8 +879,8 @@ border-width
 -
 thick
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-border-width-thick
@@ -951,8 +951,8 @@ scrollbar-width
 -
 thin
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-border-width-thin
@@ -967,8 +967,8 @@ border-width
 -
 thin
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-border-width-thin
@@ -1063,8 +1063,8 @@ https://w3c.github.io/webdriver/#dfn-this
 -
 this
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#this
@@ -1455,8 +1455,8 @@ https://www.w3.org/TR/tracking-dnt/#dfn-throw
 -
 throw
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#concept-throw
@@ -1465,8 +1465,8 @@ https://www.w3.org/TR/WebCryptoAPI/#concept-throw
 -
 throw
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-throw
@@ -1506,8 +1506,8 @@ https://www.w3.org/TR/beacon/#throw-a-name-exception
 -
 throw an exception
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception
@@ -1526,8 +1526,8 @@ https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#throw-on-dy
 -
 thrown
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-throw

@@ -912,7 +912,7 @@ Changes</span></a>
    <p>This module replaces and extends the text-decorating
 	features defined in <a data-link-type="biblio" href="#biblio-css-text-decor-3">[CSS-TEXT-DECOR-3]</a>.</p>
    <p>All of the properties in this module
-	can be applied to the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-line" id="ref-for-selectordef-first-line">::first-line</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter" id="ref-for-selectordef-first-letter">::first-letter</a> <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#pseudo-element" id="ref-for-pseudo-element">pseudo-elements</a>.</p>
+	can be applied to the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-line" id="ref-for-selectordef-first-line">::first-line</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-first-letter" id="ref-for-selectordef-first-letter">::first-letter</a> <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#pseudo-element" id="ref-for-pseudo-element">pseudo-elements</a>.</p>
    <h3 class="heading settled" data-level="1.2" id="values"><span class="secno">1.2. </span><span class="content"> Value Definitions</span><a class="self-link" href="#values"></a></h3>
    <p>This specification follows the <a href="https://www.w3.org/TR/CSS2/about.html#property-defs">CSS property definition conventions</a> from <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> using the <a href="https://www.w3.org/TR/css-values-3/#value-defs">value definition syntax</a> from <a data-link-type="biblio" href="#biblio-css-values-3">[CSS-VALUES-3]</a>.
 	Value types not defined in this specification are defined in CSS Values &amp; Units <span>[CSS-VALUES-3]</span>.
@@ -922,19 +922,19 @@ Changes</span></a>
 	also accept the <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#css-wide-keywords" id="ref-for-css-wide-keywords">CSS-wide keywords</a> as their property value.
 	For readability they have not been repeated explicitly.</p>
    <h3 class="heading settled" data-level="1.3" id="terms"><span class="secno">1.3. </span><span class="content">Terminology</span><a class="self-link" href="#terms"></a></h3>
-   <p>The terms <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit">typographic character unit</a> (<dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="character">character</dfn>), <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit">typographic letter unit</a> (<a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#letter" id="ref-for-letter">letter</a>),
+   <p>The terms <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit">typographic character unit</a> (<dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="character">character</dfn>), <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit">typographic letter unit</a> (<a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#letter" id="ref-for-letter">letter</a>),
 	and <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#content-language" id="ref-for-content-language">content language</a> as used in this specification are defined in <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a>.
 	Other terminology and concepts used in this specification are defined
 	in <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> and <a data-link-type="biblio" href="#biblio-css-writing-modes-4">[CSS-WRITING-MODES-4]</a>.</p>
    <h2 class="heading settled" data-level="2" id="line-decoration"><span class="secno">2. </span><span class="content"> Line Decoration: Underline, Overline, and Strike-Through</span><a class="self-link" href="#line-decoration"></a></h2>
    <p>The following properties describe line decorations that are added to the content of an element.
-	When specified on or propagated to an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box">inline box</a>,
-	that <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#box" id="ref-for-box">box</a> becomes a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="decorating-box">decorating box</dfn> for that decoration,
-	applying the decoration to all its <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragment" id="ref-for-fragment">fragments</a>.
-	The decoration is then further propagated to any <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#in-flow" id="ref-for-in-flow">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level" id="ref-for-block-level">block-level</a> boxes that split the inline
+	When specified on or propagated to an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box">inline box</a>,
+	that <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#box" id="ref-for-box">box</a> becomes a <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="decorating-box">decorating box</dfn> for that decoration,
+	applying the decoration to all its <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragment" id="ref-for-fragment">fragments</a>.
+	The decoration is then further propagated to any <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#in-flow" id="ref-for-in-flow">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level" id="ref-for-block-level">block-level</a> boxes that split the inline
 	(see <a href="https://www.w3.org/TR/CSS21/visuren.html#anonymous-block-level">CSS2.1 section 9.2.1.1</a>).
-	When specified on or propagated to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block container</a> that establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a>,
-	the decorations are propagated to an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#anonymous" id="ref-for-anonymous">anonymous</a> inline box that wraps all the <span id="ref-for-in-flow①">in-flow</span> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level">inline-level</a> children of the <span id="ref-for-block-container①">block container</span>.
+	When specified on or propagated to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block container</a> that establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a>,
+	the decorations are propagated to an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#anonymous" id="ref-for-anonymous">anonymous</a> inline box that wraps all the <span id="ref-for-in-flow①">in-flow</span> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level">inline-level</a> children of the <span id="ref-for-block-container①">block container</span>.
 	When specified on or propagated to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-ruby-1/#ruby-container" id="ref-for-ruby-container">ruby container</a>,
 	the decorations are propagated only to the <a data-link-type="dfn" href="https://drafts.csswg.org/css-ruby-1/#ruby-base-box" id="ref-for-ruby-base-box">ruby base</a>.
 	For all other box types,
@@ -943,23 +943,23 @@ Changes</span></a>
 		nor to the contents of atomic inline-level descendants such as inline blocks and inline tables.
 		They are also not propagated to inline children of inline boxes,
 		although the decoration is <em>applied</em> to such boxes. </p>
-   <p>Underlines, overlines, and line-throughs are drawn only for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#non-replaced" id="ref-for-non-replaced">non-replaced</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box①">inline boxes</a>,
+   <p>Underlines, overlines, and line-throughs are drawn only for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#non-replaced" id="ref-for-non-replaced">non-replaced</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box①">inline boxes</a>,
 	and are drawn across all text (including white space, letter spacing, and word spacing)
-	except spacing (white space, letter spacing, and word spacing) at the beginning and end of a line. <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#atomic-inline" id="ref-for-atomic-inline">Atomic inlines</a>, such as images and inline blocks, are not decorated.
+	except spacing (white space, letter spacing, and word spacing) at the beginning and end of a line. <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#atomic-inline" id="ref-for-atomic-inline">Atomic inlines</a>, such as images and inline blocks, are not decorated.
 	Margins, borders, and padding of the <a data-link-type="dfn" href="#decorating-box" id="ref-for-decorating-box">decorating box</a> are always skipped,
 	however the margins, border, and padding of descendant <span id="ref-for-inline-box②">inline boxes</span> are not.</p>
    <p class="note" role="note"> Note that CSS 2.1 required skipping margins, borders, and padding always.
 		In Level 3 and beyond, by default
 		only the margins, borders, and padding of the <a data-link-type="dfn" href="#decorating-box" id="ref-for-decorating-box①">decorating box</a> are skipped.
 		In the future CSS2.1 may be updated to match this new default. </p>
-   <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#relative-position" id="ref-for-relative-position">Relatively positioning</a> a descendant moves all text decorations
+   <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#relative-position" id="ref-for-relative-position">Relatively positioning</a> a descendant moves all text decorations
 	applied to it along with the descendant’s text; it does not affect
 	calculation of the decoration’s initial position on that line.
 	The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-visibility" id="ref-for-propdef-visibility">visibility</a> property, <a class="property" data-link-type="propdesc" href="#propdef-text-shadow" id="ref-for-propdef-text-shadow">text-shadow</a>, filters, and other graphical transformations
 	likewise affect text decorations as part of the text they’re drawn on,
 	even if the decorations were specified on an ancestor box,
 	and do not affect the calculation of their initial positions or thicknesses.
-	(In the case of line decorations drawn over an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#atomic-inline" id="ref-for-atomic-inline①">atomic inline</a> or across the margins/borders/padding of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#non-replaced" id="ref-for-non-replaced①">non-replaced</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box③">inline box</a>,
+	(In the case of line decorations drawn over an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#atomic-inline" id="ref-for-atomic-inline①">atomic inline</a> or across the margins/borders/padding of a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#non-replaced" id="ref-for-non-replaced①">non-replaced</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box③">inline box</a>,
 	they are analogously associated with the affected atomic inline / non-replaced inline box
 	rather than with the <a data-link-type="dfn" href="#decorating-box" id="ref-for-decorating-box②">decorating box</a>.)</p>
    <div class="example" id="example-d6d0ccd7">
@@ -995,7 +995,7 @@ cite { color: fuchsia; }
    <p class="note" role="note"><span>Note:</span> Line decorations are propagated through the box tree,
 	not through inheritance,
 	and thus have no effect on descendants
-	when specified on an element with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display: contents</a>.</p>
+	when specified on an element with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display: contents</a>.</p>
    <h3 class="heading settled" data-level="2.1" id="text-decoration-line-property"><span class="secno">2.1. </span><span class="content"> Text Decoration Lines: the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration-line" id="ref-for-propdef-text-decoration-line">text-decoration-line</a> property</span><a class="self-link" href="#text-decoration-line-property"></a></h3>
    <table class="def propdef" data-link-for-hint="text-decoration-line">
     <tbody>
@@ -1028,13 +1028,13 @@ cite { color: fuchsia; }
       <td>discrete 
    </table>
    <p>This property,
-	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration">text-decoration</a> shorthand,
+	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration">text-decoration</a> shorthand,
 	specifies what line decorations, if any, are added by the element.
 	Values other than <span class="css">text-decoration-line</span> cause the element to originate the indicated text decorations,
 	and to apply and propagate it as described <a href="#line-decoration">above</a>.</p>
    <p class="note" role="note"><span>Note:</span> Unless it is desired for the color, style, and thickness of the lines
-	to be set by declarations lower in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade" id="ref-for-cascade">cascade</a>,
-	it is safer to use the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration①">text-decoration</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#shorthand-property" id="ref-for-shorthand-property">shorthand</a> instead of this <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand①">longhand</a>.</p>
+	to be set by declarations lower in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade" id="ref-for-cascade">cascade</a>,
+	it is safer to use the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration①">text-decoration</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#shorthand-property" id="ref-for-shorthand-property">shorthand</a> instead of this <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand①">longhand</a>.</p>
    <p>Values have the following meanings:</p>
    <dl>
     <dt><dfn class="css" data-dfn-for="text-decoration-line" data-dfn-type="value" data-export id="valdef-text-decoration-line-none">none<a class="self-link" href="#valdef-text-decoration-line-none"></a></dfn> 
@@ -1067,9 +1067,9 @@ cite { color: fuchsia; }
 	automatically.</p>
    <p>Since <a class="css" data-link-type="maybe" href="#valdef-text-decoration-line-spelling-error" id="ref-for-valdef-text-decoration-line-spelling-error">spelling-error</a> and <a class="css" data-link-type="maybe" href="#valdef-text-decoration-line-grammar-error" id="ref-for-valdef-text-decoration-line-grammar-error">grammar-error</a> decorations are entirely UA-defined,
 	the UA <em>may</em> disregard
-	the other <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand②">sub-properties</a> of <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration②">text-decoration</a>,
+	the other <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand②">sub-properties</a> of <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration②">text-decoration</a>,
 	as well any other properties typically affecting the appearance of line decorations
-	(such as <a class="property" data-link-type="propdesc" href="#propdef-text-underline-position" id="ref-for-propdef-text-underline-position①">text-underline-position</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#color0" id="ref-for-color0">color</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke" id="ref-for-propdef-stroke">stroke</a>, or <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/fill-stroke-3/#propdef-fill" id="ref-for-propdef-fill">fill</a>)
+	(such as <a class="property" data-link-type="propdesc" href="#propdef-text-underline-position" id="ref-for-propdef-text-underline-position①">text-underline-position</a>, <a class="property" data-link-type="propdesc">color</a>, <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/fill-stroke/#propdef-stroke" id="ref-for-propdef-stroke">stroke</a>, or <a class="property" data-link-type="propdesc" href="https://drafts.fxtf.org/fill-stroke/#propdef-fill" id="ref-for-propdef-fill">fill</a>)
 	when rendering these decorations.
 	However,
 	to the extent that honoring any of these properties
@@ -1109,7 +1109,7 @@ cite { color: fuchsia; }
       <td>discrete 
    </table>
    <p>This property,
-	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand③">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration③">text-decoration</a> shorthand,
+	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand③">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration③">text-decoration</a> shorthand,
 	sets the line-drawing style of underlines, overlines, and line-throughs
 	specified on the element with <a class="property" data-link-type="propdesc" href="#propdef-text-decoration-line" id="ref-for-propdef-text-decoration-line①">text-decoration-line</a>,
 	and affects all decorations originating from this element
@@ -1123,7 +1123,7 @@ cite { color: fuchsia; }
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-text-decoration-color">text-decoration-color</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> 
+      <td class="prod"><a class="production css" data-link-type="type">&lt;color></a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>currentcolor 
@@ -1147,7 +1147,7 @@ cite { color: fuchsia; }
       <td>by computed value type 
    </table>
    <p>This property,
-	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand④">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration④">text-decoration</a> shorthand,
+	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand④">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration④">text-decoration</a> shorthand,
 	sets the color of underlines, overlines, and line-throughs
 	specified on the element with <a class="property" data-link-type="propdesc" href="#propdef-text-decoration-line" id="ref-for-propdef-text-decoration-line②">text-decoration-line</a>,
 	and affects all decorations originating from this element
@@ -1159,13 +1159,13 @@ cite { color: fuchsia; }
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness" title="The text-decoration-thickness CSS property sets the stroke thickness of the decoration line that is used on text in an element, such as a line-through, underline, or overline.">text-decoration-thickness</a></p>
      <p class="all-engines-text">In all current engines.</p>
      <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>70+</span></span><span class="safari yes"><span>Safari</span><span>12.1+</span></span><span class="chrome yes"><span>Chrome</span><span>89+</span></span>
+      <span class="firefox yes"><span>Firefox</span><span>70+</span></span><span class="safari yes"><span>Safari</span><span>12.1+</span></span><span class="chrome yes"><span>Chrome</span><span>87+</span></span>
       <hr>
-      <span class="opera yes"><span>Opera</span><span>75+</span></span><span class="edge_blink yes"><span>Edge</span><span>89+</span></span>
+      <span class="opera yes"><span>Opera</span><span>73+</span></span><span class="edge_blink yes"><span>Edge</span><span>87+</span></span>
       <hr>
       <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>12.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>89+</span></span><span class="webview_android yes"><span>Android WebView</span><span>89+</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
+      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>12.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>87+</span></span><span class="webview_android yes"><span>Android WebView</span><span>87+</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
      </div>
     </div>
    </div>
@@ -1176,7 +1176,7 @@ cite { color: fuchsia; }
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-text-decoration-thickness">text-decoration-thickness</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑦">|</a> from-font <span id="ref-for-comb-one⑧">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one⑨">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a> 
+      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑦">|</a> from-font <span id="ref-for-comb-one⑧">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one⑨">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>auto 
@@ -1200,7 +1200,7 @@ cite { color: fuchsia; }
       <td>by computed value 
    </table>
    <p>This property,
-	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand⑤">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration⑤">text-decoration</a> shorthand,
+	which is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand⑤">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration⑤">text-decoration</a> shorthand,
 	sets the stroke thickness of underlines, overlines, and line-throughs
 	specified on the element with <a class="property" data-link-type="propdesc" href="#propdef-text-decoration-line" id="ref-for-propdef-text-decoration-line③">text-decoration-line</a>,
 	and affects all decorations originating from this element
@@ -1215,7 +1215,7 @@ cite { color: fuchsia; }
 			metrics indicating a preferred underline width,
 			use that width,
 			otherwise behaves as <a class="css" data-link-type="maybe" href="#valdef-text-decoration-thickness-auto" id="ref-for-valdef-text-decoration-thickness-auto">auto</a>. 
-    <dt><dfn class="css" data-dfn-for="text-decoration-thickness" data-dfn-type="value" data-export id="valdef-text-decoration-thickness-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-text-decoration-thickness-length"></a></dfn> 
+    <dt><dfn class="css" data-dfn-for="text-decoration-thickness" data-dfn-type="value" data-export id="valdef-text-decoration-thickness-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a class="self-link" href="#valdef-text-decoration-thickness-length"></a></dfn> 
     <dd>
       Specifies the thickness of text decoration lines as a fixed length.
 			The UA must floor the actual value at one device pixel. 
@@ -1269,9 +1269,9 @@ cite { color: fuchsia; }
     <dt>line-throughs 
     <dd>
       Line-throughs essentially use the same sort of averaging as for alphabetic underlines,
-			but recompute the position when drawing across a descendant with a different computed <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size">font-size</a>.
+			but recompute the position when drawing across a descendant with a different computed <a class="property" data-link-type="propdesc">font-size</a>.
 			(This ensures that the text remains effectively “crossed out” despite any font size changes.)
-			For each run of <a data-link-type="dfn" href="#considered-text" id="ref-for-considered-text④">considered text</a> with the same <span class="property" id="ref-for-propdef-font-size①">font-size</span>,
+			For each run of <a data-link-type="dfn" href="#considered-text" id="ref-for-considered-text④">considered text</a> with the same <span class="property">font-size</span>,
 			compute an ideal position averaged from its font metrics.
 			To prevent superscripts and subscripts from throwing this position off-kilter,
 			an inline with a non-initial computed <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-inline-3/#propdef-vertical-align" id="ref-for-propdef-vertical-align①">vertical-align</a> is treated as having the ideal underline position of its parent.
@@ -1388,7 +1388,7 @@ cite { color: fuchsia; }
       <td>discrete 
    </table>
    <p>This property,
-	which is <em>not</em> a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand⑥">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration⑨">text-decoration</a> shorthand,
+	which is <em>not</em> a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand⑥">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration⑨">text-decoration</a> shorthand,
 	sets the position of an underline with respect to the text,
 	and defines its <a data-link-type="dfn" href="#underline-zero-position" id="ref-for-underline-zero-position">zero position</a> for further adjustment by <a class="property" data-link-type="propdesc" href="#propdef-text-underline-offset" id="ref-for-propdef-text-underline-offset①">text-underline-offset</a>.
 	It affects all decorations originating from this element,
@@ -1504,7 +1504,7 @@ cite { color: fuchsia; }
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-text-underline-offset">text-underline-offset</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①③">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one①④">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value②">&lt;percentage></a> 
+      <td class="prod">auto <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①③">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span id="ref-for-comb-one①④">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value②">&lt;percentage></a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>auto 
@@ -1528,7 +1528,7 @@ cite { color: fuchsia; }
       <td>by computed value 
    </table>
    <p>This property,
-	which is <em>not</em> a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#longhand" id="ref-for-longhand⑦">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration①①">text-decoration</a> shorthand,
+	which is <em>not</em> a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#longhand" id="ref-for-longhand⑦">sub-property</a> of the <a class="property" data-link-type="propdesc" href="#propdef-text-decoration" id="ref-for-propdef-text-decoration①①">text-decoration</a> shorthand,
 	sets the offset of underlines from their <a data-link-type="dfn" href="#underline-zero-position" id="ref-for-underline-zero-position①">zero position</a>.
 	Positive offsets represent distances outward from the text;
 	negative offsets inward.
@@ -1544,7 +1544,7 @@ cite { color: fuchsia; }
 			if <a class="css" data-link-type="maybe" href="#valdef-text-underline-position-from-font" id="ref-for-valdef-text-underline-position-from-font">from-font</a> was specified
 			and the UA was able to extract an appropriate metric to use
 			from the font.</p>
-    <dt><dfn class="css" data-dfn-for="text-underline-offset" data-dfn-type="value" data-export data-lt="<length>" id="valdef-text-underline-offset-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <a class="self-link" href="#valdef-text-underline-offset-length"></a></dfn>
+    <dt><dfn class="css" data-dfn-for="text-underline-offset" data-dfn-type="value" data-export data-lt="<length>" id="valdef-text-underline-offset-length"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <a class="self-link" href="#valdef-text-underline-offset-length"></a></dfn>
     <dd>
      <p>Specifies the offset of underlines as a fixed length. </p>
      <p class="note" role="note"><span>Note:</span> A length will inherit as a fixed value,
@@ -1923,7 +1923,7 @@ cite { color: fuchsia; }
 			They are decorated just like any other character. 
     <dt><dfn class="css" data-dfn-for="text-decoration-skip-spaces" data-dfn-type="value" data-export id="valdef-text-decoration-skip-spaces-all">all<a class="self-link" href="#valdef-text-decoration-skip-spaces-all"></a></dfn>
     <dd> Skip all <a data-link-type="dfn" href="#spacer" id="ref-for-spacer①">spacers</a>,
-			plus any adjacent <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing">letter-spacing</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing" id="ref-for-propdef-word-spacing">word-spacing</a>.
+			plus any adjacent <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing">letter-spacing</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing" id="ref-for-propdef-word-spacing">word-spacing</a>. 
     <dt><dfn class="css" data-dfn-for="text-decoration-skip-spaces" data-dfn-type="value" data-export id="valdef-text-decoration-skip-spaces-start">start<a class="self-link" href="#valdef-text-decoration-skip-spaces-start"></a></dfn>
     <dd> Skip all <a data-link-type="dfn" href="#spacer" id="ref-for-spacer②">spacers</a>,
 			plus any adjacent <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing" id="ref-for-propdef-letter-spacing①">letter-spacing</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing" id="ref-for-propdef-word-spacing①">word-spacing</a>,
@@ -2269,7 +2269,7 @@ cite { color: fuchsia; }
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-text-emphasis-color">text-emphasis-color</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color①" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a> 
+      <td class="prod"><a class="production css" data-link-type="type">&lt;color></a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>currentcolor 
@@ -2293,9 +2293,9 @@ cite { color: fuchsia; }
       <td>by computed value type 
    </table>
    <p>This property specifies the foreground color of the emphasis marks.</p>
-   <p class="note" role="note"><span>Note:</span> <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor">currentcolor</a> keyword computes to itself
-	and is resolved to the value of <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#color0" id="ref-for-color0①">color</a> after inheritance is performed.
-	This means <a class="property" data-link-type="propdesc" href="#propdef-text-emphasis-color" id="ref-for-propdef-text-emphasis-color②">text-emphasis-color</a> by default matches the text <span class="property" id="ref-for-color0②">color</span> even as <span class="property" id="ref-for-color0③">color</span> changes across elements.</p>
+   <p class="note" role="note"><span>Note:</span> <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor">currentcolor</a> keyword computes to itself
+	and is resolved to the value of <a class="property" data-link-type="propdesc">color</a> after inheritance is performed.
+	This means <a class="property" data-link-type="propdesc" href="#propdef-text-emphasis-color" id="ref-for-propdef-text-emphasis-color②">text-emphasis-color</a> by default matches the text <span class="property">color</span> even as <span class="property">color</span> changes across elements.</p>
    <h3 class="heading settled" data-level="3.3" id="text-emphasis-property"><span class="secno">3.3. </span><span class="content"> Emphasis Mark Shorthand: the <a class="property" data-link-type="propdesc" href="#propdef-text-emphasis" id="ref-for-propdef-text-emphasis①">text-emphasis</a> property</span><a class="self-link" href="#text-emphasis-property"></a></h3>
    <table class="def propdef" data-link-for-hint="text-emphasis">
     <tbody>
@@ -2488,7 +2488,7 @@ em rt { display: none; }   /* Hide ruby inside &lt;em> elements */
      Skip symbols.
 			Symbols in this definition includes
 			all <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit③">typographic character units</a> belonging to
-			the Unicode S* <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#unicode-general-category" id="ref-for-unicode-general-category①">general category</a> as well as any which are <code>NFKD</code>-equivalent <a data-link-type="biblio" href="#biblio-uax15">[UAX15]</a> to the following <a data-link-type="dfn" href="#character" id="ref-for-character③">characters</a> from the Unicode Po category:
+			the Unicode S* <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#unicode-general-category" id="ref-for-unicode-general-category①">general category</a> as well as any which are <code>NFKD</code>-equivalent <a data-link-type="biblio" href="#biblio-uax15">[UAX15]</a> to the following <a data-link-type="dfn" href="#character" id="ref-for-character③">characters</a> from the Unicode Po category: 
      <table class="data">
       <tbody>
        <tr>
@@ -2570,7 +2570,7 @@ em rt { display: none; }   /* Hide ruby inside &lt;em> elements */
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-text-shadow">text-shadow</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one③②">|</a> [ <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-color-3/#valuea-def-color" id="ref-for-valuea-def-color②" title="Expands to: aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | currentcolor | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | transparent | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen">&lt;color></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt①">?</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all①">&amp;&amp;</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{2,4}</a> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-comma" id="ref-for-mult-comma">#</a> 
+      <td class="prod">none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one③②">|</a> [ <a class="production css" data-link-type="type">&lt;color></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt①">?</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all①">&amp;&amp;</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{2,4}</a> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-comma" id="ref-for-mult-comma">#</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>none 
@@ -2585,7 +2585,7 @@ em rt { display: none; }   /* Hide ruby inside &lt;em> elements */
       <td>n/a 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>either the keyword <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#box-shadow-none" id="ref-for-box-shadow-none">none</a> or
+      <td>either the keyword <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#box-shadow-none" id="ref-for-box-shadow-none">none</a> or
 a list, each item consisting of four absolute lengths
 plus a computed color 
      <tr>
@@ -2594,20 +2594,20 @@ plus a computed color
      <tr>
       <th><a href="https://www.w3.org/TR/web-animations/#animation-type">Animation type:</a>
       <td>by computed value,
-treating <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#box-shadow-none" id="ref-for-box-shadow-none①">none</a> as a zero-item list
+treating <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#box-shadow-none" id="ref-for-box-shadow-none①">none</a> as a zero-item list
 and appending blank shadows (<span class="css">transparent 0 0 0 0</span>)
 as needed to match the longer list
 if the shorter list is otherwise compatible with the longer one 
    </table>
    <p>This property accepts a comma-separated list of shadow effects
 	to be applied to the text of the element.
-	Values are interpreted as for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>.
-	(But note that the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#shadow-inset" id="ref-for-shadow-inset">inset</a> keyword are not allowed.)
+	Values are interpreted as for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>.
+	(But note that the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#shadow-inset" id="ref-for-shadow-inset">inset</a> keyword are not allowed.)
 	Each layer shadows the element’s text and all its text decorations
 	(composited together).
 	If the color of the shadow is not specified,
-	it defaults to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor①">currentColor</a>,
-	i.e. the shadow’s color is taken from the element’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-color-3/#color0" id="ref-for-color0④">color</a> property.</p>
+	it defaults to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-color/#valdef-color-currentcolor" id="ref-for-valdef-color-currentcolor①">currentColor</a>,
+	i.e. the shadow’s color is taken from the element’s <a class="property" data-link-type="propdesc">color</a> property.</p>
    <p>The shadow effects are applied front-to-back:
 	the first shadow is on top.
 	The shadows may thus overlay each other,
@@ -2623,12 +2623,12 @@ if the shorter list is otherwise compatible with the longer one
 	It is undefined whether a given shadow layer shadows
 	each glyph or decoration independently
 	or if the text and/or decorations are flattened and then shadowed.</p>
-   <p>Unlike <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow①">box-shadow</a>, text shadows are not clipped to the shadowed shape
+   <p>Unlike <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow①">box-shadow</a>, text shadows are not clipped to the shadowed shape
 	and may show through if the text is partially-transparent.
 	Like <span class="property" id="ref-for-propdef-box-shadow②">box-shadow</span>, text shadows do not influence layout,
 	and do not trigger scrolling
 	or increase the size of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scrollable-overflow-region" id="ref-for-scrollable-overflow-region">scrollable overflow region</a>.</p>
-   <p>Also unlike <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow③">box-shadow</a>,
+   <p>Also unlike <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow③">box-shadow</a>,
 	the <a data-link-type="dfn">spread distance</a> is strictly interpreted as outset distance
 	from any point of the glyph outline,
 	and therefore, similar to the blur radius,
@@ -2637,7 +2637,7 @@ if the shorter list is otherwise compatible with the longer one
 	of that defined in the 1998 <a href="https://www.w3.org/TR/1998/REC-CSS2-19980512">CSS2 Recommendation</a>.</p>
    <p>The <span class="css">text-shadow</span> property applies to both the <code>::first-line</code> and <code>::first-letter</code> pseudo-elements.</p>
    <p>Level 4 adds a spread radius argument to <a class="property" data-link-type="propdesc" href="#propdef-text-shadow" id="ref-for-propdef-text-shadow②">text-shadow</a>,
-	using the same syntax and interpretation as for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow④">box-shadow</a>,
+	using the same syntax and interpretation as for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow④">box-shadow</a>,
 	except that corners are always rounded
 	(since the geometry of a glyph is not so simple as a box).</p>
    <h2 class="heading settled" data-level="5" id="painting"><span class="secno">5. </span><span class="content"> Painting Text Decorations</span><a class="self-link" href="#painting"></a></h2>
@@ -2656,7 +2656,7 @@ if the shorter list is otherwise compatible with the longer one
 	they are drawn over non-positioned content and just below any positioned descendants
 	(immediately below layer #8 in CSS2.1 Appendix E).</p>
    <h3 class="heading settled" data-level="5.2" id="overflow"><span class="secno">5.2. </span><span class="content"> Overflow of Text Decorations</span><a class="self-link" href="#overflow"></a></h3>
-   <p>Text decorations that leak outside a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#box" id="ref-for-box①">box</a> are considered <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#ink-overflow" id="ref-for-ink-overflow">ink overflow</a>:
+   <p>Text decorations that leak outside a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#box" id="ref-for-box①">box</a> are considered <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#ink-overflow" id="ref-for-ink-overflow">ink overflow</a>:
 	they do not extend the <a data-link-type="dfn" href="https://drafts.csswg.org/css-overflow-3/#scrollable-overflow-region" id="ref-for-scrollable-overflow-region①">scrollable overflow region</a>. <a data-link-type="biblio" href="#biblio-css-overflow-3">[css-overflow-3]</a></p>
    <h2 class="no-num heading settled" id="acknowledgements"><span class="content"> Appendix A: Acknowledgements</span><a class="self-link" href="#acknowledgements"></a></h2>
    <p>This specification would not have been possible without the help from:
@@ -2970,42 +2970,42 @@ Changes</span><a class="self-link" href="#changes"></a></h2>
    <li><a href="#underline-zero-position">zero position</a><span>, in §2.8.1</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-propdef-box-shadow">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-box-shadow">4. 
 Text Shadows: the text-shadow property</a> <a href="#ref-for-propdef-box-shadow①">(2)</a> <a href="#ref-for-propdef-box-shadow②">(3)</a> <a href="#ref-for-propdef-box-shadow③">(4)</a> <a href="#ref-for-propdef-box-shadow④">(5)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-shadow-inset">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#shadow-inset">https://drafts.csswg.org/css-backgrounds-3/#shadow-inset</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#shadow-inset">https://drafts.csswg.org/css-backgrounds/#shadow-inset</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-shadow-inset">4. 
 Text Shadows: the text-shadow property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-box-shadow-none">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#box-shadow-none">https://drafts.csswg.org/css-backgrounds-3/#box-shadow-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#box-shadow-none">https://drafts.csswg.org/css-backgrounds/#box-shadow-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-box-shadow-none">4. 
 Text Shadows: the text-shadow property</a> <a href="#ref-for-box-shadow-none①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fragment">
-   <a href="https://drafts.csswg.org/css-break-3/#fragment">https://drafts.csswg.org/css-break-3/#fragment</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#fragment">https://drafts.csswg.org/css-break/#fragment</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fragment">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade">https://drafts.csswg.org/css-cascade-5/#cascade</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade">https://drafts.csswg.org/css-cascade/#cascade</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade">2.1. 
 Text Decoration Lines: the text-decoration-line property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-longhand">
-   <a href="https://drafts.csswg.org/css-cascade-5/#longhand">https://drafts.csswg.org/css-cascade-5/#longhand</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#longhand">https://drafts.csswg.org/css-cascade/#longhand</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-longhand">2.1. 
 Text Decoration Lines: the text-decoration-line property</a> <a href="#ref-for-longhand①">(2)</a> <a href="#ref-for-longhand②">(3)</a>
@@ -3022,14 +3022,14 @@ Text Underline Offset: the text-underline-offset property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-shorthand-property">
-   <a href="https://drafts.csswg.org/css-cascade-5/#shorthand-property">https://drafts.csswg.org/css-cascade-5/#shorthand-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#shorthand-property">https://drafts.csswg.org/css-cascade/#shorthand-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-shorthand-property">2.1. 
 Text Decoration Lines: the text-decoration-line property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-longhand">
-   <a href="https://drafts.csswg.org/css-cascade-5/#longhand">https://drafts.csswg.org/css-cascade-5/#longhand</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#longhand">https://drafts.csswg.org/css-cascade/#longhand</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-longhand">2.1. 
 Text Decoration Lines: the text-decoration-line property</a> <a href="#ref-for-longhand①">(2)</a> <a href="#ref-for-longhand②">(3)</a>
@@ -3045,30 +3045,8 @@ Text Underline Position: the text-underline-position property</a>
 Text Underline Offset: the text-underline-offset property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-valuea-def-color">
-   <a href="https://drafts.csswg.org/css-color-3/#valuea-def-color">https://drafts.csswg.org/css-color-3/#valuea-def-color</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-valuea-def-color">2.3. 
-Text Decoration Color: the text-decoration-color property</a>
-    <li><a href="#ref-for-valuea-def-color①">3.2. 
-Emphasis Mark Color: the text-emphasis-color property</a>
-    <li><a href="#ref-for-valuea-def-color②">4. 
-Text Shadows: the text-shadow property</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-color0">
-   <a href="https://drafts.csswg.org/css-color-3/#color0">https://drafts.csswg.org/css-color-3/#color0</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-color0">2.1. 
-Text Decoration Lines: the text-decoration-line property</a>
-    <li><a href="#ref-for-color0①">3.2. 
-Emphasis Mark Color: the text-emphasis-color property</a> <a href="#ref-for-color0②">(2)</a> <a href="#ref-for-color0③">(3)</a>
-    <li><a href="#ref-for-color0④">4. 
-Text Shadows: the text-shadow property</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-color-currentcolor">
-   <a href="https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor">https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-color/#valdef-color-currentcolor">https://drafts.csswg.org/css-color/#valdef-color-currentcolor</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-color-currentcolor">3.2. 
 Emphasis Mark Color: the text-emphasis-color property</a>
@@ -3077,35 +3055,35 @@ Text Shadows: the text-shadow property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-anonymous">
-   <a href="https://drafts.csswg.org/css-display-3/#anonymous">https://drafts.csswg.org/css-display-3/#anonymous</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#anonymous">https://drafts.csswg.org/css-display/#anonymous</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-anonymous">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-atomic-inline">
-   <a href="https://drafts.csswg.org/css-display-3/#atomic-inline">https://drafts.csswg.org/css-display-3/#atomic-inline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#atomic-inline">https://drafts.csswg.org/css-display/#atomic-inline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-atomic-inline">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a> <a href="#ref-for-atomic-inline①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a> <a href="#ref-for-block-container①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-level">
-   <a href="https://drafts.csswg.org/css-display-3/#block-level">https://drafts.csswg.org/css-display-3/#block-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-level">https://drafts.csswg.org/css-display/#block-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-level">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-box">
-   <a href="https://drafts.csswg.org/css-display-3/#box">https://drafts.csswg.org/css-display-3/#box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#box">https://drafts.csswg.org/css-display/#box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-box">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
@@ -3114,52 +3092,45 @@ Overflow of Text Decorations</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-in-flow">
-   <a href="https://drafts.csswg.org/css-display-3/#in-flow">https://drafts.csswg.org/css-display-3/#in-flow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#in-flow">https://drafts.csswg.org/css-display/#in-flow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-in-flow">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a> <a href="#ref-for-in-flow①">(2)</a> <a href="#ref-for-in-flow②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-box">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-box">https://drafts.csswg.org/css-display-3/#inline-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-box">https://drafts.csswg.org/css-display/#inline-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-box">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a> <a href="#ref-for-inline-box①">(2)</a> <a href="#ref-for-inline-box②">(3)</a> <a href="#ref-for-inline-box③">(4)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-formatting-context">https://drafts.csswg.org/css-display-3/#inline-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-formatting-context">https://drafts.csswg.org/css-display/#inline-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-formatting-context">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-level">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-level">https://drafts.csswg.org/css-display-3/#inline-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-level">https://drafts.csswg.org/css-display/#inline-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-level">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-non-replaced">
-   <a href="https://drafts.csswg.org/css-display-3/#non-replaced">https://drafts.csswg.org/css-display-3/#non-replaced</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#non-replaced">https://drafts.csswg.org/css-display/#non-replaced</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-non-replaced">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a> <a href="#ref-for-non-replaced①">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-font-size">
-   <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size">https://drafts.csswg.org/css-fonts-3/#propdef-font-size</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-font-size">2.5. 
-Determining the Position and Thickness of Line Decorations</a> <a href="#ref-for-propdef-font-size①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-first-available-font">
@@ -3220,7 +3191,7 @@ Overflow of Text Decorations</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-relative-position">
-   <a href="https://drafts.csswg.org/css-position-3/#relative-position">https://drafts.csswg.org/css-position-3/#relative-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#relative-position">https://drafts.csswg.org/css-position/#relative-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-relative-position">2. 
 Line Decoration: Underline, Overline, and Strike-Through</a>
@@ -3262,7 +3233,7 @@ Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-letter">
-   <a href="https://drafts.csswg.org/css-syntax-3/#letter">https://drafts.csswg.org/css-syntax-3/#letter</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#letter">https://drafts.csswg.org/css-syntax/#letter</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-letter">1.3. Terminology</a>
    </ul>
@@ -3285,7 +3256,7 @@ Emphasis Mark Skip: the text-emphasis-skip property</a>
   <aside class="dfn-panel" data-for="term-for-propdef-letter-spacing">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-letter-spacing">https://drafts.csswg.org/css-text-3/#propdef-letter-spacing</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-letter-spacing">2.10.4.
+    <li><a href="#ref-for-propdef-letter-spacing">2.10.4. 
 Skipping Spaces: the text-decoration-skip-spaces property</a> <a href="#ref-for-propdef-letter-spacing①">(2)</a> <a href="#ref-for-propdef-letter-spacing②">(3)</a>
    </ul>
   </aside>
@@ -3310,7 +3281,7 @@ Emphasis Mark Skip: the text-emphasis-skip property</a>
   <aside class="dfn-panel" data-for="term-for-propdef-word-spacing">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-word-spacing">https://drafts.csswg.org/css-text-3/#propdef-word-spacing</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-word-spacing">2.10.4.
+    <li><a href="#ref-for-propdef-word-spacing">2.10.4. 
 Skipping Spaces: the text-decoration-skip-spaces property</a> <a href="#ref-for-propdef-word-spacing①">(2)</a> <a href="#ref-for-propdef-word-spacing②">(3)</a>
    </ul>
   </aside>
@@ -3484,21 +3455,21 @@ Line Decoration: Underline, Overline, and Strike-Through</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-fill">
-   <a href="https://drafts.fxtf.org/fill-stroke-3/#propdef-fill">https://drafts.fxtf.org/fill-stroke-3/#propdef-fill</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/fill-stroke/#propdef-fill">https://drafts.fxtf.org/fill-stroke/#propdef-fill</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-fill">2.1. 
 Text Decoration Lines: the text-decoration-line property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-stroke">
-   <a href="https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke">https://drafts.fxtf.org/fill-stroke-3/#propdef-stroke</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/fill-stroke/#propdef-stroke">https://drafts.fxtf.org/fill-stroke/#propdef-stroke</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-stroke">2.1. 
 Text Decoration Lines: the text-decoration-line property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-pseudo-element">
-   <a href="https://drafts.csswg.org/selectors-4/#pseudo-element">https://drafts.csswg.org/selectors-4/#pseudo-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#pseudo-element">https://drafts.csswg.org/selectors/#pseudo-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-pseudo-element">1.1. 
 Module Interactions</a>
@@ -3519,18 +3490,12 @@ Module Interactions</a>
      <li><span class="dfn-paneled" id="term-for-fragment">fragment</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-cascade">cascade</span>
      <li><span class="dfn-paneled" id="term-for-longhand">longhand</span>
      <li><span class="dfn-paneled" id="term-for-shorthand-property">shorthand</span>
      <li><span class="dfn-paneled" id="term-for-longhand①">sub-property</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-color-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-valuea-def-color">&lt;color></span>
-     <li><span class="dfn-paneled" id="term-for-color0">color</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-color-4]</a> defines the following terms:
@@ -3551,11 +3516,6 @@ Module Interactions</a>
      <li><span class="dfn-paneled" id="term-for-inline-formatting-context">inline formatting context</span>
      <li><span class="dfn-paneled" id="term-for-inline-level">inline-level</span>
      <li><span class="dfn-paneled" id="term-for-non-replaced">non-replaced</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS-FONTS-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-font-size">font-size</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-fonts-4]</a> defines the following terms:
@@ -3660,12 +3620,10 @@ Module Interactions</a>
    <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="https://www.w3.org/TR/css-backgrounds-3/">CSS Backgrounds and Borders Module Level 3</a>. 22 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-backgrounds-3/">https://www.w3.org/TR/css-backgrounds-3/</a>
    <dt id="biblio-css-break-3">[CSS-BREAK-3]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/css-break-3/">https://www.w3.org/TR/css-break-3/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
-   <dt id="biblio-css-color-3">[CSS-COLOR-3]
-   <dd>Tantek Çelik; Chris Lilley; David Baron. <a href="https://www.w3.org/TR/css-color-3/">CSS Color Module Level 3</a>. 19 June 2018. REC. URL: <a href="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-color-4">[CSS-COLOR-4]
-   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
+   <dd>Tab Atkins Jr.; Chris Lilley. <a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>. 12 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-color-4/">https://www.w3.org/TR/css-color-4/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
    <dt id="biblio-css-fonts-3">[CSS-FONTS-3]
@@ -3685,7 +3643,7 @@ Module Interactions</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
    <dd>Tab Atkins Jr.; Simon Sapin. <a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a>. 16 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-syntax-3/">https://www.w3.org/TR/css-syntax-3/</a>
    <dt id="biblio-css-text-3">[CSS-TEXT-3]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a>. 6 June 2019. CR. URL: <a href="https://www.w3.org/TR/css-values-3/">https://www.w3.org/TR/css-values-3/</a>
    <dt id="biblio-css-values-4">[CSS-VALUES-4]

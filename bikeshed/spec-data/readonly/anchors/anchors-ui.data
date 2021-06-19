@@ -326,8 +326,8 @@ https://www.w3.org/TR/uievents/#dictdef-uieventinit
 -
 Uint16Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Uint16Array
@@ -336,8 +336,8 @@ https://heycam.github.io/webidl/#idl-Uint16Array
 -
 Uint32Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Uint32Array
@@ -346,8 +346,8 @@ https://heycam.github.io/webidl/#idl-Uint32Array
 -
 Uint8Array
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Uint8Array
@@ -356,8 +356,8 @@ https://heycam.github.io/webidl/#idl-Uint8Array
 -
 Uint8ClampedArray
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-Uint8ClampedArray

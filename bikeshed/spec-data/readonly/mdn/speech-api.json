@@ -200,7 +200,7 @@
             "title": "SpeechGrammar"
         }
     ],
-    "dom-speechgrammarlist-speechgrammarlist": [
+    "speechreco-speechgrammarlist": [
         {
             "engines": [
                 "blink"
@@ -492,7 +492,7 @@
             "title": "SpeechGrammarList.length"
         }
     ],
-    "speechgrammarlist": [
+    "dom-speechgrammarlist-speechgrammarlist": [
         {
             "engines": [],
             "prefixed": [
@@ -560,8 +560,7 @@
         {
             "engines": [],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "SpeechRecognition",
@@ -597,12 +596,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "prefix": "webkit",
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "prefix": "webkit",
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "prefix": "webkit",
@@ -626,8 +623,7 @@
     "dom-speechrecognition-abort": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "abort",
@@ -661,10 +657,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -685,8 +681,7 @@
     "speechreco-events": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "audioend_event",
@@ -718,10 +713,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -734,13 +729,10 @@
                 }
             },
             "title": "SpeechRecognition: audioend event"
-        }
-    ],
-    "eventdef-speechrecognition-audiostart": [
+        },
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "audiostart_event",
@@ -772,10 +764,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true
@@ -788,13 +780,471 @@
                 }
             },
             "title": "SpeechRecognition: audiostart event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "end_event",
+            "slug": "API/SpeechRecognition/end_event",
+            "summary": "The end event of the Web Speech API SpeechRecognition object is fired when the speech recognition service has disconnected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: end event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "error_event",
+            "slug": "API/SpeechRecognition/error_event",
+            "summary": "The error event of the Web Speech API SpeechRecognition object is fired when a speech recognition error occurs.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: error event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "nomatch_event",
+            "slug": "API/SpeechRecognition/nomatch_event",
+            "summary": "The nomatch event of the Web Speech API is fired when the speech recognition service returns a final result with no significant recognition.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: nomatch event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "result_event",
+            "slug": "API/SpeechRecognition/result_event",
+            "summary": "The result event of the Web Speech API is fired when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: result event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "soundend_event",
+            "slug": "API/SpeechRecognition/soundend_event",
+            "summary": "The soundend event of the Web Speech API is fired when any sound — recognisable speech or not — has stopped being detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: soundend event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "soundstart_event",
+            "slug": "API/SpeechRecognition/soundstart_event",
+            "summary": "The soundstart event of the Web Speech API is fired when any sound — recognisable speech or not — has been detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: soundstart event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "speechend_event",
+            "slug": "API/SpeechRecognition/speechend_event",
+            "summary": "The speechend event of the Web Speech API is fired when speech recognized by the speech recognition service has stopped being detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: speechend event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "speechstart_event",
+            "slug": "API/SpeechRecognition/speechstart_event",
+            "summary": "The speechstart event of the Web Speech API is fired when sound recognized by the speech recognition service as speech has been detected.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: speechstart event"
+        },
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/SpeechRecognition.json",
+            "name": "start_event",
+            "slug": "API/SpeechRecognition/start_event",
+            "summary": "The start event of the Web Speech API SpeechRecognition object is fired when the speech recognition service has begun listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechRecognition: start event"
         }
     ],
     "dom-speechrecognition-continuous": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "continuous",
@@ -828,10 +1278,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -847,114 +1297,6 @@
                 }
             },
             "title": "SpeechRecognition.continuous"
-        }
-    ],
-    "eventdef-speechrecognition-end": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "end_event",
-            "slug": "API/SpeechRecognition/end_event",
-            "summary": "The end event of the Web Speech API SpeechRecognition object is fired when the speech recognition service has disconnected.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: end event"
-        }
-    ],
-    "eventdef-speechrecognition-error": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "error_event",
-            "slug": "API/SpeechRecognition/error_event",
-            "summary": "The error event of the Web Speech API SpeechRecognition object is fired when a speech recognition error occurs.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: error event"
         }
     ],
     "dom-speechrecognition-grammars": [
@@ -1018,8 +1360,7 @@
     "dom-speechrecognition-interimresults": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "interimResults",
@@ -1053,10 +1394,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1077,8 +1418,7 @@
     "dom-speechrecognition-lang": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "lang",
@@ -1112,10 +1452,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1136,8 +1476,7 @@
     "dom-speechrecognition-maxalternatives": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "maxAlternatives",
@@ -1171,10 +1510,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1192,65 +1531,10 @@
             "title": "SpeechRecognition.maxAlternatives"
         }
     ],
-    "eventdef-speechrecognition-nomatch": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "nomatch_event",
-            "slug": "API/SpeechRecognition/nomatch_event",
-            "summary": "The nomatch event of the Web Speech API is fired when the speech recognition service returns a final result with no significant recognition.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: nomatch event"
-        }
-    ],
     "dom-speechrecognition-onaudioend": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onaudioend",
@@ -1284,10 +1568,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1308,8 +1592,7 @@
     "dom-speechrecognition-onaudiostart": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onaudiostart",
@@ -1343,10 +1626,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1367,8 +1650,7 @@
     "dom-speechrecognition-onend": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onend",
@@ -1402,10 +1684,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1426,8 +1708,7 @@
     "dom-speechrecognition-onerror": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onerror",
@@ -1461,10 +1742,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1485,8 +1766,7 @@
     "dom-speechrecognition-onnomatch": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onnomatch",
@@ -1520,10 +1800,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1544,8 +1824,7 @@
     "dom-speechrecognition-onresult": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onresult",
@@ -1579,10 +1858,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1603,8 +1882,7 @@
     "dom-speechrecognition-onsoundend": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onsoundend",
@@ -1638,10 +1916,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1662,8 +1940,7 @@
     "dom-speechrecognition-onsoundstart": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onsoundstart",
@@ -1697,10 +1974,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1721,8 +1998,7 @@
     "dom-speechrecognition-onspeechend": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onspeechend",
@@ -1756,10 +2032,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1780,8 +2056,7 @@
     "dom-speechrecognition-onspeechstart": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onspeechstart",
@@ -1815,10 +2090,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1839,8 +2114,7 @@
     "dom-speechrecognition-onstart": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "onstart",
@@ -1874,10 +2148,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -1895,281 +2169,10 @@
             "title": "SpeechRecognition.onstart"
         }
     ],
-    "eventdef-speechrecognition-result": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "result_event",
-            "slug": "API/SpeechRecognition/result_event",
-            "summary": "The result event of the Web Speech API is fired when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: result event"
-        }
-    ],
-    "eventdef-speechrecognition-soundend": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "soundend_event",
-            "slug": "API/SpeechRecognition/soundend_event",
-            "summary": "The soundend event of the Web Speech API is fired when any sound — recognisable speech or not — has stopped being detected.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: soundend event"
-        }
-    ],
-    "eventdef-speechrecognition-soundstart": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "soundstart_event",
-            "slug": "API/SpeechRecognition/soundstart_event",
-            "summary": "The soundstart event of the Web Speech API is fired when any sound — recognisable speech or not — has been detected.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: soundstart event"
-        }
-    ],
-    "eventdef-speechrecognition-speechend": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "speechend_event",
-            "slug": "API/SpeechRecognition/speechend_event",
-            "summary": "The speechend event of the Web Speech API is fired when speech recognized by the speech recognition service has stopped being detected.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: speechend event"
-        }
-    ],
-    "eventdef-speechrecognition-speechstart": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "speechstart_event",
-            "slug": "API/SpeechRecognition/speechstart_event",
-            "summary": "The speechstart event of the Web Speech API is fired when sound recognized by the speech recognition service as speech has been detected.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: speechstart event"
-        }
-    ],
     "dom-speechrecognition-start": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "start",
@@ -2203,10 +2206,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -2224,65 +2227,10 @@
             "title": "SpeechRecognition.start()"
         }
     ],
-    "eventdef-speechrecognition-start": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/SpeechRecognition.json",
-            "name": "start_event",
-            "slug": "API/SpeechRecognition/start_event",
-            "summary": "The start event of the Web Speech API SpeechRecognition object is fired when the speech recognition service has begun listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": true
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": false
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": true
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechRecognition: start event"
-        }
-    ],
     "dom-speechrecognition-stop": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "stop",
@@ -2316,10 +2264,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -2341,8 +2289,7 @@
         {
             "engines": [],
             "prefixed": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognition.json",
             "name": "SpeechRecognition",
@@ -2378,12 +2325,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "prefix": "webkit",
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "prefix": "webkit",
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "prefix": "webkit",
@@ -2411,8 +2356,7 @@
     "dom-speechrecognitionalternative-confidence": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionAlternative.json",
             "name": "confidence",
@@ -2446,10 +2390,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -2470,8 +2414,7 @@
     "dom-speechrecognitionalternative-transcript": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionAlternative.json",
             "name": "transcript",
@@ -2505,10 +2448,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -2529,8 +2472,7 @@
     "speechreco-alternative": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionAlternative.json",
             "name": "SpeechRecognitionAlternative",
@@ -2564,10 +2506,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -2588,8 +2530,7 @@
     "dom-speechrecognitionerrorevent-error": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionErrorEvent.json",
             "name": "error",
@@ -2621,10 +2562,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -2642,8 +2583,7 @@
     "dom-speechrecognitionerrorevent-message": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionErrorEvent.json",
             "name": "message",
@@ -2675,10 +2615,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "12.0"
@@ -2696,8 +2636,7 @@
     "speechrecognitionerrorevent": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionErrorEvent.json",
             "name": "SpeechRecognitionErrorEvent",
@@ -2745,10 +2684,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": [
                     {
@@ -2790,8 +2729,7 @@
     "dom-speechrecognitionevent-resultindex": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionEvent.json",
             "name": "resultIndex",
@@ -2825,10 +2763,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -2849,8 +2787,7 @@
     "dom-speechrecognitionevent-results": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionEvent.json",
             "name": "results",
@@ -2884,10 +2821,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -2907,9 +2844,7 @@
     ],
     "speechreco-event": [
         {
-            "engines": [
-                "webkit"
-            ],
+            "engines": [],
             "prefixed": [
                 "blink"
             ],
@@ -2947,10 +2882,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "prefix": "webkit",
@@ -2974,8 +2909,7 @@
     "dom-speechrecognitionresult-isfinal": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionResult.json",
             "name": "isFinal",
@@ -3009,10 +2943,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -3033,8 +2967,7 @@
     "dom-speechrecognitionresult-item": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionResult.json",
             "name": "item",
@@ -3068,10 +3001,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -3092,8 +3025,7 @@
     "dom-speechrecognitionresult-length": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionResult.json",
             "name": "length",
@@ -3127,10 +3059,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -3151,8 +3083,7 @@
     "speechreco-result": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionResult.json",
             "name": "SpeechRecognitionResult",
@@ -3186,10 +3117,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -3210,8 +3141,7 @@
     "dom-speechrecognitionresultlist-item": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionResultList.json",
             "name": "item",
@@ -3245,10 +3175,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -3269,8 +3199,7 @@
     "dom-speechrecognitionresultlist-length": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionResultList.json",
             "name": "length",
@@ -3304,10 +3233,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -3328,8 +3257,7 @@
     "speechreco-resultlist": [
         {
             "engines": [
-                "blink",
-                "webkit"
+                "blink"
             ],
             "filename": "api/SpeechRecognitionResultList.json",
             "name": "SpeechRecognitionResultList",
@@ -3363,10 +3291,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": true,
@@ -3408,9 +3336,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3463,9 +3404,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3517,9 +3471,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3573,10 +3540,24 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62",
-                    "notes": "In Android, <code>pause()</code> ends the current utterance. <code>pause()</code> behaves the same as <code>cancel()</code>."
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62",
+                        "notes": "In Android, <code>pause()</code> ends the current utterance. <code>pause()</code> behaves the same as <code>cancel()</code>."
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ],
+                        "notes": "In Android, <code>pause()</code> ends the current utterance. <code>pause()</code> behaves the same as <code>cancel()</code>."
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3630,9 +3611,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3685,9 +3679,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3740,9 +3747,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3795,9 +3815,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3850,9 +3883,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3881,7 +3927,7 @@
             "title": "SpeechSynthesis.speaking"
         }
     ],
-    "eventdef-speechsynthesis-voiceschanged": [
+    "tts-events": [
         {
             "engines": [
                 "blink",
@@ -3905,9 +3951,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3960,9 +4019,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -3994,6 +4066,77 @@
                 "title": "Speech Synthesis API"
             },
             "title": "SpeechSynthesis"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "SpeechSynthesisUtterance",
+            "slug": "API/SpeechSynthesisUtterance",
+            "summary": "The SpeechSynthesisUtterance interface of the Web Speech API represents a speech request. It contains the content the speech service should read and information about how to read it (e.g. language, pitch and volume.)",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "18"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "See <a href='https://crbug.com/487255'>bug 487255</a>"
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "caniuse": {
+                "feature": "speech-synthesis",
+                "title": "Speech Synthesis API"
+            },
+            "title": "SpeechSynthesisUtterance"
         },
         {
             "engines": [
@@ -4078,9 +4221,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4133,9 +4289,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4189,9 +4358,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4244,9 +4426,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4299,9 +4494,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4354,9 +4562,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4404,14 +4625,27 @@
                     "version_added": "33"
                 },
                 "edge": {
-                    "version_added": "14"
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4460,14 +4694,27 @@
                     "version_added": "33"
                 },
                 "edge": {
-                    "version_added": "14"
+                    "version_added": "18"
                 },
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4496,7 +4743,7 @@
             "title": "SpeechSynthesisUtterance.SpeechSynthesisUtterance()"
         }
     ],
-    "eventdef-speechsynthesisutterance-boundary": [
+    "utterance-events": [
         {
             "engines": [
                 "blink",
@@ -4525,9 +4772,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4578,9 +4838,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4607,9 +4880,7 @@
                 }
             },
             "title": "SpeechSynthesisUtterance: end event"
-        }
-    ],
-    "eventdef-speechsynthesisutterance-error": [
+        },
         {
             "engines": [
                 "blink",
@@ -4633,9 +4904,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4662,64 +4946,7 @@
                 }
             },
             "title": "SpeechSynthesisUtterance: error event"
-        }
-    ],
-    "dom-speechsynthesisutterance-lang": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "lang",
-            "slug": "API/SpeechSynthesisUtterance/lang",
-            "summary": "The lang property of the SpeechSynthesisUtterance interface gets and sets the language of the utterance.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance.lang"
-        }
-    ],
-    "eventdef-speechsynthesisutterance-mark": [
+        },
         {
             "engines": [
                 "blink",
@@ -4743,9 +4970,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4772,6 +5012,272 @@
                 }
             },
             "title": "SpeechSynthesisUtterance: mark event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "pause_event",
+            "slug": "API/SpeechSynthesisUtterance/pause_event",
+            "summary": "The pause event of the Web Speech API SpeechSynthesisUtterance object is fired when the utterance is paused part way through.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: pause event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "resume_event",
+            "slug": "API/SpeechSynthesisUtterance/resume_event",
+            "summary": "The resume event of the Web Speech API SpeechSynthesisUtterance object is fired when a paused utterance is resumed.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: resume event"
+        },
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "start_event",
+            "slug": "API/SpeechSynthesisUtterance/start_event",
+            "summary": "The start event of the Web Speech API SpeechSynthesisUtterance object is fired when the utterance has begun to be spoken.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance: start event"
+        }
+    ],
+    "dom-speechsynthesisutterance-lang": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "api/SpeechSynthesisUtterance.json",
+            "name": "lang",
+            "slug": "API/SpeechSynthesisUtterance/lang",
+            "summary": "The lang property of the SpeechSynthesisUtterance interface gets and sets the language of the utterance.",
+            "support": {
+                "chrome": {
+                    "version_added": "33"
+                },
+                "chrome_android": {
+                    "version_added": "33"
+                },
+                "edge": {
+                    "version_added": "14"
+                },
+                "firefox": {
+                    "version_added": "49"
+                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "21"
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": "7"
+                },
+                "safari_ios": {
+                    "version_added": "7"
+                },
+                "samsunginternet_android": {
+                    "version_added": "3.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "SpeechSynthesisUtterance.lang"
         }
     ],
     "dom-speechsynthesisutterance-onboundary": [
@@ -4803,9 +5309,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4858,9 +5377,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4913,9 +5445,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -4968,9 +5513,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5023,9 +5581,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5078,9 +5649,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5133,9 +5717,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5164,61 +5761,6 @@
             "title": "SpeechSynthesisUtterance.onstart"
         }
     ],
-    "eventdef-speechsynthesisutterance-pause": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "pause_event",
-            "slug": "API/SpeechSynthesisUtterance/pause_event",
-            "summary": "The pause event of the Web Speech API SpeechSynthesisUtterance object is fired when the utterance is paused part way through.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance: pause event"
-        }
-    ],
     "dom-speechsynthesisutterance-pitch": [
         {
             "engines": [
@@ -5243,9 +5785,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5298,9 +5853,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5329,116 +5897,6 @@
             "title": "SpeechSynthesisUtterance.rate"
         }
     ],
-    "eventdef-speechsynthesisutterance-resume": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "resume_event",
-            "slug": "API/SpeechSynthesisUtterance/resume_event",
-            "summary": "The resume event of the Web Speech API SpeechSynthesisUtterance object is fired when a paused utterance is resumed.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance: resume event"
-        }
-    ],
-    "eventdef-speechsynthesisutterance-start": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "start_event",
-            "slug": "API/SpeechSynthesisUtterance/start_event",
-            "summary": "The start event of the Web Speech API SpeechSynthesisUtterance object is fired when the utterance has begun to be spoken.",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance: start event"
-        }
-    ],
     "dom-speechsynthesisutterance-text": [
         {
             "engines": [
@@ -5463,9 +5921,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5518,9 +5989,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5573,9 +6057,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5604,62 +6101,6 @@
             "title": "SpeechSynthesisUtterance.volume"
         }
     ],
-    "speechsynthesisutterance": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/SpeechSynthesisUtterance.json",
-            "name": "SpeechSynthesisUtterance",
-            "slug": "API/SpeechSynthesisUtterance",
-            "summary": "The SpeechSynthesisUtterance interface of the Web Speech API represents a speech request. It contains the content the speech service should read and information about how to read it (e.g. language, pitch and volume.)",
-            "support": {
-                "chrome": {
-                    "version_added": "33"
-                },
-                "chrome_android": {
-                    "version_added": "33"
-                },
-                "edge": {
-                    "version_added": "14"
-                },
-                "firefox": {
-                    "version_added": "49"
-                },
-                "firefox_android": {
-                    "version_added": "62"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "21"
-                },
-                "opera_android": {
-                    "version_added": false
-                },
-                "safari": {
-                    "version_added": "7"
-                },
-                "safari_ios": {
-                    "version_added": "7"
-                },
-                "samsunginternet_android": {
-                    "version_added": "3.0"
-                },
-                "webview_android": {
-                    "version_added": false,
-                    "notes": "See <a href='https://crbug.com/487255'>bug 487255</a>"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "SpeechSynthesisUtterance"
-        }
-    ],
     "dom-speechsynthesisvoice-default": [
         {
             "engines": [
@@ -5684,9 +6125,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5739,9 +6193,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5794,9 +6261,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5849,9 +6329,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5904,9 +6397,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },
@@ -5959,9 +6465,22 @@
                 "firefox": {
                     "version_added": "49"
                 },
-                "firefox_android": {
-                    "version_added": "62"
-                },
+                "firefox_android": [
+                    {
+                        "version_added": "62"
+                    },
+                    {
+                        "version_added": "61",
+                        "version_removed": "62",
+                        "flags": [
+                            {
+                                "type": "preference",
+                                "name": "media.webspeech.synth.enabled",
+                                "value_to_set": "true"
+                            }
+                        ]
+                    }
+                ],
                 "ie": {
                     "version_added": false
                 },

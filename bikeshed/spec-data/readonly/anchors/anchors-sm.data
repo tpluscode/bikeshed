@@ -184,8 +184,8 @@ kana
 -
 small
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-size-small
@@ -195,8 +195,8 @@ font-size
 -
 small
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-size-small
@@ -281,8 +281,8 @@ font-variant-caps
 -
 small-caps
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-style-small-caps
@@ -292,8 +292,8 @@ font-style
 -
 small-caps
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-style-small-caps
@@ -325,8 +325,8 @@ font
 -
 small-caption
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-small-caption
@@ -336,8 +336,8 @@ font
 -
 small-caption
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-small-caption

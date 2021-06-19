@@ -297,8 +297,8 @@ CookieSameSite
 -
 "strict"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransactiondurability-strict
@@ -308,8 +308,8 @@ IDBTransactionDurability
 -
 "strict"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactiondurability-strict
@@ -424,8 +424,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'static'
 -
 'static' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#static-media-group
@@ -434,8 +434,8 @@ https://drafts.csswg.org/css2/#static-media-group
 -
 'static' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#static-media-group
@@ -444,8 +444,8 @@ https://drafts.csswg.org/css2/#static-media-group
 -
 'strict-dynamic'
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic
@@ -454,8 +454,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic
 -
 'strict-dynamic'
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-strict-dynamic
@@ -817,8 +817,8 @@ https://www.w3.org/TR/css-values-4/#string-value
 -
 <string>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-string
@@ -827,8 +827,8 @@ https://drafts.csswg.org/css2/#value-def-string
 -
 <string>
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-content-string
@@ -838,8 +838,8 @@ content
 -
 <string>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-string
@@ -848,8 +848,8 @@ https://drafts.csswg.org/css2/#value-def-string
 -
 <string>
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-content-string
@@ -1472,8 +1472,8 @@ https://www.w3.org/TR/cssom-1/#stylesheetlist
 -
 [<string> <string>]+
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-quotes-strings
@@ -1483,8 +1483,8 @@ quotes
 -
 [<string> <string>]+
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-quotes-strings
@@ -2239,8 +2239,8 @@ https://wicg.github.io/js-self-profiling/#dfn-stack
 -
 stack level
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#stack-level
@@ -2249,8 +2249,8 @@ https://drafts.csswg.org/css2/#stack-level
 -
 stack level
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#stack-level
@@ -2352,8 +2352,8 @@ https://w3c.github.io/mathml-core/#dfn-stackgapmin
 -
 stacking context
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#stacking-context
@@ -2362,8 +2362,8 @@ https://drafts.csswg.org/css2/#stacking-context
 -
 stacking context
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#stacking-context
@@ -2372,8 +2372,8 @@ https://drafts.csswg.org/css2/#stacking-context
 -
 stacking contexts
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/render.html#TermStackingContext
@@ -2382,8 +2382,8 @@ https://svgwg.org/svg2-draft/render.html#TermStackingContext
 -
 stacking contexts
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/render.html#TermStackingContext
@@ -2423,8 +2423,8 @@ https://w3c.github.io/mathml-core/#dfn-stacktopshiftup
 -
 stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-stage
@@ -2434,8 +2434,8 @@ attribute
 -
 stage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-stage
@@ -3124,8 +3124,8 @@ wrap-flow
 -
 start
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-start
@@ -3135,8 +3135,8 @@ Blob/slice(start, end, contentType)
 -
 start
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-start
@@ -3146,8 +3146,8 @@ Blob/slice(start, end, contentType)
 -
 start
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-start
@@ -3157,8 +3157,8 @@ transaction
 -
 start
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-start
@@ -3426,8 +3426,8 @@ range
 -
 start node
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-start-node
@@ -4124,8 +4124,8 @@ StaticRangeInit
 -
 startOffset
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#__svg__SVGTextPathElement__startOffset
@@ -4135,8 +4135,8 @@ SVGTextPathElement
 -
 startOffset
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#__svg__SVGTextPathElement__startOffset
@@ -4458,8 +4458,8 @@ manifest
 -
 started
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-start
@@ -4469,8 +4469,8 @@ transaction
 -
 started
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-start
@@ -4570,8 +4570,8 @@ https://html.spec.whatwg.org/multipage/grouping-content.html#concept-ol-start
 -
 startoffset
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TextPathElementStartOffsetAttribute
@@ -4581,8 +4581,8 @@ textPath
 -
 startoffset
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TextPathElementStartOffsetAttribute
@@ -4592,8 +4592,8 @@ textPath
 -
 startpoint-on-the-path
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#StartPointOnPath
@@ -4602,8 +4602,8 @@ https://svgwg.org/svg2-draft/text.html#StartPointOnPath
 -
 startpoint-on-the-path
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#StartPointOnPath
@@ -4911,8 +4911,8 @@ AnimatorInstanceConstructor
 -
 state
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#filereader-state
@@ -4922,8 +4922,8 @@ FileReader
 -
 state
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#filereader-state
@@ -5013,8 +5013,8 @@ https://www.w3.org/TR/html-aam-1.0/#dfn-state
 -
 state
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-state
@@ -5024,8 +5024,8 @@ transaction
 -
 state
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-state
@@ -5954,8 +5954,8 @@ position
 -
 static
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-position-static
@@ -5965,8 +5965,8 @@ position
 -
 static
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-position-static
@@ -5986,8 +5986,8 @@ https://webbluetoothcg.github.io/web-bluetooth/#static-address
 -
 static attributes
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-static-attribute
@@ -5996,8 +5996,8 @@ https://heycam.github.io/webidl/#dfn-static-attribute
 -
 static attributes
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-static-attribute
@@ -6017,8 +6017,8 @@ collection
 -
 static context
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#static-context
@@ -6027,8 +6027,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#static-context
 -
 static context
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#static-context
@@ -6067,8 +6067,8 @@ https://www.w3.org/TR/svg-integration/#static-image-document-mode
 -
 static operations
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-static-operation
@@ -6077,8 +6077,8 @@ https://heycam.github.io/webidl/#dfn-static-operation
 -
 static operations
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-static-operation
@@ -6138,8 +6138,8 @@ Scheduler
 -
 static type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#static-type
@@ -6148,8 +6148,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#static-type
 -
 static type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#static-type
@@ -6158,8 +6158,8 @@ https://www.w3.org/TR/WGSL/#static-type
 -
 static-position containing block
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#static-position-containing-block
@@ -6168,8 +6168,8 @@ https://drafts.csswg.org/css2/#static-position-containing-block
 -
 static-position containing block
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#static-position-containing-block
@@ -6198,8 +6198,8 @@ https://www.w3.org/TR/css-flexbox-1/#static-position-rectangle
 -
 statically accessed
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed
@@ -6208,8 +6208,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed
 -
 statically accessed
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#statically-accessed
@@ -6218,8 +6218,8 @@ https://www.w3.org/TR/WGSL/#statically-accessed
 -
 statically typed language
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#statically-typed-language
@@ -6228,8 +6228,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#statically-typed-language
 -
 statically typed language
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#statically-typed-language
@@ -6614,8 +6614,8 @@ USBIsochronousOutTransferPacket
 -
 status
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-status
@@ -6625,8 +6625,8 @@ violation
 -
 status
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-status
@@ -6856,8 +6856,8 @@ font
 -
 status-bar
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-status-bar
@@ -6867,8 +6867,8 @@ font
 -
 status-bar
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-status-bar
@@ -6920,8 +6920,8 @@ mediakeystatus
 -
 statusCode
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-statuscode
@@ -6931,8 +6931,8 @@ CSPViolationReportBody
 -
 statusCode
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-statuscode
@@ -6942,8 +6942,8 @@ SecurityPolicyViolationEvent
 -
 statusCode
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-statuscode
@@ -6953,8 +6953,8 @@ SecurityPolicyViolationEventInit
 -
 statusCode
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-statuscode
@@ -6964,8 +6964,8 @@ CSPViolationReportBody
 -
 statusCode
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-statuscode
@@ -6975,8 +6975,8 @@ SecurityPolicyViolationEvent
 -
 statusCode
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-statuscode
@@ -8296,8 +8296,8 @@ MediaRecorder
 -
 stop
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#elementdef-stop
@@ -8306,8 +8306,8 @@ https://svgwg.org/svg2-draft/pservers.html#elementdef-stop
 -
 stop
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#elementdef-stop
@@ -8625,8 +8625,8 @@ AudioScheduledSourceNode
 -
 stop-color
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#StopColorProperty
@@ -8636,8 +8636,8 @@ stop
 -
 stop-color
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#StopColorProperty
@@ -8647,8 +8647,8 @@ stop
 -
 stop-opacity
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#StopOpacityProperty
@@ -8658,8 +8658,8 @@ stop
 -
 stop-opacity
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#StopOpacityProperty
@@ -8826,8 +8826,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#stop-parsing
 -
 storable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storable
@@ -8836,8 +8836,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#storable
 -
 storable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storable
@@ -8910,8 +8910,8 @@ internal usage
 -
 storage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-classes-storage
@@ -8921,8 +8921,8 @@ storage classes
 -
 storage
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-classes-storage
@@ -8983,8 +8983,8 @@ https://storage.spec.whatwg.org/#storage-bucket
 -
 storage buffer
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-buffer
@@ -8993,8 +8993,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#storage-buffer
 -
 storage buffer
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-buffer
@@ -9003,8 +9003,8 @@ https://www.w3.org/TR/WGSL/#storage-buffer
 -
 storage classes
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-classes
@@ -9013,8 +9013,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#storage-classes
 -
 storage classes
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-classes
@@ -9135,8 +9135,8 @@ https://storage.spec.whatwg.org/#storage-shelf
 -
 storage texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-texture
@@ -9145,8 +9145,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#storage-texture
 -
 storage texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-texture
@@ -9197,8 +9197,8 @@ internal usage
 -
 storage-texel-formats
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-texel-formats
@@ -9207,8 +9207,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#storage-texel-formats
 -
 storage-texel-formats
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-texel-formats
@@ -9272,8 +9272,8 @@ GPUBindGroupLayoutEntry
 -
 store a record into an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#store-a-record-into-an-object-store
@@ -9282,8 +9282,8 @@ https://w3c.github.io/IndexedDB/#store-a-record-into-an-object-store
 -
 store a record into an object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#store-a-record-into-an-object-store
@@ -9292,8 +9292,8 @@ https://www.w3.org/TR/IndexedDB-3/#store-a-record-into-an-object-store
 -
 store type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#store-type
@@ -9302,8 +9302,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#store-type
 -
 store type
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#store-type
@@ -9356,8 +9356,8 @@ CredentialsContainer
 -
 storeNames
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-transaction-storenames-mode-options-storenames
@@ -9369,8 +9369,8 @@ IDBDatabase/transaction(storeNames)
 -
 storeNames
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-transaction-storenames-mode-options-storenames
@@ -9716,8 +9716,8 @@ RTCStatsType
 -
 stream()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-blob-stream
@@ -9727,8 +9727,8 @@ Blob
 -
 stream()
 method
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-blob-stream
@@ -10073,8 +10073,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#md-vcard-adr-street-addres
 -
 stress
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-stress
@@ -10786,8 +10786,8 @@ PlaneLayout
 -
 stride
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-stride
@@ -10797,8 +10797,8 @@ attribute
 -
 stride
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-stride
@@ -10808,8 +10808,8 @@ attribute
 -
 strideof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#strideof
@@ -10818,8 +10818,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#strideof
 -
 strideof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#strideof
@@ -11032,8 +11032,8 @@ https://wicg.github.io/floc/#string-representation-of-the-interest-cohort-versio
 -
 string types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-string-type
@@ -11042,8 +11042,8 @@ https://heycam.github.io/webidl/#dfn-string-type
 -
 string types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-string-type
@@ -11327,8 +11327,8 @@ DOMMatrixReadOnly
 -
 stringification behavior
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-stringification-behavior
@@ -11337,8 +11337,8 @@ https://heycam.github.io/webidl/#dfn-stringification-behavior
 -
 stringification behavior
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-stringification-behavior
@@ -11413,8 +11413,8 @@ DOMMatrixReadOnly
 -
 stringifier
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-stringifier
@@ -11445,8 +11445,8 @@ Selection
 -
 stringifiers
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-stringifier
@@ -11618,8 +11618,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeProperty
 -
 stroke
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermStroke
@@ -11628,8 +11628,8 @@ https://svgwg.org/svg2-draft/painting.html#TermStroke
 -
 stroke
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeProperty
@@ -11638,8 +11638,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeProperty
 -
 stroke
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermStroke
@@ -11648,8 +11648,8 @@ https://www.w3.org/TR/SVG2/painting.html#TermStroke
 -
 stroke
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeProperty
@@ -11678,8 +11678,8 @@ https://www.w3.org/TR/css-masking-1/#stroke-bounding-box
 -
 stroke bounding box
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermStrokeBoundingBox
@@ -11688,8 +11688,8 @@ https://svgwg.org/svg2-draft/coords.html#TermStrokeBoundingBox
 -
 stroke bounding box
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermStrokeBoundingBox
@@ -11778,8 +11778,8 @@ https://www.w3.org/TR/svg-strokes/#TermStrokeShape
 -
 stroke shape
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermStrokeShape
@@ -11788,8 +11788,8 @@ https://svgwg.org/svg2-draft/painting.html#TermStrokeShape
 -
 stroke shape
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermStrokeShape
@@ -12183,8 +12183,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeDasharrayProperty
 -
 stroke-dasharray
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeDasharrayProperty
@@ -12193,8 +12193,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeDasharrayProperty
 -
 stroke-dasharray
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeDasharrayProperty
@@ -12263,8 +12263,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeDashoffsetProperty
 -
 stroke-dashoffset
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeDashoffsetProperty
@@ -12273,8 +12273,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeDashoffsetProperty
 -
 stroke-dashoffset
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeDashoffsetProperty
@@ -12343,8 +12343,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeLinecapProperty
 -
 stroke-linecap
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeLinecapProperty
@@ -12353,8 +12353,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeLinecapProperty
 -
 stroke-linecap
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeLinecapProperty
@@ -12403,8 +12403,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeLinejoinProperty
 -
 stroke-linejoin
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeLinejoinProperty
@@ -12413,8 +12413,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeLinejoinProperty
 -
 stroke-linejoin
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeLinejoinProperty
@@ -12463,8 +12463,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeMiterlimitProperty
 -
 stroke-miterlimit
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeMiterlimitProperty
@@ -12473,8 +12473,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeMiterlimitProperty
 -
 stroke-miterlimit
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeMiterlimitProperty
@@ -12523,8 +12523,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeOpacityProperty
 -
 stroke-opacity
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeOpacityProperty
@@ -12533,8 +12533,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeOpacityProperty
 -
 stroke-opacity
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeOpacityProperty
@@ -12663,8 +12663,8 @@ https://www.w3.org/TR/svg-strokes/#StrokeWidthProperty
 -
 stroke-width
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#StrokeWidthProperty
@@ -12673,8 +12673,8 @@ https://svgwg.org/svg2-draft/painting.html#StrokeWidthProperty
 -
 stroke-width
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#StrokeWidthProperty
@@ -12865,8 +12865,8 @@ https://infra.spec.whatwg.org/#struct
 -
 structural element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermStructuralElement
@@ -12875,8 +12875,8 @@ https://svgwg.org/svg2-draft/struct.html#TermStructuralElement
 -
 structural element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermStructuralElement
@@ -12905,8 +12905,8 @@ https://www.w3.org/TR/selectors-4/#structural-pseudo-classes
 -
 structurally external element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermStructurallyExternalElement
@@ -12915,8 +12915,8 @@ https://svgwg.org/svg2-draft/struct.html#TermStructurallyExternalElement
 -
 structurally external element
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#TermStructurallyExternalElement
@@ -12925,8 +12925,8 @@ https://www.w3.org/TR/SVG2/struct.html#TermStructurallyExternalElement
 -
 structure
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#structure
@@ -12935,8 +12935,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#structure
 -
 structure
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#structure
@@ -12945,8 +12945,8 @@ https://www.w3.org/TR/WGSL/#structure
 -
 structured clone
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-structured-clone
@@ -12955,8 +12955,8 @@ https://w3c.github.io/webcrypto/#dfn-structured-clone
 -
 structured clone
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-structured-clone
@@ -13327,8 +13327,8 @@ ElementCSSInlineStyle
 -
 style
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#elementdef-style
@@ -13337,8 +13337,8 @@ https://svgwg.org/svg2-draft/styling.html#elementdef-style
 -
 style
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#StyleAttribute
@@ -13348,8 +13348,8 @@ core-attributes
 -
 style
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#elementdef-style
@@ -13358,8 +13358,8 @@ https://www.w3.org/TR/SVG2/styling.html#elementdef-style
 -
 style
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#StyleAttribute
@@ -13519,8 +13519,8 @@ https://www.w3.org/TR/css-speech-1/#style-sheet0
 -
 style sheet
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#style-sheet
@@ -13529,8 +13529,8 @@ https://drafts.csswg.org/css2/#style-sheet
 -
 style sheet
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#style-sheet
@@ -13539,8 +13539,8 @@ https://drafts.csswg.org/css2/#style-sheet
 -
 style-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#style-src
@@ -13549,8 +13549,8 @@ https://w3c.github.io/webappsec-csp/#style-src
 -
 style-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#style-src
@@ -13559,8 +13559,8 @@ https://www.w3.org/TR/CSP3/#style-src
 -
 style-src-attr
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#style-src-attr
@@ -13569,8 +13569,8 @@ https://w3c.github.io/webappsec-csp/#style-src-attr
 -
 style-src-attr
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#style-src-attr
@@ -13579,8 +13579,8 @@ https://www.w3.org/TR/CSP3/#style-src-attr
 -
 style-src-elem
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#style-src-elem
@@ -13589,8 +13589,8 @@ https://w3c.github.io/webappsec-csp/#style-src-elem
 -
 style-src-elem
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#style-src-elem

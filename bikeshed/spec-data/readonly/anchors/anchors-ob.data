@@ -41,8 +41,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'object-fit'
 -
 ObservableArray
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-observable-array
@@ -51,8 +51,8 @@ https://heycam.github.io/webidl/#idl-observable-array
 -
 ObservableArray<T>
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-observable-array
@@ -94,8 +94,8 @@ ResizeObserver
 -
 obj
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-url-createobjecturl-obj-obj
@@ -105,8 +105,8 @@ URL/createObjectURL(obj)
 -
 obj
 argument
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-url-createobjecturl-obj-obj
@@ -216,8 +216,8 @@ https://www.w3.org/TR/core-aam-1.2/#dfn-object
 -
 object
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#blob-url-entry-object
@@ -227,8 +227,8 @@ blob URL entry
 -
 object
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#blob-url-entry-object
@@ -428,8 +428,8 @@ https://www.w3.org/TR/webdriver2/#dfn-object
 -
 object
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-object
@@ -438,8 +438,8 @@ https://heycam.github.io/webidl/#idl-object
 -
 object bounding box
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermObjectBoundingBox
@@ -448,8 +448,8 @@ https://svgwg.org/svg2-draft/coords.html#TermObjectBoundingBox
 -
 object bounding box
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermObjectBoundingBox
@@ -518,8 +518,8 @@ https://www.w3.org/TR/css-images-3/#object-size-negotiation
 -
 object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store
@@ -528,8 +528,8 @@ https://w3c.github.io/IndexedDB/#object-store
 -
 object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-handle-object-store
@@ -539,8 +539,8 @@ object-store-handle
 -
 object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store
@@ -549,8 +549,8 @@ https://www.w3.org/TR/IndexedDB-3/#object-store
 -
 object store
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-handle-object-store
@@ -560,8 +560,8 @@ object-store-handle
 -
 object store handle
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#object-store-handle
@@ -570,8 +570,8 @@ https://w3c.github.io/IndexedDB/#object-store-handle
 -
 object store handle
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#index-handle-object-store-handle
@@ -581,8 +581,8 @@ index-handle
 -
 object store handle
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#object-store-handle
@@ -591,8 +591,8 @@ https://www.w3.org/TR/IndexedDB-3/#object-store-handle
 -
 object store handle
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#index-handle-object-store-handle
@@ -602,8 +602,8 @@ index-handle
 -
 object store position
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor-object-store-position
@@ -613,8 +613,8 @@ cursor
 -
 object store position
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor-object-store-position
@@ -624,8 +624,8 @@ cursor
 -
 object store set
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#connection-object-store-set
@@ -635,8 +635,8 @@ connection
 -
 object store set
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#connection-object-store-set
@@ -646,8 +646,8 @@ connection
 -
 object types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-object-type
@@ -656,8 +656,8 @@ https://heycam.github.io/webidl/#dfn-object-type
 -
 object types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-object-type
@@ -666,8 +666,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-object-type
 -
 object url
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#blob-url
@@ -676,8 +676,8 @@ https://w3c.github.io/FileAPI/#blob-url
 -
 object url
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#blob-url
@@ -736,8 +736,8 @@ https://www.w3.org/TR/css-images-3/#propdef-object-position
 -
 object-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#object-src
@@ -746,8 +746,8 @@ https://w3c.github.io/webappsec-csp/#object-src
 -
 object-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#object-src
@@ -756,8 +756,8 @@ https://www.w3.org/TR/CSP3/#object-src
 -
 objectStore
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-objectstore
@@ -767,8 +767,8 @@ IDBIndex
 -
 objectStore
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-objectstore
@@ -778,8 +778,8 @@ IDBIndex
 -
 objectStore(name)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransaction-objectstore
@@ -789,8 +789,8 @@ IDBTransaction
 -
 objectStore(name)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-objectstore
@@ -800,8 +800,8 @@ IDBTransaction
 -
 objectStoreNames
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-objectstorenames
@@ -811,8 +811,8 @@ IDBDatabase
 -
 objectStoreNames
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransaction-objectstorenames
@@ -822,8 +822,8 @@ IDBTransaction
 -
 objectStoreNames
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-objectstorenames
@@ -833,8 +833,8 @@ IDBDatabase
 -
 objectStoreNames
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-objectstorenames
@@ -1126,8 +1126,8 @@ https://www.w3.org/TR/wai-aria-1.2/#dfn-object
 -
 oblique
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-style-oblique
@@ -1137,8 +1137,8 @@ font-style
 -
 oblique
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-style-oblique
@@ -1210,8 +1210,8 @@ https://www.w3.org/TR/webdriver2/#dfn-obscuring
 -
 observable array exotic object
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#observable-array-exotic-object
@@ -1220,8 +1220,8 @@ https://heycam.github.io/webidl/#observable-array-exotic-object
 -
 observable array type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-observable-array-type

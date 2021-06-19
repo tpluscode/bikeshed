@@ -266,62 +266,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -890,7 +834,7 @@ on screen, on paper, etc.
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content"> Introduction</span><a class="self-link" href="#intro"></a></h2>
    <p><em>This section is normative.</em> </p>
    <p>CSS takes a source document, organized as
-	a <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="element tree" id="element-tree">tree<span id="css-element-tree"></span></dfn> of <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="element" id="elements">elements<span id="css-element"></span></dfn> and <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="text node" id="text-nodes">text nodes<span id="css-text-node"></span></dfn>,
+	a <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="element tree" id="element-tree">tree<span id="css-element-tree"></span></dfn> of <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="element" id="elements">elements<span id="css-element"></span></dfn> and <dfn data-dfn-for="CSS" data-dfn-type="dfn" data-export data-lt="text node" id="text-nodes">text nodes<span id="css-text-node"></span><a class="self-link" href="#text-nodes"></a></dfn>,
 	and renders it onto a <a href="https://www.w3.org/TR/CSS2/intro.html#canvas">canvas</a> (such as your screen, a piece of paper, or an audio stream).
 	(Some source documents start from more complex trees,
 	such as the DOM,
@@ -902,13 +846,13 @@ on screen, on paper, etc.
    <p>To do this, it generates an intermediary structure,
 	the <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export id="box-tree">box tree<span id="css-box-tree"></span></dfn>,
 	which represents the formatting structure of the rendered document.
-	Each <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export id="box">box<span id="css-box"></span></dfn> in the <a data-link-type="dfn" href="#box-tree" id="ref-for-box-tree">box tree</a> represents its corresponding <a data-link-type="dfn" href="#elements" id="ref-for-elements">element</a> (or <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#pseudo-element" id="ref-for-pseudo-element">pseudo-element</a>)
+	Each <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export id="box">box<span id="css-box"></span></dfn> in the <a data-link-type="dfn" href="#box-tree" id="ref-for-box-tree">box tree</a> represents its corresponding <a data-link-type="dfn" href="#elements" id="ref-for-elements">element</a> (or <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#pseudo-element" id="ref-for-pseudo-element">pseudo-element</a>)
 	in space and/or time on the canvas,
-	while each <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export id="text-run">text run<span id="css-text-run"></span></dfn> in the <span id="ref-for-box-tree①">box tree</span> likewise represents the contents of its corresponding <a data-link-type="dfn" href="#text-nodes" id="ref-for-text-nodes">text nodes</a>.</p>
+	while each <dfn class="dfn-paneled" data-dfn-for="CSS" data-dfn-type="dfn" data-export id="text-run">text run<span id="css-text-run"></span></dfn> in the <span id="ref-for-box-tree①">box tree</span> likewise represents the contents of its corresponding <a data-link-type="dfn">text nodes</a>.</p>
    <p>To create the <a data-link-type="dfn" href="#box-tree" id="ref-for-box-tree②">box tree</a>,
 	CSS first uses <a href="https://www.w3.org/TR/css-cascade/">cascading and inheritance</a>,
-	to assign a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed value</a> for each CSS property
-	to each <a data-link-type="dfn" href="#elements" id="ref-for-elements①">element</a> and <a data-link-type="dfn" href="#text-nodes" id="ref-for-text-nodes①">text node</a> in the source tree.
+	to assign a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed value</a> for each CSS property
+	to each <a data-link-type="dfn" href="#elements" id="ref-for-elements①">element</a> and <a data-link-type="dfn">text node</a> in the source tree.
 	(See <a data-link-type="biblio" href="#biblio-css3-cascade">[CSS3-CASCADE]</a>.)</p>
    <p>Then, for each <a data-link-type="dfn" href="#elements" id="ref-for-elements②">element</a>,
 	CSS generates zero or more <a data-link-type="dfn" href="#box" id="ref-for-box">boxes</a> as specified by that element’s <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display③">display</a> property.
@@ -923,23 +867,23 @@ on screen, on paper, etc.
 	(such as <a class="css" data-link-type="maybe" href="#valdef-display-none" id="ref-for-valdef-display-none">none</a> or <a class="css" data-link-type="maybe" href="#valdef-display-contents" id="ref-for-valdef-display-contents">contents</a>)
 	cause the <span id="ref-for-elements③">element</span> and/or its descendants to not generate any <span id="ref-for-box②">boxes</span> at all. <span id="ref-for-box③">Boxes</span> are often referred to by their <span class="property" id="ref-for-propdef-display⑥">display</span> type—<wbr>e.g. a <span id="ref-for-box④">box</span> generated by an element with <span class="css" id="ref-for-propdef-display⑦">display: block</span> is called a “block box” or just a “block”.</p>
    <p>A <a data-link-type="dfn" href="#box" id="ref-for-box⑤">box</a> is assigned the same styles as its generating <a data-link-type="dfn" href="#elements" id="ref-for-elements④">element</a>, unless otherwise indicated.
-	In general, <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#inherited-property" id="ref-for-inherited-property">inherited properties</a> are assigned to the <a data-link-type="dfn" href="#principal-box" id="ref-for-principal-box①">principal box</a>,
+	In general, <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#inherited-property" id="ref-for-inherited-property">inherited properties</a> are assigned to the <a data-link-type="dfn" href="#principal-box" id="ref-for-principal-box①">principal box</a>,
 	and then inherit through the box tree
 	to any other boxes generated by the same element.
 	Non-inherited properties default to applying to the <span id="ref-for-principal-box②">principal box</span>,
 	but when the element generates multiple boxes,
 	are sometimes defined to apply to a different box:
-	for example, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border" id="ref-for-propdef-border">border</a> properties applied to a table element
+	for example, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border" id="ref-for-propdef-border">border</a> properties applied to a table element
 	are applied to its <a data-link-type="dfn" href="https://drafts.csswg.org/css-tables-3/#table-grid-box" id="ref-for-table-grid-box">table grid box</a>,
 	not to its <span id="ref-for-principal-box③">principal</span> <a data-link-type="dfn" href="https://drafts.csswg.org/css-tables-3/#table-wrapper-box" id="ref-for-table-wrapper-box">table wrapper box</a>.
 	If the value computation process alters the styles of those boxes,
 	and the element’s style is requested
-	(such as through <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle" id="ref-for-dom-window-getcomputedstyle">getComputedStyle()</a></code>),
+	(such as through <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle" id="ref-for-dom-window-getcomputedstyle">getComputedStyle()</a></code>),
 	the element reflects,
 	for each property,
 	the value from the box to which that property was applied.</p>
-   <p>Similarly, each contiguous sequence of sibling <a data-link-type="dfn" href="#text-nodes" id="ref-for-text-nodes②">text nodes</a> generates a <a data-link-type="dfn" href="#text-run" id="ref-for-text-run">text run</a> containing their text contents,
-	which is assigned the same styles as the generating <span id="ref-for-text-nodes③">text nodes</span>.
+   <p>Similarly, each contiguous sequence of sibling <a data-link-type="dfn">text nodes</a> generates a <a data-link-type="dfn" href="#text-run" id="ref-for-text-run">text run</a> containing their text contents,
+	which is assigned the same styles as the generating <span>text nodes</span>.
 	If the sequence contains no text, however, it does not generate a <span id="ref-for-text-run①">text run</span>.</p>
    <p>In constructing the box tree,
 	boxes generated by an element are descendants of
@@ -959,7 +903,7 @@ on screen, on paper, etc.
 	(See <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> § <a href="https://www.w3.org/TR/CSS2/tables.html#anonymous-boxes">17.2.1</a>.)
 	Unlike element-generated boxes, whose styles inherit strictly through the element tree,
 	anonymous boxes (which only exist in the <span id="ref-for-box-tree⑤">box tree</span>) <a href="https://www.w3.org/TR/css-cascade/#inheriting">inherit</a> through their <span id="ref-for-box-tree⑥">box tree</span> parentage.</p>
-   <p>In the course of layout, <a data-link-type="dfn" href="#box" id="ref-for-box⑦">boxes</a> and <a data-link-type="dfn" href="#text-run" id="ref-for-text-run②">text runs</a> can be broken into multiple <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-3/#fragment" id="ref-for-fragment">fragments</a>.
+   <p>In the course of layout, <a data-link-type="dfn" href="#box" id="ref-for-box⑦">boxes</a> and <a data-link-type="dfn" href="#text-run" id="ref-for-text-run②">text runs</a> can be broken into multiple <a data-link-type="dfn" href="https://drafts.csswg.org/css-break/#fragment" id="ref-for-fragment">fragments</a>.
 	This happens, for example, when an <a data-link-type="dfn" href="#inline-box" id="ref-for-inline-box">inline box</a> and/or <span id="ref-for-text-run③">text run</span> is broken across lines,
 	or when a <a data-link-type="dfn" href="#block-box" id="ref-for-block-box">block box</a> is broken across pages or columns,
 	in a process called <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation" id="ref-for-fragmentation">fragmentation</a>.
@@ -993,22 +937,6 @@ on screen, on paper, etc.
 	also accept the <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#css-wide-keywords" id="ref-for-css-wide-keywords">CSS-wide keywords</a> as their property value.
 	For readability they have not been repeated explicitly.</p>
    <h2 class="heading settled" data-level="2" id="the-display-properties"><span class="secno">2. </span><span class="content"> Box Layout Modes: the <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display①⓪">display</a> property</span><a class="self-link" href="#the-display-properties"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" title="The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.">display</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="display">
     <tbody>
      <tr>
@@ -1057,29 +985,13 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
 	such as <a class="css" data-link-type="maybe" href="#valdef-display-list-item" id="ref-for-valdef-display-list-item">list-item</a>, which also generates a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker">::marker</a> pseudo-element,
 	and <a class="css" data-link-type="maybe" href="#valdef-display-none" id="ref-for-valdef-display-none①">none</a>, which causes the element’s entire subtree to be left out of the box tree.</p>
    <div class="advisement"> The <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display①③">display</a> property has no effect on an element’s semantics:
-		these are defined by the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#document-language" id="ref-for-document-language">document language</a> and <em>are not affected by CSS</em>.
+		these are defined by the <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#document-language" id="ref-for-document-language">document language</a> and <em>are not affected by CSS</em>.
 		Aside from the <a class="css" data-link-type="maybe" href="#valdef-display-none" id="ref-for-valdef-display-none②">none</a> value,
 		which also affects the aural/speech output <a data-link-type="biblio" href="#biblio-css-speech-1">[CSS-SPEECH-1]</a> and interactivity of an element and its descendants,
 		the <span class="property" id="ref-for-propdef-display①④">display</span> property only affects visual layout:
 		its purpose is to allow designers freedom
 		to change the layout behavior of an element <em>without</em> affecting the underlying document semantics. </div>
    <p>Values are defined as follows:</p>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display-outside" title="The <display-outside> keywords specify the element’s outer display type, which is essentially its role in flow layout. These keywords are used as values of the display property, and can be used for legacy purposes as a single keyword, or as defined in the Level 3 specification alongside a value from the <display-inside> keywords.">display-outside</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
 <pre class="prod"><dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-display-outside">&lt;display-outside></dfn>  = block <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④">|</a> inline <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑤">|</a> run-in
 <dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-display-inside">&lt;display-inside></dfn>   = flow <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑥">|</a> flow-root <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑦">|</a> table <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑧">|</a> flex <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one⑨">|</a> grid <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①⓪">|</a> ruby
 <dfn class="dfn-paneled" data-dfn-type="type" data-export id="typedef-display-listitem">&lt;display-listitem></dfn> = <a class="production" data-link-type="type" href="#typedef-display-outside" id="ref-for-typedef-display-outside①" title="Expands to: block | inline | run-in">&lt;display-outside></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all">&amp;&amp;</a> [ flow <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①①">|</a> flow-root ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt①">?</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all①">&amp;&amp;</a> list-item
@@ -1109,7 +1021,7 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
       <td>element replaced by contents in <a data-link-type="dfn" href="#box-tree" id="ref-for-box-tree⑧">box tree</a> 
     <tbody title="Flow Layout Display Types">
      <tr>
-      <td><a class="css" data-link-type="maybe" href="#valdef-display-block" id="ref-for-valdef-display-block">block</a>
+      <td><a class="css" data-link-type="maybe" href="#valdef-display-block" id="ref-for-valdef-display-block">block</a> 
       <td><span class="css">block flow</span> 
       <td><a data-link-type="dfn" href="#block-level" id="ref-for-block-level">block-level</a> <a data-link-type="dfn" href="#block-container" id="ref-for-block-container">block container</a> <abbr title="also known as">aka</abbr> <a data-link-type="dfn" href="#block-box" id="ref-for-block-box①">block box</a> 
      <tr>
@@ -1117,7 +1029,7 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
       <td><span class="css">block flow-root</span> 
       <td><a data-link-type="dfn" href="#block-level" id="ref-for-block-level①">block-level</a> <a data-link-type="dfn" href="#block-container" id="ref-for-block-container①">block container</a> that establishes a new <a data-link-type="dfn" href="#block-formatting-context" id="ref-for-block-formatting-context">block formatting context</a> (<a data-link-type="dfn" href="#bfc" id="ref-for-bfc">BFC</a>) 
      <tr>
-      <td><a class="css" data-link-type="maybe" href="#valdef-display-inline" id="ref-for-valdef-display-inline">inline</a>
+      <td><a class="css" data-link-type="maybe" href="#valdef-display-inline" id="ref-for-valdef-display-inline">inline</a> 
       <td><span class="css">inline flow</span> 
       <td><a data-link-type="dfn" href="#inline-box" id="ref-for-inline-box①">inline box</a> 
      <tr>
@@ -1182,9 +1094,9 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
 	which is essentially its <a data-link-type="dfn" href="#principal-box" id="ref-for-principal-box⑦">principal box’s</a> role in <a data-link-type="dfn" href="#flow-layout" id="ref-for-flow-layout①">flow layout</a>.
 	They are defined as follows:</p>
    <dl>
-    <dt><dfn class="dfn-paneled css" data-dfn-for="display, <display-outside>" data-dfn-type="value" data-export id="valdef-display-block">block</dfn>
+    <dt><dfn class="dfn-paneled css" data-dfn-for="display, <display-outside>" data-dfn-type="value" data-export id="valdef-display-block">block</dfn> 
     <dd> The element generates a box that is <dfn class="dfn-paneled" data-dfn-for data-dfn-type="dfn" data-export data-lt="block-level box" id="block-level-box">block-level</dfn> when placed in <a data-link-type="dfn" href="#flow-layout" id="ref-for-flow-layout②">flow layout</a>. <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
-    <dt><dfn class="dfn-paneled css" data-dfn-for="display, <display-outside>" data-dfn-type="value" data-export id="valdef-display-inline">inline</dfn>
+    <dt><dfn class="dfn-paneled css" data-dfn-for="display, <display-outside>" data-dfn-type="value" data-export id="valdef-display-inline">inline</dfn> 
     <dd> The element generates a box that is <dfn class="dfn-paneled" data-dfn-for data-dfn-type="dfn" data-export data-lt="inline-level box" id="inline-level-box">inline-level</dfn> when placed in <a data-link-type="dfn" href="#flow-layout" id="ref-for-flow-layout③">flow layout</a>. <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> 
     <dt><dfn class="dfn-paneled css" data-dfn-for="display, <display-outside>" data-dfn-type="value" data-export id="valdef-display-run-in">run-in</dfn> 
     <dd> The element generates an <a data-link-type="dfn" href="#run-in" id="ref-for-run-in①">run-in box</a>,
@@ -1206,7 +1118,7 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
 			and it is participating in a <a data-link-type="dfn" href="#block-formatting-context" id="ref-for-block-formatting-context①">block</a> or <a data-link-type="dfn" href="#inline-formatting-context" id="ref-for-inline-formatting-context">inline</a> formatting context,
 			then it generates an <a data-link-type="dfn" href="#inline-box" id="ref-for-inline-box④">inline box</a>.</p>
      <p>Otherwise it generates a <a data-link-type="dfn" href="#block-container" id="ref-for-block-container③">block container</a> box.</p>
-     <p>Depending on the value of other properties (such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position">position</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float">float</a>, or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-overflow" id="ref-for-propdef-overflow">overflow</a>)
+     <p>Depending on the value of other properties (such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position">position</a>, <a class="property" data-link-type="propdesc">float</a>, or <span class="property">overflow</span>)
 			and whether it is itself participating in a block or inline <a data-link-type="dfn" href="#formatting-context" id="ref-for-formatting-context①">formatting context</a>,
 			it either establishes a new <a data-link-type="dfn" href="#block-formatting-context" id="ref-for-block-formatting-context②">block formatting context</a> for its contents
 			or integrates its contents into its parent <span id="ref-for-formatting-context②">formatting context</span>.
@@ -1238,7 +1150,7 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
 	the element’s <a data-link-type="dfn" href="#outer-display-type" id="ref-for-outer-display-type③">outer display type</a> defaults to <a class="css" data-link-type="maybe" href="#valdef-display-block" id="ref-for-valdef-display-block②">block</a>—<wbr>except for <a class="css" data-link-type="maybe" href="#valdef-display-ruby" id="ref-for-valdef-display-ruby②">ruby</a>, which defaults to <a class="css" data-link-type="maybe" href="#valdef-display-inline" id="ref-for-valdef-display-inline③">inline</a>.</p>
    <h3 class="heading settled" data-level="2.3" id="list-items"><span class="secno">2.3. </span><span class="content"> Generating Marker Boxes: the <a class="css" data-link-type="maybe" href="#valdef-display-list-item" id="ref-for-valdef-display-list-item②">list-item</a> keyword</span><a class="self-link" href="#list-items"></a></h3>
    <p>The <dfn class="dfn-paneled css" data-dfn-for="display, <display-list-item>" data-dfn-type="value" data-export id="valdef-display-list-item">list-item</dfn> keyword
-	causes the element to generate a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①">::marker</a> pseudo-element <a data-link-type="biblio" href="#biblio-css-pseudo-4">[CSS-PSEUDO-4]</a> with the content specified by its <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-list-style" id="ref-for-propdef-list-style">list-style</a> properties
+	causes the element to generate a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-pseudo-4/#selectordef-marker" id="ref-for-selectordef-marker①">::marker</a> pseudo-element <a data-link-type="biblio" href="#biblio-css-pseudo-4">[CSS-PSEUDO-4]</a> with the content specified by its <a class="property" data-link-type="propdesc">list-style</a> properties
 	(<a href="https://www.w3.org/TR/CSS2/generate.html#lists">CSS 2.1§12.5 Lists</a>) <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a> together with a principal box of the specified type for its own contents.</p>
    <p>If no <a data-link-type="dfn" href="#inner-display-type" id="ref-for-inner-display-type③">inner display type</a> value is specified,
 	the principal box’s <span id="ref-for-inner-display-type④">inner display type</span> defaults to <a class="css" data-link-type="maybe" href="#valdef-display-flow" id="ref-for-valdef-display-flow②">flow</a>.
@@ -1332,7 +1244,7 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
      <p class="note" role="note"><span>Note:</span> As only the box tree is affected,
 			any semantics based on the document tree,
 			such as selector-matching, event handling,
-			and property <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#inheritance" id="ref-for-inheritance">inheritance</a>,
+			and property <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#inheritance" id="ref-for-inheritance">inheritance</a>,
 			are not affected. <strong>As of writing, however, <a href="https://github.com/w3c/csswg-drafts/issues/3040">this is not implemented correctly in major browsers</a>,
 			so using this feature on the Web must be done with care
 			as it can prevent accessibility tools
@@ -1349,7 +1261,7 @@ which dictates how the <a data-link-type="dfn" href="#principal-box" id="ref-for
     <dt><dfn class="dfn-paneled css" data-dfn-for="display, <display-box>" data-dfn-type="value" data-export id="valdef-display-none">none</dfn> 
     <dd>
       The <a data-link-type="dfn" href="#elements" id="ref-for-elements⑤">element</a> and its descendants generate no <a data-link-type="dfn" href="#box" id="ref-for-box①⓪">boxes</a> or <a data-link-type="dfn" href="#text-run" id="ref-for-text-run⑦">text runs</a>. 
-     <p>Similarly, if a <a data-link-type="dfn" href="#text-nodes" id="ref-for-text-nodes④">text node</a> is defined to behave as <a class="css" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display②⑥">display: none</a>,
+     <p>Similarly, if a <a data-link-type="dfn">text node</a> is defined to behave as <a class="css" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display②⑥">display: none</a>,
 			it generates no <a data-link-type="dfn" href="#text-run" id="ref-for-text-run⑧">text runs</a>.</p>
    </dl>
    <p>Elements with either of these values do not have <a data-link-type="dfn" href="#inner-display-type" id="ref-for-inner-display-type⑨">inner</a> or <a data-link-type="dfn" href="#outer-display-type" id="ref-for-outer-display-type⑦">outer display types</a>,
@@ -1409,7 +1321,7 @@ will typically cause them to be wrapped
 in an appropriately-typed anonymous inline-level box.)</p>
    </ul>
    <p class="note" role="note"><span>Note:</span> There are two methods used to fix up box types when a box is mismatched to its context.
-	One is transformation of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed value</a> of <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display②⑧">display</a>, such as <a data-link-type="dfn" href="#blockify" id="ref-for-blockify③">blockification</a> and <a data-link-type="dfn" href="#inlinify" id="ref-for-inlinify④">inlinification</a> described here.
+	One is transformation of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed value</a> of <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display②⑧">display</a>, such as <a data-link-type="dfn" href="#blockify" id="ref-for-blockify③">blockification</a> and <a data-link-type="dfn" href="#inlinify" id="ref-for-inlinify④">inlinification</a> described here.
 	The other, taking place during <a href="#intro">box tree construction</a> (after computed values have been determined),
 	is the creation of intermediary anonymous boxes,
 	such as happens in <a href="https://www.w3.org/TR/CSS2/tables.html#anonymous-boxes">tables</a>, <a href="https://www.w3.org/TR/css-ruby-1/#box-fixup">ruby</a>,
@@ -1548,7 +1460,7 @@ with explanations; a brief dictionary.
 			it either establishes a new <span id="ref-for-block-formatting-context①①">block formatting context</span> for its contents
 			or continues the one in which it participates,
 			as determined by the constraints of other properties
-			(such as <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-overflow" id="ref-for-propdef-overflow①">overflow</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-align-content" id="ref-for-propdef-align-content">align-content</a>).</p>
+			(such as <a class="property" data-link-type="propdesc">overflow</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-align-content" id="ref-for-propdef-align-content">align-content</a>).</p>
      <p class="note" role="note"><span>Note:</span> A block container box can both establish a block formatting context <em>and</em> an inline formatting context simultaneously.</p>
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="block-box">block box</dfn> 
     <dd>
@@ -1608,7 +1520,7 @@ with explanations; a brief dictionary.
 			For example, an <a data-link-type="dfn" href="#inline-box" id="ref-for-inline-box⑧">inline box</a>’s containing block is the content box of its closest <a data-link-type="dfn" href="#block-container" id="ref-for-block-container①⓪">block container</a> ancestor;
 			if that block container is an in-flow <a data-link-type="dfn" href="#block" id="ref-for-block">block</a>,
 			then <em>its</em> containing block is formed by its parent <span id="ref-for-block-container①①">block container</span>;
-			if that grandparent <span id="ref-for-block-container①②">block container</span> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#absolute-position" id="ref-for-absolute-position">absolutely positioned</a>,
+			if that grandparent <span id="ref-for-block-container①②">block container</span> is <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#absolute-position" id="ref-for-absolute-position">absolutely positioned</a>,
 			then <em>its</em> containing block is the padding edges of its closest <em>positioned</em> ancestor (not necessarily its parent),
 			and so on up to the <a data-link-type="dfn" href="#initial-containing-block" id="ref-for-initial-containing-block①">initial containing block</a>. 
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="initial-containing-block">initial containing block</dfn> 
@@ -1704,11 +1616,11 @@ that establishes a <a data-link-type="dfn" href="#block-formatting-context" id="
 			extracted from its expected position and interaction with surrounding content
 			and laid out using a different paradigm
 			outside the normal flow of content in its parent formatting context.
-			This occurs if the box is floated (via <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float①">float</a>)
-			or <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#absolute-position" id="ref-for-absolute-position①">absolutely positioned</a> (via <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position-3/#propdef-position" id="ref-for-propdef-position①">position</a>).
+			This occurs if the box is floated (via <a class="property" data-link-type="propdesc">float</a>)
+			or <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#absolute-position" id="ref-for-absolute-position①">absolutely positioned</a> (via <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-position/#propdef-position" id="ref-for-propdef-position①">position</a>).
 			A box is <a data-link-type="dfn" href="#in-flow" id="ref-for-in-flow">in-flow</a> if it is not <span id="ref-for-out-of-flow②">out-of-flow</span>. 
      <p class="note" role="note"><span>Note:</span> Some <a data-link-type="dfn" href="#formatting-context" id="ref-for-formatting-context①⑤">formatting contexts</a> inhibit floating,
-			so that an element with <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-float" id="ref-for-propdef-float②">float: left</a> is not necessarily <a data-link-type="dfn" href="#out-of-flow" id="ref-for-out-of-flow③">out-of-flow</a>.</p>
+			so that an element with <a class="css" data-link-type="propdesc">float: left</a> is not necessarily <a data-link-type="dfn" href="#out-of-flow" id="ref-for-out-of-flow③">out-of-flow</a>.</p>
     <dt><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="document-order">document order</dfn> 
     <dd> The order in which boxes or content occurs in the document
 			(which can be different from the order in which it appears for rendering).
@@ -1733,7 +1645,7 @@ that establishes a <a data-link-type="dfn" href="#block-formatting-context" id="
     <dt data-md><code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/canvas.html#canvas" id="ref-for-canvas">canvas</a></code>
     <dt data-md><code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element" id="ref-for-the-embed-element">embed</a></code>
     <dt data-md><code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element" id="ref-for-the-object-element">object</a></code>
-    <dt data-md><code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/media.html#audio" id="ref-for-audio">audio</a></code>
+    <dt data-md><code><a data-link-type="element">audio</a></code>
     <dt data-md><code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" id="ref-for-the-iframe-element">iframe</a></code>
     <dt data-md><code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element" id="ref-for-the-img-element②">img</a></code>
     <dt data-md><code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/media.html#video" id="ref-for-video">video</a></code>
@@ -1864,12 +1776,12 @@ or otherwise change their box type to one that can establish an <span id="ref-fo
 				as if they didn’t exist.)</ins>
       </p>
      </blockquote>
-    <li id="change-abspos-glossary"><a class="self-link" href="#change-abspos-glossary"></a> Improved/moved glossary definitions relating to <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#absolute-position" id="ref-for-absolute-position②">absolute positioning</a>. 
+    <li id="change-abspos-glossary"><a class="self-link" href="#change-abspos-glossary"></a> Improved/moved glossary definitions relating to <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#absolute-position" id="ref-for-absolute-position②">absolute positioning</a>. 
    </ul>
    <p>Changes since the <a href="https://www.w3.org/TR/2018/CR-css-display-3-20180828/">28 August 2018 Candidate Recommendation</a> include:</p>
    <ul>
     <li id="change-parent"><a class="self-link" href="#change-parent"></a> Defined box tree parentage; see <a data-link-type="dfn" href="#css-parent-box" id="ref-for-css-parent-box">parent box</a>. 
-    <li id="change-abspos"><a class="self-link" href="#change-abspos"></a> Added definition of <a data-link-type="dfn" href="https://drafts.csswg.org/css-position-3/#absolute-position" id="ref-for-absolute-position③">absolutely positioned</a> to the glossary; <a href="https://www.w3.org/TR/CSS2/visuren.html#absolutely-positioned">copied from CSS2</a> for easier referencing. 
+    <li id="change-abspos"><a class="self-link" href="#change-abspos"></a> Added definition of <a data-link-type="dfn" href="https://drafts.csswg.org/css-position/#absolute-position" id="ref-for-absolute-position③">absolutely positioned</a> to the glossary; <a href="https://www.w3.org/TR/CSS2/visuren.html#absolutely-positioned">copied from CSS2</a> for easier referencing. 
     <li id="change-bidi-fragment"><a class="self-link" href="#change-bidi-fragment"></a> Added cross-references to various forms of fragmentation in <a href="#intro">§ 1 Introduction</a>. 
     <li id="change-table-grid-box"><a class="self-link" href="#change-table-grid-box"></a> Renamed “table box” to “table grid box” to more easily distinguish from “table wrapper box”. 
     <li id="change-body-propagation"><a class="self-link" href="#change-body-propagation"></a> Added “unless otherwise specified” to root → initial containing block propagation,
@@ -1914,7 +1826,7 @@ between an element and its boxes (in the case of an element generating multiple 
      <p>Clarified that <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display⑤⑧">display</a> has no effect on document semantics, since this is a common bug in UAs.
 (<a href="https://github.com/w3c/csswg-drafts/issues/2355">Issue 2355</a>)</p>
     <li data-md>
-     <p>Fixed error in definition of <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display⑤⑨">display</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed value</a> (which is definitely not “as specified”, due to <a data-link-type="dfn" href="#blockify" id="ref-for-blockify①③">blockification</a> and <a data-link-type="dfn" href="#inlinify" id="ref-for-inlinify⑨">inlinification</a> rules triggered by various properties).
+     <p>Fixed error in definition of <a class="property" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display⑤⑨">display</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed value</a> (which is definitely not “as specified”, due to <a data-link-type="dfn" href="#blockify" id="ref-for-blockify①③">blockification</a> and <a data-link-type="dfn" href="#inlinify" id="ref-for-inlinify⑨">inlinification</a> rules triggered by various properties).
 (<a href="https://github.com/w3c/csswg-drafts/issues/1716">Issue 1716</a>)</p>
     <li data-md>
      <p>Added definition for <a data-link-type="dfn" href="#document-order" id="ref-for-document-order">document order</a>.</p>
@@ -1937,7 +1849,7 @@ and defined behavior for MathML
     <li data-md>
      <p>Remove <span class="css">inline-list-item</span> value that is equivalent to <span class="css">inline list-item</span>.</p>
     <li data-md>
-     <p>Added the notion of “<a data-link-type="dfn" href="#text-nodes" id="ref-for-text-nodes⑤">text nodes</a>” to the <a data-link-type="dfn" href="#element-tree" id="ref-for-element-tree②">element tree</a>,
+     <p>Added the notion of “<a data-link-type="dfn">text nodes</a>” to the <a data-link-type="dfn" href="#element-tree" id="ref-for-element-tree②">element tree</a>,
 and “<a data-link-type="dfn" href="#text-run" id="ref-for-text-run①⓪">text runs</a>” to the <a data-link-type="dfn" href="#box-tree" id="ref-for-box-tree⑨">box tree</a> to define behavior in the context of <a class="css" data-link-type="propdesc" href="#propdef-display" id="ref-for-propdef-display⑥①">display: contents</a>.
 (<a href="https://drafts.csswg.org/css-display-3/issues-wd-2017#issue-19">Issue 19</a>, <a href="https://drafts.csswg.org/css-display-3/issues-wd-2017#issue-32">Issue 32</a>)</p>
     <li data-md>
@@ -1993,7 +1905,7 @@ particularly handling of layout-internal types.
 			if they become unnecessary or unwanted.) 
     <li>Created the <a class="css" data-link-type="maybe" href="#valdef-display-flow" id="ref-for-valdef-display-flow⑨">flow</a> and <a class="css" data-link-type="maybe" href="#valdef-display-flow-root" id="ref-for-valdef-display-flow-root①⓪">flow-root</a> <a data-link-type="dfn" href="#inner-display-type" id="ref-for-inner-display-type①⑧">inner display types</a> to better express flow layout <a data-link-type="dfn" href="#display-type" id="ref-for-display-type③">display types</a> and to create an explicit switch for making an element a <a data-link-type="dfn" href="#bfc" id="ref-for-bfc①">BFC</a> root.
 			(This should eliminate the need for hacks
-			like <span class="css">::after { clear: both; }</span> and <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-overflow" id="ref-for-propdef-overflow②">overflow: hidden</a> that are intended to accomplish this purpose.) 
+			like <span class="css">::after { clear: both; }</span> and <a class="css" data-link-type="propdesc">overflow: hidden</a> that are intended to accomplish this purpose.) 
    </ul>
    <h2 class="no-num heading settled" id="priv-sec"><span class="content"> Privacy and Security Considerations</span><a class="self-link" href="#priv-sec"></a></h2>
    <p>This specification introduces no new privacy or security considerations.</p>
@@ -2210,15 +2122,15 @@ particularly handling of layout-internal types.
    <li><a href="#text-run">text run</a><span>, in §1</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-propdef-align-content">
-   <a href="https://drafts.csswg.org/css-align-3/#propdef-align-content">https://drafts.csswg.org/css-align-3/#propdef-align-content</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#propdef-align-content">https://drafts.csswg.org/css-align/#propdef-align-content</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-align-content"> Appendix A: Glossary</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-border">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border">https://drafts.csswg.org/css-backgrounds-3/#propdef-border</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border">https://drafts.csswg.org/css-backgrounds/#propdef-border</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-border">1.
+    <li><a href="#ref-for-propdef-border">1. 
 Introduction</a>
    </ul>
   </aside>
@@ -2243,7 +2155,7 @@ Introduction</a> <a href="#ref-for-fragmentation①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">1. 
 Introduction</a>
@@ -2253,14 +2165,14 @@ Automatic Box Type Transformations</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inheritance">
-   <a href="https://drafts.csswg.org/css-cascade-5/#inheritance">https://drafts.csswg.org/css-cascade-5/#inheritance</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#inheritance">https://drafts.csswg.org/css-cascade/#inheritance</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inheritance">2.5. 
 Box Generation: the none and contents keywords</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inherited-property">
-   <a href="https://drafts.csswg.org/css-cascade-5/#inherited-property">https://drafts.csswg.org/css-cascade-5/#inherited-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#inherited-property">https://drafts.csswg.org/css-cascade/#inherited-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inherited-property">1. 
 Introduction</a>
@@ -2322,21 +2234,21 @@ Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby ke
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-absolute-position">
-   <a href="https://drafts.csswg.org/css-position-3/#absolute-position">https://drafts.csswg.org/css-position-3/#absolute-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#absolute-position">https://drafts.csswg.org/css-position/#absolute-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-absolute-position"> Appendix A: Glossary</a> <a href="#ref-for-absolute-position①">(2)</a>
     <li><a href="#ref-for-absolute-position②"> Changes</a> <a href="#ref-for-absolute-position③">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-absolute-position">
-   <a href="https://drafts.csswg.org/css-position-3/#absolute-position">https://drafts.csswg.org/css-position-3/#absolute-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#absolute-position">https://drafts.csswg.org/css-position/#absolute-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-absolute-position"> Appendix A: Glossary</a> <a href="#ref-for-absolute-position①">(2)</a>
     <li><a href="#ref-for-absolute-position②"> Changes</a> <a href="#ref-for-absolute-position③">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-position">
-   <a href="https://drafts.csswg.org/css-position-3/#propdef-position">https://drafts.csswg.org/css-position-3/#propdef-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-position/#propdef-position">https://drafts.csswg.org/css-position/#propdef-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-position">2.2. 
 Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords</a>
@@ -2460,32 +2372,8 @@ Box Layout Modes: the display property</a> <a href="#ref-for-comb-one①">(2)</a
 Box Layout Modes: the display property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-float">
-   <a href="https://drafts.csswg.org/css2/#propdef-float">https://drafts.csswg.org/css2/#propdef-float</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-float">2.2. 
-Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords</a>
-    <li><a href="#ref-for-propdef-float①"> Appendix A: Glossary</a> <a href="#ref-for-propdef-float②">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-list-style">
-   <a href="https://drafts.csswg.org/css2/#propdef-list-style">https://drafts.csswg.org/css2/#propdef-list-style</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-list-style">2.3. 
-Generating Marker Boxes: the list-item keyword</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-overflow">
-   <a href="https://drafts.csswg.org/css2/#propdef-overflow">https://drafts.csswg.org/css2/#propdef-overflow</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-overflow">2.2. 
-Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords</a>
-    <li><a href="#ref-for-propdef-overflow①"> Appendix A: Glossary</a>
-    <li><a href="#ref-for-propdef-overflow②"> Changes Prior to Candidate Recommendation Status</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-fragment">
-   <a href="https://drafts.csswg.org/css-break-3/#fragment">https://drafts.csswg.org/css-break-3/#fragment</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#fragment">https://drafts.csswg.org/css-break/#fragment</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fragment">1. 
 Introduction</a> <a href="#ref-for-fragment①">(2)</a>
@@ -2544,16 +2432,10 @@ Layout-Internal Display Types: the table-* and ruby-* keywords</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-window-getcomputedstyle">
-   <a href="https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle">https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle">https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-window-getcomputedstyle">1. 
 Introduction</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-audio">
-   <a href="https://html.spec.whatwg.org/multipage/media.html#audio">https://html.spec.whatwg.org/multipage/media.html#audio</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-audio">HTML Elements</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-the-body-element">
@@ -2715,14 +2597,14 @@ Box Generation: the none and contents keywords</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-document-language">
-   <a href="https://drafts.csswg.org/selectors-4/#document-language">https://drafts.csswg.org/selectors-4/#document-language</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#document-language">https://drafts.csswg.org/selectors/#document-language</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-document-language">2. 
 Box Layout Modes: the display property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-pseudo-element">
-   <a href="https://drafts.csswg.org/selectors-4/#pseudo-element">https://drafts.csswg.org/selectors-4/#pseudo-element</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#pseudo-element">https://drafts.csswg.org/selectors/#pseudo-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-pseudo-element">1. 
 Introduction</a>
@@ -2830,7 +2712,7 @@ Introduction</a>
      <li><span class="dfn-paneled" id="term-for-fragmentation">fragmentation</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
      <li><span class="dfn-paneled" id="term-for-inheritance">inheritance</span>
@@ -2902,13 +2784,6 @@ Introduction</a>
      <li><span class="dfn-paneled" id="term-for-comb-any">||</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[CSS2]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-float">float</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-list-style">list-style</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-overflow">overflow</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[CSS3-BREAK]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-fragment">fragment</span>
@@ -2935,7 +2810,6 @@ Introduction</a>
    <li>
     <a data-link-type="biblio">[HTML]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-audio">audio</span>
      <li><span class="dfn-paneled" id="term-for-the-body-element">body</span>
      <li><span class="dfn-paneled" id="term-for-the-br-element">br</span>
      <li><span class="dfn-paneled" id="term-for-the-button-element">button</span>
@@ -3001,8 +2875,8 @@ Introduction</a>
    <dd>Elika Etemad. <a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a>. 21 April 2020. WD. URL: <a href="https://www.w3.org/TR/css-box-4/">https://www.w3.org/TR/css-box-4/</a>
    <dt id="biblio-css-break-4">[CSS-BREAK-4]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a>. 18 December 2018. WD. URL: <a href="https://www.w3.org/TR/css-break-4/">https://www.w3.org/TR/css-break-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-contain-2">[CSS-CONTAIN-2]
    <dd>Tab Atkins Jr.; Florian Rivoal; Vladimir Levin. <a href="https://www.w3.org/TR/css-contain-2/">CSS Containment Module Level 2</a>. 16 December 2020. WD. URL: <a href="https://www.w3.org/TR/css-contain-2/">https://www.w3.org/TR/css-contain-2/</a>
    <dt id="biblio-css-grid-1">[CSS-GRID-1]
@@ -3024,7 +2898,7 @@ Introduction</a>
    <dt id="biblio-css-tables-3">[CSS-TABLES-3]
    <dd>François Remy; Greg Whitworth; David Baron. <a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a>. 27 July 2019. WD. URL: <a href="https://www.w3.org/TR/css-tables-3/">https://www.w3.org/TR/css-tables-3/</a>
    <dt id="biblio-css-text-3">[CSS-TEXT-3]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a>. 6 June 2019. CR. URL: <a href="https://www.w3.org/TR/css-values-3/">https://www.w3.org/TR/css-values-3/</a>
    <dt id="biblio-css-values-4">[CSS-VALUES-4]
@@ -3104,16 +2978,6 @@ Introduction</a> <a href="#ref-for-elements①">(2)</a> <a href="#ref-for-elemen
     <li><a href="#ref-for-elements⑤">2.5. 
 Box Generation: the none and contents keywords</a>
     <li><a href="#ref-for-elements⑥"> Appendix A: Glossary</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="text-nodes">
-   <b><a href="#text-nodes">#text-nodes</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-text-nodes">1. 
-Introduction</a> <a href="#ref-for-text-nodes①">(2)</a> <a href="#ref-for-text-nodes②">(3)</a> <a href="#ref-for-text-nodes③">(4)</a>
-    <li><a href="#ref-for-text-nodes④">2.5. 
-Box Generation: the none and contents keywords</a>
-    <li><a href="#ref-for-text-nodes⑤"> Changes Prior to Candidate Recommendation Status</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="box-tree">
@@ -3305,15 +3169,15 @@ Automatic Box Type Transformations</a>
   <aside class="dfn-panel" data-for="valdef-display-block">
    <b><a href="#valdef-display-block">#valdef-display-block</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-display-block">2.
+    <li><a href="#ref-for-valdef-display-block">2. 
 Box Layout Modes: the display property</a>
-    <li><a href="#ref-for-valdef-display-block①">2.1.
+    <li><a href="#ref-for-valdef-display-block①">2.1. 
 Outer Display Roles for Flow Layout: the block, inline, and run-in keywords</a>
-    <li><a href="#ref-for-valdef-display-block②">2.2.
+    <li><a href="#ref-for-valdef-display-block②">2.2. 
 Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords</a>
-    <li><a href="#ref-for-valdef-display-block③">2.3.
+    <li><a href="#ref-for-valdef-display-block③">2.3. 
 Generating Marker Boxes: the list-item keyword</a> <a href="#ref-for-valdef-display-block④">(2)</a>
-    <li><a href="#ref-for-valdef-display-block⑤">2.7.
+    <li><a href="#ref-for-valdef-display-block⑤">2.7. 
 Automatic Box Type Transformations</a> <a href="#ref-for-valdef-display-block⑥">(2)</a> <a href="#ref-for-valdef-display-block⑦">(3)</a> <a href="#ref-for-valdef-display-block⑧">(4)</a>
    </ul>
   </aside>
@@ -3326,15 +3190,15 @@ Automatic Box Type Transformations</a> <a href="#ref-for-valdef-display-block⑥
   <aside class="dfn-panel" data-for="valdef-display-inline">
    <b><a href="#valdef-display-inline">#valdef-display-inline</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-display-inline">2.
+    <li><a href="#ref-for-valdef-display-inline">2. 
 Box Layout Modes: the display property</a>
-    <li><a href="#ref-for-valdef-display-inline①">2.1.
+    <li><a href="#ref-for-valdef-display-inline①">2.1. 
 Outer Display Roles for Flow Layout: the block, inline, and run-in keywords</a>
-    <li><a href="#ref-for-valdef-display-inline②">2.2.
+    <li><a href="#ref-for-valdef-display-inline②">2.2. 
 Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords</a> <a href="#ref-for-valdef-display-inline③">(2)</a>
-    <li><a href="#ref-for-valdef-display-inline④">2.3.
+    <li><a href="#ref-for-valdef-display-inline④">2.3. 
 Generating Marker Boxes: the list-item keyword</a>
-    <li><a href="#ref-for-valdef-display-inline⑤">2.7.
+    <li><a href="#ref-for-valdef-display-inline⑤">2.7. 
 Automatic Box Type Transformations</a>
    </ul>
   </aside>
@@ -3857,11 +3721,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

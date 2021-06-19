@@ -291,62 +291,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-railroad */
 
     :root {
@@ -1038,7 +982,7 @@ on screen, on paper, etc.
    <p>This coordinate space can be modified with the <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform">transform</a> property. Using transform, elements can be translated, rotated and scaled.</p>
    <h3 class="heading settled" data-level="1.1" id="module-interactions"><span class="secno">1.1. </span><span class="content">Module Interactions</span><a class="self-link" href="#module-interactions"></a></h3>
    <p>This module defines a set of CSS properties that affect the visual rendering of elements to which those properties are applied; these effects are applied after elements have been sized and positioned according to the <a href="https://www.w3.org/TR/CSS2/visuren.html">visual formatting model</a> from <a data-link-type="biblio" href="#biblio-css2">[CSS2]</a>. Some values of these properties result in the creation of a <a href="https://www.w3.org/TR/CSS2/visuren.html#containing-block">containing block</a>, and/or the creation of a <a data-link-type="dfn" href="https://svgwg.org/svg2-draft/render.html#TermStackingContext" id="ref-for-TermStackingContext">stacking context</a>.</p>
-   <p>Transforms affect the rendering of backgrounds on elements with a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-fixed" id="ref-for-valdef-background-attachment-fixed">fixed</a> for the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-attachment" id="ref-for-propdef-background-attachment">background-attachment</a> property, which is specified in <a data-link-type="biblio" href="#biblio-css3bg">[CSS3BG]</a>.</p>
+   <p>Transforms affect the rendering of backgrounds on elements with a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-fixed" id="ref-for-valdef-background-attachment-fixed">fixed</a> for the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-attachment" id="ref-for-propdef-background-attachment">background-attachment</a> property, which is specified in <a data-link-type="biblio" href="#biblio-css3bg">[CSS3BG]</a>.</p>
    <p>Transforms affect the client rectangles returned by the Element Interface Extensions <a href="https://www.w3.org/TR/cssom-view/#dom-element-getclientrects">getClientRects()</a> and <a href="https://www.w3.org/TR/cssom-view/#dom-element-getboundingclientrect">getBoundingClientRect()</a>, which are specified in <a data-link-type="biblio" href="#biblio-cssom-view">[CSSOM-VIEW]</a>.</p>
    <p>Transforms affect the computation of the <a href="https://www.w3.org/TR/css-overflow-3/#scrollable-overflow-region">scrollable overflow region</a> as described by <a data-link-type="biblio" href="#biblio-css-overflow-3">[CSS-OVERFLOW-3]</a>.</p>
    <h3 class="heading settled" data-level="1.2" id="css-values"><span class="secno">1.2. </span><span class="content">CSS Values</span><a class="self-link" href="#css-values"></a></h3>
@@ -1238,25 +1182,9 @@ The current user coordinate system has its origin at the top-left of a <a data-l
 <c- p>&lt;/</c-><c- f>div</c-><c- p>></c->
 </code></pre>
    </div>
-   <p><a href="https://www.w3.org/TR/css-backgrounds-3/#valdef-background-attachment-fixed">Fixed backgrounds</a> on the root element are affected by any transform specified for that element. For all other elements that are effected by a transform (i.e. have a transform applied to them, or to any of their ancestor elements), a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-fixed" id="ref-for-valdef-background-attachment-fixed①">fixed</a> for the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-attachment" id="ref-for-propdef-background-attachment①">background-attachment</a> property is treated as if it had a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-scroll" id="ref-for-valdef-background-attachment-scroll">scroll</a>. The computed value of <span class="property" id="ref-for-propdef-background-attachment②">background-attachment</span> is not affected.</p>
+   <p><a href="https://www.w3.org/TR/css-backgrounds-3/#valdef-background-attachment-fixed">Fixed backgrounds</a> on the root element are affected by any transform specified for that element. For all other elements that are effected by a transform (i.e. have a transform applied to them, or to any of their ancestor elements), a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-fixed" id="ref-for-valdef-background-attachment-fixed①">fixed</a> for the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-attachment" id="ref-for-propdef-background-attachment①">background-attachment</a> property is treated as if it had a value of <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-scroll" id="ref-for-valdef-background-attachment-scroll">scroll</a>. The computed value of <span class="property" id="ref-for-propdef-background-attachment②">background-attachment</span> is not affected.</p>
    <p class="note" role="note"><span>Note:</span> If the root element is transformed, the transformation applies to the entire canvas, including any background specified for the root element.  Since <a href="https://www.w3.org/TR/css-backgrounds-3/#special-backgrounds">the background painting area for the root element</a> is the entire canvas, which is infinite, the transformation might cause parts of the background that were originally off-screen to appear. For example, if the root element’s background were repeating dots, and a transformation of <span class="css">scale(0.5)</span> were specified on the root element, the dots would shrink to half their size, but there will be four times as many, so they still cover the whole viewport.</p>
    <h2 class="heading settled" data-level="3" id="transform-property"><span class="secno">3. </span><span class="content">The <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform①⓪">transform</a> Property</span><a class="self-link" href="#transform-property"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" title="The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.">transform</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>16+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>36+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>23+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>16+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>36+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>3.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>24+</span></span>
-     </div>
-    </div>
-   </div>
    <p>A transformation is applied to the coordinate system an element renders into through the <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform①①">transform</a> property. This property contains a list of <a href="#transform-functions">transform functions</a>. The final transformation value for a coordinate system is obtained by converting each function in the list to its corresponding matrix like defined in <a href="#mathematical-description">Mathematical Description of Transform Functions</a>, then multiplying the matrices.</p>
    <table class="def propdef" data-link-for-hint="transform">
     <tbody>
@@ -1303,34 +1231,6 @@ The current user coordinate system has its origin at the top-left of a <a data-l
      <p>Serialize <var>transform</var> to a <a class="production css" data-link-type="function" href="#funcdef-transform-matrix" id="ref-for-funcdef-transform-matrix①">&lt;matrix()></a> function.</p>
    </ol>
    <h2 class="heading settled" data-level="4" id="transform-origin-property"><span class="secno">4. </span><span class="content">The <a class="property" data-link-type="propdesc" href="#propdef-transform-origin" id="ref-for-propdef-transform-origin⑥">transform-origin</a> Property</span><a class="self-link" href="#transform-origin-property"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" title="The transform-origin CSS property sets the origin for an element&apos;s transformations.">transform-origin</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>16+</span></span><span class="safari yes"><span>Safari</span><span>9+</span></span><span class="chrome yes"><span>Chrome</span><span>36+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>23+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>16+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>9+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>36+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>3.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>24+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform-origin" title="The transform-origin SVG attribute sets the origin for an item’s transformations.">Attribute/transform-origin</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>77+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>Yes</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>Yes</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>Yes</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>Yes</span></span><span class="webview_android yes"><span>Android WebView</span><span>Yes</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>Yes</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="transform-origin">
     <tbody>
      <tr>
@@ -1338,7 +1238,7 @@ The current user coordinate system has its origin at the top-left of a <a data-l
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-transform-origin">transform-origin</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">  [ left <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> center <span id="ref-for-comb-one②">|</span> right <span id="ref-for-comb-one③">|</span> top <span id="ref-for-comb-one④">|</span> bottom <span id="ref-for-comb-one⑤">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#typedef-length-percentage" id="ref-for-typedef-length-percentage">&lt;length-percentage></a> ]<br> <span id="ref-for-comb-one⑥">|</span> <br>  [ left <span id="ref-for-comb-one⑦">|</span> center <span id="ref-for-comb-one⑧">|</span> right <span id="ref-for-comb-one⑨">|</span> <span class="production" id="ref-for-typedef-length-percentage①">&lt;length-percentage></span> ]<br>  [ top <span id="ref-for-comb-one①⓪">|</span> center <span id="ref-for-comb-one①①">|</span> bottom <span id="ref-for-comb-one①②">|</span> <span class="production" id="ref-for-typedef-length-percentage②">&lt;length-percentage></span> ] <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a><br> <span id="ref-for-comb-one①③">|</span><br>  [[ center <span id="ref-for-comb-one①④">|</span> left <span id="ref-for-comb-one①⑤">|</span> right ] <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all">&amp;&amp;</a> [ center <span id="ref-for-comb-one①⑥">|</span> top <span id="ref-for-comb-one①⑦">|</span> bottom ]] <span class="production" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></span><span id="ref-for-mult-opt①">?</span>
+      <td class="prod">  [ left <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①">|</a> center <span id="ref-for-comb-one②">|</span> right <span id="ref-for-comb-one③">|</span> top <span id="ref-for-comb-one④">|</span> bottom <span id="ref-for-comb-one⑤">|</span> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#typedef-length-percentage" id="ref-for-typedef-length-percentage">&lt;length-percentage></a> ]<br> <span id="ref-for-comb-one⑥">|</span> <br>  [ left <span id="ref-for-comb-one⑦">|</span> center <span id="ref-for-comb-one⑧">|</span> right <span id="ref-for-comb-one⑨">|</span> <span class="production" id="ref-for-typedef-length-percentage①">&lt;length-percentage></span> ]<br>  [ top <span id="ref-for-comb-one①⓪">|</span> center <span id="ref-for-comb-one①①">|</span> bottom <span id="ref-for-comb-one①②">|</span> <span class="production" id="ref-for-typedef-length-percentage②">&lt;length-percentage></span> ] <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a><a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a><br> <span id="ref-for-comb-one①③">|</span><br>  [[ center <span id="ref-for-comb-one①④">|</span> left <span id="ref-for-comb-one①⑤">|</span> right ] <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-all" id="ref-for-comb-all">&amp;&amp;</a> [ center <span id="ref-for-comb-one①⑥">|</span> top <span id="ref-for-comb-one①⑦">|</span> bottom ]] <span class="production" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></span><span id="ref-for-mult-opt①">?</span>
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>50% 50%
@@ -1353,7 +1253,7 @@ The current user coordinate system has its origin at the top-left of a <a data-l
       <td>refer to the size of <a data-link-type="dfn" href="#reference-box" id="ref-for-reference-box②">reference box</a>
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>see <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position" id="ref-for-propdef-background-position">background-position</a>
+      <td>see <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-position" id="ref-for-propdef-background-position">background-position</a>
      <tr>
       <th>Canonical order:
       <td>per grammar
@@ -1363,12 +1263,12 @@ The current user coordinate system has its origin at the top-left of a <a data-l
    </table>
    <p>The values of the <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform①②">transform</a> and <a class="property" data-link-type="propdesc" href="#propdef-transform-origin" id="ref-for-propdef-transform-origin⑦">transform-origin</a> properties are used to compute the <a data-link-type="dfn" href="#transformation-matrix" id="ref-for-transformation-matrix⑥">transformation matrix</a>, as described above.</p>
    <p>If only one value is specified, the second value is assumed to be <a class="css" data-link-type="value" href="#valdef-transform-origin-center" id="ref-for-valdef-transform-origin-center">center</a>. If one or two values are specified, the third value is assumed to be <span class="css">0px</span>.</p>
-   <p>If two or more values are defined and either no value is a keyword, or the only used keyword is <a class="css" data-link-type="value" href="#valdef-transform-origin-center" id="ref-for-valdef-transform-origin-center①">center</a>, then the first value represents the horizontal position (or offset) and the second represents the vertical position (or offset). A third value always represents the Z position (or offset) and must be of type <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a>.</p>
+   <p>If two or more values are defined and either no value is a keyword, or the only used keyword is <a class="css" data-link-type="value" href="#valdef-transform-origin-center" id="ref-for-valdef-transform-origin-center①">center</a>, then the first value represents the horizontal position (or offset) and the second represents the vertical position (or offset). A third value always represents the Z position (or offset) and must be of type <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a>.</p>
    <dl>
     <dt data-md><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-4/#typedef-length-percentage" id="ref-for-typedef-length-percentage③">&lt;length-percentage></a>
     <dd data-md>
      <p>A percentage for the horizontal offset is relative to the width of the <a data-link-type="dfn" href="#reference-box" id="ref-for-reference-box③">reference box</a>. A percentage for the vertical offset is relative to the height of the <span id="ref-for-reference-box④">reference box</span>. The value for the horizontal and vertical offset represent an offset from the top left corner of the <span id="ref-for-reference-box⑤">reference box</span>.</p>
-    <dt data-md><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a>
+    <dt data-md><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value③" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a>
     <dd data-md>
      <p>A length value gives a fixed length as the offset. The value for the horizontal and vertical offset represent an offset from the top left corner of the <a data-link-type="dfn" href="#reference-box" id="ref-for-reference-box⑥">reference box</a>.</p>
     <dt data-md><dfn class="css" data-dfn-for="transform-origin" data-dfn-type="value" data-export id="valdef-transform-origin-top">top<a class="self-link" href="#valdef-transform-origin-top"></a></dfn>
@@ -1387,29 +1287,13 @@ The current user coordinate system has its origin at the top-left of a <a data-l
     <dd data-md>
      <p>Computes to <span class="css">50%</span> (<span class="css">left 50%</span>) for the horizontal position if the horizontal position is not otherwise specified, or <span class="css">50%</span> (<span class="css">top 50%</span>) for the vertical position if it is.</p>
    </dl>
-   <p>For SVG elements without associated CSS layout box the initial <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used value</a> is <span class="css">0 0</span> as if the user agent style sheet contained:</p>
+   <p>For SVG elements without associated CSS layout box the initial <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used value</a> is <span class="css">0 0</span> as if the user agent style sheet contained:</p>
 <pre><code class="highlight">*<c- nf>:not</c-><c- p>(</c->svg<c- p>),</c-> *<c- nf>:not</c-><c- p>(</c->foreignObject<c- p>)</c-> > svg <c- p>{</c->
     <c- k>transform-origin</c-><c- p>:</c-> <c- m>0</c-> <c- m>0</c-><c- p>;</c->
 <c- p>}</c->
 </code></pre>
-   <p>The <a class="property" data-link-type="propdesc" href="#propdef-transform-origin" id="ref-for-propdef-transform-origin⑧">transform-origin</a> property is a <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#resolved-value-special-case-property" id="ref-for-resolved-value-special-case-property">resolved value special case property</a> like <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a>. <a data-link-type="biblio" href="#biblio-cssom">[CSSOM]</a></p>
+   <p>The <a class="property" data-link-type="propdesc" href="#propdef-transform-origin" id="ref-for-propdef-transform-origin⑧">transform-origin</a> property is a <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#resolved-value-special-case-property" id="ref-for-resolved-value-special-case-property">resolved value special case property</a> like <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height">height</a>. <a data-link-type="biblio" href="#biblio-cssom">[CSSOM]</a></p>
    <h2 class="heading settled" data-level="5" id="transform-box"><span class="secno">5. </span><span class="content">Transform reference box: the <a class="property" data-link-type="propdesc" href="#propdef-transform-box" id="ref-for-propdef-transform-box①">transform-box</a> property</span><a class="self-link" href="#transform-box"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-box" title="The transform-box CSS property defines the layout box to which the transform and transform-origin properties relate.">transform-box</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>55+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>64+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>51+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>55+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>64+</span></span><span class="webview_android yes"><span>Android WebView</span><span>64+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>9.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>47+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="transform-box">
     <tbody>
      <tr>
@@ -1457,37 +1341,21 @@ The current user coordinate system has its origin at the top-left of a <a data-l
     <dt data-md><dfn class="dfn-paneled css" data-dfn-for="transform-box" data-dfn-type="value" data-export id="valdef-transform-box-view-box">view-box</dfn>
     <dd data-md>
      <p>Uses the nearest <a href="https://www.w3.org/TR/SVG11/intro.html#TermSVGViewport">SVG viewport</a> as reference box.</p>
-     <p>If a <code class="idl"><a data-link-type="idl">viewBox</a></code> attribute is specified for the <a href="https://www.w3.org/TR/SVG11/intro.html#TermSVGViewport">SVG viewport</a> creating element:</p>
+     <p>If a <code class="idl"><a data-link-type="idl" href="https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox" id="ref-for-__svg__SVGFitToViewBox__viewBox">viewBox</a></code> attribute is specified for the <a href="https://www.w3.org/TR/SVG11/intro.html#TermSVGViewport">SVG viewport</a> creating element:</p>
      <ul>
       <li data-md>
-       <p>The reference box is positioned at the origin of the coordinate system established by the <code class="idl"><a data-link-type="idl">viewBox</a></code> attribute.</p>
+       <p>The reference box is positioned at the origin of the coordinate system established by the <code class="idl"><a data-link-type="idl" href="https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox" id="ref-for-__svg__SVGFitToViewBox__viewBox①">viewBox</a></code> attribute.</p>
       <li data-md>
-       <p>The dimension of the reference box is set to the <em>width</em> and <em>height</em> values of the <code class="idl"><a data-link-type="idl">viewBox</a></code> attribute.</p>
+       <p>The dimension of the reference box is set to the <em>width</em> and <em>height</em> values of the <code class="idl"><a data-link-type="idl" href="https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox" id="ref-for-__svg__SVGFitToViewBox__viewBox②">viewBox</a></code> attribute.</p>
      </ul>
    </dl>
    <p>For the SVG <code><a data-link-type="element" href="https://svgwg.org/svg2-draft/pservers.html#elementdef-pattern" id="ref-for-elementdef-pattern">pattern</a></code> element, the reference box gets defined by the <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG/pservers.html#PatternElementPatternUnitsAttribute" id="ref-for-PatternElementPatternUnitsAttribute">patternUnits</a></code> attribute <a data-link-type="biblio" href="#biblio-svg2">[SVG2]</a>.</p>
    <p>For the SVG <a data-link-type="element" href="https://svgwg.org/svg2-draft/pservers.html#elementdef-linearGradient" id="ref-for-elementdef-linearGradient">linearGradient</a> and <a data-link-type="element" href="https://svgwg.org/svg2-draft/pservers.html#elementdef-radialGradient" id="ref-for-elementdef-radialGradient">radialGradient</a> elements, the reference box gets defined by the <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG/pservers.html#LinearGradientElementGradientUnitsAttribute" id="ref-for-LinearGradientElementGradientUnitsAttribute">gradientUnits</a></code> attribute <a data-link-type="biblio" href="#biblio-svg2">[SVG2]</a>.</p>
    <p>For the SVG <a data-link-type="element" href="https://drafts.fxtf.org/css-masking-1/#elementdef-clippath" id="ref-for-elementdef-clippath①">clipPath</a> element, the reference box gets defined by the <code><a data-link-type="element-sub" href="https://drafts.fxtf.org/css-masking-1/#element-attrdef-clippath-clippathunits" id="ref-for-element-attrdef-clippath-clippathunits">clipPathUnits</a></code> attribute <a data-link-type="biblio" href="#biblio-css-masking">[CSS-MASKING]</a>.</p>
    <p>A reference box adds an additional offset to the origin specified by the <a class="property" data-link-type="propdesc" href="#propdef-transform-origin" id="ref-for-propdef-transform-origin①⓪">transform-origin</a> property.</p>
-   <p>For SVG elements without associated CSS layout box, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used value</a> for <a class="css" data-link-type="maybe" href="#valdef-transform-box-content-box" id="ref-for-valdef-transform-box-content-box">content-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-fill-box" id="ref-for-valdef-transform-box-fill-box">fill-box</a> and for <a class="css" data-link-type="maybe" href="#valdef-transform-box-border-box" id="ref-for-valdef-transform-box-border-box">border-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-stroke-box" id="ref-for-valdef-transform-box-stroke-box">stroke-box</a>.</p>
-   <p>For elements with associated CSS layout box, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value②">used value</a> for <a class="css" data-link-type="maybe" href="#valdef-transform-box-fill-box" id="ref-for-valdef-transform-box-fill-box①">fill-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-content-box" id="ref-for-valdef-transform-box-content-box①">content-box</a> and for <a class="css" data-link-type="maybe" href="#valdef-transform-box-stroke-box" id="ref-for-valdef-transform-box-stroke-box①">stroke-box</a> and <a class="css" data-link-type="maybe" href="#valdef-transform-box-view-box" id="ref-for-valdef-transform-box-view-box">view-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-border-box" id="ref-for-valdef-transform-box-border-box①">border-box</a>.</p>
+   <p>For SVG elements without associated CSS layout box, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used value</a> for <a class="css" data-link-type="maybe" href="#valdef-transform-box-content-box" id="ref-for-valdef-transform-box-content-box">content-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-fill-box" id="ref-for-valdef-transform-box-fill-box">fill-box</a> and for <a class="css" data-link-type="maybe" href="#valdef-transform-box-border-box" id="ref-for-valdef-transform-box-border-box">border-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-stroke-box" id="ref-for-valdef-transform-box-stroke-box">stroke-box</a>.</p>
+   <p>For elements with associated CSS layout box, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value②">used value</a> for <a class="css" data-link-type="maybe" href="#valdef-transform-box-fill-box" id="ref-for-valdef-transform-box-fill-box①">fill-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-content-box" id="ref-for-valdef-transform-box-content-box①">content-box</a> and for <a class="css" data-link-type="maybe" href="#valdef-transform-box-stroke-box" id="ref-for-valdef-transform-box-stroke-box①">stroke-box</a> and <a class="css" data-link-type="maybe" href="#valdef-transform-box-view-box" id="ref-for-valdef-transform-box-view-box">view-box</a> is <a class="css" data-link-type="maybe" href="#valdef-transform-box-border-box" id="ref-for-valdef-transform-box-border-box①">border-box</a>.</p>
    <h2 class="heading settled" data-level="6" id="svg-transform"><span class="secno">6. </span><span class="content">The SVG <a data-link-type="element-attr" href="https://www.w3.org/TR/SVG11/coords.html#TransformAttribute" id="ref-for-TransformAttribute">transform</a> Attribute</span><a class="self-link" href="#svg-transform"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform" title="The transform attribute defines a list of transform definitions that are applied to an element and the element&apos;s children.">Attribute/transform</a></p>
-     <p class="less-than-two-engines-text">In no current engines.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>?</span></span><span class="safari no"><span>Safari</span><span>?</span></span><span class="chrome no"><span>Chrome</span><span>?</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink no"><span>Edge</span><span>?</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>?</span></span><span class="ie no"><span>IE</span><span>?</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>?</span></span><span class="safari_ios no"><span>iOS Safari</span><span>?</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>?</span></span><span class="webview_android no"><span>Android WebView</span><span>?</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>?</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-     </div>
-    </div>
-   </div>
    <h3 class="heading settled" data-level="6.1" id="transform-attribute-specificity"><span class="secno">6.1. </span><span class="content">SVG presentation attributes</span><a class="self-link" href="#transform-attribute-specificity"></a></h3>
    <p>The <a class="property" data-link-type="propdesc" href="#propdef-transform-origin" id="ref-for-propdef-transform-origin①①">transform-origin</a> CSS property is also a <a data-link-type="dfn" href="https://svgwg.org/svg2-draft/styling.html#TermPresentationAttribute" id="ref-for-TermPresentationAttribute">presentation attribute</a> and extends the list of existing <span id="ref-for-TermPresentationAttribute①">presentation attributes</span> <a data-link-type="biblio" href="#biblio-svg2">[SVG2]</a>.</p>
    <p>SVG 2 defines the <a data-link-type="element-attr" href="https://www.w3.org/TR/SVG11/coords.html#TransformAttribute" id="ref-for-TransformAttribute①">transform</a>, <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#PatternElementPatternTransformAttribute" id="ref-for-PatternElementPatternTransformAttribute">patternTransform</a></code>, <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#LinearGradientElementGradientTransformAttribute" id="ref-for-LinearGradientElementGradientTransformAttribute">gradientTransform</a></code> attributes as <a data-link-type="dfn" href="https://svgwg.org/svg2-draft/styling.html#TermPresentationAttribute" id="ref-for-TermPresentationAttribute②">presentation attributes</a>, represented by the CSS <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform①④">transform</a> property <a data-link-type="biblio" href="#biblio-svg2">[SVG2]</a>.</p>
@@ -1524,9 +1392,9 @@ The current user coordinate system has its origin at the top-left of a <a data-l
     <li data-md>
      <p>|: separates alternatives</p>
     <li data-md>
-     <p>double quotes surround literals. Literals consists of <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#letter" id="ref-for-letter">letter</a>s <a data-link-type="biblio" href="#biblio-css-syntax-3">[CSS-SYNTAX-3]</a>, left parenthesis and right parenthesis.</p>
+     <p>double quotes surround literals. Literals consists of <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#letter" id="ref-for-letter">letter</a>s <a data-link-type="biblio" href="#biblio-css-syntax-3">[CSS-SYNTAX-3]</a>, left parenthesis and right parenthesis.</p>
     <li data-md>
-     <p><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax-3/#typedef-number-token" id="ref-for-typedef-number-token">&lt;number-token></a> defined by the CSS Syntax module <a data-link-type="biblio" href="#biblio-css-syntax-3">[CSS-SYNTAX-3]</a>.</p>
+     <p><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-syntax/#typedef-number-token" id="ref-for-typedef-number-token">&lt;number-token></a> defined by the CSS Syntax module <a data-link-type="biblio" href="#biblio-css-syntax-3">[CSS-SYNTAX-3]</a>.</p>
    </ul>
    <p class="note" role="note"><span>Note:</span> The syntax reflects implemented behavior in user agents and differs from the syntax defined by SVG 1.1.</p>
    <dl>
@@ -3009,7 +2877,7 @@ The current user coordinate system has its origin at the top-left of a <a data-l
      <tr>
       <th><a href="#svg-translate">translate</a> 
       <td><a class="production css" data-link-type="function" href="#funcdef-transform-translate" id="ref-for-funcdef-transform-translate①">&lt;translate()></a> 
-      <td>Number values interpreted as CSS <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> types with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#px" id="ref-for-px">px</a> units. 
+      <td>Number values interpreted as CSS <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value④" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> types with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#px" id="ref-for-px">px</a> units. 
      <tr>
       <th><a href="#svg-scale">scale</a> 
       <td><a class="production css" data-link-type="function" href="#funcdef-transform-scale" id="ref-for-funcdef-transform-scale①">&lt;scale()></a> 
@@ -3031,7 +2899,7 @@ The current user coordinate system has its origin at the top-left of a <a data-l
       <td><a class="production css" data-link-type="function" href="#funcdef-transform-matrix" id="ref-for-funcdef-transform-matrix②">&lt;matrix()></a> 
       <td>
    </table>
-   <p>The SVG transform function <a href="#svg-rotate">rotate</a> with 3 values can not be mapped to a corresponding CSS <a class="production css" data-link-type="type" href="#typedef-transform-function" id="ref-for-typedef-transform-function⑨">&lt;transform-function></a>. The 2 optional number values represent a horizontal translation value <span class="css">cx</span> followed by a vertical translation value <span class="css">cy</span>. Both number values get interpreted as CSS <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑤" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> types with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#px" id="ref-for-px①">px</a> units and define the origin for rotation. The behavior is equivalent to an initial translation by <span class="css">cx</span>, <span class="css">cy</span>, a rotation defined by the first number value interpreted as <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#angle-value" id="ref-for-angle-value③" title="Expands to: deg | grad | rad | turn">&lt;angle></a> type with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#deg" id="ref-for-deg③">deg</a> unit followed by a translation by <span class="css">-cx</span>, <span class="css">-cy</span>.</p>
+   <p>The SVG transform function <a href="#svg-rotate">rotate</a> with 3 values can not be mapped to a corresponding CSS <a class="production css" data-link-type="type" href="#typedef-transform-function" id="ref-for-typedef-transform-function⑨">&lt;transform-function></a>. The 2 optional number values represent a horizontal translation value <span class="css">cx</span> followed by a vertical translation value <span class="css">cy</span>. Both number values get interpreted as CSS <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value⑤" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> types with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#px" id="ref-for-px①">px</a> units and define the origin for rotation. The behavior is equivalent to an initial translation by <span class="css">cx</span>, <span class="css">cy</span>, a rotation defined by the first number value interpreted as <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#angle-value" id="ref-for-angle-value③" title="Expands to: deg | grad | rad | turn">&lt;angle></a> type with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-values-4/#deg" id="ref-for-deg③">deg</a> unit followed by a translation by <span class="css">-cx</span>, <span class="css">-cy</span>.</p>
    <p>A <a data-link-type="element-attr" href="https://www.w3.org/TR/SVG11/coords.html#TransformAttribute" id="ref-for-TransformAttribute⑨">transform</a> attribute can be the start or end value of a CSS Transition. If the value of a <span id="ref-for-TransformAttribute①⓪">transform</span> attribute is the start or end value of a CSS Transition and the SVG <a href="#svg-transform-list">transform list</a> contains at least one <a href="#svg-rotate">rotate</a> transform function with 3 values, the individual SVG transform functions must get <a data-link-type="dfn" href="#post-multiplied" id="ref-for-post-multiplied②">post-multiplied</a> and the resulting matrix must get mapped to a <a class="production css" data-link-type="function" href="#funcdef-transform-matrix" id="ref-for-funcdef-transform-matrix③">&lt;matrix()></a> CSS <a class="production css" data-link-type="type" href="#typedef-transform-function" id="ref-for-typedef-transform-function①⓪">&lt;transform-function></a> and used as start/end value of the CSS Transition.</p>
    <h3 class="heading settled" data-level="6.4" id="svg-user-coordinate-space"><span class="secno">6.4. </span><span class="content">User coordinate space</span><a class="self-link" href="#svg-user-coordinate-space"></a></h3>
    <p>For the <code><a data-link-type="element" href="https://svgwg.org/svg2-draft/pservers.html#elementdef-pattern" id="ref-for-elementdef-pattern①">pattern</a></code> element, the <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#PatternElementPatternTransformAttribute" id="ref-for-PatternElementPatternTransformAttribute⑤">patternTransform</a></code> attribute and <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform①⑨">transform</a> property define an additional transformation in the pattern coordinate system. See <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG/pservers.html#PatternElementPatternUnitsAttribute" id="ref-for-PatternElementPatternUnitsAttribute①">patternUnits</a></code> attribute for details <a data-link-type="biblio" href="#biblio-svg2">[SVG2]</a>.</p>
@@ -3062,25 +2930,9 @@ The current user coordinate system has its origin at the top-left of a <a data-l
    </div>
    <h3 class="heading settled" data-level="6.5" id="transform-attribute-dom"><span class="secno">6.5. </span><span class="content">SVG DOM interface for the <a data-link-type="element-attr" href="https://www.w3.org/TR/SVG11/coords.html#TransformAttribute" id="ref-for-TransformAttribute①④">transform</a> attribute</span><a class="self-link" href="#transform-attribute-dom"></a></h3>
    <p>The SVG specification defines the "<a href="https://www.w3.org/TR/2011/REC-SVG11-20110816/coords.html#InterfaceSVGAnimatedTransformList">SVGAnimatedTransformList</a>" interface in the SVG DOM to provide access to the animated and the base value of the SVG <a data-link-type="element-attr" href="https://www.w3.org/TR/SVG11/coords.html#TransformAttribute" id="ref-for-TransformAttribute①⑤">transform</a>, <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#LinearGradientElementGradientTransformAttribute" id="ref-for-LinearGradientElementGradientTransformAttribute⑥">gradientTransform</a></code> and <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#PatternElementPatternTransformAttribute" id="ref-for-PatternElementPatternTransformAttribute⑥">patternTransform</a></code> attributes. To ensure backwards compatibility, this API must still be supported by user agents.</p>
-   <p><code class="idl"><a data-link-type="idl">baseVal</a></code> gives the author the possibility to access and modify the values of the SVG <a data-link-type="element-attr" href="https://www.w3.org/TR/SVG11/coords.html#TransformAttribute" id="ref-for-TransformAttribute①⑥">transform</a>, <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#PatternElementPatternTransformAttribute" id="ref-for-PatternElementPatternTransformAttribute⑦">patternTransform</a></code>, <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#LinearGradientElementGradientTransformAttribute" id="ref-for-LinearGradientElementGradientTransformAttribute⑦">gradientTransform</a></code> attributes. To provide the necessary backwards compatibility to the SVG DOM, <code class="idl"><a data-link-type="idl">baseVal</a></code> must reflect the values of this author style sheet. All modifications to SVG DOM objects of <code class="idl"><a data-link-type="idl">baseVal</a></code> must affect this author style sheet immediately.</p>
-   <p><code class="idl"><a data-link-type="idl">animVal</a></code> represents the computed style of the <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform②④">transform</a> property. Therefore it includes all applied <a href="https://www.w3.org/TR/css3-transitions/">CSS3 Transitions</a>, <a href="https://www.w3.org/TR/css3-animations/">CSS3 Animations</a> or SVG Animations if any of those are underway. The computed style and SVG DOM objects of <code class="idl"><a data-link-type="idl">animVal</a></code> can not be modified.</p>
+   <p><code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-svganimatedstring-baseval" id="ref-for-dom-svganimatedstring-baseval">baseVal</a></code> gives the author the possibility to access and modify the values of the SVG <a data-link-type="element-attr" href="https://www.w3.org/TR/SVG11/coords.html#TransformAttribute" id="ref-for-TransformAttribute①⑥">transform</a>, <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#PatternElementPatternTransformAttribute" id="ref-for-PatternElementPatternTransformAttribute⑦">patternTransform</a></code>, <code><a data-link-type="element-sub" href="https://www.w3.org/TR/SVG11/pservers.html#LinearGradientElementGradientTransformAttribute" id="ref-for-LinearGradientElementGradientTransformAttribute⑦">gradientTransform</a></code> attributes. To provide the necessary backwards compatibility to the SVG DOM, <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-svganimatedstring-baseval" id="ref-for-dom-svganimatedstring-baseval①">baseVal</a></code> must reflect the values of this author style sheet. All modifications to SVG DOM objects of <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-svganimatedstring-baseval" id="ref-for-dom-svganimatedstring-baseval②">baseVal</a></code> must affect this author style sheet immediately.</p>
+   <p><code class="idl"><a data-link-type="idl" href="https://svgwg.org/svg2-draft/types.html#__svg__SVGAnimatedBoolean__animVal" id="ref-for-__svg__SVGAnimatedBoolean__animVal">animVal</a></code> represents the computed style of the <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform②④">transform</a> property. Therefore it includes all applied <a href="https://www.w3.org/TR/css3-transitions/">CSS3 Transitions</a>, <a href="https://www.w3.org/TR/css3-animations/">CSS3 Animations</a> or SVG Animations if any of those are underway. The computed style and SVG DOM objects of <code class="idl"><a data-link-type="idl" href="https://svgwg.org/svg2-draft/types.html#__svg__SVGAnimatedBoolean__animVal" id="ref-for-__svg__SVGAnimatedBoolean__animVal①">animVal</a></code> can not be modified.</p>
    <h2 class="heading settled" data-level="7" id="transform-functions"><span class="secno">7. </span><span class="content">The Transform Functions</span><a class="self-link" href="#transform-functions"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function" title="The <transform-function> CSS data type represents a transformation that affects an element&apos;s appearance. Transformation functions can rotate, resize, distort, or move an element in 2D or 3D space. It is used in the transform property.">transform-function</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>10.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>9+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>3.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>2+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The value of the <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform②⑤">transform</a> property is a list of <dfn class="dfn-paneled css" data-dfn-type="type" data-export id="typedef-transform-function">&lt;transform-function></dfn>.
 The set of allowed transform functions is given below.
 In the following functions,
@@ -3507,7 +3359,7 @@ matrix[1][1] *= scale[1]
     <li data-md>
      <p>Simplified grammar of transform functions. (No normative impact.)</p>
     <li data-md>
-     <p>Remove animation support of <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform②⑥">transform</a> from <a data-link-type="element" href="https://www.w3.org/TR/SVG11/animate.html#AnimateElement" id="ref-for-AnimateElement">animate</a> and <a data-link-type="element" href="https://www.w3.org/TR/SVG11/animate.html#SetElement" id="ref-for-SetElement">set</a> elements.</p>
+     <p>Remove animation support of <a class="property" data-link-type="propdesc" href="#propdef-transform" id="ref-for-propdef-transform②⑥">transform</a> from <a data-link-type="element" href="https://svgwg.org/specs/animations/#elementdef-animate" id="ref-for-elementdef-animate">animate</a> and <a data-link-type="element" href="https://svgwg.org/specs/animations/#elementdef-set" id="ref-for-elementdef-set">set</a> elements.</p>
     <li data-md>
      <p>Editorial changes.</p>
    </ul>
@@ -3702,7 +3554,7 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
    <li><a href="#valdef-transform-box-view-box">view-box</a><span>, in §5</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">4. The transform-origin Property</a>
     <li><a href="#ref-for-used-value①">5. Transform reference box: the transform-box property</a> <a href="#ref-for-used-value②">(2)</a>
@@ -3749,13 +3601,13 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-typedef-number-token">
-   <a href="https://drafts.csswg.org/css-syntax-3/#typedef-number-token">https://drafts.csswg.org/css-syntax-3/#typedef-number-token</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#typedef-number-token">https://drafts.csswg.org/css-syntax/#typedef-number-token</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-typedef-number-token">6.2. Syntax of the SVG transform attribute</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-letter">
-   <a href="https://drafts.csswg.org/css-syntax-3/#letter">https://drafts.csswg.org/css-syntax-3/#letter</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#letter">https://drafts.csswg.org/css-syntax/#letter</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-letter">6.2. Syntax of the SVG transform attribute</a>
    </ul>
@@ -3889,33 +3741,33 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-attachment">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-attachment">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-attachment</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-attachment">https://drafts.csswg.org/css-backgrounds/#propdef-background-attachment</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-attachment">1.1. Module Interactions</a>
     <li><a href="#ref-for-propdef-background-attachment①">2. The Transform Rendering Model</a> <a href="#ref-for-propdef-background-attachment②">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-position">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-position">https://drafts.csswg.org/css-backgrounds/#propdef-background-position</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-position">4. The transform-origin Property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-background-attachment-fixed">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-fixed">https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-fixed</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-fixed">https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-fixed</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-background-attachment-fixed">1.1. Module Interactions</a>
     <li><a href="#ref-for-valdef-background-attachment-fixed①">2. The Transform Rendering Model</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-background-attachment-scroll">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-scroll">https://drafts.csswg.org/css-backgrounds-3/#valdef-background-attachment-scroll</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-scroll">https://drafts.csswg.org/css-backgrounds/#valdef-background-attachment-scroll</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-background-attachment-scroll">2. The Transform Rendering Model</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-resolved-value-special-case-property">
-   <a href="https://drafts.csswg.org/cssom-1/#resolved-value-special-case-property">https://drafts.csswg.org/cssom-1/#resolved-value-special-case-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#resolved-value-special-case-property">https://drafts.csswg.org/cssom/#resolved-value-special-case-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-resolved-value-special-case-property">4. The transform-origin Property</a>
    </ul>
@@ -3924,6 +3776,18 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
    <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element">https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-the-div-element">2. The Transform Rendering Model</a> <a href="#ref-for-the-div-element①">(2)</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-elementdef-animate">
+   <a href="https://svgwg.org/specs/animations/#elementdef-animate">https://svgwg.org/specs/animations/#elementdef-animate</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-elementdef-animate">Since the 14 February 2019 Candidate Recommendation</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-elementdef-set">
+   <a href="https://svgwg.org/specs/animations/#elementdef-set">https://svgwg.org/specs/animations/#elementdef-set</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-elementdef-set">Since the 14 February 2019 Candidate Recommendation</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-LinearGradientElementGradientTransformAttribute">
@@ -3975,16 +3839,10 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
     <li><a href="#ref-for-TransformAttribute①⑧">Since the 30 November 2017 Working Draft </a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-AnimateElement">
-   <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateElement">https://www.w3.org/TR/SVG11/animate.html#AnimateElement</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-__svg__SVGAnimatedBoolean__animVal">
+   <a href="https://svgwg.org/svg2-draft/types.html#__svg__SVGAnimatedBoolean__animVal">https://svgwg.org/svg2-draft/types.html#__svg__SVGAnimatedBoolean__animVal</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-AnimateElement">Since the 14 February 2019 Candidate Recommendation</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-SetElement">
-   <a href="https://www.w3.org/TR/SVG11/animate.html#SetElement">https://www.w3.org/TR/SVG11/animate.html#SetElement</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-SetElement">Since the 14 February 2019 Candidate Recommendation</a>
+    <li><a href="#ref-for-__svg__SVGAnimatedBoolean__animVal">6.5. SVG DOM interface for the transform attribute</a> <a href="#ref-for-__svg__SVGAnimatedBoolean__animVal①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-elementdef-linearGradient">
@@ -4060,6 +3918,12 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
     <li><a href="#ref-for-TermTextContentElement">1.2. CSS Values</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-__svg__SVGFitToViewBox__viewBox">
+   <a href="https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox">https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__viewBox</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-__svg__SVGFitToViewBox__viewBox">5. Transform reference box: the transform-box property</a> <a href="#ref-for-__svg__SVGFitToViewBox__viewBox①">(2)</a> <a href="#ref-for-__svg__SVGFitToViewBox__viewBox②">(3)</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-TermViewportCoordinateSystem">
    <a href="https://svgwg.org/svg2-draft/coords.html#TermViewportCoordinateSystem">https://svgwg.org/svg2-draft/coords.html#TermViewportCoordinateSystem</a><b>Referenced in:</b>
    <ul>
@@ -4067,10 +3931,16 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
     <li><a href="#ref-for-TermViewportCoordinateSystem①">2. The Transform Rendering Model</a> <a href="#ref-for-TermViewportCoordinateSystem②">(2)</a> <a href="#ref-for-TermViewportCoordinateSystem③">(3)</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-dom-svganimatedstring-baseval">
+   <a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-svganimatedstring-baseval">https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-svganimatedstring-baseval</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dom-svganimatedstring-baseval">6.5. SVG DOM interface for the transform attribute</a> <a href="#ref-for-dom-svganimatedstring-baseval①">(2)</a> <a href="#ref-for-dom-svganimatedstring-baseval②">(3)</a>
+   </ul>
+  </aside>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-used-value">used value</span>
     </ul>
@@ -4153,6 +4023,12 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
      <li><span class="dfn-paneled" id="term-for-the-div-element">div</span>
     </ul>
    <li>
+    <a data-link-type="biblio">[svg-animations]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-elementdef-animate">animate</span>
+     <li><span class="dfn-paneled" id="term-for-elementdef-set">set</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[svg1.1]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-LinearGradientElementGradientTransformAttribute">gradienttransform</span>
@@ -4162,14 +4038,9 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
      <li><span class="dfn-paneled" id="term-for-TransformAttribute">transform</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[SVG11]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-AnimateElement">animate</span>
-     <li><span class="dfn-paneled" id="term-for-SetElement">set</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[SVG2]</a> defines the following terms:
     <ul>
+     <li><span class="dfn-paneled" id="term-for-__svg__SVGAnimatedBoolean__animVal">animVal</span>
      <li><span class="dfn-paneled" id="term-for-elementdef-linearGradient">lineargradient</span>
      <li><span class="dfn-paneled" id="term-for-TermObjectBoundingBox">object bounding box</span>
      <li><span class="dfn-paneled" id="term-for-TermPaintServerElement">paint server element</span>
@@ -4181,14 +4052,20 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
      <li><span class="dfn-paneled" id="term-for-TermStackingContext">stacking contexts</span>
      <li><span class="dfn-paneled" id="term-for-TermStrokeBoundingBox">stroke bounding box</span>
      <li><span class="dfn-paneled" id="term-for-TermTextContentElement">text content element</span>
+     <li><span class="dfn-paneled" id="term-for-__svg__SVGFitToViewBox__viewBox">viewBox</span>
      <li><span class="dfn-paneled" id="term-for-TermViewportCoordinateSystem">viewport coordinate system</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[TRUSTED-TYPES]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-dom-svganimatedstring-baseval">baseVal</span>
     </ul>
   </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-masking">[CSS-MASKING]
    <dd>Dirk Schulze; Brian Birtles; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-masking-1/">CSS Masking Module Level 1</a>. 26 August 2014. CR. URL: <a href="https://www.w3.org/TR/css-masking-1/">https://www.w3.org/TR/css-masking-1/</a>
    <dt id="biblio-css-overflow-3">[CSS-OVERFLOW-3]
@@ -4209,10 +4086,12 @@ avoid matrix interpolation for the common prefix of the two lists.</p>
    <dd>Simon Pieters; Glenn Adams. <a href="https://www.w3.org/TR/cssom-1/">CSS Object Model (CSSOM)</a>. 17 March 2016. WD. URL: <a href="https://www.w3.org/TR/cssom-1/">https://www.w3.org/TR/cssom-1/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
-   <dt id="biblio-svg11">[SVG11]
-   <dd>Erik Dahlström; et al. <a href="https://www.w3.org/TR/SVG11/">Scalable Vector Graphics (SVG) 1.1 (Second Edition)</a>. 16 August 2011. REC. URL: <a href="https://www.w3.org/TR/SVG11/">https://www.w3.org/TR/SVG11/</a>
+   <dt id="biblio-svg-animations">[SVG-ANIMATIONS]
+   <dd>SVG Animations Level 2 URL: <a href="https://svgwg.org/specs/animations/">https://svgwg.org/specs/animations/</a>
    <dt id="biblio-svg2">[SVG2]
    <dd>Amelia Bellamy-Royds; et al. <a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>. 4 October 2018. CR. URL: <a href="https://www.w3.org/TR/SVG2/">https://www.w3.org/TR/SVG2/</a>
+   <dt id="biblio-trusted-types">[TRUSTED-TYPES]
+   <dd>Krzysztof Kotowicz; Mike West. <a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a>. ED. URL: <a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">https://w3c.github.io/webappsec-trusted-types/dist/spec/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
@@ -4594,11 +4473,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

@@ -359,8 +359,8 @@ https://w3c.github.io/mathml-core/#dfn-maction
 -
 <margin-width>
 type
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-margin-width
@@ -369,8 +369,8 @@ https://drafts.csswg.org/css2/#value-def-margin-width
 -
 <margin-width>
 type
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-margin-width
@@ -379,8 +379,8 @@ https://drafts.csswg.org/css2/#value-def-margin-width
 -
 <marker-ref>
 type
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#DataTypeMarkerRef
@@ -389,8 +389,8 @@ https://svgwg.org/svg2-draft/painting.html#DataTypeMarkerRef
 -
 <marker-ref>
 type
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#DataTypeMarkerRef
@@ -1129,8 +1129,8 @@ https://html.spec.whatwg.org/multipage/media.html#value-track-kind-main
 -
 main
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-main
@@ -1915,8 +1915,8 @@ https://www.w3.org/TR/appmanifest/#dfn-application-manifest
 -
 manifest-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#manifest-src
@@ -1925,8 +1925,8 @@ https://w3c.github.io/webappsec-csp/#manifest-src
 -
 manifest-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#manifest-src
@@ -2201,8 +2201,8 @@ https://www.w3.org/TR/mediacapture-depth/#dfn-map-depth-and-color
 -
 map document language elements to table elements
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#map-document-language-elements-to-table-elements
@@ -2211,8 +2211,8 @@ https://drafts.csswg.org/css2/#map-document-language-elements-to-table-elements
 -
 map document language elements to table elements
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#map-document-language-elements-to-table-elements
@@ -2251,8 +2251,8 @@ https://w3c.github.io/web-nfc/#dfn-map-empty-record-to-ndef
 -
 map entries
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-map-entries
@@ -2324,8 +2324,8 @@ XRSession
 -
 map size getter
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-map-size-getter
@@ -2440,8 +2440,8 @@ GPUBuffer
 -
 maplike
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-maplike
@@ -2450,8 +2450,8 @@ https://heycam.github.io/webidl/#dfn-maplike
 -
 maplike declaration
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-maplike-declaration
@@ -2732,8 +2732,8 @@ https://www.w3.org/TR/css-speech-1/#margin-def
 -
 margin
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#box-margin-area
@@ -2742,8 +2742,8 @@ https://drafts.csswg.org/css2/#box-margin-area
 -
 margin
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-margin
@@ -2752,8 +2752,8 @@ https://drafts.csswg.org/css2/#propdef-margin
 -
 margin
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#box-margin-area
@@ -2762,8 +2762,8 @@ https://drafts.csswg.org/css2/#box-margin-area
 -
 margin
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-margin
@@ -2772,8 +2772,8 @@ https://drafts.csswg.org/css2/#propdef-margin
 -
 margin
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-margin
@@ -2782,8 +2782,8 @@ https://www.w3.org/TR/CSS22/box.html#propdef-margin
 -
 margin (of a box)
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#box-margin-area
@@ -2792,8 +2792,8 @@ https://drafts.csswg.org/css2/#box-margin-area
 -
 margin (of a box)
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#box-margin-area
@@ -2922,8 +2922,8 @@ https://www.w3.org/TR/css-box-4/#margin-box
 -
 margin box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#margin-box
@@ -2932,8 +2932,8 @@ https://drafts.csswg.org/css2/#margin-box
 -
 margin box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#margin-box
@@ -3012,8 +3012,8 @@ https://www.w3.org/TR/css-box-4/#margin-edge
 -
 margin edge
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#margin-edge
@@ -3022,8 +3022,8 @@ https://drafts.csswg.org/css2/#margin-edge
 -
 margin edge
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#margin-edge
@@ -3192,8 +3192,8 @@ https://www.w3.org/TR/css-box-4/#propdef-margin-bottom
 -
 margin-bottom
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-margin-bottom
@@ -3202,8 +3202,8 @@ https://drafts.csswg.org/css2/#propdef-margin-bottom
 -
 margin-bottom
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-margin-bottom
@@ -3212,8 +3212,8 @@ https://drafts.csswg.org/css2/#propdef-margin-bottom
 -
 margin-bottom
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-margin-bottom
@@ -3438,8 +3438,8 @@ https://www.w3.org/TR/css-box-4/#propdef-margin-left
 -
 margin-left
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-margin-left
@@ -3448,8 +3448,8 @@ https://drafts.csswg.org/css2/#propdef-margin-left
 -
 margin-left
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-margin-left
@@ -3458,8 +3458,8 @@ https://drafts.csswg.org/css2/#propdef-margin-left
 -
 margin-left
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-margin-left
@@ -3508,8 +3508,8 @@ https://www.w3.org/TR/css-box-4/#propdef-margin-right
 -
 margin-right
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-margin-right
@@ -3518,8 +3518,8 @@ https://drafts.csswg.org/css2/#propdef-margin-right
 -
 margin-right
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-margin-right
@@ -3528,8 +3528,8 @@ https://drafts.csswg.org/css2/#propdef-margin-right
 -
 margin-right
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-margin-right
@@ -3578,8 +3578,8 @@ https://www.w3.org/TR/css-box-4/#propdef-margin-top
 -
 margin-top
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-margin-top
@@ -3588,8 +3588,8 @@ https://drafts.csswg.org/css2/#propdef-margin-top
 -
 margin-top
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-margin-top
@@ -3598,8 +3598,8 @@ https://drafts.csswg.org/css2/#propdef-margin-top
 -
 margin-top
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/box.html#propdef-margin-top
@@ -3992,8 +3992,8 @@ https://www.w3.org/TR/css-lists-3/#marker
 -
 marker
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#elementdef-marker
@@ -4002,8 +4002,8 @@ https://svgwg.org/svg2-draft/painting.html#elementdef-marker
 -
 marker
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerProperty
@@ -4012,8 +4012,8 @@ https://svgwg.org/svg2-draft/painting.html#MarkerProperty
 -
 marker
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#elementdef-marker
@@ -4022,8 +4022,8 @@ https://www.w3.org/TR/SVG2/painting.html#elementdef-marker
 -
 marker
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerProperty
@@ -4072,8 +4072,8 @@ https://www.w3.org/TR/css-lists-3/#marker-image
 -
 marker properties
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#TermMarkerProperties
@@ -4082,8 +4082,8 @@ https://svgwg.org/svg2-draft/painting.html#TermMarkerProperties
 -
 marker properties
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#TermMarkerProperties
@@ -4112,8 +4112,8 @@ https://www.w3.org/TR/css-lists-3/#marker-string
 -
 marker-end
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerEndProperty
@@ -4122,8 +4122,8 @@ https://svgwg.org/svg2-draft/painting.html#MarkerEndProperty
 -
 marker-end
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerEndProperty
@@ -4132,8 +4132,8 @@ https://www.w3.org/TR/SVG2/painting.html#MarkerEndProperty
 -
 marker-mid
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerMidProperty
@@ -4142,8 +4142,8 @@ https://svgwg.org/svg2-draft/painting.html#MarkerMidProperty
 -
 marker-mid
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerMidProperty
@@ -4172,8 +4172,8 @@ https://www.w3.org/TR/css-lists-3/#propdef-marker-side
 -
 marker-start
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerStartProperty
@@ -4182,8 +4182,8 @@ https://svgwg.org/svg2-draft/painting.html#MarkerStartProperty
 -
 marker-start
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerStartProperty
@@ -4192,8 +4192,8 @@ https://www.w3.org/TR/SVG2/painting.html#MarkerStartProperty
 -
 markerHeight
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__markerHeight
@@ -4203,8 +4203,8 @@ SVGMarkerElement
 -
 markerHeight
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__markerHeight
@@ -4258,8 +4258,8 @@ GPUProgrammablePassEncoder/insertDebugMarker(markerLabel)
 -
 markerUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__markerUnits
@@ -4269,8 +4269,8 @@ SVGMarkerElement
 -
 markerUnits
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__markerUnits
@@ -4280,8 +4280,8 @@ SVGMarkerElement
 -
 markerWidth
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__markerWidth
@@ -4291,8 +4291,8 @@ SVGMarkerElement
 -
 markerWidth
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#__svg__SVGMarkerElement__markerWidth
@@ -4302,8 +4302,8 @@ SVGMarkerElement
 -
 markerheight
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerHeightAttribute
@@ -4313,8 +4313,8 @@ marker
 -
 markerheight
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerHeightAttribute
@@ -4334,8 +4334,8 @@ https://html.spec.whatwg.org/multipage/parsing.html#concept-parser-marker
 -
 markerunits
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerUnitsAttribute
@@ -4345,8 +4345,8 @@ marker
 -
 markerunits
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerUnitsAttribute
@@ -4356,8 +4356,8 @@ marker
 -
 markerwidth
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/painting.html#MarkerWidthAttribute
@@ -4367,8 +4367,8 @@ marker
 -
 markerwidth
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/painting.html#MarkerWidthAttribute
@@ -4454,8 +4454,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-maroon
 -
 maroon
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-maroon
@@ -4465,8 +4465,8 @@ https://drafts.csswg.org/css2/#valdef-color-maroon
 -
 maroon
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-maroon
@@ -6853,8 +6853,8 @@ https://www.w3.org/TR/geometry-1/#matrix
 -
 matrix
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#__svg__SVGTransform__matrix
@@ -6864,8 +6864,8 @@ SVGTransform
 -
 matrix
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#__svg__SVGTransform__matrix
@@ -6917,8 +6917,8 @@ XRRigidTransform
 -
 matrix
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#matrix
@@ -6927,8 +6927,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#matrix
 -
 matrix
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#matrix
@@ -6937,8 +6937,8 @@ https://www.w3.org/TR/WGSL/#matrix
 -
 matrix object
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TransformMatrixObject
@@ -6947,8 +6947,8 @@ https://svgwg.org/svg2-draft/coords.html#TransformMatrixObject
 -
 matrix object
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TransformMatrixObject
@@ -8071,8 +8071,8 @@ https://www.w3.org/TR/css-sizing-3/#propdef-max-height
 -
 max-height
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-max-height
@@ -8081,8 +8081,8 @@ https://drafts.csswg.org/css2/#propdef-max-height
 -
 max-height
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-max-height
@@ -8091,8 +8091,8 @@ https://drafts.csswg.org/css2/#propdef-max-height
 -
 max-height
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visudet.html#propdef-max-height
@@ -8203,8 +8203,8 @@ https://www.w3.org/TR/css-sizing-3/#propdef-max-width
 -
 max-width
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-max-width
@@ -8213,8 +8213,8 @@ https://drafts.csswg.org/css2/#propdef-max-width
 -
 max-width
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-max-width
@@ -8223,8 +8223,8 @@ https://drafts.csswg.org/css2/#propdef-max-width
 -
 max-width
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visudet.html#propdef-max-width
@@ -10096,8 +10096,8 @@ https://www.w3.org/TR/css-sizing-3/#max-width
 -
 maximumAge
 dict-member
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-positionoptions-maximumage
@@ -10107,8 +10107,8 @@ PositionOptions
 -
 maximumAge
 dict-member
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-positionoptions-maximumage
@@ -10162,8 +10162,8 @@ https://w3c.github.io/mathml-core/#dfn-maxsize
 -
 may
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#may
@@ -10172,8 +10172,8 @@ https://drafts.csswg.org/css2/#may
 -
 may
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#may

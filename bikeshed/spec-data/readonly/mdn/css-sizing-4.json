@@ -2,7 +2,9 @@
     "aspect-ratio": [
         {
             "engines": [
-                "blink",
+                "blink"
+            ],
+            "partial": [
                 "gecko"
             ],
             "filename": "css/properties/aspect-ratio.json",
@@ -33,9 +35,6 @@
                 },
                 "firefox": [
                     {
-                        "version_added": "89"
-                    },
-                    {
                         "version_added": "83",
                         "partial_implementation": true,
                         "notes": "Firefox 83 implements aspect-ratio for flex items.",
@@ -61,13 +60,13 @@
                     }
                 ],
                 "firefox_android": {
-                    "version_added": "89"
+                    "version_added": false
                 },
                 "ie": {
                     "version_added": false
                 },
                 "opera": {
-                    "version_added": "74"
+                    "version_added": false
                 },
                 "opera_android": {
                     "version_added": false
@@ -156,7 +155,7 @@
             "title": "contain-intrinsic-size"
         }
     ],
-    "sizing-values": [
+    "valdef-width-fit-content": [
         {
             "engines": [
                 "blink",
@@ -169,7 +168,7 @@
             "summary": "The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.",
             "support": {
                 "chrome": {
-                    "version_added": "57"
+                    "version_added": "29"
                 },
                 "chrome_android": {
                     "version_added": "57"
@@ -178,10 +177,10 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": "52"
+                    "version_added": "51"
                 },
                 "firefox_android": {
-                    "version_added": "52"
+                    "version_added": "51"
                 },
                 "ie": {
                     "version_added": false
@@ -222,7 +221,7 @@
             "summary": "The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.",
             "support": {
                 "chrome": {
-                    "version_added": "57"
+                    "version_added": "29"
                 },
                 "chrome_android": {
                     "version_added": "57"
@@ -231,10 +230,10 @@
                     "version_added": "16"
                 },
                 "firefox": {
-                    "version_added": "52"
+                    "version_added": "51"
                 },
                 "firefox_android": {
-                    "version_added": "52"
+                    "version_added": "51"
                 },
                 "ie": {
                     "version_added": false

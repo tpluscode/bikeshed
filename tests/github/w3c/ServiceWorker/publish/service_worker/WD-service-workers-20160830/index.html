@@ -632,7 +632,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
      <p>A <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration⑨">service worker registration</a> has an associated <dfn class="dfn-paneled" data-dfn-for="service worker registration" data-dfn-type="dfn" data-noexport id="dfn-active-worker">active worker</dfn> (a <a href="#dfn-service-worker" id="ref-for-dfn-service-worker③③">service worker</a> or null) whose <a href="#dfn-state" id="ref-for-dfn-state②">state</a> is either <em>activating</em> or <em>activated</em>. It is initially set to null.</p>
      <p>A <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①⓪">service worker registration</a> has an associated <dfn class="dfn-paneled" data-dfn-for="service worker registration" data-dfn-type="dfn" data-noexport id="dfn-last-update-check-time">last update check time</dfn>. It is initially set to null.</p>
      <p>A <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①①">service worker registration</a> has an associated <dfn class="dfn-paneled" data-dfn-for="service worker registration" data-dfn-type="dfn" data-noexport id="dfn-uninstalling-flag">uninstalling flag</dfn>. It is initially unset.</p>
-     <p>A <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①②">service worker registration</a> has one or more <dfn class="dfn-paneled" data-dfn-for="service worker registration" data-dfn-type="dfn" data-noexport id="dfn-service-worker-registration-task-queue">task queues</dfn> that back up the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task">tasks</a> from its <a href="#dfn-active-worker" id="ref-for-dfn-active-worker④">active worker</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop">event loop</a>’s corresponding <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue">task queues</a>. (The target task sources for this back up operation are the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source">handle fetch task source</a> and the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source">handle functional event task source</a>.) The user agent dumps the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑤">active worker</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task①">tasks</a> to the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①③">service worker registration</a>’s <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue">task queues</a> when the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑥">active worker</a> is <a href="#terminate-service-worker-algorithm">terminated</a> and <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task">re-queues those tasks</a> to the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑦">active worker</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop①">event loop</a>’s corresponding <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue①">task queues</a> when the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑧">active worker</a> spins off. Unlike the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue②">task queues</a> owned by <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop②">event loops</a>, the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①④">service worker registration</a>’s <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue①">task queues</a> are not processed by any <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop③">event loops</a> in and of itself.</p>
+     <p>A <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①②">service worker registration</a> has one or more <dfn class="dfn-paneled" data-dfn-for="service worker registration" data-dfn-type="dfn" data-noexport id="dfn-service-worker-registration-task-queue">task queues</dfn> that back up the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task">tasks</a> from its <a href="#dfn-active-worker" id="ref-for-dfn-active-worker④">active worker</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop">event loop</a>’s corresponding <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue">task queues</a>. (The target task sources for this back up operation are the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source">handle fetch task source</a> and the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source">handle functional event task source</a>.) The user agent dumps the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑤">active worker</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task①">tasks</a> to the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①③">service worker registration</a>’s <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue">task queues</a> when the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑥">active worker</a> is <a href="#terminate-service-worker-algorithm">terminated</a> and <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task">re-queues those tasks</a> to the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑦">active worker</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop①">event loop</a>’s corresponding <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue①">task queues</a> when the <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑧">active worker</a> spins off. Unlike the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue②">task queues</a> owned by <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop②">event loops</a>, the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①④">service worker registration</a>’s <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue①">task queues</a> are not processed by any <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop③">event loops</a> in and of itself.</p>
      <section>
       <h4 class="heading settled" data-level="2.2.1" id="service-worker-registration-lifetime"><span class="secno">2.2.1. </span><span class="content">Lifetime</span><a class="self-link" href="#service-worker-registration-lifetime"></a></h4>
       <p>A user agent <em class="rfc2119" title="MUST">must</em> persistently keep a list of <a href="#register-algorithm">registered</a> <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①⑤">service worker registrations</a> unless otherwise they are explicitly <a href="#unregister-algorithm">unregistered</a>. A user agent has a <a href="#dfn-scope-to-registration-map" id="ref-for-dfn-scope-to-registration-map">scope to registration map</a> that stores the entries of the tuple of <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①⑥">service worker registration</a>’s <a href="#dfn-scope-url" id="ref-for-dfn-scope-url④">scope url</a> and the corresponding <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①⑦">service worker registration</a>. The lifetime of <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration①⑧">service worker registrations</a> is beyond that of the <code><a href="#service-worker-registration-interface" id="ref-for-service-worker-registration-interface">ServiceWorkerRegistration</a></code> objects which represent them within the lifetime of their corresponding <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client②">service worker clients</a>.</p>
@@ -644,9 +644,9 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
      <p>A <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client③">service worker client</a> has an associated <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-service-worker-client-active-worker">active worker</dfn> (an <a href="#dfn-active-worker" id="ref-for-dfn-active-worker⑨">active worker</a>) which currently <a href="#dfn-control" id="ref-for-dfn-control">controls</a> it. It is initially set to null.</p>
      <p>A <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client④">service worker client</a> has an associated <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-service-worker-client-id">id</dfn> (an opaque string), which uniquely identifies itself during its lifetime. It is initially set to a new unique value when the corresponding <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①">environment settings object</a> that it represents is created.</p>
      <p>A <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client⑤">service worker client</a> has an associated <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-service-worker-client-frame-type">frame type</dfn>, which is one of <em>auxiliary</em>, <em>top-level</em>, <em>nested</em>, and <em>none</em>. Unless stated otherwise it is <em>none</em>. </p>
-     <p>A <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-window-client">window client</dfn> is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client⑥">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global">global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/window-object.html#window" id="ref-for-window">Window</a></code> object.</p>
-     <p>A <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-dedicatedworker-client">dedicated worker client</dfn> is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client⑦">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①">global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope" id="ref-for-dedicatedworkerglobalscope">DedicatedWorkerGlobalScope</a></code> object.</p>
-     <p>A <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-sharedworker-client">shared worker client</dfn> is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client⑧">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global②">global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#sharedworkerglobalscope" id="ref-for-sharedworkerglobalscope">SharedWorkerGlobalScope</a></code> object.</p>
+     <p>A <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-window-client">window client</dfn> is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client⑥">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object">global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/window-object.html#window" id="ref-for-window">Window</a></code> object.</p>
+     <p>A <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-dedicatedworker-client">dedicated worker client</dfn> is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client⑦">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①">global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope" id="ref-for-dedicatedworkerglobalscope">DedicatedWorkerGlobalScope</a></code> object.</p>
+     <p>A <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-sharedworker-client">shared worker client</dfn> is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client⑧">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object②">global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#sharedworkerglobalscope" id="ref-for-sharedworkerglobalscope">SharedWorkerGlobalScope</a></code> object.</p>
      <p>A <dfn class="dfn-paneled" data-dfn-for="service worker client" data-dfn-type="dfn" data-noexport id="dfn-worker-client">worker client</dfn> is either a <a href="#dfn-dedicatedworker-client" id="ref-for-dfn-dedicatedworker-client">dedicated worker client</a> or a <a href="#dfn-sharedworker-client" id="ref-for-dfn-sharedworker-client">shared worker client</a>.</p>
     </section>
     <section>
@@ -740,7 +740,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
       <h4 class="heading settled" data-level="3.1.3" id="service-worker-postmessage"><span class="secno">3.1.3. </span><span class="content"><code class="idl"><a data-link-type="idl" href="#service-worker-postmessage-method" id="ref-for-service-worker-postmessage-method①">postMessage(message, transfer)</a></code></span><a class="self-link" href="#service-worker-postmessage"></a></h4>
       <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="ServiceWorker" data-dfn-type="method" data-export data-lt="postMessage(message, transfer)|postMessage(message)" id="service-worker-postmessage-method"><code>postMessage(<var>message</var>, <var>transfer</var>)</code></dfn> method <em class="rfc2119" title="MUST">must</em> run these steps:</p>
       <ol>
-       <li>If the <code class="idl"><a data-link-type="idl" href="#service-worker-state-attribute" id="ref-for-service-worker-state-attribute②">state</a></code> attribute value of the <a data-link-type="dfn">context object</a> is "<code>redundant</code>", <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-throw" id="ref-for-dfn-throw">throw</a> an "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#invalidstateerror" id="ref-for-invalidstateerror">InvalidStateError</a></code>" exception and abort these steps.
+       <li>If the <code class="idl"><a data-link-type="idl" href="#service-worker-state-attribute" id="ref-for-service-worker-state-attribute②">state</a></code> attribute value of the <a data-link-type="dfn">context object</a> is "<code>redundant</code>", <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-throw" id="ref-for-dfn-throw">throw</a> an "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#invalidstateerror" id="ref-for-invalidstateerror">InvalidStateError</a></code>" exception and abort these steps. 
        <li>Let <var>serviceWorker</var> be the <a href="#dfn-service-worker" id="ref-for-dfn-service-worker④③">service worker</a> represented by the <a data-link-type="dfn">context object</a>.
        <li>Invoke <a href="#run-service-worker-algorithm">Run Service Worker</a> algorithm with <var>serviceWorker</var> as the argument.
        <li>Let <var>destination</var> be the <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface">ServiceWorkerGlobalScope</a></code> object associated with <var>serviceWorker</var>.
@@ -825,7 +825,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>Let <var>registration</var> be the <a href="#dfn-service-worker-registration-interface-service-worker-registration" id="ref-for-dfn-service-worker-registration-interface-service-worker-registration①">service worker registration</a>.
        <li>Let <var>newestWorker</var> be the result of running <a href="#get-newest-worker-algorithm">Get Newest Worker</a> algorithm passing <var>registration</var> as its argument.
        <li>If <var>newestWorker</var> is null, reject <var>p</var> with an "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#invalidstateerror" id="ref-for-invalidstateerror①">InvalidStateError</a></code>" exception and abort these steps.
-       <li>If the <a data-link-type="dfn">context object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object">relevant settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global③">global object</a> <var>globalObject</var> is a <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface②">ServiceWorkerGlobalScope</a></code> object, and <var>globalObject</var>’s associated <a href="#dfn-service-worker-global-scope-service-worker" id="ref-for-dfn-service-worker-global-scope-service-worker②">service worker</a>’s <a href="#dfn-state" id="ref-for-dfn-state④">state</a> is <em>installing</em>, reject <var>p</var> with an "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#invalidstateerror" id="ref-for-invalidstateerror②">InvalidStateError</a></code>" exception and abort these steps.
+       <li>If the <a data-link-type="dfn">context object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object">relevant settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object③">global object</a> <var>globalObject</var> is a <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface②">ServiceWorkerGlobalScope</a></code> object, and <var>globalObject</var>’s associated <a href="#dfn-service-worker-global-scope-service-worker" id="ref-for-dfn-service-worker-global-scope-service-worker②">service worker</a>’s <a href="#dfn-state" id="ref-for-dfn-state④">state</a> is <em>installing</em>, reject <var>p</var> with an "<code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#invalidstateerror" id="ref-for-invalidstateerror②">InvalidStateError</a></code>" exception and abort these steps.
        <li>Let <var>job</var> be the result of running <a href="#create-job-algorithm">Create Job</a> with <em>update</em>, <var>registration</var>’s <a href="#dfn-scope-url" id="ref-for-dfn-scope-url⑦">scope url</a>, <var>newestWorker</var>’s <a href="#dfn-script-url" id="ref-for-dfn-script-url①">script url</a>, <var>p</var>, and the <a data-link-type="dfn">context object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object①">relevant settings object</a> <var>client</var>.
        <li>Set <var>job</var>’s <a data-link-type="dfn" href="#dfn-job-worker-type" id="ref-for-dfn-job-worker-type">worker type</a> to <var>newestWorker</var>’s <a data-link-type="dfn" href="#dfn-type" id="ref-for-dfn-type">type</a>.
        <li>Invoke <a href="#schedule-job-algorithm">Schedule Job</a> with <var>job</var>.
@@ -834,7 +834,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
      </section>
      <section class="algorithm" data-algorithm="navigator-service-worker-unregister">
       <h4 class="heading settled" data-level="3.2.6" id="navigator-service-worker-unregister"><span class="secno">3.2.6. </span><span class="content"><code class="idl"><a data-link-type="idl" href="#service-worker-registration-unregister-method" id="ref-for-service-worker-registration-unregister-method①">unregister()</a></code></span><a class="self-link" href="#navigator-service-worker-unregister"></a></h4>
-      <p class="note" role="note">The <code class="idl"><a data-link-type="idl" href="#service-worker-registration-unregister-method" id="ref-for-service-worker-registration-unregister-method②">unregister()</a></code> method unregisters the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration③③">service worker registration</a>. It is important to note that the currently <a href="#dfn-control" id="ref-for-dfn-control②">controlled</a> <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client①⑧">service worker client</a>’s <a href="#dfn-service-worker-client-active-worker" id="ref-for-dfn-service-worker-client-active-worker">active worker</a>’s <a href="#dfn-containing-service-worker-registration" id="ref-for-dfn-containing-service-worker-registration②">containing service worker registration</a> is effective until all the <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client①⑨">service worker clients</a> (including itself) using this <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration③④">service worker registration</a> unload. That is, the <code class="idl"><a data-link-type="idl" href="#service-worker-registration-unregister-method" id="ref-for-service-worker-registration-unregister-method③">unregister()</a></code> method only affects subsequent <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate">navigations</a>.</p>
+      <p class="note" role="note">The <code class="idl"><a data-link-type="idl" href="#service-worker-registration-unregister-method" id="ref-for-service-worker-registration-unregister-method②">unregister()</a></code> method unregisters the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration③③">service worker registration</a>. It is important to note that the currently <a href="#dfn-control" id="ref-for-dfn-control②">controlled</a> <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client①⑧">service worker client</a>’s <a href="#dfn-service-worker-client-active-worker" id="ref-for-dfn-service-worker-client-active-worker">active worker</a>’s <a href="#dfn-containing-service-worker-registration" id="ref-for-dfn-containing-service-worker-registration②">containing service worker registration</a> is effective until all the <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client①⑨">service worker clients</a> (including itself) using this <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration③④">service worker registration</a> unload. That is, the <code class="idl"><a data-link-type="idl" href="#service-worker-registration-unregister-method" id="ref-for-service-worker-registration-unregister-method③">unregister()</a></code> method only affects subsequent <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate">navigations</a>.</p>
       <p><dfn class="dfn-paneled idl-code" data-dfn-for="ServiceWorkerRegistration" data-dfn-type="method" data-export id="service-worker-registration-unregister-method"><code>unregister()</code></dfn> method <em class="rfc2119" title="MUST">must</em> run these steps:</p>
       <ol>
        <li>Let <var>p</var> be a <a data-link-type="dfn" href="http://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects" id="ref-for-sec-promise-objects①">promise</a>.
@@ -897,9 +897,9 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
 </pre>
      <p>The user agent <em class="rfc2119" title="MUST">must</em> create a <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑤">ServiceWorkerContainer</a></code> object when a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/system-state.html#navigator" id="ref-for-navigator①">Navigator</a></code> object or a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#workernavigator" id="ref-for-workernavigator①">WorkerNavigator</a></code> object is created and associate it with that object.</p>
      <p>A <code><dfn class="dfn-paneled idl-code" data-dfn-for="ServiceWorkerContainer" data-dfn-type="interface" data-export id="service-worker-container-interface"><code>ServiceWorkerContainer</code></dfn></code> provides capabilities to register, unregister, and update the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration③⑤">service worker registrations</a>, and provides access to the state of the <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration③⑥">service worker registrations</a> and their associated <a href="#dfn-service-worker" id="ref-for-dfn-service-worker④⑦">service workers</a>.</p>
-     <p>A <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑥">ServiceWorkerContainer</a></code> has an associated <dfn class="dfn-paneled" data-dfn-for="ServiceWorkerContainer" data-dfn-type="dfn" data-noexport id="dfn-service-worker-container-interface-client">service worker client</dfn>, which is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client②⓪">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global④">global object</a> is associated with the <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/system-state.html#navigator" id="ref-for-navigator②">Navigator</a></code> object or the <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#workernavigator" id="ref-for-workernavigator②">WorkerNavigator</a></code> object that the <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑦">ServiceWorkerContainer</a></code> is retrieved from.</p>
+     <p>A <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑥">ServiceWorkerContainer</a></code> has an associated <dfn class="dfn-paneled" data-dfn-for="ServiceWorkerContainer" data-dfn-type="dfn" data-noexport id="dfn-service-worker-container-interface-client">service worker client</dfn>, which is a <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client②⓪">service worker client</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object④">global object</a> is associated with the <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/system-state.html#navigator" id="ref-for-navigator②">Navigator</a></code> object or the <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#workernavigator" id="ref-for-workernavigator②">WorkerNavigator</a></code> object that the <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑦">ServiceWorkerContainer</a></code> is retrieved from.</p>
      <p>A <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑧">ServiceWorkerContainer</a></code> object has an associated <dfn class="dfn-paneled" data-dfn-for="ServiceWorkerContainer" data-dfn-type="dfn" data-noexport id="dfn-ready-promise">ready promise</dfn> (a <a data-link-type="dfn" href="http://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects" id="ref-for-sec-promise-objects②">promise</a>). It is initially set to a new <a data-link-type="dfn" href="http://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects" id="ref-for-sec-promise-objects③">promise</a>.</p>
-     <p>A <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑨">ServiceWorkerContainer</a></code> object has a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source③">task source</a> called the <dfn class="dfn-paneled" data-dfn-for="ServiceWorkerContainer" data-dfn-type="dfn" data-noexport id="dfn-client-message-queue">client message queue</dfn>, initially empty. A <a data-link-type="dfn" href="#dfn-client-message-queue" id="ref-for-dfn-client-message-queue">client message queue</a> can be enabled or disabled, and is initially disabled. When a <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface①⓪">ServiceWorkerContainer</a></code> object’s <a data-link-type="dfn" href="#dfn-client-message-queue" id="ref-for-dfn-client-message-queue①">client message queue</a> is enabled, the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop④">event loop</a> <em class="rfc2119" title="MUST">must</em> use it as one of its <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source④">task sources</a>. When the <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface①①">ServiceWorkerContainer</a></code> object’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global" id="ref-for-concept-relevant-global">relevant global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/window-object.html#window" id="ref-for-window②">Window</a></code> object, all <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task③">tasks</a> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②">queued</a> on its <a data-link-type="dfn" href="#dfn-client-message-queue" id="ref-for-dfn-client-message-queue②">client message queue</a> <em class="rfc2119" title="MUST">must</em> be associated with its <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object③">relevant settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-document" id="ref-for-responsible-document">responsible document</a>.</p>
+     <p>A <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface⑨">ServiceWorkerContainer</a></code> object has a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source③">task source</a> called the <dfn class="dfn-paneled" data-dfn-for="ServiceWorkerContainer" data-dfn-type="dfn" data-noexport id="dfn-client-message-queue">client message queue</dfn>, initially empty. A <a data-link-type="dfn" href="#dfn-client-message-queue" id="ref-for-dfn-client-message-queue">client message queue</a> can be enabled or disabled, and is initially disabled. When a <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface①⓪">ServiceWorkerContainer</a></code> object’s <a data-link-type="dfn" href="#dfn-client-message-queue" id="ref-for-dfn-client-message-queue①">client message queue</a> is enabled, the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop④">event loop</a> <em class="rfc2119" title="MUST">must</em> use it as one of its <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source④">task sources</a>. When the <code class="idl"><a data-link-type="idl" href="#service-worker-container-interface" id="ref-for-service-worker-container-interface①①">ServiceWorkerContainer</a></code> object’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global" id="ref-for-concept-relevant-global">relevant global object</a> is a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/window-object.html#window" id="ref-for-window②">Window</a></code> object, all <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task③">tasks</a> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②">queued</a> on its <a data-link-type="dfn" href="#dfn-client-message-queue" id="ref-for-dfn-client-message-queue②">client message queue</a> <em class="rfc2119" title="MUST">must</em> be associated with its <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object③">relevant settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-document" id="ref-for-responsible-document">responsible document</a>.</p>
      <section class="algorithm" data-algorithm="navigator-service-worker-controller">
       <h4 class="heading settled" data-level="3.4.1" id="navigator-service-worker-controller"><span class="secno">3.4.1. </span><span class="content"><code class="idl"><a data-link-type="idl" href="#service-worker-container-controller-attribute" id="ref-for-service-worker-container-controller-attribute①">controller</a></code></span><a class="self-link" href="#navigator-service-worker-controller"></a></h4>
       <p><dfn class="dfn-paneled idl-code" data-dfn-for="ServiceWorkerContainer" data-dfn-type="attribute" data-export id="service-worker-container-controller-attribute"><code>controller</code></dfn> attribute <em class="rfc2119" title="MUST">must</em> run these steps:</p>
@@ -949,7 +949,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>Let <var>client</var> be the <a data-link-type="dfn">context object</a>’s <a href="#dfn-service-worker-container-interface-client" id="ref-for-dfn-service-worker-container-interface-client②">service worker client</a>.
        <li>Let <var>scriptURL</var> be the result of <a data-link-type="dfn" href="https://url.spec.whatwg.org/#concept-url-parser" id="ref-for-concept-url-parser">parsing</a> <var>scriptURL</var> with <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#entry-settings-object" id="ref-for-entry-settings-object">entry settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url" id="ref-for-api-base-url">API base URL</a>.
        <li>Let <var>scopeURL</var> be null.
-       <li>If <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-registrationoptions-scope" id="ref-for-dom-registrationoptions-scope">scope</a></code> is <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL/#dfn-present" id="ref-for-dfn-present">present</a>, set <var>scopeURL</var> to <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-registrationoptions-scope" id="ref-for-dom-registrationoptions-scope①">scope</a></code>.
+       <li>If <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-registrationoptions-scope" id="ref-for-dom-registrationoptions-scope">scope</a></code> is <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL-1/#dfn-present" id="ref-for-dfn-present">present</a>, set <var>scopeURL</var> to <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-registrationoptions-scope" id="ref-for-dom-registrationoptions-scope①">scope</a></code>.
        <li>Invoke <a href="#start-register-algorithm">Start Register</a> with <var>scopeURL</var>, <var>scriptURL</var>, <var>p</var>, <var>client</var>, <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#creation-url" id="ref-for-creation-url②">creation URL</a> and <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-registrationoptions-type" id="ref-for-dom-registrationoptions-type">type</a></code>.
        <li>Return <var>p</var>.
       </ol>
@@ -1266,15 +1266,15 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <dt><em>auxiliary</em>
        <dd>
         "<code>auxiliary</code>" 
-        <p class="note" role="note">The <a href="#dfn-window-client" id="ref-for-dfn-window-client">window client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global⑤">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context①">browsing context</a> is an <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#auxiliary-browsing-context" id="ref-for-auxiliary-browsing-context">auxiliary browsing context</a>.</p>
+        <p class="note" role="note">The <a href="#dfn-window-client" id="ref-for-dfn-window-client">window client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object⑤">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context①">browsing context</a> is an <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#auxiliary-browsing-context" id="ref-for-auxiliary-browsing-context">auxiliary browsing context</a>.</p>
        <dt><em>top-level</em>
        <dd>
         "<code>top-level</code>" 
-        <p class="note" role="note">The <a href="#dfn-window-client" id="ref-for-dfn-window-client①">window client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global⑥">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context②">browsing context</a> is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context" id="ref-for-top-level-browsing-context">top-level browsing context</a>.</p>
+        <p class="note" role="note">The <a href="#dfn-window-client" id="ref-for-dfn-window-client①">window client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object⑥">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context②">browsing context</a> is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context" id="ref-for-top-level-browsing-context">top-level browsing context</a>.</p>
        <dt><em>nested</em>
        <dd>
         "<code>nested</code>" 
-        <p class="note" role="note">The <a href="#dfn-window-client" id="ref-for-dfn-window-client②">window client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global⑦">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context③">browsing context</a> is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#nested-browsing-context" id="ref-for-nested-browsing-context①">nested browsing context</a>.</p>
+        <p class="note" role="note">The <a href="#dfn-window-client" id="ref-for-dfn-window-client②">window client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object⑦">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context③">browsing context</a> is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#nested-browsing-context" id="ref-for-nested-browsing-context①">nested browsing context</a>.</p>
        <dt><em>none</em>
        <dd>"<code>none</code>"
       </dl>
@@ -1323,11 +1323,11 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>
         Run these substeps <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel④">in parallel</a>: 
         <ol>
-         <li>Let <var>browsingContext</var> be the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client④">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global⑧">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context④">browsing context</a>.
+         <li>Let <var>browsingContext</var> be the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client④">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object⑧">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context④">browsing context</a>.
          <li>Let <var>visibilityState</var> be null.
          <li>Let <var>focusState</var> be null.
          <li>
-          <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task③">Queue a task</a> <var>task</var> to run the following substeps on the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client⑤">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop" id="ref-for-responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source" id="ref-for-user-interaction-task-source">user interaction task source</a>:
+          <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task③">Queue a task</a> <var>task</var> to run the following substeps on the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client⑤">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop" id="ref-for-responsible-event-loop">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source" id="ref-for-user-interaction-task-source">user interaction task source</a>: 
           <ol>
            <li>Run the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/interaction.html#focusing-steps" id="ref-for-focusing-steps">focusing steps</a> with <var>browsingContext</var>.
            <li>Set <var>visibilityState</var> to <var>browsingContext</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#active-document" id="ref-for-active-document">active document</a>’s <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate" id="ref-for-dom-document-visibilitystate①">visibilityState</a></code> attribute value.
@@ -1353,15 +1353,15 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>
         Run these substeps <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel⑤">in parallel</a>: 
         <ol>
-         <li>Let <var>browsingContext</var> be the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client⑧">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global⑨">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑤">browsing context</a>.
+         <li>Let <var>browsingContext</var> be the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client⑧">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object⑨">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑤">browsing context</a>.
          <li>If <var>browsingContext</var> has <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/window-object.html#discard-a-document" id="ref-for-discard-a-document">discarded</a> its <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#document" id="ref-for-document">Document</a></code>, reject <var>promise</var> with a <code>TypeError</code> and abort these steps.
          <li>Let <var>navigateFailed</var> to false.
          <li>Let <var>visibilityState</var> be null.
          <li>Let <var>focusState</var> be null.
          <li>
-          <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task④">Queue a task</a> <var>task</var> to run the following substeps on the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client⑨">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop" id="ref-for-responsible-event-loop①">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source" id="ref-for-user-interaction-task-source①">user interaction task source</a>:
+          <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task④">Queue a task</a> <var>task</var> to run the following substeps on the <a data-link-type="dfn">context object</a>’s associated <a href="#dfn-service-worker-client-client" id="ref-for-dfn-service-worker-client-client⑨">service worker client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop" id="ref-for-responsible-event-loop①">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source" id="ref-for-user-interaction-task-source①">user interaction task source</a>: 
           <ol>
-           <li><em>HandleNavigate</em>: <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate①">Navigate</a> <var>browsingContext</var> to <var>url</var> with <a data-link-type="dfn">replacement enabled</a> and <a data-link-type="dfn">exceptions enabled</a>. The <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-browsing-context" id="ref-for-source-browsing-context">source browsing context</a> must be <var>browsingContext</var>.
+           <li><em>HandleNavigate</em>: <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate①">Navigate</a> <var>browsingContext</var> to <var>url</var> with <a data-link-type="dfn">replacement enabled</a> and <a data-link-type="dfn">exceptions enabled</a>. The <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#source-browsing-context" id="ref-for-source-browsing-context">source browsing context</a> must be <var>browsingContext</var>.
            <li>If the algorithm steps invoked in the step labeled <em>HandleNavigate</em> <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-throw" id="ref-for-dfn-throw⑥">throws</a> an exception, set <var>navigateFailed</var> to true.
            <li>Set <var>visibilityState</var> to <var>browsingContext</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#active-document" id="ref-for-active-document②">active document</a>’s <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate" id="ref-for-dom-document-visibilitystate②">visibilityState</a></code> attribute value.
            <li>Set <var>focusState</var> to the result of running the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/interaction.html#has-focus-steps" id="ref-for-has-focus-steps①">has focus steps</a> with <var>browsingContext</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#active-document" id="ref-for-active-document③">active document</a> as the argument.
@@ -1423,7 +1423,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
              <li>
               If <var>client</var> is a <a href="#dfn-window-client" id="ref-for-dfn-window-client③">window client</a>, then: 
               <ol>
-               <li>Let <var>browsingContext</var> be <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①⓪">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑥">browsing context</a>.
+               <li>Let <var>browsingContext</var> be <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①⓪">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑥">browsing context</a>.
                <li>Let <var>visibilityState</var> be null.
                <li>Let <var>focusState</var> be null.
                <li>
@@ -1480,7 +1480,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
            <li>
             If <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-clientqueryoptions-type" id="ref-for-dom-clientqueryoptions-type">type</a></code> is "<code>window</code>", and <var>client</var> is a <a href="#dfn-window-client" id="ref-for-dfn-window-client⑤">window client</a>, then: 
             <ol>
-             <li>Let <var>browsingContext</var> be <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①①">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑦">browsing context</a>.
+             <li>Let <var>browsingContext</var> be <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①①">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑦">browsing context</a>.
              <li>Let <var>isClientEnumerable</var> be false.
              <li>Let <var>visibilityState</var> be the empty string.
              <li>Let <var>focusState</var> be false.
@@ -1517,7 +1517,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
              <li>
               If <var>client</var> is a <a href="#dfn-window-client" id="ref-for-dfn-window-client⑥">window client</a>, then: 
               <ol>
-               <li>Let <var>browsingContext</var> be <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①②">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑧">browsing context</a>.
+               <li>Let <var>browsingContext</var> be <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①②">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#browsing-context" id="ref-for-browsing-context⑧">browsing context</a>.
                <li>Let <var>isClientEnumerable</var> be false.
                <li>Let <var>visibilityState</var> be the empty string.
                <li>Let <var>focusState</var> be false.
@@ -1574,7 +1574,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
          <li>
           <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task⑧">Queue a task</a> <var>task</var> to run the following substeps on <var>newContext</var>’s <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/window-object.html#window" id="ref-for-window⑤">Window</a></code> object’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object⑤">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop" id="ref-for-responsible-event-loop④">responsible event loop</a> using the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source" id="ref-for-user-interaction-task-source④">user interaction task source</a>: 
           <ol>
-           <li><em>HandleNavigate</em>: <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate②">Navigate</a> <var>newContext</var> to <var>url</var>, with <a data-link-type="dfn">exceptions enabled</a> and <a data-link-type="dfn">replacement enabled</a>.
+           <li><em>HandleNavigate</em>: <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate②">Navigate</a> <var>newContext</var> to <var>url</var>, with <a data-link-type="dfn">exceptions enabled</a> and <a data-link-type="dfn">replacement enabled</a>.
            <li>If the algorithm steps invoked in the step labeled <em>HandleNavigate</em> <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-throw" id="ref-for-dfn-throw⑦">throws</a> an exception, set <var>openWindowFailed</var> to true.
            <li>Set <var>visibilityState</var> to <var>newContext</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#active-document" id="ref-for-active-document①②">active document</a>’s <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate" id="ref-for-dom-document-visibilitystate⑥">visibilityState</a></code> attribute value.
            <li>Set <var>focusState</var> to the result of running the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/interaction.html#has-focus-steps" id="ref-for-has-focus-steps⑤">has focus steps</a> with <var>newContext</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#active-document" id="ref-for-active-document①③">active document</a> as the argument.
@@ -1650,7 +1650,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
         <li>Unset <var>e</var>’s <a data-link-type="dfn" href="#extensions-allowed-flag" id="ref-for-extensions-allowed-flag①">extensions allowed flag</a>.
        </ol>
      </ol>
-     <p>The user agent <em class="rfc2119" title="SHOULD NOT">should not</em> <a href="#terminate-service-worker-algorithm">terminate</a> the <a data-link-type="dfn" href="#dfn-service-worker" id="ref-for-dfn-service-worker⑥⑤">service worker</a> associated with <var>e</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object⑦">relevant settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①③">global object</a> until <var>e</var>’s <a data-link-type="dfn" href="#extensions-allowed-flag" id="ref-for-extensions-allowed-flag②">extensions allowed flag</a> is unset. However, the user agent <em class="rfc2119" title="MAY">may</em> impose a time limit to this lifetime extension.</p>
+     <p>The user agent <em class="rfc2119" title="SHOULD NOT">should not</em> <a href="#terminate-service-worker-algorithm">terminate</a> the <a data-link-type="dfn" href="#dfn-service-worker" id="ref-for-dfn-service-worker⑥⑤">service worker</a> associated with <var>e</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object" id="ref-for-relevant-settings-object⑦">relevant settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①③">global object</a> until <var>e</var>’s <a data-link-type="dfn" href="#extensions-allowed-flag" id="ref-for-extensions-allowed-flag②">extensions allowed flag</a> is unset. However, the user agent <em class="rfc2119" title="MAY">may</em> impose a time limit to this lifetime extension.</p>
      <section class="algorithm" data-algorithm="wait-until-method">
       <h4 class="heading settled" data-level="4.4.1" id="wait-until-method"><span class="secno">4.4.1. </span><span class="content"><code class="idl"><a data-link-type="idl" href="#extendable-event-waituntil-method" id="ref-for-extendable-event-waituntil-method①">event.waitUntil(f)</a></code></span><a class="self-link" href="#wait-until-method"></a></h4>
       <p><code class="idl"><a data-link-type="idl" href="#extendable-event-waituntil-method" id="ref-for-extendable-event-waituntil-method②">waitUntil(f)</a></code> method extends the lifetime of the event.</p>
@@ -1785,7 +1785,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>Set the <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#stop-propagation-flag" id="ref-for-stop-propagation-flag">stop propagation flag</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#stop-immediate-propagation-flag" id="ref-for-stop-immediate-propagation-flag">stop immediate propagation flag</a>.
        <li>Set the <a href="#respond-with-entered-flag" id="ref-for-respond-with-entered-flag①">respond-with entered flag</a>.
        <li>Set the <a href="#wait-to-respond-flag" id="ref-for-wait-to-respond-flag">wait to respond flag</a>.
-       <li>Let <var>targetRealm</var> be the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm" id="ref-for-concept-relevant-realm①">relevant Realm</a> of the <a data-link-type="dfn">context object</a>.
+       <li>Let <var>targetRealm</var> be the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm" id="ref-for-concept-relevant-realm①">relevant Realm</a> of the <a data-link-type="dfn">context object</a>. 
        <li>
         Run the following substeps <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel①①">in parallel</a>: 
         <ol>
@@ -1917,7 +1917,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>Set the <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#stop-propagation-flag" id="ref-for-stop-propagation-flag①">stop propagation flag</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#stop-immediate-propagation-flag" id="ref-for-stop-immediate-propagation-flag①">stop immediate propagation flag</a>.
        <li>Set the <a href="#respond-with-entered-flag" id="ref-for-respond-with-entered-flag③">respond-with entered flag</a>.
        <li>Set the <a href="#wait-to-respond-flag" id="ref-for-wait-to-respond-flag②">wait to respond flag</a>.
-       <li>Let <var>targetRealm</var> be the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm" id="ref-for-concept-relevant-realm②">relevant Realm</a> of the <a data-link-type="dfn">context object</a>.
+       <li>Let <var>targetRealm</var> be the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm" id="ref-for-concept-relevant-realm②">relevant Realm</a> of the <a data-link-type="dfn">context object</a>. 
        <li>
         Run the following substeps <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel①③">in parallel</a>: 
         <ol>
@@ -2563,13 +2563,13 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
 </pre>
      <p class="note" role="note"><code class="idl"><a data-link-type="idl" href="#cache-storage-interface" id="ref-for-cache-storage-interface④">CacheStorage</a></code> interface is designed to largely conform to <a data-link-type="dfn" href="http://www.ecma-international.org/ecma-262/6.0/#sec-map-objects" id="ref-for-sec-map-objects①">ECMAScript 6 Map objects</a> but entirely async, and with additional convenience methods. The methods, <code>clear</code>, <code>forEach</code>, <code>entries</code> and <code>values</code>, are intentionally excluded from the scope of the first version resorting to the ongoing discussion about the async iteration by TC39.</p>
      <p>The user agent <em class="rfc2119" title="MUST">must</em> create a <code class="idl"><a data-link-type="idl" href="#cache-storage-interface" id="ref-for-cache-storage-interface⑤">CacheStorage</a></code> object when a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/window-object.html#window" id="ref-for-window⑨">Window</a></code> object or a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope" id="ref-for-workerglobalscope②">WorkerGlobalScope</a></code> object is created and associate it with that object.</p>
-     <p>A <code><dfn class="dfn-paneled idl-code" data-dfn-for="CacheStorage" data-dfn-type="interface" data-export id="cache-storage-interface"><code>CacheStorage</code></dfn></code> object represents a <a href="#dfn-name-to-cache-map" id="ref-for-dfn-name-to-cache-map①">name to cache map</a> of its associated <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①④">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object⑧">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#origin-2" id="ref-for-origin-2②③">origin</a>. Multiple separate objects implementing the <code class="idl"><a data-link-type="idl" href="#cache-storage-interface" id="ref-for-cache-storage-interface⑥">CacheStorage</a></code> interface across documents and workers can all be associated with the same <a href="#dfn-name-to-cache-map" id="ref-for-dfn-name-to-cache-map②">name to cache map</a> simultaneously.</p>
+     <p>A <code><dfn class="dfn-paneled idl-code" data-dfn-for="CacheStorage" data-dfn-type="interface" data-export id="cache-storage-interface"><code>CacheStorage</code></dfn></code> object represents a <a href="#dfn-name-to-cache-map" id="ref-for-dfn-name-to-cache-map①">name to cache map</a> of its associated <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①④">global object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object⑧">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsers.html#origin-2" id="ref-for-origin-2②③">origin</a>. Multiple separate objects implementing the <code class="idl"><a data-link-type="idl" href="#cache-storage-interface" id="ref-for-cache-storage-interface⑥">CacheStorage</a></code> interface across documents and workers can all be associated with the same <a href="#dfn-name-to-cache-map" id="ref-for-dfn-name-to-cache-map②">name to cache map</a> simultaneously.</p>
      <section class="algorithm" data-algorithm="cache-storage-match">
       <h4 class="heading settled" data-level="6.5.1" id="cache-storage-match"><span class="secno">6.5.1. </span><span class="content"><code class="idl"><a data-link-type="idl" href="#cache-storage-match-method" id="ref-for-cache-storage-match-method①">match(request, options)</a></code></span><a class="self-link" href="#cache-storage-match"></a></h4>
       <p><dfn class="dfn-paneled idl-code" data-dfn-for="CacheStorage" data-dfn-type="method" data-export data-lt="match(request, options)|match(request)" id="cache-storage-match-method"><code>match(<var>request</var>, <var>options</var>)</code></dfn> method <em class="rfc2119" title="MUST">must</em> run these steps:</p>
       <ol>
        <li>
-        If <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-cachequeryoptions-cachename" id="ref-for-dom-cachequeryoptions-cachename">cacheName</a></code> is <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL/#dfn-present" id="ref-for-dfn-present①">present</a>, then: 
+        If <var>options</var>.<code class="idl"><a data-link-type="idl" href="#dom-cachequeryoptions-cachename" id="ref-for-dom-cachequeryoptions-cachename">cacheName</a></code> is <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL-1/#dfn-present" id="ref-for-dfn-present①">present</a>, then: 
         <ol>
          <li>
           Return a new <a data-link-type="dfn" href="http://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects" id="ref-for-sec-promise-objects⑤③">promise</a> <var>p</var> and run the following substeps <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel②⑤">in parallel</a>: 
@@ -2721,7 +2721,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
       <h4 class="heading settled" data-level="7.3.2" id="importscripts"><span class="secno">7.3.2. </span><span class="content"><code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts" id="ref-for-dom-workerglobalscope-importscripts">importScripts(urls)</a></code></span><a class="self-link" href="#importscripts"></a></h4>
       <p>When the <dfn class="dfn-paneled idl-code" data-dfn-for="ServiceWorkerGlobalScope" data-dfn-type="method" data-export id="importscripts-method"><code>importScripts(<var>urls</var>)</code></dfn> method is called on a <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface⑧">ServiceWorkerGlobalScope</a></code> object, the user agent <em class="rfc2119" title="MUST">must</em> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/workers.html#import-scripts-into-worker-global-scope" id="ref-for-import-scripts-into-worker-global-scope">import scripts into worker global scope</a>, given this <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface⑨">ServiceWorkerGlobalScope</a></code> object and <var>urls</var>, and with the following steps to <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#fetching-scripts-perform-fetch" id="ref-for-fetching-scripts-perform-fetch">perform the fetch</a> given the <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request" id="ref-for-concept-request①">request</a> <var>request</var>:</p>
       <ol>
-       <li>Let <var>serviceWorker</var> be <var>request</var>’s <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-client" id="ref-for-concept-request-client①">client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①⑤">global object</a>’s <a href="#dfn-service-worker-global-scope-service-worker" id="ref-for-dfn-service-worker-global-scope-service-worker②⓪">service worker</a>.
+       <li>Let <var>serviceWorker</var> be <var>request</var>’s <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-client" id="ref-for-concept-request-client①">client</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①⑤">global object</a>’s <a href="#dfn-service-worker-global-scope-service-worker" id="ref-for-dfn-service-worker-global-scope-service-worker②⓪">service worker</a>.
        <li>
         If <var>serviceWorker</var>’s <a href="#dfn-imported-scripts-updated-flag" id="ref-for-dfn-imported-scripts-updated-flag">imported scripts updated flag</a> is unset, then: 
         <ol>
@@ -2773,7 +2773,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
      <p><a href="#dfn-service-worker" id="ref-for-dfn-service-worker⑨⑦">Service workers</a> are extensible from other specifications.</p>
      <section>
       <h3 class="heading settled" data-level="9.1" id="extension-to-service-worker-registration"><span class="secno">9.1. </span><span class="content">Define API bound to Service Worker Registration</span><a class="self-link" href="#extension-to-service-worker-registration"></a></h3>
-      <p>Specifications <em class="rfc2119" title="MAY">may</em> define an API tied to a <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration④⑥">service worker registration</a> by using <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL/#dfn-partial-interface" id="ref-for-dfn-partial-interface">partial interface</a> definition to the <code class="idl"><a data-link-type="idl" href="#service-worker-registration-interface" id="ref-for-service-worker-registration-interface①③">ServiceWorkerRegistration</a></code> interface where it <em class="rfc2119" title="MAY">may</em> define the specification specific attributes and methods:</p>
+      <p>Specifications <em class="rfc2119" title="MAY">may</em> define an API tied to a <a href="#dfn-service-worker-registration" id="ref-for-dfn-service-worker-registration④⑥">service worker registration</a> by using <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL-1/#dfn-partial-interface" id="ref-for-dfn-partial-interface">partial interface</a> definition to the <code class="idl"><a data-link-type="idl" href="#service-worker-registration-interface" id="ref-for-service-worker-registration-interface①③">ServiceWorkerRegistration</a></code> interface where it <em class="rfc2119" title="MAY">may</em> define the specification specific attributes and methods:</p>
 <pre class="example idl highlight def" data-no-idl id="example-b17840a2"><a class="self-link" href="#example-b17840a2"></a><c- b>partial</c-> <c- b>interface</c-> <c- g>ServiceWorkerRegistration</c-> {
   // e.g. define an API namespace
   <c- b>readonly</c-> <c- b>attribute</c-> <c- n>APISpaceType</c-> <c- g>APISpace</c->;
@@ -2793,7 +2793,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
      </section>
      <section>
       <h3 class="heading settled" data-level="9.3" id="extension-to-service-worker-global-scope"><span class="secno">9.3. </span><span class="content">Define Event Handler</span><a class="self-link" href="#extension-to-service-worker-global-scope"></a></h3>
-      <p>Specifications <em class="rfc2119" title="MAY">may</em> define an event handler attribute for the corresponding <a href="#dfn-functional-events" id="ref-for-dfn-functional-events⑦">functional event</a> using <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL/#dfn-partial-interface" id="ref-for-dfn-partial-interface①">partial interface</a> definition to the <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface①⓪">ServiceWorkerGlobalScope</a></code> interface:</p>
+      <p>Specifications <em class="rfc2119" title="MAY">may</em> define an event handler attribute for the corresponding <a href="#dfn-functional-events" id="ref-for-dfn-functional-events⑦">functional event</a> using <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL-1/#dfn-partial-interface" id="ref-for-dfn-partial-interface①">partial interface</a> definition to the <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface①⓪">ServiceWorkerGlobalScope</a></code> interface:</p>
 <pre class="example idl highlight def" data-no-idl id="example-80342678"><a class="self-link" href="#example-80342678"></a><c- b>partial</c-> <c- b>interface</c-> <c- g>ServiceWorkerGlobalScope</c-> {
   <c- b>attribute</c-> <c- n>EventHandler</c-> <c- g>on</c-><em><c- g>functionalevent</c-></em>;
 };
@@ -2932,7 +2932,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
       <dl>
        <dt>Input
        <dd><var>job</var>, a <a href="#dfn-job" id="ref-for-dfn-job②①">job</a>
-       <dd><var>reason</var>, an <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL/#dfn-exception" id="ref-for-dfn-exception">exception</a>
+       <dd><var>reason</var>, an <a data-link-type="dfn" href="https://www.w3.org/TR/WebIDL-1/#dfn-exception" id="ref-for-dfn-exception">exception</a>
        <dt>Output
        <dd>none
       </dl>
@@ -3189,7 +3189,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
         <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②⓪">Queue a task</a> <var>task</var> to run the following substeps: 
         <ol>
          <li>Create a <a data-link-type="dfn">trusted event</a> <var>e</var> that uses the <code class="idl"><a data-link-type="idl" href="#installevent-installevent" id="ref-for-installevent-installevent②">InstallEvent</a></code> interface, with the event type <code><a href="#service-worker-global-scope-install-event" id="ref-for-service-worker-global-scope-install-event⑤">install</a></code>, which does not bubble and is not cancelable.
-         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑤">Dispatch</a> <var>e</var> at <var>installingWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①⓪">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①⑥">global object</a> <var>globalObject</var>.
+         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑤">Dispatch</a> <var>e</var> at <var>installingWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①⓪">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①⑥">global object</a> <var>globalObject</var>.
          <li>
           <em>WaitForAsynchronousExtensions</em>: Run the following substeps <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel③①">in parallel</a>: 
           <ol>
@@ -3261,7 +3261,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
         For each <a href="#dfn-service-worker-client" id="ref-for-dfn-service-worker-client③⑧">service worker client</a> <var>client</var> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#creation-url" id="ref-for-creation-url①⓪">creation url</a> <a href="#scope-match-algorithm">matches</a> <var>registration</var>’s <a href="#dfn-scope-url" id="ref-for-dfn-scope-url①⑦">scope url</a>: 
         <ol>
          <li>If <var>client</var> is a <a href="#dfn-window-client" id="ref-for-dfn-window-client⑦">window client</a>, unassociate <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-document" id="ref-for-responsible-document③">responsible document</a> from its <a data-link-type="dfn">application cache</a>, if it has one.
-         <li>Else if <var>client</var> is a <a href="#dfn-sharedworker-client" id="ref-for-dfn-sharedworker-client②">shared worker client</a>, unassociate <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①⑦">global object</a> from its <a data-link-type="dfn">application cache</a>, if it has one.
+         <li>Else if <var>client</var> is a <a href="#dfn-sharedworker-client" id="ref-for-dfn-sharedworker-client②">shared worker client</a>, unassociate <var>client</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①⑦">global object</a> from its <a data-link-type="dfn">application cache</a>, if it has one.
         </ol>
         <p class="note" role="note">Resources will now use the service worker registration instead of the existing application cache.</p>
        <li>
@@ -3276,7 +3276,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
         <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②②">Queue a task</a> <var>task</var> to run the following substeps: 
         <ol>
          <li>Create a <a data-link-type="dfn">trusted event</a> <var>e</var> that uses the <code class="idl"><a data-link-type="idl" href="#extendable-event-interface" id="ref-for-extendable-event-interface①⑤">ExtendableEvent</a></code> interface, with the event type <code><a href="#service-worker-global-scope-activate-event" id="ref-for-service-worker-global-scope-activate-event⑤">activate</a></code>, which does not bubble and is not cancelable.
-         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑥">Dispatch</a> <var>e</var> at <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①①">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①⑧">global object</a>.
+         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑥">Dispatch</a> <var>e</var> at <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①①">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①⑧">global object</a>.
          <li><em>WaitForAsynchronousExtensions</em>: Wait, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel" id="ref-for-in-parallel③②">in parallel</a>, until <var>e</var>’s <a data-link-type="dfn" href="#extensions-allowed-flag" id="ref-for-extensions-allowed-flag⑤">extensions allowed flag</a> is unset.
         </ol>
        <li>Wait for <var>task</var> to have executed or been discarded, or the script to have been aborted by the <a href="#terminate-service-worker-algorithm">termination</a> of <var>activeWorker</var>.
@@ -3303,14 +3303,14 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
          <li>For the global object, create a new <code class="idl"><a data-link-type="idl" href="#service-worker-global-scope-interface" id="ref-for-service-worker-global-scope-interface①②">ServiceWorkerGlobalScope</a></code> object. Let <var>workerGlobalScope</var> be the created object.
          <li>Let <var>realmExecutionContext</var> be the created <a href="https://tc39.github.io/ecma262/#sec-execution-contexts">JavaScript execution context</a>.
         </ul>
-       <li>Let <var>workerEventLoop</var> be a newly created <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop⑤">event loop</a>.
-       <li>Let <var>workerGlobalScope</var> be <var>realmExecutionContext</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global①⑨">global object</a>.
+       <li>Let <var>workerEventLoop</var> be a newly created <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop⑤">event loop</a>.
+       <li>Let <var>workerGlobalScope</var> be <var>realmExecutionContext</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object①⑨">global object</a>.
        <li>
         Let <var>settingsObject</var> be a new <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①②">environment settings object</a> whose algorithms are defined as follows: 
         <dl>
          <dt>The <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#realm-execution-context" id="ref-for-realm-execution-context">realm execution context</a>
          <dd>Return <var>realmExecutionContext</var>.
-         <dt>The <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global②⓪">global object</a>
+         <dt>The <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object②⓪">global object</a>
          <dd>Return <var>workerGlobalScope</var>.
          <dt>The <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop" id="ref-for-responsible-event-loop⑨">responsible event loop</a>
          <dd>Return <var>workerEventLoop</var>.
@@ -3332,7 +3332,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>Set <var>workerGlobalScope</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-https-state" id="ref-for-concept-workerglobalscope-https-state①">HTTPS state</a> to <var>serviceWorker</var>’s <a data-link-type="dfn" href="#dfn-script-resource" id="ref-for-dfn-script-resource①">script resource</a>’s <a href="#dfn-https-state" id="ref-for-dfn-https-state">HTTPS state</a>.
        <li>Set <var>workerGlobalScope</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-type" id="ref-for-concept-workerglobalscope-type">type</a> to <var>serviceWorker</var>’s <a href="#dfn-type" id="ref-for-dfn-type③">type</a>.
        <li>Create a new <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/workers.html#workerlocation" id="ref-for-workerlocation">WorkerLocation</a></code> object and associate it with <var>workerGlobalScope</var>.
-       <li>If <var>serviceWorker</var> is an <a href="#dfn-active-worker" id="ref-for-dfn-active-worker③①">active worker</a>, and there are any <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task⑦">tasks</a> queued in <var>serviceWorker</var>’s <a href="#dfn-containing-service-worker-registration" id="ref-for-dfn-containing-service-worker-registration①②">containing service worker registration</a>’s <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue②">task queues</a>, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②③">queue</a> them to <var>serviceWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop⑥">event loop</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue③">task queues</a> in the same order using their original <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source⑨">task sources</a>.
+       <li>If <var>serviceWorker</var> is an <a href="#dfn-active-worker" id="ref-for-dfn-active-worker③①">active worker</a>, and there are any <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task⑦">tasks</a> queued in <var>serviceWorker</var>’s <a href="#dfn-containing-service-worker-registration" id="ref-for-dfn-containing-service-worker-registration①②">containing service worker registration</a>’s <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue②">task queues</a>, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②③">queue</a> them to <var>serviceWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop⑥">event loop</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue③">task queues</a> in the same order using their original <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source⑨">task sources</a>.
        <li>
         If <var>script</var> is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#classic-script" id="ref-for-classic-script">classic script</a>, then <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#run-a-classic-script" id="ref-for-run-a-classic-script">run the classic script</a> <var>script</var>. Otherwise, it is a <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#module-script" id="ref-for-module-script">module script</a>; <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#run-a-module-script" id="ref-for-run-a-module-script">run the module script</a> <var>script</var>. 
         <p class="note" role="note">In addition to the usual possibilities of returning a value or failing due to an exception, this could be prematurely aborted by the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/workers.html#kill-a-worker" id="ref-for-kill-a-worker">kill a worker</a> or <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/workers.html#terminate-a-worker" id="ref-for-terminate-a-worker">terminate a worker</a> algorithms.</p>
@@ -3340,7 +3340,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
         If <var>script</var>’s <a href="#dfn-has-ever-been-evaluated-flag" id="ref-for-dfn-has-ever-been-evaluated-flag">has ever been evaluated flag</a> is unset, then: 
         <ol>
          <li>
-          Set <var>workerGlobalScope</var>’s associated <a href="#dfn-service-worker-global-scope-service-worker" id="ref-for-dfn-service-worker-global-scope-service-worker②①">service worker</a>’s <a href="#dfn-set-of-event-types-to-handle" id="ref-for-dfn-set-of-event-types-to-handle">set of event types to handle</a> to the set of event types created from <var>settingsObject</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global②①">global object</a>’s associated list of <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-listener" id="ref-for-concept-event-listener①">event listeners</a>' event types. 
+          Set <var>workerGlobalScope</var>’s associated <a href="#dfn-service-worker-global-scope-service-worker" id="ref-for-dfn-service-worker-global-scope-service-worker②①">service worker</a>’s <a href="#dfn-set-of-event-types-to-handle" id="ref-for-dfn-set-of-event-types-to-handle">set of event types to handle</a> to the set of event types created from <var>settingsObject</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object②①">global object</a>’s associated list of <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-listener" id="ref-for-concept-event-listener①">event listeners</a>' event types. 
           <p class="note" role="note">If the global object’s associated list of event listeners does not have any event listener added at this moment, the service worker’s set of event types to handle is set to an empty set. The user agents are encouraged to show a warning that the event listeners must be added on the very first evaluation of the worker script.</p>
          <li>Set <var>script</var>’s <a href="#dfn-has-ever-been-evaluated-flag" id="ref-for-dfn-has-ever-been-evaluated-flag①">has ever been evaluated flag</a>.
         </ol>
@@ -3358,10 +3358,10 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
       </dl>
       <ol>
        <li>If <var>serviceWorker</var> is not running, abort these steps.
-       <li>Let <var>serviceWorkerGlobalScope</var> be <var>serviceWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①③">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global②②">global object</a>.
+       <li>Let <var>serviceWorkerGlobalScope</var> be <var>serviceWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①③">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object②②">global object</a>.
        <li>Set <var>serviceWorkerGlobalScope</var>’s closing flag to true.
        <li>
-        If there are any <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task⑧">tasks</a>, whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source①⓪">task source</a> is either the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source①">handle fetch task source</a> or the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source①">handle functional event task source</a>, queued in <var>serviceWorkerGlobalScope</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop⑦">event loop</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue④">task queues</a>, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②④">queue</a> them to <var>serviceWorker</var>’s <a href="#dfn-containing-service-worker-registration" id="ref-for-dfn-containing-service-worker-registration①③">containing service worker registration</a>’s corresponding <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue③">task queues</a> in the same order using their original <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source①①">task sources</a>, and discard all the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task⑨">tasks</a> (including <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task①⓪">tasks</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source①②">task source</a> is neither the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source②">handle fetch task source</a> nor the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source②">handle functional event task source</a>) from <var>serviceWorkerGlobalScope</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop⑧">event loop</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue⑤">task queues</a> without processing them. 
+        If there are any <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task⑧">tasks</a>, whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source①⓪">task source</a> is either the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source①">handle fetch task source</a> or the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source①">handle functional event task source</a>, queued in <var>serviceWorkerGlobalScope</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop⑦">event loop</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue④">task queues</a>, <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②④">queue</a> them to <var>serviceWorker</var>’s <a href="#dfn-containing-service-worker-registration" id="ref-for-dfn-containing-service-worker-registration①③">containing service worker registration</a>’s corresponding <a href="#dfn-service-worker-registration-task-queue" id="ref-for-dfn-service-worker-registration-task-queue③">task queues</a> in the same order using their original <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source①①">task sources</a>, and discard all the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task⑨">tasks</a> (including <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-task" id="ref-for-concept-task①⓪">tasks</a> whose <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-source" id="ref-for-task-source①②">task source</a> is neither the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source②">handle fetch task source</a> nor the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source②">handle functional event task source</a>) from <var>serviceWorkerGlobalScope</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop⑧">event loop</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#task-queue" id="ref-for-task-queue⑤">task queues</a> without processing them. 
         <p class="note" role="note">This effectively means that the fetch events and the other functional events such as push events are backed up by the registration’s task queues while the other tasks including message events are discarded.</p>
        <li>Abort the script currently running in <var>serviceWorker</var>.
       </ol>
@@ -3396,7 +3396,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
         <p class="note" role="note">If the non-subresource request is under the scope of a service worker registration, application cache is completely bypassed regardless of whether the non-subresource request uses the service worker registration.</p>
         <ol>
          <li>If <var>client</var> is not a <a data-link-type="dfn" href="https://w3c.github.io/webappsec/specs/powerfulfeatures/#secure-context" id="ref-for-secure-context⑧">secure context</a>, return null.
-         <li>If <var>request</var> is a <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#navigation-request" id="ref-for-navigation-request">navigation request</a> and the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate" id="ref-for-navigate③">navigation</a> triggering it was initiated with a shift+reload or equivalent, return null.
+         <li>If <var>request</var> is a <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#navigation-request" id="ref-for-navigation-request">navigation request</a> and the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate" id="ref-for-dom-navigationtype-navigate③">navigation</a> triggering it was initiated with a shift+reload or equivalent, return null.
          <li>Set <var>registration</var> to the result of running <a href="#scope-match-algorithm">Match Service Worker Registration</a> algorithm passing <var>request</var>’s <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-url" id="ref-for-concept-request-url⑧">url</a> as the argument.
          <li>If <var>registration</var> is null or <var>registration</var>’s <a href="#dfn-active-worker" id="ref-for-dfn-active-worker③②">active worker</a> is null, return null.
          <li>Set <var>client</var>’s <a href="#dfn-service-worker-client-active-worker" id="ref-for-dfn-service-worker-client-active-worker⑤">active worker</a> to <var>registration</var>’s <a href="#dfn-active-worker" id="ref-for-dfn-active-worker③③">active worker</a>.
@@ -3421,7 +3421,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
          <li>Let the <a href="#fetch-event-request-attribute" id="ref-for-fetch-event-request-attribute②">request</a> attribute of <var>e</var> be initialized to <var>r</var>.
          <li>Let the <a href="#fetch-event-clientid-attribute" id="ref-for-fetch-event-clientid-attribute②">clientId</a> attribute of <var>e</var> be initialized to <var>client</var>’s <a href="#dfn-service-worker-client-id" id="ref-for-dfn-service-worker-client-id②">id</a> if <var>request</var> is not a <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#non-subresource-request" id="ref-for-non-subresource-request②">non-subresource request</a>, and to null otherwise.
          <li>Let the <a href="#fetch-event-isreload-attribute" id="ref-for-fetch-event-isreload-attribute②">isReload</a> attribute of <var>e</var> be initialized to <code>true</code> if <var>request</var>’s <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-client" id="ref-for-concept-request-client③">client</a> is a <a href="#dfn-window-client" id="ref-for-dfn-window-client⑧">window client</a> and the event was dispatched with the user’s intention for the page reload, and <code>false</code> otherwise.
-         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑦">Dispatch</a> <var>e</var> at <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①④">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global②③">global object</a>.
+         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑦">Dispatch</a> <var>e</var> at <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①④">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object②③">global object</a>.
          <li>If <var>e</var>’s <a href="#respond-with-entered-flag" id="ref-for-respond-with-entered-flag④">respond-with entered flag</a> is set, set <var>respondWithEntered</var> to true.
          <li>
           If <var>e</var>’s <a href="#wait-to-respond-flag" id="ref-for-wait-to-respond-flag④">wait to respond flag</a> is set, then: 
@@ -3433,7 +3433,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
          <li>If <var>e</var>’s <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#canceled-flag" id="ref-for-canceled-flag">canceled flag</a> is set, set <var>eventCanceled</var> to true.
         </ol>
         <p>If <var>task</var> is discarded or the script has been aborted by the <a href="#terminate-service-worker-algorithm">termination</a> of <var>activeWorker</var>, set <var>handleFetchFailed</var> to true.</p>
-        <p>The <var>task</var> <em class="rfc2119" title="MUST">must</em> use <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop⑨">event loop</a> and the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source③">handle fetch task source</a>.</p>
+        <p>The <var>task</var> <em class="rfc2119" title="MUST">must</em> use <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop⑨">event loop</a> and the <a href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source③">handle fetch task source</a>.</p>
        <li>Wait for <var>task</var> to have executed or been discarded.
        <li>
         If <var>respondWithEntered</var> is false, then: 
@@ -3498,7 +3498,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
          <li>Create a <a data-link-type="dfn">trusted event</a> <var>e</var> that uses the <code class="idl"><a data-link-type="idl" href="#foreignfetchevent-foreignfetchevent" id="ref-for-foreignfetchevent-foreignfetchevent③">ForeignFetchEvent</a></code> interface, with the event type <code><a href="#service-worker-global-scope-foreignfetch-event" id="ref-for-service-worker-global-scope-foreignfetch-event③">foreignfetch</a></code>, which does not bubble.
          <li>Let the <code class="idl"><a data-link-type="idl" href="#dom-foreignfetchevent-request" id="ref-for-dom-foreignfetchevent-request②">request</a></code> attribute of <var>e</var> be initialized to <var>r</var>.
          <li>Let the <code class="idl"><a data-link-type="idl" href="#dom-foreignfetchevent-origin" id="ref-for-dom-foreignfetchevent-origin②">origin</a></code> attribute of <var>e</var> be initialized to the <a data-link-type="dfn">Unicode serialization</a> of <var>request</var>’s <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#concept-request-origin" id="ref-for-concept-request-origin②">origin</a>.
-         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑧">Dispatch</a> <var>e</var> at <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①⑤">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global②④">global object</a>.
+         <li><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch⑧">Dispatch</a> <var>e</var> at <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①⑤">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object②④">global object</a>.
          <li>If <var>e</var>’s <a data-link-type="dfn" href="#foreign-fetch-respond-with-entered-flag" id="ref-for-foreign-fetch-respond-with-entered-flag">respond-with entered flag</a> is set, set <var>respondWithEntered</var> to true.
          <li>If <var>e</var>’s <a data-link-type="dfn" href="#foreign-fetch-wait-to-respond-flag" id="ref-for-foreign-fetch-wait-to-respond-flag">wait to respond flag</a> is set, wait until <var>e</var>’s <a data-link-type="dfn" href="#foreign-fetch-wait-to-respond-flag" id="ref-for-foreign-fetch-wait-to-respond-flag①">wait to respond flag</a> is unset.
          <li>Let <var>internalResponse</var> be <var>e</var>’s <a data-link-type="dfn" href="#foreignfetchevent-potential-response" id="ref-for-foreignfetchevent-potential-response①">potential response</a>.
@@ -3525,7 +3525,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
          <li>If <var>e</var>’s <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#canceled-flag" id="ref-for-canceled-flag①">canceled flag</a> is set, set <var>eventCanceled</var> to true.
         </ol>
         <p>If <var>task</var> is discarded or the script has been aborted by the <a href="#terminate-service-worker-algorithm">termination</a> of <var>activeWorker</var>, set <var>handleFetchFailed</var> to true.</p>
-        <p>The <var>task</var> <em class="rfc2119" title="MUST">must</em> use <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop①⓪">event loop</a> and the <a data-link-type="dfn" href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source④">handle fetch task source</a>.</p>
+        <p>The <var>task</var> <em class="rfc2119" title="MUST">must</em> use <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop①⓪">event loop</a> and the <a data-link-type="dfn" href="#dfn-handle-fetch-task-source" id="ref-for-dfn-handle-fetch-task-source④">handle fetch task source</a>.</p>
        <li>Wait for <var>task</var> to have executed or been discarded.
        <li>
         If <var>respondWithEntered</var> is false, then: 
@@ -3572,8 +3572,8 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/servic
        <li>If <var>activeWorker</var>’s <a href="#dfn-state" id="ref-for-dfn-state①③">state</a> is <em>activating</em>, wait for <var>activeWorker</var>’s <a href="#dfn-state" id="ref-for-dfn-state①④">state</a> to become <em>activated</em>.
        <li>Invoke <a href="#run-service-worker-algorithm">Run Service Worker</a> algorithm with <var>activeWorker</var> as the argument.
        <li>
-        <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②⑦">Queue a task</a> <var>task</var> to invoke <var>callbackSteps</var> with <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①⑥">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global" id="ref-for-concept-realm-global②⑤">global object</a> as its argument. 
-        <p>The <var>task</var> <em class="rfc2119" title="MUST">must</em> use <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop" id="ref-for-concept-agent-event-loop①①">event loop</a> and the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source③">handle functional event task source</a>.</p>
+        <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task" id="ref-for-queue-a-task②⑦">Queue a task</a> <var>task</var> to invoke <var>callbackSteps</var> with <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object" id="ref-for-environment-settings-object①⑥">environment settings object</a>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object" id="ref-for-global-object②⑤">global object</a> as its argument. 
+        <p>The <var>task</var> <em class="rfc2119" title="MUST">must</em> use <var>activeWorker</var>’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop" id="ref-for-event-loop①①">event loop</a> and the <a href="#dfn-handle-functional-event-task-source" id="ref-for-dfn-handle-functional-event-task-source③">handle functional event task source</a>.</p>
        <li>Wait for <var>task</var> to have executed or been discarded.
        <li>If the time difference in seconds calculated by the current time minus <var>registration</var>’s <a href="#dfn-last-update-check-time" id="ref-for-dfn-last-update-check-time⑥">last update check time</a> is greater than 86400, invoke <a href="#soft-update-algorithm">Soft Update</a> algorithm with <var>registration</var>.
       </ol>
@@ -5542,16 +5542,16 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-event-handler-idl-attributes③">4.1.4. Event handlers</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-agent-event-loop">
-   <a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop">https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-event-loop">
+   <a href="https://html.spec.whatwg.org/multipage/webappapis.html#event-loop">https://html.spec.whatwg.org/multipage/webappapis.html#event-loop</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-concept-agent-event-loop">2.2. Service Worker Registration</a> <a href="#ref-for-concept-agent-event-loop①">(2)</a> <a href="#ref-for-concept-agent-event-loop②">(3)</a> <a href="#ref-for-concept-agent-event-loop③">(4)</a>
-    <li><a href="#ref-for-concept-agent-event-loop④">3.4. ServiceWorkerContainer</a>
-    <li><a href="#ref-for-concept-agent-event-loop⑤">Run Service Worker</a> <a href="#ref-for-concept-agent-event-loop⑥">(2)</a>
-    <li><a href="#ref-for-concept-agent-event-loop⑦">Terminate Service Worker</a> <a href="#ref-for-concept-agent-event-loop⑧">(2)</a>
-    <li><a href="#ref-for-concept-agent-event-loop⑨">Handle Fetch</a>
-    <li><a href="#ref-for-concept-agent-event-loop①⓪">Handle Foreign Fetch</a>
-    <li><a href="#ref-for-concept-agent-event-loop①①">Handle Functional Event</a>
+    <li><a href="#ref-for-event-loop">2.2. Service Worker Registration</a> <a href="#ref-for-event-loop①">(2)</a> <a href="#ref-for-event-loop②">(3)</a> <a href="#ref-for-event-loop③">(4)</a>
+    <li><a href="#ref-for-event-loop④">3.4. ServiceWorkerContainer</a>
+    <li><a href="#ref-for-event-loop⑤">Run Service Worker</a> <a href="#ref-for-event-loop⑥">(2)</a>
+    <li><a href="#ref-for-event-loop⑦">Terminate Service Worker</a> <a href="#ref-for-event-loop⑧">(2)</a>
+    <li><a href="#ref-for-event-loop⑨">Handle Fetch</a>
+    <li><a href="#ref-for-event-loop①⓪">Handle Foreign Fetch</a>
+    <li><a href="#ref-for-event-loop①①">Handle Functional Event</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-external-resource-link">
@@ -5582,27 +5582,27 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-focusing-steps①">4.3.2. matchAll(options)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-realm-global">
-   <a href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global">https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-global-object">
+   <a href="https://html.spec.whatwg.org/multipage/webappapis.html#global-object">https://html.spec.whatwg.org/multipage/webappapis.html#global-object</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-concept-realm-global">2.3. Service Worker Client</a> <a href="#ref-for-concept-realm-global①">(2)</a> <a href="#ref-for-concept-realm-global②">(3)</a>
-    <li><a href="#ref-for-concept-realm-global③">3.2.5. update()</a>
-    <li><a href="#ref-for-concept-realm-global④">3.4. ServiceWorkerContainer</a>
-    <li><a href="#ref-for-concept-realm-global⑤">4.2.2. frameType</a> <a href="#ref-for-concept-realm-global⑥">(2)</a> <a href="#ref-for-concept-realm-global⑦">(3)</a>
-    <li><a href="#ref-for-concept-realm-global⑧">4.2.7. focus()</a>
-    <li><a href="#ref-for-concept-realm-global⑨">4.2.8. navigate(url)</a>
-    <li><a href="#ref-for-concept-realm-global①⓪">4.3.1. get(id)</a>
-    <li><a href="#ref-for-concept-realm-global①①">4.3.2. matchAll(options)</a> <a href="#ref-for-concept-realm-global①②">(2)</a>
-    <li><a href="#ref-for-concept-realm-global①③">4.4. ExtendableEvent</a>
-    <li><a href="#ref-for-concept-realm-global①④">6.5. CacheStorage</a>
-    <li><a href="#ref-for-concept-realm-global①⑤">7.3.2. importScripts(urls)</a>
-    <li><a href="#ref-for-concept-realm-global①⑥">Install</a>
-    <li><a href="#ref-for-concept-realm-global①⑦">Activate</a> <a href="#ref-for-concept-realm-global①⑧">(2)</a>
-    <li><a href="#ref-for-concept-realm-global①⑨">Run Service Worker</a> <a href="#ref-for-concept-realm-global②⓪">(2)</a> <a href="#ref-for-concept-realm-global②①">(3)</a>
-    <li><a href="#ref-for-concept-realm-global②②">Terminate Service Worker</a>
-    <li><a href="#ref-for-concept-realm-global②③">Handle Fetch</a>
-    <li><a href="#ref-for-concept-realm-global②④">Handle Foreign Fetch</a>
-    <li><a href="#ref-for-concept-realm-global②⑤">Handle Functional Event</a>
+    <li><a href="#ref-for-global-object">2.3. Service Worker Client</a> <a href="#ref-for-global-object①">(2)</a> <a href="#ref-for-global-object②">(3)</a>
+    <li><a href="#ref-for-global-object③">3.2.5. update()</a>
+    <li><a href="#ref-for-global-object④">3.4. ServiceWorkerContainer</a>
+    <li><a href="#ref-for-global-object⑤">4.2.2. frameType</a> <a href="#ref-for-global-object⑥">(2)</a> <a href="#ref-for-global-object⑦">(3)</a>
+    <li><a href="#ref-for-global-object⑧">4.2.7. focus()</a>
+    <li><a href="#ref-for-global-object⑨">4.2.8. navigate(url)</a>
+    <li><a href="#ref-for-global-object①⓪">4.3.1. get(id)</a>
+    <li><a href="#ref-for-global-object①①">4.3.2. matchAll(options)</a> <a href="#ref-for-global-object①②">(2)</a>
+    <li><a href="#ref-for-global-object①③">4.4. ExtendableEvent</a>
+    <li><a href="#ref-for-global-object①④">6.5. CacheStorage</a>
+    <li><a href="#ref-for-global-object①⑤">7.3.2. importScripts(urls)</a>
+    <li><a href="#ref-for-global-object①⑥">Install</a>
+    <li><a href="#ref-for-global-object①⑦">Activate</a> <a href="#ref-for-global-object①⑧">(2)</a>
+    <li><a href="#ref-for-global-object①⑨">Run Service Worker</a> <a href="#ref-for-global-object②⓪">(2)</a> <a href="#ref-for-global-object②①">(3)</a>
+    <li><a href="#ref-for-global-object②②">Terminate Service Worker</a>
+    <li><a href="#ref-for-global-object②③">Handle Fetch</a>
+    <li><a href="#ref-for-global-object②④">Handle Foreign Fetch</a>
+    <li><a href="#ref-for-global-object②⑤">Handle Functional Event</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-has-focus-steps">
@@ -5717,13 +5717,13 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-module-script">Run Service Worker</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-navigate">
-   <a href="https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate">https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-dom-navigationtype-navigate">
+   <a href="https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate">https://html.spec.whatwg.org/multipage/infrastructure.html#dom-navigationtype-navigate</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-navigate">3.2.6. unregister()</a>
-    <li><a href="#ref-for-navigate①">4.2.8. navigate(url)</a>
-    <li><a href="#ref-for-navigate②">4.3.3. openWindow(url)</a>
-    <li><a href="#ref-for-navigate③">Handle Fetch</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate">3.2.6. unregister()</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate①">4.2.8. navigate(url)</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate②">4.3.3. openWindow(url)</a>
+    <li><a href="#ref-for-dom-navigationtype-navigate③">Handle Fetch</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-nested-browsing-context">
@@ -6164,6 +6164,63 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-concept-url-serializer①①">Get Registration</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-invalidaccesserror">
+   <a href="https://heycam.github.io/webidl/#invalidaccesserror">https://heycam.github.io/webidl/#invalidaccesserror</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-invalidaccesserror">4.2.7. focus()</a>
+    <li><a href="#ref-for-invalidaccesserror①">4.3.3. openWindow(url)</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-invalidstateerror">
+   <a href="https://heycam.github.io/webidl/#invalidstateerror">https://heycam.github.io/webidl/#invalidstateerror</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-invalidstateerror">3.1.3. postMessage(message, transfer)</a>
+    <li><a href="#ref-for-invalidstateerror①">3.2.5. update()</a> <a href="#ref-for-invalidstateerror②">(2)</a>
+    <li><a href="#ref-for-invalidstateerror③">4.2.4. postMessage(message, transfer)</a>
+    <li><a href="#ref-for-invalidstateerror④">4.3.4. claim()</a>
+    <li><a href="#ref-for-invalidstateerror⑤">4.4.1. event.waitUntil(f)</a>
+    <li><a href="#ref-for-invalidstateerror⑥">4.6.4. event.respondWith(r)</a> <a href="#ref-for-invalidstateerror⑦">(2)</a>
+    <li><a href="#ref-for-invalidstateerror⑧">4.7.3. event.respondWith(r)</a> <a href="#ref-for-invalidstateerror⑨">(2)</a>
+    <li><a href="#ref-for-invalidstateerror①⓪">Batch Cache Operations</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-quotaexceedederror">
+   <a href="https://heycam.github.io/webidl/#quotaexceedederror">https://heycam.github.io/webidl/#quotaexceedederror</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-quotaexceedederror">6.5.3. open(cacheName)</a>
+    <li><a href="#ref-for-quotaexceedederror①">8. Storage Considerations</a>
+    <li><a href="#ref-for-quotaexceedederror②">Batch Cache Operations</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-securityerror">
+   <a href="https://heycam.github.io/webidl/#securityerror">https://heycam.github.io/webidl/#securityerror</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-securityerror">3.4.4. getRegistration(clientURL)</a>
+    <li><a href="#ref-for-securityerror①">4.3.1. get(id)</a>
+    <li><a href="#ref-for-securityerror②">Register</a> <a href="#ref-for-securityerror③">(2)</a> <a href="#ref-for-securityerror④">(3)</a>
+    <li><a href="#ref-for-securityerror⑤">Update</a> <a href="#ref-for-securityerror⑥">(2)</a> <a href="#ref-for-securityerror⑦">(3)</a>
+    <li><a href="#ref-for-securityerror⑧">Unregister</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-dfn-throw">
+   <a href="https://heycam.github.io/webidl/#dfn-throw">https://heycam.github.io/webidl/#dfn-throw</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dfn-throw">3.1.3. postMessage(message, transfer)</a> <a href="#ref-for-dfn-throw①">(2)</a> <a href="#ref-for-dfn-throw②">(3)</a>
+    <li><a href="#ref-for-dfn-throw③">4.2.4. postMessage(message, transfer)</a> <a href="#ref-for-dfn-throw④">(2)</a> <a href="#ref-for-dfn-throw⑤">(3)</a>
+    <li><a href="#ref-for-dfn-throw⑥">4.2.8. navigate(url)</a>
+    <li><a href="#ref-for-dfn-throw⑦">4.3.3. openWindow(url)</a>
+    <li><a href="#ref-for-dfn-throw⑧">4.4.1. event.waitUntil(f)</a>
+    <li><a href="#ref-for-dfn-throw⑨">4.5.1. event.registerForeignFetch(options)</a> <a href="#ref-for-dfn-throw①⓪">(2)</a> <a href="#ref-for-dfn-throw①①">(3)</a> <a href="#ref-for-dfn-throw①②">(4)</a> <a href="#ref-for-dfn-throw①③">(5)</a>
+    <li><a href="#ref-for-dfn-throw①④">4.6.4. event.respondWith(r)</a> <a href="#ref-for-dfn-throw①⑤">(2)</a>
+    <li><a href="#ref-for-dfn-throw①⑥">4.7.3. event.respondWith(r)</a> <a href="#ref-for-dfn-throw①⑦">(2)</a>
+    <li><a href="#ref-for-dfn-throw①⑧">6.4.2. matchAll(request, options)</a>
+    <li><a href="#ref-for-dfn-throw①⑨">6.4.4. addAll(requests)</a>
+    <li><a href="#ref-for-dfn-throw②⓪">6.4.5. put(request, response)</a> <a href="#ref-for-dfn-throw②①">(2)</a>
+    <li><a href="#ref-for-dfn-throw②②">6.4.6. delete(request, options)</a>
+    <li><a href="#ref-for-dfn-throw②③">6.4.7. keys(request, options)</a>
+    <li><a href="#ref-for-dfn-throw②④">Batch Cache Operations</a> <a href="#ref-for-dfn-throw②⑤">(2)</a> <a href="#ref-for-dfn-throw②⑥">(3)</a> <a href="#ref-for-dfn-throw②⑦">(4)</a> <a href="#ref-for-dfn-throw②⑧">(5)</a> <a href="#ref-for-dfn-throw②⑨">(6)</a> <a href="#ref-for-dfn-throw③⓪">(7)</a> <a href="#ref-for-dfn-throw③①">(8)</a> <a href="#ref-for-dfn-throw③②">(9)</a> <a href="#ref-for-dfn-throw③③">(10)</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-idl-ByteString">
    <a href="https://heycam.github.io/webidl/#idl-ByteString">https://heycam.github.io/webidl/#idl-ByteString</a><b>Referenced in:</b>
    <ul>
@@ -6217,26 +6274,6 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-Global">4.1. ServiceWorkerGlobalScope</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-invalidaccesserror">
-   <a href="https://heycam.github.io/webidl/#invalidaccesserror">https://heycam.github.io/webidl/#invalidaccesserror</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-invalidaccesserror">4.2.7. focus()</a>
-    <li><a href="#ref-for-invalidaccesserror①">4.3.3. openWindow(url)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-invalidstateerror">
-   <a href="https://heycam.github.io/webidl/#invalidstateerror">https://heycam.github.io/webidl/#invalidstateerror</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-invalidstateerror">3.1.3. postMessage(message, transfer)</a>
-    <li><a href="#ref-for-invalidstateerror①">3.2.5. update()</a> <a href="#ref-for-invalidstateerror②">(2)</a>
-    <li><a href="#ref-for-invalidstateerror③">4.2.4. postMessage(message, transfer)</a>
-    <li><a href="#ref-for-invalidstateerror④">4.3.4. claim()</a>
-    <li><a href="#ref-for-invalidstateerror⑤">4.4.1. event.waitUntil(f)</a>
-    <li><a href="#ref-for-invalidstateerror⑥">4.6.4. event.respondWith(r)</a> <a href="#ref-for-invalidstateerror⑦">(2)</a>
-    <li><a href="#ref-for-invalidstateerror⑧">4.7.3. event.respondWith(r)</a> <a href="#ref-for-invalidstateerror⑨">(2)</a>
-    <li><a href="#ref-for-invalidstateerror①⓪">Batch Cache Operations</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-NewObject">
    <a href="https://heycam.github.io/webidl/#NewObject">https://heycam.github.io/webidl/#NewObject</a><b>Referenced in:</b>
    <ul>
@@ -6264,14 +6301,6 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-idl-promise②③">6.5. CacheStorage</a> <a href="#ref-for-idl-promise②④">(2)</a> <a href="#ref-for-idl-promise②⑤">(3)</a> <a href="#ref-for-idl-promise②⑥">(4)</a> <a href="#ref-for-idl-promise②⑦">(5)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-quotaexceedederror">
-   <a href="https://heycam.github.io/webidl/#quotaexceedederror">https://heycam.github.io/webidl/#quotaexceedederror</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-quotaexceedederror">6.5.3. open(cacheName)</a>
-    <li><a href="#ref-for-quotaexceedederror①">8. Storage Considerations</a>
-    <li><a href="#ref-for-quotaexceedederror②">Batch Cache Operations</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-SameObject">
    <a href="https://heycam.github.io/webidl/#SameObject">https://heycam.github.io/webidl/#SameObject</a><b>Referenced in:</b>
    <ul>
@@ -6295,16 +6324,6 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-SecureContext⑤">6.3. self.caches</a>
     <li><a href="#ref-for-SecureContext⑥">6.4. Cache</a>
     <li><a href="#ref-for-SecureContext⑦">6.5. CacheStorage</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-securityerror">
-   <a href="https://heycam.github.io/webidl/#securityerror">https://heycam.github.io/webidl/#securityerror</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-securityerror">3.4.4. getRegistration(clientURL)</a>
-    <li><a href="#ref-for-securityerror①">4.3.1. get(id)</a>
-    <li><a href="#ref-for-securityerror②">Register</a> <a href="#ref-for-securityerror③">(2)</a> <a href="#ref-for-securityerror④">(3)</a>
-    <li><a href="#ref-for-securityerror⑤">Update</a> <a href="#ref-for-securityerror⑥">(2)</a> <a href="#ref-for-securityerror⑦">(3)</a>
-    <li><a href="#ref-for-securityerror⑧">Unregister</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-idl-USVString">
@@ -6346,7 +6365,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dfn-exception">
-   <a href="https://www.w3.org/TR/WebIDL/#dfn-exception">https://www.w3.org/TR/WebIDL/#dfn-exception</a><b>Referenced in:</b>
+   <a href="https://www.w3.org/TR/WebIDL-1/#dfn-exception">https://www.w3.org/TR/WebIDL-1/#dfn-exception</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dfn-exception">Reject Job Promise</a>
    </ul>
@@ -6366,14 +6385,14 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dfn-partial-interface">
-   <a href="https://www.w3.org/TR/WebIDL/#dfn-partial-interface">https://www.w3.org/TR/WebIDL/#dfn-partial-interface</a><b>Referenced in:</b>
+   <a href="https://www.w3.org/TR/WebIDL-1/#dfn-partial-interface">https://www.w3.org/TR/WebIDL-1/#dfn-partial-interface</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dfn-partial-interface">9.1. Define API bound to Service Worker Registration</a>
     <li><a href="#ref-for-dfn-partial-interface①">9.3. Define Event Handler</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dfn-present">
-   <a href="https://www.w3.org/TR/WebIDL/#dfn-present">https://www.w3.org/TR/WebIDL/#dfn-present</a><b>Referenced in:</b>
+   <a href="https://www.w3.org/TR/WebIDL-1/#dfn-present">https://www.w3.org/TR/WebIDL-1/#dfn-present</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dfn-present">3.4.3. register(scriptURL, options)</a>
     <li><a href="#ref-for-dfn-present①">6.5.1. match(request, options)</a>
@@ -6392,25 +6411,6 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
     <li><a href="#ref-for-idl-sequence⑧">4.8. ExtendableMessageEvent</a>
     <li><a href="#ref-for-idl-sequence⑨">6.4. Cache</a> <a href="#ref-for-idl-sequence①⓪">(2)</a> <a href="#ref-for-idl-sequence①①">(3)</a>
     <li><a href="#ref-for-idl-sequence①②">6.5. CacheStorage</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-dfn-throw">
-   <a href="https://heycam.github.io/webidl/#dfn-throw">https://heycam.github.io/webidl/#dfn-throw</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dfn-throw">3.1.3. postMessage(message, transfer)</a> <a href="#ref-for-dfn-throw①">(2)</a> <a href="#ref-for-dfn-throw②">(3)</a>
-    <li><a href="#ref-for-dfn-throw③">4.2.4. postMessage(message, transfer)</a> <a href="#ref-for-dfn-throw④">(2)</a> <a href="#ref-for-dfn-throw⑤">(3)</a>
-    <li><a href="#ref-for-dfn-throw⑥">4.2.8. navigate(url)</a>
-    <li><a href="#ref-for-dfn-throw⑦">4.3.3. openWindow(url)</a>
-    <li><a href="#ref-for-dfn-throw⑧">4.4.1. event.waitUntil(f)</a>
-    <li><a href="#ref-for-dfn-throw⑨">4.5.1. event.registerForeignFetch(options)</a> <a href="#ref-for-dfn-throw①⓪">(2)</a> <a href="#ref-for-dfn-throw①①">(3)</a> <a href="#ref-for-dfn-throw①②">(4)</a> <a href="#ref-for-dfn-throw①③">(5)</a>
-    <li><a href="#ref-for-dfn-throw①④">4.6.4. event.respondWith(r)</a> <a href="#ref-for-dfn-throw①⑤">(2)</a>
-    <li><a href="#ref-for-dfn-throw①⑥">4.7.3. event.respondWith(r)</a> <a href="#ref-for-dfn-throw①⑦">(2)</a>
-    <li><a href="#ref-for-dfn-throw①⑧">6.4.2. matchAll(request, options)</a>
-    <li><a href="#ref-for-dfn-throw①⑨">6.4.4. addAll(requests)</a>
-    <li><a href="#ref-for-dfn-throw②⓪">6.4.5. put(request, response)</a> <a href="#ref-for-dfn-throw②①">(2)</a>
-    <li><a href="#ref-for-dfn-throw②②">6.4.6. delete(request, options)</a>
-    <li><a href="#ref-for-dfn-throw②③">6.4.7. keys(request, options)</a>
-    <li><a href="#ref-for-dfn-throw②④">Batch Cache Operations</a> <a href="#ref-for-dfn-throw②⑤">(2)</a> <a href="#ref-for-dfn-throw②⑥">(3)</a> <a href="#ref-for-dfn-throw②⑦">(4)</a> <a href="#ref-for-dfn-throw②⑧">(5)</a> <a href="#ref-for-dfn-throw②⑨">(6)</a> <a href="#ref-for-dfn-throw③⓪">(7)</a> <a href="#ref-for-dfn-throw③①">(8)</a> <a href="#ref-for-dfn-throw③②">(9)</a> <a href="#ref-for-dfn-throw③③">(10)</a>
    </ul>
   </aside>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
@@ -6553,12 +6553,12 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
      <li><span class="dfn-paneled" id="term-for-event-handlers">event handler</span>
      <li><span class="dfn-paneled" id="term-for-event-handler-event-type">event handler event type</span>
      <li><span class="dfn-paneled" id="term-for-event-handler-idl-attributes">event handler idl attribute</span>
-     <li><span class="dfn-paneled" id="term-for-concept-agent-event-loop">event loop</span>
+     <li><span class="dfn-paneled" id="term-for-event-loop">event loop</span>
      <li><span class="dfn-paneled" id="term-for-external-resource-link">external resource link</span>
      <li><span class="dfn-paneled" id="term-for-fetch-a-classic-worker-script">fetch a classic worker script</span>
      <li><span class="dfn-paneled" id="term-for-fire-a-simple-event">fire a simple event</span>
      <li><span class="dfn-paneled" id="term-for-focusing-steps">focusing steps</span>
-     <li><span class="dfn-paneled" id="term-for-concept-realm-global">global object</span>
+     <li><span class="dfn-paneled" id="term-for-global-object">global object</span>
      <li><span class="dfn-paneled" id="term-for-has-focus-steps">has focus steps</span>
      <li><span class="dfn-paneled" id="term-for-attr-link-href">href</span>
      <li><span class="dfn-paneled" id="term-for-concept-workerglobalscope-https-state">https state <small>(for workerglobalscope)</small></span>
@@ -6572,7 +6572,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
      <li><span class="dfn-paneled" id="term-for-list-of-active-timers">list of active timers</span>
      <li><span class="dfn-paneled" id="term-for-event-message">message</span>
      <li><span class="dfn-paneled" id="term-for-module-script">module script</span>
-     <li><span class="dfn-paneled" id="term-for-navigate">navigate</span>
+     <li><span class="dfn-paneled" id="term-for-dom-navigationtype-navigate">navigate</span>
      <li><span class="dfn-paneled" id="term-for-nested-browsing-context">nested browsing context</span>
      <li><span class="dfn-paneled" id="term-for-origin-2">origin</span>
      <li><span class="dfn-paneled" id="term-for-parent-browsing-context">parent browsing context</span>
@@ -6658,19 +6658,24 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
    <li>
     <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
     <ul>
+     <li><span class="dfn-paneled" id="term-for-invalidaccesserror">InvalidAccessError</span>
+     <li><span class="dfn-paneled" id="term-for-invalidstateerror">InvalidStateError</span>
+     <li><span class="dfn-paneled" id="term-for-quotaexceedederror">QuotaExceededError</span>
+     <li><span class="dfn-paneled" id="term-for-securityerror">SecurityError</span>
+     <li><span class="dfn-paneled" id="term-for-dfn-throw">throw</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
+    <ul>
      <li><span class="dfn-paneled" id="term-for-idl-ByteString">ByteString</span>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
      <li><span class="dfn-paneled" id="term-for-idl-frozen-array">FrozenArray</span>
      <li><span class="dfn-paneled" id="term-for-Global">Global</span>
-     <li><span class="dfn-paneled" id="term-for-invalidaccesserror">InvalidAccessError</span>
-     <li><span class="dfn-paneled" id="term-for-invalidstateerror">InvalidStateError</span>
      <li><span class="dfn-paneled" id="term-for-NewObject">NewObject</span>
      <li><span class="dfn-paneled" id="term-for-idl-promise">Promise</span>
-     <li><span class="dfn-paneled" id="term-for-quotaexceedederror">QuotaExceededError</span>
      <li><span class="dfn-paneled" id="term-for-SameObject">SameObject</span>
      <li><span class="dfn-paneled" id="term-for-SecureContext">SecureContext</span>
-     <li><span class="dfn-paneled" id="term-for-securityerror">SecurityError</span>
      <li><span class="dfn-paneled" id="term-for-idl-USVString">USVString</span>
      <li><span class="dfn-paneled" id="term-for-idl-any">any</span>
      <li><span class="dfn-paneled" id="term-for-idl-boolean">boolean</span>
@@ -6680,7 +6685,6 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
      <li><span class="dfn-paneled" id="term-for-dfn-partial-interface">partial interface</span>
      <li><span class="dfn-paneled" id="term-for-dfn-present">present</span>
      <li><span class="dfn-paneled" id="term-for-idl-sequence">sequence</span>
-     <li><span class="dfn-paneled" id="term-for-dfn-throw">throw</span>
     </ul>
   </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
@@ -6691,7 +6695,7 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-fetch">[FETCH]
    <dd>Anne van Kesteren. <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>. Living Standard. URL: <a href="https://fetch.spec.whatwg.org/">https://fetch.spec.whatwg.org/</a>
    <dt id="biblio-html">[HTML]
@@ -6718,6 +6722,8 @@ navigator<c- p>.</c->serviceWorker<c- p>.</c->register<c- p>(</c-><c- u>"/foo/ba
    <dd>Anne van Kesteren. <a href="https://url.spec.whatwg.org/">URL Standard</a>. Living Standard. URL: <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
    <dt id="biblio-webidl">[WebIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

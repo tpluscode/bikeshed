@@ -1,5 +1,5 @@
 {
-    "ref-for-dom-textdecoder①": [
+    "dom-textdecoder": [
         {
             "engines": [
                 "blink",
@@ -71,7 +71,7 @@
             "title": "TextDecoder()"
         }
     ],
-    "ref-for-dom-textdecoder-decode①": [
+    "dom-textdecoder-decode": [
         {
             "engines": [
                 "blink",
@@ -149,7 +149,7 @@
             "title": "TextDecoder.prototype.decode()"
         }
     ],
-    "ref-for-dom-textdecoder-encoding①": [
+    "dom-textdecoder-encoding": [
         {
             "engines": [
                 "blink",
@@ -300,277 +300,7 @@
             "title": "TextDecoder"
         }
     ],
-    "ref-for-dom-textdecoderstream①": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextDecoderStream.json",
-            "name": "TextDecoderStream",
-            "slug": "API/TextDecoderStream/TextDecoderStream",
-            "summary": "The TextDecoderStream() constructor creates a new TextDecoderStream object which is used to convert a stream of text in a binary encoding into strings.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextDecoderStream.TextDecoderStream()"
-        }
-    ],
-    "dom-textdecoder-encoding": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextDecoderStream.json",
-            "name": "encoding",
-            "slug": "API/TextDecoderStream/encoding",
-            "summary": "The encoding read-only property of the TextDecoderStream interface returns a DOMString containing the name of the encoding algorithm used by the specific encoder.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextDecoderStream.encoding"
-        }
-    ],
-    "dom-textdecoder-fatal": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextDecoderStream.json",
-            "name": "fatal",
-            "slug": "API/TextDecoderStream/fatal",
-            "summary": "The fatal read-only property of the TextDecoderStream interface is a boolean indicating if the error mode of the TextDecoderStream object is set to fatal.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextDecoderStream.fatal"
-        }
-    ],
-    "textdecoder-ignore-bom-flag": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextDecoderStream.json",
-            "name": "ignoreBOM",
-            "slug": "API/TextDecoderStream/ignoreBOM",
-            "summary": "The ignoreBOM read-only property of the TextDecoderStream interface returns a boolean indicating if the byte order mark (BOM) is to be ignored.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextDecoderStream.ignoreBOM"
-        }
-    ],
-    "interface-textdecoderstream": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextDecoderStream.json",
-            "name": "TextDecoderStream",
-            "slug": "API/TextDecoderStream",
-            "summary": "The TextDecoderStream interface of the Encoding API converts a stream of strings into bytes in the UTF-8 encoding. It is the streaming equivalent of TextDecoder.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextDecoderStream"
-        }
-    ],
-    "ref-for-dom-textencoder①": [
+    "dom-textencoder": [
         {
             "engines": [
                 "blink",
@@ -684,7 +414,7 @@
             "title": "TextEncoder()"
         }
     ],
-    "ref-for-dom-textencoder-encode①": [
+    "dom-textencoder-encode": [
         {
             "engines": [
                 "blink",
@@ -754,12 +484,11 @@
             "title": "TextEncoder.prototype.encode()"
         }
     ],
-    "ref-for-dom-textencoder-encodeinto①": [
+    "dom-textencoder-encodeinto": [
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/TextEncoder.json",
             "name": "encodeInto",
@@ -794,10 +523,10 @@
                     "version_added": false
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "11.0"
@@ -880,58 +609,6 @@
                 }
             },
             "title": "TextEncoder.encoding"
-        },
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextEncoderStream.json",
-            "name": "encoding",
-            "slug": "API/TextEncoderStream/encoding",
-            "summary": "The encoding read-only property of the TextEncoderStream interface returns a DOMString containing the name of the encoding algorithm used by the current TextEncoderStream object.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextEncoderStream.encoding"
         }
     ],
     "interface-textencoder": [
@@ -1009,114 +686,6 @@
                 }
             },
             "title": "TextEncoder"
-        }
-    ],
-    "ref-for-dom-textencoderstream①": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextEncoderStream.json",
-            "name": "TextEncoderStream",
-            "slug": "API/TextEncoderStream/TextEncoderStream",
-            "summary": "The TextEncoderStream() constructor creates a new TextEncoderStream object which is used to convert a stream of strings into bytes using UTF-8 encoding.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextEncoderStream.TextEncoderStream()"
-        }
-    ],
-    "interface-textencoderstream": [
-        {
-            "engines": [
-                "blink",
-                "webkit"
-            ],
-            "filename": "api/TextEncoderStream.json",
-            "name": "TextEncoderStream",
-            "slug": "API/TextEncoderStream",
-            "summary": "The TextEncoderStream interface of the Encoding API converts a stream of strings into bytes in the UTF-8 encoding. It is the streaming equivalent of TextEncoder.",
-            "support": {
-                "chrome": {
-                    "version_added": "71"
-                },
-                "chrome_android": {
-                    "version_added": "71"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "58"
-                },
-                "opera_android": {
-                    "version_added": "50"
-                },
-                "safari": {
-                    "version_added": "14.1"
-                },
-                "safari_ios": {
-                    "version_added": "14.5"
-                },
-                "samsunginternet_android": {
-                    "version_added": "10.0"
-                },
-                "webview_android": {
-                    "version_added": "71"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "TextEncoderStream"
         }
     ]
 }

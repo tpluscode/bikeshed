@@ -292,8 +292,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#'align-self'
 -
 'all' media group
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#all-media-group
@@ -302,8 +302,8 @@ https://drafts.csswg.org/css2/#all-media-group
 -
 'all' media group
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#all-media-group
@@ -396,8 +396,8 @@ GPUColorWrite
 -
 Algorithm
 dictionary
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-Algorithm
@@ -406,8 +406,8 @@ https://w3c.github.io/webcrypto/#dfn-Algorithm
 -
 AlgorithmIdentifier
 typedef
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-algorithmidentifier
@@ -437,8 +437,8 @@ https://www.w3.org/TR/webvtt1/#enumdef-alignsetting
 -
 AllowShared
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#AllowShared
@@ -467,8 +467,8 @@ https://wicg.github.io/webusb/#dictdef-allowedusbdevice
 -
 [[algorithm]]
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-algorithm
@@ -499,8 +499,8 @@ BluetoothDevice
 -
 [algorithm_cached]
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-algorithm_cached
@@ -690,8 +690,8 @@ PublicKeyCredentialParameters
 -
 alg
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-jsonwebkey-alg
@@ -712,8 +712,8 @@ public key
 -
 algorithm
 attribute
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-cryptokey-algorithm
@@ -723,8 +723,8 @@ CryptoKey
 -
 algorithm
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-Algorithm
@@ -733,8 +733,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-Algorithm
 -
 algorithm
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-algorithm
@@ -865,8 +865,8 @@ https://w3c.github.io/mathml-core/#dfn-algorithm-for-stretching-operators-along-
 -
 algorithm normalization
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-algorithm-normalization
@@ -995,8 +995,8 @@ https://www.w3.org/TR/webmidi/#dfn-algorithm-to-request-midi-access
 -
 algorithm_cached
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-algorithm_cached
@@ -1005,8 +1005,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-algorithm_cached
 -
 algorithmidentifier
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-AlgorithmIdentifier
@@ -1448,8 +1448,8 @@ HTMLTableRowElement
 -
 align
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__align
@@ -1459,8 +1459,8 @@ SVGPreserveAspectRatio
 -
 align
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#__svg__SVGPreserveAspectRatio__align
@@ -1492,8 +1492,8 @@ VTTCue
 -
 align
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-align
@@ -1503,8 +1503,8 @@ attribute
 -
 align
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-align
@@ -1674,8 +1674,8 @@ https://www.w3.org/TR/css-inline-3/#aligned-subtree
 -
 aligned subtree
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#aligned-subtree
@@ -1684,8 +1684,8 @@ https://drafts.csswg.org/css2/#aligned-subtree
 -
 aligned subtree
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#aligned-subtree
@@ -1734,8 +1734,8 @@ https://www.w3.org/TR/css-inline-3/#alignment-baseline
 -
 alignment baseline
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermAlignmentBaseline
@@ -1744,8 +1744,8 @@ https://svgwg.org/svg2-draft/text.html#TermAlignmentBaseline
 -
 alignment baseline
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TermAlignmentBaseline
@@ -1816,8 +1816,8 @@ https://www.w3.org/TR/css-align-3/#shared-alignment-context
 -
 alignment point
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermAlignmentPoint
@@ -1866,8 +1866,8 @@ https://www.w3.org/TR/css-inline-3/#propdef-alignment-baseline
 -
 alignof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#alignof
@@ -1876,8 +1876,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#alignof
 -
 alignof
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#alignof
@@ -2244,8 +2244,8 @@ text-combine-upright
 -
 all
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-media-all
@@ -2255,8 +2255,8 @@ https://drafts.csswg.org/css2/#valdef-media-all
 -
 all
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-media-all
@@ -3479,8 +3479,8 @@ https://www.w3.org/TR/permissions-policy-1/#allowlist
 -
 allows all inline behavior
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#source-list-allows-all-inline-behavior
@@ -3490,8 +3490,8 @@ source list
 -
 allows all inline behavior
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#source-list-allows-all-inline-behavior
@@ -4954,8 +4954,8 @@ https://html.spec.whatwg.org/multipage/media.html#value-track-kind-alternate
 -
 altitude
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-altitude
@@ -4965,8 +4965,8 @@ GeolocationCoordinates
 -
 altitude
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-altitude
@@ -5042,8 +5042,8 @@ GeolocationReadingValues
 -
 altitudeAccuracy
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-altitudeaccuracy
@@ -5053,8 +5053,8 @@ GeolocationCoordinates
 -
 altitudeAccuracy
 attribute
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-altitudeaccuracy
@@ -5297,8 +5297,8 @@ hyphenate-limit-lines
 -
 always
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-page-break-always
@@ -5310,8 +5310,8 @@ page-break-inside
 -
 always
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-page-break-always

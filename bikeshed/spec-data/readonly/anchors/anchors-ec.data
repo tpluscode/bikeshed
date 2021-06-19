@@ -1,7 +1,7 @@
 EcKeyAlgorithm
 dictionary
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcKeyAlgorithm
@@ -10,8 +10,8 @@ https://w3c.github.io/webcrypto/#dfn-EcKeyAlgorithm
 -
 EcKeyGenParams
 dictionary
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcKeyGenParams
@@ -20,8 +20,8 @@ https://w3c.github.io/webcrypto/#dfn-EcKeyGenParams
 -
 EcKeyImportParams
 dictionary
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcKeyImportParams
@@ -30,8 +30,8 @@ https://w3c.github.io/webcrypto/#dfn-EcKeyImportParams
 -
 EcdhKeyDeriveParams
 dictionary
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcdhKeyDeriveParams
@@ -40,8 +40,8 @@ https://w3c.github.io/webcrypto/#dfn-EcdhKeyDeriveParams
 -
 EcdsaParams
 dictionary
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcdsaParams
@@ -70,8 +70,8 @@ https://www.w3.org/TR/push-api/#dfn-ecdh
 -
 ecdh curve name
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdh-extended-namedcurve-values
@@ -80,8 +80,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdh-extended-namedcurve-values
 -
 ecdh derivation steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdh-extended-derivation-steps
@@ -90,8 +90,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdh-extended-derivation-steps
 -
 ecdh derivation steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-derivation-steps
@@ -100,8 +100,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-derivation-steps
 -
 ecdh generation steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdh-extended-generation-steps
@@ -110,8 +110,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdh-extended-generation-steps
 -
 ecdh generation steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-generation-steps
@@ -120,8 +120,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-generation-steps
 -
 ecdh key export steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdh-extended-export-steps
@@ -130,8 +130,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdh-extended-export-steps
 -
 ecdh key export steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-export-steps
@@ -140,8 +140,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-export-steps
 -
 ecdh key import steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdh-extended-import-steps
@@ -150,8 +150,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdh-extended-import-steps
 -
 ecdh key import steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-import-steps
@@ -160,8 +160,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdh-extended-import-steps
 -
 ecdhkeyderiveparams
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdhKeyDeriveParams
@@ -170,8 +170,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdhKeyDeriveParams
 -
 ecdsa curve name
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-namedcurve-values
@@ -180,8 +180,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-namedcurve-values
 -
 ecdsa generation steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-generation-steps
@@ -190,8 +190,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-generation-steps
 -
 ecdsa generation steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-generation-steps
@@ -200,8 +200,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-generation-steps
 -
 ecdsa key export steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-export-steps
@@ -210,8 +210,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-export-steps
 -
 ecdsa key export steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-export-steps
@@ -220,8 +220,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-export-steps
 -
 ecdsa key import steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-import-steps
@@ -230,8 +230,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-import-steps
 -
 ecdsa key import steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-import-steps
@@ -240,8 +240,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-import-steps
 -
 ecdsa signature steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-signature-steps
@@ -250,8 +250,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-signature-steps
 -
 ecdsa signature steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-signature-steps
@@ -260,8 +260,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-signature-steps
 -
 ecdsa verification steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-verification-steps
@@ -270,8 +270,8 @@ https://w3c.github.io/webcrypto/#dfn-ecdsa-extended-verification-steps
 -
 ecdsa verification steps
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-verification-steps
@@ -280,8 +280,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-ecdsa-extended-verification-steps
 -
 ecdsaparams
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdsaParams
@@ -486,8 +486,8 @@ https://www.w3.org/TR/mediacapture-streams/#dfn-echocancellation
 -
 eckeyalgorithm
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyAlgorithm
@@ -496,8 +496,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyAlgorithm
 -
 eckeygenparams
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams
@@ -506,8 +506,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyGenParams
 -
 eckeyimportparams
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyImportParams
@@ -516,8 +516,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-EcKeyImportParams
 -
 ecmascript throw
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#ecmascript-throw

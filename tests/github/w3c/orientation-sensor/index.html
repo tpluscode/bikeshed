@@ -748,7 +748,7 @@ beyond those described in the Generic Sensor API <a data-link-type="biblio" href
    <h2 class="heading settled" data-level="5" id="model"><span class="secno">5. </span><span class="content">Model</span><a class="self-link" href="#model"></a></h2>
    <p>The <code class="idl"><a data-link-type="idl" href="#orientationsensor" id="ref-for-orientationsensor④">OrientationSensor</a></code> class extends the <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/sensors/#sensor" id="ref-for-sensor">Sensor</a></code> class and provides generic interface
 representing device orientation data.</p>
-   <p>To access the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="orientation-sensor">Orientation Sensor</dfn> <a data-link-type="dfn" href="https://w3c.github.io/sensors/#sensor-type" id="ref-for-sensor-type">sensor type</a>’s <a data-link-type="dfn" href="https://w3c.github.io/sensors/#latest-reading" id="ref-for-latest-reading">latest reading</a>, the user agent must invoke <a data-link-type="dfn" href="https://w3c.github.io/sensors/#request-sensor-access" id="ref-for-request-sensor-access">request sensor access</a> abstract operation for each of the <a data-link-type="dfn" href="https://w3c.github.io/sensors/#low-level" id="ref-for-low-level①">low-level</a> sensors used by the concrete orientation sensor. The table below
+   <p>To access the <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="orientation-sensor">Orientation Sensor</dfn> <a data-link-type="dfn" href="https://w3c.github.io/sensors/#sensor-type" id="ref-for-sensor-type">sensor type</a>’s <a data-link-type="dfn" href="https://w3c.github.io/sensors/#latest-reading" id="ref-for-latest-reading">latest reading</a>, the user agent must invoke <a data-link-type="dfn">request sensor access</a> abstract operation for each of the <a data-link-type="dfn" href="https://w3c.github.io/sensors/#low-level" id="ref-for-low-level①">low-level</a> sensors used by the concrete orientation sensor. The table below
 describes mapping between concrete orientation sensors and permission tokens defined by <a data-link-type="dfn" href="https://w3c.github.io/sensors/#low-level" id="ref-for-low-level②">low-level</a> sensors.</p>
    <table class="def">
     <thead>
@@ -845,7 +845,7 @@ the environment.</p>
 orientation sensor, as the sensor is not affected by magnetic fields.</p>
    <h2 class="heading settled" data-level="6" id="api"><span class="secno">6. </span><span class="content">API</span><a class="self-link" href="#api"></a></h2>
    <h3 class="heading settled" data-level="6.1" id="orientationsensor-interface"><span class="secno">6.1. </span><span class="content">The OrientationSensor Interface</span><a class="self-link" href="#orientationsensor-interface"></a></h3>
-<pre class="idl highlight def"><c- b>typedef</c-> (<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array"><c- b>Float32Array</c-></a> <c- b>or</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float64Array" id="ref-for-idl-Float64Array"><c- b>Float64Array</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dommatrix" id="ref-for-dommatrix"><c- n>DOMMatrix</c-></a>) <dfn class="dfn-paneled idl-code" data-dfn-type="typedef" data-export id="typedefdef-rotationmatrixtype"><code><c- g>RotationMatrixType</c-></code></dfn>;
+<pre class="idl highlight def"><c- b>typedef</c-> (<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array"><c- b>Float32Array</c-></a> <c- b>or</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float64Array" id="ref-for-idl-Float64Array"><c- b>Float64Array</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dommatrix" id="ref-for-dommatrix"><c- n>DOMMatrix</c-></a>) <dfn class="dfn-paneled idl-code" data-dfn-type="typedef" data-export id="typedefdef-rotationmatrixtype"><code><c- g>RotationMatrixType</c-></code></dfn>;
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext" id="ref-for-SecureContext"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="orientationsensor"><code><c- g>OrientationSensor</c-></code></dfn> : <a data-link-type="idl-name" href="https://w3c.github.io/sensors/#sensor" id="ref-for-sensor②"><c- n>Sensor</c-></a> {
@@ -862,7 +862,7 @@ orientation sensor, as the sensor is not affected by magnetic fields.</p>
    <h4 class="heading settled" data-level="6.1.1" id="orientationsensor-quaternion"><span class="secno">6.1.1. </span><span class="content">OrientationSensor.quaternion</span><a class="self-link" href="#orientationsensor-quaternion"></a></h4>
    <p>Returns a four-element <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array①">FrozenArray</a></code> whose elements contain the components
 of the unit quaternion representing the device orientation.
-In other words, this attribute returns the result of invoking <a data-link-type="dfn" href="https://w3c.github.io/sensors/#get-value-from-latest-reading" id="ref-for-get-value-from-latest-reading">get value from latest reading</a> with <emu-val>this</emu-val> and "quaternion" as arguments.</p>
+In other words, this attribute returns the result of invoking <a data-link-type="dfn">get value from latest reading</a> with <emu-val>this</emu-val> and "quaternion" as arguments.</p>
    <h4 class="heading settled" data-level="6.1.2" id="orientationsensor-populatematrix"><span class="secno">6.1.2. </span><span class="content">OrientationSensor.populateMatrix()</span><a class="self-link" href="#orientationsensor-populatematrix"></a></h4>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-orientationsensor-populatematrix" id="ref-for-dom-orientationsensor-populatematrix">populateMatrix()</a></code> method  populates the given object with rotation matrix
 which is converted from the value of <a data-link-type="dfn" href="https://w3c.github.io/sensors/#latest-reading" id="ref-for-latest-reading⑤">latest reading</a>["quaternion"] <a data-link-type="biblio" href="#biblio-quatconv">[QUATCONV]</a>, as shown below:</p>
@@ -890,7 +890,7 @@ run these steps or their <a data-link-type="dfn" href="https://w3c.github.io/sen
       <p>If <var>targetMatrix</var> is of type <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-Float32Array" id="ref-for-idl-Float32Array①">Float32Array</a></code> or <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-Float64Array" id="ref-for-idl-Float64Array①">Float64Array</a></code> with a size less than sixteen, <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-throw" id="ref-for-dfn-throw①">throw</a> a
   "<code class="idl"><a class="idl-code" data-link-type="exception" href="https://heycam.github.io/webidl/#exceptiondef-typeerror" id="ref-for-exceptiondef-typeerror①">TypeError</a></code>" exception and abort these steps.</p>
      <li data-md>
-      <p>Let <var>quaternion</var> be the result of invoking <a data-link-type="dfn" href="https://w3c.github.io/sensors/#get-value-from-latest-reading" id="ref-for-get-value-from-latest-reading①">get value from latest reading</a> with <emu-val>this</emu-val> and "quaternion" as arguments.</p>
+      <p>Let <var>quaternion</var> be the result of invoking <a data-link-type="dfn">get value from latest reading</a> with <emu-val>this</emu-val> and "quaternion" as arguments.</p>
      <li data-md>
       <p>If <var>quaternion</var> is <code>null</code>, <a data-link-type="dfn" href="https://heycam.github.io/webidl/#dfn-throw" id="ref-for-dfn-throw②">throw</a> a "<code class="idl"><a class="idl-code" data-link-type="exception" href="https://heycam.github.io/webidl/#notreadableerror" id="ref-for-notreadableerror">NotReadableError</a></code>" <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-DOMException" id="ref-for-idl-DOMException">DOMException</a></code> and abort these steps.</p>
      <li data-md>
@@ -938,7 +938,7 @@ run these steps or their <a data-link-type="dfn" href="https://w3c.github.io/sen
         <p>Set <var>targetMatrix</var>[15] = 1</p>
       </ol>
      <li data-md>
-      <p>If <var>targetMatrix</var> is of <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry-1/#dommatrix" id="ref-for-dommatrix①">DOMMatrix</a></code> type, run these sub-steps:</p>
+      <p>If <var>targetMatrix</var> is of <code class="idl"><a data-link-type="idl" href="https://drafts.fxtf.org/geometry/#dommatrix" id="ref-for-dommatrix①">DOMMatrix</a></code> type, run these sub-steps:</p>
       <ol>
        <li data-md>
         <p>Set <var>targetMatrix</var>.m11 = 1 - 2 * y * y - 2 * z * z</p>
@@ -1179,13 +1179,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
     <li><a href="#ref-for-equivalent">6.1.2. OrientationSensor.populateMatrix()</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-get-value-from-latest-reading">
-   <a href="https://w3c.github.io/sensors/#get-value-from-latest-reading">https://w3c.github.io/sensors/#get-value-from-latest-reading</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-get-value-from-latest-reading">6.1.1. OrientationSensor.quaternion</a>
-    <li><a href="#ref-for-get-value-from-latest-reading①">6.1.2. OrientationSensor.populateMatrix()</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-initialize-a-sensor-object">
    <a href="https://w3c.github.io/sensors/#initialize-a-sensor-object">https://w3c.github.io/sensors/#initialize-a-sensor-object</a><b>Referenced in:</b>
    <ul>
@@ -1236,12 +1229,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
     <li><a href="#ref-for-dom-sensor-onerror">5. Model</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-request-sensor-access">
-   <a href="https://w3c.github.io/sensors/#request-sensor-access">https://w3c.github.io/sensors/#request-sensor-access</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-request-sensor-access">5. Model</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-sensor-type">
    <a href="https://w3c.github.io/sensors/#sensor-type">https://w3c.github.io/sensors/#sensor-type</a><b>Referenced in:</b>
    <ul>
@@ -1268,7 +1255,7 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dommatrix">
-   <a href="https://drafts.fxtf.org/geometry-1/#dommatrix">https://drafts.fxtf.org/geometry-1/#dommatrix</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dommatrix">https://drafts.fxtf.org/geometry/#dommatrix</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dommatrix">6.1. The OrientationSensor Interface</a>
     <li><a href="#ref-for-dommatrix①">6.1.2. OrientationSensor.populateMatrix()</a>
@@ -1453,7 +1440,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
      <li><span class="dfn-paneled" id="term-for-automation">automation</span>
      <li><span class="dfn-paneled" id="term-for-check-sensor-policy-controlled-features">check sensor policy-controlled features</span>
      <li><span class="dfn-paneled" id="term-for-equivalent">equivalent</span>
-     <li><span class="dfn-paneled" id="term-for-get-value-from-latest-reading">get value from latest reading</span>
      <li><span class="dfn-paneled" id="term-for-initialize-a-sensor-object">initialize a sensor object</span>
      <li><span class="dfn-paneled" id="term-for-latest-reading">latest reading</span>
      <li><span class="dfn-paneled" id="term-for-local-coordinate-system">local coordinate system</span>
@@ -1461,7 +1447,6 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
      <li><span class="dfn-paneled" id="term-for-mock-sensor-reading-values">mock sensor reading values</span>
      <li><span class="dfn-paneled" id="term-for-mock-sensor-type">mock sensor type</span>
      <li><span class="dfn-paneled" id="term-for-dom-sensor-onerror">onerror</span>
-     <li><span class="dfn-paneled" id="term-for-request-sensor-access">request sensor access</span>
      <li><span class="dfn-paneled" id="term-for-sensor-type">sensor type</span>
      <li><span class="dfn-paneled" id="term-for-sensor-fusion">sensor-fusion</span>
      <li><span class="dfn-paneled" id="term-for-dom-sensor-start">start()</span>
@@ -1502,7 +1487,7 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
      <li><span class="dfn-paneled" id="term-for-relative-orientation">relative orientation sensor</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
@@ -1540,6 +1525,8 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
@@ -1553,7 +1540,7 @@ conforming IDL fragments, as described in the Web IDL specification. <a data-lin
    <dd><a href="http://www.bipm.org/en/publications/si-brochure/">SI Brochure: The International System of Units (SI), 8th edition</a>. 2014. URL: <a href="http://www.bipm.org/en/publications/si-brochure/">http://www.bipm.org/en/publications/si-brochure/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
-<pre class="idl highlight def"><c- b>typedef</c-> (<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array"><c- b>Float32Array</c-></a> <c- b>or</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float64Array"><c- b>Float64Array</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dommatrix"><c- n>DOMMatrix</c-></a>) <a href="#typedefdef-rotationmatrixtype"><code><c- g>RotationMatrixType</c-></code></a>;
+<pre class="idl highlight def"><c- b>typedef</c-> (<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float32Array"><c- b>Float32Array</c-></a> <c- b>or</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-Float64Array"><c- b>Float64Array</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dommatrix"><c- n>DOMMatrix</c-></a>) <a href="#typedefdef-rotationmatrixtype"><code><c- g>RotationMatrixType</c-></code></a>;
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SecureContext"><c- g>SecureContext</c-></a>, <a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <a href="#orientationsensor"><code><c- g>OrientationSensor</c-></code></a> : <a data-link-type="idl-name" href="https://w3c.github.io/sensors/#sensor"><c- n>Sensor</c-></a> {

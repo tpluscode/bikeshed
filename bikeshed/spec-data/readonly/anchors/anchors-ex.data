@@ -167,8 +167,8 @@ https://www.w3.org/TR/css-images-3/#typedef-extent-keyword
 -
 Exposed
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#Exposed
@@ -437,8 +437,8 @@ https://www.w3.org/TR/audio-output/#dfn-explicitelygrantedaudiooutputdevices
 -
 [[extractable]]
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-extractable
@@ -524,8 +524,8 @@ https://www.w3.org/TR/css-values-4/#ex
 -
 ex
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#ex
@@ -535,8 +535,8 @@ https://drafts.csswg.org/css2/#ex
 -
 ex
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#ex
@@ -711,8 +711,8 @@ ConstrainDOMStringParameters
 -
 exact matching
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#exact-matching
@@ -721,8 +721,8 @@ https://drafts.csswg.org/css2/#exact-matching
 -
 exact matching
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#exact-matching
@@ -731,8 +731,8 @@ https://drafts.csswg.org/css2/#exact-matching
 -
 example term
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-example-term
@@ -741,8 +741,8 @@ https://heycam.github.io/webidl/#dfn-example-term
 -
 example term
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-example-term
@@ -791,8 +791,8 @@ https://www.w3.org/TR/webgpu/#exceeds-the-binding-slot-limits
 -
 exception
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception
@@ -801,8 +801,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-throw-an-exception
 -
 exception
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-exception
@@ -811,8 +811,8 @@ https://heycam.github.io/webidl/#dfn-exception
 -
 exception
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-exception
@@ -821,8 +821,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-exception
 -
 exception objects
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#es-exception-objects
@@ -831,8 +831,8 @@ https://heycam.github.io/webidl/#es-exception-objects
 -
 exception types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-exception-type
@@ -2475,8 +2475,8 @@ AudioParam
 -
 exportKey()
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-exportKey
@@ -2486,8 +2486,8 @@ SubtleCrypto
 -
 exportKey(format, key)
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-exportKey
@@ -2547,8 +2547,8 @@ https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#e
 -
 exportkey
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-exportKey
@@ -2734,8 +2734,8 @@ background fetch response
 -
 exposed
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-exposed
@@ -2744,8 +2744,8 @@ https://heycam.github.io/webidl/#dfn-exposed
 -
 exposed
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-exposed
@@ -2754,8 +2754,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-exposed
 -
 exposes
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-expose
@@ -2854,8 +2854,8 @@ https://www.w3.org/TR/mediacapture-streams/#device-exposure-decision-non-camera-
 -
 exposure set
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-exposure-set
@@ -2864,8 +2864,8 @@ https://heycam.github.io/webidl/#dfn-exposure-set
 -
 exposure set
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-exposure-set
@@ -3224,8 +3224,8 @@ XPathEvaluatorBase/evaluate(expression, contextNode)
 -
 expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#expression
@@ -3234,8 +3234,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#expression
 -
 expression
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#expression
@@ -3254,8 +3254,8 @@ https://html.spec.whatwg.org/multipage/interaction.html#expressly-inert
 -
 ext
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-jsonwebkey-ext
@@ -3444,8 +3444,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#extended-attribute
 -
 extended attribute
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-extended-attribute
@@ -3454,8 +3454,8 @@ https://heycam.github.io/webidl/#dfn-extended-attribute
 -
 extended attribute
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-extended-attribute
@@ -3464,8 +3464,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-extended-attribute
 -
 extended attribute associated with
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-type-extended-attribute-associated-with
@@ -3475,8 +3475,8 @@ IDL type
 -
 extended attributes associated with
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-type-extended-attribute-associated-with
@@ -3588,8 +3588,8 @@ https://html.spec.whatwg.org/multipage/links.html#concept-extension
 -
 extension
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#extension
@@ -3598,8 +3598,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#extension
 -
 extension
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#extension
@@ -4018,8 +4018,8 @@ https://www.w3.org/TR/appmanifest/#dfn-external-application-resource
 -
 external file reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#TermExternalReference
@@ -4028,8 +4028,8 @@ https://svgwg.org/svg2-draft/linking.html#TermExternalReference
 -
 external file reference
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#TermExternalReference
@@ -4368,8 +4368,8 @@ https://privacycg.github.io/private-click-measurement/#extract-a-four-bit-decima
 -
 extract a key from a value using a key path
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#extract-a-key-from-a-value-using-a-key-path
@@ -4378,8 +4378,8 @@ https://w3c.github.io/IndexedDB/#extract-a-key-from-a-value-using-a-key-path
 -
 extract a key from a value using a key path
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#extract-a-key-from-a-value-using-a-key-path
@@ -4571,8 +4571,8 @@ Range
 -
 extractable
 attribute
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-cryptokey-extractable
@@ -4582,8 +4582,8 @@ CryptoKey
 -
 extractable
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey-slot-extractable

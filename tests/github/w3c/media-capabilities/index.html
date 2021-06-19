@@ -573,7 +573,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
      <dt>Latest published version:
      <dd><a href="https://www.w3.org/TR/media-capabilities/">https://www.w3.org/TR/media-capabilities/</a>
      <dt>Previous Versions:
-     <dd><a href="https://www.w3.org/TR/2021/WD-media-capabilities-20210604/" rel="prev">https://www.w3.org/TR/2021/WD-media-capabilities-20210604/</a>
+     <dd><a href="https://www.w3.org/TR/2021/WD-media-capabilities-20210316/" rel="prev">https://www.w3.org/TR/2021/WD-media-capabilities-20210316/</a>
      <dt class="editor">Editors:
      <dd class="editor p-author h-card vcard" data-editor-id="45389"><span class="p-name fn">Mounir Lamouri</span> (<a class="p-org org" href="https://www.google.com/">Google Inc.</a>)
      <dd class="editor p-author h-card vcard" data-editor-id="114832"><span class="p-name fn">Chris Cunningham</span> (<a class="p-org org" href="https://www.google.com/">Google Inc.</a>)
@@ -1002,8 +1002,8 @@ based on the device’s display.</p>
 <pre class="idl highlight def"><c- b>dictionary</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="dictionary" data-export id="dictdef-mediacapabilitieskeysystemconfiguration"><code><c- g>MediaCapabilitiesKeySystemConfiguration</c-></code></dfn> {
     <c- b>required</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString" id="ref-for-idl-DOMString④"><c- b>DOMString</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="DOMString " href="#dom-mediacapabilitieskeysystemconfiguration-keysystem" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-keysystem"><c- g>keySystem</c-></a>;
     <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString" id="ref-for-idl-DOMString⑤"><c- b>DOMString</c-></a> <a class="idl-code" data-default="&quot;&quot;" data-link-type="dict-member" data-type="DOMString " href="#dom-mediacapabilitieskeysystemconfiguration-initdatatype" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-initdatatype"><c- g>initDataType</c-></a> = "";
-    <a data-link-type="idl-name" href="https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement" id="ref-for-dom-mediakeysrequirement"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier"><c- g>distinctiveIdentifier</c-></a> = "optional";
-    <a data-link-type="idl-name" href="https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement" id="ref-for-dom-mediakeysrequirement①"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-persistentstate" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-persistentstate"><c- g>persistentState</c-></a> = "optional";
+    <a data-link-type="idl-name"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier"><c- g>distinctiveIdentifier</c-></a> = "optional";
+    <a data-link-type="idl-name"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-persistentstate" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-persistentstate"><c- g>persistentState</c-></a> = "optional";
     <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence"><c- b>sequence</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString" id="ref-for-idl-DOMString⑥"><c- b>DOMString</c-></a>> <a class="idl-code" data-link-type="dict-member" data-type="sequence<DOMString> " href="#dom-mediacapabilitieskeysystemconfiguration-sessiontypes" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-sessiontypes"><c- g>sessionTypes</c-></a>;
     <a data-link-type="idl-name" href="#dictdef-keysystemtrackconfiguration" id="ref-for-dictdef-keysystemtrackconfiguration"><c- n>KeySystemTrackConfiguration</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="KeySystemTrackConfiguration " href="#dom-mediacapabilitieskeysystemconfiguration-audio" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-audio"><c- g>audio</c-></a>;
     <a data-link-type="idl-name" href="#dictdef-keysystemtrackconfiguration" id="ref-for-dictdef-keysystemtrackconfiguration①"><c- n>KeySystemTrackConfiguration</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="KeySystemTrackConfiguration " href="#dom-mediacapabilitieskeysystemconfiguration-video" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-video"><c- g>video</c-></a>;
@@ -1048,7 +1048,7 @@ based on the device’s display.</p>
 };
 </pre>
 <pre class="idl highlight def"><c- b>dictionary</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="dictionary" data-export id="dictdef-mediacapabilitiesdecodinginfo"><code><c- g>MediaCapabilitiesDecodingInfo</c-></code></dfn> : <a data-link-type="idl-name" href="#dictdef-mediacapabilitiesinfo" id="ref-for-dictdef-mediacapabilitiesinfo"><c- n>MediaCapabilitiesInfo</c-></a> {
-  <c- b>required</c-> <a data-link-type="idl-name" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface"><c- n>MediaKeySystemAccess</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="MediaKeySystemAccess " href="#dom-mediacapabilitiesdecodinginfo-keysystemaccess" id="ref-for-dom-mediacapabilitiesdecodinginfo-keysystemaccess"><c- g>keySystemAccess</c-></a>;
+  <c- b>required</c-> <a data-link-type="idl-name"><c- n>MediaKeySystemAccess</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="MediaKeySystemAccess " href="#dom-mediacapabilitiesdecodinginfo-keysystemaccess" id="ref-for-dom-mediacapabilitiesdecodinginfo-keysystemaccess"><c- g>keySystemAccess</c-></a>;
   <a data-link-type="idl-name" href="#dictdef-mediadecodingconfiguration" id="ref-for-dictdef-mediadecodingconfiguration④"><c- n>MediaDecodingConfiguration</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="MediaDecodingConfiguration " href="#dom-mediacapabilitiesdecodinginfo-configuration" id="ref-for-dom-mediacapabilitiesdecodinginfo-configuration"><c- g>configuration</c-></a>;
 };
 </pre>
@@ -1064,10 +1064,10 @@ based on the device’s display.</p>
       configuration. It is worth noting that even when a device is not power
       constrained, high power usage has side effects such as increasing the
       temperature or the fans noise. </p>
-     <p> A <code class="idl"><a data-link-type="idl" href="#dictdef-mediacapabilitiesdecodinginfo" id="ref-for-dictdef-mediacapabilitiesdecodinginfo">MediaCapabilitiesDecodingInfo</a></code> has associated <dfn class="dfn-paneled idl-code" data-dfn-for="MediaCapabilitiesDecodingInfo" data-dfn-type="dict-member" data-export id="dom-mediacapabilitiesdecodinginfo-keysystemaccess"><code>keySystemAccess</code></dfn> which is a <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface①">MediaKeySystemAccess</a></code> or <code>null</code> as
+     <p> A <code class="idl"><a data-link-type="idl" href="#dictdef-mediacapabilitiesdecodinginfo" id="ref-for-dictdef-mediacapabilitiesdecodinginfo">MediaCapabilitiesDecodingInfo</a></code> has associated <dfn class="dfn-paneled idl-code" data-dfn-for="MediaCapabilitiesDecodingInfo" data-dfn-type="dict-member" data-export id="dom-mediacapabilitiesdecodinginfo-keysystemaccess"><code>keySystemAccess</code></dfn> which is a <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface">MediaKeySystemAccess</a></code> or <code>null</code> as
       appropriate. </p>
      <p class="note" role="note"> If the encrypted decoding configuration is supported, the
-      resulting <code class="idl"><a data-link-type="idl" href="#dictdef-mediacapabilitiesinfo" id="ref-for-dictdef-mediacapabilitiesinfo③">MediaCapabilitiesInfo</a></code> will include a <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface②">MediaKeySystemAccess</a></code>. Authors may use this to create <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeys-interface" id="ref-for-mediakeys-interface">MediaKeys</a></code> and setup encrypted playback. </p>
+      resulting <code class="idl"><a data-link-type="idl" href="#dictdef-mediacapabilitiesinfo" id="ref-for-dictdef-mediacapabilitiesinfo③">MediaCapabilitiesInfo</a></code> will include a <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface①">MediaKeySystemAccess</a></code>. Authors may use this to create <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeys-interface" id="ref-for-mediakeys-interface">MediaKeys</a></code> and setup encrypted playback. </p>
      <p> A <code class="idl"><a data-link-type="idl" href="#dictdef-mediacapabilitiesdecodinginfo" id="ref-for-dictdef-mediacapabilitiesdecodinginfo①">MediaCapabilitiesDecodingInfo</a></code> has an associated <dfn class="dfn-paneled idl-code" data-dfn-for="MediaCapabilitiesDecodingInfo" data-dfn-type="dict-member" data-export id="dom-mediacapabilitiesdecodinginfo-configuration"><code>configuration</code></dfn> which
       is the decoding configuration properties used to generate the <code class="idl"><a data-link-type="idl" href="#dictdef-mediacapabilitiesdecodinginfo" id="ref-for-dictdef-mediacapabilitiesdecodinginfo②">MediaCapabilitiesDecodingInfo</a></code>. </p>
      <p> A <code class="idl"><a data-link-type="idl" href="#dictdef-mediacapabilitiesencodinginfo" id="ref-for-dictdef-mediacapabilitiesencodinginfo">MediaCapabilitiesEncodingInfo</a></code> has an associated <dfn class="dfn-paneled idl-code" data-dfn-for="MediaCapabilitiesEncodingInfo" data-dfn-type="dict-member" data-export id="dom-mediacapabilitiesencodinginfo-configuration"><code>configuration</code></dfn> which
@@ -1135,7 +1135,7 @@ based on the device’s display.</p>
       </section>
       <section>
        <h4 class="heading settled" data-level="2.3.3" id="is-encrypted-decode-supported"><span class="secno">2.3.3. </span><span class="content"> <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="check-encrypted-decoding-support">Check Encrypted Decoding Support</dfn> </span><a class="self-link" href="#is-encrypted-decode-supported"></a></h4>
-       <p> Given a <code class="idl"><a data-link-type="idl" href="#dictdef-mediadecodingconfiguration" id="ref-for-dictdef-mediadecodingconfiguration⑦">MediaDecodingConfiguration</a></code> <var>config</var> where <code class="idl"><a data-link-type="idl" href="#dom-mediadecodingconfiguration-keysystemconfiguration" id="ref-for-dom-mediadecodingconfiguration-keysystemconfiguration①">keySystemConfiguration</a></code> <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#map-exists" id="ref-for-map-exists①①">exists</a>, this algorithm returns a <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface③">MediaKeySystemAccess</a></code> or <code>null</code> as appropriate. The
+       <p> Given a <code class="idl"><a data-link-type="idl" href="#dictdef-mediadecodingconfiguration" id="ref-for-dictdef-mediadecodingconfiguration⑦">MediaDecodingConfiguration</a></code> <var>config</var> where <code class="idl"><a data-link-type="idl" href="#dom-mediadecodingconfiguration-keysystemconfiguration" id="ref-for-dom-mediadecodingconfiguration-keysystemconfiguration①">keySystemConfiguration</a></code> <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#map-exists" id="ref-for-map-exists①①">exists</a>, this algorithm returns a <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface②">MediaKeySystemAccess</a></code> or <code>null</code> as appropriate. The
           following steps are run: </p>
        <ol>
         <li> If the <code class="idl"><a data-link-type="idl" href="#dom-mediacapabilitieskeysystemconfiguration-keysystem" id="ref-for-dom-mediacapabilitieskeysystemconfiguration-keysystem①">keySystem</a></code> member of <code>config.keySystemConfiguration</code> is not one of the <a data-link-type="dfn" href="https://www.w3.org/TR/encrypted-media/#key-system" id="ref-for-key-system">Key Systems</a> supported by the user agent, return <code>null</code>. String comparison is case-sensitive. 
@@ -1179,7 +1179,7 @@ based on the device’s display.</p>
         <li> If <var>supported configuration</var> is <code>NotSupported</code>, return <code>null</code> and abort
               these steps. 
         <li>
-          Let <var>access</var> be a new <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface④">MediaKeySystemAccess</a></code> object, and initialize it as follows: 
+          Let <var>access</var> be a new <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface" id="ref-for-mediakeysystemaccess-interface③">MediaKeySystemAccess</a></code> object, and initialize it as follows: 
          <ol>
           <li> Set the <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/encrypted-media/#dom-mediakeysystemaccess-keysystem" id="ref-for-dom-mediakeysystemaccess-keysystem①">keySystem</a></code> attribute to <code>emeConfiguration.keySystem</code>. 
           <li> Let the <var>configuration</var> value be <var>supported configuration</var>. 
@@ -1513,9 +1513,9 @@ based on the device’s display.</p>
   <aside class="dfn-panel" data-for="term-for-mediakeysystemaccess-interface">
    <a href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface">https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-mediakeysystemaccess-interface">2.2. Media Capabilities Information</a> <a href="#ref-for-mediakeysystemaccess-interface①">(2)</a> <a href="#ref-for-mediakeysystemaccess-interface②">(3)</a>
-    <li><a href="#ref-for-mediakeysystemaccess-interface③">2.3.3. 
-          Check Encrypted Decoding Support </a> <a href="#ref-for-mediakeysystemaccess-interface④">(2)</a>
+    <li><a href="#ref-for-mediakeysystemaccess-interface">2.2. Media Capabilities Information</a> <a href="#ref-for-mediakeysystemaccess-interface①">(2)</a>
+    <li><a href="#ref-for-mediakeysystemaccess-interface②">2.3.3. 
+          Check Encrypted Decoding Support </a> <a href="#ref-for-mediakeysystemaccess-interface③">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-mediakeysystemconfiguration-dictionary">
@@ -1537,13 +1537,6 @@ based on the device’s display.</p>
    <ul>
     <li><a href="#ref-for-mediakeys-interface">2.2. Media Capabilities Information</a>
     <li><a href="#ref-for-mediakeys-interface①">2.5. Media Capabilities Interface</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-dom-mediakeysrequirement">
-   <a href="https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement">https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dom-mediakeysrequirement">2.1.10. 
-        MediaCapabilitiesKeySystemConfiguration </a> <a href="#ref-for-dom-mediakeysrequirement①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-mediakeysystemconfiguration-audiocapabilities">
@@ -1741,6 +1734,18 @@ based on the device’s display.</p>
     <li><a href="#ref-for-idl-DOMException">2.5. Media Capabilities Interface</a> <a href="#ref-for-idl-DOMException①">(2)</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-invalidstateerror">
+   <a href="https://heycam.github.io/webidl/#invalidstateerror">https://heycam.github.io/webidl/#invalidstateerror</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-invalidstateerror">2.5. Media Capabilities Interface</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-securityerror">
+   <a href="https://heycam.github.io/webidl/#securityerror">https://heycam.github.io/webidl/#securityerror</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-securityerror">2.5. Media Capabilities Interface</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-idl-DOMString">
    <a href="https://heycam.github.io/webidl/#idl-DOMString">https://heycam.github.io/webidl/#idl-DOMString</a><b>Referenced in:</b>
    <ul>
@@ -1791,18 +1796,6 @@ based on the device’s display.</p>
     <li><a href="#ref-for-idl-double">2.1.5. VideoConfiguration</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-invalidstateerror">
-   <a href="https://heycam.github.io/webidl/#invalidstateerror">https://heycam.github.io/webidl/#invalidstateerror</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-invalidstateerror">2.5. Media Capabilities Interface</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-securityerror">
-   <a href="https://heycam.github.io/webidl/#securityerror">https://heycam.github.io/webidl/#securityerror</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-securityerror">2.5. Media Capabilities Interface</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-idl-sequence">
    <a href="https://heycam.github.io/webidl/#idl-sequence">https://heycam.github.io/webidl/#idl-sequence</a><b>Referenced in:</b>
    <ul>
@@ -1850,7 +1843,6 @@ based on the device’s display.</p>
      <li><span class="dfn-paneled" id="term-for-mediakeysystemconfiguration-dictionary">MediaKeySystemConfiguration</span>
      <li><span class="dfn-paneled" id="term-for-mediakeysystemmediacapability-dictionary">MediaKeySystemMediaCapability</span>
      <li><span class="dfn-paneled" id="term-for-mediakeys-interface">MediaKeys</span>
-     <li><span class="dfn-paneled" id="term-for-dom-mediakeysrequirement">MediaKeysRequirement</span>
      <li><span class="dfn-paneled" id="term-for-dom-mediakeysystemconfiguration-audiocapabilities">audioCapabilities</span>
      <li><span class="dfn-paneled" id="term-for-dom-mediakeysystemmediacapability-contenttype">contentType</span>
      <li><span class="dfn-paneled" id="term-for-dom-mediakeysystemconfiguration-distinctiveidentifier">distinctiveIdentifier</span>
@@ -1910,6 +1902,12 @@ based on the device’s display.</p>
     <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMException">DOMException</span>
+     <li><span class="dfn-paneled" id="term-for-invalidstateerror">invalidstateerror</span>
+     <li><span class="dfn-paneled" id="term-for-securityerror">securityerror</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
+    <ul>
      <li><span class="dfn-paneled" id="term-for-idl-DOMString">DOMString</span>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
      <li><span class="dfn-paneled" id="term-for-NewObject">NewObject</span>
@@ -1917,8 +1915,6 @@ based on the device’s display.</p>
      <li><span class="dfn-paneled" id="term-for-SameObject">SameObject</span>
      <li><span class="dfn-paneled" id="term-for-idl-boolean">boolean</span>
      <li><span class="dfn-paneled" id="term-for-idl-double">double</span>
-     <li><span class="dfn-paneled" id="term-for-invalidstateerror">invalidstateerror</span>
-     <li><span class="dfn-paneled" id="term-for-securityerror">securityerror</span>
      <li><span class="dfn-paneled" id="term-for-idl-sequence">sequence</span>
      <li><span class="dfn-paneled" id="term-for-idl-unsigned-long">unsigned long</span>
      <li><span class="dfn-paneled" id="term-for-idl-unsigned-long-long">unsigned long long</span>
@@ -1935,7 +1931,7 @@ based on the device’s display.</p>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-encrypted-media">[ENCRYPTED-MEDIA]
    <dd>David Dorwin; et al. <a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a>. 18 September 2017. REC. URL: <a href="https://www.w3.org/TR/encrypted-media/">https://www.w3.org/TR/encrypted-media/</a>
    <dt id="biblio-encrypted-media-draft">[ENCRYPTED-MEDIA-DRAFT]
@@ -1960,17 +1956,19 @@ based on the device’s display.</p>
    <dd><a href="https://webstore.iec.ch/publication/6169">Multimedia systems and equipment - Colour measurement and management - Part 2-1: Colour management - Default RGB colour space - sRGB</a>. URL: <a href="https://webstore.iec.ch/publication/6169">https://webstore.iec.ch/publication/6169</a>
    <dt id="biblio-webidl">[WebIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
    <dt id="biblio-webrtc">[WEBRTC]
    <dd>Cullen Jennings; Henrik Boström; Jan-Ivar Bruaroey. <a href="https://www.w3.org/TR/webrtc/">WebRTC 1.0: Real-Time Communication Between Browsers</a>. 26 January 2021. REC. URL: <a href="https://www.w3.org/TR/webrtc/">https://www.w3.org/TR/webrtc/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
    <dt id="biblio-battery-status">[BATTERY-STATUS]
-   <dd>Anssi Kostiainen; Mounir Lamouri. <a href="https://www.w3.org/TR/battery-status/">Battery Status API</a>. 1 June 2021. WD. URL: <a href="https://www.w3.org/TR/battery-status/">https://www.w3.org/TR/battery-status/</a>
+   <dd>Anssi Kostiainen; Mounir Lamouri. <a href="https://www.w3.org/TR/battery-status/">Battery Status API</a>. 7 July 2016. CR. URL: <a href="https://www.w3.org/TR/battery-status/">https://www.w3.org/TR/battery-status/</a>
    <dt id="biblio-media-playback-quality">[MEDIA-PLAYBACK-QUALITY]
    <dd>Mounir Lamouri. <a href="https://w3c.github.io/media-playback-quality/">Media Playback Quality</a>. ED. URL: <a href="https://w3c.github.io/media-playback-quality/">https://w3c.github.io/media-playback-quality/</a>
    <dt id="biblio-mediastream-recording">[MEDIASTREAM-RECORDING]
-   <dd>Miguel Casas-sanchez; James Barnett; Travis Leithead. <a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a>. 4 June 2021. WD. URL: <a href="https://www.w3.org/TR/mediastream-recording/">https://www.w3.org/TR/mediastream-recording/</a>
+   <dd>Miguel Casas-sanchez; James Barnett; Travis Leithead. <a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a>. 16 February 2021. WD. URL: <a href="https://www.w3.org/TR/mediastream-recording/">https://www.w3.org/TR/mediastream-recording/</a>
    <dt id="biblio-rfc7231">[RFC7231]
    <dd>R. Fielding, Ed.; J. Reschke, Ed.. <a href="https://httpwg.org/specs/rfc7231.html">Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content</a>. June 2014. Proposed Standard. URL: <a href="https://httpwg.org/specs/rfc7231.html">https://httpwg.org/specs/rfc7231.html</a>
    <dt id="biblio-webrtc-svc">[WEBRTC-SVC]
@@ -2044,8 +2042,8 @@ based on the device’s display.</p>
 <c- b>dictionary</c-> <a href="#dictdef-mediacapabilitieskeysystemconfiguration"><code><c- g>MediaCapabilitiesKeySystemConfiguration</c-></code></a> {
     <c- b>required</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString"><c- b>DOMString</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="DOMString " href="#dom-mediacapabilitieskeysystemconfiguration-keysystem"><c- g>keySystem</c-></a>;
     <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString"><c- b>DOMString</c-></a> <a class="idl-code" data-default="&quot;&quot;" data-link-type="dict-member" data-type="DOMString " href="#dom-mediacapabilitieskeysystemconfiguration-initdatatype"><c- g>initDataType</c-></a> = "";
-    <a data-link-type="idl-name" href="https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier"><c- g>distinctiveIdentifier</c-></a> = "optional";
-    <a data-link-type="idl-name" href="https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-persistentstate"><c- g>persistentState</c-></a> = "optional";
+    <a data-link-type="idl-name"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier"><c- g>distinctiveIdentifier</c-></a> = "optional";
+    <a data-link-type="idl-name"><c- n>MediaKeysRequirement</c-></a> <a class="idl-code" data-default="&quot;optional&quot;" data-link-type="dict-member" data-type="MediaKeysRequirement " href="#dom-mediacapabilitieskeysystemconfiguration-persistentstate"><c- g>persistentState</c-></a> = "optional";
     <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence"><c- b>sequence</c-></a>&lt;<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-DOMString"><c- b>DOMString</c-></a>> <a class="idl-code" data-link-type="dict-member" data-type="sequence<DOMString> " href="#dom-mediacapabilitieskeysystemconfiguration-sessiontypes"><c- g>sessionTypes</c-></a>;
     <a data-link-type="idl-name" href="#dictdef-keysystemtrackconfiguration"><c- n>KeySystemTrackConfiguration</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="KeySystemTrackConfiguration " href="#dom-mediacapabilitieskeysystemconfiguration-audio"><c- g>audio</c-></a>;
     <a data-link-type="idl-name" href="#dictdef-keysystemtrackconfiguration"><c- n>KeySystemTrackConfiguration</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="KeySystemTrackConfiguration " href="#dom-mediacapabilitieskeysystemconfiguration-video"><c- g>video</c-></a>;
@@ -2065,7 +2063,7 @@ based on the device’s display.</p>
 };
 
 <c- b>dictionary</c-> <a href="#dictdef-mediacapabilitiesdecodinginfo"><code><c- g>MediaCapabilitiesDecodingInfo</c-></code></a> : <a data-link-type="idl-name" href="#dictdef-mediacapabilitiesinfo"><c- n>MediaCapabilitiesInfo</c-></a> {
-  <c- b>required</c-> <a data-link-type="idl-name" href="https://www.w3.org/TR/encrypted-media/#mediakeysystemaccess-interface"><c- n>MediaKeySystemAccess</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="MediaKeySystemAccess " href="#dom-mediacapabilitiesdecodinginfo-keysystemaccess"><c- g>keySystemAccess</c-></a>;
+  <c- b>required</c-> <a data-link-type="idl-name"><c- n>MediaKeySystemAccess</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="MediaKeySystemAccess " href="#dom-mediacapabilitiesdecodinginfo-keysystemaccess"><c- g>keySystemAccess</c-></a>;
   <a data-link-type="idl-name" href="#dictdef-mediadecodingconfiguration"><c- n>MediaDecodingConfiguration</c-></a> <a class="idl-code" data-link-type="dict-member" data-type="MediaDecodingConfiguration " href="#dom-mediacapabilitiesdecodinginfo-configuration"><c- g>configuration</c-></a>;
 };
 

@@ -72349,7 +72349,7 @@ Proposed Standard
 The BGP Encapsulation Subsequent Address Family Identifier (SAFI) and the BGP Tunnel Encapsulation Attribute
 https://datatracker.ietf.org/doc/html/rfc5512
 
-rfc9012
+
 
 
 P. Mohapatra
@@ -73083,7 +73083,7 @@ Proposed Standard
 BGP IPsec Tunnel Encapsulation Attribute
 https://datatracker.ietf.org/doc/html/rfc5566
 
-rfc9012
+
 
 
 L. Berger
@@ -99513,7 +99513,7 @@ Proposed Standard
 Registration Data Access Protocol (RDAP) Query Format
 https://datatracker.ietf.org/doc/html/rfc7482
 
-rfc9082
+
 
 
 A. Newton
@@ -99526,7 +99526,7 @@ Proposed Standard
 JSON Responses for the Registration Data Access Protocol (RDAP)
 https://datatracker.ietf.org/doc/html/rfc7483
 
-rfc9083
+
 
 
 A. Newton
@@ -118776,47 +118776,6 @@ https://datatracker.ietf.org/doc/html/rfc8820
 
 M. Nottingham
 -
-d:rfc8821
-rfc8821
-April 2021
-Informational
-PCE-Based Traffic Engineering (TE) in Native IP Networks
-https://datatracker.ietf.org/doc/html/rfc8821
-
-
-
-
-A. Wang
-B. Khasanov
-Q. Zhao
-H. Chen
--
-d:rfc8822
-rfc8822
-April 2021
-Informational
-5G Wireless Wireline Convergence User Plane Encapsulation (5WE)
-https://datatracker.ietf.org/doc/html/rfc8822
-
-
-
-
-D. Allan, Ed.
-D. Eastlake
-D. Woolley
--
-d:rfc8823
-rfc8823
-April 2021
-Informational
-Extensions to Automatic Certificate Management Environment for End-User S/MIME Certificates
-https://datatracker.ietf.org/doc/html/rfc8823
-
-
-
-
-A. Melnikov
--
 d:rfc8825
 rfc8825
 January 2021
@@ -119930,23 +119889,6 @@ N. Cam-Winget, Ed.
 W. Whyte, Ed.
 A. Serhrouchni
 H. Labiod
--
-d:rfc8903
-rfc8903
-May 2021
-Informational
-Use Cases for DDoS Open Threat Signaling
-https://datatracker.ietf.org/doc/html/rfc8903
-
-
-
-
-R. Dobbins
-D. Migault
-R. Moskowitz
-N. Teague
-L. Xia
-K. Nishizuka
 -
 d:rfc8904
 rfc8904
@@ -121134,96 +121076,6 @@ a:rfc899
 rfc899
 rfc0899
 -
-d:rfc8990
-rfc8990
-May 2021
-Proposed Standard
-GeneRic Autonomic Signaling Protocol (GRASP)
-https://datatracker.ietf.org/doc/html/rfc8990
-
-
-
-
-C. Bormann
-B. Carpenter, Ed.
-B. Liu, Ed.
--
-d:rfc8991
-rfc8991
-May 2021
-Informational
-GeneRic Autonomic Signaling Protocol Application Program Interface (GRASP API)
-https://datatracker.ietf.org/doc/html/rfc8991
-
-
-
-
-B. Carpenter
-B. Liu, Ed.
-W. Wang
-X. Gong
--
-d:rfc8992
-rfc8992
-May 2021
-Informational
-Autonomic IPv6 Edge Prefix Management in Large-Scale Networks
-https://datatracker.ietf.org/doc/html/rfc8992
-
-
-
-
-S. Jiang, Ed.
-Z. Du
-B. Carpenter
-Q. Sun
--
-d:rfc8993
-rfc8993
-May 2021
-Informational
-A Reference Model for Autonomic Networking
-https://datatracker.ietf.org/doc/html/rfc8993
-
-
-
-
-M. Behringer, Ed.
-B. Carpenter
-T. Eckert
-L. Ciavaglia
-J. Nobre
--
-d:rfc8994
-rfc8994
-May 2021
-Proposed Standard
-An Autonomic Control Plane (ACP)
-https://datatracker.ietf.org/doc/html/rfc8994
-
-
-
-
-T. Eckert, Ed.
-M. Behringer, Ed.
-S. Bjarnason
--
-d:rfc8995
-rfc8995
-May 2021
-Proposed Standard
-Bootstrapping Remote Secure Key Infrastructure (BRSKI)
-https://datatracker.ietf.org/doc/html/rfc8995
-
-
-
-
-M. Pritikin
-M. Richardson
-T. Eckert
-M. Behringer
-K. Watsen
--
 d:rfc8996
 rfc8996
 March 2021
@@ -121262,18 +121114,6 @@ https://datatracker.ietf.org/doc/html/rfc8998
 
 P. Yang
 -
-d:rfc8999
-rfc8999
-May 2021
-Proposed Standard
-Version-Independent Properties of QUIC
-https://datatracker.ietf.org/doc/html/rfc8999
-
-
-
-
-M. Thomson
--
 a:rfc9
 rfc9
 rfc0009
@@ -121285,45 +121125,6 @@ rfc0090
 a:rfc900
 rfc900
 rfc0900
--
-d:rfc9000
-rfc9000
-May 2021
-Proposed Standard
-QUIC: A UDP-Based Multiplexed and Secure Transport
-https://datatracker.ietf.org/doc/html/rfc9000
-
-
-
-
-J. Iyengar, Ed.
-M. Thomson, Ed.
--
-d:rfc9001
-rfc9001
-May 2021
-Proposed Standard
-Using TLS to Secure QUIC
-https://datatracker.ietf.org/doc/html/rfc9001
-
-
-
-
-M. Thomson, Ed.
-S. Turner, Ed.
--
-d:rfc9002
-rfc9002
-May 2021
-Proposed Standard
-QUIC Loss Detection and Congestion Control
-https://datatracker.ietf.org/doc/html/rfc9002
-
-
-
-
-J. Iyengar, Ed.
-I. Swett, Ed.
 -
 d:rfc9003
 rfc9003
@@ -121339,18 +121140,6 @@ J. Snijders
 J. Heitz
 J. Scudder
 A. Azimov
--
-d:rfc9004
-rfc9004
-May 2021
-Informational
-Updates for the Back-to-Back Frame Benchmark in RFC 2544
-https://datatracker.ietf.org/doc/html/rfc9004
-
-
-
-
-A. Morton
 -
 d:rfc9005
 rfc9005
@@ -121394,127 +121183,9 @@ https://datatracker.ietf.org/doc/html/rfc9007
 
 R. Ouazana, Ed.
 -
-d:rfc9008
-rfc9008
-April 2021
-Proposed Standard
-Using RPI Option Type, Routing Header for Source Routes, and IPv6-in-IPv6 Encapsulation in the RPL Data Plane
-https://datatracker.ietf.org/doc/html/rfc9008
-
-
-
-
-M.I. Robles
-M. Richardson
-P. Thubert
--
-d:rfc9009
-rfc9009
-April 2021
-Proposed Standard
-Efficient Route Invalidation
-https://datatracker.ietf.org/doc/html/rfc9009
-
-
-
-
-R.A. Jadhav, Ed.
-P. Thubert
-R.N. Sahoo
-Z. Cao
--
 a:rfc901
 rfc901
 rfc0901
--
-d:rfc9010
-rfc9010
-April 2021
-Proposed Standard
-Routing for RPL (Routing Protocol for Low-Power and Lossy Networks) Leaves
-https://datatracker.ietf.org/doc/html/rfc9010
-
-
-
-
-P. Thubert, Ed.
-M. Richardson
--
-d:rfc9011
-rfc9011
-April 2021
-Proposed Standard
-Static Context Header Compression and Fragmentation (SCHC) over LoRaWAN
-https://datatracker.ietf.org/doc/html/rfc9011
-
-
-
-
-O. Gimenez, Ed.
-I. Petrov, Ed.
--
-d:rfc9012
-rfc9012
-April 2021
-Proposed Standard
-The BGP Tunnel Encapsulation Attribute
-https://datatracker.ietf.org/doc/html/rfc9012
-
-
-
-
-K. Patel
-G. Van de Velde
-S. Sangli
-J. Scudder
--
-d:rfc9013
-rfc9013
-April 2021
-Proposed Standard
-OSPF Advertisement of Tunnel Encapsulations
-https://datatracker.ietf.org/doc/html/rfc9013
-
-
-
-
-X. Xu, Ed.
-B. Decraene, Ed.
-R. Raszuk
-L. Contreras
-L. Jalil
--
-d:rfc9014
-rfc9014
-May 2021
-Proposed Standard
-Interconnect Solution for Ethernet VPN (EVPN) Overlay Networks
-https://datatracker.ietf.org/doc/html/rfc9014
-
-
-
-
-J. Rabadan, Ed.
-S. Sathappan
-W. Henderickx
-A. Sajassi
-J. Drake
--
-d:rfc9015
-rfc9015
-June 2021
-Proposed Standard
-BGP Control Plane for the Network Service Header in Service Function Chaining
-https://datatracker.ietf.org/doc/html/rfc9015
-
-
-
-
-A. Farrel
-J. Drake
-E. Rosen
-J. Uttaro
-L. Jalil
 -
 d:rfc9016
 rfc9016
@@ -121532,338 +121203,17 @@ R. Cummings
 Y. Jiang
 D. Fedyk
 -
-d:rfc9017
-rfc9017
-April 2021
-Proposed Standard
-Special-Purpose Label Terminology
-https://datatracker.ietf.org/doc/html/rfc9017
-
-
-
-
-L. Andersson
-K. Kompella
-A. Farrel
--
-d:rfc9018
-rfc9018
-April 2021
-Proposed Standard
-Interoperable Domain Name System (DNS) Server Cookies
-https://datatracker.ietf.org/doc/html/rfc9018
-
-
-
-
-O. Sury
-W. Toorop
-D. Eastlake 3rd
-M. Andrews
--
-d:rfc9019
-rfc9019
-April 2021
-Informational
-A Firmware Update Architecture for Internet of Things
-https://datatracker.ietf.org/doc/html/rfc9019
-
-
-
-
-B. Moran
-H. Tschofenig
-D. Brown
-M. Meriac
--
 a:rfc902
 rfc902
 rfc0902
--
-d:rfc9020
-rfc9020
-May 2021
-Proposed Standard
-YANG Data Model for Segment Routing
-https://datatracker.ietf.org/doc/html/rfc9020
-
-
-
-
-S. Litkowski
-Y. Qu
-A. Lindem
-P. Sarkar
-J. Tantsura
--
-d:rfc9021
-rfc9021
-May 2021
-Informational
-Use of the Walnut Digital Signature Algorithm with CBOR Object Signing and Encryption (COSE)
-https://datatracker.ietf.org/doc/html/rfc9021
-
-
-
-
-D. Atkins
--
-d:rfc9022
-rfc9022
-May 2021
-Proposed Standard
-Domain Name Registration Data (DNRD) Objects Mapping
-https://datatracker.ietf.org/doc/html/rfc9022
-
-
-
-
-G. Lozano
-J. Gould
-C. Thippeswamy
--
-d:rfc9023
-rfc9023
-June 2021
-Informational
-Deterministic Networking (DetNet) Data Plane: IP over IEEE 802.1 Time-Sensitive Networking (TSN)
-https://datatracker.ietf.org/doc/html/rfc9023
-
-
-
-
-B. Varga, Ed.
-J. Farkas
-A. Malis
-S. Bryant
--
-d:rfc9024
-rfc9024
-June 2021
-Proposed Standard
-Deterministic Networking (DetNet) Data Plane: IEEE 802.1 Time-Sensitive Networking over MPLS
-https://datatracker.ietf.org/doc/html/rfc9024
-
-
-
-
-B. Varga, Ed.
-J. Farkas
-A. Malis
-S. Bryant
-D. Fedyk
--
-d:rfc9025
-rfc9025
-April 2021
-Proposed Standard
-Deterministic Networking (DetNet) Data Plane: MPLS over UDP/IP
-https://datatracker.ietf.org/doc/html/rfc9025
-
-
-
-
-B. Varga, Ed.
-J. Farkas
-L. Berger
-A. Malis
-S. Bryant
--
-d:rfc9026
-rfc9026
-April 2021
-Proposed Standard
-Multicast VPN Fast Upstream Failover
-https://datatracker.ietf.org/doc/html/rfc9026
-
-
-
-
-T. Morin, Ed.
-R. Kebler, Ed.
-G. Mirsky, Ed.
--
-d:rfc9027
-rfc9027
-June 2021
-Proposed Standard
-Assertion Values for Resource Priority Header and SIP Priority Header Claims in Support of Emergency Services Networks
-https://datatracker.ietf.org/doc/html/rfc9027
-
-
-
-
-M. Dolly
-C. Wendt
--
-d:rfc9029
-rfc9029
-June 2021
-Proposed Standard
-Updates to the Allocation Policy for the Border Gateway Protocol - Link State (BGP-LS) Parameters Registries
-https://datatracker.ietf.org/doc/html/rfc9029
-
-
-
-
-A. Farrel
 -
 a:rfc903
 rfc903
 rfc0903
 -
-d:rfc9030
-rfc9030
-May 2021
-Informational
-An Architecture for IPv6 over the Time-Slotted Channel Hopping Mode of IEEE 802.15.4 (6TiSCH)
-https://datatracker.ietf.org/doc/html/rfc9030
-
-
-
-
-P. Thubert, Ed.
--
-d:rfc9031
-rfc9031
-May 2021
-Proposed Standard
-Constrained Join Protocol (CoJP) for 6TiSCH
-https://datatracker.ietf.org/doc/html/rfc9031
-
-
-
-
-M. Vučinić, Ed.
-J. Simon
-K. Pister
-M. Richardson
--
-d:rfc9032
-rfc9032
-May 2021
-Proposed Standard
-Encapsulation of 6TiSCH Join and Enrollment Information Elements
-https://datatracker.ietf.org/doc/html/rfc9032
-
-
-
-
-D. Dujovne, Ed.
-M. Richardson
--
-d:rfc9033
-rfc9033
-May 2021
-Proposed Standard
-6TiSCH Minimal Scheduling Function (MSF)
-https://datatracker.ietf.org/doc/html/rfc9033
-
-
-
-
-T. Chang, Ed.
-M. Vučinić
-X. Vilajosana
-S. Duquennoy
-D. Dujovne
--
-d:rfc9034
-rfc9034
-June 2021
-Proposed Standard
-Packet Delivery Deadline Time in the Routing Header for IPv6 over Low-Power Wireless Personal Area Networks (6LoWPANs)
-https://datatracker.ietf.org/doc/html/rfc9034
-
-
-
-
-L. Thomas
-S. Anamalamudi
-S.V.R. Anand
-M. Hegde
-C. Perkins
--
-d:rfc9035
-rfc9035
-April 2021
-Proposed Standard
-A Routing Protocol for Low-Power and Lossy Networks (RPL) Destination-Oriented Directed Acyclic Graph (DODAG) Configuration Option for the 6LoWPAN Routing Header
-https://datatracker.ietf.org/doc/html/rfc9035
-
-
-
-
-P. Thubert, Ed.
-L. Zhao
--
-d:rfc9036
-rfc9036
-June 2021
-Proposed Standard
-Changing the Location-to-Service Translation (LoST) Location Profiles Registry Policy
-https://datatracker.ietf.org/doc/html/rfc9036
-
-
-
-
-R. Gellens
--
-d:rfc9037
-rfc9037
-June 2021
-Informational
-Deterministic Networking (DetNet) Data Plane: MPLS over IEEE 802.1 Time-Sensitive Networking (TSN)
-https://datatracker.ietf.org/doc/html/rfc9037
-
-
-
-
-B. Varga, Ed.
-J. Farkas
-A. Malis
-S. Bryant
--
-d:rfc9038
-rfc9038
-May 2021
-Proposed Standard
-Extensible Provisioning Protocol (EPP) Unhandled Namespaces
-https://datatracker.ietf.org/doc/html/rfc9038
-
-
-
-
-J. Gould
-M. Casanova
--
 a:rfc904
 rfc904
 rfc0904
--
-d:rfc9044
-rfc9044
-June 2021
-Proposed Standard
-Using the AES-GMAC Algorithm with the Cryptographic Message Syntax (CMS)
-https://datatracker.ietf.org/doc/html/rfc9044
-
-
-
-
-R. Housley
--
-d:rfc9045
-rfc9045
-June 2021
-Proposed Standard
-Algorithm Requirements Update to the Internet X.509 Public Key Infrastructure Certificate Request Message Format (CRMF)
-https://datatracker.ietf.org/doc/html/rfc9045
-
-
-
-
-R. Housley
 -
 a:rfc905
 rfc905
@@ -121880,32 +121230,6 @@ rfc0907
 a:rfc908
 rfc908
 rfc0908
--
-d:rfc9082
-rfc9082
-June 2021
-Internet Standard
-Registration Data Access Protocol (RDAP) Query Format
-https://datatracker.ietf.org/doc/html/rfc9082
-
-
-
-
-S. Hollenbeck
-A. Newton
--
-d:rfc9083
-rfc9083
-June 2021
-Internet Standard
-JSON Responses for the Registration Data Access Protocol (RDAP)
-https://datatracker.ietf.org/doc/html/rfc9083
-
-
-
-
-S. Hollenbeck
-A. Newton
 -
 a:rfc909
 rfc909

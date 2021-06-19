@@ -1,4 +1,67 @@
 {
+    "section-5.3.3": [
+        {
+            "engines": [],
+            "filename": "http/headers/accept-charset.json",
+            "name": "Accept-Charset",
+            "slug": "HTTP/Headers/Accept-Charset",
+            "summary": "The Accept-Charset request HTTP header advertises which character encodings the client understands.",
+            "support": {
+                "chrome": {
+                    "version_added": true,
+                    "version_removed": "27"
+                },
+                "chrome_android": {
+                    "version_added": true,
+                    "version_removed": "27"
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": true,
+                    "version_removed": "10"
+                },
+                "firefox_android": {
+                    "version_added": true,
+                    "version_removed": "10"
+                },
+                "ie": {
+                    "version_added": true,
+                    "version_removed": "8"
+                },
+                "opera": {
+                    "version_added": true,
+                    "version_removed": "11"
+                },
+                "opera_android": {
+                    "version_added": true,
+                    "version_removed": "11"
+                },
+                "safari": {
+                    "version_added": true,
+                    "version_removed": "5"
+                },
+                "safari_ios": {
+                    "version_added": true,
+                    "version_removed": "4.2"
+                },
+                "samsunginternet_android": {
+                    "version_added": true,
+                    "version_removed": "1.5"
+                },
+                "webview_android": {
+                    "version_added": true,
+                    "version_removed": true
+                },
+                "edge_blink": {
+                    "version_added": false,
+                    "version_removed": "27"
+                }
+            },
+            "title": "Accept-Charset"
+        }
+    ],
     "section-5.3.4": [
         {
             "engines": [
@@ -176,7 +239,7 @@
             "filename": "http/headers/content-encoding.json",
             "name": "Content-Encoding",
             "slug": "HTTP/Headers/Content-Encoding",
-            "summary": "The Content-Encoding representation header lists any encodings that have been applied to the representation (message payload), and in what order. This lets the recipient know how to decode the representation in order to obtain the original payload format. Content encoding is mainly used to compress the message data without losing information about the origin media type.",
+            "summary": "The Content-Encoding entity header is used to compress the media-type. When present, its value indicates which encodings were applied to the entity-body. It lets the client know how to decode in order to obtain the media-type referenced by the Content-Type header.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -231,7 +294,7 @@
             "filename": "http/headers/content-language.json",
             "name": "Content-Language",
             "slug": "HTTP/Headers/Content-Language",
-            "summary": "The Content-Language representation header is used to describe the language(s) intended for the audience, so that it allows a user to differentiate according to the users' own preferred language.",
+            "summary": "The Content-Language entity header is used to describe the language(s) intended for the audience, so that it allows a user to differentiate according to the users' own preferred language.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -341,7 +404,7 @@
             "filename": "http/headers/content-type.json",
             "name": "Content-Type",
             "slug": "HTTP/Headers/Content-Type",
-            "summary": "The Content-Type representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).",
+            "summary": "The Content-Type entity header is used to indicate the media type of the resource.",
             "support": {
                 "chrome": {
                     "version_added": true
@@ -1104,7 +1167,7 @@
             "filename": "http/methods.json",
             "name": "HEAD",
             "slug": "HTTP/Methods/HEAD",
-            "summary": "The HTTP HEAD method requests the headers that would be returned if the HEAD request's URL was instead requested with the HTTP GET method. For example, if a URL might produce a large download, a HEAD request could read its Content-Length header to check the filesize without actually downloading the file.",
+            "summary": "The HTTP HEAD method requests the headers that would be returned if the HEAD request's URL was instead requested with the HTTP GET method.",
             "support": {
                 "chrome": {
                     "version_added": true

@@ -1,7 +1,7 @@
 y2
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute
@@ -11,8 +11,8 @@ line
 -
 y2
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#__svg__SVGLineElement__y2
@@ -22,8 +22,8 @@ SVGLineElement
 -
 y2
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#LinearGradientElementY2Attribute
@@ -33,8 +33,8 @@ linearGradient
 -
 y2
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/pservers.html#__svg__SVGLinearGradientElement__y2
@@ -44,8 +44,8 @@ SVGLinearGradientElement
 -
 y2
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#LineElementY2Attribute
@@ -55,8 +55,8 @@ line
 -
 y2
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#__svg__SVGLineElement__y2
@@ -66,8 +66,8 @@ SVGLineElement
 -
 y2
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#LinearGradientElementY2Attribute
@@ -77,8 +77,8 @@ linearGradient
 -
 y2
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/pservers.html#__svg__SVGLinearGradientElement__y2

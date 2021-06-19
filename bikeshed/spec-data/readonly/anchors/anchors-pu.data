@@ -506,8 +506,8 @@ https://www.w3.org/TR/push-api/#dom-pushsubscriptionoptionsinit
 -
 PutForwards
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#PutForwards
@@ -657,8 +657,8 @@ PublicKeyCredentialCreationOptions
 -
 pubidchar
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-pubidchar
@@ -678,8 +678,8 @@ IP address space
 -
 public
 enum-value
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-keytype-public
@@ -689,8 +689,8 @@ KeyType
 -
 public
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-EcdhKeyDeriveParams-public
@@ -700,8 +700,8 @@ EcdhKeyDeriveParams
 -
 public
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-EcdhKeyDeriveParams-public
@@ -845,8 +845,8 @@ PublicKeyCredentialType
 -
 publicExponent
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams-publicExponent
@@ -856,8 +856,8 @@ RsaKeyGenParams
 -
 publicExponent
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm-publicExponent
@@ -933,8 +933,8 @@ CredentialRequestOptions
 -
 publicKey
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKeyPair-publicKey
@@ -944,8 +944,8 @@ CryptoKeyPair
 -
 publicexponent
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyGenParams-publicExponent
@@ -954,8 +954,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyGenParams-publicExponent
 -
 publicexponent
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyAlgorithm-publicExponent
@@ -964,8 +964,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyAlgorithm-publicExponent
 -
 publicid
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-publicid
@@ -974,8 +974,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-publicid
 -
 publickey
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKeyPair-publicKey
@@ -1164,8 +1164,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-purple
 -
 purple
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-color-purple
@@ -1175,8 +1175,8 @@ https://drafts.csswg.org/css2/#valdef-color-purple
 -
 purple
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-color-purple
@@ -1534,8 +1534,8 @@ Cache
 -
 put(value)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-put
@@ -1545,8 +1545,8 @@ IDBObjectStore
 -
 put(value)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-put
@@ -1556,8 +1556,8 @@ IDBObjectStore
 -
 put(value, key)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-put
@@ -1567,8 +1567,8 @@ IDBObjectStore
 -
 put(value, key)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-put

@@ -1,5 +1,5 @@
 {
-    "dom-webassembly-compilestreaming": [
+    "webassemblycompilestreaming": [
         {
             "engines": [
                 "blink",
@@ -56,7 +56,7 @@
             "title": "WebAssembly.compileStreaming()"
         }
     ],
-    "dom-webassembly-instantiatestreaming": [
+    "webassemblyinstantiatestreaming": [
         {
             "engines": [
                 "blink",

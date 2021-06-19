@@ -397,8 +397,8 @@ https://www.w3.org/TR/core-aam-1.2/#dfn-element
 -
 element
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-element
@@ -408,8 +408,8 @@ violation
 -
 element
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-element
@@ -483,8 +483,8 @@ https://www.w3.org/TR/css-regions-1/#element
 -
 element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#element
@@ -493,8 +493,8 @@ https://drafts.csswg.org/css2/#element
 -
 element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#element
@@ -503,8 +503,8 @@ https://drafts.csswg.org/css2/#element
 -
 element
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dom-element
@@ -925,8 +925,8 @@ https://html.spec.whatwg.org/multipage/semantics-other.html#element-has-the-focu
 -
 element instance
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#TermElementInstance
@@ -1278,8 +1278,8 @@ https://www.w3.org/TR/css-images-4/#element-not-rendered
 -
 element.localname
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-localname
@@ -1288,8 +1288,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-localname
 -
 element.namespaceuri
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-element-namespaceuri
@@ -1298,8 +1298,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-element-namespaceuri
 -
 element.prefix
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-element-prefix
@@ -1563,8 +1563,8 @@ https://www.w3.org/TR/core-aam-1.2/#dfn-element
 -
 elements
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dom-element
@@ -1755,8 +1755,8 @@ https://www.w3.org/TR/screen-capture/#dfn-elevated-permissions
 -
 elevation
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/aural.html#propdef-elevation
@@ -1871,8 +1871,8 @@ https://www.w3.org/TR/css-images-3/#valdef-ending-shape-ellipse
 -
 ellipse
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#elementdef-ellipse
@@ -1881,8 +1881,8 @@ https://svgwg.org/svg2-draft/shapes.html#elementdef-ellipse
 -
 ellipse
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#elementdef-ellipse

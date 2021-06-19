@@ -125,8 +125,8 @@ DOMMatrix
 -
 a
 element
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#elementdef-a
@@ -135,8 +135,8 @@ https://svgwg.org/svg2-draft/linking.html#elementdef-a
 -
 a
 element
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#elementdef-a

@@ -64,8 +64,8 @@ https://www.w3.org/TR/css-values-4/#cm
 -
 cm
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-length-cm
@@ -75,8 +75,8 @@ https://drafts.csswg.org/css2/#valdef-length-cm
 -
 cm
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-length-cm
@@ -108,8 +108,8 @@ CSS
 -
 cmp(first, second)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbfactory-cmp
@@ -119,8 +119,8 @@ IDBFactory
 -
 cmp(first, second)
 method
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-cmp

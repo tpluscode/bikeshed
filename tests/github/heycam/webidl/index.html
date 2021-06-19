@@ -3808,7 +3808,7 @@ perhaps as</p>
 lengths, <a data-link-type="dfn" href="#dfn-overloaded" id="ref-for-dfn-overloaded⑥">overloading</a> is preferred. Again, in such scenarios, it is usually better
 to create separate operations with distinct names, but legacy APIs sometimes follow this
 pattern.</p>
-      <p>As an example, the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-conditional-3/#dom-css-supports" id="ref-for-dom-css-supports">supports(property, value)</a></code> and <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-conditional-3/#dom-css-supports-conditiontext" id="ref-for-dom-css-supports-conditiontext">supports(conditionText)</a></code> operations of the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#namespacedef-css" id="ref-for-namespacedef-css">CSS</a></code> interface are defined as the
+      <p>As an example, the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-conditional-3/#dom-css-supports" id="ref-for-dom-css-supports">supports(property, value)</a></code> and <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/css-conditional-3/#dom-css-supports-conditiontext" id="ref-for-dom-css-supports-conditiontext">supports(conditionText)</a></code> operations of the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#namespacedef-css" id="ref-for-namespacedef-css">CSS</a></code> interface are defined as the
 following IDL fragment <a data-link-type="biblio" href="#biblio-css3-conditional">[CSS3-CONDITIONAL]</a> <a data-link-type="biblio" href="#biblio-cssom">[CSSOM]</a>.</p>
 <pre class="highlight"><c- b>partial</c-> <c- b>interface</c-> <c- g>CSS</c-> {
   <c- b>static</c-> <c- b>boolean</c-> <c- g>supports</c->(<c- n>CSSOMString</c-> <c- g>property</c->, <c- n>CSSOMString</c-> <c- g>value</c->);
@@ -5505,7 +5505,7 @@ a <a data-link-type="dfn" href="#idl-dictionary" id="ref-for-idl-dictionary①�
    <p>Each pair of <a data-link-type="dfn" href="#dfn-flattened-union-member-types" id="ref-for-dfn-flattened-union-member-types①⓪">flattened member types</a> in a <a data-link-type="dfn" href="#dfn-union-type" id="ref-for-dfn-union-type③②">union type</a>, <var>T</var> and <var>U</var>,
 must be <a data-link-type="dfn" href="#dfn-distinguishable" id="ref-for-dfn-distinguishable③">distinguishable</a>.</p>
    <p class="advisement" id="limit-bigint-numeric-unions"> It is possible to create a union of <code class="idl"><a data-link-type="idl" href="#idl-bigint" id="ref-for-idl-bigint⑤">bigint</a></code> and a <a data-link-type="dfn" href="#dfn-numeric-type" id="ref-for-dfn-numeric-type⑦">numeric type</a>.
-However, this is generally only supposed to be used for interfaces such as <a href="https://tc39.es/ecma402/#numberformat-objects">NumberFormat</a>, which formats the values rather than using them in
+However, this is generally only supposed to be used for interfaces such as <span spec-section="#numberformat-objects">NumberFormat</span>, which formats the values rather than using them in
 calculations.
 It would not be appropriate to accept such a union, only to then convert values of the <a data-link-type="dfn" href="#dfn-numeric-type" id="ref-for-dfn-numeric-type⑧">numeric type</a> to a <code class="idl"><a data-link-type="idl" href="#idl-bigint" id="ref-for-idl-bigint⑥">bigint</a></code> for further processing, as this runs the risk of introducing
 precision errors.
@@ -13381,7 +13381,7 @@ return <a data-link-type="dfn" href="#this" id="ref-for-this③⓪">this</a>'s <
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="DOMException" data-dfn-type="attribute" data-export id="dom-domexception-code"><code>code</code></dfn> getter steps are to return the legacy
 code indicated in the <a data-link-type="dfn" href="#dfn-error-names-table" id="ref-for-dfn-error-names-table①">error names table</a> for <a data-link-type="dfn" href="#this" id="ref-for-this③①">this</a>'s <a data-link-type="dfn" href="#domexception-name" id="ref-for-domexception-name②">name</a>, or 0 if no such
 entry exists in the table.</p>
-   <p><code class="idl"><a data-link-type="idl" href="#idl-DOMException" id="ref-for-idl-DOMException④①">DOMException</a></code> objects are <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects" id="ref-for-serializable-objects">serializable objects</a>.</p>
+   <p><code class="idl"><a data-link-type="idl" href="#idl-DOMException" id="ref-for-idl-DOMException④①">DOMException</a></code> objects are <a data-link-type="dfn">serializable objects</a>.</p>
    <p>Their <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps" id="ref-for-serialization-steps">serialization steps</a>, given <var>value</var> and <var>serialized</var>, are:</p>
    <ol>
     <li>Set <var>serialized</var>.[[Name]] to <var>value</var>’s <a data-link-type="dfn" href="#domexception-name" id="ref-for-domexception-name③">name</a>.
@@ -14377,7 +14377,7 @@ language binding.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-namespacedef-css">
-   <a href="https://drafts.csswg.org/cssom-1/#namespacedef-css">https://drafts.csswg.org/cssom-1/#namespacedef-css</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#namespacedef-css">https://drafts.csswg.org/cssom/#namespacedef-css</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-namespacedef-css">2.5.7.1. Overloading vs. union types</a>
    </ul>
@@ -15816,12 +15816,6 @@ language binding.</p>
     <li><a href="#ref-for-secure-context②">3.3.12. [SecureContext]</a> <a href="#ref-for-secure-context③">(2)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-serializable-objects">
-   <a href="https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects">https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-serializable-objects">4.3. DOMException</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-serialization-steps">
    <a href="https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps">https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps</a><b>Referenced in:</b>
    <ul>
@@ -16310,7 +16304,6 @@ language binding.</p>
      <li><span class="dfn-paneled" id="term-for-concept-relevant-realm">relevant realm</span>
      <li><span class="dfn-paneled" id="term-for-relevant-settings-object">relevant settings object</span>
      <li><span class="dfn-paneled" id="term-for-secure-context">secure context</span>
-     <li><span class="dfn-paneled" id="term-for-serializable-objects">serializable objects</span>
      <li><span class="dfn-paneled" id="term-for-serialization-steps">serialization steps</span>
      <li><span class="dfn-paneled" id="term-for-concept-realm-settings-object">settings object</span>
      <li><span class="dfn-paneled" id="term-for-dom-context-2d-stroke">stroke()</span>
@@ -16360,7 +16353,7 @@ language binding.</p>
      <li><span class="dfn-paneled" id="term-for-unicode_scalar_value">unicode scalar value</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-any">any</span>
     </ul>
@@ -16371,7 +16364,7 @@ language binding.</p>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecma-262">[ECMA-262]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-ieee-754">[IEEE-754]
@@ -16386,8 +16379,8 @@ language binding.</p>
    <dd>F. Yergeau. <a href="https://datatracker.ietf.org/doc/html/rfc3629">UTF-8, a transformation format of ISO 10646</a>. November 2003. Internet Standard. URL: <a href="https://datatracker.ietf.org/doc/html/rfc3629">https://datatracker.ietf.org/doc/html/rfc3629</a>
    <dt id="biblio-unicode">[UNICODE]
    <dd><a href="https://www.unicode.org/versions/latest/">The Unicode Standard</a>. URL: <a href="https://www.unicode.org/versions/latest/">https://www.unicode.org/versions/latest/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>

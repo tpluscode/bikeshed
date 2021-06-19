@@ -1,7 +1,7 @@
 x-large
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-size-x-large
@@ -11,8 +11,8 @@ font-size
 -
 x-large
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-size-x-large
@@ -97,8 +97,8 @@ feImage
 -
 xlink:href
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#XLinkHrefAttribute
@@ -115,8 +115,8 @@ use
 -
 xlink:href
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#XLinkHrefAttribute
@@ -133,8 +133,8 @@ use
 -
 xlink:title
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/linking.html#XLinkTitleAttribute
@@ -151,8 +151,8 @@ use
 -
 xlink:title
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/linking.html#XLinkTitleAttribute

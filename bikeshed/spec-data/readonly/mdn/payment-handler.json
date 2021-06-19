@@ -1,58 +1,5 @@
 {
-    "dom-paymentrequestevent-constructor": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PaymentRequestEvent.json",
-            "name": "PaymentRequestEvent",
-            "slug": "API/PaymentRequestEvent/PaymentRequestEvent",
-            "summary": "The PaymentRequestEvent constructor creates a new PaymentRequestEvent object which is a constructor for a PaymentRequestEvent which is the object passed to a payment handler when a PaymentRequest is made..",
-            "support": {
-                "chrome": {
-                    "version_added": "70"
-                },
-                "chrome_android": {
-                    "version_added": "70"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "57"
-                },
-                "opera_android": {
-                    "version_added": "49"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PaymentRequestEvent()"
-        }
-    ],
-    "dom-paymentrequestevent-instrumentkey": [
+    "instrumentkey-attribute": [
         {
             "engines": [
                 "blink"
@@ -105,7 +52,7 @@
             "title": "PaymentRequestEvent.instrumentKey"
         }
     ],
-    "dom-paymentrequestevent-methoddata": [
+    "methoddata-attribute": [
         {
             "engines": [
                 "blink"
@@ -158,7 +105,7 @@
             "title": "PaymentRequestEvent.methodData"
         }
     ],
-    "dom-paymentrequestevent-modifiers": [
+    "modifiers-attribute": [
         {
             "engines": [
                 "blink"
@@ -211,7 +158,7 @@
             "title": "PaymentRequestEvent.modifiers"
         }
     ],
-    "dom-paymentrequestevent-openwindow": [
+    "openwindow-method": [
         {
             "engines": [
                 "blink"
@@ -264,7 +211,7 @@
             "title": "PaymentRequestEvent.openWindow()"
         }
     ],
-    "dom-paymentrequestevent-paymentrequestid": [
+    "paymentrequestid-attribute": [
         {
             "engines": [
                 "blink"
@@ -314,10 +261,10 @@
                     "version_added": "79"
                 }
             },
-            "title": "PaymentRequestEvent.paymentRequestId"
+            "title": "paymentRequestId"
         }
     ],
-    "dom-paymentrequestevent-paymentrequestorigin": [
+    "paymentrequestorigin-attribute": [
         {
             "engines": [
                 "blink"
@@ -370,60 +317,7 @@
             "title": "PaymentRequestEvent.paymentRequestOrigin"
         }
     ],
-    "dom-paymentrequestevent-respondwith": [
-        {
-            "engines": [
-                "blink"
-            ],
-            "filename": "api/PaymentRequestEvent.json",
-            "name": "respondWith",
-            "slug": "API/PaymentRequestEvent/respondWith",
-            "summary": "The respondWith property of the PaymentRequestEvent interface prevents the default event handling and allows you to provide a Promise for a PaymentResponse object yourself.",
-            "support": {
-                "chrome": {
-                    "version_added": "70"
-                },
-                "chrome_android": {
-                    "version_added": "70"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": false
-                },
-                "firefox_android": {
-                    "version_added": false
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "opera": {
-                    "version_added": "57"
-                },
-                "opera_android": {
-                    "version_added": "49"
-                },
-                "safari": {
-                    "version_added": false
-                },
-                "safari_ios": {
-                    "version_added": false
-                },
-                "samsunginternet_android": {
-                    "version_added": true
-                },
-                "webview_android": {
-                    "version_added": false
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PaymentRequestEvent.respondWith()"
-        }
-    ],
-    "dom-paymentrequestevent-toporigin": [
+    "toporigin-attribute": [
         {
             "engines": [
                 "blink"
@@ -476,7 +370,7 @@
             "title": "PaymentRequestEvent.topOrigin"
         }
     ],
-    "dom-paymentrequestevent-total": [
+    "total-attribute": [
         {
             "engines": [
                 "blink"

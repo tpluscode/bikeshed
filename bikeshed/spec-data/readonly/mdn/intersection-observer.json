@@ -207,7 +207,7 @@
             "title": "IntersectionObserver.root"
         }
     ],
-    "dom-intersectionobserver-rootmargin": [
+    "dom-intersectionobserverinit-rootmargin": [
         {
             "engines": [
                 "blink",

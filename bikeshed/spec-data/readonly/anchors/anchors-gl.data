@@ -42,8 +42,8 @@ https://www.w3.org/TR/wasm-js-api-1/#global
 -
 Global
 extended-attribute
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#Global
@@ -196,8 +196,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#global-identifier
 -
 global invocation id
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#global-invocation-id
@@ -206,8 +206,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#global-invocation-id
 -
 global invocation id
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#global-invocation-id
@@ -216,8 +216,8 @@ https://www.w3.org/TR/WGSL/#global-invocation-id
 -
 global names
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-global-name
@@ -226,8 +226,8 @@ https://heycam.github.io/webidl/#dfn-global-name
 -
 global names
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-global-name
@@ -268,8 +268,8 @@ environment settings object
 -
 global object
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-global-object
@@ -279,8 +279,8 @@ violation
 -
 global object
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-global-object
@@ -447,8 +447,8 @@ CanvasCompositing
 -
 globalcrypto
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-GlobalCrypto
@@ -497,8 +497,8 @@ https://w3c.github.io/touch-events/#dom-globaleventhandlers
 -
 glyph
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermGlyph
@@ -577,8 +577,8 @@ https://www.w3.org/TR/uievents-key/#glyph-modifier-key
 -
 glyph-midline
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#GlyphMidline
@@ -587,8 +587,8 @@ https://svgwg.org/svg2-draft/text.html#GlyphMidline
 -
 glyph-midline
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#GlyphMidline

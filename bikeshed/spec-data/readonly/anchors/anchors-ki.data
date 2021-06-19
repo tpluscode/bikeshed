@@ -225,8 +225,8 @@ ModuleImportDescriptor
 -
 kind
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#default-iterator-object-kind
@@ -236,8 +236,8 @@ default iterator object
 -
 kind
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#default-asynchronous-iterator-object-kind

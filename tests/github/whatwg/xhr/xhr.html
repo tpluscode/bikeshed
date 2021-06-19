@@ -178,38 +178,6 @@ archives: </p>
 Fetch, File API, HTML, URL, Web IDL, and XML. </p>
    <p><a data-link-type="biblio" href="#biblio-dom">[DOM]</a> <a data-link-type="biblio" href="#biblio-dom-parsing">[DOM-PARSING]</a> <a data-link-type="biblio" href="#biblio-encoding">[ENCODING]</a> <a data-link-type="biblio" href="#biblio-fetch">[FETCH]</a> <a data-link-type="biblio" href="#biblio-fileapi">[FILEAPI]</a> <a data-link-type="biblio" href="#biblio-html">[HTML]</a> <a data-link-type="biblio" href="#biblio-url">[URL]</a> <a data-link-type="biblio" href="#biblio-webidl">[WEBIDL]</a> <a data-link-type="biblio" href="#biblio-xml">[XML]</a> <a data-link-type="biblio" href="#biblio-xml-names">[XML-NAMES]</a></p>
    <h2 class="heading settled" data-level="3" id="interface-xmlhttprequest"><span class="secno">3. </span><span class="content">Interface <code class="idl"><a data-link-type="idl" href="#xmlhttprequest" id="ref-for-xmlhttprequest⑤">XMLHttpRequest</a></code></span><a class="self-link" href="#interface-xmlhttprequest"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" title="XMLHttpRequest (XHR) objects are used to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.">XMLHttpRequest</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>8+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>7+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequestEventTarget" title="XMLHttpRequestEventTarget is the interface that describes the event handlers you can implement in an object that will handle events for an XMLHttpRequest.">XMLHttpRequestEventTarget</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>7+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-     </div>
-    </div>
-   </div>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=(<c- n>Window</c->,<c- n>DedicatedWorker</c->,<c- n>SharedWorker</c->)]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xmlhttprequesteventtarget"><code><c- g>XMLHttpRequestEventTarget</c-></code></dfn> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#eventtarget" id="ref-for-eventtarget"><c- n>EventTarget</c-></a> {
   // event handlers
@@ -360,25 +328,8 @@ from <code class="idl"><a data-link-type="idl" href="#xmlhttprequesteventtarget"
        <dfn class="dfn-paneled idl-code" data-dfn-for="XMLHttpRequestEventTarget" data-dfn-type="attribute" data-export id="handler-xhr-onloadstart"><code>onloadstart</code></dfn> 
       <td><a class="idl-code" data-link-type="event" href="#event-xhr-loadstart" id="ref-for-event-xhr-loadstart"><code>loadstart</code></a> 
      <tr>
-      <td>
-       <div class="mdn-anno wrapped">
-        <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-        <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequestEventTarget/onprogress" title="The XMLHttpRequestEventTarget.onprogress is the function called periodically with information when an XMLHttpRequest before success completely.">XMLHttpRequestEventTarget/onprogress</a></p>
-         <p class="all-engines-text">In all current engines.</p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>Yes</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>Yes</span></span>
-          <hr>
-          <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>Yes</span></span><span class="webview_android yes"><span>Android WebView</span><span>Yes</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>Yes</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-         </div>
-        </div>
-       </div>
-       <dfn class="dfn-paneled idl-code" data-dfn-for="XMLHttpRequestEventTarget" data-dfn-type="attribute" data-export id="handler-xhr-onprogress"><code>onprogress</code></dfn>
-      <td><a class="idl-code" data-link-type="event" href="#event-xhr-progress" id="ref-for-event-xhr-progress①"><code>progress</code></a>
+      <td><dfn class="dfn-paneled idl-code" data-dfn-for="XMLHttpRequestEventTarget" data-dfn-type="attribute" data-export id="handler-xhr-onprogress"><code>onprogress</code></dfn> 
+      <td><a class="idl-code" data-link-type="event" href="#event-xhr-progress" id="ref-for-event-xhr-progress①"><code>progress</code></a> 
      <tr>
       <td>
        <div class="mdn-anno wrapped">
@@ -397,8 +348,8 @@ from <code class="idl"><a data-link-type="idl" href="#xmlhttprequesteventtarget"
          </div>
         </div>
        </div>
-       <dfn class="dfn-paneled idl-code" data-dfn-for="XMLHttpRequestEventTarget" data-dfn-type="attribute" data-export id="handler-xhr-onabort"><code>onabort</code></dfn>
-      <td><a class="idl-code" data-link-type="event" href="#event-xhr-abort" id="ref-for-event-xhr-abort①"><code>abort</code></a>
+       <dfn class="dfn-paneled idl-code" data-dfn-for="XMLHttpRequestEventTarget" data-dfn-type="attribute" data-export id="handler-xhr-onabort"><code>onabort</code></dfn> 
+      <td><a class="idl-code" data-link-type="event" href="#event-xhr-abort" id="ref-for-event-xhr-abort①"><code>abort</code></a> 
      <tr>
       <td>
        <div class="mdn-anno wrapped">
@@ -417,8 +368,8 @@ from <code class="idl"><a data-link-type="idl" href="#xmlhttprequesteventtarget"
          </div>
         </div>
        </div>
-       <dfn class="dfn-paneled idl-code" data-dfn-for="XMLHttpRequestEventTarget" data-dfn-type="attribute" data-export id="handler-xhr-onerror"><code>onerror</code></dfn>
-      <td><a class="idl-code" data-link-type="event" href="#event-xhr-error" id="ref-for-event-xhr-error①"><code>error</code></a>
+       <dfn class="dfn-paneled idl-code" data-dfn-for="XMLHttpRequestEventTarget" data-dfn-type="attribute" data-export id="handler-xhr-onerror"><code>onerror</code></dfn> 
+      <td><a class="idl-code" data-link-type="event" href="#event-xhr-error" id="ref-for-event-xhr-error①"><code>error</code></a> 
      <tr>
       <td>
        <div class="mdn-anno wrapped">
@@ -432,6 +383,19 @@ from <code class="idl"><a data-link-type="idl" href="#xmlhttprequesteventtarget"
           <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>Yes</span></span>
           <hr>
           <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie yes"><span>IE</span><span>9+</span></span>
+          <hr>
+          <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>Yes</span></span><span class="webview_android yes"><span>Android WebView</span><span>Yes</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>Yes</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
+         </div>
+        </div>
+        <div class="feature">
+         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequestEventTarget/onprogress" title="The XMLHttpRequestEventTarget.onprogress is the function called periodically with information when an XMLHttpRequest before success completely.">XMLHttpRequestEventTarget/onprogress</a></p>
+         <p class="all-engines-text">In all current engines.</p>
+         <div class="support">
+          <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>Yes</span></span><span class="chrome yes"><span>Chrome</span><span>Yes</span></span>
+          <hr>
+          <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>Yes</span></span>
+          <hr>
+          <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
           <hr>
           <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>Yes</span></span><span class="webview_android yes"><span>Android WebView</span><span>Yes</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>Yes</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
          </div>
@@ -459,7 +423,7 @@ supported as attribute solely by the <code class="idl"><a data-link-type="idl" h
        <div class="mdn-anno wrapped">
         <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
         <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/onreadystatechange" title="An event handler that is called whenever the readyState attribute changes. The callback is called from the user interface thread. The XMLHttpRequest.onreadystatechange property contains the event handler to be called when the readystatechange event is fired, that is every time the readyState property of the XMLHttpRequest changes.">XMLHttpRequest/onreadystatechange</a></p>
+         <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/onreadystatechange" title="An EventHandler that is called whenever the readyState attribute changes. The callback is called from the user interface thread. The XMLHttpRequest.onreadystatechange property contains the event handler to be called when the readystatechange event is fired, that is every time the readyState property of the XMLHttpRequest changes.">XMLHttpRequest/onreadystatechange</a></p>
          <p class="all-engines-text">In all current engines.</p>
          <div class="support">
           <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1.2+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
@@ -1852,6 +1816,45 @@ filename is the value of <a data-link-type="dfn" href="#concept-formdata-entry" 
       <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>5+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>12+</span></span>
      </div>
     </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/entries" title="The FormData.entries() method returns an iterator allowing to go through all key/value pairs contained in this object. The key of each pair is a USVString object; the value either a USVString, or a Blob.">FormData/entries</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>44+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>44+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/keys" title="The FormData.keys() method returns an iterator allowing to go through all keys contained in this object. The keys are USVString objects.">FormData/keys</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>44+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>44+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
+     </div>
+    </div>
+    <div class="feature">
+     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/values" title="The FormData.values() method returns an iterator allowing to go through all values contained in this object. The values are USVString or Blob objects.">FormData/values</a></p>
+     <p class="all-engines-text">In all current engines.</p>
+     <div class="support">
+      <span class="firefox yes"><span>Firefox</span><span>44+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <hr>
+      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
+      <hr>
+      <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <hr>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>44+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
+     </div>
+    </div>
    </div>
    <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="FormData" data-dfn-type="constructor" data-export data-lt="FormData(form)|constructor(form)|FormData()|constructor()" id="dom-formdata"><code>new FormData(<var>form</var>)</code></dfn> constructor steps are: </p>
    <ol>
@@ -1898,13 +1901,13 @@ filename is the value of <a data-link-type="dfn" href="#concept-formdata-entry" 
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/delete" title="The delete() method of the FormData interface deletes a key and its value(s) from a FormData object.">FormData/delete</a></p>
      <p class="all-engines-text">In all current engines.</p>
      <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
       <hr>
       <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
      </div>
     </div>
    </div>
@@ -1915,13 +1918,13 @@ filename is the value of <a data-link-type="dfn" href="#concept-formdata-entry" 
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/get" title="The get() method of the FormData interface returns the first value associated with a given key from within a FormData object. If you expect multiple values and want all of them, use the getAll() method instead.">FormData/get</a></p>
      <p class="all-engines-text">In all current engines.</p>
      <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
       <hr>
       <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
      </div>
     </div>
    </div>
@@ -1939,13 +1942,13 @@ steps are: </p>
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/getAll" title="The getAll() method of the FormData interface returns all the values associated with a given key from within a FormData object.">FormData/getAll</a></p>
      <p class="all-engines-text">In all current engines.</p>
      <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
       <hr>
       <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
      </div>
     </div>
    </div>
@@ -1962,13 +1965,13 @@ steps are: </p>
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/has" title="The has() method of the FormData interface returns a boolean stating whether a FormData object contains a certain key.">FormData/has</a></p>
      <p class="all-engines-text">In all current engines.</p>
      <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
       <hr>
       <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
      </div>
     </div>
    </div>
@@ -1981,13 +1984,13 @@ otherwise false. </p>
      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData/set" title="The set() method of the FormData interface sets a new value for an existing key inside a FormData object, or adds the key/value if it does not already exist.">FormData/set</a></p>
      <p class="all-engines-text">In all current engines.</p>
      <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11.1+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
+      <span class="firefox yes"><span>Firefox</span><span>39+</span></span><span class="safari yes"><span>Safari</span><span>11+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
       <hr>
       <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
       <hr>
       <span class="edge yes"><span>Edge (Legacy)</span><span>18</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11.3+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
+      <span class="firefox_android yes"><span>Firefox for Android</span><span>39+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>11+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
      </div>
     </div>
    </div>
@@ -2033,7 +2036,7 @@ being the <a data-link-type="dfn" href="#concept-formdata-entry-value" id="ref-f
       <hr>
       <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>Yes</span></span>
       <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>14+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
+      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
       <hr>
       <span class="firefox_android yes"><span>Firefox for Android</span><span>22+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>Yes</span></span><span class="webview_android yes"><span>Android WebView</span><span>Yes</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>Yes</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
      </div>
@@ -2054,7 +2057,7 @@ being the <a data-link-type="dfn" href="#concept-formdata-entry-value" id="ref-f
   <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-unsigned-long-long" id="ref-for-idl-unsigned-long-long③"><c- b>unsigned</c-> <c- b>long</c-> <c- b>long</c-></a> <dfn class="idl-code" data-default="0" data-dfn-for="ProgressEventInit" data-dfn-type="dict-member" data-export data-type="unsigned long long " id="dom-progresseventinit-total"><code><c- g>total</c-></code><a class="self-link" href="#dom-progresseventinit-total"></a></dfn> = 0;
 };
 </pre>
-   <p><a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event" id="ref-for-concept-event">Events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent⑧">ProgressEvent</a></code> interface indicate some kind of progression. </p>
+   <p><a data-link-type="dfn" href="https://w3c.github.io/aria/#dfn-event" id="ref-for-dfn-event">Events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent⑧">ProgressEvent</a></code> interface indicate some kind of progression. </p>
    <div class="mdn-anno wrapped">
     <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
     <div class="feature">
@@ -2102,7 +2105,7 @@ being the <a data-link-type="dfn" href="#concept-formdata-entry-value" id="ref-f
    <p>To <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport id="concept-event-fire-progress">fire a progress event</dfn> named <var>e</var> at <var>target</var>, given <var>transmitted</var> and <var>length</var>, means to <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-fire" id="ref-for-concept-event-fire⑤">fire an event</a> named <var>e</var> at <var>target</var>, using <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①⓪">ProgressEvent</a></code>, with the <code class="idl"><a data-link-type="idl" href="#dom-progressevent-loaded" id="ref-for-dom-progressevent-loaded①">loaded</a></code> attribute initialized to <var>transmitted</var>, and if <var>length</var> is not 0, with the <code class="idl"><a data-link-type="idl" href="#dom-progressevent-lengthcomputable" id="ref-for-dom-progressevent-lengthcomputable①">lengthComputable</a></code> attribute initialized to true and the <code class="idl"><a data-link-type="idl" href="#dom-progressevent-total" id="ref-for-dom-progressevent-total①">total</a></code> attribute initialized to <var>length</var>. </p>
    <h3 class="heading settled" data-level="5.2" id="suggested-names-for-events-using-the-progressevent-interface"><span class="secno">5.2. </span><span class="content">Suggested names for events using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①①">ProgressEvent</a></code> interface</span><a class="self-link" href="#suggested-names-for-events-using-the-progressevent-interface"></a></h3>
    <p><em>This section is non-normative.</em> </p>
-   <p>The suggested <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-event-type" id="ref-for-dom-event-type">type</a></code> attribute values for use with <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event" id="ref-for-concept-event①">events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①②">ProgressEvent</a></code> interface are summarized in the table below.
+   <p>The suggested <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-event-type" id="ref-for-dom-event-type">type</a></code> attribute values for use with <a data-link-type="dfn" href="https://w3c.github.io/aria/#dfn-event" id="ref-for-dfn-event①">events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①②">ProgressEvent</a></code> interface are summarized in the table below.
 Specification editors are free to tune the details to their specific
 scenarios, though are strongly encouraged to discuss their usage with the
 WHATWG community to ensure input from people familiar with the subject. </p>
@@ -2146,10 +2149,10 @@ WHATWG community to ensure input from people familiar with the subject. </p>
    </table>
    <p>The <code>error</code>, <code>abort</code>, <code>timeout</code>, and <code>load</code> event types are mutually exclusive. </p>
    <p>Throughout the web platform the <code>error</code>, <code>abort</code>, <code>timeout</code> and <code>load</code> event types have
-their <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-event-bubbles" id="ref-for-dom-event-bubbles">bubbles</a></code> and <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-event-cancelable" id="ref-for-dom-event-cancelable">cancelable</a></code> attributes initialized to false, so it is suggested that for consistency all <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event" id="ref-for-concept-event②">events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①③">ProgressEvent</a></code> interface do the same. </p>
+their <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-event-bubbles" id="ref-for-dom-event-bubbles">bubbles</a></code> and <code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-event-cancelable" id="ref-for-dom-event-cancelable">cancelable</a></code> attributes initialized to false, so it is suggested that for consistency all <a data-link-type="dfn" href="https://w3c.github.io/aria/#dfn-event" id="ref-for-dfn-event②">events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①③">ProgressEvent</a></code> interface do the same. </p>
    <h3 class="heading settled" data-level="5.3" id="security-considerations"><span class="secno">5.3. </span><span class="content">Security considerations</span><a class="self-link" href="#security-considerations"></a></h3>
    <p>For cross-origin requests some kind of opt-in, e.g., the <a data-link-type="dfn" href="https://fetch.spec.whatwg.org/#cors-protocol" id="ref-for-cors-protocol">CORS protocol</a> defined in the Fetch Standard, has to be
-used before <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event" id="ref-for-concept-event③">events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①④">ProgressEvent</a></code> interface are <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch④">dispatched</a> as information (e.g., size) would be revealed that cannot be obtained
+used before <a data-link-type="dfn" href="https://w3c.github.io/aria/#dfn-event" id="ref-for-dfn-event③">events</a> using the <code class="idl"><a data-link-type="idl" href="#progressevent" id="ref-for-progressevent①④">ProgressEvent</a></code> interface are <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-event-dispatch" id="ref-for-concept-event-dispatch④">dispatched</a> as information (e.g., size) would be revealed that cannot be obtained
 otherwise. <a data-link-type="biblio" href="#biblio-fetch">[FETCH]</a> </p>
    <h3 class="heading settled" data-level="5.4" id="example"><span class="secno">5.4. </span><span class="content">Example</span><a class="self-link" href="#example"></a></h3>
    <div class="example" id="example-progress-events">
@@ -2514,14 +2517,6 @@ if ("serviceWorker" in navigator) {
    <a href="https://dom.spec.whatwg.org/#concept-document-encoding">https://dom.spec.whatwg.org/#concept-document-encoding</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-concept-document-encoding">3.6.6. Response body</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-concept-event">
-   <a href="https://dom.spec.whatwg.org/#concept-event">https://dom.spec.whatwg.org/#concept-event</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-concept-event">5. Interface ProgressEvent</a>
-    <li><a href="#ref-for-concept-event①">5.2. Suggested names for events using the ProgressEvent interface</a> <a href="#ref-for-concept-event②">(2)</a>
-    <li><a href="#ref-for-concept-event③">5.3. Security considerations</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-concept-event-listener">
@@ -3218,6 +3213,14 @@ if ("serviceWorker" in navigator) {
     <li><a href="#ref-for-concept-url-serializer">3.6.1. The responseURL getter</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-dfn-event">
+   <a href="https://w3c.github.io/aria/#dfn-event">https://w3c.github.io/aria/#dfn-event</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-dfn-event">5. Interface ProgressEvent</a>
+    <li><a href="#ref-for-dfn-event①">5.2. Suggested names for events using the ProgressEvent interface</a> <a href="#ref-for-dfn-event②">(2)</a>
+    <li><a href="#ref-for-dfn-event③">5.3. Security considerations</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-aborterror">
    <a href="https://heycam.github.io/webidl/#aborterror">https://heycam.github.io/webidl/#aborterror</a><b>Referenced in:</b>
    <ul>
@@ -3441,7 +3444,6 @@ if ("serviceWorker" in navigator) {
      <li><span class="dfn-paneled" id="term-for-concept-event-dispatch">dispatch</span>
      <li><span class="dfn-paneled" id="term-for-concept-document">document</span>
      <li><span class="dfn-paneled" id="term-for-concept-document-encoding">encoding</span>
-     <li><span class="dfn-paneled" id="term-for-concept-event">event</span>
      <li><span class="dfn-paneled" id="term-for-concept-event-listener">event listener</span>
      <li><span class="dfn-paneled" id="term-for-concept-event-fire">fire an event</span>
      <li><span class="dfn-paneled" id="term-for-html-document">html document</span>
@@ -3586,7 +3588,12 @@ if ("serviceWorker" in navigator) {
      <li><span class="dfn-paneled" id="term-for-concept-url-serializer">url serializer</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[wai-aria-1.2]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-dfn-event">events</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-aborterror">AbortError</span>
      <li><span class="dfn-paneled" id="term-for-idl-ArrayBuffer">ArrayBuffer</span>
@@ -3623,7 +3630,7 @@ if ("serviceWorker" in navigator) {
    <dt id="biblio-dom-parsing">[DOM-PARSING]
    <dd>Travis Leithead. <a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a>. URL: <a href="https://w3c.github.io/DOM-Parsing/">https://w3c.github.io/DOM-Parsing/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-encoding">[ENCODING]
    <dd>Anne van Kesteren. <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a>. Living Standard. URL: <a href="https://encoding.spec.whatwg.org/">https://encoding.spec.whatwg.org/</a>
    <dt id="biblio-fetch">[FETCH]
@@ -3638,8 +3645,12 @@ if ("serviceWorker" in navigator) {
    <dd>Gordon P. Hemsley. <a href="https://mimesniff.spec.whatwg.org/">MIME Sniffing Standard</a>. Living Standard. URL: <a href="https://mimesniff.spec.whatwg.org/">https://mimesniff.spec.whatwg.org/</a>
    <dt id="biblio-url">[URL]
    <dd>Anne van Kesteren. <a href="https://url.spec.whatwg.org/">URL Standard</a>. Living Standard. URL: <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
+   <dt id="biblio-wai-aria-12">[WAI-ARIA-1.2]
+   <dd>Joanmarie Diggs; James Nurthen; Michael Cooper. <a href="https://w3c.github.io/aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a>. URL: <a href="https://w3c.github.io/aria/">https://w3c.github.io/aria/</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
    <dt id="biblio-xml">[XML]
    <dd>Tim Bray; et al. <a href="https://www.w3.org/TR/xml/">Extensible Markup Language (XML) 1.0 (Fifth Edition)</a>. 26 November 2008. REC. URL: <a href="https://www.w3.org/TR/xml/">https://www.w3.org/TR/xml/</a>
    <dt id="biblio-xml-names">[XML-NAMES]

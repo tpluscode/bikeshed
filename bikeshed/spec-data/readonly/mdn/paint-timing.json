@@ -3,8 +3,7 @@
         {
             "engines": [
                 "blink",
-                "gecko",
-                "webkit"
+                "gecko"
             ],
             "filename": "api/PerformancePaintTiming.json",
             "name": "PerformancePaintTiming",
@@ -36,10 +35,10 @@
                     "version_added": "44"
                 },
                 "safari": {
-                    "version_added": "14.1"
+                    "version_added": false
                 },
                 "safari_ios": {
-                    "version_added": "14.5"
+                    "version_added": false
                 },
                 "samsunginternet_android": {
                     "version_added": "8.0"

@@ -297,62 +297,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -931,22 +875,6 @@ on screen, on paper, etc.
    <p class="issue" id="issue-e782977b"><a class="self-link" href="#issue-e782977b"></a> Add final level 3 content</p>
    <h2 class="heading settled" data-level="2" id="transforming"><span class="secno">2. </span><span class="content"> Transforming Text</span><a class="self-link" href="#transforming"></a></h2>
    <h3 class="heading settled" data-level="2.1" id="text-transform-property"><span class="secno">2.1. </span><span class="content"> Case Transforms: the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-transform" id="ref-for-propdef-text-transform">text-transform</a> property</span><span id="text-transform"></span><span id="caps-prop"></span><a class="self-link" href="#text-transform-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform" title="The text-transform CSS property specifies how to capitalize an element&apos;s text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.">text-transform</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
-     </div>
-    </div>
-   </div>
    <p class="issue" id="issue-e782977b①"><a class="self-link" href="#issue-e782977b①"></a> Add final level 3 content</p>
    <h3 class="heading settled" data-level="2.2" id="word-boundaries"><span class="secno">2.2. </span><span class="content"> Word Boundaries</span><a class="self-link" href="#word-boundaries"></a></h3>
    <p>In a number of languages and writing system,
@@ -1148,11 +1076,11 @@ on screen, on paper, etc.
 			as represented in BCP 47 syntax <a data-link-type="biblio" href="#biblio-bcp47">[BCP47]</a>,
 			does <em>not</em> match the language range described by the computed value’s <a class="production css" data-link-type="type" href="#typedef-word-boundary-detection-lang" id="ref-for-typedef-word-boundary-detection-lang④">&lt;lang></a> in an extended filtering operation
 			per <a data-link-type="biblio" href="#biblio-rfc4647">[RFC4647]</a> <cite>Matching of Language Tags</cite> (section 3.3.2)
-			with both the <span id="ref-for-content-language②">content language</span> and <span class="production" id="ref-for-typedef-word-boundary-detection-lang⑤">&lt;lang></span> then the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used value</a> is <a class="css" data-link-type="maybe" href="#valdef-word-boundary-detection-normal" id="ref-for-valdef-word-boundary-detection-normal">normal</a>,
+			with both the <span id="ref-for-content-language②">content language</span> and <span class="production" id="ref-for-typedef-word-boundary-detection-lang⑤">&lt;lang></span> then the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used value</a> is <a class="css" data-link-type="maybe" href="#valdef-word-boundary-detection-normal" id="ref-for-valdef-word-boundary-detection-normal">normal</a>,
 			and this property has no effect on this element.
 			Otherwise,
 			the user agent must insert a <a data-link-type="dfn" href="#virtual-word-boundary" id="ref-for-virtual-word-boundary⑧">virtual word boundary</a> at each detected word boundary
-			within the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#text-run" id="ref-for-text-run">text run</a> children of this element.
+			within the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#text-run" id="ref-for-text-run">text run</a> children of this element.
 			Within the constraints set by this specification,
 			the specific algorithm used is UA-dependent.</p>
      <details class="wpt-tests-block" dir="ltr" lang="en">
@@ -1184,7 +1112,7 @@ on screen, on paper, etc.
    <div class="example" id="example-446cae99">
     <a class="self-link" href="#example-446cae99"></a> Specifying the language for which the word boundary detection is to be performed
 		and making unsupported language ranges invalid
-		is required in order to make this feature meaningfully testable with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports" id="ref-for-at-ruledef-supports">@supports</a>.
+		is required in order to make this feature meaningfully testable with <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports" id="ref-for-at-ruledef-supports">@supports</a>. 
     <p>For example, Japanese text normally allows line breaking between letters of a word
 		(see <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-word-break" id="ref-for-propdef-word-break①">word-break: normal</a>).
 		The following code disables that in <code>h1</code> elements,
@@ -1206,9 +1134,9 @@ on screen, on paper, etc.
 	language-specific content analysis
 	in response to user preferences.
 	User agents with this behavior must do this
-	by setting the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#declared-value" id="ref-for-declared-value">declared value</a> of <a class="property" data-link-type="propdesc" href="#propdef-word-boundary-detection" id="ref-for-propdef-word-boundary-detection①">word-boundary-detection</a> to ''word-boundary-detection/auto(<a class="production css" data-link-type="type" href="#typedef-word-boundary-detection-lang" id="ref-for-typedef-word-boundary-detection-lang⑥">&lt;lang></a>)''
-	in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-user" id="ref-for-cascade-origin-user">User Origin</a>.
-	User agents that do not support the <span id="ref-for-cascade-origin-user①">User Origin</span> may use the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua" id="ref-for-cascade-origin-ua">User-Agent Origin</a> instead.</p>
+	by setting the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#declared-value" id="ref-for-declared-value">declared value</a> of <a class="property" data-link-type="propdesc" href="#propdef-word-boundary-detection" id="ref-for-propdef-word-boundary-detection①">word-boundary-detection</a> to ''word-boundary-detection/auto(<a class="production css" data-link-type="type" href="#typedef-word-boundary-detection-lang" id="ref-for-typedef-word-boundary-detection-lang⑥">&lt;lang></a>)''
+	in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-user" id="ref-for-cascade-origin-user">User Origin</a>.
+	User agents that do not support the <span id="ref-for-cascade-origin-user①">User Origin</span> may use the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-ua" id="ref-for-cascade-origin-ua">User-Agent Origin</a> instead.</p>
    <div class="advisement">
      Manual analysis of the content can be more reliable than UA heuristics.
 		For best results, authors who can perform this analysis are encouraged to markup their documents
@@ -1218,12 +1146,12 @@ on screen, on paper, etc.
 		should not rely on the initial value, and
 		should explicitly specify <a class="css" data-link-type="propdesc" href="#propdef-word-boundary-detection" id="ref-for-propdef-word-boundary-detection②">word-boundary-detection: manual</a> on the relevant parts of the content,
 		in order to override a potential ''word-boundary-detection: auto(<a class="production css" data-link-type="type" href="#typedef-word-boundary-detection-lang" id="ref-for-typedef-word-boundary-detection-lang⑦">&lt;lang></a>)''
-		in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-user" id="ref-for-cascade-origin-user②">User Origin</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua" id="ref-for-cascade-origin-ua①">User-Agent Origin</a>.</p>
+		in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-user" id="ref-for-cascade-origin-user②">User Origin</a> or <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#cascade-origin-ua" id="ref-for-cascade-origin-ua①">User-Agent Origin</a>.</p>
    </div>
    <p><a data-link-type="dfn" href="#virtual-word-boundary" id="ref-for-virtual-word-boundary⑨">Virtual word boundary</a> insertion happens before <a href="https://www.w3.org/TR/css-text-3/#white-space-phase-1">CSS Text 3 §4.1.1 Phase I: Collapsing and Transformation</a> and before <a href="#word-boundary-expansion">§ 2.2.2 Makig Word Boundaries Visible: the word-boundary-expansion property</a>.
 	Later operations
 	(including <a href="https://www.w3.org/TR/css-text-3/#white-space-rules">CSS Text 3 §4.1 The White Space Processing Rules</a>, <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#line-breaking-process" id="ref-for-line-breaking-process">line breaking</a>, and <a data-link-type="dfn" href="https://drafts.csswg.org/css-sizing-3/#intrinsic-sizing" id="ref-for-intrinsic-sizing">intrinsic sizing</a>)
-	must take the presence of the <span id="ref-for-virtual-word-boundary①⓪">virtual word boundary</span> into account. <a data-link-type="dfn" href="https://drafts.csswg.org/selectors-4/#selector" id="ref-for-selector">Selectors</a> are not affected.</p>
+	must take the presence of the <span id="ref-for-virtual-word-boundary①⓪">virtual word boundary</span> into account. <a data-link-type="dfn" href="https://drafts.csswg.org/selectors/#selector" id="ref-for-selector">Selectors</a> are not affected.</p>
    <details class="wpt-tests-block" dir="ltr" lang="en">
     <summary>Tests</summary>
     <ul class="wpt-tests-list">
@@ -1288,8 +1216,8 @@ on screen, on paper, etc.
    <ul>
     <li>
       at the beginning or end of any box
-			(including <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box">inline boxes</a>)
-			whose parent box has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used value</a> of <a class="css" data-link-type="maybe" href="#valdef-word-boundary-detection-manual" id="ref-for-valdef-word-boundary-detection-manual①">manual</a>. 
+			(including <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box">inline boxes</a>)
+			whose parent box has a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used value</a> of <a class="css" data-link-type="maybe" href="#valdef-word-boundary-detection-manual" id="ref-for-valdef-word-boundary-detection-manual①">manual</a>. 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1310,9 +1238,9 @@ on screen, on paper, etc.
      </details>
      <p class="note" role="note"><span>Note:</span> This implies that for languages such as English
 			where words are separated by spaces or other separating characters, <a class="css" data-link-type="maybe" href="#valdef-word-boundary-detection-auto-lang" id="ref-for-valdef-word-boundary-detection-auto-lang">auto()</a> has no effect.</p>
-    <li> between characters that compose a single <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit②">typographic character unit</a>.
+    <li> between characters that compose a single <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit②">typographic character unit</a>. 
     <li>
-      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit①">typographic letter unit</a> and a subsequent <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit③">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> CL, CP, IS, or EX line break classes,
+      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit①">typographic letter unit</a> and a subsequent <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit③">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> CL, CP, IS, or EX line break classes, 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1323,7 +1251,7 @@ on screen, on paper, etc.
       </ul>
      </details>
     <li>
-      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit②">typographic letter unit</a> and a preceding <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit④">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> OP line break class,
+      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit②">typographic letter unit</a> and a preceding <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit④">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> OP line break class, 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1331,7 +1259,7 @@ on screen, on paper, etc.
       </ul>
      </details>
     <li>
-      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit③">typographic letter unit</a> and an adjacent <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑤">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> GL, WJ, or ZWJ line break classes.
+      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit③">typographic letter unit</a> and an adjacent <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑤">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> GL, WJ, or ZWJ line break classes. 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1344,7 +1272,7 @@ on screen, on paper, etc.
    <p>The user agent should not insert a <a data-link-type="dfn" href="#virtual-word-boundary" id="ref-for-virtual-word-boundary①③">virtual word boundary</a>:</p>
    <ul>
     <li>
-      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit④">typographic letter unit</a> and a subsequent <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑥">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> PO, NS line break classes,
+      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit④">typographic letter unit</a> and a subsequent <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑥">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> PO, NS line break classes, 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1353,7 +1281,7 @@ on screen, on paper, etc.
       </ul>
      </details>
     <li>
-      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit⑤">typographic letter unit</a> and a preceding <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑦">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> PR line break class,
+      between a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit⑤">typographic letter unit</a> and a preceding <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑦">typographic character unit</a> from the <a data-link-type="biblio" href="#biblio-uax14">[UAX14]</a> PR line break class, 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
       <ul class="wpt-tests-list">
@@ -1427,7 +1355,7 @@ on screen, on paper, etc.
     <dt><dfn class="css" data-dfn-for="word-boundary-expansion" data-dfn-type="value" data-export id="valdef-word-boundary-expansion-space">space<a class="self-link" href="#valdef-word-boundary-expansion-space"></a></dfn> 
     <dd>
       Instances of U+200B ZERO WIDTH SPACE
-			within the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#text-run" id="ref-for-text-run①">text run</a> children of this element
+			within the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#text-run" id="ref-for-text-run①">text run</a> children of this element
 			are replaced by U+0020 SPACE. 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
@@ -1446,7 +1374,7 @@ on screen, on paper, etc.
     <dt><dfn class="css" data-dfn-for="word-boundary-expansion" data-dfn-type="value" data-export id="valdef-word-boundary-expansion-ideographic-space">ideographic-space<a class="self-link" href="#valdef-word-boundary-expansion-ideographic-space"></a></dfn> 
     <dd>
       Instances of U+200B ZERO WIDTH SPACE
-			within the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#text-run" id="ref-for-text-run②">text run</a> children of this element
+			within the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#text-run" id="ref-for-text-run②">text run</a> children of this element
 			are replaced by U+3000 IDEOGRAPHIC SPACE. 
      <details class="wpt-tests-block" dir="ltr" lang="en">
       <summary>Tests</summary>
@@ -1463,7 +1391,7 @@ on screen, on paper, etc.
    <p>The user agent must not replace
 	instances of U+200B immediately preceding or following
 	a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#forced-line-break" id="ref-for-forced-line-break">forced line break</a> (ignoring any intervening inline box boundaries,
-	and associated <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin">margin</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border" id="ref-for-propdef-border">border</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding" id="ref-for-propdef-padding">padding</a>).</p>
+	and associated <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-margin" id="ref-for-propdef-margin">margin</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-border" id="ref-for-propdef-border">border</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-box-4/#propdef-padding" id="ref-for-propdef-padding">padding</a>).</p>
    <details class="wpt-tests-block" dir="ltr" lang="en">
     <summary>Tests</summary>
     <ul class="wpt-tests-list">
@@ -1676,9 +1604,9 @@ p wbr <c- p>{</c->
 			(or <a href="https://www.w3.org/TR/css-text/#line-break-transform">in some cases</a>, no character). 
     <dt><dfn class="dfn-paneled css" data-dfn-for="text-space-collapse" data-dfn-type="value" data-export id="valdef-text-space-collapse-preserve">preserve</dfn> 
     <dd> This value prevents user agents
-			from collapsing sequences of white space. <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#segment-break" id="ref-for-segment-break">Segment breaks</a> are preserved as forced line breaks.
+			from collapsing sequences of white space. <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#segment-break" id="ref-for-segment-break">Segment breaks</a> are preserved as forced line breaks. 
     <dt><dfn class="dfn-paneled css" data-dfn-for="text-space-collapse" data-dfn-type="value" data-export id="valdef-text-space-collapse-preserve-breaks">preserve-breaks</dfn> 
-    <dd> This value collapses white space as for <a class="css" data-link-type="maybe" href="#valdef-text-space-collapse-collapse" id="ref-for-valdef-text-space-collapse-collapse">collapse</a>, but preserves <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#segment-break" id="ref-for-segment-break①">segment breaks</a> as forced line breaks.
+    <dd> This value collapses white space as for <a class="css" data-link-type="maybe" href="#valdef-text-space-collapse-collapse" id="ref-for-valdef-text-space-collapse-collapse">collapse</a>, but preserves <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#segment-break" id="ref-for-segment-break①">segment breaks</a> as forced line breaks. 
     <dt><dfn class="css" data-dfn-for="text-space-collapse" data-dfn-type="value" data-export id="valdef-text-space-collapse-preserve-spaces">preserve-spaces<a class="self-link" href="#valdef-text-space-collapse-preserve-spaces"></a></dfn> 
     <dd> This value prevents user agents
 			from collapsing sequences of white space,
@@ -1717,7 +1645,7 @@ m|mi, m|mn, m|mo, m|ms, m|mtext {
       <td>none 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box①">inline boxes</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box①">inline boxes</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -1781,7 +1709,7 @@ dt + dt:before { content: ", "; text-space-trim: discard-before; }
       <td>wrap 
      <tr>
       <th>Applies to:
-      <td>text and <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block containers</a> 
+      <td>text and <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block containers</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>yes 
@@ -1820,9 +1748,9 @@ dt + dt:before { content: ", "; text-space-trim: discard-before; }
 			content that does not fit within the block container overflows it. 
     <dt><dfn class="dfn-paneled css" data-dfn-for="text-wrap" data-dfn-type="value" data-export id="valdef-text-wrap-balance">balance</dfn> 
     <dd>
-      Same as <a class="css" data-link-type="maybe" href="#valdef-text-wrap-wrap" id="ref-for-valdef-text-wrap-wrap">wrap</a> for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box②">inline boxes</a>.
-			For <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container①">block containers</a> that
-			establish an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a>,
+      Same as <a class="css" data-link-type="maybe" href="#valdef-text-wrap-wrap" id="ref-for-valdef-text-wrap-wrap">wrap</a> for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box②">inline boxes</a>.
+			For <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container①">block containers</a> that
+			establish an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-formatting-context" id="ref-for-inline-formatting-context">inline formatting context</a>,
 			line breaks are chosen to balance
 			the remaining (empty) space in each line box,
 			if better balance than <span class="css" id="ref-for-valdef-text-wrap-wrap①">wrap</span> is possible.
@@ -1839,13 +1767,13 @@ dt + dt:before { content: ", "; text-space-trim: discard-before; }
      <p>The exact algorithm is UA-defined.</p>
      <p>UAs may treat this value as <a class="css" data-link-type="maybe" href="#valdef-text-wrap-wrap" id="ref-for-valdef-text-wrap-wrap③">wrap</a> if there are more than ten lines to balance.</p>
     <dt><dfn class="dfn-paneled css" data-dfn-for="text-wrap" data-dfn-type="value" data-export id="valdef-text-wrap-stable">stable</dfn> 
-    <dd> When applied to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container②">block container</a> that establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-formatting-context" id="ref-for-inline-formatting-context①">inline formatting context</a>,
+    <dd> When applied to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container②">block container</a> that establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-formatting-context" id="ref-for-inline-formatting-context①">inline formatting context</a>,
 			specifies that content on subsequent lines <em>should not</em> be considered when making break decisions
 			so that when editing text any content before the cursor
 			remains stable;
 			otherwise equivalent to <a class="css" data-link-type="maybe" href="#valdef-text-wrap-wrap" id="ref-for-valdef-text-wrap-wrap④">wrap</a>, 
     <dt><dfn class="dfn-paneled css" data-dfn-for="text-wrap" data-dfn-type="value" data-export id="valdef-text-wrap-pretty">pretty</dfn> 
-    <dd> When applied to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container③">block container</a> that establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-formatting-context" id="ref-for-inline-formatting-context②">inline formatting context</a>,
+    <dd> When applied to a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container③">block container</a> that establishes an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-formatting-context" id="ref-for-inline-formatting-context②">inline formatting context</a>,
 			specifies the UA <em>should</em> bias for better layout over speed,
 			and is expected to consider multiple lines,
 			when making break decisions.
@@ -1904,7 +1832,7 @@ dt + dt:before { content: ", "; text-space-trim: discard-before; }
       <td>auto 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level">inline-level</a> boxes and <a data-link-type="dfn" href="https://drafts.csswg.org/css-flexbox-1/#flex-item" id="ref-for-flex-item">flex items</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level">inline-level</a> boxes and <a data-link-type="dfn" href="https://drafts.csswg.org/css-flexbox-1/#flex-item" id="ref-for-flex-item">flex items</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -1944,14 +1872,14 @@ dt + dt:before { content: ", "; text-space-trim: discard-before; }
 			but only for flex line breaks. 
     <dt><dfn class="css" data-dfn-for="wrap-before, wrap-after" data-dfn-type="value" data-export id="valdef-wrap-before-line">line<a class="self-link" href="#valdef-wrap-before-line"></a></dfn> 
     <dd> Force a line break immediately before/after the box
-			if the box is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level①">inline-level</a> box. 
+			if the box is an <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level①">inline-level</a> box. 
     <dt><dfn class="css" data-dfn-for="wrap-before, wrap-after" data-dfn-type="value" data-export id="valdef-wrap-before-flex">flex<a class="self-link" href="#valdef-wrap-before-flex"></a></dfn> 
     <dd> Force a <a data-link-type="dfn" href="https://drafts.csswg.org/css-flexbox-1/#flex-line" id="ref-for-flex-line①">flex line</a> break immediately before/after the box
 			if the box is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-flexbox-1/#flex-item" id="ref-for-flex-item①">flex item</a> in a <a data-link-type="dfn" href="https://drafts.csswg.org/css-flexbox-1/#multi-line-flex-container" id="ref-for-multi-line-flex-container">multi-line flex container</a>. 
    </dl>
-   <p>Forced line breaks on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level②">inline-level</a> boxes propagate upward
-	through any parent <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box③">inline boxes</a> the same way forced breaks on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-level" id="ref-for-block-level">block-level</a> boxes propagate upward
-	through any parent <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-box" id="ref-for-block-box">block boxes</a> in the same <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-context" id="ref-for-fragmentation-context">fragmentation context</a>. <a data-link-type="biblio" href="#biblio-css3-break">[CSS3-BREAK]</a></p>
+   <p>Forced line breaks on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level②">inline-level</a> boxes propagate upward
+	through any parent <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box③">inline boxes</a> the same way forced breaks on <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-level" id="ref-for-block-level">block-level</a> boxes propagate upward
+	through any parent <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-box" id="ref-for-block-box">block boxes</a> in the same <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-context" id="ref-for-fragmentation-context">fragmentation context</a>. <a data-link-type="biblio" href="#biblio-css3-break">[CSS3-BREAK]</a></p>
    <h3 class="heading settled" data-level="5.3" id="wrap-inside"><span class="secno">5.3. </span><span class="content"> Line breaks within boxes: the <a class="property" data-link-type="propdesc" href="#propdef-wrap-inside" id="ref-for-propdef-wrap-inside①">wrap-inside</a> property</span><a class="self-link" href="#wrap-inside"></a></h3>
    <table class="def propdef" data-link-for-hint="wrap-inside">
     <tbody>
@@ -1966,7 +1894,7 @@ dt + dt:before { content: ", "; text-space-trim: discard-before; }
       <td>auto 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box④">inline boxes</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box④">inline boxes</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -2042,7 +1970,7 @@ Berlin, Germany
      <li>At least X characters. 
      <li>Percentage-based. 
     </ul>
-    <p>Suggestion for value space is ''match-indent | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a>''
+    <p>Suggestion for value space is ''match-indent | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value" id="ref-for-percentage-value">&lt;percentage></a>''
 		(with <span class="css">Xch</span> given as an example to make that use case clear).
 		Alternately <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#integer-value" id="ref-for-integer-value">&lt;integer></a> could actually count the characters.</p>
     <p>It’s unclear how this would interact with text balancing (above);
@@ -2052,22 +1980,6 @@ Berlin, Germany
 		dependent on the length of the word, character-based is better.</p>
    </div>
    <h2 class="heading settled" data-level="7" id="white-space-property"><span class="secno">7. </span><span class="content"> Shorthand for White Space and Wrapping: the <a class="property" data-link-type="propdesc" href="#propdef-white-space" id="ref-for-propdef-white-space">white-space</a> property</span><a class="self-link" href="#white-space-property"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" title="The white-space CSS property sets how white space inside an element is handled.">white-space</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>4+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>5.5+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="white-space">
     <tbody>
      <tr>
@@ -2113,12 +2025,12 @@ Berlin, Germany
       <th><a class="property" data-link-type="propdesc" href="#propdef-text-space-trim" id="ref-for-propdef-text-space-trim②">text-space-trim</a> 
     <tbody>
      <tr>
-      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-normal" id="ref-for-valdef-white-space-normal">normal</a>
+      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-normal" id="ref-for-valdef-white-space-normal">normal</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-space-collapse-collapse" id="ref-for-valdef-text-space-collapse-collapse①">collapse</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-wrap-wrap" id="ref-for-valdef-text-wrap-wrap⑦">wrap</a> 
       <td><span class="css">none</span> 
      <tr>
-      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre" id="ref-for-valdef-white-space-pre">pre</a>
+      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre" id="ref-for-valdef-white-space-pre">pre</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-space-collapse-preserve" id="ref-for-valdef-text-space-collapse-preserve">preserve</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-wrap-nowrap" id="ref-for-valdef-text-wrap-nowrap">nowrap</a> 
       <td><span class="css">none</span> 
@@ -2128,12 +2040,12 @@ Berlin, Germany
       <td><a class="css" data-link-type="maybe" href="#valdef-text-wrap-nowrap" id="ref-for-valdef-text-wrap-nowrap②">nowrap</a> 
       <td><span class="css">none</span> 
      <tr>
-      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-wrap" id="ref-for-valdef-white-space-pre-wrap">pre-wrap</a>
+      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-wrap" id="ref-for-valdef-white-space-pre-wrap">pre-wrap</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-space-collapse-preserve" id="ref-for-valdef-text-space-collapse-preserve①">preserve</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-wrap-wrap" id="ref-for-valdef-text-wrap-wrap⑧">wrap</a> 
       <td><span class="css">none</span> 
      <tr>
-      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-line" id="ref-for-valdef-white-space-pre-line">pre-line</a>
+      <th><a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-line" id="ref-for-valdef-white-space-pre-line">pre-line</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-space-collapse-preserve-breaks" id="ref-for-valdef-text-space-collapse-preserve-breaks">preserve-breaks</a> 
       <td><a class="css" data-link-type="maybe" href="#valdef-text-wrap-wrap" id="ref-for-valdef-text-wrap-wrap⑨">wrap</a> 
       <td><span class="css">none</span> 
@@ -2183,7 +2095,7 @@ Berlin, Germany
     <dt><dfn class="css" data-dfn-for="hyphenate-character" data-dfn-type="value" data-export id="valdef-hyphenate-character-string"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#string-value" id="ref-for-string-value②">&lt;string></a><a class="self-link" href="#valdef-hyphenate-character-string"></a></dfn> 
     <dd> Specifies the string that appears
 			at the end of the line before a hyphenation break.
-			The UA <em>may</em> truncate the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value②">used value</a> to a limited number of <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑧">typographic character units</a>.
+			The UA <em>may</em> truncate the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value②">used value</a> to a limited number of <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-character-unit" id="ref-for-typographic-character-unit⑧">typographic character units</a>.
 			(It must not truncate only part of a <span id="ref-for-typographic-character-unit⑨">typographic character unit</span>.) 
    </dl>
    <div class="example" id="example-5c34ac48">
@@ -2211,7 +2123,7 @@ Berlin, Germany
       <td>0 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container④">block containers</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container④">block containers</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>yes 
@@ -2345,7 +2257,7 @@ Berlin, Germany
       <td>none 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container⑤">block containers</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container⑤">block containers</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>yes 
@@ -2408,22 +2320,6 @@ Antarctica.
    </div>
    <h2 class="heading settled" data-level="9" id="alignment"><span class="secno">9. </span><span class="content"> Alignment and Justification</span><a class="self-link" href="#alignment"></a></h2>
    <h3 class="heading settled" data-level="9.1" id="text-align-property"><span class="secno">9.1. </span><span class="content"> Text Alignment: the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-align" id="ref-for-propdef-text-align">text-align</a> shorthand</span><a class="self-link" href="#text-align-property"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" title="The text-align CSS property sets the horizontal alignment of the content inside a block element or table-cell box. This means it works like vertical-align but in the horizontal direction.">text-align</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>3.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>3+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>10.1+</span></span>
-     </div>
-    </div>
-   </div>
    <p class="issue" id="issue-e782977b④"><a class="self-link" href="#issue-e782977b④"></a> Add final level 3 content</p>
    <p>Add this value to <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-text-align" id="ref-for-propdef-text-align①">text-align</a></p>
    <dl>
@@ -2501,7 +2397,7 @@ Antarctica.
 			the leftmost column for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-text-align-left" id="ref-for-valdef-text-align-left">left</a>,
 			the rightmost column for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-text-align-right" id="ref-for-valdef-text-align-right①">right</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-text-align-center" id="ref-for-valdef-text-align-center">center</a>,
 			the startmost column for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-text-align-start" id="ref-for-valdef-text-align-start">start</a>,
-			the endmost column for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-text-align-end" id="ref-for-valdef-text-align-end">end</a>.
+			the endmost column for <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-text-3/#valdef-text-align-end" id="ref-for-valdef-text-align-end">end</a>. 
     <li> when the column is wide enough that the character alignment alone
 			does not determine the positions of its character-aligned contents.
 			In this case the keyword alignment of the first cell in the column
@@ -2610,7 +2506,7 @@ Antarctica.
       <td>none 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container⑥">block containers</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container⑥">block containers</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -2633,10 +2529,10 @@ Antarctica.
 	and adding that amount of space as padding to one or both sides of the line box,
 	reducing the amount of space available for its contents; <a href="#text-align-property">text alignment</a> is then applied
 	to its contents within the remaining space.
-	All descendant <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#in-flow" id="ref-for-in-flow">in-flow</a> line boxes within the same <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-formatting-context" id="ref-for-block-formatting-context">block formatting context</a> are considered
+	All descendant <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#in-flow" id="ref-for-in-flow">in-flow</a> line boxes within the same <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-formatting-context" id="ref-for-block-formatting-context">block formatting context</a> are considered
 	both when searching for the shortest remaining space
 	and when adding the padding;
-	the contents of descendants that establish <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#independent-formatting-context" id="ref-for-independent-formatting-context">independent formatting contexts</a> are skipped.</p>
+	the contents of descendants that establish <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#independent-formatting-context" id="ref-for-independent-formatting-context">independent formatting contexts</a> are skipped.</p>
    <p class="issue" id="issue-5a886932"><a class="self-link" href="#issue-5a886932"></a> A variant of this property is inherited,
 	and applies on each block container individually,
 	only affecting the line boxes that are direct children of that block.
@@ -2678,13 +2574,13 @@ Antarctica.
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-line-padding">line-padding</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>0 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box⑤">inline boxes</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box⑤">inline boxes</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>yes 
@@ -2705,10 +2601,10 @@ Antarctica.
 	between <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#typographic-letter-unit" id="ref-for-typographic-letter-unit⑥">typographic letter units</a> and does not apply at the start or end of a line,
 	this property adjusts spacing only at the start/end of a line.
 	The extra spacing is applied only
-	by the <em>innermost</em> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-box" id="ref-for-inline-box⑥">inline box</a> at the start/end of the line box,
+	by the <em>innermost</em> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-box" id="ref-for-inline-box⑥">inline box</a> at the start/end of the line box,
 	and is inserted between that <span id="ref-for-inline-box⑦">inline box</span>’s content edge
-	and the adjacent <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#inline-level" id="ref-for-inline-level③">inline-level</a> content
-	(text run <em>or</em> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#atomic-inline" id="ref-for-atomic-inline">atomic inline</a>).
+	and the adjacent <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#inline-level" id="ref-for-inline-level③">inline-level</a> content
+	(text run <em>or</em> <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#atomic-inline" id="ref-for-atomic-inline">atomic inline</a>).
 	This extra space is not a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#justification-opportunity" id="ref-for-justification-opportunity">justification opportunity</a>.</p>
    <div class="example" id="example-4c81cd27">
     <a class="self-link" href="#example-4c81cd27"></a> Given the following HTML and CSS: 
@@ -2804,7 +2700,7 @@ em   { background: green; color: white; }
     <dt><dfn class="dfn-paneled css" data-dfn-for="text-spacing" data-dfn-type="value" data-export id="valdef-text-spacing-space-first">space-first</dfn> 
     <dd>
       Behaves as <a class="css" data-link-type="maybe" href="#valdef-text-spacing-space-start" id="ref-for-valdef-text-spacing-space-start">space-start</a> on the first line the block container
-			and each line after a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#forced-line-break" id="ref-for-forced-line-break①">forced line break</a> but as <a class="css" data-link-type="maybe" href="#valdef-text-spacing-trim-start" id="ref-for-valdef-text-spacing-trim-start">trim-start</a> on all other lines.
+			and each line after a <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#forced-line-break" id="ref-for-forced-line-break①">forced line break</a> but as <a class="css" data-link-type="maybe" href="#valdef-text-spacing-trim-start" id="ref-for-valdef-text-spacing-trim-start">trim-start</a> on all other lines. 
      <details class="note">
       <summary>This value exists for UA compat requirements,
 				and is not recommended for general authoring use.</summary>
@@ -2928,12 +2824,12 @@ em   { background: green; color: white; }
     <li> Set <a data-link-type="dfn" href="#fullwidth-opening-punctuation" id="ref-for-fullwidth-opening-punctuation③">fullwidth opening punctuation</a> half-width if the previous character is
 			a <span id="ref-for-fullwidth-opening-punctuation④">fullwidth opening punctuation</span>, <a data-link-type="dfn" href="#fullwidth-middle-dot-punctuation" id="ref-for-fullwidth-middle-dot-punctuation">fullwidth middle dot punctuation</a>,
 			or ideographic space (U+3000),
-			or if the previous character is a <a data-link-type="dfn" href="#fullwidth-closing-punctuation" id="ref-for-fullwidth-closing-punctuation④">fullwidth closing punctuation</a> of an equivalent or larger <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size">font-size</a>.
+			or if the previous character is a <a data-link-type="dfn" href="#fullwidth-closing-punctuation" id="ref-for-fullwidth-closing-punctuation④">fullwidth closing punctuation</a> of an equivalent or larger <a class="property" data-link-type="propdesc">font-size</a>.
 			Else set it full-width. 
     <li> Set <a data-link-type="dfn" href="#fullwidth-closing-punctuation" id="ref-for-fullwidth-closing-punctuation⑤">fullwidth closing punctuation</a> half-width if the next character is
 			a <span id="ref-for-fullwidth-closing-punctuation⑥">fullwidth closing punctuation</span>, <a data-link-type="dfn" href="#fullwidth-middle-dot-punctuation" id="ref-for-fullwidth-middle-dot-punctuation①">fullwidth middle dot punctuation</a>,
 			or ideographic space (U+3000),
-			or if the next character is a <a data-link-type="dfn" href="#fullwidth-opening-punctuation" id="ref-for-fullwidth-opening-punctuation⑤">fullwidth opening punctuation</a> of a larger <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size①">font-size</a>.
+			or if the next character is a <a data-link-type="dfn" href="#fullwidth-opening-punctuation" id="ref-for-fullwidth-opening-punctuation⑤">fullwidth opening punctuation</a> of a larger <a class="property" data-link-type="propdesc">font-size</a>.
 			Else set it full-width. 
    </ul>
    <div class="example" id="example-939a2863">
@@ -3355,9 +3251,9 @@ em   { background: green; color: white; }
    <li><a href="#propdef-wrap-inside">wrap-inside</a><span>, in §5.3</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-propdef-border">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-border">https://drafts.csswg.org/css-backgrounds-3/#propdef-border</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-border">https://drafts.csswg.org/css-backgrounds/#propdef-border</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-border">2.2.2.
+    <li><a href="#ref-for-propdef-border">2.2.2. 
 Makig Word Boundaries Visible: the word-boundary-expansion property</a>
    </ul>
   </aside>
@@ -3383,14 +3279,14 @@ Inline breaks between boxes: the wrap-before/wrap-after properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-declared-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#declared-value">https://drafts.csswg.org/css-cascade-5/#declared-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#declared-value">https://drafts.csswg.org/css-cascade/#declared-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-declared-value">2.2.1. 
 Detecting Word Boundaries: the word-boundary-detection property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">2.2.1. 
 Detecting Word Boundaries: the word-boundary-detection property</a> <a href="#ref-for-used-value①">(2)</a>
@@ -3399,14 +3295,14 @@ Hyphens: the hyphenate-character property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade-origin-user">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-user">https://drafts.csswg.org/css-cascade-5/#cascade-origin-user</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade-origin-user">https://drafts.csswg.org/css-cascade/#cascade-origin-user</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade-origin-user">2.2.1. 
 Detecting Word Boundaries: the word-boundary-detection property</a> <a href="#ref-for-cascade-origin-user①">(2)</a> <a href="#ref-for-cascade-origin-user②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cascade-origin-ua">
-   <a href="https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua">https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#cascade-origin-ua">https://drafts.csswg.org/css-cascade/#cascade-origin-ua</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cascade-origin-ua">2.2.1. 
 Detecting Word Boundaries: the word-boundary-detection property</a> <a href="#ref-for-cascade-origin-ua①">(2)</a>
@@ -3420,21 +3316,21 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-atomic-inline">
-   <a href="https://drafts.csswg.org/css-display-3/#atomic-inline">https://drafts.csswg.org/css-display-3/#atomic-inline</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#atomic-inline">https://drafts.csswg.org/css-display/#atomic-inline</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-atomic-inline">10.1. 
 Line Start/End Padding: the line-padding property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-box">
-   <a href="https://drafts.csswg.org/css-display-3/#block-box">https://drafts.csswg.org/css-display-3/#block-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-box">https://drafts.csswg.org/css-display/#block-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-box">5.2. 
 Inline breaks between boxes: the wrap-before/wrap-after properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">5.1. 
 Text Wrap Settings: the text-wrap property</a> <a href="#ref-for-block-container①">(2)</a> <a href="#ref-for-block-container②">(3)</a> <a href="#ref-for-block-container③">(4)</a>
@@ -3447,35 +3343,35 @@ Aligning a block of text within its container: the text-group-align property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#block-formatting-context">https://drafts.csswg.org/css-display-3/#block-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-formatting-context">https://drafts.csswg.org/css-display/#block-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-formatting-context">9.3. 
 Aligning a block of text within its container: the text-group-align property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-level">
-   <a href="https://drafts.csswg.org/css-display-3/#block-level">https://drafts.csswg.org/css-display-3/#block-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-level">https://drafts.csswg.org/css-display/#block-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-level">5.2. 
 Inline breaks between boxes: the wrap-before/wrap-after properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-in-flow">
-   <a href="https://drafts.csswg.org/css-display-3/#in-flow">https://drafts.csswg.org/css-display-3/#in-flow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#in-flow">https://drafts.csswg.org/css-display/#in-flow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-in-flow">9.3. 
 Aligning a block of text within its container: the text-group-align property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-independent-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#independent-formatting-context">https://drafts.csswg.org/css-display-3/#independent-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#independent-formatting-context">https://drafts.csswg.org/css-display/#independent-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-independent-formatting-context">9.3. 
 Aligning a block of text within its container: the text-group-align property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-box">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-box">https://drafts.csswg.org/css-display-3/#inline-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-box">https://drafts.csswg.org/css-display/#inline-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-box">2.2.1. 
 Detecting Word Boundaries: the word-boundary-detection property</a>
@@ -3492,14 +3388,14 @@ Line Start/End Padding: the line-padding property</a> <a href="#ref-for-inline-b
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-formatting-context">https://drafts.csswg.org/css-display-3/#inline-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-formatting-context">https://drafts.csswg.org/css-display/#inline-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-formatting-context">5.1. 
 Text Wrap Settings: the text-wrap property</a> <a href="#ref-for-inline-formatting-context①">(2)</a> <a href="#ref-for-inline-formatting-context②">(3)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-inline-level">
-   <a href="https://drafts.csswg.org/css-display-3/#inline-level">https://drafts.csswg.org/css-display-3/#inline-level</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#inline-level">https://drafts.csswg.org/css-display/#inline-level</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-inline-level">5.2. 
 Inline breaks between boxes: the wrap-before/wrap-after properties</a> <a href="#ref-for-inline-level①">(2)</a> <a href="#ref-for-inline-level②">(3)</a>
@@ -3508,19 +3404,12 @@ Line Start/End Padding: the line-padding property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-text-run">
-   <a href="https://drafts.csswg.org/css-display-3/#text-run">https://drafts.csswg.org/css-display-3/#text-run</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#text-run">https://drafts.csswg.org/css-display/#text-run</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-text-run">2.2.1. 
 Detecting Word Boundaries: the word-boundary-detection property</a>
     <li><a href="#ref-for-text-run①">2.2.2. 
 Makig Word Boundaries Visible: the word-boundary-expansion property</a> <a href="#ref-for-text-run②">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-font-size">
-   <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size">https://drafts.csswg.org/css-fonts-3/#propdef-font-size</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-font-size">10.2.1. 
-Fullwidth Punctuation Collapsing</a> <a href="#ref-for-propdef-font-size①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-intrinsic-sizing">
@@ -3734,7 +3623,7 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
   <aside class="dfn-panel" data-for="term-for-valdef-text-align-center">
    <a href="https://drafts.csswg.org/css-text-3/#valdef-text-align-center">https://drafts.csswg.org/css-text-3/#valdef-text-align-center</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-text-align-center">9.2.
+    <li><a href="#ref-for-valdef-text-align-center">9.2. 
 Character-based Alignment in a Table Column</a> <a href="#ref-for-valdef-text-align-center①">(2)</a>
    </ul>
   </aside>
@@ -3780,7 +3669,7 @@ Line Start/End Padding: the line-padding property</a>
   <aside class="dfn-panel" data-for="term-for-valdef-text-align-left">
    <a href="https://drafts.csswg.org/css-text-3/#valdef-text-align-left">https://drafts.csswg.org/css-text-3/#valdef-text-align-left</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-text-align-left">9.2.
+    <li><a href="#ref-for-valdef-text-align-left">9.2. 
 Character-based Alignment in a Table Column</a>
    </ul>
   </aside>
@@ -3819,7 +3708,7 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
   <aside class="dfn-panel" data-for="term-for-valdef-white-space-normal">
    <a href="https://drafts.csswg.org/css-text-3/#valdef-white-space-normal">https://drafts.csswg.org/css-text-3/#valdef-white-space-normal</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-white-space-normal">7.
+    <li><a href="#ref-for-valdef-white-space-normal">7. 
 Shorthand for White Space and Wrapping: the white-space property</a>
    </ul>
   </aside>
@@ -3833,28 +3722,28 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
   <aside class="dfn-panel" data-for="term-for-valdef-white-space-pre">
    <a href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre">https://drafts.csswg.org/css-text-3/#valdef-white-space-pre</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-white-space-pre">7.
+    <li><a href="#ref-for-valdef-white-space-pre">7. 
 Shorthand for White Space and Wrapping: the white-space property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-white-space-pre-line">
    <a href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-line">https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-line</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-white-space-pre-line">7.
+    <li><a href="#ref-for-valdef-white-space-pre-line">7. 
 Shorthand for White Space and Wrapping: the white-space property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-white-space-pre-wrap">
    <a href="https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-wrap">https://drafts.csswg.org/css-text-3/#valdef-white-space-pre-wrap</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-white-space-pre-wrap">7.
+    <li><a href="#ref-for-valdef-white-space-pre-wrap">7. 
 Shorthand for White Space and Wrapping: the white-space property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-text-align-right">
    <a href="https://drafts.csswg.org/css-text-3/#valdef-text-align-right">https://drafts.csswg.org/css-text-3/#valdef-text-align-right</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-text-align-right">9.2.
+    <li><a href="#ref-for-valdef-text-align-right">9.2. 
 Character-based Alignment in a Table Column</a> <a href="#ref-for-valdef-text-align-right①">(2)</a>
    </ul>
   </aside>
@@ -3902,16 +3791,16 @@ Character-based Alignment in a Table Column</a> <a href="#ref-for-propdef-text-a
   <aside class="dfn-panel" data-for="term-for-propdef-text-indent">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-text-indent">https://drafts.csswg.org/css-text-3/#propdef-text-indent</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-text-indent">10.2.
+    <li><a href="#ref-for-propdef-text-indent">10.2. 
 Character Class Spacing: the text-spacing property</a> <a href="#ref-for-propdef-text-indent①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-text-transform">
    <a href="https://drafts.csswg.org/css-text-3/#propdef-text-transform">https://drafts.csswg.org/css-text-3/#propdef-text-transform</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-propdef-text-transform">2.1.
+    <li><a href="#ref-for-propdef-text-transform">2.1. 
 Case Transforms: the text-transform property</a>
-    <li><a href="#ref-for-propdef-text-transform①">2.2.2.
+    <li><a href="#ref-for-propdef-text-transform①">2.2.2. 
 Makig Word Boundaries Visible: the word-boundary-expansion property</a> <a href="#ref-for-propdef-text-transform②">(2)</a> <a href="#ref-for-propdef-text-transform③">(3)</a> <a href="#ref-for-propdef-text-transform④">(4)</a> <a href="#ref-for-propdef-text-transform⑤">(5)</a> <a href="#ref-for-propdef-text-transform⑥">(6)</a>
    </ul>
   </aside>
@@ -3968,7 +3857,7 @@ Makig Word Boundaries Visible: the word-boundary-expansion property</a> <a href=
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-selector">
-   <a href="https://drafts.csswg.org/selectors-4/#selector">https://drafts.csswg.org/selectors-4/#selector</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/selectors/#selector">https://drafts.csswg.org/selectors/#selector</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-selector">2.2.1. 
 Detecting Word Boundaries: the word-boundary-detection property</a>
@@ -3993,7 +3882,7 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
      <li><span class="dfn-paneled" id="term-for-fragmentation-context">fragmentation context</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-declared-value">declared value</span>
      <li><span class="dfn-paneled" id="term-for-used-value">used value</span>
@@ -4019,11 +3908,6 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
      <li><span class="dfn-paneled" id="term-for-inline-formatting-context">inline formatting context</span>
      <li><span class="dfn-paneled" id="term-for-inline-level">inline-level</span>
      <li><span class="dfn-paneled" id="term-for-text-run">text run</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-fonts-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-font-size">font-size</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-sizing-3]</a> defines the following terms:
@@ -4126,12 +4010,10 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
    <dd>Elika Etemad. <a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a>. 21 April 2020. WD. URL: <a href="https://www.w3.org/TR/css-box-4/">https://www.w3.org/TR/css-box-4/</a>
    <dt id="biblio-css-break-4">[CSS-BREAK-4]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a>. 18 December 2018. WD. URL: <a href="https://www.w3.org/TR/css-break-4/">https://www.w3.org/TR/css-break-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a>. 18 December 2020. CR. URL: <a href="https://www.w3.org/TR/css-display-3/">https://www.w3.org/TR/css-display-3/</a>
-   <dt id="biblio-css-fonts-3">[CSS-FONTS-3]
-   <dd>John Daggett; Myles Maxfield; Chris Lilley. <a href="https://www.w3.org/TR/css-fonts-3/">CSS Fonts Module Level 3</a>. 20 September 2018. REC. URL: <a href="https://www.w3.org/TR/css-fonts-3/">https://www.w3.org/TR/css-fonts-3/</a>
    <dt id="biblio-css-sizing-3">[CSS-SIZING-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-sizing-3/">CSS Box Sizing Module Level 3</a>. 17 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-sizing-3/">https://www.w3.org/TR/css-sizing-3/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
@@ -4145,7 +4027,7 @@ Detecting Word Boundaries: the word-boundary-detection property</a>
    <dt id="biblio-css3-flexbox">[CSS3-FLEXBOX]
    <dd>Tab Atkins Jr.; et al. <a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a>. 19 November 2018. CR. URL: <a href="https://www.w3.org/TR/css-flexbox-1/">https://www.w3.org/TR/css-flexbox-1/</a>
    <dt id="biblio-css3text">[CSS3TEXT]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-rfc2119">[RFC2119]
@@ -4392,7 +4274,7 @@ no-compress || ideograph-alpha || ideograph-numeric || punctuation
      <li>At least X characters. 
      <li>Percentage-based. 
     </ul>
-    <p>Suggestion for value space is ''match-indent | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value">&lt;percentage></a>''
+    <p>Suggestion for value space is ''match-indent | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> | <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#percentage-value">&lt;percentage></a>''
 		(with <span class="css">Xch</span> given as an example to make that use case clear).
 		Alternately <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#integer-value">&lt;integer></a> could actually count the characters.</p>
     <p>It’s unclear how this would interact with text balancing (above);
@@ -4970,11 +4852,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

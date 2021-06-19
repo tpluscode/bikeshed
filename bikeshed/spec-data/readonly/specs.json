@@ -1,877 +1,4 @@
 {
-  "ANGLE_instanced_arrays": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-    "delta": false,
-    "description": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification",
-    "shortname": "ANGLE_instanced_arrays",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "ANGLE_instanced_arrays"
-  },
-  "CSP3": {
-    "current_url": "https://w3c.github.io/webappsec-csp/",
-    "delta": false,
-    "description": "Content Security Policy Level 3",
-    "shortname": "CSP",
-    "snapshot_url": "https://www.w3.org/TR/CSP3/",
-    "tests": {
-      "excludePaths": [
-        "content-security-policy/embedded-enforcement"
-      ],
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "content-security-policy"
-      ]
-    },
-    "title": "Content Security Policy 3",
-    "version": "3",
-    "vshortname": "CSP3"
-  },
-  "CSS21": {
-    "current_url": "https://drafts.csswg.org/css2/",
-    "delta": false,
-    "description": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
-    "shortname": "CSS",
-    "snapshot_url": "https://www.w3.org/TR/CSS21/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "css/CSS2"
-      ]
-    },
-    "title": "CSS 2.1",
-    "version": "2.1",
-    "vshortname": "CSS21"
-  },
-  "CSS22": {
-    "current_url": "https://drafts.csswg.org/css2/",
-    "delta": false,
-    "description": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-    "shortname": "CSS",
-    "snapshot_url": "https://www.w3.org/TR/CSS22/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "css/CSS2"
-      ]
-    },
-    "title": "CSS 2.2",
-    "version": "2.2",
-    "vshortname": "CSS22"
-  },
-  "DOM-Parsing": {
-    "current_url": "https://w3c.github.io/DOM-Parsing/",
-    "delta": false,
-    "description": "DOM Parsing and Serialization",
-    "shortname": "DOM-Parsing",
-    "snapshot_url": "https://www.w3.org/TR/DOM-Parsing/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "domparsing"
-      ]
-    },
-    "title": "DOM Parsing and Serialization",
-    "version": "1",
-    "vshortname": "DOM-Parsing"
-  },
-  "EXT_blend_minmax": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-    "delta": false,
-    "description": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
-    "shortname": "EXT_blend_minmax",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_blend_minmax Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "EXT_blend_minmax"
-  },
-  "EXT_clip_cull_distance": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
-    "delta": false,
-    "description": "WebGL EXT_clip_cull_distance Extension Draft Specification",
-    "shortname": "EXT_clip_cull_distance",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_clip_cull_distance Extension Draft",
-    "version": "1",
-    "vshortname": "EXT_clip_cull_distance"
-  },
-  "EXT_color_buffer_float": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-    "delta": false,
-    "description": "WebGL EXT_color_buffer_float Extension Specification",
-    "shortname": "EXT_color_buffer_float",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_color_buffer_float Extension",
-    "version": "1",
-    "vshortname": "EXT_color_buffer_float"
-  },
-  "EXT_color_buffer_half_float": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-    "delta": false,
-    "description": "WebGL EXT_color_buffer_half_float Extension Specification",
-    "shortname": "EXT_color_buffer_half_float",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_color_buffer_half_float Extension",
-    "version": "1",
-    "vshortname": "EXT_color_buffer_half_float"
-  },
-  "EXT_disjoint_timer_query": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-    "delta": false,
-    "description": "WebGL EXT_disjoint_timer_query Extension Specification",
-    "shortname": "EXT_disjoint_timer_query",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_disjoint_timer_query Extension",
-    "version": "1",
-    "vshortname": "EXT_disjoint_timer_query"
-  },
-  "EXT_disjoint_timer_query_webgl2": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
-    "delta": false,
-    "description": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
-    "shortname": "EXT_disjoint_timer_query_webgl2",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension",
-    "version": "1",
-    "vshortname": "EXT_disjoint_timer_query_webgl2"
-  },
-  "EXT_float_blend": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
-    "delta": false,
-    "description": "WebGL EXT_float_blend Extension Specification",
-    "shortname": "EXT_float_blend",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_float_blend Extension",
-    "version": "1",
-    "vshortname": "EXT_float_blend"
-  },
-  "EXT_frag_depth": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-    "delta": false,
-    "description": "WebGL EXT_frag_depth Khronos Ratified Extension Specification",
-    "shortname": "EXT_frag_depth",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_frag_depth Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "EXT_frag_depth"
-  },
-  "EXT_sRGB": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-    "delta": false,
-    "description": "WebGL EXT_sRGB Extension Specification",
-    "shortname": "EXT_sRGB",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_sRGB Extension",
-    "version": "1",
-    "vshortname": "EXT_sRGB"
-  },
-  "EXT_shader_texture_lod": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-    "delta": false,
-    "description": "WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification",
-    "shortname": "EXT_shader_texture_lod",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_shader_texture_lod Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "EXT_shader_texture_lod"
-  },
-  "EXT_texture_compression_bptc": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
-    "delta": false,
-    "description": "WebGL EXT_texture_compression_bptc Extension Specification",
-    "shortname": "EXT_texture_compression_bptc",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_texture_compression_bptc Extension",
-    "version": "1",
-    "vshortname": "EXT_texture_compression_bptc"
-  },
-  "EXT_texture_compression_rgtc": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
-    "delta": false,
-    "description": "WebGL EXT_texture_compression_rgtc Extension Specification",
-    "shortname": "EXT_texture_compression_rgtc",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_texture_compression_rgtc Extension",
-    "version": "1",
-    "vshortname": "EXT_texture_compression_rgtc"
-  },
-  "EXT_texture_filter_anisotropic": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-    "delta": false,
-    "description": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification",
-    "shortname": "EXT_texture_filter_anisotropic",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "EXT_texture_filter_anisotropic"
-  },
-  "EXT_texture_norm16": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
-    "delta": false,
-    "description": "WebGL EXT_texture_norm16 Extension Specification",
-    "shortname": "EXT_texture_norm16",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL EXT_texture_norm16 Extension",
-    "version": "1",
-    "vshortname": "EXT_texture_norm16"
-  },
-  "FileAPI": {
-    "current_url": "https://w3c.github.io/FileAPI/",
-    "delta": false,
-    "description": "File API",
-    "shortname": "FileAPI",
-    "snapshot_url": "https://www.w3.org/TR/FileAPI/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "FileAPI"
-      ]
-    },
-    "title": "File API",
-    "version": "1",
-    "vshortname": "FileAPI"
-  },
-  "IndexedDB-3": {
-    "current_url": "https://w3c.github.io/IndexedDB/",
-    "delta": false,
-    "description": "Indexed Database API 3.0",
-    "shortname": "IndexedDB",
-    "snapshot_url": "https://www.w3.org/TR/IndexedDB-3/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "IndexedDB"
-      ]
-    },
-    "title": "Indexed DB 3.0",
-    "version": "3",
-    "vshortname": "IndexedDB-3"
-  },
-  "KHR_parallel_shader_compile": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
-    "delta": false,
-    "description": "WebGL KHR_parallel_shader_compile Extension Specification",
-    "shortname": "KHR_parallel_shader_compile",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL KHR_parallel_shader_compile Extension",
-    "version": "1",
-    "vshortname": "KHR_parallel_shader_compile"
-  },
-  "OES_draw_buffers_indexed": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
-    "delta": false,
-    "description": "WebGL OES_draw_buffers_indexed Extension Draft Specification",
-    "shortname": "OES_draw_buffers_indexed",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_draw_buffers_indexed Extension Draft",
-    "version": "1",
-    "vshortname": "OES_draw_buffers_indexed"
-  },
-  "OES_element_index_uint": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-    "delta": false,
-    "description": "WebGL OES_element_index_uint Khronos Ratified Extension Specification",
-    "shortname": "OES_element_index_uint",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_element_index_uint Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "OES_element_index_uint"
-  },
-  "OES_fbo_render_mipmap": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-    "delta": false,
-    "description": "WebGL OES_fbo_render_mipmap Extension Specification",
-    "shortname": "OES_fbo_render_mipmap",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_fbo_render_mipmap Extension",
-    "version": "1",
-    "vshortname": "OES_fbo_render_mipmap"
-  },
-  "OES_standard_derivatives": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-    "delta": false,
-    "description": "WebGL OES_standard_derivatives Khronos Ratified Extension Specification",
-    "shortname": "OES_standard_derivatives",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_standard_derivatives Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "OES_standard_derivatives"
-  },
-  "OES_texture_float": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-    "delta": false,
-    "description": "WebGL OES_texture_float Khronos Ratified Extension Specification",
-    "shortname": "OES_texture_float",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_texture_float Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "OES_texture_float"
-  },
-  "OES_texture_float_linear": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-    "delta": false,
-    "description": "WebGL OES_texture_float_linear Khronos Ratified Extension Specification",
-    "shortname": "OES_texture_float_linear",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_texture_float_linear Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "OES_texture_float_linear"
-  },
-  "OES_texture_half_float": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-    "delta": false,
-    "description": "WebGL OES_texture_half_float Khronos Ratified Extension Specification",
-    "shortname": "OES_texture_half_float",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_texture_half_float Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "OES_texture_half_float"
-  },
-  "OES_texture_half_float_linear": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-    "delta": false,
-    "description": "WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification",
-    "shortname": "OES_texture_half_float_linear",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_texture_half_float_linear Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "OES_texture_half_float_linear"
-  },
-  "OES_vertex_array_object": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-    "delta": false,
-    "description": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
-    "shortname": "OES_vertex_array_object",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OES_vertex_array_object Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "OES_vertex_array_object"
-  },
-  "OVR_multiview2": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
-    "delta": false,
-    "description": "WebGL OVR_multiview2 Extension Specification",
-    "shortname": "OVR_multiview2",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL OVR_multiview2 Extension",
-    "version": "1",
-    "vshortname": "OVR_multiview2"
-  },
-  "SRI": {
-    "current_url": "https://w3c.github.io/webappsec-subresource-integrity/",
-    "delta": false,
-    "description": "Subresource Integrity",
-    "shortname": "SRI",
-    "snapshot_url": "https://www.w3.org/TR/SRI/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "subresource-integrity"
-      ]
-    },
-    "title": "SRI",
-    "version": "1",
-    "vshortname": "SRI"
-  },
-  "SVG11": {
-    "current_url": "https://www.w3.org/TR/SVG11/",
-    "delta": false,
-    "description": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
-    "shortname": "SVG",
-    "snapshot_url": "https://www.w3.org/TR/SVG11/",
-    "tests": {},
-    "title": "SVG",
-    "version": "1.1",
-    "vshortname": "SVG11"
-  },
-  "SVG2": {
-    "current_url": "https://svgwg.org/svg2-draft/",
-    "delta": false,
-    "description": "Scalable Vector Graphics (SVG) 2",
-    "shortname": "SVG",
-    "snapshot_url": "https://www.w3.org/TR/SVG2/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "svg"
-      ]
-    },
-    "title": "SVG 2",
-    "version": "2",
-    "vshortname": "SVG2"
-  },
-  "WEBGL_blend_equation_advanced_coherent": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
-    "delta": false,
-    "description": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification",
-    "shortname": "WEBGL_blend_equation_advanced_coherent",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft",
-    "version": "1",
-    "vshortname": "WEBGL_blend_equation_advanced_coherent"
-  },
-  "WEBGL_color_buffer_float": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-    "delta": false,
-    "description": "WebGL WEBGL_color_buffer_float Extension Specification",
-    "shortname": "WEBGL_color_buffer_float",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_color_buffer_float Extension",
-    "version": "1",
-    "vshortname": "WEBGL_color_buffer_float"
-  },
-  "WEBGL_compressed_texture_astc": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-    "delta": false,
-    "description": "WebGL WEBGL_compressed_texture_astc Extension Specification",
-    "shortname": "WEBGL_compressed_texture_astc",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_compressed_texture_astc Extension",
-    "version": "1",
-    "vshortname": "WEBGL_compressed_texture_astc"
-  },
-  "WEBGL_compressed_texture_etc": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
-    "delta": false,
-    "description": "WebGL WEBGL_compressed_texture_etc Extension Specification",
-    "shortname": "WEBGL_compressed_texture_etc",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_compressed_texture_etc Extension",
-    "version": "1",
-    "vshortname": "WEBGL_compressed_texture_etc"
-  },
-  "WEBGL_compressed_texture_etc1": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-    "delta": false,
-    "description": "WebGL WEBGL_compressed_texture_etc1 Extension Specification",
-    "shortname": "WEBGL_compressed_texture_etc1",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_compressed_texture_etc1 Extension",
-    "version": "1",
-    "vshortname": "WEBGL_compressed_texture_etc1"
-  },
-  "WEBGL_compressed_texture_pvrtc": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-    "delta": false,
-    "description": "WebGL WEBGL_compressed_texture_pvrtc Extension Specification",
-    "shortname": "WEBGL_compressed_texture_pvrtc",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_compressed_texture_pvrtc Extension",
-    "version": "1",
-    "vshortname": "WEBGL_compressed_texture_pvrtc"
-  },
-  "WEBGL_compressed_texture_s3tc": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-    "delta": false,
-    "description": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification",
-    "shortname": "WEBGL_compressed_texture_s3tc",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "WEBGL_compressed_texture_s3tc"
-  },
-  "WEBGL_compressed_texture_s3tc_srgb": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
-    "delta": false,
-    "description": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification",
-    "shortname": "WEBGL_compressed_texture_s3tc_srgb",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension",
-    "version": "1",
-    "vshortname": "WEBGL_compressed_texture_s3tc_srgb"
-  },
-  "WEBGL_debug_renderer_info": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
-    "delta": false,
-    "description": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification",
-    "shortname": "WEBGL_debug_renderer_info",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "WEBGL_debug_renderer_info"
-  },
-  "WEBGL_debug_shaders": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
-    "delta": false,
-    "description": "WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification",
-    "shortname": "WEBGL_debug_shaders",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_debug_shaders Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "WEBGL_debug_shaders"
-  },
-  "WEBGL_depth_texture": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
-    "delta": false,
-    "description": "WebGL WEBGL_depth_texture Khronos Ratified Extension Specification",
-    "shortname": "WEBGL_depth_texture",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_depth_texture Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "WEBGL_depth_texture"
-  },
-  "WEBGL_draw_buffers": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
-    "delta": false,
-    "description": "WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification",
-    "shortname": "WEBGL_draw_buffers",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_draw_buffers Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "WEBGL_draw_buffers"
-  },
-  "WEBGL_draw_instanced_base_vertex_base_instance": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
-    "delta": false,
-    "description": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification",
-    "shortname": "WEBGL_draw_instanced_base_vertex_base_instance",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft",
-    "version": "1",
-    "vshortname": "WEBGL_draw_instanced_base_vertex_base_instance"
-  },
-  "WEBGL_lose_context": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
-    "delta": false,
-    "description": "WebGL WEBGL_lose_context Khronos Ratified Extension Specification",
-    "shortname": "WEBGL_lose_context",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_lose_context Khronos Ratified Extension",
-    "version": "1",
-    "vshortname": "WEBGL_lose_context"
-  },
-  "WEBGL_multi_draw": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
-    "delta": false,
-    "description": "WebGL WEBGL_multi_draw Extension Specification",
-    "shortname": "WEBGL_multi_draw",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_multi_draw Extension",
-    "version": "1",
-    "vshortname": "WEBGL_multi_draw"
-  },
-  "WEBGL_multi_draw_instanced_base_vertex_base_instance": {
-    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
-    "delta": false,
-    "description": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification",
-    "shortname": "WEBGL_multi_draw_instanced_base_vertex_base_instance",
-    "snapshot_url": null,
-    "tests": {
-      "repository": "https://github.com/KhronosGroup/WebGL",
-      "testPaths": [
-        "conformance-suites"
-      ]
-    },
-    "title": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft",
-    "version": "1",
-    "vshortname": "WEBGL_multi_draw_instanced_base_vertex_base_instance"
-  },
-  "WGSL": {
-    "current_url": "https://gpuweb.github.io/gpuweb/wgsl/",
-    "delta": false,
-    "description": "WebGPU Shading Language",
-    "shortname": "WGSL",
-    "snapshot_url": "https://www.w3.org/TR/WGSL/",
-    "tests": {},
-    "title": "WebGPU Shading Language",
-    "version": "1",
-    "vshortname": "WGSL"
-  },
-  "WOFF2": {
-    "current_url": "https://w3c.github.io/woff/woff2/",
-    "delta": false,
-    "description": "WOFF File Format 2.0",
-    "shortname": "WOFF",
-    "snapshot_url": "https://www.w3.org/TR/WOFF2/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "css/WOFF2"
-      ]
-    },
-    "title": "WOFF 2.0",
-    "version": "2",
-    "vshortname": "WOFF2"
-  },
-  "WebCryptoAPI": {
-    "current_url": "https://w3c.github.io/webcrypto/",
-    "delta": false,
-    "description": "Web Cryptography API",
-    "shortname": "WebCryptoAPI",
-    "snapshot_url": "https://www.w3.org/TR/WebCryptoAPI/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "WebCryptoAPI"
-      ]
-    },
-    "title": "Web Cryptography API",
-    "version": "1",
-    "vshortname": "WebCryptoAPI"
-  },
-  "WebIDL-1": {
-    "current_url": "https://heycam.github.io/webidl/",
-    "delta": false,
-    "description": "WebIDL Level 1",
-    "shortname": "WebIDL",
-    "snapshot_url": "https://www.w3.org/TR/WebIDL-1/",
-    "tests": {
-      "repository": "https://github.com/web-platform-tests/wpt",
-      "testPaths": [
-        "WebIDL"
-      ]
-    },
-    "title": "WebIDL 1",
-    "version": "1",
-    "vshortname": "WebIDL-1"
-  },
   "accelerometer": {
     "current_url": "https://w3c.github.io/accelerometer/",
     "delta": false,
@@ -935,6 +62,22 @@
     "title": "WebXR Anchors",
     "version": "1",
     "vshortname": "anchors"
+  },
+  "angle_instanced_arrays": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
+    "delta": false,
+    "description": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification",
+    "shortname": "angle_instanced_arrays",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "angle_instanced_arrays"
   },
   "appmanifest": {
     "current_url": "https://w3c.github.io/manifest/",
@@ -1235,11 +378,11 @@
     "version": "1",
     "vshortname": "content-index"
   },
-  "contentEditable": {
+  "contenteditable": {
     "current_url": "https://w3c.github.io/contentEditable/",
     "delta": false,
     "description": "ContentEditable",
-    "shortname": "contentEditable",
+    "shortname": "contenteditable",
     "snapshot_url": null,
     "tests": {
       "repository": "https://github.com/web-platform-tests/wpt",
@@ -1249,7 +392,7 @@
     },
     "title": "ContentEditable",
     "version": "1",
-    "vshortname": "contentEditable"
+    "vshortname": "contenteditable"
   },
   "cookie-store": {
     "current_url": "https://wicg.github.io/cookie-store/",
@@ -1325,6 +468,25 @@
     "title": "Content Security Policy: Embedded Enforcement",
     "version": "1",
     "vshortname": "csp-embedded-enforcement"
+  },
+  "csp3": {
+    "current_url": "https://w3c.github.io/webappsec-csp/",
+    "delta": false,
+    "description": "Content Security Policy Level 3",
+    "shortname": "csp",
+    "snapshot_url": "https://www.w3.org/TR/CSP3/",
+    "tests": {
+      "excludePaths": [
+        "content-security-policy/embedded-enforcement"
+      ],
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "content-security-policy"
+      ]
+    },
+    "title": "Content Security Policy 3",
+    "version": "3",
+    "vshortname": "csp3"
   },
   "css-align-3": {
     "current_url": "https://drafts.csswg.org/css-align/",
@@ -2774,6 +1936,38 @@
     "version": "4",
     "vshortname": "css-writing-modes-4"
   },
+  "css21": {
+    "current_url": "https://drafts.csswg.org/css2/",
+    "delta": false,
+    "description": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+    "shortname": "css",
+    "snapshot_url": "https://www.w3.org/TR/CSS21/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "css/CSS2"
+      ]
+    },
+    "title": "CSS 2.1",
+    "version": "2.1",
+    "vshortname": "css21"
+  },
+  "css22": {
+    "current_url": "https://drafts.csswg.org/css2/",
+    "delta": false,
+    "description": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+    "shortname": "css",
+    "snapshot_url": "https://www.w3.org/TR/CSS22/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "css/CSS2"
+      ]
+    },
+    "title": "CSS 2.2",
+    "version": "2.2",
+    "vshortname": "css22"
+  },
   "css3-exclusions": {
     "current_url": "https://drafts.csswg.org/css-exclusions/",
     "delta": false,
@@ -2952,6 +2146,22 @@
     "version": "1",
     "vshortname": "dom-overlays"
   },
+  "dom-parsing": {
+    "current_url": "https://w3c.github.io/DOM-Parsing/",
+    "delta": false,
+    "description": "DOM Parsing and Serialization",
+    "shortname": "dom-parsing",
+    "snapshot_url": "https://www.w3.org/TR/DOM-Parsing/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "domparsing"
+      ]
+    },
+    "title": "DOM Parsing and Serialization",
+    "version": "1",
+    "vshortname": "dom-parsing"
+  },
   "ecma-402": {
     "current_url": "https://tc39.es/ecma402/",
     "delta": false,
@@ -3067,6 +2277,230 @@
     "version": "1",
     "vshortname": "event-timing"
   },
+  "ext_blend_minmax": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
+    "delta": false,
+    "description": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
+    "shortname": "ext_blend_minmax",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_blend_minmax Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "ext_blend_minmax"
+  },
+  "ext_clip_cull_distance": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
+    "delta": false,
+    "description": "WebGL EXT_clip_cull_distance Extension Draft Specification",
+    "shortname": "ext_clip_cull_distance",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_clip_cull_distance Extension Draft",
+    "version": "1",
+    "vshortname": "ext_clip_cull_distance"
+  },
+  "ext_color_buffer_float": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
+    "delta": false,
+    "description": "WebGL EXT_color_buffer_float Extension Specification",
+    "shortname": "ext_color_buffer_float",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_color_buffer_float Extension",
+    "version": "1",
+    "vshortname": "ext_color_buffer_float"
+  },
+  "ext_color_buffer_half_float": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
+    "delta": false,
+    "description": "WebGL EXT_color_buffer_half_float Extension Specification",
+    "shortname": "ext_color_buffer_half_float",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_color_buffer_half_float Extension",
+    "version": "1",
+    "vshortname": "ext_color_buffer_half_float"
+  },
+  "ext_disjoint_timer_query": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
+    "delta": false,
+    "description": "WebGL EXT_disjoint_timer_query Extension Specification",
+    "shortname": "ext_disjoint_timer_query",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_disjoint_timer_query Extension",
+    "version": "1",
+    "vshortname": "ext_disjoint_timer_query"
+  },
+  "ext_disjoint_timer_query_webgl2": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
+    "delta": false,
+    "description": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
+    "shortname": "ext_disjoint_timer_query_webgl2",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension",
+    "version": "1",
+    "vshortname": "ext_disjoint_timer_query_webgl2"
+  },
+  "ext_float_blend": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
+    "delta": false,
+    "description": "WebGL EXT_float_blend Extension Specification",
+    "shortname": "ext_float_blend",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_float_blend Extension",
+    "version": "1",
+    "vshortname": "ext_float_blend"
+  },
+  "ext_frag_depth": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
+    "delta": false,
+    "description": "WebGL EXT_frag_depth Khronos Ratified Extension Specification",
+    "shortname": "ext_frag_depth",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_frag_depth Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "ext_frag_depth"
+  },
+  "ext_shader_texture_lod": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
+    "delta": false,
+    "description": "WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification",
+    "shortname": "ext_shader_texture_lod",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_shader_texture_lod Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "ext_shader_texture_lod"
+  },
+  "ext_srgb": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
+    "delta": false,
+    "description": "WebGL EXT_sRGB Extension Specification",
+    "shortname": "ext_srgb",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_sRGB Extension",
+    "version": "1",
+    "vshortname": "ext_srgb"
+  },
+  "ext_texture_compression_bptc": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
+    "delta": false,
+    "description": "WebGL EXT_texture_compression_bptc Extension Specification",
+    "shortname": "ext_texture_compression_bptc",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_texture_compression_bptc Extension",
+    "version": "1",
+    "vshortname": "ext_texture_compression_bptc"
+  },
+  "ext_texture_compression_rgtc": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
+    "delta": false,
+    "description": "WebGL EXT_texture_compression_rgtc Extension Specification",
+    "shortname": "ext_texture_compression_rgtc",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_texture_compression_rgtc Extension",
+    "version": "1",
+    "vshortname": "ext_texture_compression_rgtc"
+  },
+  "ext_texture_filter_anisotropic": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
+    "delta": false,
+    "description": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification",
+    "shortname": "ext_texture_filter_anisotropic",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "ext_texture_filter_anisotropic"
+  },
+  "ext_texture_norm16": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
+    "delta": false,
+    "description": "WebGL EXT_texture_norm16 Extension Specification",
+    "shortname": "ext_texture_norm16",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL EXT_texture_norm16 Extension",
+    "version": "1",
+    "vshortname": "ext_texture_norm16"
+  },
   "fetch": {
     "current_url": "https://fetch.spec.whatwg.org/",
     "delta": false,
@@ -3119,6 +2553,22 @@
     "title": "File System Access",
     "version": "1",
     "vshortname": "file-system-access"
+  },
+  "fileapi": {
+    "current_url": "https://w3c.github.io/FileAPI/",
+    "delta": false,
+    "description": "File API",
+    "shortname": "fileapi",
+    "snapshot_url": "https://www.w3.org/TR/FileAPI/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "FileAPI"
+      ]
+    },
+    "title": "File API",
+    "version": "1",
+    "vshortname": "fileapi"
   },
   "fill-stroke-3": {
     "current_url": "https://drafts.fxtf.org/fill-stroke/",
@@ -3260,11 +2710,11 @@
     "version": "1",
     "vshortname": "generic-sensor"
   },
-  "geolocation-API": {
+  "geolocation-api": {
     "current_url": "https://w3c.github.io/geolocation-api/",
     "delta": false,
     "description": "Geolocation API Specification 2nd Edition",
-    "shortname": "geolocation-API",
+    "shortname": "geolocation-api",
     "snapshot_url": "https://www.w3.org/TR/geolocation-API/",
     "tests": {
       "repository": "https://github.com/web-platform-tests/wpt",
@@ -3274,7 +2724,7 @@
     },
     "title": "Geolocation API Specification 2nd Edition",
     "version": "1",
-    "vshortname": "geolocation-API"
+    "vshortname": "geolocation-api"
   },
   "geolocation-sensor": {
     "current_url": "https://w3c.github.io/geolocation-sensor/",
@@ -3525,6 +2975,22 @@
     "version": "1",
     "vshortname": "import-maps"
   },
+  "indexeddb-3": {
+    "current_url": "https://w3c.github.io/IndexedDB/",
+    "delta": false,
+    "description": "Indexed Database API 3.0",
+    "shortname": "indexeddb",
+    "snapshot_url": "https://www.w3.org/TR/IndexedDB-3/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "IndexedDB"
+      ]
+    },
+    "title": "Indexed DB 3.0",
+    "version": "3",
+    "vshortname": "indexeddb-3"
+  },
   "infra": {
     "current_url": "https://infra.spec.whatwg.org/",
     "delta": false,
@@ -3663,6 +3129,22 @@
     "title": "Keyboard Map",
     "version": "1",
     "vshortname": "keyboard-map"
+  },
+  "khr_parallel_shader_compile": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
+    "delta": false,
+    "description": "WebGL KHR_parallel_shader_compile Extension Specification",
+    "shortname": "khr_parallel_shader_compile",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL KHR_parallel_shader_compile Extension",
+    "version": "1",
+    "vshortname": "khr_parallel_shader_compile"
   },
   "largest-contentful-paint": {
     "current_url": "https://wicg.github.io/largest-contentful-paint/",
@@ -4098,6 +3580,150 @@
     "version": "1",
     "vshortname": "notifications"
   },
+  "oes_draw_buffers_indexed": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
+    "delta": false,
+    "description": "WebGL OES_draw_buffers_indexed Extension Draft Specification",
+    "shortname": "oes_draw_buffers_indexed",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_draw_buffers_indexed Extension Draft",
+    "version": "1",
+    "vshortname": "oes_draw_buffers_indexed"
+  },
+  "oes_element_index_uint": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
+    "delta": false,
+    "description": "WebGL OES_element_index_uint Khronos Ratified Extension Specification",
+    "shortname": "oes_element_index_uint",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_element_index_uint Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "oes_element_index_uint"
+  },
+  "oes_fbo_render_mipmap": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
+    "delta": false,
+    "description": "WebGL OES_fbo_render_mipmap Extension Specification",
+    "shortname": "oes_fbo_render_mipmap",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_fbo_render_mipmap Extension",
+    "version": "1",
+    "vshortname": "oes_fbo_render_mipmap"
+  },
+  "oes_standard_derivatives": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
+    "delta": false,
+    "description": "WebGL OES_standard_derivatives Khronos Ratified Extension Specification",
+    "shortname": "oes_standard_derivatives",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_standard_derivatives Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "oes_standard_derivatives"
+  },
+  "oes_texture_float": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
+    "delta": false,
+    "description": "WebGL OES_texture_float Khronos Ratified Extension Specification",
+    "shortname": "oes_texture_float",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_texture_float Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "oes_texture_float"
+  },
+  "oes_texture_float_linear": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
+    "delta": false,
+    "description": "WebGL OES_texture_float_linear Khronos Ratified Extension Specification",
+    "shortname": "oes_texture_float_linear",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_texture_float_linear Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "oes_texture_float_linear"
+  },
+  "oes_texture_half_float": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
+    "delta": false,
+    "description": "WebGL OES_texture_half_float Khronos Ratified Extension Specification",
+    "shortname": "oes_texture_half_float",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_texture_half_float Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "oes_texture_half_float"
+  },
+  "oes_texture_half_float_linear": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
+    "delta": false,
+    "description": "WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification",
+    "shortname": "oes_texture_half_float_linear",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_texture_half_float_linear Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "oes_texture_half_float_linear"
+  },
+  "oes_vertex_array_object": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
+    "delta": false,
+    "description": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
+    "shortname": "oes_vertex_array_object",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OES_vertex_array_object Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "oes_vertex_array_object"
+  },
   "openscreenprotocol": {
     "current_url": "https://w3c.github.io/openscreenprotocol/",
     "delta": false,
@@ -4167,6 +3793,22 @@
     "title": "overscroll and scrollend events",
     "version": "1",
     "vshortname": "overscroll-scrollend-events"
+  },
+  "ovr_multiview2": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
+    "delta": false,
+    "description": "WebGL OVR_multiview2 Extension Specification",
+    "shortname": "ovr_multiview2",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL OVR_multiview2 Extension",
+    "version": "1",
+    "vshortname": "ovr_multiview2"
   },
   "page-lifecycle": {
     "current_url": "https://wicg.github.io/page-lifecycle/",
@@ -4971,6 +4613,22 @@
     "version": "1",
     "vshortname": "speech-api"
   },
+  "sri": {
+    "current_url": "https://w3c.github.io/webappsec-subresource-integrity/",
+    "delta": false,
+    "description": "Subresource Integrity",
+    "shortname": "sri",
+    "snapshot_url": "https://www.w3.org/TR/SRI/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "subresource-integrity"
+      ]
+    },
+    "title": "SRI",
+    "version": "1",
+    "vshortname": "sri"
+  },
   "storage": {
     "current_url": "https://storage.spec.whatwg.org/",
     "delta": false,
@@ -5070,6 +4728,33 @@
     "title": "SVG Strokes",
     "version": "1",
     "vshortname": "svg-strokes"
+  },
+  "svg11": {
+    "current_url": "https://www.w3.org/TR/SVG11/",
+    "delta": false,
+    "description": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
+    "shortname": "svg",
+    "snapshot_url": "https://www.w3.org/TR/SVG11/",
+    "tests": {},
+    "title": "SVG",
+    "version": "1.1",
+    "vshortname": "svg11"
+  },
+  "svg2": {
+    "current_url": "https://svgwg.org/svg2-draft/",
+    "delta": false,
+    "description": "Scalable Vector Graphics (SVG) 2",
+    "shortname": "svg",
+    "snapshot_url": "https://www.w3.org/TR/SVG2/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "svg"
+      ]
+    },
+    "title": "SVG 2",
+    "version": "2",
+    "vshortname": "svg2"
   },
   "tc39-accessible-object-hasownproperty": {
     "current_url": "https://tc39.es/proposal-accessible-object-hasownproperty/",
@@ -5729,6 +5414,22 @@
     "version": "1",
     "vshortname": "webcodecs"
   },
+  "webcryptoapi": {
+    "current_url": "https://w3c.github.io/webcrypto/",
+    "delta": false,
+    "description": "Web Cryptography API",
+    "shortname": "webcryptoapi",
+    "snapshot_url": "https://www.w3.org/TR/WebCryptoAPI/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "WebCryptoAPI"
+      ]
+    },
+    "title": "Web Cryptography API",
+    "version": "1",
+    "vshortname": "webcryptoapi"
+  },
   "webdriver-bidi": {
     "current_url": "https://w3c.github.io/webdriver-bidi/",
     "delta": false,
@@ -5788,6 +5489,262 @@
     "version": "2",
     "vshortname": "webgl2"
   },
+  "webgl_blend_equation_advanced_coherent": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
+    "delta": false,
+    "description": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification",
+    "shortname": "webgl_blend_equation_advanced_coherent",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft",
+    "version": "1",
+    "vshortname": "webgl_blend_equation_advanced_coherent"
+  },
+  "webgl_color_buffer_float": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
+    "delta": false,
+    "description": "WebGL WEBGL_color_buffer_float Extension Specification",
+    "shortname": "webgl_color_buffer_float",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_color_buffer_float Extension",
+    "version": "1",
+    "vshortname": "webgl_color_buffer_float"
+  },
+  "webgl_compressed_texture_astc": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
+    "delta": false,
+    "description": "WebGL WEBGL_compressed_texture_astc Extension Specification",
+    "shortname": "webgl_compressed_texture_astc",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_compressed_texture_astc Extension",
+    "version": "1",
+    "vshortname": "webgl_compressed_texture_astc"
+  },
+  "webgl_compressed_texture_etc": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
+    "delta": false,
+    "description": "WebGL WEBGL_compressed_texture_etc Extension Specification",
+    "shortname": "webgl_compressed_texture_etc",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_compressed_texture_etc Extension",
+    "version": "1",
+    "vshortname": "webgl_compressed_texture_etc"
+  },
+  "webgl_compressed_texture_etc1": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
+    "delta": false,
+    "description": "WebGL WEBGL_compressed_texture_etc1 Extension Specification",
+    "shortname": "webgl_compressed_texture_etc1",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_compressed_texture_etc1 Extension",
+    "version": "1",
+    "vshortname": "webgl_compressed_texture_etc1"
+  },
+  "webgl_compressed_texture_pvrtc": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
+    "delta": false,
+    "description": "WebGL WEBGL_compressed_texture_pvrtc Extension Specification",
+    "shortname": "webgl_compressed_texture_pvrtc",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_compressed_texture_pvrtc Extension",
+    "version": "1",
+    "vshortname": "webgl_compressed_texture_pvrtc"
+  },
+  "webgl_compressed_texture_s3tc": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
+    "delta": false,
+    "description": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification",
+    "shortname": "webgl_compressed_texture_s3tc",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "webgl_compressed_texture_s3tc"
+  },
+  "webgl_compressed_texture_s3tc_srgb": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
+    "delta": false,
+    "description": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification",
+    "shortname": "webgl_compressed_texture_s3tc_srgb",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension",
+    "version": "1",
+    "vshortname": "webgl_compressed_texture_s3tc_srgb"
+  },
+  "webgl_debug_renderer_info": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
+    "delta": false,
+    "description": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification",
+    "shortname": "webgl_debug_renderer_info",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "webgl_debug_renderer_info"
+  },
+  "webgl_debug_shaders": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
+    "delta": false,
+    "description": "WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification",
+    "shortname": "webgl_debug_shaders",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_debug_shaders Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "webgl_debug_shaders"
+  },
+  "webgl_depth_texture": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
+    "delta": false,
+    "description": "WebGL WEBGL_depth_texture Khronos Ratified Extension Specification",
+    "shortname": "webgl_depth_texture",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_depth_texture Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "webgl_depth_texture"
+  },
+  "webgl_draw_buffers": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
+    "delta": false,
+    "description": "WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification",
+    "shortname": "webgl_draw_buffers",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_draw_buffers Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "webgl_draw_buffers"
+  },
+  "webgl_draw_instanced_base_vertex_base_instance": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
+    "delta": false,
+    "description": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification",
+    "shortname": "webgl_draw_instanced_base_vertex_base_instance",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft",
+    "version": "1",
+    "vshortname": "webgl_draw_instanced_base_vertex_base_instance"
+  },
+  "webgl_lose_context": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
+    "delta": false,
+    "description": "WebGL WEBGL_lose_context Khronos Ratified Extension Specification",
+    "shortname": "webgl_lose_context",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_lose_context Khronos Ratified Extension",
+    "version": "1",
+    "vshortname": "webgl_lose_context"
+  },
+  "webgl_multi_draw": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
+    "delta": false,
+    "description": "WebGL WEBGL_multi_draw Extension Specification",
+    "shortname": "webgl_multi_draw",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_multi_draw Extension",
+    "version": "1",
+    "vshortname": "webgl_multi_draw"
+  },
+  "webgl_multi_draw_instanced_base_vertex_base_instance": {
+    "current_url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
+    "delta": false,
+    "description": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification",
+    "shortname": "webgl_multi_draw_instanced_base_vertex_base_instance",
+    "snapshot_url": null,
+    "tests": {
+      "repository": "https://github.com/KhronosGroup/WebGL",
+      "testPaths": [
+        "conformance-suites"
+      ]
+    },
+    "title": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft",
+    "version": "1",
+    "vshortname": "webgl_multi_draw_instanced_base_vertex_base_instance"
+  },
   "webgpu": {
     "current_url": "https://gpuweb.github.io/gpuweb/",
     "delta": false,
@@ -5819,6 +5776,22 @@
     "title": "WebHID API",
     "version": "1",
     "vshortname": "webhid"
+  },
+  "webidl-1": {
+    "current_url": "https://heycam.github.io/webidl/",
+    "delta": false,
+    "description": "WebIDL Level 1",
+    "shortname": "webidl",
+    "snapshot_url": "https://www.w3.org/TR/WebIDL-1/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "WebIDL"
+      ]
+    },
+    "title": "WebIDL 1",
+    "version": "1",
+    "vshortname": "webidl-1"
   },
   "webmidi": {
     "current_url": "https://webaudio.github.io/web-midi-api/",
@@ -6095,6 +6068,33 @@
     "title": "WebXR Layers API 1",
     "version": "1",
     "vshortname": "webxrlayers-1"
+  },
+  "wgsl": {
+    "current_url": "https://gpuweb.github.io/gpuweb/wgsl/",
+    "delta": false,
+    "description": "WebGPU Shading Language",
+    "shortname": "wgsl",
+    "snapshot_url": "https://www.w3.org/TR/WGSL/",
+    "tests": {},
+    "title": "WebGPU Shading Language",
+    "version": "1",
+    "vshortname": "wgsl"
+  },
+  "woff2": {
+    "current_url": "https://w3c.github.io/woff/woff2/",
+    "delta": false,
+    "description": "WOFF File Format 2.0",
+    "shortname": "woff",
+    "snapshot_url": "https://www.w3.org/TR/WOFF2/",
+    "tests": {
+      "repository": "https://github.com/web-platform-tests/wpt",
+      "testPaths": [
+        "css/WOFF2"
+      ]
+    },
+    "title": "WOFF 2.0",
+    "version": "2",
+    "vshortname": "woff2"
   },
   "xhr": {
     "current_url": "https://xhr.spec.whatwg.org/",

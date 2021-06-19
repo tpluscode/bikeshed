@@ -873,8 +873,8 @@ https://www.w3.org/TR/css-counter-styles-3/#dice
 -
 dictionary
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-dictionary
@@ -883,8 +883,8 @@ https://heycam.github.io/webidl/#dfn-dictionary
 -
 dictionary
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-dictionary
@@ -893,8 +893,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-dictionary
 -
 dictionary constructor
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-dictionary-constructor
@@ -903,8 +903,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-dictionary-constructor
 -
 dictionary members
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-dictionary-member
@@ -913,8 +913,8 @@ https://heycam.github.io/webidl/#dfn-dictionary-member
 -
 dictionary members
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-dictionary-member
@@ -923,8 +923,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-dictionary-member
 -
 dictionary types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-dictionary
@@ -1063,8 +1063,8 @@ feDiffuseLighting
 -
 digest
 dfn
-SRI
-SRI
+sri
+sri
 1
 current
 https://w3c.github.io/webappsec-subresource-integrity/#digest
@@ -1073,8 +1073,8 @@ https://w3c.github.io/webappsec-subresource-integrity/#digest
 -
 digest
 dfn
-SRI
-SRI
+sri
+sri
 1
 snapshot
 https://www.w3.org/TR/SRI/#dfn-digest
@@ -1083,8 +1083,8 @@ https://www.w3.org/TR/SRI/#dfn-digest
 -
 digest
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-digest
@@ -1093,8 +1093,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-digest
 -
 digest()
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-digest
@@ -1104,8 +1104,8 @@ SubtleCrypto
 -
 digest(algorithm, data)
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-digest
@@ -1786,8 +1786,8 @@ https://www.w3.org/TR/css-writing-modes-4/#propdef-direction
 -
 direction
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-direction
@@ -1796,8 +1796,8 @@ https://drafts.csswg.org/css2/#propdef-direction
 -
 direction
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-direction
@@ -1806,8 +1806,8 @@ https://drafts.csswg.org/css2/#propdef-direction
 -
 direction
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-direction
@@ -1816,8 +1816,8 @@ https://www.w3.org/TR/CSS22/visuren.html#propdef-direction
 -
 direction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#cursor-direction
@@ -1827,8 +1827,8 @@ cursor
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-opencursor-query-direction-direction
@@ -1840,8 +1840,8 @@ IDBObjectStore/openCursor()
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbobjectstore-openkeycursor-query-direction-direction
@@ -1853,8 +1853,8 @@ IDBObjectStore/openKeyCursor()
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-opencursor-query-direction-direction
@@ -1866,8 +1866,8 @@ IDBIndex/openCursor()
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbindex-openkeycursor-query-direction-direction
@@ -1879,8 +1879,8 @@ IDBIndex/openKeyCursor()
 -
 direction
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursor-direction
@@ -1890,8 +1890,8 @@ IDBCursor
 -
 direction
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#cursor-direction
@@ -1901,8 +1901,8 @@ cursor
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-opencursor-query-direction-direction
@@ -1914,8 +1914,8 @@ IDBObjectStore/openCursor()
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-openkeycursor-query-direction-direction
@@ -1927,8 +1927,8 @@ IDBObjectStore/openKeyCursor()
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-opencursor-query-direction-direction
@@ -1940,8 +1940,8 @@ IDBIndex/openCursor()
 -
 direction
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-openkeycursor-query-direction-direction
@@ -1953,8 +1953,8 @@ IDBIndex/openKeyCursor()
 -
 direction
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-direction
@@ -2072,8 +2072,8 @@ RTCRtpTransceiver
 -
 direction at the end of a path segment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#TermPathSegmentEndDirection
@@ -2082,8 +2082,8 @@ https://svgwg.org/svg2-draft/paths.html#TermPathSegmentEndDirection
 -
 direction at the end of a path segment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#TermPathSegmentEndDirection
@@ -2092,8 +2092,8 @@ https://www.w3.org/TR/SVG2/paths.html#TermPathSegmentEndDirection
 -
 direction at the start of a path segment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#TermPathSegmentStartDirection
@@ -2102,8 +2102,8 @@ https://svgwg.org/svg2-draft/paths.html#TermPathSegmentStartDirection
 -
 direction at the start of a path segment
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#TermPathSegmentStartDirection
@@ -2112,8 +2112,8 @@ https://www.w3.org/TR/SVG2/paths.html#TermPathSegmentStartDirection
 -
 direction of a path
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/paths.html#TermPathDirection
@@ -2122,8 +2122,8 @@ https://svgwg.org/svg2-draft/paths.html#TermPathDirection
 -
 direction of a path
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/paths.html#TermPathDirection
@@ -2282,8 +2282,8 @@ https://www.w3.org/TR/selection-api/#dfn-directionless
 -
 directive
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#directive
@@ -2292,8 +2292,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#directive
 -
 directive
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#directive
@@ -2352,8 +2352,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#csp-directive-set
 -
 directive set
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#policy-directive-set
@@ -2363,8 +2363,8 @@ policy
 -
 directive set
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#policy-directive-set
@@ -2374,8 +2374,8 @@ policy
 -
 directive-name
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-directive-name
@@ -2384,8 +2384,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-directive-name
 -
 directive-name
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-directive-name
@@ -2394,8 +2394,8 @@ https://www.w3.org/TR/CSP3/#grammardef-directive-name
 -
 directive-value
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-directive-value
@@ -2404,8 +2404,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-directive-value
 -
 directive-value
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-directive-value
@@ -2414,8 +2414,8 @@ https://www.w3.org/TR/CSP3/#grammardef-directive-value
 -
 directives
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directives
@@ -2424,8 +2424,8 @@ https://w3c.github.io/webappsec-csp/#directives
 -
 directives
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directives
@@ -3162,8 +3162,8 @@ https://www.w3.org/TR/css-counter-styles-3/#disc
 -
 disc
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#value-def-disc
@@ -3173,8 +3173,8 @@ list-style-type
 -
 disc
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#value-def-disc
@@ -4569,8 +4569,8 @@ https://www.w3.org/TR/webdriver2/#dfn-dispatch-actions-for-a-string
 -
 dispatch command
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#dispatch-command
@@ -4579,8 +4579,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#dispatch-command
 -
 dispatch command
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#dispatch-command
@@ -4620,8 +4620,8 @@ https://wicg.github.io/event-timing/#dispatch-pending-event-timing-entries
 -
 dispatch size
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#dispatch-size
@@ -4630,8 +4630,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#dispatch-size
 -
 dispatch size
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#dispatch-size
@@ -4985,8 +4985,8 @@ https://www.w3.org/TR/css-speech-1/#display-def
 -
 display
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-display
@@ -4995,8 +4995,8 @@ https://drafts.csswg.org/css2/#propdef-display
 -
 display
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-display
@@ -5005,8 +5005,8 @@ https://drafts.csswg.org/css2/#propdef-display
 -
 display
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/visuren.html#propdef-display
@@ -5658,8 +5658,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#csp-disposition
 -
 disposition
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#policy-disposition
@@ -5669,8 +5669,8 @@ policy
 -
 disposition
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#violation-disposition
@@ -5680,8 +5680,8 @@ violation
 -
 disposition
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-cspviolationreportbody-disposition
@@ -5691,8 +5691,8 @@ CSPViolationReportBody
 -
 disposition
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-disposition
@@ -5702,8 +5702,8 @@ SecurityPolicyViolationEvent
 -
 disposition
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-disposition
@@ -5713,8 +5713,8 @@ SecurityPolicyViolationEventInit
 -
 disposition
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#policy-disposition
@@ -5724,8 +5724,8 @@ policy
 -
 disposition
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#violation-disposition
@@ -5735,8 +5735,8 @@ violation
 -
 disposition
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-disposition
@@ -5746,8 +5746,8 @@ CSPViolationReportBody
 -
 disposition
 attribute
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-disposition
@@ -5757,8 +5757,8 @@ SecurityPolicyViolationEvent
 -
 disposition
 dict-member
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-disposition
@@ -6004,8 +6004,8 @@ mediakeysystemconfiguration
 -
 distinguishable
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-distinguishable
@@ -6014,8 +6014,8 @@ https://heycam.github.io/webidl/#dfn-distinguishable
 -
 distinguishable
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-distinguishable
@@ -6024,8 +6024,8 @@ https://www.w3.org/TR/WebIDL-1/#dfn-distinguishable
 -
 distinguishing argument index
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-distinguishing-argument-index
@@ -6034,8 +6034,8 @@ https://heycam.github.io/webidl/#dfn-distinguishing-argument-index
 -
 distinguishing argument index
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-distinguishing-argument-index

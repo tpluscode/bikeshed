@@ -77,8 +77,8 @@ GPUMapMode
 -
 WRONG_DOCUMENT_ERR
 const
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dom-domexception-wrong_document_err
@@ -532,8 +532,8 @@ https://wicg.github.io/file-system-access/#dictdef-writeparams
 -
 WrongDocumentError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#wrongdocumenterror
@@ -681,8 +681,8 @@ cursor
 -
 w-resize
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-w-resize
@@ -692,8 +692,8 @@ cursor
 -
 w-resize
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-w-resize
@@ -986,8 +986,8 @@ https://www.w3.org/TR/css3-exclusions/#propdef-wrap-through
 -
 wrapKey
 enum-value
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-keyusage-wrapkey
@@ -997,8 +997,8 @@ KeyUsage
 -
 wrapKey()
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-wrapKey
@@ -1008,8 +1008,8 @@ SubtleCrypto
 -
 wrapKey(format, key, wrappingKey, wrapAlgorithm)
 method
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-wrapKey
@@ -1019,8 +1019,8 @@ SubtleCrypto
 -
 wrapkey
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-SubtleCrypto-method-wrapKey
@@ -1079,8 +1079,8 @@ https://www.w3.org/TR/css3-exclusions/#wrapping-area
 -
 wrapping area
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermWrappingArea
@@ -1109,8 +1109,8 @@ https://www.w3.org/TR/css3-exclusions/#wrapping-context
 -
 wrapping context
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermWrappingContext
@@ -1365,8 +1365,8 @@ AuthenticationExtensionsLargeBlobInputs
 -
 write
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#access-write
@@ -1376,8 +1376,8 @@ access
 -
 write
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#access-write
@@ -1418,8 +1418,8 @@ https://w3c.github.io/web-nfc/#dfn-write-a-message
 -
 write access
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#write-access
@@ -1428,8 +1428,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#write-access
 -
 write access
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#write-access
@@ -1628,8 +1628,8 @@ NDEFReader
 -
 write-only storage texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#write-only-storage-texture
@@ -1638,8 +1638,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#write-only-storage-texture
 -
 write-only storage texture
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#write-only-storage-texture
@@ -2120,8 +2120,8 @@ AuthenticationExtensionsLargeBlobOutputs
 -
 wrong_document_err
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dom-domexception-wrong_document_err
@@ -2130,8 +2130,8 @@ https://www.w3.org/TR/WebIDL-1/#dom-domexception-wrong_document_err
 -
 wrongdocumenterror
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#wrongdocumenterror

@@ -701,7 +701,7 @@ For readability they have not been repeated explicitly.</p>
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-copy-into">copy-into</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod">none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> [ [ &lt;custom-ident>  &lt;content-level>] [<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-comma" id="ref-for-comb-comma">,</a> &lt;custom-ident>  &lt;content-level>]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-zero-plus" id="ref-for-mult-zero-plus">*</a> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a>
+      <td class="prod">none <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one">|</a> [ [ &lt;custom-ident>  &lt;content-level>] [<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-comma" id="ref-for-comb-comma">,</a> &lt;custom-ident>  &lt;content-level>]<a data-link-type="grammar" href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-" id="ref-for-grammardef-">*</a> ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-opt" id="ref-for-mult-opt">?</a>
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td>none
@@ -751,7 +751,7 @@ For readability they have not been repeated explicitly.</p>
    </div>
    <h3 class="heading settled" data-level="1.2" id="flow-persist-heading"><span class="secno">1.2. </span><span class="content">Choosing among multiple values on a page</span><a class="self-link" href="#flow-persist-heading"></a></h3>
    <h4 class="heading settled" data-level="1.2.1" id="page-selector-pseudo-classes"><span class="secno">1.2.1. </span><span class="content">Page selector pseudo-classes</span><a class="self-link" href="#page-selector-pseudo-classes"></a></h4>
-   <p>By default, the content fragment name would be global, as the named flow is with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-regions-1/#propdef-flow-into" id="ref-for-propdef-flow-into">flow-into</a>. But if one of the following pseudo-classes are used on the subject of the selector, then the name is locally scoped to just the page the element is on.</p>
+   <p>By default, the content fragment name would be global, as the named flow is with <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-regions/#propdef-flow-into" id="ref-for-propdef-flow-into">flow-into</a>. But if one of the following pseudo-classes are used on the subject of the selector, then the name is locally scoped to just the page the element is on.</p>
    <dl>
     <dt><dfn class="css" data-dfn-type="selector" data-export id="selectordef-nth-of-page-n">:nth-of-page(n)<a class="self-link" href="#selectordef-nth-of-page-n"></a></dfn>
     <dd>The element is the nth matched element on the page.
@@ -1022,10 +1022,10 @@ span.reference::before {
    <li><a href="#selectordef-nth-of-page-n">:nth-of-page(n)</a><span>, in §1.2.1</span>
    <li><a href="#selectordef-start-of-page">:start-of-page</a><span>, in §1.2.1</span>
   </ul>
-  <aside class="dfn-panel" data-for="term-for-mult-zero-plus">
-   <a href="https://drafts.csswg.org/css-values-4/#mult-zero-plus">https://drafts.csswg.org/css-values-4/#mult-zero-plus</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-grammardef-">
+   <a href="https://w3c.github.io/webappsec-clear-site-data/#grammardef-">https://w3c.github.io/webappsec-clear-site-data/#grammardef-</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-mult-zero-plus">1.1. Copying a flow: the copy-into property</a>
+    <li><a href="#ref-for-grammardef-">1.1. Copying a flow: the copy-into property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-comb-comma">
@@ -1053,7 +1053,7 @@ span.reference::before {
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-flow-into">
-   <a href="https://drafts.csswg.org/css-regions-1/#propdef-flow-into">https://drafts.csswg.org/css-regions-1/#propdef-flow-into</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-regions/#propdef-flow-into">https://drafts.csswg.org/css-regions/#propdef-flow-into</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-flow-into">1.2.1. Page selector pseudo-classes</a>
    </ul>
@@ -1067,9 +1067,13 @@ span.reference::before {
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
+    <a data-link-type="biblio">[clear-site-data]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-grammardef-">*</span>
+    </ul>
+   <li>
     <a data-link-type="biblio">[css-values-4]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-mult-zero-plus">*</span>
      <li><span class="dfn-paneled" id="term-for-comb-comma">,</span>
      <li><span class="dfn-paneled" id="term-for-mult-opt">?</span>
      <li><span class="dfn-paneled" id="term-for-css-wide-keywords">css-wide keywords</span>
@@ -1089,6 +1093,8 @@ span.reference::before {
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-clear-site-data">[CLEAR-SITE-DATA]
+   <dd>Mike West. <a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a>. 30 November 2017. WD. URL: <a href="https://www.w3.org/TR/clear-site-data/">https://www.w3.org/TR/clear-site-data/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a>. 6 June 2019. CR. URL: <a href="https://www.w3.org/TR/css-values-3/">https://www.w3.org/TR/css-values-3/</a>
    <dt id="biblio-css-values-4">[CSS-VALUES-4]

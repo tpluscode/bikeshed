@@ -362,7 +362,7 @@
                     "version_added": "25"
                 },
                 "ie": {
-                    "version_added": "10"
+                    "version_added": true
                 },
                 "nodejs": {
                     "version_added": null
@@ -420,7 +420,7 @@
                     "version_added": "25"
                 },
                 "ie": {
-                    "version_added": "10"
+                    "version_added": true
                 },
                 "nodejs": {
                     "version_added": "8.5.0"
@@ -478,7 +478,7 @@
                     "version_added": "25"
                 },
                 "ie": {
-                    "version_added": "10"
+                    "version_added": true
                 },
                 "nodejs": {
                     "version_added": "8.5.0"
@@ -536,7 +536,7 @@
                     "version_added": "25"
                 },
                 "ie": {
-                    "version_added": "10"
+                    "version_added": true
                 },
                 "nodejs": {
                     "version_added": "8.5.0"
@@ -664,7 +664,7 @@
                     "version_added": "25"
                 },
                 "ie": {
-                    "version_added": "10"
+                    "version_added": true
                 },
                 "nodejs": {
                     "version_added": "8.5.0",
@@ -725,7 +725,7 @@
             "title": "PerformanceEntry"
         }
     ],
-    "dom-performanceobserver-constructor": [
+    "idl-def-performanceobservercallback": [
         {
             "engines": [
                 "blink",
@@ -899,64 +899,6 @@
                 }
             },
             "title": "PerformanceObserver.observe()"
-        }
-    ],
-    "supportedentrytypes-attribute": [
-        {
-            "engines": [
-                "blink",
-                "gecko",
-                "webkit"
-            ],
-            "filename": "api/PerformanceObserver.json",
-            "name": "supportedEntryTypes",
-            "slug": "API/PerformanceObserver/supportedEntryTypes",
-            "summary": "The supportedEntryTypes read-only property of the PerformanceObserver interface returns an array of the entryType values supported by the user agent.",
-            "support": {
-                "chrome": {
-                    "version_added": "73"
-                },
-                "chrome_android": {
-                    "version_added": "73"
-                },
-                "edge": {
-                    "version_added": false
-                },
-                "firefox": {
-                    "version_added": "68"
-                },
-                "firefox_android": {
-                    "version_added": "68"
-                },
-                "ie": {
-                    "version_added": false
-                },
-                "nodejs": {
-                    "version_added": "8.5.0"
-                },
-                "opera": {
-                    "version_added": true
-                },
-                "opera_android": {
-                    "version_added": true
-                },
-                "safari": {
-                    "version_added": "12.1"
-                },
-                "safari_ios": {
-                    "version_added": "12.2"
-                },
-                "samsunginternet_android": {
-                    "version_added": "11.0"
-                },
-                "webview_android": {
-                    "version_added": "73"
-                },
-                "edge_blink": {
-                    "version_added": "79"
-                }
-            },
-            "title": "PerformanceObserver.supportedEntryTypes"
         }
     ],
     "dom-performanceobserver-takerecords": [
@@ -1250,7 +1192,7 @@
             "title": "PerformanceObserverEntryList.getEntriesByType()"
         }
     ],
-    "performanceobserverentrylist-interface": [
+    "idl-def-performanceobserverentrylist": [
         {
             "engines": [
                 "blink",

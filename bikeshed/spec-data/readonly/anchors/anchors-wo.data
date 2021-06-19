@@ -422,8 +422,8 @@ https://www.w3.org/TR/css-text-3/#propdef-word-spacing
 -
 word-spacing
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-word-spacing
@@ -432,8 +432,8 @@ https://drafts.csswg.org/css2/#propdef-word-spacing
 -
 word-spacing
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-word-spacing
@@ -442,8 +442,8 @@ https://drafts.csswg.org/css2/#propdef-word-spacing
 -
 word-spacing
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/text.html#propdef-word-spacing
@@ -653,8 +653,8 @@ job
 -
 worker-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#worker-src
@@ -663,8 +663,8 @@ https://w3c.github.io/webappsec-csp/#worker-src
 -
 worker-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#worker-src
@@ -765,8 +765,8 @@ https://www.w3.org/TR/navigation-timing-2/#dom-PerformanceNavigationTiming-worke
 -
 workgroup
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-classes-workgroup
@@ -776,8 +776,8 @@ storage classes
 -
 workgroup
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#compute-shader-stage-workgroup
@@ -787,8 +787,8 @@ compute shader stage
 -
 workgroup
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-classes-workgroup
@@ -798,8 +798,8 @@ storage classes
 -
 workgroup
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#compute-shader-stage-workgroup
@@ -809,8 +809,8 @@ compute shader stage
 -
 workgroup grid
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#workgroup-grid
@@ -819,8 +819,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#workgroup-grid
 -
 workgroup grid
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#workgroup-grid
@@ -829,8 +829,8 @@ https://www.w3.org/TR/WGSL/#workgroup-grid
 -
 workgroup id
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#workgroup-id
@@ -839,8 +839,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#workgroup-id
 -
 workgroup id
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#workgroup-id
@@ -849,8 +849,8 @@ https://www.w3.org/TR/WGSL/#workgroup-id
 -
 workgroup_size
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#attribute-workgroup_size
@@ -860,8 +860,8 @@ attribute
 -
 workgroup_size
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#attribute-workgroup_size

@@ -101,8 +101,8 @@ https://webbluetoothcg.github.io/web-bluetooth/#br-edr-bonding-procedure
 -
 braille
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-media-braille
@@ -112,8 +112,8 @@ https://drafts.csswg.org/css2/#valdef-media-braille
 -
 braille
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-media-braille

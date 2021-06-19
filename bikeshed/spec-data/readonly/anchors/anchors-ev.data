@@ -10,8 +10,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#evalerror.prototype
 -
 EvalError
 exception
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#exceptiondef-evalerror
@@ -224,8 +224,8 @@ https://www.w3.org/TR/webdriver2/#dfn-evaluate
 -
 evaluate a key path on a value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#evaluate-a-key-path-on-a-value
@@ -234,8 +234,8 @@ https://w3c.github.io/IndexedDB/#evaluate-a-key-path-on-a-value
 -
 evaluate a key path on a value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#evaluate-a-key-path-on-a-value
@@ -842,8 +842,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#dom-event-constructor
 -
 event attribute
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/interact.html#TermEventAttribute
@@ -852,8 +852,8 @@ https://svgwg.org/svg2-draft/interact.html#TermEventAttribute
 -
 event attribute
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/interact.html#TermEventAttribute
@@ -1588,8 +1588,8 @@ ClipboardEvent/constructor(type)
 -
 eventInitDict
 argument
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-eventinitdict
@@ -1602,8 +1602,8 @@ SecurityPolicyViolationEvent/constructor(type)
 -
 eventInitDict
 argument
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-eventinitdict
@@ -1692,8 +1692,8 @@ MediaQueryListEvent/MediaQueryListEvent(type, eventInitDict)
 -
 eventInitDict
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-eventinitdict
@@ -1706,8 +1706,8 @@ IDBVersionChangeEvent/constructor(type)
 -
 eventInitDict
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-eventinitdict

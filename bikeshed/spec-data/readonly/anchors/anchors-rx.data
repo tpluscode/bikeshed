@@ -1,7 +1,7 @@
 rx
 property
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/geometry.html#RxProperty
@@ -10,8 +10,8 @@ https://svgwg.org/svg2-draft/geometry.html#RxProperty
 -
 rx
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#__svg__SVGRectElement__rx
@@ -21,8 +21,8 @@ SVGRectElement
 -
 rx
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/shapes.html#__svg__SVGEllipseElement__rx
@@ -32,8 +32,8 @@ SVGEllipseElement
 -
 rx
 property
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/geometry.html#RxProperty
@@ -42,8 +42,8 @@ https://www.w3.org/TR/SVG2/geometry.html#RxProperty
 -
 rx
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#__svg__SVGRectElement__rx
@@ -53,8 +53,8 @@ SVGRectElement
 -
 rx
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/shapes.html#__svg__SVGEllipseElement__rx

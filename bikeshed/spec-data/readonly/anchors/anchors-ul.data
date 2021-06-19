@@ -50,8 +50,8 @@ https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element
 -
 ulp
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#ulp
@@ -60,8 +60,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#ulp
 -
 ulp
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#ulp

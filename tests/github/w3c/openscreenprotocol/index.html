@@ -1168,11 +1168,11 @@ values:</p>
      <p>The selected presentation URL</p>
     <dt data-md>headers
     <dd data-md>
-     <p>headers that the receiver should use to fetch the presentation URL.  For example, <a href="https://www.w3.org/TR/presentation-api/#establishing-a-presentation-connection">section 6.6.1</a> of
+     <p>headers that the receiver should use to fetch the presentation URL.  For example, <span spec-section="#establishing-a-presentation-connection">section 6.6.1</span> of
 the Presentation API says that the Accept-Language header should be
 provided.</p>
    </dl>
-   <p>The presentation ID must follow the restrictions defined by <a href="https://www.w3.org/TR/presentation-api/#common-idioms">section 6.1</a> of the Presentation API, in that
+   <p>The presentation ID must follow the restrictions defined by <span spec-section="#common-idioms">section 6.1</span> of the Presentation API, in that
 it must consist of at least 16 ASCII characters.</p>
    <p>When the receiver receives the <a data-link-type="dfn">presentation-start-request</a>, it should send back a <a data-link-type="dfn">presentation-start-response</a> message after either the presentation URL has been
 fetched and loaded, or the receiver has failed to do so. If it has failed, it
@@ -1317,16 +1317,16 @@ An <a data-link-type="dfn" href="#open-screen-protocol-agent" id="ref-for-open-s
 The same OSP agent may be a <a data-link-type="dfn" href="https://w3c.github.io/presentation-api/#dfn-controlling-user-agent" id="ref-for-dfn-controlling-user-agent②">controlling user agent</a> and a <a data-link-type="dfn" href="https://w3c.github.io/presentation-api/#dfn-receiving-user-agent" id="ref-for-dfn-receiving-user-agent②">receiving user agent</a>.</p>
    <p class="note" role="note"><span>Note:</span> These roles are independent of which agent was the <a data-link-type="dfn" href="#advertising-agent" id="ref-for-advertising-agent④">advertising agent</a> or the <a data-link-type="dfn" href="#listening-agent" id="ref-for-listening-agent③">listening agent</a> during discovery and connection establishment.</p>
    <p>This is how the <a data-link-type="biblio" href="#biblio-presentation-api">Presentation API</a> uses the <a href="#presentation-protocol">§ 7 Presentation Protocol</a>:</p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#the-list-of-available-presentation-displays">section
-6.4.2</a> says "This list of presentation displays ... is populated based on an
+   <p>When <span spec-section="#the-list-of-available-presentation-displays">section
+6.4.2</span> says "This list of presentation displays ... is populated based on an
 implementation specific discovery mechanism", the <a data-link-type="dfn" href="#controller" id="ref-for-controller③">controller</a> may
 use the mDNS, QUIC, <a data-link-type="dfn">agent-info-request</a>, and <a data-link-type="dfn">presentation-url-availability-request</a> messages defined previously in this spec
 to discover receivers.</p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#the-list-of-available-presentation-displays">section
-6.4.2</a> says "To further save power, ... implementation specific discovery of
+   <p>When <span spec-section="#the-list-of-available-presentation-displays">section
+6.4.2</span> says "To further save power, ... implementation specific discovery of
 presentation displays can be resumed or suspended.", the agent may use the
 power saving mechanism defined in the previous section.</p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#starting-a-presentation-connection">section 6.3.4</a> says
+   <p>When <span spec-section="#starting-a-presentation-connection">section 6.3.4</span> says
 "Using an implementation specific mechanism, tell U to create a receiving
 browsing context with D, presentationUrl, and I as parameters.", U (the
 controller) may send a <a data-link-type="dfn">presentation-start-request</a> message to D
@@ -1335,28 +1335,28 @@ the selected presentation URL.</p>
    <p class="issue" id="issue-733afe74"><a class="self-link" href="#issue-733afe74"></a> Once the Presentation API has text about
 reconnecting via an implementation specific mechanism, quote that here and map
 it to a message. <a href="https://github.com/w3c/presentation-api/issues/471">&lt;https://github.com/w3c/presentation-api/issues/471></a></p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#sending-a-message-through-presentationconnection">section
-6.5.2</a> says "Using an implementation specific mechanism, transmit the contents
+   <p>When <span spec-section="#sending-a-message-through-presentationconnection">section
+6.5.2</span> says "Using an implementation specific mechanism, transmit the contents
 of messageOrData as the presentation message data and messageType as the
 presentation message type to the destination browsing context", the
 controller may send a <a data-link-type="dfn">presentation-connection-message</a> with
 messageOrData for the presentation message data.  Note that the messageType is
 embedded in the encoded CBOR type and does not need an additional value in the
 message.</p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#closing-a-presentationconnection">section 6.5.5</a> says
+   <p>When <span spec-section="#closing-a-presentationconnection">section 6.5.5</span> says
 "Start to signal to the destination browsing context the intention to close the
 corresponding PresentationConnection", the agent may send a <a data-link-type="dfn">presentation-connection-close-event</a> message to the other agent with the
 destination browsing context and a <a data-link-type="dfn">presentation-change-event</a> when required.</p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#terminating-a-presentation-in-a-controlling-browsing-context">section
-6.5.6</a> says "Send a termination request for the presentation to its receiving
+   <p>When <span spec-section="#terminating-a-presentation-in-a-controlling-browsing-context">section
+6.5.6</span> says "Send a termination request for the presentation to its receiving
 user agent using an implementation specific mechanism", the controller may send
 a <a data-link-type="dfn">presentation-termination-request</a> message to the receiver with a <code>reason</code> of <code>application-request</code>.</p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#monitoring-incoming-presentation-connections">section
-6.7.1</a> says "it MUST listen to and accept incoming connection requests from a
+   <p>When <span spec-section="#monitoring-incoming-presentation-connections">section
+6.7.1</span> says "it MUST listen to and accept incoming connection requests from a
 controlling browsing context using an implementation specific
 mechanism", the receiver must receive and process the <a data-link-type="dfn">presentation-connection-open-request</a>.</p>
-   <p>When <a href="https://www.w3.org/TR/presentation-api/#monitoring-incoming-presentation-connections">section
-6.7.1</a> says "Establish the connection between the controlling and receiving
+   <p>When <span spec-section="#monitoring-incoming-presentation-connections">section
+6.7.1</span> says "Establish the connection between the controlling and receiving
 browsing contexts using an implementation specific mechanism.", the receiver
 must send a <a data-link-type="dfn">presentation-connection-open-response</a> message and <a data-link-type="dfn">presentation-change-event</a> messages when required.</p>
    <h2 class="heading settled" data-level="8" id="remote-playback-protocol"><span class="secno">8. </span><span class="content">Remote Playback Protocol</span><a class="self-link" href="#remote-playback-protocol"></a></h2>
@@ -1379,8 +1379,8 @@ particular URL or set of URLs, the controller may send a <a data-link-type="dfn"
     <dt data-md>headers
     <dd data-md>
      <p>headers that the receiver should use to fetch the
-urls.  For example, <a href="https://www.w3.org/TR/remote-playback/#establishing-a-connection-with-a-remote-playback-device">section 6.2.4 of
-the Remote Playback API</a> says that the Accept-Language header should be
+urls.  For example, <span spec-section="#establishing-a-connection-with-a-remote-playback-device">section 6.2.4 of
+the Remote Playback API</span> says that the Accept-Language header should be
 provided.</p>
     <dt data-md>watch-duration
     <dd data-md>
@@ -1585,8 +1585,8 @@ controller with the following values:</p>
     <dd data-md>
      <p>The reason the remote playback was terminated.</p>
    </dl>
-   <p>As mentioned in <a href="https://www.w3.org/TR/remote-playback/#disconnecting-from-a-remote-playback-device">Remote Playback
-API section 6.2.7</a>, terminating the remote playback means the controller is no
+   <p>As mentioned in <span spec-section="#disconnecting-from-a-remote-playback-device">Remote Playback
+API section 6.2.7</span>, terminating the remote playback means the controller is no
 longer controlling the remote playback and does not necessarily stop media from
 rendering on the receiver.  Whether or not the receiver stops rendering media depends
 upon the implementation of the receiver.</p>
@@ -1939,23 +1939,23 @@ remoting.</p>
    <p class="note" role="note"><span>Note:</span> These roles are independent of which agent was the <a data-link-type="dfn" href="#advertising-agent" id="ref-for-advertising-agent⑤">advertising agent</a> or the <a data-link-type="dfn" href="#listening-agent" id="ref-for-listening-agent④">listening agent</a> during discovery and connection establishment.</p>
    <p>This is how the <a data-link-type="biblio" href="#biblio-remote-playback">Remote Playback API</a> uses the
 messages defined in <a href="#remote-playback-protocol">§ 8 Remote Playback Protocol</a>:</p>
-   <p>When <a href="https://www.w3.org/TR/remote-playback/#the-list-of-available-remote-playback-devices">section
-6.2.1.2</a> says "This list contains <a data-link-type="dfn" href="https://w3c.github.io/remote-playback/#dfn-remote-playback-devices" id="ref-for-dfn-remote-playback-devices③">remote playback devices</a> and is populated
-based on an implementation specific discovery mechanism" and <a href="https://www.w3.org/TR/remote-playback/#the-list-of-available-remote-playback-devices">section
-6.2.1.4</a> says "Retrieve available remote playback devices (using an
+   <p>When <span spec-section="#the-list-of-available-remote-playback-devices">section
+6.2.1.2</span> says "This list contains <a data-link-type="dfn" href="https://w3c.github.io/remote-playback/#dfn-remote-playback-devices" id="ref-for-dfn-remote-playback-devices③">remote playback devices</a> and is populated
+based on an implementation specific discovery mechanism" and <span spec-section="#the-list-of-available-remote-playback-devices">section
+6.2.1.4</span> says "Retrieve available remote playback devices (using an
 implementation specific mechanism)", the user agent may use the mDNS, QUIC, <a data-link-type="dfn">agent-info-request</a>, and <a data-link-type="dfn">remote-playback-availability-request</a> messages
 defined previously in this spec to discover <a data-link-type="dfn" href="#receiver" id="ref-for-receiver④">receivers</a>.  The <a data-link-type="dfn">remote-playback-availability-request</a> URLs must contain the <a data-link-type="dfn" href="https://w3c.github.io/remote-playback/#dfn-availability-sources-set" id="ref-for-dfn-availability-sources-set">availability
 sources set</a>.</p>
-   <p>When <a href="https://www.w3.org/TR/remote-playback/#establishing-a-connection-with-a-remote-playback-device">section
-6.2.4</a> says "Request connection of remote to device. The implementation of this
+   <p>When <span spec-section="#establishing-a-connection-with-a-remote-playback-device">section
+6.2.4</span> says "Request connection of remote to device. The implementation of this
 step is specific to the user agent." and "Synchronize the current media element
 state with the remote playback state", the controller may send the <a data-link-type="dfn">remote-playback-start-request</a> message to the receiver to start remote
 playback.  The <a data-link-type="dfn">remote-playback-start-request</a> URLs must contain the <a data-link-type="dfn" href="https://w3c.github.io/remote-playback/#dfn-remote-playback-source" id="ref-for-dfn-remote-playback-source">remote
 playback source</a>.  The current <a data-link-type="biblio" href="#biblio-remote-playback">Remote Playback API</a> only
 allows a single source, but the protocol allows for several and future versions
 of <a data-link-type="biblio" href="#biblio-remote-playback">Remote Playback API</a> may allow for several.</p>
-   <p>When <a href="https://www.w3.org/TR/remote-playback/#establishing-a-connection-with-a-remote-playback-device">section
-6.2.4</a> says "The mechanism that is used to connect the user agent with the
+   <p>When <span spec-section="#establishing-a-connection-with-a-remote-playback-device">section
+6.2.4</span> says "The mechanism that is used to connect the user agent with the
 remote playback device and play the remote playback source is an implementation
 choice of the user agent. The connection will likely have to provide a two-way
 messaging abstraction capable of carrying media commands to the remote playback
@@ -1963,8 +1963,8 @@ device and receiving media playback state in order to keep the media element
 state and remote playback state in sync", the controller may send <a data-link-type="dfn">remote-playback-modify-request</a> messages to the receiver to change the remote playback state
 based on changes to the local media element and receive <a data-link-type="dfn">remote-playback-modify-response</a> and <a data-link-type="dfn">remote-playback-state-event</a> messages to
 change the local media element based on changes to the remote playback state.</p>
-   <p>When <a href="https://www.w3.org/TR/remote-playback/#establishing-a-connection-with-a-remote-playback-device">section
-6.2.7</a> says "Request disconnection of remote from the device. The
+   <p>When <span spec-section="#establishing-a-connection-with-a-remote-playback-device">section
+6.2.7</span> says "Request disconnection of remote from the device. The
 implementation of this step is specific to the user agent," the controller may
 send the <a data-link-type="dfn">remote-playback-termination-request</a> message to the receiver.</p>
    <h2 class="heading settled" data-level="9" id="streaming-protocol"><span class="secno">9. </span><span class="content">Streaming Protocol</span><a class="self-link" href="#streaming-protocol"></a></h2>
@@ -2678,9 +2678,9 @@ preferred locales.</p>
    <h4 class="heading settled" data-level="12.2.2" id="cross-origin-state"><span class="secno">12.2.2. </span><span class="content">Cross Origin State Considerations</span><a class="self-link" href="#cross-origin-state"></a></h4>
    <p>Access to origin state across browsing sessions is possible through the
 Presentation API by reconnecting to a presentation that was started by a
-previous session. This scenario is addressed in <a href="https://www.w3.org/TR/presentation-api/#cross-origin-access">Presentation API §cross-origin-access</a>.</p>
+previous session. This scenario is addressed in <span spec-section="#cross-origin-access"></span>.</p>
    <p>Receiver availability is available cross-origin depending on the user’s network
-context.  Exposure of this data to the Web is also discussed in <a href="https://www.w3.org/TR/presentation-api/#personally-identifiable-information">Presentation API §personally-identifiable-information</a> and <a href="https://www.w3.org/TR/remote-playback/#personally-identifiable-information">Remote Playback API §personally-identifiable-information</a>.</p>
+context.  Exposure of this data to the Web is also discussed in <span spec-section="#personally-identifiable-information"></span> and <span spec-section="#personally-identifiable-information"></span>.</p>
    <h4 class="heading settled" data-level="12.2.3" id="origin-access-devices"><span class="secno">12.2.3. </span><span class="content">Origin Access to Other Devices</span><a class="self-link" href="#origin-access-devices"></a></h4>
    <p>By design, the Open Screen Protocol allows access to receivers from the Web.  By
 implementing the protocol, these devices are knowingly making themselves
@@ -2721,7 +2721,7 @@ following:</p>
      <p>Security characteristics of the user agent</p>
    </ul>
    <h3 class="heading settled" data-level="12.3" id="presentation-api-considerations"><span class="secno">12.3. </span><span class="content">Presentation API Considerations</span><a class="self-link" href="#presentation-api-considerations"></a></h3>
-   <p><a href="https://www.w3.org/TR/presentation-api/#security-and-privacy-considerations">Presentation API §security-and-privacy-considerations</a> place these
+   <p><span spec-section="#security-and-privacy-considerations"></span> place these
 requirements on the Open Screen Protocol:</p>
    <ol>
     <li data-md>
@@ -2747,7 +2747,7 @@ connections.</p>
  the number of active connections.</p>
    </ol>
    <h3 class="heading settled" data-level="12.4" id="remote-playback-considerations"><span class="secno">12.4. </span><span class="content">Remote Playback API Considerations</span><a class="self-link" href="#remote-playback-considerations"></a></h3>
-   <p>The <a href="https://www.w3.org/TR/remote-playback/#security-and-privacy-considerations">Remote Playback API §security-and-privacy-considerations</a> also state that
+   <p>The <span spec-section="#security-and-privacy-considerations"></span> also state that
 messaging between controllers and receivers should also be authenticated and
 confidential.</p>
    <p>This consideration is handled by requiring mutual authentication and a
@@ -3412,7 +3412,7 @@ extensions.</p>
      <li><span class="dfn-paneled" id="term-for-dom-media-have_nothing">HAVE_NOTHING</span>
      <li><span class="dfn-paneled" id="term-for-htmlmediaelement">HTMLMediaElement</span>
      <li><span class="dfn-paneled" id="term-for-dom-media-network_empty">NETWORK_EMPTY</span>
-     <li><span class="dfn-paneled" id="term-for-dom-media-addtexttrack">addTextTrack(kind)</span>
+     <li><span class="dfn-paneled" id="term-for-dom-media-addtexttrack">addTextTrack(kind, label, language)</span>
      <li><span class="dfn-paneled" id="term-for-dom-media-audiotracks">audioTracks</span>
      <li><span class="dfn-paneled" id="term-for-dom-media-buffered">buffered</span>
      <li><span class="dfn-paneled" id="term-for-dom-media-currentsrc">currentSrc</span>

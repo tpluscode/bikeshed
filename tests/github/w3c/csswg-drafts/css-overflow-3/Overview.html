@@ -315,62 +315,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -1005,7 +949,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
 	or, more commonly, as
 	the minimal rectangle that bounds that region.
 	A box’s overflow is computed based on the layout and styling of the box itself
-	and of all descendants whose <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#containing-block-chain" id="ref-for-containing-block-chain">containing block chain</a> includes the box.</p>
+	and of all descendants whose <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#containing-block-chain" id="ref-for-containing-block-chain">containing block chain</a> includes the box.</p>
    <p>In most cases, <a data-link-type="dfn" href="#overflow" id="ref-for-overflow">overflow</a> can be computed for any box
 	from the bounds and properties of that box itself,
 	plus the <span id="ref-for-overflow①">overflow</span> of each of its children.
@@ -1029,7 +973,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
 	overhanging glyphs (with negative side bearings,
 	or with ascenders/descenders extending outside the em box), <a href="https://www.w3.org/TR/css-ui-3/#outline-props">outlines</a>,
 	etc.</p>
-   <p>Since some effects in CSS (for example, the blurs in <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-shadow" id="ref-for-propdef-text-shadow">text-shadow</a> <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>,
+   <p>Since some effects in CSS (for example, the blurs in <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-shadow" id="ref-for-propdef-text-shadow">text-shadow</a> <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow">box-shadow</a> <a data-link-type="biblio" href="#biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]</a>,
 	which are theoretically infinite)
 	do not define what visual extent they cover, the extent
 	of the <a data-link-type="dfn" href="#ink-overflow" id="ref-for-ink-overflow①">ink overflow</a> is undefined.</p>
@@ -1096,9 +1040,9 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
     <li>
       Padding on the end-edge sides of the <a data-link-type="dfn" href="#scrollable-overflow-rectangle" id="ref-for-scrollable-overflow-rectangle">scrollable overflow rectangle</a> representing the end-side padding applied to the <a data-link-type="dfn" href="#scroll-container" id="ref-for-scroll-container">scroll container</a>,
 			added such that its content can be scrolled to a position
-			that would satisfy the requirements of <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-place-content" id="ref-for-propdef-place-content">place-content: end</a> alignment.
-			Including this padding is optional for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container">block containers</a> in any axis whose corresponding <a data-link-type="dfn" href="https://drafts.csswg.org/css-align-3/#content-distribution-properties" id="ref-for-content-distribution-properties">content-distribution property</a> (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-align-content" id="ref-for-propdef-align-content">align-content</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-justify-content" id="ref-for-propdef-justify-content">justify-content</a>)
-			is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal" id="ref-for-valdef-justify-content-normal">normal</a>. 
+			that would satisfy the requirements of <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-place-content" id="ref-for-propdef-place-content">place-content: end</a> alignment.
+			Including this padding is optional for <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container">block containers</a> in any axis whose corresponding <a data-link-type="dfn" href="https://drafts.csswg.org/css-align/#content-distribution-properties" id="ref-for-content-distribution-properties">content-distribution property</a> (<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-align-content" id="ref-for-propdef-align-content">align-content</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-justify-content" id="ref-for-propdef-justify-content">justify-content</a>)
+			is <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-align/#valdef-justify-content-normal" id="ref-for-valdef-justify-content-normal">normal</a>. 
      <p class="issue" id="issue-210e5030"><a class="self-link" href="#issue-210e5030"></a> It’s not yet clear if including the end-side padding in the scrollable layer of block containers is Web-compatible, so this clause is under investigation.
 			It appears that Chrome and Safari include such padding <a href="https://bug748518.bmoattachments.org/attachment.cgi?id=618078">in the block axis</a>;
 			and the behavior in the inline axis is <a href="http://jsbin.com/digadoyohi/1/edit?html,css,output">not</a> <a href="http://jsbin.com/vexahocayi/1/edit?html,css,output">clear</a>. <a href="https://github.com/w3c/csswg-drafts/issues/129">&lt;https://github.com/w3c/csswg-drafts/issues/129></a></p>
@@ -1117,35 +1061,6 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
 	in other coordinate systems due to transforms <a data-link-type="biblio" href="#biblio-css3-transforms">[CSS3-TRANSFORMS]</a>.
 	This means scrollbars can sometimes appear when not actually necessary.</p>
    <h2 class="heading settled" data-level="3" id="overflow-properties"><span class="secno">3. </span><span class="content"> Scrolling and Clipping Overflow: the <a class="property" data-link-type="propdesc" href="#propdef-overflow-x" id="ref-for-propdef-overflow-x①">overflow-x</a>, <a class="property" data-link-type="propdesc" href="#propdef-overflow-y" id="ref-for-propdef-overflow-y①">overflow-y</a>, and <a class="property" data-link-type="propdesc" href="#propdef-overflow" id="ref-for-propdef-overflow⑥">overflow</a> properties</span><a class="self-link" href="#overflow-properties"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x" title="The overflow-x CSS property sets what shows when content overflows a block-level element&apos;s left and right edges. This may be nothing, a scroll bar, or the overflow content.">overflow-x</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>5+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y" title="The overflow-y CSS property sets what shows when content overflows a block-level element&apos;s top and bottom edges. This may be nothing, a scroll bar, or the overflow content.">overflow-y</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>3.5+</span></span><span class="safari yes"><span>Safari</span><span>3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>9.5+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>5+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>1+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <p>These properties specify whether a box’s content
 	(including any <a data-link-type="dfn" href="#ink-overflow" id="ref-for-ink-overflow③">ink overflow</a>)
 	is clipped to its padding edge,
@@ -1195,24 +1110,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
     <tbody>
      <tr>
       <th>Name:
-      <td>
-       <div class="mdn-anno wrapped">
-        <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-        <div class="feature">
-         <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" title="The overflow CSS shorthand property sets the desired behavior for an element&apos;s overflow — i.e. when an element&apos;s content is too big to fit in its block formatting context — in both directions.">overflow</a></p>
-         <p class="all-engines-text">In all current engines.</p>
-         <div class="support">
-          <span class="firefox yes"><span>Firefox</span><span>1+</span></span><span class="safari yes"><span>Safari</span><span>1+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-          <hr>
-          <span class="opera yes"><span>Opera</span><span>7+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-          <hr>
-          <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>4+</span></span>
-          <hr>
-          <span class="firefox_android yes"><span>Firefox for Android</span><span>4+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-         </div>
-        </div>
-       </div>
-       <dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-overflow">overflow</dfn>
+      <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-overflow">overflow</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
       <td class="prod">[ visible <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one④">|</a> hidden <span id="ref-for-comb-one⑤">|</span> clip <span id="ref-for-comb-one⑥">|</span> scroll <span id="ref-for-comb-one⑦">|</span> auto ]<a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#mult-num-range" id="ref-for-mult-num-range">{1,2}</a> 
@@ -1269,7 +1167,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
      <p>Unlike <a class="css" data-link-type="maybe" href="#valdef-overflow-hidden" id="ref-for-valdef-overflow-hidden①">hidden</a>, this value <strong>does not</strong> cause
 			the element to establish a new formatting context.</p>
      <p class="note" role="note"><span>Note:</span> Authors who also want the box to establish a formatting context
-			may use <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display: flow-root</a> together with <a class="css" data-link-type="propdesc" href="#propdef-overflow" id="ref-for-propdef-overflow①⓪">overflow: clip</a>.</p>
+			may use <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display: flow-root</a> together with <a class="css" data-link-type="propdesc" href="#propdef-overflow" id="ref-for-propdef-overflow①⓪">overflow: clip</a>.</p>
     <dt><dfn class="dfn-paneled css" data-dfn-for="overflow, overflow-x, overflow-y" data-dfn-type="value" data-export id="valdef-overflow-scroll">scroll</dfn> 
     <dd> This value indicates that
 			the content is clipped to the padding box,
@@ -1292,8 +1190,8 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
 			that mechanism will only be displayed
 			if there is overflow. 
    </dl>
-   <p>If the computed value of <a class="property" data-link-type="propdesc" href="#propdef-overflow" id="ref-for-propdef-overflow①①">overflow</a> on a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-box" id="ref-for-block-box">block box</a> is neither <a class="css" data-link-type="maybe" href="#valdef-overflow-visible" id="ref-for-valdef-overflow-visible③">visible</a> nor <a class="css" data-link-type="maybe" href="#valdef-overflow-clip" id="ref-for-valdef-overflow-clip③">clip</a> nor a combination thereof,
-	it <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context">establishes an independent formatting context</a> for its contents.</p>
+   <p>If the computed value of <a class="property" data-link-type="propdesc" href="#propdef-overflow" id="ref-for-propdef-overflow①①">overflow</a> on a <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-box" id="ref-for-block-box">block box</a> is neither <a class="css" data-link-type="maybe" href="#valdef-overflow-visible" id="ref-for-valdef-overflow-visible③">visible</a> nor <a class="css" data-link-type="maybe" href="#valdef-overflow-clip" id="ref-for-valdef-overflow-clip③">clip</a> nor a combination thereof,
+	it <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context">establishes an independent formatting context</a> for its contents.</p>
    <h3 class="heading settled" data-level="3.1" id="static-media"><span class="secno">3.1. </span><span class="content"> Overflow in Print and Other Static Media</span><a class="self-link" href="#static-media"></a></h3>
    <p class="advisement"> Since scrolling is not possible in static media
 		(such as print)
@@ -1324,7 +1222,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
 	is dependent on the box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#writing-mode" id="ref-for-writing-mode">writing mode</a>,
 	and is by default the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#block-start" id="ref-for-block-start①">block-start</a>/<a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#inline-start" id="ref-for-inline-start①">inline-start</a> edge
 	of the box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#padding-edge" id="ref-for-padding-edge">padding edge</a>.
-	However, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-align-content" id="ref-for-propdef-align-content①">align-content</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align-3/#propdef-justify-content" id="ref-for-propdef-justify-content①">justify-content</a> properties <a data-link-type="biblio" href="#biblio-css-align-3">[CSS-ALIGN-3]</a> can be used to change this,
+	However, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-align-content" id="ref-for-propdef-align-content①">align-content</a> and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-align/#propdef-justify-content" id="ref-for-propdef-justify-content①">justify-content</a> properties <a data-link-type="biblio" href="#biblio-css-align-3">[CSS-ALIGN-3]</a> can be used to change this,
 	see <a href="https://www.w3.org/TR/css-align-3/#overflow-scroll-position">CSS Box Alignment 3 §5.3 Overflow and Scroll Positions</a>.</p>
    <p>Due to Web-compatibility constraints
 	(caused by authors exploiting legacy bugs to surreptitiously hide content from visual readers but not search engines and/or speech output),
@@ -1332,22 +1230,6 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
 	(thereby behaving as if they had no <a data-link-type="dfn" href="#scrollable-overflow" id="ref-for-scrollable-overflow⑤">scrollable overflow</a> on that side).</p>
    <p>The viewport uses the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-4/#principal-writing-mode" id="ref-for-principal-writing-mode">principal writing mode</a> for these calculations.</p>
    <h3 class="heading settled" data-level="3.4" id="overflow-clip-margin"><span class="secno">3.4. </span><span class="content"> Expanding Clipping Bounds: the <a class="property" data-link-type="propdesc" href="#propdef-overflow-clip-margin" id="ref-for-propdef-overflow-clip-margin②">overflow-clip-margin</a> property</span><a class="self-link" href="#overflow-clip-margin"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin" title="The overflow-clip-margin CSS property determines how far outside its bounds an element with overflow: clip may be painted before being clipped.">overflow-clip-margin</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>90+</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink yes"><span>Edge</span><span>90+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>90+</span></span><span class="webview_android yes"><span>Android WebView</span><span>90+</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="overflow-clip-margin">
     <tbody>
      <tr>
@@ -1355,7 +1237,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-overflow-clip-margin">overflow-clip-margin</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-box-4/#typedef-visual-box" id="ref-for-typedef-visual-box">&lt;visual-box></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-any" id="ref-for-comb-any">||</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length [0,∞]></a> 
+      <td class="prod"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-box-4/#typedef-visual-box" id="ref-for-typedef-visual-box">&lt;visual-box></a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-any" id="ref-for-comb-any">||</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length [0,∞]></a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
       <td><span class="css">0px</span> 
@@ -1370,7 +1252,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
       <td>n/a 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>the computed <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> and a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-box-4/#typedef-visual-box" id="ref-for-typedef-visual-box①">&lt;visual-box></a> keyword 
+      <td>the computed <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value①" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> and a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-box-4/#typedef-visual-box" id="ref-for-typedef-visual-box①">&lt;visual-box></a> keyword 
      <tr>
       <th>Canonical order:
       <td>per grammar 
@@ -1388,7 +1270,7 @@ Work will resume on fragmented overflow once this level stabilizes completed.</p
      <p>Specifies the box edge to use as the <a data-link-type="dfn" href="#overflow-clip-edge" id="ref-for-overflow-clip-edge②">overflow clip edge</a> origin,
 i.e. when the specified offset is zero.
 Defaults to <a class="css" data-link-type="maybe" href="https://compat.spec.whatwg.org/#valdef--webkit-background-clip-padding-box" id="ref-for-valdef--webkit-background-clip-padding-box">padding-box</a> if omitted.</p>
-    <dt data-md><dfn class="css" data-dfn-for="overflow-clip-margin" data-dfn-type="value" data-export id="valdef-overflow-clip-margin-length-0"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length [0,∞]></a><a class="self-link" href="#valdef-overflow-clip-margin-length-0"></a></dfn>
+    <dt data-md><dfn class="css" data-dfn-for="overflow-clip-margin" data-dfn-type="value" data-export id="valdef-overflow-clip-margin-length-0"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value②" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length [0,∞]></a><a class="self-link" href="#valdef-overflow-clip-margin-length-0"></a></dfn>
     <dd data-md>
      <p>The specified offset dictates
 how much the <a data-link-type="dfn" href="#overflow-clip-edge" id="ref-for-overflow-clip-edge③">overflow clip edge</a> is expanded from
@@ -1397,7 +1279,7 @@ Negative values are invalid.
 Defaults to zero if omitted.</p>
    </dl>
    <p>The <a data-link-type="dfn" href="#overflow-clip-edge" id="ref-for-overflow-clip-edge④">overflow clip edge</a> is shaped in the corners
-	exactly the same way as a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow" id="ref-for-propdef-box-shadow①">box-shadow</a> with a spread radius
+	exactly the same way as a <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow" id="ref-for-propdef-box-shadow①">box-shadow</a> with a spread radius
 	of the same cumulative offset from the box’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-box-4/#border-edge" id="ref-for-border-edge">border edge</a>.
 	See <a href="https://www.w3.org/TR/css-backgrounds-3/#corner-shaping">CSS Backgrounds 3 §4.2 Corner Shaping</a>.</p>
    <p class="issue" id="issue-6b8b554f"><a class="self-link" href="#issue-6b8b554f"></a> Should this be applying the 1 + (r-1)<sup>3</sup> adjustment
@@ -1407,7 +1289,7 @@ Defaults to zero if omitted.</p>
 	which are not defined to use the <a data-link-type="dfn" href="#overflow-clip-edge" id="ref-for-overflow-clip-edge⑤">overflow clip edge</a>.</p>
    <h3 class="heading settled" data-level="3.5" id="overflow-propagation"><span class="secno">3.5. </span><span class="content"> Overflow Viewport Propagation</span><a class="self-link" href="#overflow-propagation"></a></h3>
    <p>UAs must apply the <a class="property" data-link-type="propdesc">overflow-*</a> values
-	set on the root element to the <span>viewport</span> when the root element’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display①">display</a> value is not <a class="css" data-link-type="maybe" href="#valdef-block-ellipsis-none" id="ref-for-valdef-block-ellipsis-none">none</a>.
+	set on the root element to the <span>viewport</span> when the root element’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display①">display</a> value is not <a class="css" data-link-type="maybe" href="#valdef-block-ellipsis-none" id="ref-for-valdef-block-ellipsis-none">none</a>.
 	However,
 	when the root element is an <a data-link-type="biblio" href="#biblio-html">[HTML]</a> <code><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element" id="ref-for-the-html-element">html</a></code> element
 	(including <a href="https://html.spec.whatwg.org/multipage/introduction.html#html-vs-xhtml">XML syntax for HTML</a>)
@@ -1423,35 +1305,6 @@ Defaults to zero if omitted.</p>
 	If <a class="css" data-link-type="maybe" href="#valdef-overflow-clip" id="ref-for-valdef-overflow-clip④">clip</a> is applied to the viewport,
 	it must be interpreted as <a class="css" data-link-type="maybe" href="#valdef-overflow-hidden" id="ref-for-valdef-overflow-hidden④">hidden</a>.</p>
    <h3 class="heading settled" data-level="3.6" id="logical"><span class="secno">3.6. </span><span class="content"> Flow Relative Properties: the <a class="property" data-link-type="propdesc" href="#propdef-overflow-block" id="ref-for-propdef-overflow-block">overflow-block</a> and <a class="property" data-link-type="propdesc" href="#propdef-overflow-inline" id="ref-for-propdef-overflow-inline">overflow-inline</a> properties</span><a class="self-link" href="#logical"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-block" title="The overflow-block CSS property sets what shows when content overflows the block start and block end edges of a box. This may be nothing, a scroll bar, or the overflow content.">overflow-block</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>69+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-inline" title="The overflow-inline CSS property sets what shows when content overflows the inline start and end edges of a box. This may be nothing, a scroll bar, or the overflow content.">overflow-inline</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>69+</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome no"><span>Chrome</span><span>None</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>None</span></span><span class="edge_blink no"><span>Edge</span><span>None</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android no"><span>Chrome for Android</span><span>None</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android no"><span>Samsung Internet</span><span>None</span></span><span class="opera_android no"><span>Opera Mobile</span><span>None</span></span>
-     </div>
-    </div>
-   </div>
    <p>The following properties are processed according to the same processing model
 as the Flow-Relative box model properties defined in <a href="https://www.w3.org/TR/css-logical-1/#box">CSS Logical Properties 1 §4 Flow-Relative Box Model Properties</a>.</p>
    <table class="def propdef" data-link-for-hint="overflow-inline">
@@ -1488,22 +1341,6 @@ as the Flow-Relative box model properties defined in <a href="https://www.w3.org
   The mapping depends on the element’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode" id="ref-for-propdef-writing-mode">writing-mode</a>.</p>
    <h2 class="heading settled" data-level="4" id="auto-ellipsis"><span class="secno">4. </span><span class="content"> Automatic Ellipses</span><a class="self-link" href="#auto-ellipsis"></a></h2>
    <h3 class="heading settled caniuse-paneled" data-level="4.1" id="text-overflow"><span class="secno">4.1. </span><span class="content"> Overflow Ellipsis: the <a class="property" data-link-type="propdesc" href="#propdef-text-overflow" id="ref-for-propdef-text-overflow④">text-overflow</a> property</span><a class="self-link" href="#text-overflow"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow" title="The text-overflow CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis (&apos;…&apos;), or display a custom string.">text-overflow</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>7+</span></span><span class="safari yes"><span>Safari</span><span>1.3+</span></span><span class="chrome yes"><span>Chrome</span><span>1+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>11+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>6+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>7+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>1+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>11+</span></span>
-     </div>
-    </div>
-   </div>
    <table class="def propdef" data-link-for-hint="text-overflow">
     <tbody>
      <tr>
@@ -1685,11 +1522,11 @@ WON’T ELLIPSE.
         </div>
     </table>
    </div>
-   <p class="note" role="note"><span>Note:</span> the side of the line that the ellipsis is placed depends on the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction" id="ref-for-propdef-direction">direction</a> of the block.
+   <p class="note" role="note"><span>Note:</span> the side of the line that the ellipsis is placed depends on the <a class="property" data-link-type="propdesc">direction</a> of the block.
 E.g. an overflow hidden right-to-left
 (<code class="lang-css highlight"><c- k>direction</c-><c- p>:</c-> rtl</code>)
-block clips inline content on the <a data-link-type="dfn" href="https://drafts.csswg.org/css-writing-modes-3/#physical-left" id="ref-for-physical-left">left</a> side,
-thus would place a text-overflow ellipsis on the <span id="ref-for-physical-left①">left</span> to represent that clipped content.</p>
+block clips inline content on the <span>left</span> side,
+thus would place a text-overflow ellipsis on the <span>left</span> to represent that clipped content.</p>
    <h4 class="no-num no-toc heading settled" id="ellipsis-scrolling"><span class="content">ellipsis interaction with scrolling interfaces</span><a class="self-link" href="#ellipsis-scrolling"></a></h4>
    <p>This section applies to elements with text-overflow other than <span class="css">text-overflow:clip</span> (non-clip text-overflow)
 and overflow:scroll.</p>
@@ -1754,7 +1591,7 @@ having it overlap other text by default. </div>
       <td>none 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container①">block containers</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container①">block containers</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>yes 
@@ -1773,7 +1610,7 @@ having it overlap other text by default. </div>
    </table>
    <p>This property allows inserting content into the last line box
 	before a (forced <em>or</em> unforced) <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break">region break</a> to indicate the continuity of truncated/interrupted content.
-	It only affects line boxes contained directly by the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container②">block container</a> itself,
+	It only affects line boxes contained directly by the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container②">block container</a> itself,
 	but as it inherits, will have an effect on descendants’ line boxes unless overridden.
 	If the box contains no line box immediately preceding a <span id="ref-for-region-break①">region break</span>,
 	then this property has no effect.</p>
@@ -1797,17 +1634,17 @@ having it overlap other text by default. </div>
 	the <a data-link-type="dfn" href="#block-overflow-ellipsis" id="ref-for-block-overflow-ellipsis②">block overflow ellipsis</a> string
 	is wrapped in an anonymous inline
 	and placed at the end of the line box
-	as a direct child of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container③">block container</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-inline-3/#root-inline-box" id="ref-for-root-inline-box">root inline box</a>,
+	as a direct child of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container③">block container</a>’s <a data-link-type="dfn" href="https://drafts.csswg.org/css-inline-3/#root-inline-box" id="ref-for-root-inline-box">root inline box</a>,
 	reducing the space in the line box
 	available to the other contents of the line.
-	This inline is assigned <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi" id="ref-for-propdef-unicode-bidi">unicode-bidi: plaintext</a> and <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height">line-height: 0</a> and is placed in the line box after the last <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#soft-wrap-opportunity" id="ref-for-soft-wrap-opportunity">soft wrap opportunity</a> (see <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a>)
+	This inline is assigned <a class="css" data-link-type="propdesc">unicode-bidi: plaintext</a> and <span class="css">line-height: 0</span> and is placed in the line box after the last <a data-link-type="dfn" href="https://drafts.csswg.org/css-text-3/#soft-wrap-opportunity" id="ref-for-soft-wrap-opportunity">soft wrap opportunity</a> (see <a data-link-type="biblio" href="#biblio-css-text-3">[CSS-TEXT-3]</a>)
 	that would still allow the entire <span id="ref-for-block-overflow-ellipsis③">block overflow ellipsis</span> to fit on the line.
 	For this purpose, <span id="ref-for-soft-wrap-opportunity①">soft wrap opportunities</span> added by <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-text-3/#propdef-overflow-wrap" id="ref-for-propdef-overflow-wrap">overflow-wrap</a> are ignored.
 	If this results in the entire contents of the line box being displaced,
-	the line box is considered to contain a <a data-link-type="dfn" href="https://www.w3.org/TR/CSS22/visudet.html#strut-element" id="ref-for-strut-element">strut</a>, as defined in <a href="https://www.w3.org/TR/CSS2/visudet.html#leading">CSS 2 §10.8.1 Leading and half-leading</a>.
+	the line box is considered to contain a <a data-link-type="dfn" href="https://www.w3.org/TR/CSS22/visudet.html#strut-element" id="ref-for-strut-element">strut</a>, as defined in <a href="https://www.w3.org/TR/CSS21//visudet#leading">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification §visudet#leading</a>.
 	Text <a href="https://www.w3.org/TR/css-text-3/#justification">alignment and justification</a> occurs after placement,
 	and measures the inserted <span id="ref-for-block-overflow-ellipsis④">block overflow ellipsis</span> together with the rest of the line’s content.</p>
-   <p class="note" role="note"><span>Note:</span> Setting the <a data-link-type="dfn" href="#block-overflow-ellipsis" id="ref-for-block-overflow-ellipsis⑤">block overflow ellipsis</a>'s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height①">line-height</a> to <span class="css">0</span> makes sure that inserting it cannot cause the line’s height to grow,
+   <p class="note" role="note"><span>Note:</span> Setting the <a data-link-type="dfn" href="#block-overflow-ellipsis" id="ref-for-block-overflow-ellipsis⑤">block overflow ellipsis</a>'s <a class="property" data-link-type="propdesc">line-height</a> to <span class="css">0</span> makes sure that inserting it cannot cause the line’s height to grow,
 	which could cause further relayouts and potentially cycles.
 	This is almost equivalent to inserting the <span id="ref-for-block-overflow-ellipsis⑥">block overflow ellipsis</span> as a paint-time operation, except that it still participates in alignment and justification.
 	The downside is that unusually tall / deep glyphs in the <span id="ref-for-block-overflow-ellipsis⑦">block overflow ellipsis</span> may overflow.</p>
@@ -1862,7 +1699,7 @@ having it overlap other text by default. </div>
       <th>Canonical order:
       <td>per grammar 
    </table>
-   <p>The <a class="property" data-link-type="propdesc" href="#propdef-line-clamp" id="ref-for-propdef-line-clamp③">line-clamp</a> property is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#shorthand-property" id="ref-for-shorthand-property">shorthand</a> for the <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines②">max-lines</a>, <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis⑤">block-ellipsis</a>, and <a class="property" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue">continue</a> properties.</p>
+   <p>The <a class="property" data-link-type="propdesc" href="#propdef-line-clamp" id="ref-for-propdef-line-clamp③">line-clamp</a> property is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#shorthand-property" id="ref-for-shorthand-property">shorthand</a> for the <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines②">max-lines</a>, <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis⑤">block-ellipsis</a>, and <a class="property" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue">continue</a> properties.</p>
    <p class="issue" id="issue-ebb2947d"><a class="self-link" href="#issue-ebb2947d"></a> For the time being,
 	experimental implementations are encouraged
 	to follow the full behavior defined by this shorthand and its longhands,
@@ -1880,7 +1717,7 @@ having it overlap other text by default. </div>
    <dl>
     <dt><dfn class="dfn-paneled css" data-dfn-for="line-clamp" data-dfn-type="value" data-export id="valdef-line-clamp-none">none</dfn> 
     <dd>Sets <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines③">max-lines</a> to <a class="css" data-link-type="maybe" href="#valdef-max-lines-none" id="ref-for-valdef-max-lines-none">none</a>, <a class="property" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue①">continue</a> to <a class="css" data-link-type="maybe" href="#valdef-continue-auto" id="ref-for-valdef-continue-auto">auto</a>,
-			and <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis⑥">block-ellipsis</a> to <a class="css" data-link-type="maybe" href="#valdef-block-ellipsis-none" id="ref-for-valdef-block-ellipsis-none④">none</a>.
+			and <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis⑥">block-ellipsis</a> to <a class="css" data-link-type="maybe" href="#valdef-block-ellipsis-none" id="ref-for-valdef-block-ellipsis-none④">none</a>. 
     <dt><dfn class="css" data-dfn-for="line-clamp" data-dfn-type="value" data-export id="valdef-line-clamp-integer"><a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#integer-value" id="ref-for-integer-value①">&lt;integer></a><a class="self-link" href="#valdef-line-clamp-integer"></a></dfn> 
     <dd>Sets <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines④">max-lines</a> to the specified <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#integer-value" id="ref-for-integer-value②">&lt;integer></a>, <a class="property" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue②">continue</a> to <a class="css" data-link-type="maybe" href="#valdef-continue-discard" id="ref-for-valdef-continue-discard">discard</a>,
 			and the <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis⑦">block-ellipsis</a> property to second component of the value
@@ -1920,22 +1757,6 @@ strong <c- p>{</c->
 </pre>
    </div>
    <h4 class="heading settled" data-level="5.1.1" id="webkit-line-clamp"><span class="secno">5.1.1. </span><span class="content"> Legacy compatibility</span><a class="self-link" href="#webkit-line-clamp"></a></h4>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp" title="The -webkit-line-clamp CSS property allows limiting of the contents of a block container to the specified number of lines.">-webkit-line-clamp</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>68+</span></span><span class="safari yes"><span>Safari</span><span>5+</span></span><span class="chrome yes"><span>Chrome</span><span>6+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>15+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>17+</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>68+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>4.2+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>18+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>1.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>14+</span></span>
-     </div>
-    </div>
-   </div>
    <p>For compatibility with legacy content,
 	UAs that support <a class="property" data-link-type="propdesc" href="#propdef-line-clamp" id="ref-for-propdef-line-clamp④">line-clamp</a> must also support the <dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef--webkit-line-clamp">-webkit-line-clamp</dfn> property.
 	Like <span class="property" id="ref-for-propdef-line-clamp⑤">line-clamp</span>, it is a shorthand of <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines⑤">max-lines</a>, <a class="property" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue③">continue</a>, and <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis⑧">block-ellipsis</a>,
@@ -1949,13 +1770,13 @@ strong <c- p>{</c->
      <p>it unconditionally sets <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis⑨">block-ellipsis</a> to <a class="css" data-link-type="maybe" href="#valdef-block-ellipsis-auto" id="ref-for-valdef-block-ellipsis-auto①">auto</a></p>
    </ul>
    <p>Additionally, for children (including anonymous children)
-	of boxes whose <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display③">display</a> property computes to <a class="css" data-link-type="maybe" href="https://compat.spec.whatwg.org/#valdef-flex--webkit-box" id="ref-for-valdef-flex--webkit-box">-webkit-box</a> or <a class="css" data-link-type="maybe" href="https://compat.spec.whatwg.org/#valdef-flex--webkit-inline-box" id="ref-for-valdef-flex--webkit-inline-box">-webkit-inline-box</a>,
+	of boxes whose <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display③">display</a> property computes to <a class="css" data-link-type="maybe" href="https://compat.spec.whatwg.org/#valdef-flex--webkit-box" id="ref-for-valdef-flex--webkit-box">-webkit-box</a> or <a class="css" data-link-type="maybe" href="https://compat.spec.whatwg.org/#valdef-flex--webkit-inline-box" id="ref-for-valdef-flex--webkit-inline-box">-webkit-inline-box</a>,
 	the used values of the <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines⑥">max-lines</a>, <a class="property" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue⑤">continue</a>, and <a class="property" data-link-type="propdesc" href="#propdef-block-ellipsis" id="ref-for-propdef-block-ellipsis①⓪">block-ellipsis</a> properties
 	are taken from the computed values of the parent box;
 	the computed values of these properties on the box itself are ignored.</p>
    <p>The <dfn class="dfn-paneled css" data-dfn-for="continue" data-dfn-type="value" data-export id="valdef-continue--webkit-discard">-webkit-discard</dfn> value behaves identically to <a class="css" data-link-type="maybe" href="#valdef-continue-discard" id="ref-for-valdef-continue-discard②">discard</a>,
 	except that it only takes effect
-	if the computed value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display④">display</a> property on the parent
+	if the computed value of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display④">display</a> property on the parent
 	is <a class="css" data-link-type="maybe" href="https://compat.spec.whatwg.org/#valdef-flex--webkit-box" id="ref-for-valdef-flex--webkit-box①">-webkit-box</a> or <a class="css" data-link-type="maybe" href="https://compat.spec.whatwg.org/#valdef-flex--webkit-inline-box" id="ref-for-valdef-flex--webkit-inline-box①">-webkit-inline-box</a> and the computed value of the <a class="property" data-link-type="propdesc" href="https://compat.spec.whatwg.org/#propdef--webkit-box-orient" id="ref-for-propdef--webkit-box-orient">-webkit-box-orient</a> property on the parent
 	is <span class="css">vertical</span>.</p>
    <p class="note" role="note"><span>Note:</span> Implementations of the legacy <a class="property" data-link-type="propdesc" href="#propdef--webkit-line-clamp" id="ref-for-propdef--webkit-line-clamp">-webkit-line-clamp</a> property
@@ -1976,13 +1797,13 @@ strong <c- p>{</c->
       <td><dfn class="dfn-paneled css" data-dfn-type="property" data-export id="propdef-max-lines">max-lines</dfn>
      <tr class="value">
       <th><a href="https://www.w3.org/TR/css-values/#value-defs">Value:</a>
-      <td class="prod"><a class="css" data-link-type="maybe" href="#valdef-max-lines-none" id="ref-for-valdef-max-lines-none①">none</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①②">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#integer-value" id="ref-for-integer-value④">&lt;integer></a>
+      <td class="prod"><a class="css" data-link-type="maybe" href="#valdef-max-lines-none" id="ref-for-valdef-max-lines-none①">none</a> <a data-link-type="grammar" href="https://drafts.csswg.org/css-values-4/#comb-one" id="ref-for-comb-one①②">|</a> <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#integer-value" id="ref-for-integer-value④">&lt;integer></a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#initial-values">Initial:</a>
-      <td><a class="css" data-link-type="maybe" href="#valdef-max-lines-none" id="ref-for-valdef-max-lines-none②">none</a>
+      <td><a class="css" data-link-type="maybe" href="#valdef-max-lines-none" id="ref-for-valdef-max-lines-none②">none</a> 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container④">block containers</a> which are also <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-container" id="ref-for-fragmentation-container②">fragmentation containers</a> that capture <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break③">region breaks</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container④">block containers</a> which are also <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-container" id="ref-for-fragmentation-container②">fragmentation containers</a> that capture <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break③">region breaks</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -1991,7 +1812,7 @@ strong <c- p>{</c->
       <td>N/A 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#computed">Computed value:</a>
-      <td>the keyword <a class="css" data-link-type="maybe" href="#valdef-max-lines-none" id="ref-for-valdef-max-lines-none③">none</a> or an integer
+      <td>the keyword <a class="css" data-link-type="maybe" href="#valdef-max-lines-none" id="ref-for-valdef-max-lines-none③">none</a> or an integer 
      <tr>
       <th>Canonical order:
       <td>per grammar 
@@ -2002,14 +1823,14 @@ strong <c- p>{</c->
    <p>This property has no effect on boxes that are not <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-container" id="ref-for-fragmentation-container③">fragmentation containers</a> that capture <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break④">region breaks</a>.</p>
    <p>Otherwise, if the value of <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines⑧">max-lines</a> is not <dfn class="dfn-paneled css" data-dfn-for="max-lines" data-dfn-type="value" data-export id="valdef-max-lines-none">none</dfn>,
 	a <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break⑤">region break</a> is forced after its <var>N</var>th
-	descendant <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#in-flow" id="ref-for-in-flow">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-inline-3/#line-box" id="ref-for-line-box">line box</a>,
+	descendant <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#in-flow" id="ref-for-in-flow">in-flow</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-inline-3/#line-box" id="ref-for-line-box">line box</a>,
 	where <var>N</var> is the specified value of <span class="property" id="ref-for-propdef-max-lines⑨">max-lines</span>.
-	Only lines boxes in the same <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-formatting-context" id="ref-for-block-formatting-context">Block Formatting Context</a> are counted:
-	the contents of descendants that establish <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#independent-formatting-context" id="ref-for-independent-formatting-context">independent formatting contexts</a> are skipped over while counting line boxes.</p>
+	Only lines boxes in the same <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-formatting-context" id="ref-for-block-formatting-context">Block Formatting Context</a> are counted:
+	the contents of descendants that establish <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#independent-formatting-context" id="ref-for-independent-formatting-context">independent formatting contexts</a> are skipped over while counting line boxes.</p>
    <p>If fewer than <var>N</var> line boxes exist,
 	then <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines①⓪">max-lines</a> introduces no <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break⑥">region break</a>.</p>
    <div class="example" id="example-fd9fc36b">
-    <a class="self-link" href="#example-fd9fc36b"></a> As <a class="css" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue⑥">continue: discard</a> does not cause the element to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context①">establish an independent formatting context</a>,
+    <a class="self-link" href="#example-fd9fc36b"></a> As <a class="css" data-link-type="propdesc" href="#propdef-continue" id="ref-for-propdef-continue⑥">continue: discard</a> does not cause the element to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context①">establish an independent formatting context</a>,
 		lines in a nested element with <a class="property" data-link-type="propdesc" href="#propdef-line-clamp" id="ref-for-propdef-line-clamp⑥">line-clamp</a> are counted,
 		as can be seen in the examples below. 
 <pre class="highlight"><c- p>&lt;</c-><c- f>div</c-> <c- e>id</c-><c- o>=</c-><c- s>a</c-><c- p>></c->
@@ -2042,12 +1863,12 @@ b: line 1…
 		since a forced break is introduced
 		before the second line of this element.</p>
    </div>
-   <p class="note" role="note"><span>Note:</span> This implies that <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines①①">max-lines</a> has no effect when applied to <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol-1/#multi-column-container" id="ref-for-multi-column-container">multi-column containers</a>,
-	since any line box they contain are nested into <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#independent-formatting-context" id="ref-for-independent-formatting-context①">independent formatting contexts</a>.</p>
+   <p class="note" role="note"><span>Note:</span> This implies that <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines①①">max-lines</a> has no effect when applied to <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol/#multi-column-container" id="ref-for-multi-column-container">multi-column containers</a>,
+	since any line box they contain are nested into <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#independent-formatting-context" id="ref-for-independent-formatting-context①">independent formatting contexts</a>.</p>
    <p>Only positive integers are accepted.
 	Zero or negative integers are invalid
-	and must cause the declaration to be <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#css-ignored" id="ref-for-css-ignored">ignored</a>.</p>
-   <p class="note" role="note"><span>Note:</span> The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-4/#propdef-widows" id="ref-for-propdef-widows">widows</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-orphans" id="ref-for-propdef-orphans">orphans</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside</a> properties
+	and must cause the declaration to be <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#css-ignored" id="ref-for-css-ignored">ignored</a>.</p>
+   <p class="note" role="note"><span>Note:</span> The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-4/#propdef-widows" id="ref-for-propdef-widows">widows</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-orphans" id="ref-for-propdef-orphans">orphans</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside</a> properties
 	do not affect the position of the forced <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break⑦">region break</a> introduced by the <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines①②">max-lines</a> property.</p>
    <div class="note" role="note">
      Note: Despite the “region break” name, this is not a dependency on <a data-link-type="biblio" href="#biblio-css-regions-1">[CSS-REGIONS-1]</a>.
@@ -2083,7 +1904,7 @@ for the purpose of forced breaks.</p>
       <td><a class="css" data-link-type="maybe" href="#valdef-continue-auto" id="ref-for-valdef-continue-auto①">auto</a> 
      <tr>
       <th>Applies to:
-      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#block-container" id="ref-for-block-container⑤">block containers</a> and <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol-1/#multi-column-container" id="ref-for-multi-column-container①">multicol containers</a> 
+      <td><a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#block-container" id="ref-for-block-container⑤">block containers</a> and <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol/#multi-column-container" id="ref-for-multi-column-container①">multicol containers</a> 
      <tr>
       <th><a href="https://www.w3.org/TR/css-cascade/#inherited-property">Inherited:</a>
       <td>no 
@@ -2115,12 +1936,12 @@ Once it is sufficiently stable in this specification, <code>region-fragment</cod
       The box becomes a <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-container" id="ref-for-fragmentation-container⑥">fragmentation container</a> that captures <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break⑧">region breaks</a>,
 			if it is not already. <a data-link-type="biblio" href="#biblio-css-break-3">[CSS-BREAK-3]</a> 
      <p>The position of the first <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#forced-break" id="ref-for-forced-break">forced</a> <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#region-break" id="ref-for-region-break⑨">region break</a> (whether imposed by <a class="property" data-link-type="propdesc" href="#propdef-max-lines" id="ref-for-propdef-max-lines①③">max-lines</a> or by another mechanism,
-			such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> properties)
+			such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a>/<a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> properties)
 			or the position of the first <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#unforced-break" id="ref-for-unforced-break">unforced break</a>,
 			which ever comes sooner,
 			is treated as the end of the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-container" id="ref-for-fragmentation-container⑦">fragmentation container</a>,
 			and the remaining content after the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-break" id="ref-for-fragmentation-break①">fragmentation break</a> is discarded,
-			similar to if it were <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display⑤">display: none</a>:</p>
+			similar to if it were <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display⑤">display: none</a>:</p>
      <ul>
       <li data-md>
        <p>It is not rendered</p>
@@ -2143,14 +1964,14 @@ but other possibilities were raised. <a href="https://github.com/w3c/csswg-draft
 			or to the end of the <span id="ref-for-fragmented-flow①">fragmented flow</span> if there is no forced break.</p>
      <p class="note" role="note"><span>Note:</span> Calculating intrinsic block sizes to the first forced <em>or unforced</em> break
 			would cause intrinsic sizes to depend on layout, which would cause circularities.</p>
-     <p>The effect on <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol-1/#multi-column-container" id="ref-for-multi-column-container②">multi-column containers</a> is to discard any <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol-1/#overflow-columns" id="ref-for-overflow-columns">overflow column</a>.</p>
+     <p>The effect on <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol/#multi-column-container" id="ref-for-multi-column-container②">multi-column containers</a> is to discard any <a data-link-type="dfn" href="https://drafts.csswg.org/css-multicol/#overflow-columns" id="ref-for-overflow-columns">overflow column</a>.</p>
      <p class="note" role="note"><span>Note:</span> In the case of <a href="https://www.w3.org/TR/css-break-3/#parallel-flows">parallel fragmentation flows</a>,
 			content occurring after the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-break" id="ref-for-fragmentation-break②">fragmentation break</a> in the box tree
 			could still be rendered,
 			if it is laid out above the position
 			representing the end of this <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-container" id="ref-for-fragmentation-container⑨">fragmentation container</a>.</p>
    </dl>
-   <p class="note" role="note"><span>Note:</span> This property does <em>not</em> cause the box to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context②">establish an independent formatting context</a>.</p>
+   <p class="note" role="note"><span>Note:</span> This property does <em>not</em> cause the box to <a data-link-type="dfn" href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context" id="ref-for-establish-an-independent-formatting-context②">establish an independent formatting context</a>.</p>
    <div class="example" id="example-722627b5">
     <a class="self-link" href="#example-722627b5"></a> Given an article with one excessively long overflowing line,
 		and four more lines than can fit in the <a data-link-type="dfn" href="https://drafts.csswg.org/css-break-4/#fragmentation-direction" id="ref-for-fragmentation-direction">fragmentation direction</a> as in the illustration bellow,
@@ -2332,8 +2153,8 @@ but other possibilities were raised. <a href="https://github.com/w3c/csswg-draft
 <script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script>
   <aside class="caniuse-status" data-deco data-dfn-id="text-overflow">
    <input class="caniuse-panel-btn" type="button" value="⋰">
-   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>91+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>7+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>89+</span></span><span class="ie yes"><span>IE</span><span>6+</span></span><span class="ie_mob yes"><span>IE Mobile</span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11+</span></span><span class="op_mini yes"><span>Opera Mini</span><span>All</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12.1+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
-   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=text-overflow">caniuse.com</a> as of 2021-06-12</p>
+   <p class="support"><b>Support:</b><span class="android yes"><span>Android Browser</span><span>2.1+</span></span><span class="baidu yes"><span>Baidu Browser</span><span>7.12+</span></span><span class="bb yes"><span>Blackberry Browser</span><span>7+</span></span><span class="chrome yes"><span>Chrome</span><span>4+</span></span><span class="and_chr yes"><span>Chrome for Android</span><span>89+</span></span><span class="edge yes"><span>Edge</span><span>12+</span></span><span class="firefox yes"><span>Firefox</span><span>7+</span></span><span class="and_ff yes"><span>Firefox for Android</span><span>86+</span></span><span class="ie yes"><span>IE</span><span>6+</span></span><span class="ie_mob yes"><span>IE Mobile</span><span>10+</span></span><span class="kaios yes"><span>KaiOS Browser</span><span>2.5+</span></span><span class="opera yes"><span>Opera</span><span>11+</span></span><span class="op_mini yes"><span>Opera Mini</span><span>All</span></span><span class="op_mob yes"><span>Opera Mobile</span><span>12.1+</span></span><span class="and_qq yes"><span>QQ Browser</span><span>10.4+</span></span><span class="safari yes"><span>Safari</span><span>3.1+</span></span><span class="ios_saf yes"><span>Safari on iOS</span><span>3.2+</span></span><span class="samsung yes"><span>Samsung Internet</span><span>4+</span></span><span class="and_uc yes"><span>UC Browser for Android</span><span>12.12+</span></span></p>
+   <p class="caniuse">Source: <a href="https://caniuse.com/#feat=text-overflow">caniuse.com</a> as of 2021-04-04</p>
   </aside>
   <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="#index"></a></h2>
   <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="#index-defined-here"></a></h3>
@@ -2429,7 +2250,7 @@ Expanding Clipping Bounds: the overflow-clip-margin property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-align-content">
-   <a href="https://drafts.csswg.org/css-align-3/#propdef-align-content">https://drafts.csswg.org/css-align-3/#propdef-align-content</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#propdef-align-content">https://drafts.csswg.org/css-align/#propdef-align-content</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-align-content">2.2. 
 Scrollable Overflow</a>
@@ -2438,14 +2259,14 @@ Scrolling Origin, Direction, and Restriction</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-content-distribution-properties">
-   <a href="https://drafts.csswg.org/css-align-3/#content-distribution-properties">https://drafts.csswg.org/css-align-3/#content-distribution-properties</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#content-distribution-properties">https://drafts.csswg.org/css-align/#content-distribution-properties</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-content-distribution-properties">2.2. 
 Scrollable Overflow</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-justify-content">
-   <a href="https://drafts.csswg.org/css-align-3/#propdef-justify-content">https://drafts.csswg.org/css-align-3/#propdef-justify-content</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#propdef-justify-content">https://drafts.csswg.org/css-align/#propdef-justify-content</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-justify-content">2.2. 
 Scrollable Overflow</a>
@@ -2454,21 +2275,21 @@ Scrolling Origin, Direction, and Restriction</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-justify-content-normal">
-   <a href="https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal">https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#valdef-justify-content-normal">https://drafts.csswg.org/css-align/#valdef-justify-content-normal</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-justify-content-normal">2.2. 
 Scrollable Overflow</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-place-content">
-   <a href="https://drafts.csswg.org/css-align-3/#propdef-place-content">https://drafts.csswg.org/css-align-3/#propdef-place-content</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-align/#propdef-place-content">https://drafts.csswg.org/css-align/#propdef-place-content</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-place-content">2.2. 
 Scrollable Overflow</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-box-shadow">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds-3/#propdef-box-shadow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow">https://drafts.csswg.org/css-backgrounds/#propdef-box-shadow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-box-shadow">2.1. Ink Overflow</a>
     <li><a href="#ref-for-propdef-box-shadow①">3.4. 
@@ -2497,28 +2318,28 @@ Scrolling Origin, Direction, and Restriction</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-after">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-after">https://drafts.csswg.org/css-break-3/#propdef-break-after</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-after">https://drafts.csswg.org/css-break/#propdef-break-after</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-after">5.3. 
 Fragmentation of Overflow: the continue property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-before">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-before">https://drafts.csswg.org/css-break-3/#propdef-break-before</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-before">https://drafts.csswg.org/css-break/#propdef-break-before</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-before">5.3. 
 Fragmentation of Overflow: the continue property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-inside">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-inside">https://drafts.csswg.org/css-break-3/#propdef-break-inside</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-inside">https://drafts.csswg.org/css-break/#propdef-break-inside</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-inside">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-orphans">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-orphans">https://drafts.csswg.org/css-break-3/#propdef-orphans</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-orphans">https://drafts.csswg.org/css-break/#propdef-orphans</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-orphans">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a>
@@ -2596,7 +2417,7 @@ Forcing a Break After a Set Number of Lines: the max-lines property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-shorthand-property">
-   <a href="https://drafts.csswg.org/css-cascade-5/#shorthand-property">https://drafts.csswg.org/css-cascade-5/#shorthand-property</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#shorthand-property">https://drafts.csswg.org/css-cascade/#shorthand-property</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-shorthand-property">5.1. 
 Limiting Visible Lines: the line-clamp shorthand property</a>
@@ -2610,14 +2431,14 @@ Scrollable Overflow</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-box">
-   <a href="https://drafts.csswg.org/css-display-3/#block-box">https://drafts.csswg.org/css-display-3/#block-box</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-box">https://drafts.csswg.org/css-display/#block-box</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-box">3. 
 Scrolling and Clipping Overflow: the overflow-x, overflow-y, and overflow properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-container">
-   <a href="https://drafts.csswg.org/css-display-3/#block-container">https://drafts.csswg.org/css-display-3/#block-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-container">https://drafts.csswg.org/css-display/#block-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-container">2.2. 
 Scrollable Overflow</a>
@@ -2630,21 +2451,21 @@ Fragmentation of Overflow: the continue property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-block-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#block-formatting-context">https://drafts.csswg.org/css-display-3/#block-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#block-formatting-context">https://drafts.csswg.org/css-display/#block-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-block-formatting-context">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-containing-block-chain">
-   <a href="https://drafts.csswg.org/css-display-3/#containing-block-chain">https://drafts.csswg.org/css-display-3/#containing-block-chain</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#containing-block-chain">https://drafts.csswg.org/css-display/#containing-block-chain</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-containing-block-chain">2. 
 Types of Overflow</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">3. 
 Scrolling and Clipping Overflow: the overflow-x, overflow-y, and overflow properties</a>
@@ -2657,7 +2478,7 @@ Fragmentation of Overflow: the continue property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-establish-an-independent-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-establish-an-independent-formatting-context">3. 
 Scrolling and Clipping Overflow: the overflow-x, overflow-y, and overflow properties</a>
@@ -2668,7 +2489,7 @@ Fragmentation of Overflow: the continue property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-establish-an-independent-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display-3/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context">https://drafts.csswg.org/css-display/#establish-an-independent-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-establish-an-independent-formatting-context">3. 
 Scrolling and Clipping Overflow: the overflow-x, overflow-y, and overflow properties</a>
@@ -2679,14 +2500,14 @@ Fragmentation of Overflow: the continue property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-in-flow">
-   <a href="https://drafts.csswg.org/css-display-3/#in-flow">https://drafts.csswg.org/css-display-3/#in-flow</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#in-flow">https://drafts.csswg.org/css-display/#in-flow</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-in-flow">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-independent-formatting-context">
-   <a href="https://drafts.csswg.org/css-display-3/#independent-formatting-context">https://drafts.csswg.org/css-display-3/#independent-formatting-context</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#independent-formatting-context">https://drafts.csswg.org/css-display/#independent-formatting-context</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-independent-formatting-context">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a> <a href="#ref-for-independent-formatting-context①">(2)</a>
@@ -2728,7 +2549,7 @@ Scrollable Overflow</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-multi-column-container">
-   <a href="https://drafts.csswg.org/css-multicol-1/#multi-column-container">https://drafts.csswg.org/css-multicol-1/#multi-column-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#multi-column-container">https://drafts.csswg.org/css-multicol/#multi-column-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-multi-column-container">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a>
@@ -2737,7 +2558,7 @@ Fragmentation of Overflow: the continue property</a> <a href="#ref-for-multi-col
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-multi-column-container">
-   <a href="https://drafts.csswg.org/css-multicol-1/#multi-column-container">https://drafts.csswg.org/css-multicol-1/#multi-column-container</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#multi-column-container">https://drafts.csswg.org/css-multicol/#multi-column-container</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-multi-column-container">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a>
@@ -2746,7 +2567,7 @@ Fragmentation of Overflow: the continue property</a> <a href="#ref-for-multi-col
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-overflow-columns">
-   <a href="https://drafts.csswg.org/css-multicol-1/#overflow-columns">https://drafts.csswg.org/css-multicol-1/#overflow-columns</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#overflow-columns">https://drafts.csswg.org/css-multicol/#overflow-columns</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-overflow-columns">5.3. 
 Fragmentation of Overflow: the continue property</a>
@@ -2801,7 +2622,7 @@ Indicating Block-Axis Overflow: the block-ellipsis property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-css-ignored">
-   <a href="https://drafts.csswg.org/css-syntax-3/#css-ignored">https://drafts.csswg.org/css-syntax-3/#css-ignored</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#css-ignored">https://drafts.csswg.org/css-syntax/#css-ignored</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-css-ignored">5.2. 
 Forcing a Break After a Set Number of Lines: the max-lines property</a>
@@ -2918,25 +2739,6 @@ Fragmentation of Overflow: the continue property</a>
 Expanding Clipping Bounds: the overflow-clip-margin property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-direction">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-direction">https://drafts.csswg.org/css-writing-modes-3/#propdef-direction</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-direction">user interaction with ellipsis</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-physical-left">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#physical-left">https://drafts.csswg.org/css-writing-modes-3/#physical-left</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-physical-left">user interaction with ellipsis</a> <a href="#ref-for-physical-left①">(2)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-unicode-bidi">
-   <a href="https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi">https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-unicode-bidi">4.2. 
-Indicating Block-Axis Overflow: the block-ellipsis property</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-block-size">
    <a href="https://drafts.csswg.org/css-writing-modes-4/#block-size">https://drafts.csswg.org/css-writing-modes-4/#block-size</a><b>Referenced in:</b>
    <ul>
@@ -2997,13 +2799,6 @@ Indicating Block-Axis Overflow: the block-ellipsis property</a>
    <ul>
     <li><a href="#ref-for-propdef-writing-mode">3.6. 
 Flow Relative Properties: the overflow-block and overflow-inline properties</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-line-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-line-height">https://drafts.csswg.org/css2/#propdef-line-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-line-height">4.2. 
-Indicating Block-Axis Overflow: the block-ellipsis property</a> <a href="#ref-for-propdef-line-height①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-positioned-element">
@@ -3108,7 +2903,7 @@ Overflow in Print and Other Static Media</a>
      <li><span class="dfn-paneled" id="term-for-propdef-widows">widows</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-shorthand-property">shorthand</span>
     </ul>
@@ -3208,13 +3003,6 @@ Overflow in Print and Other Static Media</a>
      <li><span class="dfn-paneled" id="term-for-comb-any">||</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-writing-modes-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-direction">direction</span>
-     <li><span class="dfn-paneled" id="term-for-physical-left">left</span>
-     <li><span class="dfn-paneled" id="term-for-propdef-unicode-bidi">unicode-bidi</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[css-writing-modes-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-block-size">block size</span>
@@ -3229,7 +3017,6 @@ Overflow in Print and Other Static Media</a>
    <li>
     <a data-link-type="biblio">[CSS2]</a> defines the following terms:
     <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-line-height">line-height</span>
      <li><span class="dfn-paneled" id="term-for-positioned-element">positioned</span>
      <li><span class="dfn-paneled" id="term-for-valdef-media-print">print</span>
      <li><span class="dfn-paneled" id="term-for-strut-element">strut</span>
@@ -3266,8 +3053,8 @@ Overflow in Print and Other Static Media</a>
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/css-break-3/">https://www.w3.org/TR/css-break-3/</a>
    <dt id="biblio-css-break-4">[CSS-BREAK-4]
    <dd>Rossen Atanassov; Elika Etemad. <a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a>. 18 December 2018. WD. URL: <a href="https://www.w3.org/TR/css-break-4/">https://www.w3.org/TR/css-break-4/</a>
-   <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
-   <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>. 8 June 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-5/">https://www.w3.org/TR/css-cascade-5/</a>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>. 19 March 2021. WD. URL: <a href="https://www.w3.org/TR/css-cascade-4/">https://www.w3.org/TR/css-cascade-4/</a>
    <dt id="biblio-css-contain-2">[CSS-CONTAIN-2]
    <dd>Tab Atkins Jr.; Florian Rivoal; Vladimir Levin. <a href="https://www.w3.org/TR/css-contain-2/">CSS Containment Module Level 2</a>. 16 December 2020. WD. URL: <a href="https://www.w3.org/TR/css-contain-2/">https://www.w3.org/TR/css-contain-2/</a>
    <dt id="biblio-css-display-3">[CSS-DISPLAY-3]
@@ -3287,7 +3074,7 @@ Overflow in Print and Other Static Media</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
    <dd>Tab Atkins Jr.; Simon Sapin. <a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a>. 16 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-syntax-3/">https://www.w3.org/TR/css-syntax-3/</a>
    <dt id="biblio-css-text-3">[CSS-TEXT-3]
-   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 22 April 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
+   <dd>Elika Etemad; Koji Ishii; Florian Rivoal. <a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a>. 16 March 2021. CR. URL: <a href="https://www.w3.org/TR/css-text-3/">https://www.w3.org/TR/css-text-3/</a>
    <dt id="biblio-css-text-decor-4">[CSS-TEXT-DECOR-4]
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-text-decor-4/">CSS Text Decoration Module Level 4</a>. 6 May 2020. WD. URL: <a href="https://www.w3.org/TR/css-text-decor-4/">https://www.w3.org/TR/css-text-decor-4/</a>
    <dt id="biblio-css-transforms-2">[CSS-TRANSFORMS-2]
@@ -3296,8 +3083,6 @@ Overflow in Print and Other Static Media</a>
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a>. 6 June 2019. CR. URL: <a href="https://www.w3.org/TR/css-values-3/">https://www.w3.org/TR/css-values-3/</a>
    <dt id="biblio-css-values-4">[CSS-VALUES-4]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a>. 11 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-values-4/">https://www.w3.org/TR/css-values-4/</a>
-   <dt id="biblio-css-writing-modes-3">[CSS-WRITING-MODES-3]
-   <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-3/">CSS Writing Modes Level 3</a>. 10 December 2019. REC. URL: <a href="https://www.w3.org/TR/css-writing-modes-3/">https://www.w3.org/TR/css-writing-modes-3/</a>
    <dt id="biblio-css-writing-modes-4">[CSS-WRITING-MODES-4]
    <dd>Elika Etemad; Koji Ishii. <a href="https://www.w3.org/TR/css-writing-modes-4/">CSS Writing Modes Level 4</a>. 30 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-writing-modes-4/">https://www.w3.org/TR/css-writing-modes-4/</a>
    <dt id="biblio-css2">[CSS2]
@@ -3765,11 +3550,11 @@ Indicating Block-Axis Overflow: the block-ellipsis property</a> <a href="#ref-fo
   <aside class="dfn-panel" data-for="valdef-block-ellipsis-none">
    <b><a href="#valdef-block-ellipsis-none">#valdef-block-ellipsis-none</a></b><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-valdef-block-ellipsis-none">3.5.
+    <li><a href="#ref-for-valdef-block-ellipsis-none">3.5. 
 Overflow Viewport Propagation</a> <a href="#ref-for-valdef-block-ellipsis-none①">(2)</a>
-    <li><a href="#ref-for-valdef-block-ellipsis-none②">4.2.
+    <li><a href="#ref-for-valdef-block-ellipsis-none②">4.2. 
 Indicating Block-Axis Overflow: the block-ellipsis property</a> <a href="#ref-for-valdef-block-ellipsis-none③">(2)</a>
-    <li><a href="#ref-for-valdef-block-ellipsis-none④">5.1.
+    <li><a href="#ref-for-valdef-block-ellipsis-none④">5.1. 
 Limiting Visible Lines: the line-clamp shorthand property</a>
    </ul>
   </aside>
@@ -3943,11 +3728,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

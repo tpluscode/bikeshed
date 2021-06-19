@@ -73,8 +73,8 @@ https://www.w3.org/TR/selectors-4/#empty-pseudo
 -
 EMPTY
 const
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dom-filereader-empty
@@ -84,8 +84,8 @@ FileReader
 -
 EMPTY
 const
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dom-filereader-empty
@@ -149,8 +149,8 @@ https://www.w3.org/TR/css-values-4/#em
 -
 em
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#em-width
@@ -160,8 +160,8 @@ https://drafts.csswg.org/css2/#em-width
 -
 em
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#em-width
@@ -420,8 +420,8 @@ unicode-bidi
 -
 embed
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-unicode-bidi-embed
@@ -431,8 +431,8 @@ unicode-bidi
 -
 embed
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-unicode-bidi-embed
@@ -658,8 +658,8 @@ https://w3c.github.io/mathml-core/#dfn-embellished-operator
 -
 embossed
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-media-embossed
@@ -669,8 +669,8 @@ https://drafts.csswg.org/css2/#valdef-media-embossed
 -
 embossed
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-media-embossed
@@ -876,8 +876,8 @@ https://w3c.github.io/web-nfc/#dfn-empty
 -
 empty
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#empty
@@ -886,8 +886,8 @@ https://drafts.csswg.org/css2/#empty
 -
 empty
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#empty
@@ -1108,8 +1108,8 @@ https://www.w3.org/TR/css-tables-3/#propdef-empty-cells
 -
 empty-cells
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-empty-cells
@@ -1118,8 +1118,8 @@ https://drafts.csswg.org/css2/#propdef-empty-cells
 -
 empty-cells
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-empty-cells
@@ -1128,8 +1128,8 @@ https://drafts.csswg.org/css2/#propdef-empty-cells
 -
 empty-cells
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/tables.html#propdef-empty-cells
@@ -1138,8 +1138,8 @@ https://www.w3.org/TR/CSS22/tables.html#propdef-empty-cells
 -
 empty-element tag
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-empty-element-tag
@@ -1170,8 +1170,8 @@ TrustedTypePolicyFactory
 -
 emptyelemtag
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-emptyelemtag

@@ -262,62 +262,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -1373,10 +1317,10 @@ nav {
 	to something else than <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-normal" id="ref-for-valdef-content-normal">normal</a> (or <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-content-3/#valdef-content-none" id="ref-for-valdef-content-none">none</a> for a pseudo-element),
 	the block container does not become
 	a <a data-link-type="dfn" href="#css-region" id="ref-for-css-region①⑤">CSS Region</a>.
-	If the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display-3/#propdef-display" id="ref-for-propdef-display">display</a> property
+	If the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-display/#propdef-display" id="ref-for-propdef-display">display</a> property
 	of the block container
 	or one of its ancestors
-	computes to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display-3/#valdef-display-none" id="ref-for-valdef-display-none">none</a>,
+	computes to <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-display/#valdef-display-none" id="ref-for-valdef-display-none">none</a>,
 	the block container does not become
 	a <span id="ref-for-css-region①⑥">CSS Region</span>.</p>
    <p>A <a data-link-type="dfn" href="#css-region" id="ref-for-css-region①⑦">CSS Region</a>’s document children
@@ -1532,88 +1476,7 @@ nav {
 	which has an effect
 	on the <a href="#regions-visual-formatting-steps">Visual Formatting Steps</a> described below.</p>
    <h3 class="heading settled" data-level="3.3" id="region-flow-break"><span class="secno">3.3. </span><span class="content"> Controlling Region Flow Breaks</span><a class="self-link" href="#region-flow-break"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-after" title="The break-after CSS property sets how page, column, or region breaks should behave after a generated box. If there is no generated box, the property is ignored.">break-after</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-after" title="The break-after CSS property sets how page, column, or region breaks should behave after a generated box. If there is no generated box, the property is ignored.">break-after</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>65+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>65+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-before" title="The break-before CSS property sets how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored.">break-before</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>None</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-before" title="The break-before CSS property sets how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored.">break-before</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>65+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>65+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside" title="The break-inside CSS property sets how page, column, or region breaks should behave inside a generated box. If there is no generated box, the property is ignored.">break-inside</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>65+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>65+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside" title="The break-inside CSS property sets how page, column, or region breaks should behave inside a generated box. If there is no generated box, the property is ignored.">break-inside</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>65+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>50+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>37+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge yes"><span>Edge (Legacy)</span><span>12+</span></span><span class="ie yes"><span>IE</span><span>10+</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>65+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>50+</span></span><span class="webview_android yes"><span>Android WebView</span><span>50+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>37+</span></span>
-     </div>
-    </div>
-   </div>
-   <p>Fragmentation across regions can be controlled with the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break-3/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> properties:
+   <p>Fragmentation across regions can be controlled with the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-inside" id="ref-for-propdef-break-inside">break-inside</a>, <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-before" id="ref-for-propdef-break-before">break-before</a>, and <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-break/#propdef-break-after" id="ref-for-propdef-break-after">break-after</a> properties:
 	the generic values <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-auto" id="ref-for-valdef-break-before-auto">auto</a>, <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-always" id="ref-for-valdef-break-before-always">always</a>, and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid" id="ref-for-valdef-break-before-avoid">avoid</a> affect content flowed through regions just as they do content flowed through columns or pages,
 	and the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-region" id="ref-for-valdef-break-before-region">region</a> and <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid-region" id="ref-for-valdef-break-before-avoid-region">avoid-region</a> values
 	provide region-specific breaking controls.
@@ -1754,7 +1617,7 @@ nav {
 	is a snapshot of the data,
 	and is read-only.</p>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="namedflowmap"><code><c- g>NamedFlowMap</c-></code></dfn> {
-  <c- b>maplike</c->&lt;<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a>, <a data-link-type="idl-name" href="#namedflow" id="ref-for-namedflow②"><c- n>NamedFlow</c-></a>>;
+  <c- b>maplike</c->&lt;<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a>, <a data-link-type="idl-name" href="#namedflow" id="ref-for-namedflow②"><c- n>NamedFlow</c-></a>>;
 };
 </pre>
    <p>The map entries in a <a data-link-type="idl" href="#namedflowmap" id="ref-for-namedflowmap③">NamedFlowMap</a> object
@@ -1781,7 +1644,7 @@ nav {
 	would be false.</p>
 <pre class="idl highlight def">[<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed①"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="namedflow"><code><c- g>NamedFlow</c-></code></dfn> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#eventtarget" id="ref-for-eventtarget"><c- n>EventTarget</c-></a> {
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-namedflow-name" id="ref-for-dom-namedflow-name"><c- g>name</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-namedflow-name" id="ref-for-dom-namedflow-name"><c- g>name</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean" id="ref-for-idl-boolean"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="boolean" href="#dom-namedflow-overset" id="ref-for-dom-namedflow-overset①"><c- g>overset</c-></a>;
   <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="#region" id="ref-for-region"><c- n>Region</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-namedflow-getregions" id="ref-for-dom-namedflow-getregions"><c- g>getRegions</c-></a>();
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-short" id="ref-for-idl-short"><c- b>short</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="short" href="#dom-namedflow-firstemptyregionindex" id="ref-for-dom-namedflow-firstemptyregionindex"><c- g>firstEmptyRegionIndex</c-></a>;
@@ -1847,7 +1710,7 @@ nav {
 	pseudo-elements or other CSS constructs
 	such as <a href="https://drafts.csswg.org/css3-page-template/#templates-and-slots">slots</a>) in an implementation which can be <a data-link-type="dfn" href="#css-region" id="ref-for-css-region④⓪">CSS Regions</a>.</p>
 <pre class="idl highlight def"><c- b>interface</c-> <c- b>mixin</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="region"><code><c- g>Region</c-></code></dfn> {
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-region-regionoverset" id="ref-for-dom-region-regionoverset"><c- g>regionOverset</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-region-regionoverset" id="ref-for-dom-region-regionoverset"><c- g>regionOverset</c-></a>;
   <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence③"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#range" id="ref-for-range"><c- n>Range</c-></a>>? <a class="idl-code" data-link-type="method" href="#dom-region-getregionflowranges" id="ref-for-dom-region-getregionflowranges"><c- g>getRegionFlowRanges</c-></a>();
 };
 
@@ -2026,7 +1889,7 @@ nav {
 	In particular,
 	when computing the <a href="#rfcb-flow-fragment-height-resolution">flow fragment height</a> of a multi-column container
 	that is associated with a <em><a data-link-type="dfn" href="#named-flow" id="ref-for-named-flow⑧①">named flow</a></em>,
-	the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-multicol-1/#propdef-column-fill" id="ref-for-propdef-column-fill">column-fill</a> <span>[CSS3COL]</span> property is honored
+	the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-multicol/#propdef-column-fill" id="ref-for-propdef-column-fill">column-fill</a> <span>[CSS3COL]</span> property is honored
 	to balance the fragments of content
 	that would flow through
 	its columns.</p>
@@ -2201,7 +2064,7 @@ nav {
 	using the remainder of the flow
 	and accounting for <a href="https://www.w3.org/TR/css3-break/">fragmentation rules</a>.
 	This process accounts for constraints
-	such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height②">height</a> or <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height">max-height</a> values,
+	such as the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height②">height</a> or <a class="property" data-link-type="propdesc">max-height</a> values,
 	as described in the CSS 2.1 section
 	on <a href="https://www.w3.org/TR/CSS2/visudet.html#Computing_heights_and_margins">calculating heights and margins</a> (see the <a href="https://www.w3.org/TR/CSS2/visudet.html#normal-block">Block-level non-replaced elements in normal flow...</a> section and the <a href="https://www.w3.org/TR/CSS2/visudet.html#block-root-margin">complicated cases</a> section).
 	During this phase,
@@ -2369,7 +2232,7 @@ nav {
 	is resolved by laying out this first paragraph in the used <span class="property" id="ref-for-propdef-width①①">width</span>.</p>
    <p>At this point, the user agent lays out as much
 	of the remaining flow as possible in RFCB-B.
-	Because rB’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height①">max-height</a> computed value is "150px",
+	Because rB’s <a class="property" data-link-type="propdesc">max-height</a> computed value is "150px",
 	the user agent only lays out the "article" named flow
 	using RFCB-B’s used <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-width" id="ref-for-propdef-width①②">width</a> until the point where
 	laying out additional content would cause RFCB-B to overflow rB’s box.
@@ -2389,7 +2252,7 @@ nav {
    <p>Resolving the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height⑨">height</a> of rA <a href="https://www.w3.org/TR/CSS2/visudet.html#normal-block">requires a content measure</a> which is FH-A (the flow fragment height for RFCB-A).</p>
    <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①⓪">height</a> of rB results from first computing its <a href="https://www.w3.org/TR/CSS2/visudet.html#block-root-margin">content measure</a> and then applying the <a href="https://www.w3.org/TR/CSS2/visudet.html#min-max-heights">rules for max-height</a>.
 	Here, the vertical content measure evaluates to FH-B.
-	After applying the rules for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-max-height" id="ref-for-propdef-max-height②">max-height</a> and accounting for margins, padding and borders,
+	After applying the rules for <a class="property" data-link-type="propdesc">max-height</a> and accounting for margins, padding and borders,
 	the used <span class="property" id="ref-for-propdef-height①①">height</span> of rB is resolved to LH-B
 	(<code>150px</code>).</p>
    <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-sizing-3/#propdef-height" id="ref-for-propdef-height①②">height</a> of rC’s box results from <a href="https://www.w3.org/TR/CSS2/visudet.html#block-root-margin">calculating its content measure</a>:
@@ -2796,14 +2659,14 @@ The flow-from property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-display">
-   <a href="https://drafts.csswg.org/css-display-3/#propdef-display">https://drafts.csswg.org/css-display-3/#propdef-display</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#propdef-display">https://drafts.csswg.org/css-display/#propdef-display</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-display">3.2. 
 The flow-from property</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-display-none">
-   <a href="https://drafts.csswg.org/css-display-3/#valdef-display-none">https://drafts.csswg.org/css-display-3/#valdef-display-none</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-display/#valdef-display-none">https://drafts.csswg.org/css-display/#valdef-display-none</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-valdef-display-none">3.2. 
 The flow-from property</a>
@@ -2914,47 +2777,36 @@ The flow-from property</a>
 The region-fragment property</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-max-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-max-height">https://drafts.csswg.org/css2/#propdef-max-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-max-height">7.3.1.2. 
-RFCB flow fragment height resolution, Phase 2</a>
-    <li><a href="#ref-for-propdef-max-height①">7.5.2. 
-Step 1 - Phase 2: Layout flow to compute the RFCBs' flow fragments heights</a>
-    <li><a href="#ref-for-propdef-max-height②">7.5.3. 
-Step 2: Layout document and regions without named flows</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-after">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-after">https://drafts.csswg.org/css-break-3/#propdef-break-after</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-after">https://drafts.csswg.org/css-break/#propdef-break-after</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-after">3.3. 
 Controlling Region Flow Breaks</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-before">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-before">https://drafts.csswg.org/css-break-3/#propdef-break-before</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-before">https://drafts.csswg.org/css-break/#propdef-break-before</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-before">3.3. 
 Controlling Region Flow Breaks</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-break-inside">
-   <a href="https://drafts.csswg.org/css-break-3/#propdef-break-inside">https://drafts.csswg.org/css-break-3/#propdef-break-inside</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-break/#propdef-break-inside">https://drafts.csswg.org/css-break/#propdef-break-inside</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-break-inside">3.3. 
 Controlling Region Flow Breaks</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-column-fill">
-   <a href="https://drafts.csswg.org/css-multicol-1/#propdef-column-fill">https://drafts.csswg.org/css-multicol-1/#propdef-column-fill</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-multicol/#propdef-column-fill">https://drafts.csswg.org/css-multicol/#propdef-column-fill</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-column-fill">5. 
 Multi-column regions</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssomstring">
-   <a href="https://drafts.csswg.org/cssom-1/#cssomstring">https://drafts.csswg.org/cssom-1/#cssomstring</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssomstring">https://drafts.csswg.org/cssom/#cssomstring</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssomstring">4.1. 
 The NamedFlow interface</a> <a href="#ref-for-cssomstring①">(2)</a>
@@ -3096,11 +2948,6 @@ The NamedFlow interface</a>
      <li><span class="dfn-paneled" id="term-for-comb-one">|</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[CSS2]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-max-height">max-height</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[CSS3-BREAK]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-propdef-break-after">break-after</span>
@@ -3132,7 +2979,7 @@ The NamedFlow interface</a>
      <li><span class="dfn-paneled" id="term-for-paged-media">paged media</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-Exposed">Exposed</span>
      <li><span class="dfn-paneled" id="term-for-idl-boolean">boolean</span>
@@ -3183,8 +3030,8 @@ The NamedFlow interface</a>
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-select">[SELECT]
    <dd>Tantek Çelik; et al. <a href="https://www.w3.org/TR/selectors-3/">Selectors Level 3</a>. 6 November 2018. REC. URL: <a href="https://www.w3.org/TR/selectors-3/">https://www.w3.org/TR/selectors-3/</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
@@ -3258,12 +3105,12 @@ The NamedFlow interface</a>
 };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->] <c- b>interface</c-> <a href="#namedflowmap"><code><c- g>NamedFlowMap</c-></code></a> {
-  <c- b>maplike</c->&lt;<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a>, <a data-link-type="idl-name" href="#namedflow"><c- n>NamedFlow</c-></a>>;
+  <c- b>maplike</c->&lt;<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a>, <a data-link-type="idl-name" href="#namedflow"><c- n>NamedFlow</c-></a>>;
 };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=<c- n>Window</c->]
 <c- b>interface</c-> <a href="#namedflow"><code><c- g>NamedFlow</c-></code></a> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#eventtarget"><c- n>EventTarget</c-></a> {
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-namedflow-name"><c- g>name</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-namedflow-name"><c- g>name</c-></a>;
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="boolean" href="#dom-namedflow-overset"><c- g>overset</c-></a>;
   <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="#region"><c- n>Region</c-></a>> <a class="idl-code" data-link-type="method" href="#dom-namedflow-getregions"><c- g>getRegions</c-></a>();
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-short"><c- b>short</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="short" href="#dom-namedflow-firstemptyregionindex"><c- g>firstEmptyRegionIndex</c-></a>;
@@ -3272,7 +3119,7 @@ The NamedFlow interface</a>
 };
 
 <c- b>interface</c-> <c- b>mixin</c-> <a href="#region"><code><c- g>Region</c-></code></a> {
-  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-region-regionoverset"><c- g>regionOverset</c-></a>;
+  <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="CSSOMString" href="#dom-region-regionoverset"><c- g>regionOverset</c-></a>;
   <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#range"><c- n>Range</c-></a>>? <a class="idl-code" data-link-type="method" href="#dom-region-getregionflowranges"><c- g>getRegionFlowRanges</c-></a>();
 };
 
@@ -3617,11 +3464,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

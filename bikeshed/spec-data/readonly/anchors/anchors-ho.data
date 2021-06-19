@@ -92,8 +92,8 @@ https://html.spec.whatwg.org/multipage/semantics-other.html#selector-hover
 -
 :hover
 selector
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#selectordef-hover
@@ -102,8 +102,8 @@ https://drafts.csswg.org/css2/#selectordef-hover
 -
 :hover
 selector
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#selectordef-hover
@@ -768,8 +768,8 @@ https://tc39.es/ecma262/multipage/overview.html#host-hook
 -
 host interfaces
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#host-interfaces
@@ -888,8 +888,8 @@ https://url.spec.whatwg.org/#host-state
 -
 host-char
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-host-char
@@ -898,8 +898,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-host-char
 -
 host-char
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-host-char
@@ -939,8 +939,8 @@ cookie
 -
 host-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-host-part
@@ -949,8 +949,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-host-part
 -
 host-part
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-host-part
@@ -959,8 +959,8 @@ https://www.w3.org/TR/CSP3/#grammardef-host-part
 -
 host-part match
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#host-part-match
@@ -969,8 +969,8 @@ https://w3c.github.io/webappsec-csp/#host-part-match
 -
 host-part match
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#host-part-match
@@ -979,8 +979,8 @@ https://www.w3.org/TR/CSP3/#host-part-match
 -
 host-shareable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#host-shareable
@@ -989,8 +989,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#host-shareable
 -
 host-shareable
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#host-shareable
@@ -999,8 +999,8 @@ https://www.w3.org/TR/WGSL/#host-shareable
 -
 host-source
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#grammardef-host-source
@@ -1009,8 +1009,8 @@ https://w3c.github.io/webappsec-csp/#grammardef-host-source
 -
 host-source
 grammar
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#grammardef-host-source

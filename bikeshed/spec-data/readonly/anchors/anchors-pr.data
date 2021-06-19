@@ -110,8 +110,8 @@ TokenBindingStatus
 -
 "prev"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursordirection-prev
@@ -121,8 +121,8 @@ IDBCursorDirection
 -
 "prev"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-prev
@@ -154,8 +154,8 @@ MediaSessionAction
 -
 "prevunique"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursordirection-prevunique
@@ -165,8 +165,8 @@ IDBCursorDirection
 -
 "prevunique"
 enum-value
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-prevunique
@@ -725,8 +725,8 @@ https://xhr.spec.whatwg.org/#progresseventinit
 -
 Promise
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-promise
@@ -735,8 +735,8 @@ https://heycam.github.io/webidl/#idl-promise
 -
 Promise<T>
 interface
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#idl-promise
@@ -1051,8 +1051,8 @@ white-space
 -
 pre
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-white-space-pre
@@ -1062,8 +1062,8 @@ white-space
 -
 pre
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-white-space-pre
@@ -1115,8 +1115,8 @@ white-space
 -
 pre-line
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-white-space-pre-line
@@ -1126,8 +1126,8 @@ white-space
 -
 pre-line
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-white-space-pre-line
@@ -1237,8 +1237,8 @@ https://www.w3.org/TR/geometry-1/#pre-multiply
 -
 pre-navigation check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-pre-navigation-check
@@ -1248,8 +1248,8 @@ directive
 -
 pre-navigation check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-pre-navigation-check
@@ -1269,8 +1269,8 @@ https://dom.spec.whatwg.org/#concept-node-pre-remove
 -
 pre-request check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#directive-pre-request-check
@@ -1280,8 +1280,8 @@ directive
 -
 pre-request check
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#directive-pre-request-check
@@ -1313,8 +1313,8 @@ white-space
 -
 pre-wrap
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-white-space-pre-wrap
@@ -1324,8 +1324,8 @@ white-space
 -
 pre-wrap
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-white-space-pre-wrap
@@ -1390,8 +1390,8 @@ tree
 -
 preceding element
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#preceding
@@ -1400,8 +1400,8 @@ https://drafts.csswg.org/css2/#preceding
 -
 preceding element
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#preceding
@@ -1452,8 +1452,8 @@ PortalActivateEvent
 -
 predeclared
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#predeclared
@@ -1462,8 +1462,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#predeclared
 -
 predeclared
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#predeclared
@@ -2145,8 +2145,8 @@ https://www.w3.org/TR/resource-hints/#dfn-prefetch
 -
 prefetch-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#prefetch-src
@@ -2155,8 +2155,8 @@ https://w3c.github.io/webappsec-csp/#prefetch-src
 -
 prefetch-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#prefetch-src
@@ -2341,8 +2341,8 @@ CSSNamespaceRule
 -
 prefix
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-prefix
@@ -2351,8 +2351,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-prefix
 -
 prefix index
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-prefix-index
@@ -2361,8 +2361,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-prefix-index
 -
 prefix map
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-prefix-map
@@ -2975,8 +2975,8 @@ TokenBindingStatus
 -
 present
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-present
@@ -3037,8 +3037,8 @@ Navigator
 -
 presentation attributes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#TermPresentationAttribute
@@ -3047,8 +3047,8 @@ https://svgwg.org/svg2-draft/styling.html#TermPresentationAttribute
 -
 presentation attributes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#TermPresentationAttribute
@@ -3936,8 +3936,8 @@ SVGFEImageElement
 -
 preserveAspectRatio
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/types.html#__svg__SVGFitToViewBox__preserveAspectRatio
@@ -3947,8 +3947,8 @@ SVGFitToViewBox
 -
 preserveAspectRatio
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/embedded.html#__svg__SVGImageElement__preserveAspectRatio
@@ -3958,8 +3958,8 @@ SVGImageElement
 -
 preserveAspectRatio
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/types.html#__svg__SVGFitToViewBox__preserveAspectRatio
@@ -3969,8 +3969,8 @@ SVGFitToViewBox
 -
 preserveAspectRatio
 attribute
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/embedded.html#__svg__SVGImageElement__preserveAspectRatio
@@ -4024,8 +4024,8 @@ feImage
 -
 preserveaspectratio
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio
@@ -4035,8 +4035,8 @@ svg
 -
 preserveaspectratio
 element-attr
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/coords.html#TermPreserveAspectRatio
@@ -4936,8 +4936,8 @@ https://www.w3.org/TR/filter-effects-1/#primary-filter-primitive-tree
 -
 primary global interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-primary-global-interface
@@ -4996,8 +4996,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#primary-interface
 -
 primary interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-primary-interface
@@ -5006,8 +5006,8 @@ https://heycam.github.io/webidl/#dfn-primary-interface
 -
 primary interface
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-primary-interface
@@ -5126,8 +5126,8 @@ https://www.w3.org/TR/webxr/#primary-view
 -
 primaryKey
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursor-continueprimarykey-key-primarykey-primarykey
@@ -5137,8 +5137,8 @@ IDBCursor/continuePrimaryKey(key, primaryKey)
 -
 primaryKey
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbcursor-primarykey
@@ -5148,8 +5148,8 @@ IDBCursor
 -
 primaryKey
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-continueprimarykey-key-primarykey-primarykey
@@ -5159,8 +5159,8 @@ IDBCursor/continuePrimaryKey(key, primaryKey)
 -
 primaryKey
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-primarykey
@@ -5234,8 +5234,8 @@ https://www.w3.org/TR/webgpu/#primitive-restart-value
 -
 primitive types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-primitive-type
@@ -5244,8 +5244,8 @@ https://heycam.github.io/webidl/#dfn-primitive-type
 -
 primitive types
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-primitive-type
@@ -5298,8 +5298,8 @@ filter
 -
 principal block-level box
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#principal-box
@@ -5308,8 +5308,8 @@ https://drafts.csswg.org/css2/#principal-box
 -
 principal block-level box
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#principal-box
@@ -5476,8 +5476,8 @@ mediatracksettings
 -
 print
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-media-print
@@ -5487,8 +5487,8 @@ https://drafts.csswg.org/css2/#valdef-media-print
 -
 print
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-media-print
@@ -6062,8 +6062,8 @@ IP address space
 -
 private
 enum-value
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dom-keytype-private
@@ -6073,8 +6073,8 @@ KeyType
 -
 private
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#storage-classes-private
@@ -6084,8 +6084,8 @@ storage classes
 -
 private
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#storage-classes-private
@@ -6135,8 +6135,8 @@ https://wicg.github.io/private-network-access/#private-network-request
 -
 privateKey
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-CryptoKeyPair-privateKey
@@ -6178,8 +6178,8 @@ public key credential source
 -
 privatekey
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKeyPair-privateKey
@@ -6670,8 +6670,8 @@ https://wicg.github.io/scroll-to-text-fragment/#process-and-consume-fragment-dir
 -
 process blob parts
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#process-blob-parts
@@ -6680,8 +6680,8 @@ https://w3c.github.io/FileAPI/#process-blob-parts
 -
 process blob parts
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#process-blob-parts
@@ -7255,8 +7255,8 @@ https://www.w3.org/TR/webaudio/#process
 -
 processed
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request-processed
@@ -7266,8 +7266,8 @@ request
 -
 processed
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request-processed
@@ -7277,8 +7277,8 @@ request
 -
 processed flag
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#request-processed-flag
@@ -7288,8 +7288,8 @@ request
 -
 processed flag
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#request-processed-flag
@@ -7401,8 +7401,8 @@ https://www.w3.org/TR/encoding/#concept-encoding-process
 -
 processing blob parts
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#process-blob-parts
@@ -7411,8 +7411,8 @@ https://w3c.github.io/FileAPI/#process-blob-parts
 -
 processing blob parts
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#process-blob-parts
@@ -7531,8 +7531,8 @@ https://www.w3.org/TR/svg-integration/#processing-mode
 -
 processing modes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/conform.html#processing-mode
@@ -7541,8 +7541,8 @@ https://svgwg.org/svg2-draft/conform.html#processing-mode
 -
 processing modes
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/conform.html#processing-mode
@@ -7644,8 +7644,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#processinginstruction
 -
 processinginstruction
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-processinginstruction
@@ -7793,8 +7793,8 @@ https://streams.spec.whatwg.org/#producer
 -
 producing an xml serialization of a dom node
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-producing-an-xml-serialization-of-a-dom-node
@@ -8051,8 +8051,8 @@ https://wicg.github.io/js-self-profiling/#dfn-profiling-session
 -
 program error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#program-error
@@ -8061,8 +8061,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#program-error
 -
 program error
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#program-error
@@ -8136,8 +8136,8 @@ cursor
 -
 progress
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-progress
@@ -8147,8 +8147,8 @@ cursor
 -
 progress
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-progress
@@ -8158,8 +8158,8 @@ cursor
 -
 progress
 event
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#dfn-progress-event
@@ -8169,8 +8169,8 @@ FileReader
 -
 progress
 event
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#dfn-progress-event
@@ -8339,8 +8339,8 @@ https://www.w3.org/TR/mediacapture-depth/#dfn-project
 -
 projection
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-media-projection
@@ -8350,8 +8350,8 @@ https://drafts.csswg.org/css2/#valdef-media-projection
 -
 projection
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-media-projection
@@ -8679,8 +8679,8 @@ XRSession
 -
 promise type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-promise-type
@@ -8689,8 +8689,8 @@ https://heycam.github.io/webidl/#dfn-promise-type
 -
 promise type
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-promise-type
@@ -9075,8 +9075,8 @@ https://www.w3.org/TR/css-tables-3/#proper-table-child-element
 -
 proper table child
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#proper-table-child
@@ -9085,8 +9085,8 @@ https://drafts.csswg.org/css2/#proper-table-child
 -
 proper table child
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#proper-table-child
@@ -9095,8 +9095,8 @@ https://drafts.csswg.org/css2/#proper-table-child
 -
 proper table row parent
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#proper-table-row-parent
@@ -9105,8 +9105,8 @@ https://drafts.csswg.org/css2/#proper-table-row-parent
 -
 proper table row parent
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#proper-table-row-parent
@@ -9271,8 +9271,8 @@ https://www.w3.org/TR/svg-aam-1.0/#dfn-property
 -
 properties
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/styling.html#TermProperty
@@ -9281,8 +9281,8 @@ https://svgwg.org/svg2-draft/styling.html#TermProperty
 -
 properties
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/styling.html#TermProperty
@@ -9628,8 +9628,8 @@ StylePropertyMap/delete(property)
 -
 property
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#property
@@ -9638,8 +9638,8 @@ https://drafts.csswg.org/css2/#property
 -
 property
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#property
@@ -9983,8 +9983,8 @@ https://html.spec.whatwg.org/multipage/microdata.html#concept-property-value
 -
 property-name
 property
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#propdef-property-name
@@ -9993,8 +9993,8 @@ https://drafts.csswg.org/css2/#propdef-property-name
 -
 property-name
 property
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#propdef-property-name
@@ -10003,8 +10003,8 @@ https://drafts.csswg.org/css2/#propdef-property-name
 -
 property-name
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 snapshot
 https://www.w3.org/TR/CSS22/about.html#propdef-property-name

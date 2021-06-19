@@ -1,7 +1,7 @@
 "@charset"
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#charset%E2%91%A0
@@ -10,8 +10,8 @@ https://drafts.csswg.org/css2/#charset%E2%91%A0
 -
 "@charset"
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#charset%E2%91%A0
@@ -1084,8 +1084,8 @@ https://www.w3.org/TR/webdriver2/#dfn-change
 -
 change
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 current
 https://heycam.github.io/webidl/#dfn-change-global-environment
@@ -1095,8 +1095,8 @@ Realm
 -
 change
 dfn
-WebIDL-1
-WebIDL
+webidl-1
+webidl
 1
 snapshot
 https://www.w3.org/TR/WebIDL-1/#dfn-change-global-environment
@@ -1499,8 +1499,8 @@ RTCDataChannelEventInit
 -
 channel format
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#channel-format
@@ -1509,8 +1509,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#channel-format
 -
 channel format
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#channel-format
@@ -1519,8 +1519,8 @@ https://www.w3.org/TR/WGSL/#channel-format
 -
 channel formats
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#channel-formats
@@ -1529,8 +1529,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#channel-formats
 -
 channel formats
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#channel-formats
@@ -1579,8 +1579,8 @@ https://html.spec.whatwg.org/multipage/web-messaging.html#channel-name
 -
 channel transfer function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#channel-transfer-function
@@ -1589,8 +1589,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#channel-transfer-function
 -
 channel transfer function
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#channel-transfer-function
@@ -2150,8 +2150,8 @@ RTCRtpCodecCapability
 -
 channels
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#channels
@@ -2160,8 +2160,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#channels
 -
 channels
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#channels
@@ -2286,8 +2286,8 @@ tr
 -
 char
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-char
@@ -2493,8 +2493,8 @@ https://www.w3.org/TR/input-events-2/#dfn-character
 -
 character
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#TermCharacter
@@ -2503,8 +2503,8 @@ https://svgwg.org/svg2-draft/text.html#TermCharacter
 -
 character
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#TermCharacter
@@ -2523,8 +2523,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#encoding
 -
 character encoding
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#character-encoding
@@ -2533,8 +2533,8 @@ https://drafts.csswg.org/css2/#character-encoding
 -
 character encoding
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#character-encoding
@@ -3176,8 +3176,8 @@ https://www.w3.org/TR/css-color-4/#valdef-color-chartreuse
 -
 charwidth
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/text.html#CharWidth
@@ -3186,8 +3186,8 @@ https://svgwg.org/svg2-draft/text.html#CharWidth
 -
 charwidth
 dfn
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/text.html#CharWidth
@@ -3497,8 +3497,8 @@ https://w3c.github.io/web-nfc/#dfn-check-parsed-records
 -
 check permission
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 current
 https://w3c.github.io/geolocation-api/#dfn-check-permission
@@ -3507,8 +3507,8 @@ https://w3c.github.io/geolocation-api/#dfn-check-permission
 -
 check permission
 dfn
-geolocation-API
-geolocation-API
+geolocation-api
+geolocation-api
 1
 snapshot
 https://www.w3.org/TR/geolocation-API/#dfn-check-permission
@@ -3547,8 +3547,8 @@ https://www.w3.org/TR/generic-sensor/#check-sensor-policy-controlled-features
 -
 check that a key could be injected into a value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#check-that-a-key-could-be-injected-into-a-value
@@ -3557,8 +3557,8 @@ https://w3c.github.io/IndexedDB/#check-that-a-key-could-be-injected-into-a-value
 -
 check that a key could be injected into a value
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#check-that-a-key-could-be-injected-into-a-value
@@ -3711,8 +3711,8 @@ https://mimesniff.spec.whatwg.org/#check-for-apache-bug-flag
 -
 checkEnclosure
 method
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__checkEnclosure
@@ -3722,8 +3722,8 @@ SVGSVGElement
 -
 checkEnclosure
 method
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#__svg__SVGSVGElement__checkEnclosure
@@ -3733,8 +3733,8 @@ SVGSVGElement
 -
 checkIntersection
 method
-SVG2
-SVG
+svg2
+svg
 2
 current
 https://svgwg.org/svg2-draft/struct.html#__svg__SVGSVGElement__checkIntersection
@@ -3744,8 +3744,8 @@ SVGSVGElement
 -
 checkIntersection
 method
-SVG2
-SVG
+svg2
+svg
 2
 snapshot
 https://www.w3.org/TR/SVG2/struct.html#__svg__SVGSVGElement__checkIntersection
@@ -4067,8 +4067,8 @@ voice-family
 -
 child
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#child
@@ -4077,8 +4077,8 @@ https://drafts.csswg.org/css2/#child
 -
 child
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#child
@@ -4087,8 +4087,8 @@ https://drafts.csswg.org/css2/#child
 -
 child
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-child
@@ -4276,8 +4276,8 @@ https://www.w3.org/TR/css-layout-api-1/#child-layout
 -
 child nodes
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-child
@@ -4286,8 +4286,8 @@ https://w3c.github.io/DOM-Parsing/#dfn-child
 -
 child selector
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#child-selector
@@ -4296,8 +4296,8 @@ https://drafts.csswg.org/css2/#child-selector
 -
 child selector
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#child-selector
@@ -4348,8 +4348,8 @@ https://www.w3.org/TR/fill-stroke-3/#valdef-svg-paint-child-integer
 -
 child-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#child-src
@@ -4358,8 +4358,8 @@ https://w3c.github.io/webappsec-csp/#child-src
 -
 child-src
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#child-src
@@ -4579,8 +4579,8 @@ HIDCollectionInfo
 -
 children
 dfn
-DOM-Parsing
-DOM-Parsing
+dom-parsing
+dom-parsing
 1
 current
 https://w3c.github.io/DOM-Parsing/#dfn-child

@@ -2637,8 +2637,8 @@ This is also needed to maintain the design principle that
 inserting an unstyled inline element around a piece of text
 doesn’t change the appearance of that text. </div>
    <div class="example" id="example-58897411">
-    <a class="self-link" href="#example-58897411"></a> For example, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a> property is <strong>not</strong> inherited.
-    <p>If the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image" id="ref-for-propdef-background-image①">background-image</a> property had been inherited,
+    <a class="self-link" href="#example-58897411"></a> For example, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image" id="ref-for-propdef-background-image">background-image</a> property is <strong>not</strong> inherited. 
+    <p>If the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image" id="ref-for-propdef-background-image①">background-image</a> property had been inherited,
 then the specification would have had to create a good bit of complexity
 to avoid a partially-transparent image
 being visibly repeated for each descendant element.
@@ -2648,11 +2648,11 @@ which is the "code smell" mentioned above that suggests
 that a property likely should not have been inherited.</p>
    </div>
    <div class="example" id="example-51dea7ed">
-    <a class="self-link" href="#example-51dea7ed"></a> Another example is the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size">font-size</a> property, which <strong>is</strong> inherited.
+    <a class="self-link" href="#example-51dea7ed"></a> Another example is the <a class="property" data-link-type="propdesc">font-size</a> property, which <strong>is</strong> inherited.
 It sets the size of the font used for the text in the element,
 and continues to apply to any descendants that don’t
-have a declaration setting <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size①">font-size</a> to a different value. 
-    <p>If the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size②">font-size</a> property were not inherited,
+have a declaration setting <a class="property" data-link-type="propdesc">font-size</a> to a different value. 
+    <p>If the <a class="property" data-link-type="propdesc">font-size</a> property were not inherited,
 then it would probably have to have an initial value
 that requires walking up the ancestor chain to find the nearest ancestor
 that doesn’t have that value.
@@ -2660,29 +2660,29 @@ This is the "code smell" mentioned above that suggests
 that a property likely should have been inherited.</p>
    </div>
    <h3 class="heading settled" data-level="3.3" id="css-computed-value"><span class="secno">3.3. </span><span class="content">Choose the computed value type based on how the property should inherit</span><a class="self-link" href="#css-computed-value"></a></h3>
-   <p>Choose the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value">computed value</a> of a CSS property
-based on how it will <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#inheritance" id="ref-for-inheritance">inherit</a>,
+   <p>Choose the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value">computed value</a> of a CSS property
+based on how it will <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#inheritance" id="ref-for-inheritance">inherit</a>,
 including how values where it depends on other properties should inherit.</p>
    <p>Inheritance means that
 an element gets the same computed value for a property that its parent has.
 This means that processing steps that happen before reaching the computed value
 affect the value that is inherited,
-and those that happen after (such as for the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value">used value</a>) do not.</p>
-   <div class="note" role="note"> Note: the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value①">computed value</a> should not be confused with the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#resolved-value" id="ref-for-resolved-value">resolved value</a> which is returned from the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle" id="ref-for-dom-window-getcomputedstyle">getComputedStyle()</a></code> method. </div>
+and those that happen after (such as for the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value">used value</a>) do not.</p>
+   <div class="note" role="note"> Note: the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value①">computed value</a> should not be confused with the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#resolved-value" id="ref-for-resolved-value">resolved value</a> which is returned from the <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle" id="ref-for-dom-window-getcomputedstyle">getComputedStyle()</a></code> method. </div>
    <div class="example" id="example-bdfc8e34">
-    <a class="self-link" href="#example-bdfc8e34"></a> For example, the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height">line-height</a> property may accept a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value">&lt;number></a> value,
-such as <a class="css" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height①">line-height: 1.4</a>.
-This value represents a multiple of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size③">font-size</a>,
-so if the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size④">font-size</a> is <span class="css">20px</span>,
-the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#actual-value" id="ref-for-actual-value">actual value</a> for the line height is <span class="css">28px</span>. 
-    <p>However, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#computed-value" id="ref-for-computed-value②">computed value</a> in this case is the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value①">&lt;number></a> <span class="css">1.4</span>,
-not the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span class="css">28px</span>.
-(The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade-5/#used-value" id="ref-for-used-value①">used value</a> is <span class="css">28px</span>.)</p>
-    <p>The <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height②">line-height</a> property can be inherited
-into elements that have a different <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size⑤">font-size</a>,
-and any property on those elements which depends on <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height③">line-height</a> must take the relevant <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size⑥">font-size</a> into account,
-rather than the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size" id="ref-for-propdef-font-size⑦">font-size</a> for the element from which
-the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height④">line-height</a> value was inherited.</p>
+    <a class="self-link" href="#example-bdfc8e34"></a> For example, the <a class="property" data-link-type="propdesc">line-height</a> property may accept a <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value">&lt;number></a> value,
+such as <a class="css" data-link-type="propdesc">line-height: 1.4</a>.
+This value represents a multiple of the <a class="property" data-link-type="propdesc">font-size</a>,
+so if the <a class="property" data-link-type="propdesc">font-size</a> is <span class="css">20px</span>,
+the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#actual-value" id="ref-for-actual-value">actual value</a> for the line height is <span class="css">28px</span>. 
+    <p>However, the <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#computed-value" id="ref-for-computed-value②">computed value</a> in this case is the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#number-value" id="ref-for-number-value①">&lt;number></a> <span class="css">1.4</span>,
+not the <a class="production css" data-link-type="type" href="https://drafts.csswg.org/css-values-3/#length-value" id="ref-for-length-value" title="Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | mm | pc | pt | px | q | rem | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw">&lt;length></a> <span class="css">28px</span>.
+(The <a data-link-type="dfn" href="https://drafts.csswg.org/css-cascade/#used-value" id="ref-for-used-value①">used value</a> is <span class="css">28px</span>.)</p>
+    <p>The <a class="property" data-link-type="propdesc">line-height</a> property can be inherited
+into elements that have a different <a class="property" data-link-type="propdesc">font-size</a>,
+and any property on those elements which depends on <a class="property" data-link-type="propdesc">line-height</a> must take the relevant <a class="property" data-link-type="propdesc">font-size</a> into account,
+rather than the <a class="property" data-link-type="propdesc">font-size</a> for the element from which
+the <a class="property" data-link-type="propdesc">line-height</a> value was inherited.</p>
 <pre class="highlight"><c- p>&lt;</c-><c- f>body</c-> <c- e>style</c-><c- o>=</c-><c- s>"font-size: 20px; line-height: 1.4"</c-><c- p>></c->
 
   <c- p>&lt;</c-><c- f>p</c-><c- p>></c->This body text has a line height of 28px.<c- p>&lt;/</c-><c- f>p</c-><c- p>></c->
@@ -2694,7 +2694,7 @@ the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org
   <c- p>&lt;/</c-><c- f>h2</c-><c- p>></c->
 <c- p>&lt;/</c-><c- f>body</c-><c- p>></c->
 </pre>
-    <p>These number values are generally the preferred values to use for <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css2/#propdef-line-height" id="ref-for-propdef-line-height⑤">line-height</a> because they inherit better than length values.</p>
+    <p>These number values are generally the preferred values to use for <a class="property" data-link-type="propdesc">line-height</a> because they inherit better than length values.</p>
    </div>
    <p>See also:</p>
    <ul>
@@ -2733,7 +2733,7 @@ you can freely rely upon language-specific semantics and conventions,
 with no need to keep things generalized.</p>
    <div class="example" id="example-b9c0357a">
     <a class="self-link" href="#example-b9c0357a"></a> For example,
-the <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define" id="ref-for-dom-customelementregistry-define">CustomElementRegistry.define()</a></code> method takes a reference to
+the <code class="idl"><a data-link-type="idl">CustomElementRegistry.define()</a></code> method takes a reference to
 a <a href="https://tc39.es/ecma262/#sec-static-semantics-constructormethod">Constructor Method</a>. 
     <p>This takes advantage of the relatively recent addition of classes to JavaScript,
 and the fact that function references are very easy to use in JavaScript.</p>
@@ -2820,9 +2820,9 @@ Don’t create a new value each time the getter is called.</p>
    <p>If you were thinking about using an attribute,
 but it doesn’t behave this way,
 you should probably use a method instead.</p>
-   <div class="example" id="example-92914693"><a class="self-link" href="#example-92914693"></a> For example, <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsettop" id="ref-for-dom-htmlelement-offsettop">offsetTop</a></code> performs layout,
+   <div class="example" id="example-92914693"><a class="self-link" href="#example-92914693"></a> For example, <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsettop" id="ref-for-dom-htmlelement-offsettop">offsetTop</a></code> performs layout,
 which can be complex and time-consuming.
-It would have been better if this had been a method like <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect" id="ref-for-dom-element-getboundingclientrect">getBoundingClientRect()</a></code>. </div>
+It would have been better if this had been a method like <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect" id="ref-for-dom-element-getboundingclientrect">getBoundingClientRect()</a></code>. </div>
    <h3 class="heading settled" data-level="5.2" id="live-vs-static"><span class="secno">5.2. </span><span class="content">Consider whether objects should be live or static</span><a class="self-link" href="#live-vs-static"></a></h3>
    <p>If an API gives access to an object
 representing some internal state,
@@ -2984,7 +2984,7 @@ if appropriate.</p>
    <p>By default, <a data-link-type="biblio" href="#biblio-webidl">[WEBIDL]</a> interfaces generate "non-constructible" classes:
 trying to create instances of them using <code>new X()</code> will throw a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#exceptiondef-typeerror" id="ref-for-exceptiondef-typeerror">TypeError</a></code>.
 To make them constructible,
-you can add appropriate <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-constructors" id="ref-for-idl-constructors">constructor operation</a> to your interface,
+you can add appropriate <a data-link-type="dfn">constructor operation</a> to your interface,
 and defining the algorithm for creating new instances of your class.</p>
    <p>This allows JavaScript developers
 to create instances of the class
@@ -3256,7 +3256,7 @@ you may need to define an explicit state machine (well-defined state transitions
 to ensure that when a deferred event fires,
 the behavior of inspecting or changing state is well-defined.</p>
      <p><span class="informative">For example, in <a data-link-type="biblio" href="#biblio-payment-request">[payment-request]</a>,
-the <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/payment-request/#dom-paymentrequest" id="ref-for-dom-paymentrequest">PaymentRequest</a></code>'s <a data-link-type="dfn" href="https://www.w3.org/TR/payment-request/#dfn-state" id="ref-for-dfn-state">[[state]]</a> internal slot
+the <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/payment-request/#dom-paymentrequest" id="ref-for-dom-paymentrequest">PaymentRequest</a></code>'s <a data-link-type="dfn" href="https://www.w3.org/TR/payment-request/#dfn-state" id="ref-for-dfn-state">[[state]]</a> internal slot
 explicitly tracks the object’s state
 through its well-defined transitions.</span></p>
      <ul>
@@ -3264,7 +3264,7 @@ through its well-defined transitions.</span></p>
        <p>These state transitions often use the guarding technique themselves,
  to ensure the state transitions happen appropriately.</p>
        <p>For example, in <a data-link-type="biblio" href="#biblio-payment-request">[payment-request]</a> note the guards used around the <a data-link-type="dfn" href="https://www.w3.org/TR/payment-request/#dfn-state" id="ref-for-dfn-state①">[[state]]</a> internal slot,
- such as in the <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/payment-request/#dom-paymentrequest-show" id="ref-for-dom-paymentrequest-show">show()</a></code> algorithm.</p>
+ such as in the <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/payment-request/#dom-paymentrequest-show" id="ref-for-dom-paymentrequest-show">show()</a></code> algorithm.</p>
      </ul>
     <li data-md>
      <p>if the deferred event doesn’t need extra state,
@@ -3567,7 +3567,7 @@ using a floating point value,
 not as an integer value of a smaller time unit like nanoseconds.</p>
    <h3 class="heading settled" data-level="7.4" id="times-and-dates"><span class="secno">7.4. </span><span class="content">Use the appropriate type to represent times and dates</span><a class="self-link" href="#times-and-dates"></a></h3>
    <p>When representing date-times on the platform, use the <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#DOMTimeStamp" id="ref-for-DOMTimeStamp">DOMTimeStamp</a></code> type.
-Use <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp">DOMHighResTimeStamp</a></code> if authors
+Use <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp">DOMHighResTimeStamp</a></code> if authors
 must always be able to compare timestamps,
 regardless of the user’s time settings.</p>
    <p>Don’t use the JavaScript <code class="idl"><a data-link-type="idl" href="https://tc39.github.io/ecma262/#sec-date-objects" id="ref-for-sec-date-objects①">Date</a></code> class for representing
@@ -3596,7 +3596,7 @@ Also, if two <code class="idl"><a data-link-type="idl" href="https://heycam.gith
 there’s no way to know which was created earlier.</p>
    <p>So, if a date-time is only used to compare timing of events,
 and not to show a formatted date-time value to the user,
-consider using <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp①">DOMHighResTimeStamp</a></code> instead.
+consider using <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp①">DOMHighResTimeStamp</a></code> instead.
 See <a data-link-type="biblio" href="#biblio-highres-time">[HIGHRES-TIME]</a> for more details.</p>
    <h3 class="heading settled" data-level="7.5" id="error-types"><span class="secno">7.5. </span><span class="content">Use Error or DOMException for errors</span><a class="self-link" href="#error-types"></a></h3>
    <p>Represent errors in web APIs as ECMAScript error objects (e.g., <code class="idl"><a data-link-type="idl" href="https://tc39.github.io/ecma262/#sec-error-objects" id="ref-for-sec-error-objects">Error</a></code>)
@@ -3737,7 +3737,7 @@ please rigorously <strong>define the order</strong> in which devices will be lis
 This can reduce interoperability issues,
 and helps to mitigate fingerprinting.
 (Sort order could reveal other information:
-see <a href="https://w3c.github.io/fingerprinting-guidance/#a_standardized_profile">Fingerprinting Guidance §5.2 Standardization</a> for more.)</p>
+see <a href="https://www.w3.org/TR/fingerprinting-guidance/#a_standardized_profile">Mitigating Browser Fingerprinting in Web Specifications §a_standardized_profile</a> for more.)</p>
    <p class="note" role="note"><span>Note:</span> While APIs should not
 expose a full list of devices in an <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#implementation-defined" id="ref-for-implementation-defined">implementation-defined</a> order,
 they may need to for web compatibility reasons.</p>
@@ -4086,7 +4086,7 @@ Instead, general terms that describe what the API does were chosen. <a data-link
    </div>
    <div class="example" id="example-c1204afc">
     <a class="self-link" href="#example-c1204afc"></a> 
-    <p>The <code>keydown</code> and <code>keyup</code> <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/uievents/#keyboardevent" id="ref-for-keyboardevent">KeyboardEvent</a></code>s were not named
+    <p>The <code>keydown</code> and <code>keyup</code> <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/uievents/#keyboardevent" id="ref-for-keyboardevent">KeyboardEvent</a></code>s were not named
 for the specific hardware bus that keyboards used at the time.
 Instead, generic names were chosen
 that are as applicable to today’s Bluetooth and USB keyboards
@@ -4133,11 +4133,11 @@ design, the following rules have emerged:</p>
      <tr>
       <th>Repeated initialisms in APIs
       <td>Follow the same rule
-      <td><code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/grouping-content.html#htmlhrelement" id="ref-for-htmlhrelement">HTMLHRElement</a></code><br> <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/webrtc/#dom-rtcdtmfsender" id="ref-for-dom-rtcdtmfsender">RTCDTMFSender</a></code><br> 
+      <td><code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/grouping-content.html#htmlhrelement" id="ref-for-htmlhrelement">HTMLHRElement</a></code><br> <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender" id="ref-for-dom-rtcdtmfsender">RTCDTMFSender</a></code><br> 
      <tr>
       <th>The abbreviation of "identity"
       <td><code>Id</code>, except when the first word in a method or property
-      <td><code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-nonelementparentnode-getelementbyid" id="ref-for-dom-nonelementparentnode-getelementbyid">getElementById()</a></code><br> <code class="idl"><a data-link-type="idl" href="https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid" id="ref-for-dom-pointerevent-pointerid">pointerId</a></code><br> <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-credential-management/#dom-credential-id" id="ref-for-dom-credential-id">id</a></code>
+      <td><code class="idl"><a data-link-type="idl" href="https://dom.spec.whatwg.org/#dom-nonelementparentnode-getelementbyid" id="ref-for-dom-nonelementparentnode-getelementbyid">getElementById()</a></code><br> <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/pointerevents/#dom-pointerevent-pointerid" id="ref-for-dom-pointerevent-pointerid">pointerId</a></code><br> <code class="idl"><a data-link-type="idl" href="https://w3c.github.io/webappsec-credential-management/#dom-credential-id" id="ref-for-dom-credential-id">id</a></code>
      <tr>
       <th>Enumeration values
       <td>Lowercase, dash-delimited
@@ -4153,7 +4153,7 @@ design, the following rules have emerged:</p>
      <tr>
       <th>JSON keys
       <td>Lowercase, underscore-delimited
-      <td><a data-link-type="dfn" href="https://www.w3.org/TR/appmanifest/#dfn-short_name" id="ref-for-dfn-short_name">short_name</a>
+      <td><a data-link-type="dfn" href="https://w3c.github.io/manifest/#dfn-short_name" id="ref-for-dfn-short_name">short_name</a>
    </table>
    <div class="non-normative">
      Note that in particular, when a HTML attribute is <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflect" id="ref-for-reflect①">reflected</a> as a property, the attribute
@@ -4322,7 +4322,7 @@ so they can correct this omission.</p>
    <li><a href="#static-object">static object</a><span>, in §5.2</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-dfn-short_name">
-   <a href="https://www.w3.org/TR/appmanifest/#dfn-short_name">https://www.w3.org/TR/appmanifest/#dfn-short_name</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/manifest/#dfn-short_name">https://w3c.github.io/manifest/#dfn-short_name</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dfn-short_name">Use casing rules consistent with existing APIs</a>
    </ul>
@@ -4334,46 +4334,39 @@ so they can correct this omission.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-background-image">
-   <a href="https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image">https://drafts.csswg.org/css-backgrounds-3/#propdef-background-image</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-backgrounds/#propdef-background-image">https://drafts.csswg.org/css-backgrounds/#propdef-background-image</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-propdef-background-image">3.2. Make appropriate choices for whether CSS properties are inherited</a> <a href="#ref-for-propdef-background-image①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-actual-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#actual-value">https://drafts.csswg.org/css-cascade-5/#actual-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#actual-value">https://drafts.csswg.org/css-cascade/#actual-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-actual-value">3.3. Choose the computed value type based on how the property should inherit</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-computed-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#computed-value">https://drafts.csswg.org/css-cascade-5/#computed-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#computed-value">https://drafts.csswg.org/css-cascade/#computed-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-computed-value">3.3. Choose the computed value type based on how the property should inherit</a> <a href="#ref-for-computed-value①">(2)</a> <a href="#ref-for-computed-value②">(3)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-inheritance">
-   <a href="https://drafts.csswg.org/css-cascade-5/#inheritance">https://drafts.csswg.org/css-cascade-5/#inheritance</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-inheritance">3.3. Choose the computed value type based on how the property should inherit</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-used-value">
-   <a href="https://drafts.csswg.org/css-cascade-5/#used-value">https://drafts.csswg.org/css-cascade-5/#used-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-cascade/#used-value">https://drafts.csswg.org/css-cascade/#used-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-used-value">3.3. Choose the computed value type based on how the property should inherit</a> <a href="#ref-for-used-value①">(2)</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="term-for-inheritance">
+   <a href="https://drafts.csswg.org/css-cascade/#inheritance">https://drafts.csswg.org/css-cascade/#inheritance</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-inheritance">3.3. Choose the computed value type based on how the property should inherit</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-at-ruledef-supports">
    <a href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports">https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-at-ruledef-supports">2.3. New features should be detectable</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-font-size">
-   <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-size">https://drafts.csswg.org/css-fonts-3/#propdef-font-size</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-font-size">3.2. Make appropriate choices for whether CSS properties are inherited</a> <a href="#ref-for-propdef-font-size①">(2)</a> <a href="#ref-for-propdef-font-size②">(3)</a>
-    <li><a href="#ref-for-propdef-font-size③">3.3. Choose the computed value type based on how the property should inherit</a> <a href="#ref-for-propdef-font-size④">(2)</a> <a href="#ref-for-propdef-font-size⑤">(3)</a> <a href="#ref-for-propdef-font-size⑥">(4)</a> <a href="#ref-for-propdef-font-size⑦">(5)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-propdef-initial-letter">
@@ -4400,32 +4393,26 @@ so they can correct this omission.</p>
     <li><a href="#ref-for-number-value">3.3. Choose the computed value type based on how the property should inherit</a> <a href="#ref-for-number-value①">(2)</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-propdef-line-height">
-   <a href="https://drafts.csswg.org/css2/#propdef-line-height">https://drafts.csswg.org/css2/#propdef-line-height</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-line-height">3.3. Choose the computed value type based on how the property should inherit</a> <a href="#ref-for-propdef-line-height①">(2)</a> <a href="#ref-for-propdef-line-height②">(3)</a> <a href="#ref-for-propdef-line-height③">(4)</a> <a href="#ref-for-propdef-line-height④">(5)</a> <a href="#ref-for-propdef-line-height⑤">(6)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-dom-window-getcomputedstyle">
-   <a href="https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle">https://drafts.csswg.org/cssom-1/#dom-window-getcomputedstyle</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle">https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-window-getcomputedstyle">3.3. Choose the computed value type based on how the property should inherit</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-resolved-value">
-   <a href="https://drafts.csswg.org/cssom-1/#resolved-value">https://drafts.csswg.org/cssom-1/#resolved-value</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#resolved-value">https://drafts.csswg.org/cssom/#resolved-value</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-resolved-value">3.3. Choose the computed value type based on how the property should inherit</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-element-getboundingclientrect">
-   <a href="https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect">https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect">https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-element-getboundingclientrect">5.1. Attributes should behave like data properties</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-htmlelement-offsettop">
-   <a href="https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsettop">https://drafts.csswg.org/cssom-view-1/#dom-htmlelement-offsettop</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsettop">https://drafts.csswg.org/cssom-view/#dom-htmlelement-offsettop</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-htmlelement-offsettop">5.1. Attributes should behave like data properties</a>
    </ul>
@@ -4641,7 +4628,7 @@ so they can correct this omission.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-domhighrestimestamp">
-   <a href="https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp">https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp">https://w3c.github.io/hr-time/#dom-domhighrestimestamp</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-domhighrestimestamp">7.4. Use the appropriate type to represent times and dates</a> <a href="#ref-for-dom-domhighrestimestamp①">(2)</a>
    </ul>
@@ -4730,12 +4717,6 @@ so they can correct this omission.</p>
    <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element">https://html.spec.whatwg.org/multipage/custom-elements.html#custom-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-custom-element">5.6. Classes should have constructors when possible</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-dom-customelementregistry-define">
-   <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define">https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-define</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-dom-customelementregistry-define">4.1. Web APIs are for JavaScript</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-event-handler-idl-attributes">
@@ -4891,7 +4872,7 @@ so they can correct this omission.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-paymentrequest">
-   <a href="https://www.w3.org/TR/payment-request/#dom-paymentrequest">https://www.w3.org/TR/payment-request/#dom-paymentrequest</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/payment-request/#dom-paymentrequest">https://w3c.github.io/payment-request/#dom-paymentrequest</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-paymentrequest">6.6. Guard against potential recursion</a>
    </ul>
@@ -4903,13 +4884,13 @@ so they can correct this omission.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-paymentrequest-show">
-   <a href="https://www.w3.org/TR/payment-request/#dom-paymentrequest-show">https://www.w3.org/TR/payment-request/#dom-paymentrequest-show</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/payment-request/#dom-paymentrequest-show">https://w3c.github.io/payment-request/#dom-paymentrequest-show</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-paymentrequest-show">6.6. Guard against potential recursion</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-pointerevent-pointerid">
-   <a href="https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid">https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/pointerevents/#dom-pointerevent-pointerid">https://w3c.github.io/pointerevents/#dom-pointerevent-pointerid</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-pointerevent-pointerid">Use casing rules consistent with existing APIs</a>
    </ul>
@@ -4933,7 +4914,7 @@ so they can correct this omission.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-keyboardevent">
-   <a href="https://www.w3.org/TR/uievents/#keyboardevent">https://www.w3.org/TR/uievents/#keyboardevent</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/uievents/#keyboardevent">https://w3c.github.io/uievents/#keyboardevent</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-keyboardevent">11.4. Future-proofing</a>
    </ul>
@@ -5041,12 +5022,6 @@ so they can correct this omission.</p>
     <li><a href="#ref-for-idl-byte">7.2. Represent strings appropriately</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-idl-constructors">
-   <a href="https://heycam.github.io/webidl/#idl-constructors">https://heycam.github.io/webidl/#idl-constructors</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-idl-constructors">5.6. Classes should have constructors when possible</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-idl-double">
    <a href="https://heycam.github.io/webidl/#idl-double">https://heycam.github.io/webidl/#idl-double</a><b>Referenced in:</b>
    <ul>
@@ -5120,7 +5095,7 @@ so they can correct this omission.</p>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-rtcdtmfsender">
-   <a href="https://www.w3.org/TR/webrtc/#dom-rtcdtmfsender">https://www.w3.org/TR/webrtc/#dom-rtcdtmfsender</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender">https://w3c.github.io/webrtc-pc/#dom-rtcdtmfsender</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-rtcdtmfsender">Use casing rules consistent with existing APIs</a>
    </ul>
@@ -5174,22 +5149,21 @@ so they can correct this omission.</p>
      <li><span class="dfn-paneled" id="term-for-propdef-background-image">background-image</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <a data-link-type="biblio">[css-cascade-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-actual-value">actual value</span>
      <li><span class="dfn-paneled" id="term-for-computed-value">computed value</span>
-     <li><span class="dfn-paneled" id="term-for-inheritance">inherit</span>
      <li><span class="dfn-paneled" id="term-for-used-value">used value</span>
+    </ul>
+   <li>
+    <a data-link-type="biblio">[css-cascade-5]</a> defines the following terms:
+    <ul>
+     <li><span class="dfn-paneled" id="term-for-inheritance">inherit</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-conditional-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-at-ruledef-supports">@supports</span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[css-fonts-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-font-size">font-size</span>
     </ul>
    <li>
     <a data-link-type="biblio">[css-inline-3]</a> defines the following terms:
@@ -5202,11 +5176,6 @@ so they can correct this omission.</p>
     <ul>
      <li><span class="dfn-paneled" id="term-for-length-value">&lt;length></span>
      <li><span class="dfn-paneled" id="term-for-number-value">&lt;number></span>
-    </ul>
-   <li>
-    <a data-link-type="biblio">[CSS21]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-line-height">line-height</span>
     </ul>
    <li>
     <a data-link-type="biblio">[cssom-1]</a> defines the following terms:
@@ -5270,7 +5239,7 @@ so they can correct this omission.</p>
      <li><span class="dfn-paneled" id="term-for-dom-body-json">json()</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[hr-time-2]</a> defines the following terms:
+    <a data-link-type="biblio">[hr-time-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dom-domhighrestimestamp">DOMHighResTimeStamp</span>
     </ul>
@@ -5289,9 +5258,8 @@ so they can correct this omission.</p>
      <li><span class="dfn-paneled" id="term-for-windoweventhandlers">WindowEventHandlers</span>
      <li><span class="dfn-paneled" id="term-for-dom-alert-noargs">alert()</span>
      <li><span class="dfn-paneled" id="term-for-dom-document-bgcolor">bgColor</span>
-     <li><span class="dfn-paneled" id="term-for-dom-createimagebitmap">createImageBitmap(image)</span>
+     <li><span class="dfn-paneled" id="term-for-dom-createimagebitmap">createImageBitmap(image, options)</span>
      <li><span class="dfn-paneled" id="term-for-custom-element">custom element</span>
-     <li><span class="dfn-paneled" id="term-for-dom-customelementregistry-define">define(name, constructor)</span>
      <li><span class="dfn-paneled" id="term-for-event-handler-idl-attributes">event handler idl attribute</span>
      <li><span class="dfn-paneled" id="term-for-event-loop">event loop</span>
      <li><span class="dfn-paneled" id="term-for-the-figcaption-element">figcaption</span>
@@ -5308,7 +5276,7 @@ so they can correct this omission.</p>
      <li><span class="dfn-paneled" id="term-for-task-queue">task queues</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[IndexedDB-2]</a> defines the following terms:
+    <a data-link-type="biblio">[IndexedDB-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idbdatabase">IDBDatabase</span>
     </ul>
@@ -5375,7 +5343,7 @@ so they can correct this omission.</p>
      <li><span class="dfn-paneled" id="term-for-dfn-Crypto">Crypto</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WEBIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-ByteString">ByteString</span>
      <li><span class="dfn-paneled" id="term-for-Clamp">Clamp</span>
@@ -5390,7 +5358,6 @@ so they can correct this omission.</p>
      <li><span class="dfn-paneled" id="term-for-idl-Uint8Array">Uint8Array</span>
      <li><span class="dfn-paneled" id="term-for-idl-bigint">bigint</span>
      <li><span class="dfn-paneled" id="term-for-idl-byte">byte</span>
-     <li><span class="dfn-paneled" id="term-for-idl-constructors">constructor operations</span>
      <li><span class="dfn-paneled" id="term-for-idl-double">double</span>
      <li><span class="dfn-paneled" id="term-for-idl-long">long</span>
      <li><span class="dfn-paneled" id="term-for-idl-long-long">long long</span>
@@ -5405,7 +5372,7 @@ so they can correct this omission.</p>
      <li><span class="dfn-paneled" id="term-for-idl-unsigned-long-long">unsigned long long</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[webrtc-1]</a> defines the following terms:
+    <a data-link-type="biblio">[webrtc]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dom-rtcdtmfsender">RTCDTMFSender</span>
     </ul>
@@ -5422,6 +5389,8 @@ so they can correct this omission.</p>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-css-cascade-4">[CSS-CASCADE-4]
+   <dd>Elika Etemad; Tab Atkins Jr.. <a href="https://drafts.csswg.org/css-cascade/">CSS Cascading and Inheritance Level 4</a>. URL: <a href="https://drafts.csswg.org/css-cascade/">https://drafts.csswg.org/css-cascade/</a>
    <dt id="biblio-css-cascade-5">[CSS-CASCADE-5]
    <dd>Elika Etemad; Miriam Suzanne; Tab Atkins Jr.. <a href="https://drafts.csswg.org/css-cascade/">CSS Cascading and Inheritance Level 5</a>. URL: <a href="https://drafts.csswg.org/css-cascade/">https://drafts.csswg.org/css-cascade/</a>
    <dt id="biblio-css-conditional-3">[CSS-CONDITIONAL-3]
@@ -5429,15 +5398,15 @@ so they can correct this omission.</p>
    <dt id="biblio-dom">[DOM]
    <dd>Anne van Kesteren. <a href="https://dom.spec.whatwg.org/">DOM Standard</a>. Living Standard. URL: <a href="https://dom.spec.whatwg.org/">https://dom.spec.whatwg.org/</a>
    <dt id="biblio-ecmascript">[ECMASCRIPT]
-   <dd><a href="https://tc39.es/ecma262/multipage/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/multipage/">https://tc39.es/ecma262/multipage/</a>
+   <dd><a href="https://tc39.es/ecma262/">ECMAScript Language Specification</a>. URL: <a href="https://tc39.es/ecma262/">https://tc39.es/ecma262/</a>
    <dt id="biblio-highres-time">[HIGHRES-TIME]
-   <dd>Yoav Weiss; et al. <a href="https://w3c.github.io/hr-time/">High Resolution Time</a>. URL: <a href="https://w3c.github.io/hr-time/">https://w3c.github.io/hr-time/</a>
-   <dt id="biblio-hr-time-2">[HR-TIME-2]
    <dd>Ilya Grigorik. <a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a>. URL: <a href="https://w3c.github.io/hr-time/">https://w3c.github.io/hr-time/</a>
+   <dt id="biblio-hr-time-3">[HR-TIME-3]
+   <dd>Yoav Weiss; et al. <a href="https://w3c.github.io/hr-time/">High Resolution Time</a>. URL: <a href="https://w3c.github.io/hr-time/">https://w3c.github.io/hr-time/</a>
    <dt id="biblio-html">[HTML]
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
-   <dt id="biblio-indexeddb-2">[IndexedDB-2]
-   <dd>Ali Alabbas; Joshua Bell. <a href="https://w3c.github.io/IndexedDB/">Indexed Database API 2.0</a>. URL: <a href="https://w3c.github.io/IndexedDB/">https://w3c.github.io/IndexedDB/</a>
+   <dt id="biblio-indexeddb-3">[IndexedDB-3]
+   <dd>Ali Alabbas; Joshua Bell. <a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a>. URL: <a href="https://w3c.github.io/IndexedDB/">https://w3c.github.io/IndexedDB/</a>
    <dt id="biblio-infra">[INFRA]
    <dd>Anne van Kesteren; Domenic Denicola. <a href="https://infra.spec.whatwg.org/">Infra Standard</a>. Living Standard. URL: <a href="https://infra.spec.whatwg.org/">https://infra.spec.whatwg.org/</a>
    <dt id="biblio-mediaqueries-5">[MEDIAQUERIES-5]
@@ -5450,6 +5419,8 @@ so they can correct this omission.</p>
    <dd>Anne van Kesteren. <a href="https://url.spec.whatwg.org/">URL Standard</a>. Living Standard. URL: <a href="https://url.spec.whatwg.org/">https://url.spec.whatwg.org/</a>
    <dt id="biblio-webidl">[WEBIDL]
    <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
    <dt id="biblio-xhr">[XHR]
    <dd>Anne van Kesteren. <a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a>. Living Standard. URL: <a href="https://xhr.spec.whatwg.org/">https://xhr.spec.whatwg.org/</a>
   </dl>
@@ -5461,14 +5432,10 @@ so they can correct this omission.</p>
    <dd>Mike West. <a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a>. URL: <a href="https://w3c.github.io/webappsec-credential-management/">https://w3c.github.io/webappsec-credential-management/</a>
    <dt id="biblio-css-backgrounds-3">[CSS-BACKGROUNDS-3]
    <dd>Bert Bos; Elika Etemad; Brad Kemper. <a href="https://drafts.csswg.org/css-backgrounds/">CSS Backgrounds and Borders Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-backgrounds/">https://drafts.csswg.org/css-backgrounds/</a>
-   <dt id="biblio-css-fonts-3">[CSS-FONTS-3]
-   <dd>John Daggett; Myles Maxfield; Chris Lilley. <a href="https://drafts.csswg.org/css-fonts-3/">CSS Fonts Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-fonts-3/">https://drafts.csswg.org/css-fonts-3/</a>
    <dt id="biblio-css-inline-3">[CSS-INLINE-3]
    <dd>Dave Cramer; Elika Etemad; Steve Zilles. <a href="https://drafts.csswg.org/css-inline-3/">CSS Inline Layout Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-inline-3/">https://drafts.csswg.org/css-inline-3/</a>
    <dt id="biblio-css-values-3">[CSS-VALUES-3]
    <dd>Tab Atkins Jr.; Elika Etemad. <a href="https://drafts.csswg.org/css-values-3/">CSS Values and Units Module Level 3</a>. URL: <a href="https://drafts.csswg.org/css-values-3/">https://drafts.csswg.org/css-values-3/</a>
-   <dt id="biblio-css21">[CSS21]
-   <dd>Bert Bos; et al. <a href="https://drafts.csswg.org/css2/">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a>. URL: <a href="https://drafts.csswg.org/css2/">https://drafts.csswg.org/css2/</a>
    <dt id="biblio-cssom-1">[CSSOM-1]
    <dd>Simon Pieters; Glenn Adams. <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a>. URL: <a href="https://drafts.csswg.org/cssom/">https://drafts.csswg.org/cssom/</a>
    <dt id="biblio-cssom-view-1">[CSSOM-VIEW-1]
@@ -5476,7 +5443,7 @@ so they can correct this omission.</p>
    <dt id="biblio-dom-parsing">[DOM-Parsing]
    <dd>Travis Leithead. <a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a>. URL: <a href="https://w3c.github.io/DOM-Parsing/">https://w3c.github.io/DOM-Parsing/</a>
    <dt id="biblio-ethical-web">[ETHICAL-WEB]
-   <dd>Daniel Appelquist; Hadley Beeman. <a href="https://www.w3.org/2001/tag/doc/ethical-web-principles/">W3C TAG Ethical Web Principles</a>. 27 October 2020. TAG Finding. URL: <a href="https://www.w3.org/2001/tag/doc/ethical-web-principles/">https://www.w3.org/2001/tag/doc/ethical-web-principles/</a>
+   <dd>Daniel Appelquist; Hadley Beeman. <a href="https://www.w3.org/2001/tag/doc/ethical-web-principles/">W3C TAG Ethical Web Principles</a>. 4 December 2019. TAG Finding. URL: <a href="https://www.w3.org/2001/tag/doc/ethical-web-principles/">https://www.w3.org/2001/tag/doc/ethical-web-principles/</a>
    <dt id="biblio-fetch">[FETCH]
    <dd>Anne van Kesteren. <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>. Living Standard. URL: <a href="https://fetch.spec.whatwg.org/">https://fetch.spec.whatwg.org/</a>
    <dt id="biblio-fingerprinting-guidance">[FINGERPRINTING-GUIDANCE]
@@ -5499,8 +5466,8 @@ so they can correct this omission.</p>
    <dd>Mark Nottingham. <a href="http://www.w3.org/2001/tag/doc/unsanctioned-tracking/">Unsanctioned Web Tracking</a>. 17 July 2015. TAG Finding. URL: <a href="http://www.w3.org/2001/tag/doc/unsanctioned-tracking/">http://www.w3.org/2001/tag/doc/unsanctioned-tracking/</a>
    <dt id="biblio-webcryptoapi">[WebCryptoAPI]
    <dd>Mark Watson. <a href="https://w3c.github.io/webcrypto/">Web Cryptography API</a>. URL: <a href="https://w3c.github.io/webcrypto/">https://w3c.github.io/webcrypto/</a>
-   <dt id="biblio-webrtc-1">[WEBRTC-1]
-   <dd>WebRTC 1.0: Real-time Communication Between Browsers URL: <a href="https://www.w3.org/TR/webrtc/">https://www.w3.org/TR/webrtc/</a>
+   <dt id="biblio-webrtc">[WEBRTC]
+   <dd>Cullen Jennings; Henrik Boström; Jan-Ivar Bruaroey. <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-Time Communication Between Browsers</a>. URL: <a href="https://w3c.github.io/webrtc-pc/">https://w3c.github.io/webrtc-pc/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">

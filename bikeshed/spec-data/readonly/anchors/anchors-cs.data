@@ -1,7 +1,7 @@
 CSPViolationReportBody
 interface
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#cspviolationreportbody
@@ -10,8 +10,8 @@ https://w3c.github.io/webappsec-csp/#cspviolationreportbody
 -
 CSPViolationReportBody
 interface
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#cspviolationreportbody
@@ -2428,8 +2428,8 @@ policy container
 -
 csp list
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#csp-list
@@ -2438,8 +2438,8 @@ https://w3c.github.io/webappsec-csp/#csp-list
 -
 csp list
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#global-object-csp-list
@@ -2449,8 +2449,8 @@ global object
 -
 csp list
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#csp-list
@@ -2459,8 +2459,8 @@ https://www.w3.org/TR/CSP3/#csp-list
 -
 csp list
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#global-object-csp-list
@@ -2470,8 +2470,8 @@ global object
 -
 csp violation report
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#csp-violation-report
@@ -2480,8 +2480,8 @@ https://w3c.github.io/webappsec-csp/#csp-violation-report
 -
 csp violation report
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#csp-violation-report

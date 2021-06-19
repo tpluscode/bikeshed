@@ -261,62 +261,6 @@ figcaption:not(.no-marker)::before {
 [data-md] > :last-child {
     margin-bottom: 0;
 }</style>
-<style>/* style-mdn-anno */
-
-            @media (max-width: 767px) { .mdn-anno { opacity: .1 } }
-            .mdn-anno { font: 1em sans-serif; padding: 0.3em; position: absolute; z-index: 8; right: 0.3em; background: #EEE; color: black; box-shadow: 0 0 3px #999; overflow: hidden; border-collapse: initial; border-spacing: initial; min-width: 9em; max-width: min-content; white-space: nowrap; word-wrap: normal; hyphens: none}
-            .mdn-anno:not(.wrapped) { opacity: 1}
-            .mdn-anno:hover { z-index: 9 }
-            .mdn-anno.wrapped { min-width: 0 }
-            .mdn-anno.wrapped > :not(button) { display: none; }
-            .mdn-anno > .mdn-anno-btn { cursor: pointer; border: none; color: #000; background: transparent; margin: -8px; float: right; padding: 10px 8px 8px 8px; outline: none; }
-            .mdn-anno > .mdn-anno-btn > .less-than-two-engines-flag { color: red; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > .all-engines-flag { color: green; padding-right: 2px; }
-            .mdn-anno > .mdn-anno-btn > span { color: #fff; background-color: #000; font-weight: normal; font-family: zillaslab, Palatino, "Palatino Linotype", serif; padding: 2px 3px 0px 3px; line-height: 1.3em; vertical-align: top; }
-            .mdn-anno > .feature { margin-top: 20px; }
-            .mdn-anno > .feature:not(:first-of-type) { border-top: 1px solid #999; margin-top: 6px; padding-top: 2px; }
-            .mdn-anno > .feature > .less-than-two-engines-text { color: red }
-            .mdn-anno > .feature > .all-engines-text { color: green }
-            .mdn-anno > .feature > p { font-size: .75em; margin-top: 6px; margin-bottom: 0; }
-            .mdn-anno > .feature > p + p { margin-top: 3px; }
-            .mdn-anno > .feature > .support { display: block; font-size: 0.6em; margin: 0; padding: 0; margin-top: 2px }
-            .mdn-anno > .feature > .support + div { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > hr { display: block; border: none; border-top: 1px dotted #999; padding: 3px 0px 0px 0px; margin: 2px 3px 0px 3px; }
-            .mdn-anno > .feature > .support > hr::before { content: ""; }
-            .mdn-anno > .feature > .support > span { padding: 0.2em 0; display: block; display: table; }
-            .mdn-anno > .feature > .support > span.no { color: #CCCCCC; filter: grayscale(100%); }
-            .mdn-anno > .feature > .support > span.no::before { opacity: 0.5; }
-            .mdn-anno > .feature > .support > span:first-of-type { padding-top: 0.5em; }
-            .mdn-anno > .feature > .support > span > span { padding: 0 0.5em; display: table-cell; }
-            .mdn-anno > .feature > .support > span > span:first-child { width: 100%; }
-            .mdn-anno > .feature > .support > span > span:last-child { width: 100%; white-space: pre; padding: 0; }
-            .mdn-anno > .feature > .support > span::before { content: ' '; display: table-cell; min-width: 1.5em; height: 1.5em; background: no-repeat center center; background-size: contain; text-align: right; font-size: 0.75em; font-weight: bold; }
-            .mdn-anno > .feature > .support > .chrome_android::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .firefox_android::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .chrome::before { background-image: url(https://resources.whatwg.org/browser-logos/chrome.svg); }
-            .mdn-anno > .feature > .support > .edge_blink::before { background-image: url(https://resources.whatwg.org/browser-logos/edge.svg); }
-            .mdn-anno > .feature > .support > .edge::before { background-image: url(https://resources.whatwg.org/browser-logos/edge_legacy.svg); }
-            .mdn-anno > .feature > .support > .firefox::before { background-image: url(https://resources.whatwg.org/browser-logos/firefox.png); }
-            .mdn-anno > .feature > .support > .ie::before { background-image: url(https://resources.whatwg.org/browser-logos/ie.png); }
-            .mdn-anno > .feature > .support > .safari_ios::before { background-image: url(https://resources.whatwg.org/browser-logos/safari-ios.svg); }
-            .mdn-anno > .feature > .support > .nodejs::before { background-image: url(https://nodejs.org/static/images/favicons/favicon.ico); }
-            .mdn-anno > .feature > .support > .opera_android::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .opera::before { background-image: url(https://resources.whatwg.org/browser-logos/opera.svg); }
-            .mdn-anno > .feature > .support > .safari::before { background-image: url(https://resources.whatwg.org/browser-logos/safari.png); }
-            .mdn-anno > .feature > .support > .samsunginternet_android::before { background-image: url(https://resources.whatwg.org/browser-logos/samsung.svg); }
-            .mdn-anno > .feature > .support > .webview_android::before { background-image: url(https://resources.whatwg.org/browser-logos/android-webview.png); }
-            .name-slug-mismatch { color: red }
-            .caniuse-status:hover { z-index: 9; }
-
-            /* dt, li, .issue, .note, and .example are "position: relative", so to put annotation at right margin, must move to right of containing block */
-            .h-entry:not(.status-LS) dt > .mdn-anno, .h-entry:not(.status-LS) li > .mdn-anno, .h-entry:not(.status-LS) .issue > .mdn-anno, .h-entry:not(.status-LS) .note > .mdn-anno, .h-entry:not(.status-LS) .example > .mdn-anno { right: -6.7em; }
-            .h-entry p + .mdn-anno { margin-top: 0; }
-            h2 + .mdn-anno.after { margin: -48px 0 0 0; }
-            h3 + .mdn-anno.after { margin: -46px 0 0 0; }
-            h4 + .mdn-anno.after { margin: -42px 0 0 0; }
-            h5 + .mdn-anno.after { margin: -40px 0 0 0; }
-            h6 + .mdn-anno.after { margin: -40px 0 0 0; }
-            </style>
 <style>/* style-selflinks */
 
 :root {
@@ -893,59 +837,43 @@ on screen, on paper, etc.
    <p>Whenever this specification queues a task,
 	it queues it onto the "font loading" task source.</p>
    <h2 class="heading settled" data-level="2" id="fontface-interface"><span class="secno">2. </span><span class="content"> The <code>FontFace</code> Interface</span><a class="self-link" href="#fontface-interface"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace" title="The FontFace interface represents a single usable font face. It allows control of the source of the font face, being a URL to an external resource, or a buffer; it also allows control of when the font face is loaded and its current status.">FontFace</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>22+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>22+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface①">FontFace</a></code> interface represents a single usable font face.
 	CSS <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule①">@font-face</a> rules implicitly define FontFace objects,
 	or they can be constructed manually from a url or binary data.</p>
 <pre class="idl highlight def"><c- b>typedef</c-> (<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-ArrayBuffer" id="ref-for-idl-ArrayBuffer"><c- b>ArrayBuffer</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="https://heycam.github.io/webidl/#ArrayBufferView" id="ref-for-ArrayBufferView"><c- n>ArrayBufferView</c-></a>) <dfn class="dfn-paneled idl-code" data-dfn-type="typedef" data-export id="typedefdef-binarydata"><code><c- g>BinaryData</c-></code></dfn>;
 
 <c- b>dictionary</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="dictionary" data-export id="dictdef-fontfacedescriptors"><code><c- g>FontFaceDescriptors</c-></code></dfn> {
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-style"><code><c- g>style</c-></code><a class="self-link" href="#dom-fontfacedescriptors-style"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-weight"><code><c- g>weight</c-></code><a class="self-link" href="#dom-fontfacedescriptors-weight"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-stretch"><code><c- g>stretch</c-></code><a class="self-link" href="#dom-fontfacedescriptors-stretch"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;U+0-10FFFF&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-unicoderange"><code><c- g>unicodeRange</c-></code><a class="self-link" href="#dom-fontfacedescriptors-unicoderange"></a></dfn> = "U+0-10FFFF";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring④"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-variant"><code><c- g>variant</c-></code><a class="self-link" href="#dom-fontfacedescriptors-variant"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring⑤"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-featuresettings"><code><c- g>featureSettings</c-></code><a class="self-link" href="#dom-fontfacedescriptors-featuresettings"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring⑥"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-variationsettings"><code><c- g>variationSettings</c-></code><a class="self-link" href="#dom-fontfacedescriptors-variationsettings"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring⑦"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;auto&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-display"><code><c- g>display</c-></code><a class="self-link" href="#dom-fontfacedescriptors-display"></a></dfn> = "auto";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring⑧"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-ascentoverride"><code><c- g>ascentOverride</c-></code><a class="self-link" href="#dom-fontfacedescriptors-ascentoverride"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring⑨"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-descentoverride"><code><c- g>descentOverride</c-></code><a class="self-link" href="#dom-fontfacedescriptors-descentoverride"></a></dfn> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①⓪"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-linegapoverride"><code><c- g>lineGapOverride</c-></code><a class="self-link" href="#dom-fontfacedescriptors-linegapoverride"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-style"><code><c- g>style</c-></code><a class="self-link" href="#dom-fontfacedescriptors-style"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-weight"><code><c- g>weight</c-></code><a class="self-link" href="#dom-fontfacedescriptors-weight"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-stretch"><code><c- g>stretch</c-></code><a class="self-link" href="#dom-fontfacedescriptors-stretch"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;U+0-10FFFF&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-unicoderange"><code><c- g>unicodeRange</c-></code><a class="self-link" href="#dom-fontfacedescriptors-unicoderange"></a></dfn> = "U+0-10FFFF";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring④"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-variant"><code><c- g>variant</c-></code><a class="self-link" href="#dom-fontfacedescriptors-variant"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring⑤"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-featuresettings"><code><c- g>featureSettings</c-></code><a class="self-link" href="#dom-fontfacedescriptors-featuresettings"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring⑥"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-variationsettings"><code><c- g>variationSettings</c-></code><a class="self-link" href="#dom-fontfacedescriptors-variationsettings"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring⑦"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;auto&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-display"><code><c- g>display</c-></code><a class="self-link" href="#dom-fontfacedescriptors-display"></a></dfn> = "auto";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring⑧"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-ascentoverride"><code><c- g>ascentOverride</c-></code><a class="self-link" href="#dom-fontfacedescriptors-ascentoverride"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring⑨"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-descentoverride"><code><c- g>descentOverride</c-></code><a class="self-link" href="#dom-fontfacedescriptors-descentoverride"></a></dfn> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①⓪"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-default="&quot;normal&quot;" data-dfn-for="FontFaceDescriptors" data-dfn-type="dict-member" data-export data-type="CSSOMString " id="dom-fontfacedescriptors-linegapoverride"><code><c- g>lineGapOverride</c-></code><a class="self-link" href="#dom-fontfacedescriptors-linegapoverride"></a></dfn> = "normal";
 };
 
 <c- b>enum</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="enum" data-export id="enumdef-fontfaceloadstatus"><code><c- g>FontFaceLoadStatus</c-></code></dfn> { <dfn class="idl-code" data-dfn-for="FontFaceLoadStatus" data-dfn-type="enum-value" data-export id="dom-fontfaceloadstatus-unloaded"><code><c- s>"unloaded"</c-></code><a class="self-link" href="#dom-fontfaceloadstatus-unloaded"></a></dfn>, <dfn class="idl-code" data-dfn-for="FontFaceLoadStatus" data-dfn-type="enum-value" data-export id="dom-fontfaceloadstatus-loading"><code><c- s>"loading"</c-></code><a class="self-link" href="#dom-fontfaceloadstatus-loading"></a></dfn>, <dfn class="idl-code" data-dfn-for="FontFaceLoadStatus" data-dfn-type="enum-value" data-export id="dom-fontfaceloadstatus-loaded"><code><c- s>"loaded"</c-></code><a class="self-link" href="#dom-fontfaceloadstatus-loaded"></a></dfn>, <dfn class="idl-code" data-dfn-for="FontFaceLoadStatus" data-dfn-type="enum-value" data-export id="dom-fontfaceloadstatus-error"><code><c- s>"error"</c-></code><a class="self-link" href="#dom-fontfaceloadstatus-error"></a></dfn> };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed"><c- g>Exposed</c-></a>=(<c- n>Window</c->,<c- n>Worker</c->)]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="fontface"><code><c- g>FontFace</c-></code></dfn> {
-  <a class="idl-code" data-link-type="constructor" href="#dom-fontface-fontface" id="ref-for-dom-fontface-fontface"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①①"><c- n>CSSOMString</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="FontFace/FontFace(family, source, descriptors), FontFace/constructor(family, source, descriptors), FontFace/FontFace(family, source), FontFace/constructor(family, source)" data-dfn-type="argument" data-export id="dom-fontface-fontface-family-source-descriptors-family"><code><c- g>family</c-></code></dfn>, (<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①②"><c- n>CSSOMString</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="#typedefdef-binarydata" id="ref-for-typedefdef-binarydata"><c- n>BinaryData</c-></a>) <dfn class="dfn-paneled idl-code" data-dfn-for="FontFace/FontFace(family, source, descriptors), FontFace/constructor(family, source, descriptors), FontFace/FontFace(family, source), FontFace/constructor(family, source)" data-dfn-type="argument" data-export id="dom-fontface-fontface-family-source-descriptors-source"><code><c- g>source</c-></code></dfn>,
+  <a class="idl-code" data-link-type="constructor" href="#dom-fontface-fontface" id="ref-for-dom-fontface-fontface"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①①"><c- n>CSSOMString</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="FontFace/FontFace(family, source, descriptors), FontFace/constructor(family, source, descriptors), FontFace/FontFace(family, source), FontFace/constructor(family, source)" data-dfn-type="argument" data-export id="dom-fontface-fontface-family-source-descriptors-family"><code><c- g>family</c-></code></dfn>, (<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①②"><c- n>CSSOMString</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="#typedefdef-binarydata" id="ref-for-typedefdef-binarydata"><c- n>BinaryData</c-></a>) <dfn class="dfn-paneled idl-code" data-dfn-for="FontFace/FontFace(family, source, descriptors), FontFace/constructor(family, source, descriptors), FontFace/FontFace(family, source), FontFace/constructor(family, source)" data-dfn-type="argument" data-export id="dom-fontface-fontface-family-source-descriptors-source"><code><c- g>source</c-></code></dfn>,
                 <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-fontfacedescriptors" id="ref-for-dictdef-fontfacedescriptors"><c- n>FontFaceDescriptors</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="FontFace/FontFace(family, source, descriptors), FontFace/constructor(family, source, descriptors), FontFace/FontFace(family, source), FontFace/constructor(family, source)" data-dfn-type="argument" data-export id="dom-fontface-fontface-family-source-descriptors-descriptors"><code><c- g>descriptors</c-></code></dfn> = {});
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①③"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-family" id="ref-for-dom-fontface-family"><c- g>family</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①④"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-style" id="ref-for-dom-fontface-style"><c- g>style</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①⑤"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-weight" id="ref-for-dom-fontface-weight"><c- g>weight</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①⑥"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-stretch" id="ref-for-dom-fontface-stretch"><c- g>stretch</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①⑦"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-unicoderange" id="ref-for-dom-fontface-unicoderange"><c- g>unicodeRange</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①⑧"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variant" id="ref-for-dom-fontface-variant"><c- g>variant</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring①⑨"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-featuresettings" id="ref-for-dom-fontface-featuresettings"><c- g>featureSettings</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②⓪"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variationsettings" id="ref-for-dom-fontface-variationsettings"><c- g>variationSettings</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-display" id="ref-for-dom-fontface-display"><c- g>display</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-ascentoverride" id="ref-for-dom-fontface-ascentoverride"><c- g>ascentOverride</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②③"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-descentoverride" id="ref-for-dom-fontface-descentoverride"><c- g>descentOverride</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②④"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-linegapoverride" id="ref-for-dom-fontface-linegapoverride"><c- g>lineGapOverride</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①③"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-family" id="ref-for-dom-fontface-family"><c- g>family</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①④"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-style" id="ref-for-dom-fontface-style"><c- g>style</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①⑤"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-weight" id="ref-for-dom-fontface-weight"><c- g>weight</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①⑥"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-stretch" id="ref-for-dom-fontface-stretch"><c- g>stretch</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①⑦"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-unicoderange" id="ref-for-dom-fontface-unicoderange"><c- g>unicodeRange</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①⑧"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variant" id="ref-for-dom-fontface-variant"><c- g>variant</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring①⑨"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-featuresettings" id="ref-for-dom-fontface-featuresettings"><c- g>featureSettings</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②⓪"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variationsettings" id="ref-for-dom-fontface-variationsettings"><c- g>variationSettings</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-display" id="ref-for-dom-fontface-display"><c- g>display</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-ascentoverride" id="ref-for-dom-fontface-ascentoverride"><c- g>ascentOverride</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②③"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-descentoverride" id="ref-for-dom-fontface-descentoverride"><c- g>descentOverride</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②④"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-linegapoverride" id="ref-for-dom-fontface-linegapoverride"><c- g>lineGapOverride</c-></a>;
 
   <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-fontfaceloadstatus" id="ref-for-enumdef-fontfaceloadstatus"><c- n>FontFaceLoadStatus</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="FontFaceLoadStatus" href="#dom-fontface-status" id="ref-for-dom-fontface-status"><c- g>status</c-></a>;
 
@@ -957,96 +885,11 @@ on screen, on paper, etc.
 	since objects can move between documents.</p>
    <div>
     <dl>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/family" title="The FontFace.family property allows the author to get or set the font family of a FontFace object. This is equivalent to the font-family descriptor of @font-face.">FontFace/family</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-family"><code>family</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②⑤">CSSOMString</a></span></p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/style" title="The style property of the FontFace interface retrieves or sets the font&apos;s style. It is equivalent to the font-style descriptor.">FontFace/style</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-style"><code>style</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②⑥">CSSOMString</a></span></p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/weight" title="The weight property of the FontFace interface retrieves or sets the weight of the font. It is equivalent to the font-weight descriptor.">FontFace/weight</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-weight"><code>weight</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②⑦">CSSOMString</a></span></p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/stretch" title="The stretch property of the FontFace interface retrieves or sets how the font stretches. It is equivalent to the font-stretch descriptor.">FontFace/stretch</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-stretch"><code>stretch</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②⑧">CSSOMString</a></span></p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/unicodeRange" title="The unicodeRange property of the FontFace interface retrieves or sets the range of unicode codepoints encompassing the font. It is equivalent to the unicode-range descriptor.">FontFace/unicodeRange</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-unicoderange"><code>unicodeRange</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring②⑨">CSSOMString</a></span></p>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-family"><code>family</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②⑤">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-style"><code>style</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②⑥">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-weight"><code>weight</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②⑦">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-stretch"><code>stretch</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②⑧">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-unicoderange"><code>unicodeRange</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring②⑨">CSSOMString</a></span>
      <dd data-md>
       <p>These attributes all represent the corresponding aspects of a font face,
 as defined by the descriptors defined in the CSS <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule②">@font-face</a> rule.
@@ -1056,67 +899,17 @@ but otherwise have no effect.</p>
       <p>For example, a <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface④">FontFace</a></code> with a <code class="idl"><a data-link-type="idl" href="#dom-fontface-style" id="ref-for-dom-fontface-style①">style</a></code> of <code>"italic"</code> <em>represents</em> an italic font face;
 it does not <strong>make</strong> the font face italic.</p>
       <p>On getting, return the string associated with this attribute.</p>
-      <p>On setting, <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar">parse</a> the string according to the grammar for the corresponding <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule④">@font-face</a> descriptor.
+      <p>On setting, <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar">parse</a> the string according to the grammar for the corresponding <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule④">@font-face</a> descriptor.
 If it does not match the grammar,
 throw a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#syntaxerror" id="ref-for-syntaxerror">SyntaxError</a></code>;
 otherwise, set the attribute to the serialization of the parsed value.</p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/variant" title="The variant property of the FontFace interface programmatically retrieves or sets font variant values. It is equivalent to the font-variant descriptor.">FontFace/variant</a></p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-variant"><code>variant</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③⓪">CSSOMString</a></span></p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/featureSettings" title="The featureSettings property of the FontFace interface retrieves or sets infrequently used font features that are not available from a font&apos;s variant properties. It is equivalent to the font-feature-settings descriptor.">FontFace/featureSettings</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-featuresettings"><code>featureSettings</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③①">CSSOMString</a></span></p>
-     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-variationsettings"><code>variationSettings</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③②">CSSOMString</a></span>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/display" title="The display property of the FontFace interface determines how a font face is displayed based on whether and when it is downloaded and ready to use. This property is equivalent to the CSS font-display descriptor.">FontFace/display</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>58+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>60+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>47+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android no"><span>Firefox for Android</span><span>None</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>60+</span></span><span class="webview_android yes"><span>Android WebView</span><span>60+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>8.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>44+</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-display"><code>display</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③③">CSSOMString</a></span></p>
-     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-ascentoverride"><code>ascentOverride</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③④">CSSOMString</a></span>
-     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-descentoverride"><code>descentOverride</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③⑤">CSSOMString</a></span>
-     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-linegapoverride"><code>lineGapOverride</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③⑥">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-variant"><code>variant</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③⓪">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-featuresettings"><code>featureSettings</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③①">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-variationsettings"><code>variationSettings</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③②">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-display"><code>display</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③③">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-ascentoverride"><code>ascentOverride</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③④">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-descentoverride"><code>descentOverride</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③⑤">CSSOMString</a></span>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-linegapoverride"><code>lineGapOverride</code></dfn>, <span> of type <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③⑥">CSSOMString</a></span>
      <dd data-md>
       <p>These attributes have the same meaning,
 and are parsed the same as,
@@ -1125,28 +918,11 @@ the corresponding descriptors in the CSS <a class="css" data-link-type="maybe" h
 Unlike the previous attributes,
 these attributes actually affect the font face.</p>
       <p>On getting, return the string associated with this attribute.</p>
-      <p>On setting, <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar①">parse</a> the string according to the grammar for the corresponding <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule⑥">@font-face</a> descriptor.
+      <p>On setting, <a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar①">parse</a> the string according to the grammar for the corresponding <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule⑥">@font-face</a> descriptor.
 If it does not match the grammar,
 throw a <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#syntaxerror" id="ref-for-syntaxerror①">SyntaxError</a></code>;
 otherwise, set the attribute to the serialization of the parsed value.</p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/status" title="The status read-only property of the FontFace interface returns an enumerated value indicating the status of the font, one of &quot;unloaded&quot;, &quot;loading&quot;, &quot;loaded&quot;, or &quot;error&quot;.">FontFace/status</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-status"><code>status</code></dfn>, <span> of type <a data-link-type="idl-name" href="#enumdef-fontfaceloadstatus" id="ref-for-enumdef-fontfaceloadstatus①">FontFaceLoadStatus</a>, readonly</span></p>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-status"><code>status</code></dfn>, <span> of type <a data-link-type="idl-name" href="#enumdef-fontfaceloadstatus" id="ref-for-enumdef-fontfaceloadstatus①">FontFaceLoadStatus</a>, readonly</span>
      <dd data-md>
       <p>This attribute reflects the current status of the font face.
 It must be "unloaded" for a newly-created <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface⑤">FontFace</a></code>.</p>
@@ -1154,24 +930,7 @@ It must be "unloaded" for a newly-created <code class="idl"><a data-link-type="i
 such as through the <code class="idl"><a data-link-type="idl" href="#dom-fontface-load" id="ref-for-dom-fontface-load①">load()</a></code> method on <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface⑥">FontFace</a></code>,
 or implicitly by the user agent,
 due to it detecting that the font face is needed to draw some text on the screen.</p>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/loaded" title="The loaded read-only property of the FontFace interface returns a Promise that resolves with the current FontFace object when the font specified in the object&apos;s constructor is done loading or rejects with a SyntaxError.">FontFace/loaded</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>45+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>45+</span></span><span class="webview_android yes"><span>Android WebView</span><span>45+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-loaded"><code>loaded</code></dfn>, <span> of type Promise&lt;<a data-link-type="idl-name" href="#fontface" id="ref-for-fontface⑦">FontFace</a>>, readonly</span></p>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFace" data-dfn-type="attribute" data-export id="dom-fontface-loaded"><code>loaded</code></dfn>, <span> of type Promise&lt;<a data-link-type="idl-name" href="#fontface" id="ref-for-fontface⑦">FontFace</a>>, readonly</span>
      <dd data-md>
       <p>This attribute reflects the <code class="idl"><a data-link-type="idl" href="#dom-fontface-fontstatuspromise-slot" id="ref-for-dom-fontface-fontstatuspromise-slot">[[FontStatusPromise]]</a></code> of the font face.</p>
     </dl>
@@ -1185,22 +944,6 @@ due to it detecting that the font face is needed to draw some text on the screen
 	of which one is <code>null</code> and the other is not <code>null</code> (the non-null one is set by the constructor,
 		based on which data is passed in).</p>
    <h3 class="heading settled" data-level="2.1" id="font-face-constructor"><span class="secno">2.1. </span><span class="content"> The Constructor</span><a class="self-link" href="#font-face-constructor"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/FontFace" title="The FontFace() constructor creates a new FontFace object.">FontFace/FontFace</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>22+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>22+</span></span>
-     </div>
-    </div>
-   </div>
    <p>A <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface①⓪">FontFace</a></code> can be constructed either
 	from a URL pointing to a font face file,
 	or from an <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-ArrayBuffer" id="ref-for-idl-ArrayBuffer①">ArrayBuffer</a></code> (or <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#ArrayBufferView" id="ref-for-ArrayBufferView①">ArrayBufferView</a></code>) containing the binary representation of a font face.</p>
@@ -1211,10 +954,10 @@ due to it detecting that the font face is needed to draw some text on the screen
      <p>Let <var>font face</var> be a fresh <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface①①">FontFace</a></code> object.
 Set <var>font face’s</var> <code class="idl"><a data-link-type="idl" href="#dom-fontface-status" id="ref-for-dom-fontface-status①">status</a></code> attribute to <code>"unloaded"</code>,
 Set its internal <code class="idl"><a data-link-type="idl" href="#dom-fontface-fontstatuspromise-slot" id="ref-for-dom-fontface-fontstatuspromise-slot①">[[FontStatusPromise]]</a></code> slot to a fresh pending <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise③">Promise</a></code> object.</p>
-     <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar②">Parse</a> the <code class="idl"><a class="idl-code" data-link-type="argument" href="#dom-fontface-fontface-family-source-descriptors-family" id="ref-for-dom-fontface-fontface-family-source-descriptors-family">family</a></code> argument,
+     <p><a data-link-type="dfn" href="https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar" id="ref-for-css-parse-something-according-to-a-css-grammar②">Parse</a> the <code class="idl"><a class="idl-code" data-link-type="argument" href="#dom-fontface-fontface-family-source-descriptors-family" id="ref-for-dom-fontface-fontface-family-source-descriptors-family">family</a></code> argument,
 and the members of the <code class="idl"><a class="idl-code" data-link-type="argument" href="#dom-fontface-fontface-family-source-descriptors-descriptors" id="ref-for-dom-fontface-fontface-family-source-descriptors-descriptors">descriptors</a></code> argument,
 according to the grammars of the corresponding descriptors of the CSS <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule⑦">@font-face</a> rule.
-If the <code class="idl"><a class="idl-code" data-link-type="argument" href="#dom-fontface-fontface-family-source-descriptors-source" id="ref-for-dom-fontface-fontface-family-source-descriptors-source">source</a></code> argument is a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③⑦">CSSOMString</a></code>,
+If the <code class="idl"><a class="idl-code" data-link-type="argument" href="#dom-fontface-fontface-family-source-descriptors-source" id="ref-for-dom-fontface-fontface-family-source-descriptors-source">source</a></code> argument is a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③⑦">CSSOMString</a></code>,
 parse it according to the grammar of the CSS <span class="css">src</span> descriptor of the <span class="css" id="ref-for-at-font-face-rule⑧">@font-face</span> rule.
 If any of them fail to parse correctly,
 reject <var>font face’s</var> <code class="idl"><a data-link-type="idl" href="#dom-fontface-fontstatuspromise-slot" id="ref-for-dom-fontface-fontstatuspromise-slot②">[[FontStatusPromise]]</a></code> with a DOMException named "SyntaxError",
@@ -1241,7 +984,7 @@ terminate this algorithm;
 otherwise,
 complete the rest of these steps asynchronously.</p>
     <li data-md>
-     <p>If the <code class="idl"><a class="idl-code" data-link-type="argument" href="#dom-fontface-fontface-family-source-descriptors-source" id="ref-for-dom-fontface-fontface-family-source-descriptors-source①">source</a></code> argument was a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③⑧">CSSOMString</a></code>,
+     <p>If the <code class="idl"><a class="idl-code" data-link-type="argument" href="#dom-fontface-fontface-family-source-descriptors-source" id="ref-for-dom-fontface-fontface-family-source-descriptors-source①">source</a></code> argument was a <code class="idl"><a data-link-type="idl" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③⑧">CSSOMString</a></code>,
 set <var>font face’s</var> internal <code class="idl"><a data-link-type="idl" href="#dom-fontface-urls-slot" id="ref-for-dom-fontface-urls-slot">[[Urls]]</a></code> slot to the string.</p>
      <p>If the <code class="idl"><a data-link-type="idl" href="#dom-fontface-fontface-family-source-descriptors-source" id="ref-for-dom-fontface-fontface-family-source-descriptors-source②">source</a></code> argument was a <code class="idl"><a data-link-type="idl" href="#typedefdef-binarydata" id="ref-for-typedefdef-binarydata①">BinaryData</a></code>,
 set <var>font face’s</var> internal <code class="idl"><a data-link-type="idl" href="#dom-fontface-data-slot" id="ref-for-dom-fontface-data-slot">[[Data]]</a></code> slot to the passed argument.</p>
@@ -1300,22 +1043,6 @@ If <var>font</var> was the last item in that list
 	they cannot actually be used until they are explicitly added to a FontFaceSet.
 	See the following section for a more complete description of FontFaceSet.</p>
    <h3 class="heading settled" data-level="2.2" id="font-face-load"><span class="secno">2.2. </span><span class="content"> The <code>load()</code> method</span><a class="self-link" href="#font-face-load"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFace/load" title="The load() method of the FontFace interface loads a font based on current object&apos;s constructor-passed requirements, including a location or source buffer, and returns a Promise that resolves with the current FontFace object.">FontFace/load</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>45+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>45+</span></span><span class="webview_android yes"><span>Android WebView</span><span>45+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>5.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-fontface-load" id="ref-for-dom-fontface-load②">load()</a></code> method of <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface①②">FontFace</a></code> forces a url-based font face to request its font data and load.
 	For fonts constructed from binary data,
 	or fonts that are already loading or loaded,
@@ -1333,7 +1060,7 @@ If <var>font</var> was the last item in that list
 			and continue executing the rest of this algorithm asynchronously. 
     <li> Using the value of <var>font face’s</var> <code class="idl"><a data-link-type="idl" href="#dom-fontface-urls-slot" id="ref-for-dom-fontface-urls-slot②">[[Urls]]</a></code> slot,
 			attempt to load a font as defined in <a data-link-type="biblio" href="#biblio-css-fonts-3">[CSS-FONTS-3]</a>,
-			as if it was the value of a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule⑨">@font-face</a> rule’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#descdef-src" id="ref-for-descdef-src">src</a> descriptor. 
+			as if it was the value of a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule⑨">@font-face</a> rule’s <a class="property" data-link-type="propdesc">src</a> descriptor. 
     <li>
       When the load operation completes,
 			successfully or not,
@@ -1391,8 +1118,8 @@ If <var>font</var> was the last item in that list
 	any change made to a <span class="css" id="ref-for-at-font-face-rule①④">@font-face</span> descriptor is immediately reflected in the corresponding <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface②①">FontFace</a></code> attribute,
 	and vice versa.</p>
    <p class="issue" id="issue-41199acf"><a class="self-link" href="#issue-41199acf"></a> When a FontFace is transferred between documents, it’s no longer CSS-connected.</p>
-   <p>The internal <code class="idl"><a data-link-type="idl" href="#dom-fontface-urls-slot" id="ref-for-dom-fontface-urls-slot③">[[Urls]]</a></code> slot of the <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface②②">FontFace</a></code> object is set to the value of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule①⑤">@font-face</a> rule’s <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#descdef-src" id="ref-for-descdef-src①">src</a> descriptor,
-	and reflects any changes made to the <span class="property" id="ref-for-descdef-src②">src</span> descriptor.</p>
+   <p>The internal <code class="idl"><a data-link-type="idl" href="#dom-fontface-urls-slot" id="ref-for-dom-fontface-urls-slot③">[[Urls]]</a></code> slot of the <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface②②">FontFace</a></code> object is set to the value of the <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule①⑤">@font-face</a> rule’s <a class="property" data-link-type="propdesc">src</a> descriptor,
+	and reflects any changes made to the <span class="property">src</span> descriptor.</p>
    <p>Otherwise, a <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface②③">FontFace</a></code> object created by a CSS <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule①⑥">@font-face</a> rule is identical to one created manually.</p>
    <p>If a <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule①⑦">@font-face</a> rule is removed from the document, its corresponding <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface②④">FontFace</a></code> object is no longer <a data-link-type="dfn" href="#css-connected" id="ref-for-css-connected">CSS-connected</a>.
 	The connection is not restorable by any means
@@ -1403,82 +1130,13 @@ If <var>font</var> was the last item in that list
 	and <span id="ref-for-css-connected③">CSS-connected</span> to the <span class="css" id="ref-for-at-font-face-rule②⓪">@font-face</span>.
 	(This will also remove the old and add the new <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface②⑧">FontFace</a></code> objects from any <a data-link-type="dfn" href="#font-source" id="ref-for-font-source①">font sources</a> they appear in.)</p>
    <h2 class="heading settled" data-level="3" id="FontFaceSet-interface"><span class="secno">3. </span><span class="content"> The <code>FontFaceSet</code> Interface</span><a class="self-link" href="#FontFaceSet-interface"></a></h2>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/fonts" title="The fonts property of the Document interface returns the FontFaceSet interface of the document.">Document/fonts</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>22+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>3.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>22+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet" title="The FontFaceSet interface of the CSS Font Loading API manages the loading of font-faces and querying of their download status.It is available as document.fonts.">FontFaceSet</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>Yes</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>10+</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>Yes</span></span>
-     </div>
-    </div>
-   </div>
-   <div class="mdn-anno wrapped">
-    <button class="mdn-anno-btn"><b class="less-than-two-engines-flag" title="This feature is in less than two current engines.">⚠</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSetLoadEvent/FontFaceSetLoadEvent" title="The FontFaceSetLoadEvent constructor creates a new FontFaceLoadEvent object which is fired whenever a FontFaceSet loads.">FontFaceSetLoadEvent/FontFaceSetLoadEvent</a></p>
-     <p class="less-than-two-engines-text">In only one current engine.</p>
-     <div class="support">
-      <span class="firefox no"><span>Firefox</span><span>?</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>57+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>44+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android no"><span>Firefox for Android</span><span>?</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>57+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>7.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>43+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSetLoadEvent/fontfaces" title="The fontfaces read-only property of the FontFaceSetLoadEvent interface returns an array of FontFace instances, each of which represents a single usable font.">FontFaceSetLoadEvent/fontfaces</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>22+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>3.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>22+</span></span>
-     </div>
-    </div>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSetLoadEvent" title="The FontFaceSetLoadEvent interface of the CSS Font Loading API is fired whenever a FontFaceSet loads.">FontFaceSetLoadEvent</a></p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>Yes</span></span><span class="safari no"><span>Safari</span><span>None</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>22+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>Yes</span></span><span class="safari_ios no"><span>iOS Safari</span><span>None</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android no"><span>Android WebView</span><span>None</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>3.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>22+</span></span>
-     </div>
-    </div>
-   </div>
 <pre class="idl highlight def"><c- b>dictionary</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="dictionary" data-export id="dictdef-fontfacesetloadeventinit"><code><c- g>FontFaceSetLoadEventInit</c-></code></dfn> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#dictdef-eventinit" id="ref-for-dictdef-eventinit"><c- n>EventInit</c-></a> {
   <a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="#fontface" id="ref-for-fontface②⑨"><c- n>FontFace</c-></a>> <dfn class="idl-code" data-default="[]" data-dfn-for="FontFaceSetLoadEventInit" data-dfn-type="dict-member" data-export data-type="sequence<FontFace> " id="dom-fontfacesetloadeventinit-fontfaces"><code><c- g>fontfaces</c-></code><a class="self-link" href="#dom-fontfacesetloadeventinit-fontfaces"></a></dfn> = [];
 };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed" id="ref-for-Exposed①"><c- g>Exposed</c-></a>=(<c- n>Window</c->,<c- n>Worker</c->)]
 <c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="fontfacesetloadevent"><code><c- g>FontFaceSetLoadEvent</c-></code></dfn> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#event" id="ref-for-event"><c- n>Event</c-></a> {
-  <dfn class="idl-code" data-dfn-for="FontFaceSetLoadEvent" data-dfn-type="constructor" data-export data-lt="FontFaceSetLoadEvent(type, eventInitDict)|constructor(type, eventInitDict)|FontFaceSetLoadEvent(type)|constructor(type)" id="dom-fontfacesetloadevent-fontfacesetloadevent"><code><c- g>constructor</c-></code><a class="self-link" href="#dom-fontfacesetloadevent-fontfacesetloadevent"></a></dfn>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring③⑨"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="FontFaceSetLoadEvent/FontFaceSetLoadEvent(type, eventInitDict), FontFaceSetLoadEvent/constructor(type, eventInitDict), FontFaceSetLoadEvent/FontFaceSetLoadEvent(type), FontFaceSetLoadEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type"><code><c- g>type</c-></code><a class="self-link" href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type"></a></dfn>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-fontfacesetloadeventinit" id="ref-for-dictdef-fontfacesetloadeventinit"><c- n>FontFaceSetLoadEventInit</c-></a> <dfn class="idl-code" data-dfn-for="FontFaceSetLoadEvent/FontFaceSetLoadEvent(type, eventInitDict), FontFaceSetLoadEvent/constructor(type, eventInitDict), FontFaceSetLoadEvent/FontFaceSetLoadEvent(type), FontFaceSetLoadEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict"><code><c- g>eventInitDict</c-></code><a class="self-link" href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict"></a></dfn> = {});
+  <dfn class="idl-code" data-dfn-for="FontFaceSetLoadEvent" data-dfn-type="constructor" data-export data-lt="FontFaceSetLoadEvent(type, eventInitDict)|constructor(type, eventInitDict)|FontFaceSetLoadEvent(type)|constructor(type)" id="dom-fontfacesetloadevent-fontfacesetloadevent"><code><c- g>constructor</c-></code><a class="self-link" href="#dom-fontfacesetloadevent-fontfacesetloadevent"></a></dfn>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring③⑨"><c- n>CSSOMString</c-></a> <dfn class="idl-code" data-dfn-for="FontFaceSetLoadEvent/FontFaceSetLoadEvent(type, eventInitDict), FontFaceSetLoadEvent/constructor(type, eventInitDict), FontFaceSetLoadEvent/FontFaceSetLoadEvent(type), FontFaceSetLoadEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type"><code><c- g>type</c-></code><a class="self-link" href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type"></a></dfn>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-fontfacesetloadeventinit" id="ref-for-dictdef-fontfacesetloadeventinit"><c- n>FontFaceSetLoadEventInit</c-></a> <dfn class="idl-code" data-dfn-for="FontFaceSetLoadEvent/FontFaceSetLoadEvent(type, eventInitDict), FontFaceSetLoadEvent/constructor(type, eventInitDict), FontFaceSetLoadEvent/FontFaceSetLoadEvent(type), FontFaceSetLoadEvent/constructor(type)" data-dfn-type="argument" data-export id="dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict"><code><c- g>eventInitDict</c-></code><a class="self-link" href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict"></a></dfn> = {});
   [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="#fontface" id="ref-for-fontface③⓪"><c- n>FontFace</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="FontFaceSetLoadEvent" data-dfn-type="attribute" data-export data-readonly data-type="FrozenArray<FontFace>" id="dom-fontfacesetloadevent-fontfaces"><code><c- g>fontfaces</c-></code></dfn>;
 };
 
@@ -1501,11 +1159,11 @@ If <var>font</var> was the last item in that list
 
   // check and start loads if appropriate
   // and fulfill promise when all loads complete
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise④"><c- b>Promise</c-></a>&lt;<a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence②"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="#fontface" id="ref-for-fontface③⑤"><c- n>FontFace</c-></a>>> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-load" id="ref-for-dom-fontfaceset-load"><c- g>load</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring④⓪"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-font" id="ref-for-dom-fontfaceset-load-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring④①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-text" id="ref-for-dom-fontfaceset-load-font-text-text"><c- g>text</c-></a> = " ");
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise④"><c- b>Promise</c-></a>&lt;<a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence" id="ref-for-idl-sequence②"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="#fontface" id="ref-for-fontface③⑤"><c- n>FontFace</c-></a>>> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-load" id="ref-for-dom-fontfaceset-load"><c- g>load</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring④⓪"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-font" id="ref-for-dom-fontfaceset-load-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring④①"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-text" id="ref-for-dom-fontfaceset-load-font-text-text"><c- g>text</c-></a> = " ");
 
   // return whether all fonts in the fontlist are loaded
   // (does not initiate load if not available)
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean" id="ref-for-idl-boolean①"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-check" id="ref-for-dom-fontfaceset-check"><c- g>check</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring④②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-font" id="ref-for-dom-fontfaceset-check-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring" id="ref-for-cssomstring④③"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-text" id="ref-for-dom-fontfaceset-check-font-text-text"><c- g>text</c-></a> = " ");
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean" id="ref-for-idl-boolean①"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-check" id="ref-for-dom-fontfaceset-check"><c- g>check</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring④②"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-font" id="ref-for-dom-fontfaceset-check-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring" id="ref-for-cssomstring④③"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-text" id="ref-for-dom-fontfaceset-check-font-text-text"><c- g>text</c-></a> = " ");
 
   // async notification that font loading and layout operations are done
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise⑤"><c- b>Promise</c-></a>&lt;<a data-link-type="idl-name" href="#fontfaceset" id="ref-for-fontfaceset①⑦"><c- n>FontFaceSet</c-></a>> <a class="idl-code" data-link-type="attribute" data-readonly data-type="Promise<FontFaceSet>" href="#dom-fontfaceset-ready" id="ref-for-dom-fontfaceset-ready"><c- g>ready</c-></a>;
@@ -1517,24 +1175,7 @@ If <var>font</var> was the last item in that list
    <p><code class="idl"><a data-link-type="idl" href="#dom-fontfaceset-load" id="ref-for-dom-fontfaceset-load①">load()</a></code></p>
    <div>
     <dl>
-     <dt data-md>
-      <div class="mdn-anno wrapped">
-       <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-       <div class="feature">
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/ready" title="The ready readonly property of the FontFaceSet interface returns a Promise that resolves to the given FontFaceSet.">FontFaceSet/ready</a></p>
-        <p class="all-engines-text">In all current engines.</p>
-        <div class="support">
-         <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-         <hr>
-         <span class="opera yes"><span>Opera</span><span>35+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-         <hr>
-         <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-         <hr>
-         <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>35+</span></span>
-        </div>
-       </div>
-      </div>
-      <p><dfn class="dfn-paneled idl-code" data-dfn-for="FontFaceSet" data-dfn-type="attribute" data-export id="dom-fontfaceset-ready"><code>ready</code></dfn>, <span> of type Promise&lt;<a data-link-type="idl-name" href="#fontfaceset" id="ref-for-fontfaceset①⑧">FontFaceSet</a>>, readonly</span></p>
+     <dt data-md><dfn class="dfn-paneled idl-code" data-dfn-for="FontFaceSet" data-dfn-type="attribute" data-export id="dom-fontfaceset-ready"><code>ready</code></dfn>, <span> of type Promise&lt;<a data-link-type="idl-name" href="#fontfaceset" id="ref-for-fontfaceset①⑧">FontFaceSet</a>>, readonly</span>
      <dd data-md>
       <p>This attribute reflects the <code class="idl"><a data-link-type="idl" href="#fontfaceset" id="ref-for-fontfaceset①⑨">FontFaceSet</a></code>'s <code class="idl"><a data-link-type="idl" href="#dom-fontfaceset-readypromise-slot" id="ref-for-dom-fontfaceset-readypromise-slot">[[ReadyPromise]]</a></code> slot.</p>
       <p>See <a href="#font-face-set-ready">§ 3.4 The ready attribute</a> for more details on this <code class="idl"><a data-link-type="idl" href="https://heycam.github.io/webidl/#idl-promise" id="ref-for-idl-promise⑥">Promise</a></code> and its use.</p>
@@ -1726,7 +1367,7 @@ unmark it as such.</p>
 	run the following steps:</p>
    <ol>
     <li>
-      Parse <var>font</var> using the CSS value syntax of the <a class="property" data-link-type="propdesc" href="https://drafts.csswg.org/css-fonts-3/#propdef-font" id="ref-for-propdef-font">font</a> property.
+      Parse <var>font</var> using the CSS value syntax of the <a class="property" data-link-type="propdesc">font</a> property.
 			If a syntax error occurs,
 			return a syntax error. 
      <p>If the parsed value is a <a data-link-type="dfn" href="https://drafts.csswg.org/css-values-4/#css-wide-keywords" id="ref-for-css-wide-keywords">CSS-wide keyword</a>,
@@ -1756,22 +1397,6 @@ unmark it as such.</p>
     <li> Return <var>matched font faces</var> and the <var>found faces</var> flag. 
    </ol>
    <h3 class="heading settled" data-level="3.2" id="font-face-set-load"><span class="secno">3.2. </span><span class="content"> The <code>load()</code> method</span><a class="self-link" href="#font-face-set-load"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/load" title="The load() method of the FontFaceSet forces all the fonts given in parameters to be loaded.">FontFaceSet/load</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera yes"><span>Opera</span><span>35+</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android yes"><span>Opera Mobile</span><span>35+</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-fontfaceset-load" id="ref-for-dom-fontfaceset-load②">load()</a></code> method of <code class="idl"><a data-link-type="idl" href="#fontfaceset" id="ref-for-fontfaceset④③">FontFaceSet</a></code> will determine whether all fonts in the given font list
 	have been loaded and are available.
 	If any fonts are downloadable fonts and have not already been loaded,
@@ -1802,22 +1427,6 @@ unmark it as such.</p>
      </ol>
    </ol>
    <h3 class="heading settled" data-level="3.3" id="font-face-set-check"><span class="secno">3.3. </span><span class="content"> The <code>check()</code> method</span><a class="self-link" href="#font-face-set-check"></a></h3>
-   <div class="mdn-anno wrapped after">
-    <button class="mdn-anno-btn"><b class="all-engines-flag" title="This feature is in all current engines.">✔</b><span>MDN</span></button>
-    <div class="feature">
-     <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet/check" title="The check() method of the FontFaceSet returns whether all fonts in the given font list have been loaded and are available.">FontFaceSet/check</a></p>
-     <p class="all-engines-text">In all current engines.</p>
-     <div class="support">
-      <span class="firefox yes"><span>Firefox</span><span>41+</span></span><span class="safari yes"><span>Safari</span><span>10+</span></span><span class="chrome yes"><span>Chrome</span><span>35+</span></span>
-      <hr>
-      <span class="opera no"><span>Opera</span><span>?</span></span><span class="edge_blink yes"><span>Edge</span><span>79+</span></span>
-      <hr>
-      <span class="edge no"><span>Edge (Legacy)</span><span>None</span></span><span class="ie no"><span>IE</span><span>None</span></span>
-      <hr>
-      <span class="firefox_android yes"><span>Firefox for Android</span><span>41+</span></span><span class="safari_ios yes"><span>iOS Safari</span><span>Yes</span></span><span class="chrome_android yes"><span>Chrome for Android</span><span>35+</span></span><span class="webview_android yes"><span>Android WebView</span><span>37+</span></span><span class="samsunginternet_android yes"><span>Samsung Internet</span><span>4.0+</span></span><span class="opera_android no"><span>Opera Mobile</span><span>?</span></span>
-     </div>
-    </div>
-   </div>
    <p>The <code class="idl"><a data-link-type="idl" href="#dom-fontfaceset-check" id="ref-for-dom-fontfaceset-check①">check()</a></code> method of <code class="idl"><a data-link-type="idl" href="#fontfaceset" id="ref-for-fontfaceset④⑤">FontFaceSet</a></code> will determine whether you can "safely"
 	render some provided text with a particular font list,
 	such that it won’t cause a "font swap" later.
@@ -1950,7 +1559,7 @@ f<c- p>.</c->load<c- p>().</c->then<c- p>(</c-><c- a>function</c-> <c- p>(</c->l
 	(such as, for example, drawing text into a <code class="idl"><a data-link-type="idl" href="https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas" id="ref-for-offscreencanvas">OffscreenCanvas</a></code>).</p>
    <h3 class="heading settled" data-level="4.2" id="document-font-face-set"><span class="secno">4.2. </span><span class="content"> Interaction with CSS’s <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule②⑤">@font-face</a> Rule</span><a class="self-link" href="#document-font-face-set"></a></h3>
    <p>The <a data-link-type="dfn" href="#fontfaceset-set-entries" id="ref-for-fontfaceset-set-entries⑤">set entries</a> for a document’s <a data-link-type="dfn" href="#font-source" id="ref-for-font-source⑦">font source</a> must be initially populated with all the <a data-link-type="dfn" href="#css-connected" id="ref-for-css-connected⑧">CSS-connected</a> <code class="idl"><a data-link-type="idl" href="#fontface" id="ref-for-fontface④⑥">FontFace</a></code> objects
-	from all of the CSS <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule②⑥">@font-face</a> rules in the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets" id="ref-for-documentorshadowroot-document-or-shadow-root-css-style-sheets">document or shadow root CSS style sheets</a>,
+	from all of the CSS <a class="css" data-link-type="maybe" href="https://drafts.csswg.org/css-fonts-5/#at-font-face-rule" id="ref-for-at-font-face-rule②⑥">@font-face</a> rules in the <a data-link-type="dfn" href="https://drafts.csswg.org/cssom/#documentorshadowroot-document-or-shadow-root-css-style-sheets" id="ref-for-documentorshadowroot-document-or-shadow-root-css-style-sheets">document or shadow root CSS style sheets</a>,
 	in document order.
 	As <span class="css" id="ref-for-at-font-face-rule②⑦">@font-face</span> rules are added or removed from a stylesheet,
 	or stylesheets containing <span class="css" id="ref-for-at-font-face-rule②⑧">@font-face</span> rules are added or removed,
@@ -2309,22 +1918,6 @@ to match with proper IDL practice.</p>
      <li><a href="#dom-fontfacedescriptors-weight">dict-member for FontFaceDescriptors</a><span>, in §2</span>
     </ul>
   </ul>
-  <aside class="dfn-panel" data-for="term-for-propdef-font">
-   <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font">https://drafts.csswg.org/css-fonts-3/#propdef-font</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-propdef-font">3.1. 
-Events</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="term-for-descdef-src">
-   <a href="https://drafts.csswg.org/css-fonts-3/#descdef-src">https://drafts.csswg.org/css-fonts-3/#descdef-src</a><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-descdef-src">2.2. 
-The load() method</a>
-    <li><a href="#ref-for-descdef-src①">2.3. 
-Interaction with CSS’s @font-face Rule</a> <a href="#ref-for-descdef-src②">(2)</a>
-   </ul>
-  </aside>
   <aside class="dfn-panel" data-for="term-for-valdef-font-weight-bolder">
    <a href="https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder">https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder</a><b>Referenced in:</b>
    <ul>
@@ -2370,7 +1963,7 @@ Interaction with CSS’s @font-face Rule</a> <a href="#ref-for-at-font-face-rule
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-css-parse-something-according-to-a-css-grammar">
-   <a href="https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar">https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar">https://drafts.csswg.org/css-syntax/#css-parse-something-according-to-a-css-grammar</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-css-parse-something-according-to-a-css-grammar">2. 
 The FontFace Interface</a> <a href="#ref-for-css-parse-something-according-to-a-css-grammar①">(2)</a>
@@ -2393,7 +1986,7 @@ The Constructor</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-cssomstring">
-   <a href="https://drafts.csswg.org/cssom-1/#cssomstring">https://drafts.csswg.org/cssom-1/#cssomstring</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#cssomstring">https://drafts.csswg.org/cssom/#cssomstring</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-cssomstring">2. 
 The FontFace Interface</a> <a href="#ref-for-cssomstring①">(2)</a> <a href="#ref-for-cssomstring②">(3)</a> <a href="#ref-for-cssomstring③">(4)</a> <a href="#ref-for-cssomstring④">(5)</a> <a href="#ref-for-cssomstring⑤">(6)</a> <a href="#ref-for-cssomstring⑥">(7)</a> <a href="#ref-for-cssomstring⑦">(8)</a> <a href="#ref-for-cssomstring⑧">(9)</a> <a href="#ref-for-cssomstring⑨">(10)</a> <a href="#ref-for-cssomstring①⓪">(11)</a> <a href="#ref-for-cssomstring①①">(12)</a> <a href="#ref-for-cssomstring①②">(13)</a> <a href="#ref-for-cssomstring①③">(14)</a> <a href="#ref-for-cssomstring①④">(15)</a> <a href="#ref-for-cssomstring①⑤">(16)</a> <a href="#ref-for-cssomstring①⑥">(17)</a> <a href="#ref-for-cssomstring①⑦">(18)</a> <a href="#ref-for-cssomstring①⑧">(19)</a> <a href="#ref-for-cssomstring①⑨">(20)</a> <a href="#ref-for-cssomstring②⓪">(21)</a> <a href="#ref-for-cssomstring②①">(22)</a> <a href="#ref-for-cssomstring②②">(23)</a> <a href="#ref-for-cssomstring②③">(24)</a> <a href="#ref-for-cssomstring②④">(25)</a> <a href="#ref-for-cssomstring②⑤">(26)</a> <a href="#ref-for-cssomstring②⑥">(27)</a> <a href="#ref-for-cssomstring②⑦">(28)</a> <a href="#ref-for-cssomstring②⑧">(29)</a> <a href="#ref-for-cssomstring②⑨">(30)</a> <a href="#ref-for-cssomstring③⓪">(31)</a> <a href="#ref-for-cssomstring③①">(32)</a> <a href="#ref-for-cssomstring③②">(33)</a> <a href="#ref-for-cssomstring③③">(34)</a> <a href="#ref-for-cssomstring③④">(35)</a> <a href="#ref-for-cssomstring③⑤">(36)</a> <a href="#ref-for-cssomstring③⑥">(37)</a>
@@ -2404,7 +1997,7 @@ The FontFaceSet Interface</a> <a href="#ref-for-cssomstring④⓪">(2)</a> <a hr
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-documentorshadowroot-document-or-shadow-root-css-style-sheets">
-   <a href="https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets">https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets</a><b>Referenced in:</b>
+   <a href="https://drafts.csswg.org/cssom/#documentorshadowroot-document-or-shadow-root-css-style-sheets">https://drafts.csswg.org/cssom/#documentorshadowroot-document-or-shadow-root-css-style-sheets</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-documentorshadowroot-document-or-shadow-root-css-style-sheets">4.2. 
 Interaction with CSS’s @font-face Rule</a>
@@ -2564,12 +2157,6 @@ The FontFaceSet Interface</a>
   <h3 class="no-num no-ref heading settled" id="index-defined-elsewhere"><span class="content">Terms defined by reference</span><a class="self-link" href="#index-defined-elsewhere"></a></h3>
   <ul class="index">
    <li>
-    <a data-link-type="biblio">[CSS-FONTS-3]</a> defines the following terms:
-    <ul>
-     <li><span class="dfn-paneled" id="term-for-propdef-font">font</span>
-     <li><span class="dfn-paneled" id="term-for-descdef-src">src</span>
-    </ul>
-   <li>
     <a data-link-type="biblio">[css-fonts-4]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-valdef-font-weight-bolder">bolder</span>
@@ -2614,7 +2201,7 @@ The FontFaceSet Interface</a>
      <li><span class="dfn-paneled" id="term-for-workerglobalscope">WorkerGlobalScope</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-ArrayBuffer">ArrayBuffer</span>
      <li><span class="dfn-paneled" id="term-for-ArrayBufferView">ArrayBufferView</span>
@@ -2638,7 +2225,7 @@ The FontFaceSet Interface</a>
    <dt id="biblio-css-fonts-4">[CSS-FONTS-4]
    <dd>John Daggett; Myles Maxfield; Chris Lilley. <a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a>. 17 November 2020. WD. URL: <a href="https://www.w3.org/TR/css-fonts-4/">https://www.w3.org/TR/css-fonts-4/</a>
    <dt id="biblio-css-fonts-5">[CSS-FONTS-5]
-   <dd>CSS Fonts Module Level 5 URL: <a href="https://www.w3.org/TR/css-fonts-5/">https://www.w3.org/TR/css-fonts-5/</a>
+   <dd>CSS Fonts Module Level 5 URL: <a href="https://drafts.csswg.org/css-fonts-5/">https://drafts.csswg.org/css-fonts-5/</a>
    <dt id="biblio-css-syntax-3">[CSS-SYNTAX-3]
    <dd>Tab Atkins Jr.; Simon Sapin. <a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a>. 16 July 2019. CR. URL: <a href="https://www.w3.org/TR/css-syntax-3/">https://www.w3.org/TR/css-syntax-3/</a>
    <dt id="biblio-css-values-4">[CSS-VALUES-4]
@@ -2651,44 +2238,44 @@ The FontFaceSet Interface</a>
    <dd>Anne van Kesteren; et al. <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="idl-index"><span class="content">IDL Index</span><a class="self-link" href="#idl-index"></a></h2>
 <pre class="idl highlight def"><c- b>typedef</c-> (<a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><c- b>ArrayBuffer</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="https://heycam.github.io/webidl/#ArrayBufferView"><c- n>ArrayBufferView</c-></a>) <a href="#typedefdef-binarydata"><code><c- g>BinaryData</c-></code></a>;
 
 <c- b>dictionary</c-> <a href="#dictdef-fontfacedescriptors"><code><c- g>FontFaceDescriptors</c-></code></a> {
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-style"><code><c- g>style</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-weight"><code><c- g>weight</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-stretch"><code><c- g>stretch</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;U+0-10FFFF&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-unicoderange"><code><c- g>unicodeRange</c-></code></a> = "U+0-10FFFF";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-variant"><code><c- g>variant</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-featuresettings"><code><c- g>featureSettings</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-variationsettings"><code><c- g>variationSettings</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;auto&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-display"><code><c- g>display</c-></code></a> = "auto";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-ascentoverride"><code><c- g>ascentOverride</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-descentoverride"><code><c- g>descentOverride</c-></code></a> = "normal";
-  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-linegapoverride"><code><c- g>lineGapOverride</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-style"><code><c- g>style</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-weight"><code><c- g>weight</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-stretch"><code><c- g>stretch</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;U+0-10FFFF&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-unicoderange"><code><c- g>unicodeRange</c-></code></a> = "U+0-10FFFF";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-variant"><code><c- g>variant</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-featuresettings"><code><c- g>featureSettings</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-variationsettings"><code><c- g>variationSettings</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;auto&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-display"><code><c- g>display</c-></code></a> = "auto";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-ascentoverride"><code><c- g>ascentOverride</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-descentoverride"><code><c- g>descentOverride</c-></code></a> = "normal";
+  <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a data-default="&quot;normal&quot;" data-type="CSSOMString " href="#dom-fontfacedescriptors-linegapoverride"><code><c- g>lineGapOverride</c-></code></a> = "normal";
 };
 
 <c- b>enum</c-> <a href="#enumdef-fontfaceloadstatus"><code><c- g>FontFaceLoadStatus</c-></code></a> { <a href="#dom-fontfaceloadstatus-unloaded"><code><c- s>"unloaded"</c-></code></a>, <a href="#dom-fontfaceloadstatus-loading"><code><c- s>"loading"</c-></code></a>, <a href="#dom-fontfaceloadstatus-loaded"><code><c- s>"loaded"</c-></code></a>, <a href="#dom-fontfaceloadstatus-error"><code><c- s>"error"</c-></code></a> };
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=(<c- n>Window</c->,<c- n>Worker</c->)]
 <c- b>interface</c-> <a href="#fontface"><code><c- g>FontFace</c-></code></a> {
-  <a class="idl-code" data-link-type="constructor" href="#dom-fontface-fontface"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-fontface-fontface-family-source-descriptors-family"><code><c- g>family</c-></code></a>, (<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="#typedefdef-binarydata"><c- n>BinaryData</c-></a>) <a href="#dom-fontface-fontface-family-source-descriptors-source"><code><c- g>source</c-></code></a>,
+  <a class="idl-code" data-link-type="constructor" href="#dom-fontface-fontface"><c- g>constructor</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-fontface-fontface-family-source-descriptors-family"><code><c- g>family</c-></code></a>, (<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <c- b>or</c-> <a data-link-type="idl-name" href="#typedefdef-binarydata"><c- n>BinaryData</c-></a>) <a href="#dom-fontface-fontface-family-source-descriptors-source"><code><c- g>source</c-></code></a>,
                 <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-fontfacedescriptors"><c- n>FontFaceDescriptors</c-></a> <a href="#dom-fontface-fontface-family-source-descriptors-descriptors"><code><c- g>descriptors</c-></code></a> = {});
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-family"><c- g>family</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-style"><c- g>style</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-weight"><c- g>weight</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-stretch"><c- g>stretch</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-unicoderange"><c- g>unicodeRange</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variant"><c- g>variant</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-featuresettings"><c- g>featureSettings</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variationsettings"><c- g>variationSettings</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-display"><c- g>display</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-ascentoverride"><c- g>ascentOverride</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-descentoverride"><c- g>descentOverride</c-></a>;
-  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-linegapoverride"><c- g>lineGapOverride</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-family"><c- g>family</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-style"><c- g>style</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-weight"><c- g>weight</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-stretch"><c- g>stretch</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-unicoderange"><c- g>unicodeRange</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variant"><c- g>variant</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-featuresettings"><c- g>featureSettings</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-variationsettings"><c- g>variationSettings</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-display"><c- g>display</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-ascentoverride"><c- g>ascentOverride</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-descentoverride"><c- g>descentOverride</c-></a>;
+  <c- b>attribute</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="CSSOMString" href="#dom-fontface-linegapoverride"><c- g>lineGapOverride</c-></a>;
 
   <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-fontfaceloadstatus"><c- n>FontFaceLoadStatus</c-></a> <a class="idl-code" data-link-type="attribute" data-readonly data-type="FontFaceLoadStatus" href="#dom-fontface-status"><c- g>status</c-></a>;
 
@@ -2702,7 +2289,7 @@ The FontFaceSet Interface</a>
 
 [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#Exposed"><c- g>Exposed</c-></a>=(<c- n>Window</c->,<c- n>Worker</c->)]
 <c- b>interface</c-> <a href="#fontfacesetloadevent"><code><c- g>FontFaceSetLoadEvent</c-></code></a> : <a data-link-type="idl-name" href="https://dom.spec.whatwg.org/#event"><c- n>Event</c-></a> {
-  <a href="#dom-fontfacesetloadevent-fontfacesetloadevent"><code><c- g>constructor</c-></code></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type"><code><c- g>type</c-></code></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-fontfacesetloadeventinit"><c- n>FontFaceSetLoadEventInit</c-></a> <a href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict"><code><c- g>eventInitDict</c-></code></a> = {});
+  <a href="#dom-fontfacesetloadevent-fontfacesetloadevent"><code><c- g>constructor</c-></code></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-type"><code><c- g>type</c-></code></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="#dictdef-fontfacesetloadeventinit"><c- n>FontFaceSetLoadEventInit</c-></a> <a href="#dom-fontfacesetloadevent-fontfacesetloadevent-type-eventinitdict-eventinitdict"><code><c- g>eventInitDict</c-></code></a> = {});
   [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="#fontface"><c- n>FontFace</c-></a>> <a data-readonly data-type="FrozenArray<FontFace>" href="#dom-fontfacesetloadevent-fontfaces"><code><c- g>fontfaces</c-></code></a>;
 };
 
@@ -2725,11 +2312,11 @@ The FontFaceSet Interface</a>
 
   // check and start loads if appropriate
   // and fulfill promise when all loads complete
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise"><c- b>Promise</c-></a>&lt;<a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="#fontface"><c- n>FontFace</c-></a>>> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-load"><c- g>load</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-text"><c- g>text</c-></a> = " ");
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise"><c- b>Promise</c-></a>&lt;<a data-link-type="dfn" href="https://heycam.github.io/webidl/#idl-sequence"><c- b>sequence</c-></a>&lt;<a data-link-type="idl-name" href="#fontface"><c- n>FontFace</c-></a>>> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-load"><c- g>load</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-load-font-text-text"><c- g>text</c-></a> = " ");
 
   // return whether all fonts in the fontlist are loaded
   // (does not initiate load if not available)
-  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-check"><c- g>check</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom-1/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-text"><c- g>text</c-></a> = " ");
+  <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-boolean"><c- b>boolean</c-></a> <a class="idl-code" data-link-type="method" href="#dom-fontfaceset-check"><c- g>check</c-></a>(<a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-font"><c- g>font</c-></a>, <c- b>optional</c-> <a data-link-type="idl-name" href="https://drafts.csswg.org/cssom/#cssomstring"><c- n>CSSOMString</c-></a> <a class="idl-code" data-link-type="argument" href="#dom-fontfaceset-check-font-text-text"><c- g>text</c-></a> = " ");
 
   // async notification that font loading and layout operations are done
   <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-promise"><c- b>Promise</c-></a>&lt;<a data-link-type="idl-name" href="#fontfaceset"><c- n>FontFaceSet</c-></a>> <a class="idl-code" data-link-type="attribute" data-readonly data-type="Promise<FontFaceSet>" href="#dom-fontfaceset-ready"><c- g>ready</c-></a>;
@@ -3432,11 +3019,3 @@ document.body.addEventListener("click", function(e) {
 
 });
 </script>
-<script>/* script-mdn-anno */
-
-            document.body.addEventListener("click", (e) => {
-                if(e.target.closest(".mdn-anno-btn")) {
-                    e.target.closest(".mdn-anno").classList.toggle("wrapped");
-                }
-            });
-            </script>

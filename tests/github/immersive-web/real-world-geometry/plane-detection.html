@@ -735,9 +735,9 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
 <pre class="idl highlight def"><c- b>interface</c-> <dfn class="dfn-paneled idl-code" data-dfn-type="interface" data-export id="xrplane"><code><c- g>XRPlane</c-></code></dfn> {
     [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject" id="ref-for-SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://immersive-web.github.io/webxr/#xrspace" id="ref-for-xrspace"><c- n>XRSpace</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPlane" data-dfn-type="attribute" data-export data-readonly data-type="XRSpace" id="dom-xrplane-planespace"><code><c- g>planeSpace</c-></code></dfn>;
 
-    <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly" id="ref-for-dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPlane" data-dfn-type="attribute" data-export data-readonly data-type="FrozenArray<DOMPointReadOnly>" id="dom-xrplane-polygon"><code><c- g>polygon</c-></code></dfn>;
+    <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array" id="ref-for-idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly" id="ref-for-dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPlane" data-dfn-type="attribute" data-export data-readonly data-type="FrozenArray<DOMPointReadOnly>" id="dom-xrplane-polygon"><code><c- g>polygon</c-></code></dfn>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-xrplaneorientation" id="ref-for-enumdef-xrplaneorientation"><c- n>XRPlaneOrientation</c-></a>? <dfn class="dfn-paneled idl-code" data-dfn-for="XRPlane" data-dfn-type="attribute" data-export data-readonly data-type="XRPlaneOrientation?" id="dom-xrplane-orientation"><code><c- g>orientation</c-></code></dfn>;
-    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPlane" data-dfn-type="attribute" data-export data-readonly data-type="DOMHighResTimeStamp" id="dom-xrplane-lastchangedtime"><code><c- g>lastChangedTime</c-></code></dfn>;
+    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp" id="ref-for-dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <dfn class="dfn-paneled idl-code" data-dfn-for="XRPlane" data-dfn-type="attribute" data-export data-readonly data-type="DOMHighResTimeStamp" id="dom-xrplane-lastchangedtime"><code><c- g>lastChangedTime</c-></code></dfn>;
 };
 </pre>
    <p>An <code class="idl"><a data-link-type="idl" href="#xrplane" id="ref-for-xrplane">XRPlane</a></code> represents a single, flat surface detected by the underlying XR system.</p>
@@ -954,13 +954,13 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
    <li><a href="#xrplaneset">XRPlaneSet</a><span>, in §4.1</span>
   </ul>
   <aside class="dfn-panel" data-for="term-for-dompointreadonly">
-   <a href="https://drafts.fxtf.org/geometry-1/#dompointreadonly">https://drafts.fxtf.org/geometry-1/#dompointreadonly</a><b>Referenced in:</b>
+   <a href="https://drafts.fxtf.org/geometry/#dompointreadonly">https://drafts.fxtf.org/geometry/#dompointreadonly</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dompointreadonly">3.2. XRPlane</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-dom-domhighrestimestamp">
-   <a href="https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp">https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp</a><b>Referenced in:</b>
+   <a href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp">https://w3c.github.io/hr-time/#dom-domhighrestimestamp</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-dom-domhighrestimestamp">3.2. XRPlane</a>
    </ul>
@@ -1086,12 +1086,12 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
      <li><span class="dfn-paneled" id="term-for-dompointreadonly">DOMPointReadOnly</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[hr-time-2]</a> defines the following terms:
+    <a data-link-type="biblio">[hr-time-3]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-dom-domhighrestimestamp">DOMHighResTimeStamp</span>
     </ul>
    <li>
-    <a data-link-type="biblio">[WebIDL]</a> defines the following terms:
+    <a data-link-type="biblio">[WebIDL-20161215]</a> defines the following terms:
     <ul>
      <li><span class="dfn-paneled" id="term-for-idl-frozen-array">FrozenArray</span>
      <li><span class="dfn-paneled" id="term-for-invalidstateerror">InvalidStateError</span>
@@ -1130,12 +1130,12 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
   <dl>
    <dt id="biblio-geometry-1">[GEOMETRY-1]
    <dd>Simon Pieters; Chris Harrelson. <a href="https://www.w3.org/TR/geometry-1/">Geometry Interfaces Module Level 1</a>. 4 December 2018. CR. URL: <a href="https://www.w3.org/TR/geometry-1/">https://www.w3.org/TR/geometry-1/</a>
-   <dt id="biblio-hr-time-2">[HR-TIME-2]
-   <dd>Ilya Grigorik. <a href="https://www.w3.org/TR/hr-time-2/">High Resolution Time Level 2</a>. 21 November 2019. REC. URL: <a href="https://www.w3.org/TR/hr-time-2/">https://www.w3.org/TR/hr-time-2/</a>
+   <dt id="biblio-hr-time-3">[HR-TIME-3]
+   <dd>Yoav Weiss; et al. <a href="https://www.w3.org/TR/hr-time-3/">High Resolution Time</a>. 24 March 2021. WD. URL: <a href="https://www.w3.org/TR/hr-time-3/">https://www.w3.org/TR/hr-time-3/</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
-   <dt id="biblio-webidl">[WebIDL]
-   <dd>Boris Zbarsky. <a href="https://heycam.github.io/webidl/">Web IDL</a>. 15 December 2016. ED. URL: <a href="https://heycam.github.io/webidl/">https://heycam.github.io/webidl/</a>
+   <dt id="biblio-webidl-20161215">[WebIDL-20161215]
+   <dd>Cameron McCormack. <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">WebIDL Level 1</a>. 15 December 2016. REC. URL: <a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/">https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</a>
    <dt id="biblio-webxr">[WEBXR]
    <dd>Brandon Jones; Manish Goregaokar; Nell Waliczek. <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a>. 24 July 2020. WD. URL: <a href="https://www.w3.org/TR/webxr/">https://www.w3.org/TR/webxr/</a>
   </dl>
@@ -1153,9 +1153,9 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
 <c- b>interface</c-> <a href="#xrplane"><code><c- g>XRPlane</c-></code></a> {
     [<a class="idl-code" data-link-type="extended-attribute" href="https://heycam.github.io/webidl/#SameObject"><c- g>SameObject</c-></a>] <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://immersive-web.github.io/webxr/#xrspace"><c- n>XRSpace</c-></a> <a data-readonly data-type="XRSpace" href="#dom-xrplane-planespace"><code><c- g>planeSpace</c-></code></a>;
 
-    <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry-1/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <a data-readonly data-type="FrozenArray<DOMPointReadOnly>" href="#dom-xrplane-polygon"><code><c- g>polygon</c-></code></a>;
+    <c- b>readonly</c-> <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://heycam.github.io/webidl/#idl-frozen-array"><c- b>FrozenArray</c-></a>&lt;<a data-link-type="idl-name" href="https://drafts.fxtf.org/geometry/#dompointreadonly"><c- n>DOMPointReadOnly</c-></a>> <a data-readonly data-type="FrozenArray<DOMPointReadOnly>" href="#dom-xrplane-polygon"><code><c- g>polygon</c-></code></a>;
     <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="#enumdef-xrplaneorientation"><c- n>XRPlaneOrientation</c-></a>? <a data-readonly data-type="XRPlaneOrientation?" href="#dom-xrplane-orientation"><code><c- g>orientation</c-></code></a>;
-    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <a data-readonly data-type="DOMHighResTimeStamp" href="#dom-xrplane-lastchangedtime"><code><c- g>lastChangedTime</c-></code></a>;
+    <c- b>readonly</c-> <c- b>attribute</c-> <a data-link-type="idl-name" href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp"><c- n>DOMHighResTimeStamp</c-></a> <a data-readonly data-type="DOMHighResTimeStamp" href="#dom-xrplane-lastchangedtime"><code><c- g>lastChangedTime</c-></code></a>;
 };
 
 <c- b>interface</c-> <a href="#xrplaneset"><code><c- g>XRPlaneSet</c-></code></a> {

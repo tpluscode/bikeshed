@@ -240,8 +240,8 @@ https://html.spec.whatwg.org/multipage/infrastructure.html#snapshot-state
 -
 snapshot state
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#snapshot-state
@@ -251,8 +251,8 @@ Blob
 -
 snapshot state
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#snapshot-state
@@ -314,8 +314,8 @@ https://www.w3.org/TR/webdriver2/#dfn-snapshotitem
 -
 snapshotstate
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 current
 https://w3c.github.io/FileAPI/#SnapshotStateFR
@@ -324,8 +324,8 @@ https://w3c.github.io/FileAPI/#SnapshotStateFR
 -
 snapshotstate
 dfn
-FileAPI
-FileAPI
+fileapi
+fileapi
 1
 snapshot
 https://www.w3.org/TR/FileAPI/#SnapshotStateFR

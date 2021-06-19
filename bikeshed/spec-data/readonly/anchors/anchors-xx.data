@@ -1,7 +1,7 @@
 xx-large
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-size-xx-large
@@ -11,8 +11,8 @@ font-size
 -
 xx-large
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-size-xx-large
@@ -22,8 +22,8 @@ font-size
 -
 xx-small
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-font-size-xx-small
@@ -33,8 +33,8 @@ font-size
 -
 xx-small
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-font-size-xx-small

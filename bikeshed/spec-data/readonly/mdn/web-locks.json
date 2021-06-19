@@ -158,7 +158,7 @@
             "title": "Lock"
         }
     ],
-    "api-lock-manager-query": [
+    "dom-lockmanager-query": [
         {
             "engines": [
                 "blink"
@@ -211,7 +211,7 @@
             "title": "LockManager.query()"
         }
     ],
-    "api-lock-manager-request": [
+    "dom-lockmanager-request": [
         {
             "engines": [
                 "blink"
@@ -317,7 +317,7 @@
             "title": "LockManager"
         }
     ],
-    "dom-navigatorlocks-locks": [
+    "navigator-mixins": [
         {
             "engines": [
                 "blink"

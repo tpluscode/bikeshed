@@ -984,8 +984,8 @@ SVGFEBlendElement
 -
 mode
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#transaction-mode
@@ -995,8 +995,8 @@ transaction
 -
 mode
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbdatabase-transaction-storenames-mode-options-mode
@@ -1008,8 +1008,8 @@ IDBDatabase/transaction(storeNames)
 -
 mode
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 current
 https://w3c.github.io/IndexedDB/#dom-idbtransaction-mode
@@ -1019,8 +1019,8 @@ IDBTransaction
 -
 mode
 dfn
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#transaction-mode
@@ -1030,8 +1030,8 @@ transaction
 -
 mode
 argument
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-transaction-storenames-mode-options-mode
@@ -1043,8 +1043,8 @@ IDBDatabase/transaction(storeNames)
 -
 mode
 attribute
-IndexedDB-3
-IndexedDB
+indexeddb-3
+indexeddb
 3
 snapshot
 https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-mode
@@ -1824,8 +1824,8 @@ https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-module-resp
 -
 module scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 current
 https://gpuweb.github.io/gpuweb/wgsl/#module-scope
@@ -1834,8 +1834,8 @@ https://gpuweb.github.io/gpuweb/wgsl/#module-scope
 -
 module scope
 dfn
-WGSL
-WGSL
+wgsl
+wgsl
 1
 snapshot
 https://www.w3.org/TR/WGSL/#module-scope
@@ -1955,8 +1955,8 @@ link/rel
 -
 modulusLength
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams-modulusLength
@@ -1966,8 +1966,8 @@ RsaKeyGenParams
 -
 modulusLength
 dict-member
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 current
 https://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm-modulusLength
@@ -1977,8 +1977,8 @@ RsaKeyAlgorithm
 -
 moduluslength
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyGenParams-modulusLength
@@ -1987,8 +1987,8 @@ https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyGenParams-modulusLength
 -
 moduluslength
 dfn
-WebCryptoAPI
-WebCryptoAPI
+webcryptoapi
+webcryptoapi
 1
 snapshot
 https://www.w3.org/TR/WebCryptoAPI/#dfn-RsaKeyAlgorithm-modulusLength
@@ -2101,8 +2101,8 @@ https://www.w3.org/TR/remote-playback/#dfn-monitor-the-list-of-available-remote-
 -
 monitored
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 current
 https://w3c.github.io/webappsec-csp/#monitored
@@ -2111,8 +2111,8 @@ https://w3c.github.io/webappsec-csp/#monitored
 -
 monitored
 dfn
-CSP3
-CSP
+csp3
+csp
 3
 snapshot
 https://www.w3.org/TR/CSP3/#monitored
@@ -2351,8 +2351,8 @@ font-family
 -
 monospace
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-generic-family-monospace
@@ -2362,8 +2362,8 @@ https://drafts.csswg.org/css2/#valdef-generic-family-monospace
 -
 monospace
 dfn
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#monospace-def
@@ -2372,8 +2372,8 @@ https://drafts.csswg.org/css2/#monospace-def
 -
 monospace
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-generic-family-monospace
@@ -2383,8 +2383,8 @@ https://drafts.csswg.org/css2/#valdef-generic-family-monospace
 -
 monospace
 dfn
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#monospace-def
@@ -3032,8 +3032,8 @@ cursor
 -
 move
 value
-CSS21
-CSS
+css21
+css
 2.1
 current
 https://drafts.csswg.org/css2/#valdef-cursor-move
@@ -3043,8 +3043,8 @@ cursor
 -
 move
 value
-CSS22
-CSS
+css22
+css
 2.2
 current
 https://drafts.csswg.org/css2/#valdef-cursor-move
